@@ -118,7 +118,7 @@ body {
   font-size: var(--text-base);
   line-height: 1.65;
   overflow-x: hidden;
-  word-break: keep-all;
+  word-break: normal;
   overflow-wrap: break-word;
 }
 img, svg, picture { display: block; max-width: 100%; }
@@ -245,3 +245,21 @@ p { margin: 0; }
 .callout { margin-top: var(--space-6); padding: var(--space-5); border: 1px solid var(--game-red-line); background: var(--game-red-soft); border-radius: var(--radius-md); }
 .doc__links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-8); }
 .doc__links a { min-height: 44px; display: inline-flex; align-items: center; }
+
+/* i18n */
+html:lang(ko) body { word-break: keep-all; }
+html:lang(ja) { --font-body: "Inter", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Meiryo", -apple-system, sans-serif; --font-title: "Lora", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
+html:lang(zh) { --font-body: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", -apple-system, sans-serif; --font-title: "Lora", "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif; }
+html:lang(ru) .h1, html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywhere; }
+.faq-q { margin-top: var(--space-5); font-size: 1.15rem; }
+.nf-list { margin: var(--space-8) 0 0; padding: var(--space-5) 0 0; border-top: var(--hairline); list-style: none; }
+.nf-list li { margin: 0 0 var(--space-2); font-size: var(--text-sm); }
+.nf-list .msg { color: var(--ipe-muted); margin-right: 0.4rem; }
+.nf-list a { display: inline-flex; align-items: center; min-height: 44px; }
+.foot-langs { display: flex; flex-wrap: wrap; gap: 0 var(--space-4); margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid rgba(251,250,244,0.14); font-size: var(--text-xs); }
+.foot-langs a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; opacity: 0.72; }
+.foot-langs a:hover, .foot-langs a[aria-current] { opacity: 1; text-decoration: underline; }
+.lang-hint { position: fixed; z-index: 30; left: 50%; bottom: 1rem; transform: translateX(-50%); display: flex; align-items: center; gap: var(--space-2); max-width: calc(100% - 2rem); padding: 0 0.25rem 0 1rem; border-radius: 999px; background: var(--ipe-footer); color: var(--ipe-footer-text); box-shadow: var(--shadow-ink); }
+.lang-hint[hidden] { display: none; }
+.lang-hint a { color: inherit; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
+.lang-hint button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: inherit; font-size: 1.25rem; cursor: pointer; }

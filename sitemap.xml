@@ -1,7 +1,819 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://iltonggi.ipe.rest/</loc></url>
-  <url><loc>https://iltonggi.ipe.rest/support/</loc></url>
-  <url><loc>https://iltonggi.ipe.rest/privacy/</loc></url>
-  <url><loc>https://iltonggi.ipe.rest/terms/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://iltonggi.ipe.rest/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ko/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ja/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/zh/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/es/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/pt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/id/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ru/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/vi/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ko/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ja/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/zh/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/es/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/pt/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/id/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ru/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/vi/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/fr/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/de/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/terms/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/en/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ko/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ja/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/zh/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/es/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/pt/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/id/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ru/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/vi/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

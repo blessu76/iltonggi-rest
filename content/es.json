@@ -1,0 +1,86 @@
+{
+  "name": "Iltonggi",
+  "name_sub": "일통기 · 一統記 — Estrategia de conquista en los Tres Reinos",
+  "home_title": "Iltonggi (일통기 · 一統記) — Estrategia de conquista en la era de los Tres Reinos",
+  "desc": "Iltonggi (일통기 · 一統記) es un juego de estrategia clásico de conquista territorial, rápido y ágil, ambientado en la era de los Tres Reinos de Corea. Llegará primero al iPhone.",
+  "ld_desc": "Un juego móvil de estrategia clásico de conquista territorial, corto y ágil, ambientado en la era de los Tres Reinos de Corea.",
+  "kicker": "// ipe studio · iPhone primero",
+  "badge": "Próximamente en la App Store",
+  "intro": "Un juego de estrategia clásico de conquista territorial, corto y ágil, ambientado en la era de los Tres Reinos de Corea. Una breve ronda de tácticas cada vez, perfecto para el trayecto diario.",
+  "soon": "Próximamente",
+  "see_shots": "Ver el juego",
+  "feat_title": "Rondas cortas, estrategia afilada",
+  "features": [
+    ["Una ronda rápida", "Un ritmo fácil de empezar y de terminar, incluso en el trayecto al trabajo."],
+    ["El mapa de los Tres Reinos", "Mira la conquista y la expansión de un vistazo en un mapa en vista de tres cuartos."],
+    ["Colores de cada reino", "Los colores de Goguryeo, Baekje, Silla y Gaya te ayudan a leer el campo de batalla."]
+  ],
+  "shots_title": "Capturas de pantalla",
+  "shot_alts": ["Pantalla de batalla en el mapa", "Pantalla de marcha"],
+  "skip": "Saltar al contenido",
+  "home_aria": "Inicio de Iltonggi",
+  "nav_aria": "Enlaces principales",
+  "nav_support": "Soporte",
+  "legal_aria": "Enlaces legales",
+  "lang_aria": "Idioma",
+  "hint_close": "Cerrar",
+  "privacy_link": "Política de privacidad",
+  "terms_link": "Términos de uso",
+  "back_home": "Inicio de Iltonggi",
+  "meta_line": "En vigor desde: 28 de octubre de 2026 · Operado por Davy Kim (ipe Studio)",
+  "privacy": {
+    "title": "Política de privacidad",
+    "desc": "Política de privacidad de Iltonggi (일통기 · 一統記): ni la app ni el sitio web recopilan información personal.",
+    "callout_label": "En resumen:",
+    "callout": "La app Iltonggi y este sitio web no recopilan tu información personal.",
+    "sections": [
+      {"h": "1. Información que recopilamos: ninguna", "p": [
+        "Iltonggi («la App») es un juego móvil operado por un desarrollador independiente, Davy Kim (ipe Studio). La App no tiene cuentas ni inicio de sesión, y no recopila ni envía a ningún servidor información personal como tu nombre, correo electrónico, datos de contacto, ubicación o identificadores del dispositivo. Tu progreso y tus ajustes se guardan solo en tu dispositivo y se eliminan al borrar la App.",
+        "La App no contiene publicidad, analítica ni SDK de seguimiento."]},
+      {"h": "2. El sitio web", "p": [
+        "El sitio web iltonggi.ipe.rest no usa cookies ni incluye etiquetas de analítica o publicidad. Las fuentes se cargan desde Google Fonts, por lo que la información habitual de las solicitudes web (como tu dirección IP) puede enviarse a Google. El sitio está alojado en GitHub Pages y se aplican las políticas de registros de servidor de GitHub."]},
+      {"h": "3. Terceros", "p": [
+        "Como no recopilamos información personal, no tenemos nada que compartir con terceros ni vender. La App se distribuye a través de la Apple App Store; la información relacionada con las descargas la gestiona Apple conforme a su política de privacidad."]},
+      {"h": "4. Consultas y tus derechos", "p": [
+        "Para solicitar el acceso, la rectificación, la supresión o la suspensión del tratamiento de tu información personal, o para hacer cualquier consulta, escribe a {mail}. Ten en cuenta que, como no conservamos información personal, puede que no haya nada sobre lo que actuar."]},
+      {"h": "5. Menores", "p": [
+        "La App no está dirigida a menores de 14 años (o de la edad mínima en tu región) y no recopila información personal de ningún usuario."]},
+      {"h": "6. Responsable de privacidad", "p": [
+        "Nombre: Davy Kim (ipe Studio) · Contacto: {mail}"]},
+      {"h": "7. Vías de recurso (Corea)", "p": [
+        "- Comité de Mediación de Disputas sobre Información Personal (Corea): 1833-6972 · kopico.go.kr",
+        "- Centro de Denuncias por Vulneración de Información Personal (Corea): 118 · privacy.kisa.or.kr",
+        "- División de Ciberdelincuencia de la Fiscalía Suprema (Corea): 1301 · Oficina de Cibercrimen de la Policía Nacional (Corea): 182"]},
+      {"h": "8. Cambios", "p": [
+        "Si en el futuro la App añade cuentas, pagos o funciones en línea que cambien la información recopilada, actualizaremos primero esta política y modificaremos la fecha de entrada en vigor."]}
+    ]
+  },
+  "terms": {
+    "title": "Términos de uso",
+    "desc": "Términos de uso de Iltonggi (일통기 · 一統記).",
+    "sections": [
+      {"h": "1. Objeto", "p": ["Estos términos establecen las condiciones de uso del juego móvil «Iltonggi» («la App»), ofrecido por Davy Kim (ipe Studio)."]},
+      {"h": "2. Licencia", "p": ["Puedes instalar y usar la App en tu dispositivo con fines personales y no comerciales. No puedes copiar, distribuir, aplicar ingeniería inversa ni explotar comercialmente el código fuente, las imágenes, el audio u otros contenidos de la App sin autorización."]},
+      {"h": "3. Naturaleza del servicio", "p": ["La App es un juego que funciona sin conexión y los datos de juego se guardan en tu dispositivo. Los datos pueden perderse si cambias de dispositivo, eliminas la App o restableces tu dispositivo, y es posible que no podamos recuperarlos."]},
+      {"h": "4. Cambios e interrupción", "p": ["Podemos mejorar o modificar las funciones de la App, o dejar de ofrecerla. Los cambios importantes se anunciarán en la descripción de la App Store o en este sitio."]},
+      {"h": "5. Exención de responsabilidad", "p": ["La App se ofrece tal cual. En la medida permitida por la ley, no somos responsables de los daños indirectos o incidentales derivados de tu uso de la App. La App es una obra creativa inspirada en la era de los Tres Reinos de Corea y puede diferir de los hechos históricos."]},
+      {"h": "6. Ley aplicable y contacto", "p": ["Estos términos se rigen por las leyes de la República de Corea. Contacto: {mail}"]}
+    ]
+  },
+  "support": {
+    "title": "Soporte",
+    "desc": "Soporte de Iltonggi: correo de contacto y preguntas frecuentes.",
+    "lead": "Si tienes algún problema o sugerencia mientras juegas, escríbenos por correo electrónico.",
+    "callout_label": "Contacto",
+    "callout_note": "Intentamos responder en unos pocos días laborables.",
+    "tips_h": "Datos útiles que conviene incluir",
+    "tips": ["El modelo de tu dispositivo y la versión de iOS", "Versión de la app (Ajustes → General → Almacenamiento del iPhone → Iltonggi)", "Qué estaba pasando cuando ocurrió el problema, con una captura de pantalla si la tienes"],
+    "faq_h": "Preguntas frecuentes",
+    "faq": [
+      ["¿Dónde se guarda mi progreso?", "Solo en tu dispositivo. Puede perderse si eliminas la App o cambias de dispositivo."],
+      ["¿Hay versión para Android?", "Lanzamos primero en iPhone. Compartiremos novedades sobre otras plataformas más adelante."],
+      ["¿Recopilan información personal?", "No. Consulta la [[privacy]] para más detalles."]
+    ]
+  },
+  "nf": {"title": "Página no encontrada", "desc": "Esta página no existe en iltonggi.ipe.rest.", "text": "La página que buscas no está aquí. Puede que se haya movido o que la dirección esté mal escrita."}
+}
