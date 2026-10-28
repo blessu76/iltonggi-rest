@@ -11,12 +11,24 @@
   "see_shots": "Lihat gamenya",
   "feat_title": "Ronde singkat, strategi tajam",
   "features": [
-    ["Satu ronde singkat", "Ritme yang mudah dimulai dan diselesaikan, bahkan di perjalanan."],
-    ["Peta Tiga Kerajaan", "Lihat penaklukan dan perluasan wilayah sekilas pada peta bersudut pandang isometrik."],
-    ["Warna untuk tiap kerajaan", "Warna Goguryeo, Baekje, Silla, dan Gaya membantu Anda membaca medan perang."]
+    [
+      "Satu ronde singkat",
+      "Ritme yang mudah dimulai dan diselesaikan, bahkan di perjalanan."
+    ],
+    [
+      "Peta Tiga Kerajaan",
+      "Lihat penaklukan dan perluasan wilayah sekilas pada peta bersudut pandang isometrik."
+    ],
+    [
+      "Warna untuk tiap kerajaan",
+      "Warna Goguryeo, Baekje, Silla, dan Gaya membantu Anda membaca medan perang."
+    ]
   ],
   "shots_title": "Tangkapan layar",
-  "shot_alts": ["Layar pertempuran di peta", "Layar pergerakan pasukan"],
+  "shot_alts": [
+    "Layar pertempuran di peta",
+    "Layar pergerakan pasukan"
+  ],
   "skip": "Lewati ke konten",
   "home_aria": "Beranda Iltonggi",
   "nav_aria": "Tautan utama",
@@ -34,37 +46,115 @@
     "callout_label": "Singkatnya:",
     "callout": "Aplikasi Iltonggi dan situs web ini tidak mengumpulkan informasi pribadi Anda.",
     "sections": [
-      {"h": "1. Informasi yang kami kumpulkan — tidak ada", "p": [
-        "Iltonggi (“Aplikasi”) adalah game mobile yang dioperasikan oleh pengembang perorangan, Davy Kim (ipe Studio). Aplikasi tidak memiliki akun atau proses masuk, dan tidak mengumpulkan maupun mengirim ke server mana pun informasi pribadi seperti nama, email, kontak, lokasi, atau pengenal perangkat. Progres game dan pengaturan Anda hanya disimpan di perangkat Anda dan akan terhapus saat Anda menghapus Aplikasi.",
-        "Aplikasi tidak berisi iklan, analitik, maupun SDK pelacakan."]},
-      {"h": "2. Situs web", "p": [
-        "Situs web iltonggi.ipe.rest tidak menggunakan cookie dan tidak menyertakan alat analitik maupun tag iklan. Font dimuat dari Google Fonts, sehingga informasi permintaan web biasa (seperti alamat IP Anda) dapat dikirim ke Google. Situs ini di-host di GitHub Pages, dan kebijakan log server GitHub berlaku."]},
-      {"h": "3. Pihak ketiga", "p": [
-        "Karena kami tidak mengumpulkan informasi pribadi, tidak ada yang dapat kami bagikan kepada atau jual ke pihak ketiga. Aplikasi didistribusikan melalui Apple App Store; informasi terkait unduhan diproses oleh Apple sesuai kebijakan privasi Apple."]},
-      {"h": "4. Pertanyaan dan hak Anda", "p": [
-        "Untuk meminta akses, koreksi, penghapusan, atau penghentian pemrosesan informasi pribadi Anda, atau untuk mengajukan pertanyaan apa pun, tulislah ke {mail}. Perlu diketahui bahwa karena kami tidak menyimpan informasi pribadi, mungkin tidak ada yang dapat diproses."]},
-      {"h": "5. Anak-anak", "p": [
-        "Aplikasi tidak ditujukan untuk anak di bawah usia 14 tahun (atau usia minimum di wilayah Anda), dan tidak mengumpulkan informasi pribadi dari pengguna mana pun."]},
-      {"h": "6. Penanggung jawab privasi", "p": [
-        "Nama: Davy Kim (ipe Studio) · Kontak: {mail}"]},
-      {"h": "7. Upaya pemulihan (Korea)", "p": [
-        "- Komite Mediasi Sengketa Informasi Pribadi Korea: 1833-6972 · kopico.go.kr",
-        "- Pusat Pelaporan Pelanggaran Informasi Pribadi Korea: 118 · privacy.kisa.or.kr",
-        "- Divisi Kejahatan Siber Kejaksaan Agung Korea: 1301 · Biro Siber Kepolisian Nasional Korea: 182"]},
-      {"h": "8. Perubahan", "p": [
-        "Jika Aplikasi kelak menambahkan akun, pembayaran, atau fitur online yang mengubah data yang dikumpulkan, kami akan memperbarui kebijakan ini terlebih dahulu dan mengubah tanggal berlakunya."]}
+      {
+        "h": "1. Informasi yang kami kumpulkan — tidak ada",
+        "p": [
+          "Iltonggi (“Aplikasi”) adalah game mobile yang dioperasikan oleh pengembang perorangan, Davy Kim (ipe Studio). Aplikasi tidak memiliki akun atau proses masuk, dan tidak mengumpulkan maupun mengirim ke server mana pun informasi pribadi seperti nama, email, kontak, lokasi, atau pengenal perangkat. Progres game dan pengaturan Anda hanya disimpan di perangkat Anda dan akan terhapus saat Anda menghapus Aplikasi.",
+          "Aplikasi tidak berisi iklan, analitik, maupun SDK pelacakan."
+        ]
+      },
+      {
+        "h": "2. Informasi cuaca",
+        "p": [
+          "Untuk menampilkan cuaca daerah, Aplikasi mengunduh file publik (weather.json) dari iltonggi.ipe.rest setiap kali terhubung ke internet. File ini mengumpulkan cuaca 24 kota di dalam game sekali setiap jam dan sama untuk semua pengguna. Dalam proses ini, Aplikasi tidak mengirimkan informasi pribadi apa pun (tidak ada lokasi, pengenal perangkat, atau data game) dan juga tidak terhubung langsung ke penyedia cuaca mana pun.",
+          "Seperti pada permintaan web biasa, log server hosting kami (GitHub Pages) dapat mencatat alamat IP perangkat Anda; kami tidak mengumpulkan atau menggunakan log tersebut. Jika cuaca tidak dapat diunduh (misalnya saat offline), Aplikasi menampilkan cuaca cerah dan game tetap berjalan normal. Cuaca terakhir yang diterima disimpan sementara di perangkat Anda dan dihapus saat Anda menghapus Aplikasi.",
+          "Data cuaca: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "3. Situs web",
+        "p": [
+          "Situs web iltonggi.ipe.rest tidak menggunakan cookie dan tidak menyertakan alat analitik maupun tag iklan. Font dimuat dari Google Fonts, sehingga informasi permintaan web biasa (seperti alamat IP Anda) dapat dikirim ke Google. Situs ini di-host di GitHub Pages, dan kebijakan log server GitHub berlaku."
+        ]
+      },
+      {
+        "h": "4. Pihak ketiga",
+        "p": [
+          "Karena kami tidak mengumpulkan informasi pribadi, tidak ada yang dapat kami bagikan kepada atau jual ke pihak ketiga. Aplikasi didistribusikan melalui Apple App Store; informasi terkait unduhan diproses oleh Apple sesuai kebijakan privasi Apple.",
+          "Data cuaca disediakan oleh MET Norway. Kami mengambilnya sendiri dan menerbitkannya sebagai file publik, sehingga tidak ada informasi pengguna Aplikasi yang diteruskan ke MET Norway."
+        ]
+      },
+      {
+        "h": "5. Pertanyaan dan hak Anda",
+        "p": [
+          "Untuk meminta akses, koreksi, penghapusan, atau penghentian pemrosesan informasi pribadi Anda, atau untuk mengajukan pertanyaan apa pun, tulislah ke {mail}. Perlu diketahui bahwa karena kami tidak menyimpan informasi pribadi, mungkin tidak ada yang dapat diproses."
+        ]
+      },
+      {
+        "h": "6. Anak-anak",
+        "p": [
+          "Aplikasi tidak ditujukan untuk anak di bawah usia 14 tahun (atau usia minimum di wilayah Anda), dan tidak mengumpulkan informasi pribadi dari pengguna mana pun."
+        ]
+      },
+      {
+        "h": "7. Penanggung jawab privasi",
+        "p": [
+          "Nama: Davy Kim (ipe Studio) · Kontak: {mail}"
+        ]
+      },
+      {
+        "h": "8. Upaya pemulihan (Korea)",
+        "p": [
+          "- Komite Mediasi Sengketa Informasi Pribadi Korea: 1833-6972 · kopico.go.kr",
+          "- Pusat Pelaporan Pelanggaran Informasi Pribadi Korea: 118 · privacy.kisa.or.kr",
+          "- Divisi Kejahatan Siber Kejaksaan Agung Korea: 1301 · Biro Siber Kepolisian Nasional Korea: 182"
+        ]
+      },
+      {
+        "h": "9. Perubahan",
+        "p": [
+          "Jika Aplikasi kelak menambahkan akun, pembayaran, atau fitur online yang mengubah data yang dikumpulkan, kami akan memperbarui kebijakan ini terlebih dahulu dan mengubah tanggal berlakunya."
+        ]
+      }
     ]
   },
   "terms": {
     "title": "Ketentuan Penggunaan",
     "desc": "Ketentuan Penggunaan Iltonggi (일통기 · 一統記).",
     "sections": [
-      {"h": "1. Tujuan", "p": ["Ketentuan ini menetapkan syarat penggunaan game mobile “Iltonggi” (“Aplikasi”) yang disediakan oleh Davy Kim (ipe Studio)."]},
-      {"h": "2. Lisensi", "p": ["Anda boleh memasang dan menggunakan Aplikasi di perangkat Anda untuk tujuan pribadi dan nonkomersial. Anda tidak boleh menyalin, mendistribusikan, melakukan rekayasa balik, atau memanfaatkan secara komersial kode sumber, gambar, audio, atau konten lain dari Aplikasi tanpa izin."]},
-      {"h": "3. Sifat layanan", "p": ["Aplikasi adalah game yang berjalan secara offline, dan data game disimpan di perangkat Anda. Data dapat hilang jika Anda berganti perangkat, menghapus Aplikasi, atau mengatur ulang perangkat, dan kami mungkin tidak dapat memulihkannya."]},
-      {"h": "4. Perubahan dan penghentian", "p": ["Kami dapat menyempurnakan atau mengubah fitur Aplikasi, atau menghentikan penyediaannya. Perubahan penting akan diumumkan di deskripsi App Store atau di situs ini."]},
-      {"h": "5. Penafian", "p": ["Aplikasi disediakan apa adanya. Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian tidak langsung atau insidental yang timbul dari penggunaan Aplikasi. Aplikasi adalah karya kreatif yang terinspirasi dari era Tiga Kerajaan Korea dan dapat berbeda dari fakta sejarah."]},
-      {"h": "6. Hukum yang berlaku dan kontak", "p": ["Ketentuan ini tunduk pada hukum Republik Korea. Kontak: {mail}"]}
+      {
+        "h": "1. Tujuan",
+        "p": [
+          "Ketentuan ini menetapkan syarat penggunaan game mobile “Iltonggi” (“Aplikasi”) yang disediakan oleh Davy Kim (ipe Studio)."
+        ]
+      },
+      {
+        "h": "2. Lisensi",
+        "p": [
+          "Anda boleh memasang dan menggunakan Aplikasi di perangkat Anda untuk tujuan pribadi dan nonkomersial. Anda tidak boleh menyalin, mendistribusikan, melakukan rekayasa balik, atau memanfaatkan secara komersial kode sumber, gambar, audio, atau konten lain dari Aplikasi tanpa izin."
+        ]
+      },
+      {
+        "h": "3. Sifat layanan",
+        "p": [
+          "Fitur inti Aplikasi berjalan secara offline; internet hanya digunakan, secara opsional, untuk menampilkan cuaca (jika tidak dapat diunduh, cuaca cerah akan ditampilkan). Data game disimpan di perangkat Anda. Data dapat hilang jika Anda berganti perangkat, menghapus Aplikasi, atau mengatur ulang perangkat, dan kami mungkin tidak dapat memulihkannya."
+        ]
+      },
+      {
+        "h": "4. Informasi cuaca",
+        "p": [
+          "Cuaca yang ditampilkan di Aplikasi merupakan informasi acuan yang digunakan untuk suasana dan aturan game (modifikasi pertempuran). Kami tidak menjamin bahwa cuaca tersebut sesuai dengan kondisi cuaca sebenarnya atau akan selalu tersedia. Jika informasi cuaca tidak ada atau sudah usang, cuaca cerah dapat digunakan.",
+          "Data cuaca: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "5. Perubahan dan penghentian",
+        "p": [
+          "Kami dapat menyempurnakan atau mengubah fitur Aplikasi, atau menghentikan penyediaannya. Perubahan penting akan diumumkan di deskripsi App Store atau di situs ini."
+        ]
+      },
+      {
+        "h": "6. Penafian",
+        "p": [
+          "Aplikasi disediakan apa adanya. Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian tidak langsung atau insidental yang timbul dari penggunaan Aplikasi. Aplikasi adalah karya kreatif yang terinspirasi dari era Tiga Kerajaan Korea dan dapat berbeda dari fakta sejarah."
+        ]
+      },
+      {
+        "h": "7. Hukum yang berlaku dan kontak",
+        "p": [
+          "Ketentuan ini tunduk pada hukum Republik Korea. Kontak: {mail}"
+        ]
+      }
     ]
   },
   "support": {
@@ -74,13 +164,30 @@
     "callout_label": "Kontak",
     "callout_note": "Kami berusaha membalas dalam beberapa hari kerja.",
     "tips_h": "Detail yang membantu untuk disertakan",
-    "tips": ["Model perangkat dan versi iOS Anda", "Versi aplikasi (Pengaturan → Umum → Penyimpanan iPhone → Iltonggi)", "Apa yang terjadi saat masalah muncul, disertai tangkapan layar jika ada"],
+    "tips": [
+      "Model perangkat dan versi iOS Anda",
+      "Versi aplikasi (Pengaturan → Umum → Penyimpanan iPhone → Iltonggi)",
+      "Apa yang terjadi saat masalah muncul, disertai tangkapan layar jika ada"
+    ],
     "faq_h": "Pertanyaan yang sering diajukan",
     "faq": [
-      ["Di mana progres saya disimpan?", "Hanya di perangkat Anda. Progres dapat hilang jika Anda menghapus Aplikasi atau berganti perangkat."],
-      ["Apakah ada versi Android?", "Kami merilis untuk iPhone lebih dulu. Kabar tentang platform lain akan kami sampaikan nanti."],
-      ["Apakah kalian mengumpulkan informasi pribadi?", "Tidak. Untuk rinciannya, lihat [[privacy]]."]
+      [
+        "Di mana progres saya disimpan?",
+        "Hanya di perangkat Anda. Progres dapat hilang jika Anda menghapus Aplikasi atau berganti perangkat."
+      ],
+      [
+        "Apakah ada versi Android?",
+        "Kami merilis untuk iPhone lebih dulu. Kabar tentang platform lain akan kami sampaikan nanti."
+      ],
+      [
+        "Apakah kalian mengumpulkan informasi pribadi?",
+        "Tidak. Untuk rinciannya, lihat [[privacy]]."
+      ]
     ]
   },
-  "nf": {"title": "Halaman tidak ditemukan", "desc": "Halaman ini tidak ada di iltonggi.ipe.rest.", "text": "Halaman yang Anda cari tidak ada di sini. Mungkin sudah dipindahkan, atau alamatnya salah ketik."}
+  "nf": {
+    "title": "Halaman tidak ditemukan",
+    "desc": "Halaman ini tidak ada di iltonggi.ipe.rest.",
+    "text": "Halaman yang Anda cari tidak ada di sini. Mungkin sudah dipindahkan, atau alamatnya salah ketik."
+  }
 }

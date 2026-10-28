@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">Saltar al contenido</a>
@@ -64,29 +64,35 @@
       <p>Iltonggi («la App») es un juego móvil operado por un desarrollador independiente, Davy Kim (ipe Studio). La App no tiene cuentas ni inicio de sesión, y no recopila ni envía a ningún servidor información personal como tu nombre, correo electrónico, datos de contacto, ubicación o identificadores del dispositivo. Tu progreso y tus ajustes se guardan solo en tu dispositivo y se eliminan al borrar la App.</p>
       <p>La App no contiene publicidad, analítica ni SDK de seguimiento.</p>
 
-      <h2>2. El sitio web</h2>
+      <h2>2. Información meteorológica</h2>
+      <p>Para mostrar el tiempo de la región, la App descarga un archivo público (weather.json) de iltonggi.ipe.rest siempre que tiene conexión a internet. El archivo reúne cada hora el tiempo de las 24 localidades del juego y es el mismo para todos los usuarios. Al hacerlo, la App no envía ninguna información personal (ni ubicación, ni identificador de dispositivo, ni datos de juego) y tampoco se conecta directamente a ningún proveedor meteorológico.</p>
+      <p>Como ocurre con cualquier solicitud web normal, el registro del servidor de nuestro alojamiento (GitHub Pages) puede guardar la dirección IP de tu dispositivo; nosotros no recopilamos ni usamos ese registro. Si no se puede descargar el tiempo (por ejemplo, sin conexión), la App muestra tiempo despejado y el juego funciona con normalidad. El último tiempo recibido se guarda temporalmente en tu dispositivo y se elimina cuando eliminas la App.</p>
+      <p>Datos meteorológicos: MET Norway (CC BY 4.0).</p>
+
+      <h2>3. El sitio web</h2>
       <p>El sitio web iltonggi.ipe.rest no usa cookies ni incluye etiquetas de analítica o publicidad. Las fuentes se cargan desde Google Fonts, por lo que la información habitual de las solicitudes web (como tu dirección IP) puede enviarse a Google. El sitio está alojado en GitHub Pages y se aplican las políticas de registros de servidor de GitHub.</p>
 
-      <h2>3. Terceros</h2>
+      <h2>4. Terceros</h2>
       <p>Como no recopilamos información personal, no tenemos nada que compartir con terceros ni vender. La App se distribuye a través de la Apple App Store; la información relacionada con las descargas la gestiona Apple conforme a su política de privacidad.</p>
+      <p>Los datos meteorológicos los proporciona MET Norway. Los obtenemos nosotros y los publicamos como archivo público, por lo que ninguna información de los usuarios de la App se transmite a MET Norway.</p>
 
-      <h2>4. Consultas y tus derechos</h2>
+      <h2>5. Consultas y tus derechos</h2>
       <p>Para solicitar el acceso, la rectificación, la supresión o la suspensión del tratamiento de tu información personal, o para hacer cualquier consulta, escribe a <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>. Ten en cuenta que, como no conservamos información personal, puede que no haya nada sobre lo que actuar.</p>
 
-      <h2>5. Menores</h2>
+      <h2>6. Menores</h2>
       <p>La App no está dirigida a menores de 14 años (o de la edad mínima en tu región) y no recopila información personal de ningún usuario.</p>
 
-      <h2>6. Responsable de privacidad</h2>
+      <h2>7. Responsable de privacidad</h2>
       <p>Nombre: Davy Kim (ipe Studio) · Contacto: <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. Vías de recurso (Corea)</h2>
+      <h2>8. Vías de recurso (Corea)</h2>
       <ul>
         <li>Comité de Mediación de Disputas sobre Información Personal (Corea): 1833-6972 · kopico.go.kr</li>
         <li>Centro de Denuncias por Vulneración de Información Personal (Corea): 118 · privacy.kisa.or.kr</li>
         <li>División de Ciberdelincuencia de la Fiscalía Suprema (Corea): 1301 · Oficina de Cibercrimen de la Policía Nacional (Corea): 182</li>
       </ul>
 
-      <h2>8. Cambios</h2>
+      <h2>9. Cambios</h2>
       <p>Si en el futuro la App añade cuentas, pagos o funciones en línea que cambien la información recopilada, actualizaremos primero esta política y modificaremos la fecha de entrada en vigor.</p>
 
       <div class="doc__links"><a href="/es/">← Inicio de Iltonggi</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Enlaces legales">
       <a href="/es/privacy/">Política de privacidad</a>

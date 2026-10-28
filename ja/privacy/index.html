@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">本文へスキップ</a>
@@ -64,29 +64,35 @@
       <p>一統記(以下「本アプリ」)は、個人開発者であるDavy Kim (ipe Studio)が運営するモバイルゲームです。本アプリにはアカウントやログイン機能がなく、お名前、メールアドレス、連絡先、位置情報、端末識別子などの個人情報を収集することも、サーバーへ送信することもありません。ゲームの進行状況や設定はお使いの端末にのみ保存され、本アプリを削除すると消去されます。</p>
       <p>本アプリには、広告、分析、トラッキングのSDKは含まれていません。</p>
 
-      <h2>2. ウェブサイト</h2>
+      <h2>2. 天気情報</h2>
+      <p>本アプリは地域の天気を表示するため、インターネットに接続されているときに iltonggi.ipe.rest の公開ファイル(weather.json)をダウンロードします。このファイルはゲーム内の24の町の天気を1時間ごとにまとめたもので、すべてのユーザーに共通です。その際、本アプリは位置情報、端末識別子、ゲームデータなどの個人情報を一切送信せず、天気の提供元に直接接続することもありません。</p>
+      <p>ただし、ファイルをダウンロードする一般的なウェブリクエストの性質上、ホスティング(GitHub Pages)のサーバーログにお使いの端末のIPアドレスが記録されることがありますが、当方はこのログを収集も利用もしません。天気を取得できない場合(オフラインなど)は晴れとして表示され、ゲームは通常どおり動作します。最後に取得した天気は端末に一時的に保存され、本アプリを削除すると一緒に削除されます。</p>
+      <p>天気データの出典: MET Norway (CC BY 4.0)。</p>
+
+      <h2>3. ウェブサイト</h2>
       <p>iltonggi.ipe.restのウェブサイトはCookieを使用せず、分析タグや広告タグも含まれていません。フォントはGoogle Fontsから読み込まれるため、通常のウェブリクエスト情報(IPアドレスなど)がGoogleに送信される場合があります。本サイトはGitHub Pagesでホスティングされており、GitHubのサーバーログに関する方針が適用されます。</p>
 
-      <h2>3. 第三者</h2>
+      <h2>4. 第三者</h2>
       <p>個人情報を収集しないため、第三者に提供または販売する情報はありません。本アプリはApple App Storeを通じて配信されており、ダウンロードに関する情報はAppleのプライバシーポリシーに基づいてAppleが取り扱います。</p>
+      <p>天気データはMET Norwayが提供しており、当方が代わりに取得して公開ファイルとして掲載するため、本アプリのユーザーの情報がMET Norwayに送られることはありません。</p>
 
-      <h2>4. お問い合わせと権利</h2>
+      <h2>5. お問い合わせと権利</h2>
       <p>個人情報の開示、訂正、削除、処理の停止を請求される場合、またはご質問がある場合は、<a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>までご連絡ください。なお、個人情報を保有していないため、対応すべき対象がない場合があります。</p>
 
-      <h2>5. 児童</h2>
+      <h2>6. 児童</h2>
       <p>本アプリは14歳未満(またはお住まいの地域の最低年齢未満)のお子様を対象としておらず、いかなる利用者からも個人情報を収集しません。</p>
 
-      <h2>6. 個人情報保護責任者</h2>
+      <h2>7. 個人情報保護責任者</h2>
       <p>氏名:Davy Kim (ipe Studio) · 連絡先:<a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. 救済手段(韓国)</h2>
+      <h2>8. 救済手段(韓国)</h2>
       <ul>
         <li>個人情報紛争調停委員会(韓国):1833-6972 · kopico.go.kr</li>
         <li>個人情報侵害申告センター(韓国):118 · privacy.kisa.or.kr</li>
         <li>最高検察庁サイバー犯罪捜査課(韓国):1301 · 警察庁サイバー捜査局(韓国):182</li>
       </ul>
 
-      <h2>8. 変更</h2>
+      <h2>9. 変更</h2>
       <p>今後、本アプリにアカウント、決済、または収集される情報が変わるオンライン機能を追加する場合は、事前に本ポリシーを更新し、施行日を変更します。</p>
 
       <div class="doc__links"><a href="/ja/">← 一統記ホーム</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="法的情報リンク">
       <a href="/ja/privacy/">プライバシーポリシー</a>

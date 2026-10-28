@@ -1,0 +1,174 @@
+{
+ "v": 1,
+ "note": "일통기 1막 24개 고을의 대표 좌표(현재의 가까운 도시 기준 근사값). 서버(scripts/fetch_weather.py)와 앱이 함께 쓰는 정본. id 는 ASCII 로 고정 — 이름·좌표를 고쳐도 id 는 바꾸지 않는다.",
+ "regions": [
+  {
+   "id": "yodongseong",
+   "name": "요동성",
+   "lat": 41.267,
+   "lon": 123.17,
+   "tz": "Asia/Shanghai"
+  },
+  {
+   "id": "ansiseong",
+   "name": "안시성",
+   "lat": 40.88,
+   "lon": 122.7,
+   "tz": "Asia/Shanghai"
+  },
+  {
+   "id": "jolbon",
+   "name": "졸본",
+   "lat": 41.27,
+   "lon": 125.36,
+   "tz": "Asia/Shanghai"
+  },
+  {
+   "id": "gungnaeseong",
+   "name": "국내성",
+   "lat": 41.13,
+   "lon": 126.19,
+   "tz": "Asia/Shanghai"
+  },
+  {
+   "id": "chaekseong",
+   "name": "책성",
+   "lat": 42.87,
+   "lon": 130.36,
+   "tz": "Asia/Shanghai"
+  },
+  {
+   "id": "pyeongyang",
+   "name": "평양",
+   "lat": 39.0392,
+   "lon": 125.7625,
+   "tz": "Asia/Pyongyang"
+  },
+  {
+   "id": "nampyeongyang",
+   "name": "남평양",
+   "lat": 38.51,
+   "lon": 125.76,
+   "tz": "Asia/Pyongyang"
+  },
+  {
+   "id": "biyeolhol",
+   "name": "비열홀",
+   "lat": 39.15,
+   "lon": 127.45,
+   "tz": "Asia/Pyongyang"
+  },
+  {
+   "id": "michuhol",
+   "name": "미추홀",
+   "lat": 37.4563,
+   "lon": 126.7052,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "hanseong",
+   "name": "한성",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "gugwonseong",
+   "name": "국원성",
+   "lat": 36.991,
+   "lon": 127.9259,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "haseulla",
+   "name": "하슬라",
+   "lat": 37.7519,
+   "lon": 128.8761,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "siljik",
+   "name": "실직",
+   "lat": 37.45,
+   "lon": 129.165,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "ungjin",
+   "name": "웅진",
+   "lat": 36.455,
+   "lon": 127.119,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "sabi",
+   "name": "사비",
+   "lat": 36.275,
+   "lon": 126.91,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "samnyeonsanseong",
+   "name": "삼년산성",
+   "lat": 36.489,
+   "lon": 127.729,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "dalgubeol",
+   "name": "달구벌",
+   "lat": 35.8714,
+   "lon": 128.6014,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "seorabeol",
+   "name": "서라벌",
+   "lat": 35.8562,
+   "lon": 129.2247,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "wansan",
+   "name": "완산",
+   "lat": 35.8242,
+   "lon": 127.148,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "daegaya",
+   "name": "대가야",
+   "lat": 35.726,
+   "lon": 128.263,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "mujin",
+   "name": "무진",
+   "lat": 35.1595,
+   "lon": 126.8526,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "aragaya",
+   "name": "아라가야",
+   "lat": 35.2723,
+   "lon": 128.4065,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "geumgwangaya",
+   "name": "금관가야",
+   "lat": 35.2285,
+   "lon": 128.8894,
+   "tz": "Asia/Seoul"
+  },
+  {
+   "id": "tamna",
+   "name": "탐라",
+   "lat": 33.4996,
+   "lon": 126.5312,
+   "tz": "Asia/Seoul"
+  }
+ ]
+}

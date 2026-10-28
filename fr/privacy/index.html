@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">Aller au contenu</a>
@@ -64,29 +64,35 @@
       <p>Iltonggi (« l&#x27;Application ») est un jeu mobile exploité par un développeur indépendant, Davy Kim (ipe Studio). L&#x27;Application n&#x27;a ni compte ni connexion, et ne collecte ni n&#x27;envoie à aucun serveur de données personnelles telles que votre nom, e-mail, coordonnées, localisation ou identifiants d&#x27;appareil. Votre progression et vos réglages sont stockés uniquement sur votre appareil et sont supprimés lorsque vous supprimez l&#x27;Application.</p>
       <p>L&#x27;Application ne contient aucune publicité, aucun outil d&#x27;analyse ni aucun SDK de suivi.</p>
 
-      <h2>2. Le site web</h2>
+      <h2>2. Informations météo</h2>
+      <p>Pour afficher la météo régionale, l&#x27;Application télécharge un fichier public (weather.json) depuis iltonggi.ipe.rest dès qu&#x27;elle est connectée à Internet. Ce fichier rassemble une fois par heure la météo des 24 villes du jeu et est identique pour tous les utilisateurs. L&#x27;Application n&#x27;envoie alors aucune donnée personnelle — ni localisation, ni identifiant d&#x27;appareil, ni données de jeu — et ne contacte directement aucun fournisseur de données météo.</p>
+      <p>Comme pour toute requête web ordinaire, le journal du serveur de notre hébergeur (GitHub Pages) peut enregistrer l&#x27;adresse IP de votre appareil ; nous ne collectons ni n&#x27;utilisons ce journal. Si la météo ne peut pas être téléchargée (par exemple hors ligne), l&#x27;Application affiche un temps dégagé et le jeu fonctionne normalement. La dernière météo reçue est stockée temporairement sur votre appareil et supprimée lorsque vous supprimez l&#x27;Application.</p>
+      <p>Source des données météo : MET Norway (CC BY 4.0).</p>
+
+      <h2>3. Le site web</h2>
       <p>Le site iltonggi.ipe.rest n&#x27;utilise aucun cookie et ne comporte aucune balise d&#x27;analyse ou de publicité. Les polices sont chargées depuis Google Fonts ; les informations d&#x27;une requête web ordinaire (comme votre adresse IP) peuvent donc être transmises à Google. Le site est hébergé sur GitHub Pages et les politiques de journaux de serveur de GitHub s&#x27;appliquent.</p>
 
-      <h2>3. Tiers</h2>
+      <h2>4. Tiers</h2>
       <p>Comme nous ne collectons aucune donnée personnelle, nous n&#x27;avons rien à partager avec des tiers ni à leur vendre. L&#x27;Application est distribuée via l&#x27;Apple App Store ; les informations liées aux téléchargements sont traitées par Apple conformément à la politique de confidentialité d&#x27;Apple.</p>
+      <p>Les données météo sont fournies par MET Norway. Nous les récupérons nous-mêmes et les publions sous forme de fichier public ; aucune information sur les utilisateurs de l&#x27;Application n&#x27;est donc transmise à MET Norway.</p>
 
-      <h2>4. Questions et vos droits</h2>
+      <h2>5. Questions et vos droits</h2>
       <p>Pour demander l&#x27;accès à vos données personnelles, leur rectification, leur suppression ou la suspension de leur traitement, ou pour poser toute question, écrivez à <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>. Notez que, comme nous ne détenons aucune donnée personnelle, il se peut qu&#x27;il n&#x27;y ait rien à traiter.</p>
 
-      <h2>5. Enfants</h2>
+      <h2>6. Enfants</h2>
       <p>L&#x27;Application ne s&#x27;adresse pas aux enfants de moins de 14 ans (ou à l&#x27;âge minimum applicable dans votre région) et ne collecte de données personnelles auprès d&#x27;aucun utilisateur.</p>
 
-      <h2>6. Responsable de la protection des données</h2>
+      <h2>7. Responsable de la protection des données</h2>
       <p>Nom : Davy Kim (ipe Studio) · Contact : <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. Recours (Corée)</h2>
+      <h2>8. Recours (Corée)</h2>
       <ul>
         <li>Comité de médiation des litiges relatifs aux données personnelles (Corée) : 1833-6972 · kopico.go.kr</li>
         <li>Centre de signalement des atteintes aux données personnelles (Corée) : 118 · privacy.kisa.or.kr</li>
         <li>Division de la cybercriminalité du Parquet suprême (Corée) : 1301 · Bureau de la cybercriminalité de l&#x27;Agence nationale de police (Corée) : 182</li>
       </ul>
 
-      <h2>8. Modifications</h2>
+      <h2>9. Modifications</h2>
       <p>Si l&#x27;Application ajoute ultérieurement des comptes, des paiements ou des fonctions en ligne qui modifient les données collectées, nous mettrons d&#x27;abord à jour cette politique et changerons la date d&#x27;entrée en vigueur.</p>
 
       <div class="doc__links"><a href="/fr/">← Accueil Iltonggi</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Liens juridiques">
       <a href="/fr/privacy/">Politique de confidentialité</a>

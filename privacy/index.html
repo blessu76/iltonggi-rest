@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -64,29 +64,35 @@
       <p>Iltonggi (&quot;the App&quot;) is a mobile game operated by an individual developer, Davy Kim (ipe Studio). The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress and settings are stored only on your device and are deleted when you delete the App.</p>
       <p>The App contains no advertising, analytics or tracking SDKs.</p>
 
-      <h2>2. The website</h2>
+      <h2>2. Weather information</h2>
+      <p>To show regional weather, the App downloads a public file (weather.json) from iltonggi.ipe.rest whenever it is online. The file collects the weather for the 24 towns in the game once an hour and is the same for every user. The App sends no personal information in doing so — no location, device identifier or game data — and it does not contact any weather provider directly.</p>
+      <p>As with any ordinary web request, the server log of our host (GitHub Pages) may record your device&#x27;s IP address; we do not collect or use that log. If the weather cannot be downloaded (for example, offline), the App shows clear weather and the game works normally. The last weather received is stored temporarily on your device and is deleted when you delete the App.</p>
+      <p>Weather data: MET Norway (CC BY 4.0).</p>
+
+      <h2>3. The website</h2>
       <p>The iltonggi.ipe.rest website uses no cookies and includes no analytics or advertising tags. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub&#x27;s server-log policies apply.</p>
 
-      <h2>3. Third parties</h2>
+      <h2>4. Third parties</h2>
       <p>Because we collect no personal information, we have nothing to share with or sell to third parties. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple&#x27;s privacy policy.</p>
+      <p>Weather data is provided by MET Norway. We fetch it ourselves and publish it as a public file, so no information about App users is passed to MET Norway.</p>
 
-      <h2>4. Questions and your rights</h2>
+      <h2>5. Questions and your rights</h2>
       <p>To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>. Note that because we hold no personal information, there may be nothing to act on.</p>
 
-      <h2>5. Children</h2>
+      <h2>6. Children</h2>
       <p>The App is not directed to children under 14 (or the minimum age in your region), and it collects no personal information from any user.</p>
 
-      <h2>6. Privacy officer</h2>
+      <h2>7. Privacy officer</h2>
       <p>Name: Davy Kim (ipe Studio) · Contact: <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. Remedies (Korea)</h2>
+      <h2>8. Remedies (Korea)</h2>
       <ul>
         <li>Personal Information Dispute Mediation Committee: 1833-6972 · kopico.go.kr</li>
         <li>Personal Information Infringement Report Center: 118 · privacy.kisa.or.kr</li>
         <li>Supreme Prosecutors&#x27; Office Cybercrime Division: 1301 · National Police Agency Cyber Bureau: 182</li>
       </ul>
 
-      <h2>8. Changes</h2>
+      <h2>9. Changes</h2>
       <p>If the App later adds accounts, payments or online features that change what is collected, we will update this policy first and change the effective date.</p>
 
       <div class="doc__links"><a href="/">← Iltonggi home</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Legal links">
       <a href="/privacy/">Privacy Policy</a>

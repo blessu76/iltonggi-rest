@@ -11,12 +11,24 @@
   "see_shots": "Das Spiel ansehen",
   "feat_title": "Kurze Runden, scharfe Strategie",
   "features": [
-    ["Eine schnelle Runde", "Ein Tempo, das sich leicht starten und beenden lässt – auch auf dem Arbeitsweg."],
-    ["Die Karte der Drei Reiche", "Eroberung und Expansion auf einer Karte in Schrägansicht auf einen Blick erfassen."],
-    ["Farben für jedes Reich", "Die Farben von Goguryeo, Baekje, Silla und Gaya helfen Ihnen, das Schlachtfeld zu lesen."]
+    [
+      "Eine schnelle Runde",
+      "Ein Tempo, das sich leicht starten und beenden lässt – auch auf dem Arbeitsweg."
+    ],
+    [
+      "Die Karte der Drei Reiche",
+      "Eroberung und Expansion auf einer Karte in Schrägansicht auf einen Blick erfassen."
+    ],
+    [
+      "Farben für jedes Reich",
+      "Die Farben von Goguryeo, Baekje, Silla und Gaya helfen Ihnen, das Schlachtfeld zu lesen."
+    ]
   ],
   "shots_title": "Screenshots",
-  "shot_alts": ["Kampfbildschirm auf der Karte", "Marschbildschirm"],
+  "shot_alts": [
+    "Kampfbildschirm auf der Karte",
+    "Marschbildschirm"
+  ],
   "skip": "Zum Inhalt springen",
   "home_aria": "Iltonggi-Startseite",
   "nav_aria": "Hauptlinks",
@@ -34,37 +46,115 @@
     "callout_label": "Kurz gesagt:",
     "callout": "Die Iltonggi-App und diese Website erheben keine personenbezogenen Daten von Ihnen.",
     "sections": [
-      {"h": "1. Erhobene Daten — keine", "p": [
-        "Iltonggi („die App“) ist ein Mobilspiel, das von einem Einzelentwickler, Davy Kim (ipe Studio), betrieben wird. Die App hat weder Konten noch eine Anmeldung und erhebt keine personenbezogenen Daten wie Name, E-Mail-Adresse, Kontaktdaten, Standort oder Geräte-Kennungen und sendet solche auch nicht an einen Server. Ihr Spielfortschritt und Ihre Einstellungen werden nur auf Ihrem Gerät gespeichert und gelöscht, wenn Sie die App löschen.",
-        "Die App enthält keine Werbung, keine Analyse- und keine Tracking-SDKs."]},
-      {"h": "2. Die Website", "p": [
-        "Die Website iltonggi.ipe.rest verwendet keine Cookies und enthält keine Analyse- oder Werbe-Tags. Schriftarten werden von Google Fonts geladen, daher können übliche Informationen einer Webanfrage (etwa Ihre IP-Adresse) an Google übermittelt werden. Die Website wird auf GitHub Pages gehostet; es gelten die Server-Protokoll-Richtlinien von GitHub."]},
-      {"h": "3. Dritte", "p": [
-        "Da wir keine personenbezogenen Daten erheben, haben wir nichts an Dritte weiterzugeben oder zu verkaufen. Die App wird über den Apple App Store vertrieben; Informationen im Zusammenhang mit Downloads werden von Apple gemäß der Datenschutzerklärung von Apple verarbeitet."]},
-      {"h": "4. Fragen und Ihre Rechte", "p": [
-        "Wenn Sie Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen oder eine Frage stellen möchten, schreiben Sie an {mail}. Bitte beachten Sie: Da wir keine personenbezogenen Daten speichern, gibt es möglicherweise nichts zu bearbeiten."]},
-      {"h": "5. Kinder", "p": [
-        "Die App richtet sich nicht an Kinder unter 14 Jahren (bzw. unter dem in Ihrer Region geltenden Mindestalter) und erhebt von keinem Nutzer personenbezogene Daten."]},
-      {"h": "6. Datenschutzbeauftragter", "p": [
-        "Name: Davy Kim (ipe Studio) · Kontakt: {mail}"]},
-      {"h": "7. Rechtsbehelfe (Korea)", "p": [
-        "- Schlichtungsausschuss für Streitigkeiten über personenbezogene Daten (Korea): 1833-6972 · kopico.go.kr",
-        "- Meldestelle für Verletzungen personenbezogener Daten (Korea): 118 · privacy.kisa.or.kr",
-        "- Abteilung für Cyberkriminalität der Obersten Staatsanwaltschaft (Korea): 1301 · Cyber-Büro der Nationalen Polizeibehörde (Korea): 182"]},
-      {"h": "8. Änderungen", "p": [
-        "Falls die App später Konten, Zahlungen oder Online-Funktionen erhält, die ändern, was erhoben wird, aktualisieren wir zuerst diese Erklärung und ändern das Datum des Inkrafttretens."]}
+      {
+        "h": "1. Erhobene Daten — keine",
+        "p": [
+          "Iltonggi („die App“) ist ein Mobilspiel, das von einem Einzelentwickler, Davy Kim (ipe Studio), betrieben wird. Die App hat weder Konten noch eine Anmeldung und erhebt keine personenbezogenen Daten wie Name, E-Mail-Adresse, Kontaktdaten, Standort oder Geräte-Kennungen und sendet solche auch nicht an einen Server. Ihr Spielfortschritt und Ihre Einstellungen werden nur auf Ihrem Gerät gespeichert und gelöscht, wenn Sie die App löschen.",
+          "Die App enthält keine Werbung, keine Analyse- und keine Tracking-SDKs."
+        ]
+      },
+      {
+        "h": "2. Wetterinformationen",
+        "p": [
+          "Um das Wetter der Region anzuzeigen, lädt die App bei bestehender Internetverbindung eine öffentliche Datei (weather.json) von iltonggi.ipe.rest herunter. Die Datei fasst einmal pro Stunde das Wetter der 24 Städte im Spiel zusammen und ist für alle Nutzer gleich. Dabei sendet die App keinerlei personenbezogene Daten – weder Standort noch Geräte-Kennung oder Spieldaten – und kontaktiert keinen Wetterdienst direkt.",
+          "Wie bei jeder gewöhnlichen Webanfrage kann das Server-Protokoll unseres Hosters (GitHub Pages) die IP-Adresse Ihres Geräts erfassen; wir erheben oder nutzen dieses Protokoll nicht. Kann das Wetter nicht heruntergeladen werden (z. B. offline), zeigt die App klares Wetter an und das Spiel funktioniert normal. Das zuletzt empfangene Wetter wird vorübergehend auf Ihrem Gerät gespeichert und beim Löschen der App ebenfalls gelöscht.",
+          "Wetterdaten: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "3. Die Website",
+        "p": [
+          "Die Website iltonggi.ipe.rest verwendet keine Cookies und enthält keine Analyse- oder Werbe-Tags. Schriftarten werden von Google Fonts geladen, daher können übliche Informationen einer Webanfrage (etwa Ihre IP-Adresse) an Google übermittelt werden. Die Website wird auf GitHub Pages gehostet; es gelten die Server-Protokoll-Richtlinien von GitHub."
+        ]
+      },
+      {
+        "h": "4. Dritte",
+        "p": [
+          "Da wir keine personenbezogenen Daten erheben, haben wir nichts an Dritte weiterzugeben oder zu verkaufen. Die App wird über den Apple App Store vertrieben; Informationen im Zusammenhang mit Downloads werden von Apple gemäß der Datenschutzerklärung von Apple verarbeitet.",
+          "Die Wetterdaten stammen von MET Norway. Wir rufen sie selbst ab und veröffentlichen sie als öffentliche Datei, sodass keine Informationen über App-Nutzer an MET Norway weitergegeben werden."
+        ]
+      },
+      {
+        "h": "5. Fragen und Ihre Rechte",
+        "p": [
+          "Wenn Sie Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen oder eine Frage stellen möchten, schreiben Sie an {mail}. Bitte beachten Sie: Da wir keine personenbezogenen Daten speichern, gibt es möglicherweise nichts zu bearbeiten."
+        ]
+      },
+      {
+        "h": "6. Kinder",
+        "p": [
+          "Die App richtet sich nicht an Kinder unter 14 Jahren (bzw. unter dem in Ihrer Region geltenden Mindestalter) und erhebt von keinem Nutzer personenbezogene Daten."
+        ]
+      },
+      {
+        "h": "7. Datenschutzbeauftragter",
+        "p": [
+          "Name: Davy Kim (ipe Studio) · Kontakt: {mail}"
+        ]
+      },
+      {
+        "h": "8. Rechtsbehelfe (Korea)",
+        "p": [
+          "- Schlichtungsausschuss für Streitigkeiten über personenbezogene Daten (Korea): 1833-6972 · kopico.go.kr",
+          "- Meldestelle für Verletzungen personenbezogener Daten (Korea): 118 · privacy.kisa.or.kr",
+          "- Abteilung für Cyberkriminalität der Obersten Staatsanwaltschaft (Korea): 1301 · Cyber-Büro der Nationalen Polizeibehörde (Korea): 182"
+        ]
+      },
+      {
+        "h": "9. Änderungen",
+        "p": [
+          "Falls die App später Konten, Zahlungen oder Online-Funktionen erhält, die ändern, was erhoben wird, aktualisieren wir zuerst diese Erklärung und ändern das Datum des Inkrafttretens."
+        ]
+      }
     ]
   },
   "terms": {
     "title": "Nutzungsbedingungen",
     "desc": "Nutzungsbedingungen für Iltonggi (일통기 · 一統記).",
     "sections": [
-      {"h": "1. Zweck", "p": ["Diese Bedingungen legen die Voraussetzungen für die Nutzung des Mobilspiels „Iltonggi“ („die App“) fest, das von Davy Kim (ipe Studio) bereitgestellt wird."]},
-      {"h": "2. Lizenz", "p": ["Sie dürfen die App für persönliche, nicht kommerzielle Zwecke auf Ihrem Gerät installieren und nutzen. Ohne Erlaubnis dürfen Sie den Quellcode, die Bilder, die Audioinhalte oder sonstige Inhalte der App weder kopieren, verbreiten, zurückentwickeln noch kommerziell verwerten."]},
-      {"h": "3. Art des Dienstes", "p": ["Die App ist ein Spiel, das offline läuft; Spieldaten werden auf Ihrem Gerät gespeichert. Daten können verloren gehen, wenn Sie das Gerät wechseln, die App löschen oder das Gerät zurücksetzen, und wir können sie möglicherweise nicht wiederherstellen."]},
-      {"h": "4. Änderungen und Einstellung", "p": ["Wir dürfen die Funktionen der App verbessern oder ändern oder ihr Angebot einstellen. Wichtige Änderungen werden in der App-Store-Beschreibung oder auf dieser Website bekannt gegeben."]},
-      {"h": "5. Haftungsausschluss", "p": ["Die App wird in der vorliegenden Form bereitgestellt. Soweit gesetzlich zulässig, haften wir nicht für mittelbare oder Begleitschäden, die aus Ihrer Nutzung der App entstehen. Die App ist ein kreatives Werk, das vom Zeitalter der Drei Reiche Koreas inspiriert ist und von den historischen Tatsachen abweichen kann."]},
-      {"h": "6. Anwendbares Recht und Kontakt", "p": ["Diese Bedingungen unterliegen dem Recht der Republik Korea. Kontakt: {mail}"]}
+      {
+        "h": "1. Zweck",
+        "p": [
+          "Diese Bedingungen legen die Voraussetzungen für die Nutzung des Mobilspiels „Iltonggi“ („die App“) fest, das von Davy Kim (ipe Studio) bereitgestellt wird."
+        ]
+      },
+      {
+        "h": "2. Lizenz",
+        "p": [
+          "Sie dürfen die App für persönliche, nicht kommerzielle Zwecke auf Ihrem Gerät installieren und nutzen. Ohne Erlaubnis dürfen Sie den Quellcode, die Bilder, die Audioinhalte oder sonstige Inhalte der App weder kopieren, verbreiten, zurückentwickeln noch kommerziell verwerten."
+        ]
+      },
+      {
+        "h": "3. Art des Dienstes",
+        "p": [
+          "Die Kernfunktionen der App laufen offline; das Internet wird nur optional für die Wetteranzeige genutzt (kann das Wetter nicht heruntergeladen werden, wird klares Wetter angezeigt). Spieldaten werden auf Ihrem Gerät gespeichert. Daten können verloren gehen, wenn Sie das Gerät wechseln, die App löschen oder das Gerät zurücksetzen, und wir können sie möglicherweise nicht wiederherstellen."
+        ]
+      },
+      {
+        "h": "4. Wetterinformationen",
+        "p": [
+          "Das in der App angezeigte Wetter ist eine Referenzinformation, die für die Inszenierung und die Regeln des Spiels (Kampfmodifikatoren) verwendet wird. Wir übernehmen keine Gewähr dafür, dass es mit den tatsächlichen Wetterverhältnissen übereinstimmt oder stets verfügbar ist. Fehlen die Wetterinformationen oder sind sie veraltet, kann klares Wetter verwendet werden.",
+          "Wetterdaten: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "5. Änderungen und Einstellung",
+        "p": [
+          "Wir dürfen die Funktionen der App verbessern oder ändern oder ihr Angebot einstellen. Wichtige Änderungen werden in der App-Store-Beschreibung oder auf dieser Website bekannt gegeben."
+        ]
+      },
+      {
+        "h": "6. Haftungsausschluss",
+        "p": [
+          "Die App wird in der vorliegenden Form bereitgestellt. Soweit gesetzlich zulässig, haften wir nicht für mittelbare oder Begleitschäden, die aus Ihrer Nutzung der App entstehen. Die App ist ein kreatives Werk, das vom Zeitalter der Drei Reiche Koreas inspiriert ist und von den historischen Tatsachen abweichen kann."
+        ]
+      },
+      {
+        "h": "7. Anwendbares Recht und Kontakt",
+        "p": [
+          "Diese Bedingungen unterliegen dem Recht der Republik Korea. Kontakt: {mail}"
+        ]
+      }
     ]
   },
   "support": {
@@ -74,13 +164,30 @@
     "callout_label": "Kontakt",
     "callout_note": "Wir bemühen uns, innerhalb weniger Werktage zu antworten.",
     "tips_h": "Hilfreiche Angaben",
-    "tips": ["Ihr Gerätemodell und Ihre iOS-Version", "App-Version (Einstellungen → Allgemein → iPhone-Speicher → Iltonggi)", "Was geschah, als das Problem auftrat – wenn möglich mit Screenshot"],
+    "tips": [
+      "Ihr Gerätemodell und Ihre iOS-Version",
+      "App-Version (Einstellungen → Allgemein → iPhone-Speicher → Iltonggi)",
+      "Was geschah, als das Problem auftrat – wenn möglich mit Screenshot"
+    ],
     "faq_h": "Häufig gestellte Fragen",
     "faq": [
-      ["Wo wird mein Fortschritt gespeichert?", "Nur auf Ihrem Gerät. Er kann verloren gehen, wenn Sie die App löschen oder das Gerät wechseln."],
-      ["Gibt es eine Android-Version?", "Wir veröffentlichen zuerst für das iPhone. Neuigkeiten zu anderen Plattformen teilen wir später mit."],
-      ["Erheben Sie personenbezogene Daten?", "Nein. Details finden Sie in der [[privacy]]."]
+      [
+        "Wo wird mein Fortschritt gespeichert?",
+        "Nur auf Ihrem Gerät. Er kann verloren gehen, wenn Sie die App löschen oder das Gerät wechseln."
+      ],
+      [
+        "Gibt es eine Android-Version?",
+        "Wir veröffentlichen zuerst für das iPhone. Neuigkeiten zu anderen Plattformen teilen wir später mit."
+      ],
+      [
+        "Erheben Sie personenbezogene Daten?",
+        "Nein. Details finden Sie in der [[privacy]]."
+      ]
     ]
   },
-  "nf": {"title": "Seite nicht gefunden", "desc": "Diese Seite existiert auf iltonggi.ipe.rest nicht.", "text": "Die gesuchte Seite ist nicht hier. Sie wurde möglicherweise verschoben, oder die Adresse ist falsch geschrieben."}
+  "nf": {
+    "title": "Seite nicht gefunden",
+    "desc": "Diese Seite existiert auf iltonggi.ipe.rest nicht.",
+    "text": "Die gesuchte Seite ist nicht hier. Sie wurde möglicherweise verschoben, oder die Adresse ist falsch geschrieben."
+  }
 }

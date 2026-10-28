@@ -11,12 +11,24 @@
   "see_shots": "Xem trò chơi",
   "feat_title": "Ván chơi ngắn, chiến thuật sắc bén",
   "features": [
-    ["Một ván nhanh gọn", "Nhịp chơi dễ bắt đầu và dễ kết thúc, ngay cả khi đang trên đường đi làm."],
-    ["Bản đồ Tam Quốc", "Nắm bắt cuộc chinh phục và mở rộng chỉ trong một cái nhìn trên bản đồ góc nghiêng."],
-    ["Màu sắc riêng cho mỗi vương quốc", "Màu sắc của Goguryeo, Baekje, Silla và Gaya giúp bạn đọc tình hình chiến trường."]
+    [
+      "Một ván nhanh gọn",
+      "Nhịp chơi dễ bắt đầu và dễ kết thúc, ngay cả khi đang trên đường đi làm."
+    ],
+    [
+      "Bản đồ Tam Quốc",
+      "Nắm bắt cuộc chinh phục và mở rộng chỉ trong một cái nhìn trên bản đồ góc nghiêng."
+    ],
+    [
+      "Màu sắc riêng cho mỗi vương quốc",
+      "Màu sắc của Goguryeo, Baekje, Silla và Gaya giúp bạn đọc tình hình chiến trường."
+    ]
   ],
   "shots_title": "Ảnh chụp màn hình",
-  "shot_alts": ["Màn hình chiến đấu trên bản đồ", "Màn hình hành quân"],
+  "shot_alts": [
+    "Màn hình chiến đấu trên bản đồ",
+    "Màn hình hành quân"
+  ],
   "skip": "Chuyển đến nội dung",
   "home_aria": "Trang chủ Iltonggi",
   "nav_aria": "Liên kết chính",
@@ -34,37 +46,115 @@
     "callout_label": "Tóm lại:",
     "callout": "Ứng dụng Iltonggi và trang web này không thu thập thông tin cá nhân của bạn.",
     "sections": [
-      {"h": "1. Thông tin chúng tôi thu thập — không có", "p": [
-        "Iltonggi (\"Ứng dụng\") là game di động do một nhà phát triển cá nhân, Davy Kim (ipe Studio), vận hành. Ứng dụng không có tài khoản hay đăng nhập, và không thu thập hoặc gửi đến bất kỳ máy chủ nào các thông tin cá nhân như tên, email, thông tin liên lạc, vị trí hay mã định danh thiết bị. Tiến trình chơi và cài đặt của bạn chỉ được lưu trên thiết bị của bạn và sẽ bị xóa khi bạn xóa Ứng dụng.",
-        "Ứng dụng không chứa quảng cáo, công cụ phân tích hay SDK theo dõi."]},
-      {"h": "2. Trang web", "p": [
-        "Trang web iltonggi.ipe.rest không sử dụng cookie và không có thẻ phân tích hay quảng cáo. Phông chữ được tải từ Google Fonts nên thông tin của yêu cầu web thông thường (như địa chỉ IP của bạn) có thể được gửi đến Google. Trang web được lưu trữ trên GitHub Pages và áp dụng chính sách nhật ký máy chủ của GitHub."]},
-      {"h": "3. Bên thứ ba", "p": [
-        "Vì chúng tôi không thu thập thông tin cá nhân nên không có gì để chia sẻ hay bán cho bên thứ ba. Ứng dụng được phân phối qua Apple App Store; thông tin liên quan đến việc tải xuống do Apple xử lý theo chính sách quyền riêng tư của Apple."]},
-      {"h": "4. Câu hỏi và quyền của bạn", "p": [
-        "Để yêu cầu truy cập, chỉnh sửa, xóa hoặc đình chỉ việc xử lý thông tin cá nhân của bạn, hoặc để đặt bất kỳ câu hỏi nào, vui lòng viết đến {mail}. Lưu ý rằng vì chúng tôi không lưu giữ thông tin cá nhân nên có thể không có gì để xử lý."]},
-      {"h": "5. Trẻ em", "p": [
-        "Ứng dụng không hướng đến trẻ em dưới 14 tuổi (hoặc độ tuổi tối thiểu tại khu vực của bạn) và không thu thập thông tin cá nhân từ bất kỳ người dùng nào."]},
-      {"h": "6. Người phụ trách quyền riêng tư", "p": [
-        "Họ tên: Davy Kim (ipe Studio) · Liên hệ: {mail}"]},
-      {"h": "7. Biện pháp khắc phục (Hàn Quốc)", "p": [
-        "- Ủy ban Hòa giải Tranh chấp Thông tin Cá nhân (Hàn Quốc): 1833-6972 · kopico.go.kr",
-        "- Trung tâm Tiếp nhận Tố cáo Xâm phạm Thông tin Cá nhân (Hàn Quốc): 118 · privacy.kisa.or.kr",
-        "- Phòng Tội phạm Mạng thuộc Viện Kiểm sát Tối cao (Hàn Quốc): 1301 · Cục An ninh Mạng thuộc Cơ quan Cảnh sát Quốc gia (Hàn Quốc): 182"]},
-      {"h": "8. Thay đổi", "p": [
-        "Nếu sau này Ứng dụng bổ sung tài khoản, thanh toán hoặc tính năng trực tuyến làm thay đổi thông tin được thu thập, chúng tôi sẽ cập nhật chính sách này trước và thay đổi ngày có hiệu lực."]}
+      {
+        "h": "1. Thông tin chúng tôi thu thập — không có",
+        "p": [
+          "Iltonggi (\"Ứng dụng\") là game di động do một nhà phát triển cá nhân, Davy Kim (ipe Studio), vận hành. Ứng dụng không có tài khoản hay đăng nhập, và không thu thập hoặc gửi đến bất kỳ máy chủ nào các thông tin cá nhân như tên, email, thông tin liên lạc, vị trí hay mã định danh thiết bị. Tiến trình chơi và cài đặt của bạn chỉ được lưu trên thiết bị của bạn và sẽ bị xóa khi bạn xóa Ứng dụng.",
+          "Ứng dụng không chứa quảng cáo, công cụ phân tích hay SDK theo dõi."
+        ]
+      },
+      {
+        "h": "2. Thông tin thời tiết",
+        "p": [
+          "Để hiển thị thời tiết theo khu vực, Ứng dụng tải xuống một tệp công khai (weather.json) từ iltonggi.ipe.rest mỗi khi có kết nối internet. Tệp này tổng hợp thời tiết của 24 thị trấn trong game mỗi giờ một lần và giống nhau với mọi người dùng. Khi đó, Ứng dụng không gửi bất kỳ thông tin cá nhân nào — không có vị trí, mã định danh thiết bị hay dữ liệu trò chơi — và không kết nối trực tiếp đến bất kỳ nhà cung cấp dữ liệu thời tiết nào.",
+          "Như với mọi yêu cầu web thông thường, nhật ký máy chủ của đơn vị lưu trữ (GitHub Pages) có thể ghi lại địa chỉ IP của thiết bị bạn; chúng tôi không thu thập hay sử dụng nhật ký này. Nếu không tải được thời tiết (ví dụ khi ngoại tuyến), Ứng dụng sẽ hiển thị thời tiết quang đãng và game vẫn hoạt động bình thường. Thời tiết nhận được gần nhất được lưu tạm trên thiết bị của bạn và sẽ bị xóa khi bạn xóa Ứng dụng.",
+          "Dữ liệu thời tiết: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "3. Trang web",
+        "p": [
+          "Trang web iltonggi.ipe.rest không sử dụng cookie và không có thẻ phân tích hay quảng cáo. Phông chữ được tải từ Google Fonts nên thông tin của yêu cầu web thông thường (như địa chỉ IP của bạn) có thể được gửi đến Google. Trang web được lưu trữ trên GitHub Pages và áp dụng chính sách nhật ký máy chủ của GitHub."
+        ]
+      },
+      {
+        "h": "4. Bên thứ ba",
+        "p": [
+          "Vì chúng tôi không thu thập thông tin cá nhân nên không có gì để chia sẻ hay bán cho bên thứ ba. Ứng dụng được phân phối qua Apple App Store; thông tin liên quan đến việc tải xuống do Apple xử lý theo chính sách quyền riêng tư của Apple.",
+          "Dữ liệu thời tiết do MET Norway cung cấp. Chúng tôi tự tải về và đăng tải dưới dạng tệp công khai, nên không có thông tin nào về người dùng Ứng dụng được chuyển đến MET Norway."
+        ]
+      },
+      {
+        "h": "5. Câu hỏi và quyền của bạn",
+        "p": [
+          "Để yêu cầu truy cập, chỉnh sửa, xóa hoặc đình chỉ việc xử lý thông tin cá nhân của bạn, hoặc để đặt bất kỳ câu hỏi nào, vui lòng viết đến {mail}. Lưu ý rằng vì chúng tôi không lưu giữ thông tin cá nhân nên có thể không có gì để xử lý."
+        ]
+      },
+      {
+        "h": "6. Trẻ em",
+        "p": [
+          "Ứng dụng không hướng đến trẻ em dưới 14 tuổi (hoặc độ tuổi tối thiểu tại khu vực của bạn) và không thu thập thông tin cá nhân từ bất kỳ người dùng nào."
+        ]
+      },
+      {
+        "h": "7. Người phụ trách quyền riêng tư",
+        "p": [
+          "Họ tên: Davy Kim (ipe Studio) · Liên hệ: {mail}"
+        ]
+      },
+      {
+        "h": "8. Biện pháp khắc phục (Hàn Quốc)",
+        "p": [
+          "- Ủy ban Hòa giải Tranh chấp Thông tin Cá nhân (Hàn Quốc): 1833-6972 · kopico.go.kr",
+          "- Trung tâm Tiếp nhận Tố cáo Xâm phạm Thông tin Cá nhân (Hàn Quốc): 118 · privacy.kisa.or.kr",
+          "- Phòng Tội phạm Mạng thuộc Viện Kiểm sát Tối cao (Hàn Quốc): 1301 · Cục An ninh Mạng thuộc Cơ quan Cảnh sát Quốc gia (Hàn Quốc): 182"
+        ]
+      },
+      {
+        "h": "9. Thay đổi",
+        "p": [
+          "Nếu sau này Ứng dụng bổ sung tài khoản, thanh toán hoặc tính năng trực tuyến làm thay đổi thông tin được thu thập, chúng tôi sẽ cập nhật chính sách này trước và thay đổi ngày có hiệu lực."
+        ]
+      }
     ]
   },
   "terms": {
     "title": "Điều khoản sử dụng",
     "desc": "Điều khoản sử dụng của Iltonggi (일통기 · 一統記).",
     "sections": [
-      {"h": "1. Mục đích", "p": ["Các điều khoản này quy định điều kiện sử dụng game di động \"Iltonggi\" (\"Ứng dụng\") do Davy Kim (ipe Studio) cung cấp."]},
-      {"h": "2. Giấy phép", "p": ["Bạn có thể cài đặt và sử dụng Ứng dụng trên thiết bị của mình cho mục đích cá nhân, phi thương mại. Bạn không được sao chép, phân phối, dịch ngược hoặc khai thác thương mại mã nguồn, hình ảnh, âm thanh hay nội dung khác của Ứng dụng khi chưa được phép."]},
-      {"h": "3. Bản chất của dịch vụ", "p": ["Ứng dụng là một game chạy ngoại tuyến, dữ liệu trò chơi được lưu trên thiết bị của bạn. Dữ liệu có thể bị mất nếu bạn đổi thiết bị, xóa Ứng dụng hoặc đặt lại thiết bị, và chúng tôi có thể không khôi phục được."]},
-      {"h": "4. Thay đổi và ngừng cung cấp", "p": ["Chúng tôi có thể cải tiến hoặc thay đổi các tính năng của Ứng dụng, hoặc ngừng cung cấp Ứng dụng. Những thay đổi quan trọng sẽ được thông báo trong phần mô tả trên App Store hoặc trên trang web này."]},
-      {"h": "5. Miễn trừ trách nhiệm", "p": ["Ứng dụng được cung cấp nguyên trạng. Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm đối với các thiệt hại gián tiếp hoặc ngẫu nhiên phát sinh từ việc bạn sử dụng Ứng dụng. Ứng dụng là một tác phẩm sáng tạo lấy cảm hứng từ thời Tam Quốc của Hàn Quốc và có thể khác với sự thật lịch sử."]},
-      {"h": "6. Luật áp dụng và liên hệ", "p": ["Các điều khoản này được điều chỉnh bởi pháp luật của Đại Hàn Dân Quốc (Hàn Quốc). Liên hệ: {mail}"]}
+      {
+        "h": "1. Mục đích",
+        "p": [
+          "Các điều khoản này quy định điều kiện sử dụng game di động \"Iltonggi\" (\"Ứng dụng\") do Davy Kim (ipe Studio) cung cấp."
+        ]
+      },
+      {
+        "h": "2. Giấy phép",
+        "p": [
+          "Bạn có thể cài đặt và sử dụng Ứng dụng trên thiết bị của mình cho mục đích cá nhân, phi thương mại. Bạn không được sao chép, phân phối, dịch ngược hoặc khai thác thương mại mã nguồn, hình ảnh, âm thanh hay nội dung khác của Ứng dụng khi chưa được phép."
+        ]
+      },
+      {
+        "h": "3. Bản chất của dịch vụ",
+        "p": [
+          "Các tính năng cốt lõi của Ứng dụng hoạt động ngoại tuyến; Ứng dụng chỉ sử dụng internet một cách tùy chọn để hiển thị thời tiết (nếu không tải được, thời tiết quang đãng sẽ được hiển thị). Dữ liệu trò chơi được lưu trên thiết bị của bạn. Dữ liệu có thể bị mất nếu bạn đổi thiết bị, xóa Ứng dụng hoặc đặt lại thiết bị, và chúng tôi có thể không khôi phục được."
+        ]
+      },
+      {
+        "h": "4. Thông tin thời tiết",
+        "p": [
+          "Thời tiết hiển thị trong Ứng dụng là thông tin tham khảo dùng cho phần trình bày và quy tắc của game (hiệu chỉnh chiến đấu). Chúng tôi không đảm bảo thông tin này khớp với điều kiện thời tiết thực tế hay luôn sẵn có. Nếu thông tin thời tiết bị thiếu hoặc đã cũ, thời tiết quang đãng có thể được sử dụng.",
+          "Dữ liệu thời tiết: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "5. Thay đổi và ngừng cung cấp",
+        "p": [
+          "Chúng tôi có thể cải tiến hoặc thay đổi các tính năng của Ứng dụng, hoặc ngừng cung cấp Ứng dụng. Những thay đổi quan trọng sẽ được thông báo trong phần mô tả trên App Store hoặc trên trang web này."
+        ]
+      },
+      {
+        "h": "6. Miễn trừ trách nhiệm",
+        "p": [
+          "Ứng dụng được cung cấp nguyên trạng. Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm đối với các thiệt hại gián tiếp hoặc ngẫu nhiên phát sinh từ việc bạn sử dụng Ứng dụng. Ứng dụng là một tác phẩm sáng tạo lấy cảm hứng từ thời Tam Quốc của Hàn Quốc và có thể khác với sự thật lịch sử."
+        ]
+      },
+      {
+        "h": "7. Luật áp dụng và liên hệ",
+        "p": [
+          "Các điều khoản này được điều chỉnh bởi pháp luật của Đại Hàn Dân Quốc (Hàn Quốc). Liên hệ: {mail}"
+        ]
+      }
     ]
   },
   "support": {
@@ -74,13 +164,30 @@
     "callout_label": "Liên hệ",
     "callout_note": "Chúng tôi cố gắng phản hồi trong vòng vài ngày làm việc.",
     "tips_h": "Thông tin hữu ích nên kèm theo",
-    "tips": ["Mẫu thiết bị và phiên bản iOS của bạn", "Phiên bản ứng dụng (Cài đặt → Cài đặt chung → Dung lượng iPhone → Iltonggi)", "Điều gì đang xảy ra khi sự cố xuất hiện, kèm ảnh chụp màn hình nếu có"],
+    "tips": [
+      "Mẫu thiết bị và phiên bản iOS của bạn",
+      "Phiên bản ứng dụng (Cài đặt → Cài đặt chung → Dung lượng iPhone → Iltonggi)",
+      "Điều gì đang xảy ra khi sự cố xuất hiện, kèm ảnh chụp màn hình nếu có"
+    ],
     "faq_h": "Câu hỏi thường gặp",
     "faq": [
-      ["Tiến trình chơi của tôi được lưu ở đâu?", "Chỉ trên thiết bị của bạn. Tiến trình có thể bị mất nếu bạn xóa Ứng dụng hoặc đổi thiết bị."],
-      ["Có phiên bản Android không?", "Chúng tôi phát hành trên iPhone trước. Tin tức về các nền tảng khác sẽ được chia sẻ sau."],
-      ["Các bạn có thu thập thông tin cá nhân không?", "Không. Xem chi tiết tại [[privacy]]."]
+      [
+        "Tiến trình chơi của tôi được lưu ở đâu?",
+        "Chỉ trên thiết bị của bạn. Tiến trình có thể bị mất nếu bạn xóa Ứng dụng hoặc đổi thiết bị."
+      ],
+      [
+        "Có phiên bản Android không?",
+        "Chúng tôi phát hành trên iPhone trước. Tin tức về các nền tảng khác sẽ được chia sẻ sau."
+      ],
+      [
+        "Các bạn có thu thập thông tin cá nhân không?",
+        "Không. Xem chi tiết tại [[privacy]]."
+      ]
     ]
   },
-  "nf": {"title": "Không tìm thấy trang", "desc": "Trang này không tồn tại trên iltonggi.ipe.rest.", "text": "Trang bạn đang tìm không có ở đây. Có thể trang đã được chuyển đi, hoặc địa chỉ bị gõ sai."}
+  "nf": {
+    "title": "Không tìm thấy trang",
+    "desc": "Trang này không tồn tại trên iltonggi.ipe.rest.",
+    "text": "Trang bạn đang tìm không có ở đây. Có thể trang đã được chuyển đi, hoặc địa chỉ bị gõ sai."
+  }
 }

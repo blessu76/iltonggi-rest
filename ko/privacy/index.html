@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">본문으로 건너뛰기</a>
@@ -64,29 +64,35 @@
       <p>일통기(이하 &quot;앱&quot;)는 개인 개발자 Davy Kim(ipe Studio)이 운영하는 모바일 게임입니다. 앱은 계정·로그인이 없고, 이름·이메일·연락처·위치·기기 식별자 등 어떠한 개인정보도 수집하거나 서버로 전송하지 않습니다. 게임 진행 데이터와 설정은 이용자의 기기 안에만 저장되며, 앱을 삭제하면 함께 삭제됩니다.</p>
       <p>앱에는 광고, 분석(애널리틱스), 추적 SDK가 포함되어 있지 않습니다.</p>
 
-      <h2>2. 웹사이트</h2>
+      <h2>2. 날씨 정보</h2>
+      <p>앱은 지역 날씨를 보여 주기 위해, 인터넷에 연결되어 있을 때 iltonggi.ipe.rest 의 공용 파일(weather.json)을 내려받습니다. 이 파일은 게임 속 고을 24곳의 날씨를 1시간마다 모아 둔 것으로 모든 이용자에게 같습니다. 이때 앱은 위치 정보, 기기 식별자, 게임 데이터 등 어떠한 개인정보도 보내지 않으며, 날씨 제공처에 직접 접속하지도 않습니다.</p>
+      <p>다만 파일을 내려받는 일반적인 웹 요청의 특성상 호스팅(GitHub Pages)의 서버 로그에 기기의 IP 주소가 남을 수 있으며, 당사는 이 로그를 수집하거나 이용하지 않습니다. 날씨를 받지 못하면(오프라인 등) 맑은 날씨로 표시되고 게임은 정상적으로 동작합니다. 마지막으로 받은 날씨는 기기에 임시 저장되며 앱을 삭제하면 함께 삭제됩니다.</p>
+      <p>날씨 데이터 출처: MET Norway (CC BY 4.0).</p>
+
+      <h2>3. 웹사이트</h2>
       <p>iltonggi.ipe.rest 웹사이트는 쿠키를 사용하지 않고, 분석 도구나 광고 태그를 넣지 않았습니다. 글꼴은 Google Fonts에서 불러오며, 이때 일반적인 웹 요청 정보(IP 주소 등)가 Google에 전달될 수 있습니다. 사이트 호스팅은 GitHub Pages이며, GitHub의 서버 로그 정책이 적용됩니다.</p>
 
-      <h2>3. 제3자 제공</h2>
+      <h2>4. 제3자 제공</h2>
       <p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 판매하는 정보도 없습니다. 앱은 Apple App Store를 통해 배포되며, 다운로드와 관련된 정보는 Apple의 개인정보 처리방침에 따라 Apple이 처리합니다.</p>
+      <p>날씨 데이터는 MET Norway 가 제공하며, 당사가 대신 받아 공용 파일로 게시하므로 앱 이용자의 정보가 MET Norway 로 전달되지 않습니다.</p>
 
-      <h2>4. 문의·권리 행사</h2>
+      <h2>5. 문의·권리 행사</h2>
       <p>개인정보와 관련한 열람·정정·삭제·처리정지 요청이나 문의는 <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a> 으로 보내 주세요. 다만 당사가 보유한 개인정보가 없어 처리할 정보가 없을 수 있습니다.</p>
 
-      <h2>5. 아동</h2>
+      <h2>6. 아동</h2>
       <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 어떤 이용자로부터도 개인정보를 수집하지 않습니다.</p>
 
-      <h2>6. 개인정보 보호책임자</h2>
+      <h2>7. 개인정보 보호책임자</h2>
       <p>성명: Davy Kim (ipe Studio) · 연락처: <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. 권리 침해 구제</h2>
+      <h2>8. 권리 침해 구제</h2>
       <ul>
         <li>개인정보분쟁조정위원회: 1833-6972 · kopico.go.kr</li>
         <li>개인정보침해신고센터: 118 · privacy.kisa.or.kr</li>
         <li>대검찰청 사이버수사과: 1301 · 경찰청 사이버수사국: 182</li>
       </ul>
 
-      <h2>8. 변경</h2>
+      <h2>9. 변경</h2>
       <p>앱에 계정, 결제, 온라인 기능 등이 추가되어 수집 항목이 달라지면 이 방침을 먼저 갱신하고 시행일을 바꿔 알립니다.</p>
 
       <div class="doc__links"><a href="/ko/">← 일통기 홈</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="법적 링크">
       <a href="/ko/privacy/">개인정보처리방침</a>

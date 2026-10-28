@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '7 * * * *'   # hourly at :07 (off the hour, when GitHub's queue is busy) — refreshes weather.json
   workflow_dispatch:
 
 permissions:
@@ -27,13 +29,19 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Verify committed pages are up to date
-        run: python3 scripts/build_site.py --check
+      - name: Verify (tests, committed pages up to date)
+        run: |
+          python3 -m unittest discover -s tests
+          python3 scripts/build_site.py --check
 
       - name: Assemble site (repo root minus repo files)
         run: |
           mkdir -p "$RUNNER_TEMP/site"
-          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
+          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/tests' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
+
+      - name: Fetch weather.json (MET Norway, keeps the live values for regions that fail)
+        # Never fails the deploy: a failed region keeps its previous value, all-failed re-publishes the previous file.
+        run: python3 scripts/fetch_weather.py --out "$RUNNER_TEMP/site/weather.json" --prev https://iltonggi.ipe.rest/weather.json || true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3

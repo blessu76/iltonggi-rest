@@ -128,6 +128,7 @@ def footer(t, lang, page, root):
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>{MAIL}</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>

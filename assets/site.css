@@ -263,3 +263,4 @@ html:lang(ru) .h1, html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywher
 .lang-hint[hidden] { display: none; }
 .lang-hint a { color: inherit; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
 .lang-hint button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: inherit; font-size: 1.25rem; cursor: pointer; }
+.site-footer__credit { margin-top: var(--space-2); font-family: var(--font-mono); font-size: var(--text-xs); opacity: 0.78; }

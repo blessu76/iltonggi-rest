@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a61c8b62">
+<link rel="stylesheet" href="/assets/site.css?v=b56aad26">
 </head>
 <body>
 <a class="skip-link" href="#content">跳到正文</a>
@@ -64,29 +64,35 @@
       <p>一统记(以下称“本应用”)是由个人开发者 Davy Kim (ipe Studio) 运营的手机游戏。本应用没有账号或登录功能,不会收集您的姓名、电子邮件、联系方式、位置或设备标识符等任何个人信息,也不会将其发送至任何服务器。您的游戏进度和设置仅保存在您的设备上,删除本应用时会一并删除。</p>
       <p>本应用不包含任何广告、分析或跟踪类 SDK。</p>
 
-      <h2>2. 网站</h2>
+      <h2>2. 天气信息</h2>
+      <p>为了显示所在地区的天气,本应用在联网时会从 iltonggi.ipe.rest 下载一个公共文件(weather.json)。该文件每小时汇总一次游戏中 24 个城镇的天气,对所有用户都相同。在此过程中,本应用不会发送位置、设备标识符、游戏数据等任何个人信息,也不会直接连接天气数据提供方。</p>
+      <p>不过,由于下载文件这类普通网络请求的特性,托管服务(GitHub Pages)的服务器日志中可能会记录您设备的 IP 地址,我们不会收集或使用该日志。如果无法获取天气(例如离线),将显示为晴天,游戏仍可正常运行。最近一次获取的天气会临时保存在您的设备上,删除本应用时会一并删除。</p>
+      <p>天气数据来源:MET Norway (CC BY 4.0)。</p>
+
+      <h2>3. 网站</h2>
       <p>iltonggi.ipe.rest 网站不使用 Cookie,也不包含任何分析或广告代码。字体从 Google Fonts 加载,因此普通的网页请求信息(例如您的 IP 地址)可能会被发送给 Google。本网站托管于 GitHub Pages,适用 GitHub 的服务器日志政策。</p>
 
-      <h2>3. 第三方</h2>
+      <h2>4. 第三方</h2>
       <p>由于我们不收集个人信息,因此没有可与第三方共享或出售的内容。本应用通过 Apple App Store 发行;与下载相关的信息由 Apple 依据其隐私政策处理。</p>
+      <p>天气数据由 MET Norway 提供,由我们代为获取并以公共文件形式发布,因此本应用用户的信息不会被传送给 MET Norway。</p>
 
-      <h2>4. 咨询与您的权利</h2>
+      <h2>5. 咨询与您的权利</h2>
       <p>如需请求查阅、更正、删除或停止处理您的个人信息,或有任何疑问,请发送邮件至 <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>。请注意,由于我们不持有任何个人信息,可能没有可处理的内容。</p>
 
-      <h2>5. 儿童</h2>
+      <h2>6. 儿童</h2>
       <p>本应用不面向 14 岁以下(或您所在地区规定的最低年龄以下)的儿童,也不会向任何用户收集个人信息。</p>
 
-      <h2>6. 个人信息保护负责人</h2>
+      <h2>7. 个人信息保护负责人</h2>
       <p>姓名:Davy Kim (ipe Studio) · 联系方式:<a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
 
-      <h2>7. 救济渠道(韩国)</h2>
+      <h2>8. 救济渠道(韩国)</h2>
       <ul>
         <li>个人信息纠纷调解委员会(韩国):1833-6972 · kopico.go.kr</li>
         <li>个人信息侵权举报中心(韩国):118 · privacy.kisa.or.kr</li>
         <li>大检察厅网络犯罪搜查科(韩国):1301 · 警察厅网络搜查局(韩国):182</li>
       </ul>
 
-      <h2>8. 变更</h2>
+      <h2>9. 变更</h2>
       <p>如果本应用日后新增账号、支付或会改变所收集信息的在线功能,我们将先更新本政策并变更生效日期。</p>
 
       <div class="doc__links"><a href="/zh/">← 一统记首页</a></div>
@@ -99,6 +105,7 @@
     <div>
       <p class="h3">ipe Studio</p>
       <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="法律信息链接">
       <a href="/zh/privacy/">隐私政策</a>

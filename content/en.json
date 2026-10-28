@@ -11,12 +11,24 @@
   "see_shots": "See the game",
   "feat_title": "Short rounds, sharp strategy",
   "features": [
-    ["One quick round", "A pace that is easy to start and finish, even on a commute."],
-    ["The Three Kingdoms map", "See conquest and expansion at a glance on a quarter-view map."],
-    ["Colors for each realm", "The colors of Goguryeo, Baekje, Silla and Gaya help you read the battlefield."]
+    [
+      "One quick round",
+      "A pace that is easy to start and finish, even on a commute."
+    ],
+    [
+      "The Three Kingdoms map",
+      "See conquest and expansion at a glance on a quarter-view map."
+    ],
+    [
+      "Colors for each realm",
+      "The colors of Goguryeo, Baekje, Silla and Gaya help you read the battlefield."
+    ]
   ],
   "shots_title": "Screenshots",
-  "shot_alts": ["Map battle screen", "March screen"],
+  "shot_alts": [
+    "Map battle screen",
+    "March screen"
+  ],
   "skip": "Skip to content",
   "home_aria": "Iltonggi home",
   "nav_aria": "Main links",
@@ -34,37 +46,115 @@
     "callout_label": "In short:",
     "callout": "The Iltonggi app and this website do not collect your personal information.",
     "sections": [
-      {"h": "1. Information we collect — none", "p": [
-        "Iltonggi (\"the App\") is a mobile game operated by an individual developer, Davy Kim (ipe Studio). The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress and settings are stored only on your device and are deleted when you delete the App.",
-        "The App contains no advertising, analytics or tracking SDKs."]},
-      {"h": "2. The website", "p": [
-        "The iltonggi.ipe.rest website uses no cookies and includes no analytics or advertising tags. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub's server-log policies apply."]},
-      {"h": "3. Third parties", "p": [
-        "Because we collect no personal information, we have nothing to share with or sell to third parties. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple's privacy policy."]},
-      {"h": "4. Questions and your rights", "p": [
-        "To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to {mail}. Note that because we hold no personal information, there may be nothing to act on."]},
-      {"h": "5. Children", "p": [
-        "The App is not directed to children under 14 (or the minimum age in your region), and it collects no personal information from any user."]},
-      {"h": "6. Privacy officer", "p": [
-        "Name: Davy Kim (ipe Studio) · Contact: {mail}"]},
-      {"h": "7. Remedies (Korea)", "p": [
-        "- Personal Information Dispute Mediation Committee: 1833-6972 · kopico.go.kr",
-        "- Personal Information Infringement Report Center: 118 · privacy.kisa.or.kr",
-        "- Supreme Prosecutors' Office Cybercrime Division: 1301 · National Police Agency Cyber Bureau: 182"]},
-      {"h": "8. Changes", "p": [
-        "If the App later adds accounts, payments or online features that change what is collected, we will update this policy first and change the effective date."]}
+      {
+        "h": "1. Information we collect — none",
+        "p": [
+          "Iltonggi (\"the App\") is a mobile game operated by an individual developer, Davy Kim (ipe Studio). The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress and settings are stored only on your device and are deleted when you delete the App.",
+          "The App contains no advertising, analytics or tracking SDKs."
+        ]
+      },
+      {
+        "h": "2. Weather information",
+        "p": [
+          "To show regional weather, the App downloads a public file (weather.json) from iltonggi.ipe.rest whenever it is online. The file collects the weather for the 24 towns in the game once an hour and is the same for every user. The App sends no personal information in doing so — no location, device identifier or game data — and it does not contact any weather provider directly.",
+          "As with any ordinary web request, the server log of our host (GitHub Pages) may record your device's IP address; we do not collect or use that log. If the weather cannot be downloaded (for example, offline), the App shows clear weather and the game works normally. The last weather received is stored temporarily on your device and is deleted when you delete the App.",
+          "Weather data: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "3. The website",
+        "p": [
+          "The iltonggi.ipe.rest website uses no cookies and includes no analytics or advertising tags. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub's server-log policies apply."
+        ]
+      },
+      {
+        "h": "4. Third parties",
+        "p": [
+          "Because we collect no personal information, we have nothing to share with or sell to third parties. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple's privacy policy.",
+          "Weather data is provided by MET Norway. We fetch it ourselves and publish it as a public file, so no information about App users is passed to MET Norway."
+        ]
+      },
+      {
+        "h": "5. Questions and your rights",
+        "p": [
+          "To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to {mail}. Note that because we hold no personal information, there may be nothing to act on."
+        ]
+      },
+      {
+        "h": "6. Children",
+        "p": [
+          "The App is not directed to children under 14 (or the minimum age in your region), and it collects no personal information from any user."
+        ]
+      },
+      {
+        "h": "7. Privacy officer",
+        "p": [
+          "Name: Davy Kim (ipe Studio) · Contact: {mail}"
+        ]
+      },
+      {
+        "h": "8. Remedies (Korea)",
+        "p": [
+          "- Personal Information Dispute Mediation Committee: 1833-6972 · kopico.go.kr",
+          "- Personal Information Infringement Report Center: 118 · privacy.kisa.or.kr",
+          "- Supreme Prosecutors' Office Cybercrime Division: 1301 · National Police Agency Cyber Bureau: 182"
+        ]
+      },
+      {
+        "h": "9. Changes",
+        "p": [
+          "If the App later adds accounts, payments or online features that change what is collected, we will update this policy first and change the effective date."
+        ]
+      }
     ]
   },
   "terms": {
     "title": "Terms of Use",
     "desc": "Terms of Use for Iltonggi (일통기 · 一統記).",
     "sections": [
-      {"h": "1. Purpose", "p": ["These terms set out the conditions for using the mobile game \"Iltonggi\" (\"the App\"), provided by Davy Kim (ipe Studio)."]},
-      {"h": "2. License", "p": ["You may install and use the App on your device for personal, non-commercial purposes. You may not copy, distribute, reverse engineer or commercially exploit the App's source code, images, audio or other content without permission."]},
-      {"h": "3. Nature of the service", "p": ["The App is a game that runs offline, and game data is stored on your device. Data may be lost if you change devices, delete the App or reset your device, and we may not be able to restore it."]},
-      {"h": "4. Changes and discontinuation", "p": ["We may improve or change the App's features, or stop providing it. Important changes will be announced in the App Store description or on this site."]},
-      {"h": "5. Disclaimer", "p": ["The App is provided as it is. To the extent permitted by law, we are not liable for indirect or incidental damages arising from your use of the App. The App is a creative work inspired by Korea's Three Kingdoms era and may differ from historical fact."]},
-      {"h": "6. Governing law and contact", "p": ["These terms are governed by the laws of the Republic of Korea. Contact: {mail}"]}
+      {
+        "h": "1. Purpose",
+        "p": [
+          "These terms set out the conditions for using the mobile game \"Iltonggi\" (\"the App\"), provided by Davy Kim (ipe Studio)."
+        ]
+      },
+      {
+        "h": "2. License",
+        "p": [
+          "You may install and use the App on your device for personal, non-commercial purposes. You may not copy, distribute, reverse engineer or commercially exploit the App's source code, images, audio or other content without permission."
+        ]
+      },
+      {
+        "h": "3. Nature of the service",
+        "p": [
+          "The App's core features work offline; it uses the internet only, optionally, to show the weather (if it cannot be downloaded, clear weather is shown). Game data is stored on your device. Data may be lost if you change devices, delete the App or reset your device, and we may not be able to restore it."
+        ]
+      },
+      {
+        "h": "4. Weather information",
+        "p": [
+          "The weather shown in the App is reference information used for the game's presentation and rules (battle modifiers). We do not guarantee that it matches actual weather conditions or that it will always be available. If weather information is missing or out of date, clear weather may be used.",
+          "Weather data: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "5. Changes and discontinuation",
+        "p": [
+          "We may improve or change the App's features, or stop providing it. Important changes will be announced in the App Store description or on this site."
+        ]
+      },
+      {
+        "h": "6. Disclaimer",
+        "p": [
+          "The App is provided as it is. To the extent permitted by law, we are not liable for indirect or incidental damages arising from your use of the App. The App is a creative work inspired by Korea's Three Kingdoms era and may differ from historical fact."
+        ]
+      },
+      {
+        "h": "7. Governing law and contact",
+        "p": [
+          "These terms are governed by the laws of the Republic of Korea. Contact: {mail}"
+        ]
+      }
     ]
   },
   "support": {
@@ -74,13 +164,30 @@
     "callout_label": "Contact",
     "callout_note": "We aim to reply within a few business days.",
     "tips_h": "Helpful details to include",
-    "tips": ["Your device model and iOS version", "App version (Settings → General → iPhone Storage → Iltonggi)", "What was happening when the problem occurred, with a screenshot if you have one"],
+    "tips": [
+      "Your device model and iOS version",
+      "App version (Settings → General → iPhone Storage → Iltonggi)",
+      "What was happening when the problem occurred, with a screenshot if you have one"
+    ],
     "faq_h": "Frequently asked questions",
     "faq": [
-      ["Where is my progress saved?", "Only on your device. It may be lost if you delete the App or switch devices."],
-      ["Is there an Android version?", "We are releasing on iPhone first. We will share news about other platforms later."],
-      ["Do you collect personal information?", "No. See the [[privacy]] for details."]
+      [
+        "Where is my progress saved?",
+        "Only on your device. It may be lost if you delete the App or switch devices."
+      ],
+      [
+        "Is there an Android version?",
+        "We are releasing on iPhone first. We will share news about other platforms later."
+      ],
+      [
+        "Do you collect personal information?",
+        "No. See the [[privacy]] for details."
+      ]
     ]
   },
-  "nf": {"title": "Page not found", "desc": "This page does not exist on iltonggi.ipe.rest.", "text": "The page you are looking for is not here. It may have moved, or the address may be mistyped."}
+  "nf": {
+    "title": "Page not found",
+    "desc": "This page does not exist on iltonggi.ipe.rest.",
+    "text": "The page you are looking for is not here. It may have moved, or the address may be mistyped."
+  }
 }
