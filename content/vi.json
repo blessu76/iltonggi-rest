@@ -189,5 +189,7 @@
     "title": "Không tìm thấy trang",
     "desc": "Trang này không tồn tại trên iltonggi.ipe.rest.",
     "text": "Trang bạn đang tìm không có ở đây. Có thể trang đã được chuyển đi, hoặc địa chỉ bị gõ sai."
-  }
+  },
+  "nav_releases": "Ghi chú phát hành",
+  "releases_en_notice": "Trang này được hiển thị bằng tiếng Anh."
 }

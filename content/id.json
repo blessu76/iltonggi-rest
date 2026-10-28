@@ -189,5 +189,7 @@
     "title": "Halaman tidak ditemukan",
     "desc": "Halaman ini tidak ada di iltonggi.ipe.rest.",
     "text": "Halaman yang Anda cari tidak ada di sini. Mungkin sudah dipindahkan, atau alamatnya salah ketik."
-  }
+  },
+  "nav_releases": "Catatan rilis",
+  "releases_en_notice": "Halaman ini ditampilkan dalam bahasa Inggris."
 }

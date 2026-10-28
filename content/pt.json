@@ -189,5 +189,7 @@
     "title": "Página não encontrada",
     "desc": "Esta página não existe em iltonggi.ipe.rest.",
     "text": "A página que você procura não está aqui. Ela pode ter sido movida ou o endereço pode ter sido digitado errado."
-  }
+  },
+  "nav_releases": "Novidades",
+  "releases_en_notice": "Esta página é exibida em inglês."
 }

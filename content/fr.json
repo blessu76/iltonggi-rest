@@ -189,5 +189,7 @@
     "title": "Page introuvable",
     "desc": "Cette page n'existe pas sur iltonggi.ipe.rest.",
     "text": "La page que vous cherchez n'est pas ici. Elle a peut-être été déplacée, ou l'adresse comporte une faute de frappe."
-  }
+  },
+  "nav_releases": "Notes de version",
+  "releases_en_notice": "Cette page est affichée en anglais."
 }

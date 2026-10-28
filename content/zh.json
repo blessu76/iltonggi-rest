@@ -189,5 +189,7 @@
     "title": "页面未找到",
     "desc": "iltonggi.ipe.rest 上不存在此页面。",
     "text": "您要找的页面不在这里。它可能已被移动,或者地址输入有误。"
-  }
+  },
+  "nav_releases": "更新说明",
+  "releases_en_notice": "本页以英文显示。"
 }

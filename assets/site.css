@@ -264,3 +264,12 @@ html:lang(ru) .h1, html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywher
 .lang-hint a { color: inherit; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; font-weight: 500; }
 .lang-hint button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: inherit; font-size: 1.25rem; cursor: pointer; }
 .site-footer__credit { margin-top: var(--space-2); font-family: var(--font-mono); font-size: var(--text-xs); opacity: 0.78; }
+
+/* release notes */
+.rel-list { margin-top: var(--space-8); display: grid; gap: var(--space-4); }
+.rel { padding: var(--space-5) var(--space-6); border: var(--hairline); border-radius: var(--radius-md); background: var(--ipe-surface); }
+.doc .rel__head { margin: 0; font-family: var(--font-mono); font-size: 1.05rem; font-weight: 500; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.rel__badge { font-size: var(--text-xs); padding: 0.1rem 0.6rem; border-radius: 999px; border: 1px solid var(--game-red-line); background: var(--game-red-soft); color: var(--game-red-text); font-weight: 400; }
+.rel__at { margin-top: var(--space-1); font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ipe-muted); }
+.rel ul { margin-top: var(--space-3); }
+@media (max-width: 420px) { .nav a { padding-inline: 0.3rem; font-size: 0.9rem; } .rel { padding: var(--space-4); } }

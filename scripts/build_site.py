@@ -23,8 +23,8 @@ OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh": "zh_CN", "es": "es_ES",
       "id": "id_ID", "ru": "ru_RU", "vi": "vi_VN", "fr": "fr_FR", "de": "de_DE"}
 NATIVE = {"en": "English", "ko": "한국어", "ja": "日本語", "zh": "中文", "es": "Español", "pt": "Português",
           "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch"}
-PAGES = ["home", "privacy", "terms", "support"]
-PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"}
+PAGES = ["home", "privacy", "terms", "support", "releases"]
+PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
         "&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap")
 IMG = {"icon": "icon-512.png", "map": "shot-map-600.webp", "march": "shot-march-600.webp"}
@@ -107,6 +107,7 @@ def header(t, lang, root):
       </span>
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
+      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -133,6 +134,7 @@ def footer(t, lang, page, root):
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
+      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -250,7 +252,46 @@ def body_blocks(items):
     return "\n".join(out)
 
 
+def releases_page(t, lang, root):
+    """Release notes: ko/en carry their own text; the other languages show the English text plus a notice."""
+    tx = t if lang in ("ko", "en") else DATA["en"]
+    tl = lang if lang in ("ko", "en") else "en"
+    d = tx["releases"]
+    p = prefix(lang, root)
+    items = ""
+    for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
+        badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
+        lis = "\n".join("          <li>%s</li>" % esc(x) for x in e[tl])
+        items += f'''      <article class="rel">
+        <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
+        <p class="rel__at">{esc(e['at'])} KST</p>
+        <ul>
+{lis}
+        </ul>
+      </article>
+'''
+    notice = '      <p class="meta">%s</p>\n' % esc(t["releases_en_notice"]) if t["releases_en_notice"] else ""
+    title = t["nav_releases"]
+    out = head(t, lang, "releases", root, "%s — %s" % (title, t["name"]), d["desc"]) + header(t, lang, root)
+    out += f'''<main id="content">
+  <section class="doc">
+    <div class="container doc__body">
+      <p class="kicker">// releases</p>
+      <h1>{esc(title)}</h1>
+{notice}      <p class="callout">{esc(d['lead'])}</p>
+      <div class="rel-list">
+{items}      </div>
+      <div class="doc__links"><a href="{p}/">← {esc(t['back_home'])}</a></div>
+    </div>
+  </section>
+</main>
+'''
+    return out + footer(t, lang, "releases", root) + "</body>\n</html>\n"
+
+
 def doc(t, lang, page, root):
+    if page == "releases":
+        return releases_page(t, lang, root)
     d = t[page]
     p = prefix(lang, root)
     if page == "support":
@@ -326,8 +367,13 @@ def sitemap():
     return "\n".join(out) + "\n"
 
 
+DATA = {}
+
+
 def build():
     data = load()
+    DATA.clear()
+    DATA.update(data)
     files = {}
     for page in PAGES:
         builder = home if page == "home" else (lambda t, l, r, pg=page: doc(t, l, pg, r))

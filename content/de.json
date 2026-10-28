@@ -189,5 +189,7 @@
     "title": "Seite nicht gefunden",
     "desc": "Diese Seite existiert auf iltonggi.ipe.rest nicht.",
     "text": "Die gesuchte Seite ist nicht hier. Sie wurde möglicherweise verschoben, oder die Adresse ist falsch geschrieben."
-  }
+  },
+  "nav_releases": "Release-Notes",
+  "releases_en_notice": "Diese Seite wird auf Englisch angezeigt."
 }

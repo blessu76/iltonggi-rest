@@ -816,4 +816,208 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/en/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ko/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ja/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/zh/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/es/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/pt/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/id/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/ru/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/vi/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/fr/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iltonggi.ipe.rest/de/releases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/releases/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/releases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/releases/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/releases/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/releases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/releases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/releases/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/releases/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/releases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/releases/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

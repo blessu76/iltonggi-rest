@@ -189,5 +189,14 @@
     "title": "Page not found",
     "desc": "This page does not exist on iltonggi.ipe.rest.",
     "text": "The page you are looking for is not here. It may have moved, or the address may be mistyped."
+  },
+  "nav_releases": "Release notes",
+  "releases_en_notice": "",
+  "releases": {
+    "title": "Release notes",
+    "desc": "What changed in each Iltonggi development build (TestFlight).",
+    "lead": "Iltonggi is not released yet. This page lists, in plain words, what changed in each development build we send to TestFlight. The newest build is at the top.",
+    "uploading": "uploading",
+    "build": "Build"
   }
 }
