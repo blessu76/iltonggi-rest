@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+25",
+   "at": "2026-10-29 10:13",
+   "ko": [
+    "지도를 새 옷으로 갈아입힐 수 있어요. 세 가지 그림체의 지도 테마가 곧 들어옵니다(지금은 준비 중).",
+    "설정 → 지도 테마에서 미리보기를 볼 수 있고, 지금 지도는 그대로 늘 무료예요.",
+    "테마마다 국경선이 붓으로 그린 듯 부드러워지고, 안개와 밤 풍경도 그 그림체에 맞춰 바뀝니다."
+   ],
+   "en": [
+    "You will be able to dress the map in a new look. Three art-style map themes are coming soon (not available yet).",
+    "Preview them in Settings → Map theme. The current map stays free, always.",
+    "Each theme softens the borders as if painted with a brush, and the fog and night scenes follow the same style."
+   ]
+  },
+  {
    "build": "1.0.0+24",
    "at": "2026-10-29",
    "ko": [
