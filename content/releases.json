@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "build": "1.0.0+34",
+   "at": "2026-10-29 18:27",
+   "ko": [
+    "대륙 이야기 2막 「바다 건너 바람」이 열렸어요. 1막을 한 번 이기면 새 판 고르기에 2막 칸이 생겨요.",
+    "13세기 후반, 통일왕국이 바다를 건너 섬으로 가요. 규슈 무사단과 가마쿠라 막부가 손잡고 맞서요. 가마쿠라 본성에 깃발을 꽂거나, 판이 끝날 때 고을이 가장 많으면 이겨요.",
+    "새 지도가 생겼어요. 합포에서 이키를 거쳐 하카타로, 또는 동쪽 바다를 건너 이즈모로 가는 뱃길이 있어요.",
+    "김방경, 호조 도키무네, 다케자키 스에나가 등 그 시대 사람 아홉 명의 열전을 새 판 고르기에서 읽을 수 있어요. 막을 이기면 맺음 글이 나와요.",
+    "새 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "Act 2 of the continental story, \"Wind Across the Sea\", is here. Win Act 1 once and an Act 2 tile appears when you start a new game.",
+    "In the late 13th century, the Unified Kingdom crosses the sea to the islands, where the Kyushu Warriors and the Kamakura Shogunate stand together. Plant your banner over Kamakura, or hold the most towns when the game ends, to win.",
+    "A new map: sail from Happo past Iki to Hakata, or cross the eastern sea to Izumo.",
+    "Read the stories of nine people of the era, including Kim Banggyeong, Hōjō Tokimune and Takezaki Suenaga, on the new-game screen. Winning the act brings its closing scene.",
+    "The new messages are available in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+33",
    "at": "2026-10-29 17:44",
    "ko": [
