@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+31",
+   "at": "2026-10-29 16:20",
+   "ko": [
+    "준비 중인 551년 새 판의 인물을 그 시대에 맞췄어요. 551년과 맞지 않는 장수는 빠지고, 이름이 전하지 않는 자리는 「○○ 장군」으로 두었어요. 가야 왕은 이름 대신 「대가야왕」으로 적어요.",
+    "새 판 고르기에서 551년 판을 고르면 나라별 인물이 나오고, 누르면 짧은 열전을 볼 수 있어요. 기록이 갈리는 곳은 「~라는 설」로 적었어요.",
+    "551년 판의 다른 나라들이 이제 한강 세 고을을 노리고, 쥔 고을부터 지켜요.",
+    "새 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "The people of the upcoming game set in 551 now match their era. Generals from other centuries are gone, and posts whose holders are not recorded are shown as \"General of …\". The Gaya king appears as \"King of Daegaya\" instead of a name.",
+    "When you pick the 551 game in New Game, each kingdom's people are listed; tap one to read a short biography. Where records disagree, we say so.",
+    "The other kingdoms in the 551 game now go after the three Han River towns and guard the ones they hold first.",
+    "The new messages are available in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+30",
    "at": "2026-10-29 15:47",
    "ko": [
