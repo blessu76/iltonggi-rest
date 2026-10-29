@@ -11,3 +11,4 @@
 
 ## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
+- [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)

@@ -401,15 +401,28 @@ def build():
     return files
 
 
+def orphans(files):
+    """Generated blog files on disk that the build no longer produces (e.g. a removed/renamed post)."""
+    found = [f for f in (ROOT / "blog").rglob("*") if f.is_file()] if (ROOT / "blog").is_dir() else []
+    for l in LANGS:
+        if (ROOT / l / "blog").is_dir():
+            found += [f for f in (ROOT / l / "blog").rglob("*") if f.is_file()]
+    return sorted(str(f.relative_to(ROOT)) for f in found if str(f.relative_to(ROOT)) not in files)
+
+
 def main():
     files = build()
     if "--check" in sys.argv:
         stale = [f for f, s in files.items() if not (ROOT / f).exists() or (ROOT / f).read_text(encoding="utf-8") != s]
+        stale += ["%s (orphan, no longer generated)" % f for f in orphans(files)]
         if stale:
             print("stale (run scripts/build_site.py):", *stale, sep="\n  ")
             return 1
         print("ok: %d files up to date" % len(files))
         return 0
+    for f in orphans(files):
+        (ROOT / f).unlink()
+        print("removed orphan", f)
     for f, s in files.items():
         (ROOT / f).parent.mkdir(parents=True, exist_ok=True)
         (ROOT / f).write_text(s, encoding="utf-8")

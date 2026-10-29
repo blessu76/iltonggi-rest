@@ -282,8 +282,7 @@ def build(bs, data, root=ROOT):
             files[rel(lang, root_, list_path(n))] = list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, bool(posts))
         for p in posts:
             files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p, posts)
-    if posts:
-        files["blog/feed.xml"] = feed(posts)
+    files["blog/feed.xml"] = feed(posts)
     files["llms.txt"] = llms_txt(bs, data, UI, posts)
     return files, extra
 
@@ -302,7 +301,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
                       "datePublished": p["published"].isoformat(timespec="seconds"), "dateModified": p["modified"].isoformat(timespec="seconds")}
                      for p in chunk],
     }, ensure_ascii=False)
-    extra = (feed_link(ui, lang) if has_posts else "") + '<script type="application/ld+json">%s</script>\n' % ld
+    extra = feed_link(ui, lang) + '<script type="application/ld+json">%s</script>\n' % ld
     if n > 1:
         extra = '<link rel="prev" href="%s">\n' % bs.url(lang, "blog:p%d" % (n - 1), root_) + extra
     if n < pages:
@@ -419,8 +418,8 @@ def llms_txt(bs, data, UI, posts):
              "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
              "## Blog (every post exists in %s)" % ", ".join(bs.LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
+    lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
     if posts:
-        lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
         for q in posts:
             m = q["files"]["en"][0]
             lines.append("- [%s](%s/blog/%s/): %s" % (m["title"], bs.SITE, q["slug"], m["description"]))
