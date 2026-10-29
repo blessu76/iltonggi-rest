@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+37",
+   "at": "2026-10-29 23:35",
+   "ko": [
+    "판을 하며 자주 보는 창을 새로 그렸어요. 싸우기 전 묻는 창, 자동 전투, 직접 지휘, 판 끝 결과, 잠깐 쉬기, 첩자 소식이 이제 한지 창에 먹 테와 금 실선을 두르고 붓 띠 제목을 달아요.",
+    "단추는 시작 메뉴와 같은 옻칠 단추로 바꿨어요. 크기를 고르게 맞추고, 누르는 단추는 늘 창 오른쪽 아래에, 닫기는 제목 오른쪽 끝에 두었어요.",
+    "판 끝 결과 창에서 이기면 금빛이 한 번 훑고 지나가요. 결과 이미지 공유는 창을 하나 더 띄우지 않고 결과 창 안에서 바로 미리 보여 줘요.",
+    "저장했다는 알림처럼 잠깐 뜨는 소식도 먹 띠로 바꿨어요."
+   ],
+   "en": [
+    "The windows you see most during a game have been redrawn. The pre-battle prompt, auto battle, direct command, the end-of-game result, the pause menu and spy reports now sit on hanji paper with an ink border, a thin gold line and a brush-stroke title band.",
+    "Buttons now use the same lacquer style as the start menu. They share one size, the main button always sits at the bottom right of a window, and Close sits at the right end of the title.",
+    "When you win, a sweep of gold light passes over the result window. Sharing your result image now shows the preview inside the result window instead of opening a second one.",
+    "Short notices, like confirming a save, now appear on an ink strip."
+   ]
+  },
+  {
    "build": "1.0.0+36",
    "at": "2026-10-29 23:07",
    "ko": [
