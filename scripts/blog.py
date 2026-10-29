@@ -153,7 +153,8 @@ def load_posts(root=ROOT):
             raise BlogError("bad slug %r" % slug)
         files = check_post_files(d, slug)
         pub = dt.datetime.fromisoformat(files["en"][0]["published"])
-        posts.append({"slug": slug, "published": pub, "files": files})
+        mods = [m.get("updated") or m["published"] for m, _ in files.values()]
+        posts.append({"slug": slug, "published": pub, "files": files, "modified": max(dt.datetime.fromisoformat(x) for x in mods)})
     posts.sort(key=lambda p: (p["published"], p["slug"]))
     for i, p in enumerate(posts, 1):
         p["no"] = i  # No. N = publish order (oldest = 1), same in every language
@@ -210,6 +211,28 @@ def render_body(body):
 
 # ---- pages -------------------------------------------------------------------------------------------------------
 
+def org(bs):
+    return {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/",
+            "logo": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512}}
+
+
+def warnings(meta, body, lang):
+    """SEO guide v1 (P0-9, P1-3) soft limits -> [warning]; never blocks a publish."""
+    cjk = lang in ("ja", "zh", "ko")
+    n = len(re.sub(r"\s", "", body)) if cjk else len(re.findall(r"\w+", body))
+    out = []
+    if lang in ORIGINALS:
+        floor = (800, 300) if cjk else (400, 300)  # target / minimum (CJK: characters; others: words)
+        if n < (500 if cjk else floor[1]):
+            out.append("%s: body %d %s is below the minimum (%s)" % (lang, n, "chars" if cjk else "words", "500 chars" if cjk else "300 words"))
+    tl, dl = (40, 110) if cjk else (60, 160)
+    if len(meta["title"]) > tl:
+        out.append("%s: title %d chars > %d" % (lang, len(meta["title"]), tl))
+    if len(meta["description"]) > dl:
+        out.append("%s: description %d chars > %d" % (lang, len(meta["description"]), dl))
+    return out
+
+
 def ui_all():
     return json.loads((BLOG / "ui.json").read_text(encoding="utf-8"))
 
@@ -245,11 +268,11 @@ def build(bs, data, root=ROOT):
     def rel(lang, root_, path):
         return ("" if root_ else lang + "/") + path.strip("/") + "/index.html"
 
-    newest = posts[0]["published"].date().isoformat() if posts else None
     for n in range(1, pages + 1):
-        reg("blog:p%d" % n, list_path(n), newest, "daily", "0.7" if n == 1 else "0.5")
+        chunk_ = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
+        reg("blog:p%d" % n, list_path(n), max(p["modified"] for p in chunk_).date().isoformat() if chunk_ else None, None, None)
     for p in posts:
-        reg("blog:" + p["slug"], post_path(p["slug"]), p["published"].date().isoformat(), "monthly", "0.6")
+        reg("blog:" + p["slug"], post_path(p["slug"]), p["modified"].date().isoformat(), None, None)
 
     for lang, root_ in entries:
         t, ui = data[lang], UI[lang]
@@ -258,9 +281,10 @@ def build(bs, data, root=ROOT):
             chunk = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
             files[rel(lang, root_, list_path(n))] = list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, bool(posts))
         for p in posts:
-            files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p)
+            files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p, posts)
     if posts:
         files["blog/feed.xml"] = feed(posts)
+    files["llms.txt"] = llms_txt(bs, data, UI, posts)
     return files, extra
 
 
@@ -273,9 +297,10 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
     title = "%s — %s" % (ui["nav"], t["name"]) if n == 1 else "%s · %s %d — %s" % (ui["nav"], ui["page"], n, t["name"])
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "Blog", "name": ui["title"], "description": ui["lead"], "inLanguage": lang,
-        "url": bs.url(lang, key, root_), "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"},
+        "url": bs.url(lang, key, root_), "publisher": org(bs),
         "blogPost": [{"@type": "BlogPosting", "headline": p["files"][lang][0]["title"], "url": bs.url(lang, "blog:" + p["slug"], root_),
-                      "datePublished": p["published"].isoformat()} for p in chunk],
+                      "datePublished": p["published"].isoformat(timespec="seconds"), "dateModified": p["modified"].isoformat(timespec="seconds")}
+                     for p in chunk],
     }, ensure_ascii=False)
     extra = (feed_link(ui, lang) if has_posts else "") + '<script type="application/ld+json">%s</script>\n' % ld
     if n > 1:
@@ -316,24 +341,28 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
     return out + (localtime_script() if chunk else "") + bs.footer(t, lang, key, root_) + "</body>\n</html>\n"
 
 
-def post_page(bs, data, t, ui, lang, root_, pre, p):
+def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
     key = "blog:" + p["slug"]
     meta, body = p["files"][lang]
     iso = p["published"].isoformat(timespec="seconds")
-    modified = meta.get("updated") or iso
+    modified = p["modified"].isoformat(timespec="seconds")
     can = bs.url(lang, key, root_)
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "BlogPosting", "headline": meta["title"], "description": meta["description"],
         "datePublished": iso, "dateModified": modified, "inLanguage": lang, "url": can,
         "mainEntityOfPage": {"@type": "WebPage", "@id": can},
-        "image": bs.SITE + bs.asset("icon-512.png"),
-        "author": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"},
-        "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"},
+        "image": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512},
+        "author": {"@id": "https://ipe.rest/#organization"}, "publisher": org(bs),
     }, ensure_ascii=False)
+    crumbs = json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": t["name"], "item": bs.url(lang, "home", root_)},
+        {"@type": "ListItem", "position": 2, "name": ui["nav"], "item": bs.url(lang, "blog:p1", root_)},
+        {"@type": "ListItem", "position": 3, "name": meta["title"], "item": can}]}, ensure_ascii=False)
     extra = (feed_link(ui, lang)
              + '<meta property="article:published_time" content="%s">\n' % iso
              + '<meta property="article:modified_time" content="%s">\n' % modified
-             + '<script type="application/ld+json">%s</script>\n' % ld)
+             + '<script type="application/ld+json">%s</script>\n' % ld
+             + '<script type="application/ld+json">%s</script>\n' % crumbs)
     ai = ""
     if meta.get("translation_of"):
         o = meta["translation_of"]
@@ -352,12 +381,50 @@ def post_page(bs, data, t, ui, lang, root_, pre, p):
 {ai}      <div class="post__body">
 {render_body(body)}
       </div>
-      <div class="doc__links"><a href="{pre}/blog/">← {esc(ui['back'])}</a></div>
+{more_links(p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}/blog/">← {esc(ui['back'])}</a></div>
     </div>
   </article>
 </main>
 '''
     return out + localtime_script() + bs.footer(t, lang, key, root_) + "</body>\n</html>\n"
+
+
+def more_links(p, posts_all, lang, pre, ui):
+    """Previous/next (by publish order) + up to 3 more recent posts of the same language (SEO guide P1-1)."""
+    i = posts_all.index(p)  # newest first
+    newer = posts_all[i - 1] if i > 0 else None
+    older = posts_all[i + 1] if i + 1 < len(posts_all) else None
+
+    def a(q):
+        return '<a href="%s%s">%s</a>' % (pre, post_path(q["slug"]), esc(q["files"][lang][0]["title"]))
+    pn = ""
+    if older:
+        pn += '<li>← %s: %s</li>' % (esc(ui["prev_post"]), a(older))
+    if newer:
+        pn += '<li>%s →: %s</li>' % (esc(ui["next_post"]), a(newer))
+    out = '      <nav class="post-nav" aria-label="%s"><ul>%s</ul></nav>\n' % (esc(ui["related"]), pn) if pn else ""
+    shown = {q["slug"] for q in (newer, older) if q} | {p["slug"]}
+    rel = [q for q in posts_all if q["slug"] not in shown][:3]
+    if rel:
+        out += '      <section class="post-more"><h2>%s</h2><ul>%s</ul></section>\n' % (
+            esc(ui["related"]), "".join("<li>%s</li>" % a(q) for q in rel))
+    return out
+
+
+def llms_txt(bs, data, UI, posts):
+    en = data["en"]
+    lines = ["# Iltonggi (一統記 · 일통기)", "",
+             "> A Three Kingdoms strategy game for iOS by ipe Studio, in 11 languages. This site has the game page, release notes and a making-of blog (one short note a day).", "",
+             "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
+             "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
+             "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
+             "## Blog (every post exists in %s)" % ", ".join(bs.LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
+    if posts:
+        lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
+        for q in posts:
+            m = q["files"]["en"][0]
+            lines.append("- [%s](%s/blog/%s/): %s" % (m["title"], bs.SITE, q["slug"], m["description"]))
+    return "\n".join(lines) + "\n"
 
 
 def feed(posts):
@@ -385,6 +452,9 @@ def main(argv=None):
                     for prob in lint((d / (lang + ".md")).read_text(encoding="utf-8")):
                         raise BlogError("%s.md: %s" % (lang, prob))
                 print("ok  %s/%s" % (kind, d.name))
+                for lang, (meta, body) in files.items():
+                    for w in warnings(meta, body, lang):
+                        print("  warn %s" % w)
             except BlogError as ex:
                 bad += 1
                 print("BAD %s/%s: %s" % (kind, d.name, ex))

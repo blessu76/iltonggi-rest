@@ -60,6 +60,9 @@ def validate(d, slug, root):
             problems.append("%s.md: %s" % (lang, prob))
     if problems:
         raise blog.BlogError("safety lint: " + "; ".join(problems))
+    for lang, (meta, body) in files.items():
+        for w in blog.warnings(meta, body, lang):
+            print("publish_blog: WARN " + w)
     return files
 
 

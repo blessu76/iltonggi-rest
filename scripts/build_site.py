@@ -376,7 +376,7 @@ def sitemap(extra=()):
             out.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % url("en", key, True))
             if lastmod:
                 out.append("    <lastmod>%s</lastmod>" % lastmod)
-            out.append("    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>" % (freq, prio))
+            out.append("  </url>")
     out.append("</urlset>")
     return "\n".join(out) + "\n"
 

@@ -1,0 +1,13 @@
+# Iltonggi (一統記 · 일통기)
+
+> A Three Kingdoms strategy game for iOS by ipe Studio, in 11 languages. This site has the game page, release notes and a making-of blog (one short note a day).
+
+## Pages
+- [Home](https://iltonggi.ipe.rest/): what the game is
+- [Release notes](https://iltonggi.ipe.rest/releases/): what changed in each TestFlight build
+- [Support](https://iltonggi.ipe.rest/support/)
+- [Privacy](https://iltonggi.ipe.rest/privacy/)
+- [Terms](https://iltonggi.ipe.rest/terms/)
+
+## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
+- [Blog index](https://iltonggi.ipe.rest/blog/)

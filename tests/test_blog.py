@@ -49,6 +49,21 @@ class Blog(unittest.TestCase):
             with self.assertRaises(blog.BlogError):
                 blog.render_body(bad)
 
+    def test_warnings(self):
+        m = {"title": "x" * 70, "description": "y" * 170}
+        w = blog.warnings(m, "short body", "en")
+        self.assertEqual(len(w), 3)
+        self.assertEqual(blog.warnings({"title": "t", "description": "d"}, "word " * 400, "en"), [])
+
+    def test_indexnow_today(self):
+        import indexnow
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            (tmp / "sitemap.xml").write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://a/x/</loc><lastmod>2026-10-30</lastmod></url><url><loc>https://a/y/</loc><lastmod>2026-10-29</lastmod></url><url><loc>https://a/</loc></url></urlset>')
+            self.assertEqual(indexnow.sitemap_urls_modified(tmp / "sitemap.xml", "2026-10-30"), ["https://a/x/"])
+        finally:
+            shutil.rmtree(tmp)
+
     def test_lint(self):
         for bad in ("`code`", "see https://x.com", "/Users/a/b", "run build_site.py", "key sk-abcdefghijklmnop", "a@b.com", "$4.99", "9,900원", "foundry-f018"):
             self.assertTrue(blog.lint(bad), bad)
@@ -115,6 +130,15 @@ class Blog(unittest.TestCase):
             self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/ja/blog/p00/"', page)
             self.assertIn("No. 1", page)
             self.assertIn("No. 12", files["blog/index.html"])
+            self.assertIn('"@id": "https://ipe.rest/#organization"', page)
+            self.assertIn('"@type": "BreadcrumbList"', page)
+            self.assertIn('"@type": "ImageObject"', page)
+            self.assertIn("post-nav", page)
+            self.assertIn("post-more", files["ja/blog/p05/index.html"])
+            self.assertIn("blog/p11/", files["llms.txt"])
+            sm = bs.sitemap(extra)
+            self.assertIn("<lastmod>2026-10-01</lastmod>", sm)
+            self.assertNotIn("<priority>0.7</priority>", sm.split("/blog/")[1])
             p2 = files["blog/page/2/index.html"]
             self.assertIn("No. 2 ", p2)
             self.assertNotIn("No. 12 ", p2)

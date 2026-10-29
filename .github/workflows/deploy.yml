@@ -51,3 +51,10 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: IndexNow + live blog check (after deploy; never fails the deploy)
+        if: github.event_name != 'schedule'
+        continue-on-error: true
+        run: |
+          python3 scripts/indexnow.py --today || true
+          python3 scripts/check_blog_live.py || echo "::warning::blog live check failed"

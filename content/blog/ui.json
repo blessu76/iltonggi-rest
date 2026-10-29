@@ -10,7 +10,10 @@
   "older": "Older",
   "page": "Page",
   "back": "Back to the blog",
-  "feed": "Feed"
+  "feed": "Feed",
+  "prev_post": "Previous post",
+  "next_post": "Next post",
+  "related": "More posts"
  },
  "ko": {
   "nav": "블로그",
@@ -23,7 +26,10 @@
   "older": "이전 글",
   "page": "페이지",
   "back": "블로그로 돌아가기",
-  "feed": "피드"
+  "feed": "피드",
+  "prev_post": "이전 글",
+  "next_post": "다음 글",
+  "related": "다른 글"
  },
  "ja": {
   "nav": "ブログ",
@@ -36,7 +42,10 @@
   "older": "前の記事",
   "page": "ページ",
   "back": "ブログに戻る",
-  "feed": "フィード"
+  "feed": "フィード",
+  "prev_post": "前の記事",
+  "next_post": "次の記事",
+  "related": "ほかの記事"
  },
  "zh": {
   "nav": "博客",
@@ -49,7 +58,10 @@
   "older": "较早",
   "page": "页",
   "back": "返回博客",
-  "feed": "订阅源"
+  "feed": "订阅源",
+  "prev_post": "上一篇",
+  "next_post": "下一篇",
+  "related": "更多文章"
  },
  "es": {
   "nav": "Blog",
@@ -62,7 +74,10 @@
   "older": "Más antiguas",
   "page": "Página",
   "back": "Volver al blog",
-  "feed": "Feed"
+  "feed": "Feed",
+  "prev_post": "Entrada anterior",
+  "next_post": "Entrada siguiente",
+  "related": "Más entradas"
  },
  "pt": {
   "nav": "Blog",
@@ -75,7 +90,10 @@
   "older": "Mais antigas",
   "page": "Página",
   "back": "Voltar ao blog",
-  "feed": "Feed"
+  "feed": "Feed",
+  "prev_post": "Post anterior",
+  "next_post": "Próximo post",
+  "related": "Mais posts"
  },
  "id": {
   "nav": "Blog",
@@ -88,7 +106,10 @@
   "older": "Lebih lama",
   "page": "Halaman",
   "back": "Kembali ke blog",
-  "feed": "Feed"
+  "feed": "Feed",
+  "prev_post": "Tulisan sebelumnya",
+  "next_post": "Tulisan berikutnya",
+  "related": "Tulisan lainnya"
  },
  "ru": {
   "nav": "Блог",
@@ -101,7 +122,10 @@
   "older": "Старее",
   "page": "Страница",
   "back": "Назад в блог",
-  "feed": "Лента"
+  "feed": "Лента",
+  "prev_post": "Предыдущая запись",
+  "next_post": "Следующая запись",
+  "related": "Другие записи"
  },
  "vi": {
   "nav": "Blog",
@@ -114,7 +138,10 @@
   "older": "Cũ hơn",
   "page": "Trang",
   "back": "Quay lại blog",
-  "feed": "Nguồn cấp"
+  "feed": "Nguồn cấp",
+  "prev_post": "Bài trước",
+  "next_post": "Bài sau",
+  "related": "Bài viết khác"
  },
  "fr": {
   "nav": "Blog",
@@ -127,7 +154,10 @@
   "older": "Plus anciens",
   "page": "Page",
   "back": "Retour au blog",
-  "feed": "Flux"
+  "feed": "Flux",
+  "prev_post": "Article précédent",
+  "next_post": "Article suivant",
+  "related": "Autres articles"
  },
  "de": {
   "nav": "Blog",
@@ -140,6 +170,9 @@
   "older": "Älter",
   "page": "Seite",
   "back": "Zurück zum Blog",
-  "feed": "Feed"
+  "feed": "Feed",
+  "prev_post": "Vorheriger Beitrag",
+  "next_post": "Nächster Beitrag",
+  "related": "Weitere Beiträge"
  }
 }

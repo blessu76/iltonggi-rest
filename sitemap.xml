@@ -1034,8 +1034,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/en/blog/</loc>
@@ -1051,8 +1049,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/ko/blog/</loc>
@@ -1068,8 +1064,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/ja/blog/</loc>
@@ -1085,8 +1079,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/zh/blog/</loc>
@@ -1102,8 +1094,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/es/blog/</loc>
@@ -1119,8 +1109,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/pt/blog/</loc>
@@ -1136,8 +1124,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/id/blog/</loc>
@@ -1153,8 +1139,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/ru/blog/</loc>
@@ -1170,8 +1154,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/vi/blog/</loc>
@@ -1187,8 +1169,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/fr/blog/</loc>
@@ -1204,8 +1184,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iltonggi.ipe.rest/de/blog/</loc>
@@ -1221,7 +1199,5 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
