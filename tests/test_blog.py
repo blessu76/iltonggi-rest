@@ -12,13 +12,13 @@ import build_site as bs  # noqa: E402
 import publish_blog as pb  # noqa: E402
 
 
-def write_post(base, folder, slug, published=None, bad=None):
+def write_post(base, folder, slug, published=None, bad=None, pad=310):
     d = Path(base) / folder
     d.mkdir(parents=True, exist_ok=True)
     for l in blog.LANGS:
         tr = "" if l in blog.ORIGINALS else "translation_of: en\n"
         pub = "published: %s\n" % published if published else ""
-        body = "Hello **world** and [home](/).\n\n## Part\n\n- a\n- b\n"
+        body = "Hello **world** and [home](/).\n\n## Part\n\n- a\n- b\n\n" + "word " * pad
         if bad and l == "de":
             body += "\n" + bad + "\n"
         (d / (l + ".md")).write_text(
@@ -52,8 +52,17 @@ class Blog(unittest.TestCase):
     def test_warnings(self):
         m = {"title": "x" * 70, "description": "y" * 170}
         w = blog.warnings(m, "short body", "en")
-        self.assertEqual(len(w), 3)
+        self.assertEqual(len(w), 2)  # title + description (short body is a body_errors hard error)
         self.assertEqual(blog.warnings({"title": "t", "description": "d"}, "word " * 400, "en"), [])
+        m = {"title": "t", "description": "d"}
+        self.assertEqual(len(blog.body_errors(m, "word " * 299, "en")), 1)
+        self.assertEqual(blog.body_errors(m, "word " * 300, "en"), [])
+        self.assertEqual(len(blog.warnings(m, "word " * 350, "en")), 1)  # warn, not error
+        self.assertEqual(len(blog.body_errors(m, "가" * 499, "ko")), 1)
+        self.assertEqual(blog.body_errors(m, "가" * 500, "ko"), [])
+        self.assertEqual(len(blog.warnings(m, "가" * 600, "ko")), 1)
+        self.assertEqual(blog.warnings(m, "가" * 800, "ko"), [])
+        self.assertEqual(blog.body_errors(m, "short", "de"), [])  # translations are not gated
 
     def test_indexnow_today(self):
         import indexnow
@@ -68,6 +77,16 @@ class Blog(unittest.TestCase):
         for bad in ("`code`", "see https://x.com", "/Users/a/b", "run build_site.py", "key sk-abcdefghijklmnop", "a@b.com", "$4.99", "9,900원", "foundry-f018"):
             self.assertTrue(blog.lint(bad), bad)
         self.assertFalse(blog.lint("A calm story about a mountain pass."))
+
+    def test_publish_short_body_fails_loudly(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            q = tmp / "content" / "blog" / "queue"
+            write_post(q, "001-short", "short", pad=100)
+            self.assertEqual(pb.main(["--root", str(tmp), "--no-git", "--at", "2026-10-30T12:00:00+09:00"]), 1)
+            self.assertTrue((q / "001-short").exists())  # nothing moved
+        finally:
+            shutil.rmtree(tmp)
 
     def test_publish_flow(self):
         tmp = Path(tempfile.mkdtemp())

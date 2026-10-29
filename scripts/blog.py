@@ -216,15 +216,32 @@ def org(bs):
             "logo": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512}}
 
 
+def body_size(body, lang):
+    """-> (count, unit): CJK = characters without whitespace, others = words (SEO guide v1 conversion: 400 words ~ 800 chars, 300 words ~ 500 chars)."""
+    if lang in ("ja", "zh", "ko"):
+        return len(re.sub(r"\s", "", body)), "chars"
+    return len(re.findall(r"\w+", body)), "words"
+
+
+MIN_BODY = {"words": (400, 300), "chars": (800, 500)}  # (warn below, error below) - originals only
+
+
+def body_errors(meta, body, lang):
+    """Hard limit (Davy 2026-10-29): an original (en/ko) body below the error floor blocks the publish."""
+    if lang not in ORIGINALS:
+        return []
+    n, unit = body_size(body, lang)
+    return ["%s: body %d %s is below the minimum (%d)" % (lang, n, unit, MIN_BODY[unit][1])] if n < MIN_BODY[unit][1] else []
+
+
 def warnings(meta, body, lang):
-    """SEO guide v1 (P0-9, P1-3) soft limits -> [warning]; never blocks a publish."""
+    """SEO guide v1 (P0-9, P1-3) soft limits -> [warning]; never blocks a publish (body below the error floor is body_errors)."""
     cjk = lang in ("ja", "zh", "ko")
-    n = len(re.sub(r"\s", "", body)) if cjk else len(re.findall(r"\w+", body))
     out = []
     if lang in ORIGINALS:
-        floor = (800, 300) if cjk else (400, 300)  # target / minimum (CJK: characters; others: words)
-        if n < (500 if cjk else floor[1]):
-            out.append("%s: body %d %s is below the minimum (%s)" % (lang, n, "chars" if cjk else "words", "500 chars" if cjk else "300 words"))
+        n, unit = body_size(body, lang)
+        if MIN_BODY[unit][1] <= n < MIN_BODY[unit][0]:
+            out.append("%s: body %d %s is below the target (%d)" % (lang, n, unit, MIN_BODY[unit][0]))
     tl, dl = (40, 110) if cjk else (60, 160)
     if len(meta["title"]) > tl:
         out.append("%s: title %d chars > %d" % (lang, len(meta["title"]), tl))

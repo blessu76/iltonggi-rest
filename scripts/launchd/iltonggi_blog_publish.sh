@@ -14,4 +14,13 @@ fi
 git -C "$CLONE" fetch --quiet origin main && git -C "$CLONE" checkout --quiet main && git -C "$CLONE" reset --hard --quiet origin/main \
   || { echo "ERROR could not sync clone to origin/main"; exit 1; }
 [ -f "$CLONE/scripts/publish_blog.py" ] || { echo "publish_blog.py is not on main yet - nothing to do"; exit 0; }
-cd "$CLONE" && exec python3 scripts/publish_blog.py "$@"
+cd "$CLONE" || exit 1
+python3 scripts/publish_blog.py "$@"; rc=$?
+# A failed publish must never be silent (Davy 2026-10-29): macOS notification + ALERT file + optional hook (ILTONGGI_BLOG_ALERT_CMD gets the message as $1).
+if [ "$rc" -ne 0 ] && [ "$*" != "--dry-run" ]; then
+  MSG="blog publish FAILED (exit $rc) $(TZ=Asia/Seoul date '+%F %H:%M') KST - see ~/.ipe/logs/iltonggi-blog-publish.log"
+  echo "ALERT $MSG"; mkdir -p "$HOME/.ipe/logs"; echo "$MSG" > "$HOME/.ipe/logs/iltonggi-blog-publish.ALERT"
+  osascript -e "display notification \"$MSG\" with title \"iltonggi blog\"" >/dev/null 2>&1 || true
+  [ -n "${ILTONGGI_BLOG_ALERT_CMD:-}" ] && $ILTONGGI_BLOG_ALERT_CMD "$MSG" || true
+elif [ "$rc" -eq 0 ]; then rm -f "$HOME/.ipe/logs/iltonggi-blog-publish.ALERT"; fi
+exit $rc

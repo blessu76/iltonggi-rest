@@ -2,7 +2,7 @@
 
 맥미니의 launchd 가 **12:00 KST**(12:30·13:30 은 재시도 — 하루 1편 규칙이라 중복되지 않는다)에 `scripts/launchd/iltonggi_blog_publish.sh` 를 부른다.
 래퍼는 전용 클론 `~/.ipe/iltonggi-rest-publish` 를 `origin/main` 에 맞춘 뒤 `scripts/publish_blog.py` 를 돌린다: 대기열의 첫 글 → `content/blog/posts/` 로 옮기고 `date`·`published` 도장 → 빌드 → `--check` → 테스트 → 커밋 → `pull --rebase` → `push origin HEAD:main`. push 하면 GitHub Actions 가 배포한다(push 로 배포되므로 Actions `schedule` 지연과 무관). 실패하면 작업 트리를 되돌리고 종료코드 1, 대기열 글은 그대로 남는다.
-로그: `~/.ipe/logs/iltonggi-blog-publish.log`. 대기열이 비어 있으면 "queue is empty" 만 남기고 끝낸다.
+실패(종료코드≠0, 린트 오류 포함)하면 맥 알림 + `~/.ipe/logs/iltonggi-blog-publish.ALERT` 파일 + (선택) `ILTONGGI_BLOG_ALERT_CMD "<메시지>"` 훅. 원문(en/ko) 본문이 300단어(CJK 500자) 미만이면 오류로 발행 중단, 400단어(800자) 미만이면 경고. 로그: `~/.ipe/logs/iltonggi-blog-publish.log`. 대기열이 비어 있으면 "queue is empty" 만 남기고 끝낸다.
 
 ## 설치 (레포 밖 파일 — 이 폴더는 템플릿 사본)
 ```

@@ -60,6 +60,9 @@ def validate(d, slug, root):
             problems.append("%s.md: %s" % (lang, prob))
     if problems:
         raise blog.BlogError("safety lint: " + "; ".join(problems))
+    errs = ["%s" % e for lang, (meta, body) in files.items() for e in blog.body_errors(meta, body, lang)]
+    if errs:
+        raise blog.BlogError("body too short: " + "; ".join(errs))
     for lang, (meta, body) in files.items():
         for w in blog.warnings(meta, body, lang):
             print("publish_blog: WARN " + w)
@@ -109,7 +112,7 @@ def main(argv=None):
         validate(d, slug, root)
     except blog.BlogError as ex:
         print("publish_blog: %s is not publishable: %s" % (d.name, ex), file=sys.stderr)
-        return 1
+        return 1  # non-zero -> the launchd wrapper raises the alert (never a silent skip)
     if a.dry_run:
         print("publish_blog: DRY RUN - would publish %s (%s) at %s" % (d.name, slug, when.isoformat()))
         return 0
