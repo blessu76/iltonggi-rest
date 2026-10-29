@@ -15,6 +15,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import blog  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://iltonggi.ipe.rest"
 MAIL = "ipe.haven@gmail.com"
@@ -107,6 +110,7 @@ def header(t, lang, root):
       </span>
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
+      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
       <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
@@ -134,6 +138,7 @@ def footer(t, lang, page, root):
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
+      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
       <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
@@ -352,7 +357,7 @@ def not_found(data):
     return out + footer(t, "en", "home", True).replace('<nav class="foot-langs', '<nav hidden class="foot-langs', 1) + "</body>\n</html>\n"
 
 
-def sitemap():
+def sitemap(extra=()):
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     entries = [("en", True)] + [(l, False) for l in LANGS]
@@ -363,6 +368,15 @@ def sitemap():
                 out.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (l2, url(l2, page, False)))
             out.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % url("en", page, True))
             out.append("    <changefreq>monthly</changefreq>\n    <priority>%s</priority>\n  </url>" % ("1.0" if page == "home" and root else "0.6"))
+    for key, lastmod, freq, prio in extra:
+        for l, root in entries:
+            out.append("  <url>\n    <loc>%s</loc>" % url(l, key, root))
+            for l2 in LANGS:
+                out.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (l2, url(l2, key, False)))
+            out.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % url("en", key, True))
+            if lastmod:
+                out.append("    <lastmod>%s</lastmod>" % lastmod)
+            out.append("    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>" % (freq, prio))
     out.append("</urlset>")
     return "\n".join(out) + "\n"
 
@@ -381,7 +395,9 @@ def build():
         for l in LANGS:
             files["%s/%s" % (l, "index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data[l], l, False)
     files["404.html"] = not_found(data)
-    files["sitemap.xml"] = sitemap()
+    blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
+    files.update(blog_files)
+    files["sitemap.xml"] = sitemap(blog_extra)
     return files
 
 
