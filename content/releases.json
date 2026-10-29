@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+41",
+   "at": "2026-10-30 06:56",
+   "ko": [
+    "병력을 한 번에 최대 3칸까지 옮길 수 있어요. 1칸은 행동 1, 2~3칸은 내 땅을 지나 행동 2를 써요. 행동이 하나만 남으면 먼 이동은 막고 까닭을 알려 줘요. 적 나라도 같은 규칙을 따라요.",
+    "부대를 고르면 갈 수 있는 곳이 지도에 갈려 보여요. 공격은 붉은 인장 테, 이동은 한지빛 점선, 2~3칸 이동은 주홍 알 두 개. 고을 정보의 「이동」 · 「공격」 칩으로 한쪽만 볼 수도 있어요.",
+    "병력을 보낼 때 슬라이더 위에 [25%] [50%] [75%] [全] 단추가 생겼어요. 기본은 그대로 전부예요.",
+    "지도 위 카드를 새로 입혔어요. 먹 옻칠 패에 금 겹테, 고른 고을은 한지 패로 밝게 뜨고, 이번 턴 남은 행동은 턴 끝 단추 위 「行」 인장 알로 보여요. 길도 더 또렷해졌어요."
+   ],
+   "en": [
+    "Troops can now move up to 3 regions at once. One region costs 1 action; 2–3 regions through your own land cost 2. With only one action left, long moves are blocked and you're told why. Rival kingdoms follow the same rule.",
+    "When you pick a unit, the map tells its reach apart: attacks get a red seal ring, moves a paper-white dashed ring, and 2–3 region moves two vermilion pips. The \"Move\" and \"Attack\" chips in the region card show just one of them.",
+    "When sending troops, [25%] [50%] [75%] [All] buttons now sit above the slider. The default is still all of them.",
+    "The cards on the map have a new look: black lacquer plaques with gold double lines, the chosen region lifts up on hanji paper, and the actions left this turn show as 行 seal pips above the End Turn button. Roads are easier to see, too."
+   ]
+  },
+  {
    "build": "1.0.0+40",
    "at": "2026-10-30 06:17",
    "ko": [
