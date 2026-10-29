@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+40",
+   "at": "2026-10-30 06:17",
+   "ko": [
+    "적이 내 고을을 칠 때도 직접 지휘할 수 있어요. 막기 전 창에서 「직접 지휘로 막기」를 누르면 세 합 동안 진형 · 돌격 · 측면으로 맞섭니다.",
+    "성벽이 있는 고을은 성벽 뒤에서, 작은 고을은 목책 뒤에서 촘촘히 막아요. 성벽 앞의 적은 돌격을 자주 하니 척후 보고를 잘 읽어 보세요.",
+    "이웃에 내 고을이 있으면 「성을 내준다」로 물러나 남은 병력을 살릴 수 있어요.",
+    "한 차례에 여러 번 쳐들어오면 하나씩 물어요. 귀찮으면 「이번 차례 전부 맡기기」로 남은 싸움을 한 번에 맡길 수 있어요."
+   ],
+   "en": [
+    "You can now command in person when the enemy attacks your towns too. Tap \"Defend in person\" before the battle and answer with hold, charge or flank over three rounds.",
+    "Towns with walls fight from behind their walls, small towns from behind a palisade. Enemies before your walls often charge, so read the scouts' report.",
+    "If you have a neighbouring town, \"Abandon\" lets you fall back and save some of your troops.",
+    "When several attacks come in one turn, you're asked one at a time. \"Leave all this turn\" hands the rest to your officers at once."
+   ]
+  },
+  {
    "build": "1.0.0+39",
    "at": "2026-10-30 05:45",
    "ko": [
