@@ -1,6 +1,38 @@
 {
  "entries": [
   {
+   "build": "1.0.0+29",
+   "at": "2026-10-29 15:00",
+   "ko": [
+    "작은 화면(아이폰 SE 등)에서 판 결과 창 아래 단추가 가려지던 것을 고쳤어요. 이제 단추는 늘 창 맨 아래에 있고, 위 내용만 밀어서 봐요.",
+    "같은 지도·같은 네 나라에서 시작 배치가 다른 새 판을 준비하고 있어요. 551년, 백제와 신라가 동맹으로 시작해 북쪽을 노리는 판이에요.",
+    "새 판 고르기 맨 위에서 원래 판과 새 판을 고를 수 있어요. 새 판은 아직 시험 빌드에서만 열려요.",
+    "새 판의 첫 이야기와 안내 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "On small screens (like iPhone SE), the buttons at the bottom of the results window could be hidden. They now always stay at the bottom, and only the content above scrolls.",
+    "We're preparing a new game on the same map with the same four kingdoms but a different starting layout: the year 551, with Baekje and Silla starting as allies and eyeing the north.",
+    "At the top of the new-game screen you can now choose between the original game and the new one. The new game opens only in test builds for now.",
+    "The new game's opening story and messages are available in all 11 languages."
+   ]
+  },
+  {
+   "build": "1.0.0+28",
+   "at": "2026-10-29 15:00",
+   "ko": [
+    "세 번째 승리부터 결과 화면에 작은 꾸미기 카드가 한 줄 떠요. 첫 승리와 두 번째 승리에는 아무것도 뜨지 않아요.",
+    "그 카드의 「구경하기」와 「나중에」는 같은 크기예요. 「다시 안 보기」를 누르면 다시 뜨지 않아요.",
+    "추천 안내는 모두 합쳐 하루 한 번까지만, 같은 안내는 일주일 안에 다시 뜨지 않아요. 설정 「추천 안내 끄기」로 모두 끌 수 있어요.",
+    "지난번에 넣은 안내 문구를 11개 언어 모두에서 다시 맞췄어요."
+   ],
+   "en": [
+    "From your third win, the results screen shows a small one-line card about decorations. Nothing appears after your first or second win.",
+    "On that card, \"Take a look\" and \"Later\" are the same size. Tap \"Don't show again\" and it won't come back.",
+    "Suggestions appear at most once a day in total, and the same one never repeats within a week. Turn them all off with \"Turn off suggestions\" in Settings.",
+    "The new messages from the last update are now checked in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+27",
    "at": "2026-10-29 13:44",
    "ko": [
