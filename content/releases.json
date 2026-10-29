@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+33",
+   "at": "2026-10-29 17:44",
+   "ko": [
+    "싸우기 전 창에 「직접 지휘」가 열렸어요. 누르면 세 합 동안 진형·돌격·측면 중 하나를 골라 직접 싸워요. 기본은 지금처럼 자동 전투예요.",
+    "진형은 돌격을, 돌격은 측면을, 측면은 진형을 이겨요. 척후 보고로 적의 기색을 엿볼 수 있고, 장수가 있으면 더 잘 맞아요. 성 안의 적은 진형을 자주 짜요.",
+    "장수 능력·병력·날씨는 자동 전투와 똑같이 들어가요. 잘 읽으면 조금 유리하지만, 크게 밀리는 싸움을 뒤집지는 못해요. 안 되겠다 싶으면 후퇴해서 병력 절반을 살릴 수 있어요.",
+    "새 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "\"Command in person\" is now open on the pre-battle screen. Tap it to fight three rounds yourself, choosing Hold, Charge or Flank each round. Auto Battle is still the default.",
+    "Hold beats Charge, Charge beats Flank, and Flank beats Hold. Scouts hint at the enemy's next move, and they are more reliable when a general leads you. Enemies behind walls often hold formation.",
+    "Generals, troop numbers and weather count exactly as in Auto Battle. Reading the enemy well gives a small edge, but it won't turn a badly lost fight around. If it goes wrong, retreat to bring half your troops home.",
+    "The new messages are available in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+32",
    "at": "2026-10-29 16:52",
    "ko": [
