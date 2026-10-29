@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "build": "1.0.0+35",
+   "at": "2026-10-29 19:22",
+   "ko": [
+    "대륙 이야기 3막 「붉은 수건의 대륙」이 열렸어요. 2막을 한 번 이기면 새 판 고르기에 3막 칸이 생겨요.",
+    "14세기 중반, 붉은 수건의 무리가 국경을 넘어오고 대륙에서는 원과 명이 겨뤄요. 통일왕국까지 셋이 맞서는 판이에요. 큰 강 건너 응천에 깃발을 꽂거나, 판이 끝날 때 고을이 가장 많으면 이겨요.",
+    "새 지도가 생겼어요. 압록강을 건너 요양으로, 또는 서해를 건너 등주로, 남쪽 바다를 건너 경원으로 가는 길이 있어요.",
+    "주원장, 서달, 토곤 테무르, 정세운 등 그 시대 사람 열 명의 열전을 새 판 고르기에서 읽을 수 있어요.",
+    "2막과 3막의 나라마다 제 색과 병사 차림이 생겼어요. 막부 무사는 뿔 달린 투구를, 원 병사는 털 테 투구를, 명 병사는 붉은 머리 수건을 써요."
+   ],
+   "en": [
+    "Act 3 of the continental story, \"Continent of Red Turbans\", is here. Win Act 2 once and an Act 3 tile appears when you start a new game.",
+    "In the mid-14th century, the Red Turbans spill across the border while the Yuan and the Ming fight over the continent. With the Unified Kingdom, three powers face off. Plant your banner over Yingtian across the great river, or hold the most towns when the game ends, to win.",
+    "A new map: cross the Yalu to Liaoyang, cross the western sea to Dengzhou, or sail the southern sea to Qingyuan.",
+    "Read the stories of ten people of the era, including Zhu Yuanzhang, Xu Da, Toghon Temür and Jeong Seun, on the new-game screen.",
+    "Every nation in Acts 2 and 3 now has its own colors and soldier gear: horned helmets for the shogunate's warriors, fur-trimmed helmets for the Yuan, and red head wraps for the Ming."
+   ]
+  },
+  {
    "build": "1.0.0+34",
    "at": "2026-10-29 18:27",
    "ko": [
