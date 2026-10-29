@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+32",
+   "at": "2026-10-29 16:52",
+   "ko": [
+    "두 판 넘게 내리 지면 패배 화면에 작전 한 수가 하나 떠요. 왕성이 떨어졌는지, 병력이 밀렸는지, 동맹 없이 여러 나라와 싸웠는지 같은 그 판의 사정에 맞춰 골라 드려요.",
+    "「쉬움」에서 어느 나라를 고르든 비슷하게 이길 수 있도록 나라마다 맞춰 두었어요. 가야와 백제처럼 어렵던 나라가 한결 수월해졌고, 보통과 어려움은 그대로예요.",
+    "새 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "After two or more losses in a row, the defeat screen now shows one battle tip. It is picked from what happened in that game — a fallen capital, a weaker army, fighting several kingdoms with no ally, and so on.",
+    "On Easy, every kingdom is now about as winnable as the others. Hard picks like Gaya and Baekje are noticeably easier; Normal and Hard are unchanged.",
+    "The new messages are available in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+31",
    "at": "2026-10-29 16:20",
    "ko": [
