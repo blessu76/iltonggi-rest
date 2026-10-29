@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+36",
+   "at": "2026-10-29 23:07",
+   "ko": [
+    "막과 막 사이에 30초 남짓한 이야기 장면이 생겼어요. 막을 처음 열 때 한 번 흘러가고, 오른쪽 위 「건너뛰기」로 넘길 수 있어요.",
+    "서막 「빈 책」은 먹 한 방울에서 네 나라의 땅이 드러나는 이야기, 막간 「육백 년의 잠」은 바다 건너 무사들이 깃발을 드는 이야기, 막간 「붉은 강」은 원·통일왕국·명의 세 깃발이 마주 서는 이야기예요.",
+    "시작 메뉴의 책 칩이나 설정의 「지난 이야기」에서 본 이야기를 다시 볼 수 있어요. 아직 열지 않은 막의 이야기는 그 앞 막을 이기면 열려요.",
+    "설정에서 「막 열기 이야기」를 끄면 이 장면도 흐르지 않아요."
+   ],
+   "en": [
+    "Short story scenes, about 30 seconds each, now play between acts. One plays the first time you open an act, and you can skip it with \"Skip\" in the top right.",
+    "The prologue \"The Blank Book\" shows four kingdoms rising from a single drop of ink, the interlude \"Six Hundred Years of Sleep\" follows warriors raising their banners across the sea, and the interlude \"The Red River\" sets the banners of the Yuan, the Unified Kingdom and the Ming face to face.",
+    "Watch them again from the book chip on the start menu or \"Past Tales\" in Settings. A locked tale opens once you win the act before it.",
+    "If you set \"Act intro story\" to off in Settings, these scenes won't play either."
+   ]
+  },
+  {
    "build": "1.0.0+35",
    "at": "2026-10-29 19:22",
    "ko": [
