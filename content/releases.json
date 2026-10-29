@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "build": "1.0.0+27",
+   "at": "2026-10-29 13:44",
+   "ko": [
+    "잠긴 지도 테마도 「크게 보기」로 크게 볼 수 있어요. 마음에 들면 다음 한 판만 그 지도로 해 볼 수 있어요. 사지 않아도 돼요.",
+    "서랍이 가득 차면 카드를 지울지, 한 칸 늘릴지 같은 크기의 두 단추로 고를 수 있어요.",
+    "며칠 만에 돌아오면 하던 판이 그대로 있다고 알려 드리고, 작은 선물을 하나 드려요.",
+    "판 도중 메뉴로 나가면 지금 판을 저장하고 「저장했어요」라고 알려 드려요.",
+    "설정에서 「추천 안내 끄기」를 켜면 추천 안내가 뜨지 않아요. 장터 맨 아래에 아이 기기용 '구입 요청' 안내를 넣었어요."
+   ],
+   "en": [
+    "You can now view a locked map theme at a larger size with \"Big view\". If you like it, you can try it for just one next game. No purchase needed.",
+    "When your drawer is full, two equally sized buttons let you choose: delete a card or add one more slot.",
+    "When you come back after a few days, we let you know your game is still there and give you a small gift.",
+    "If you leave to the menu mid-game, the current game is saved and you'll see \"Saved.\"",
+    "In Settings, turn on \"Hide suggestions\" to stop recommendation prompts. We also added a \"Ask a grown-up to buy\" notice for kids' devices at the bottom of the shop."
+   ]
+  },
+  {
    "build": "1.0.0+26",
    "at": "2026-10-29 10:55",
    "ko": [
