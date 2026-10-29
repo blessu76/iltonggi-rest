@@ -4,12 +4,16 @@
 usage: add_release.sh <build> <notes.md> [shots_dir]
 
 <build>     "25" or "1.0.0+25"
-<notes.md>  optional first line `at: 2026-10-29 10:13` (KST; default = now, KST), then
-            `## ko` and `## en` sections, one `- ` bullet per line.
-[shots_dir] optional; `map.(png|jpg|webp)` and/or `march.(png|jpg|webp)` replace the two home screenshots
-            (cropped to 1200x554 from the bottom, saved as assets/shot-<name>.webp and -600.webp).
+<notes.md>  optional first line `at: 2026-10-29 10:13` (KST; default = $RELEASE_AT, else now in KST), then
+            `## ko` and `## en` sections, one `- ` bullet per line. Without any `##` section the whole file is
+            the Korean text (the app's `<n>.ko.md`); English then comes from a sibling `<n>.en.md` if present,
+            else the page shows the Korean text for English too.
+[shots_dir] optional; `map.*` and/or `march.*` replace the two home screenshots; if neither exists, the first
+            two images (by file name) become map and march. Cropped to 1200x554, saved as
+            assets/shot-<name>.webp and -600.webp.
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -31,7 +35,9 @@ def norm_build(b):
     raise ValueError("build must be N or 1.0.0+N, got %r" % b)
 
 
-def parse_notes(text):
+def parse_notes(text, sibling_en=None):
+    if not re.search(r"^## ", text, re.M):  # plain bullets = Korean only
+        text = "## ko\n" + text + ("\n## en\n" + sibling_en if sibling_en else "")
     at, lang, out = None, None, {"ko": [], "en": []}
     for raw in text.splitlines():
         line = raw.strip()
@@ -48,11 +54,12 @@ def parse_notes(text):
             out[lang].append(line[2:].strip())
         else:
             raise ValueError("unexpected line: %r" % raw)
-    for l, v in out.items():
-        if not v:
-            raise ValueError("section %r is empty" % l)
+    if not out["ko"]:
+        raise ValueError("section 'ko' is empty")
+    if not out["en"]:
+        out["en"] = list(out["ko"])
     if at is None:
-        at = (datetime.now(timezone.utc) + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M")
+        at = os.environ.get("RELEASE_AT") or (datetime.now(timezone.utc) + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M")
     return at, out["ko"], out["en"]
 
 
@@ -70,8 +77,12 @@ def upsert(path, build, at, ko, en):
 def replace_shots(shots_dir, assets_dir):
     from PIL import Image
     done = []
+    files = sorted(p for p in Path(shots_dir).glob("*") if p.suffix.lower().lstrip(".") in EXTS) if Path(shots_dir).is_dir() else []
+    named = {k: next((p for p in files if p.stem == k), None) for k in SHOTS}
+    if not any(named.values()):
+        named = dict(zip(SHOTS, files[:2]))
     for key, name in SHOTS.items():
-        src = next((p for ext in EXTS for p in [Path(shots_dir) / ("%s.%s" % (key, ext))] if p.is_file()), None)
+        src = named.get(key)
         if not src:
             continue
         im = Image.open(src).convert("RGB")
@@ -92,7 +103,10 @@ def main(argv):
     if len(argv) not in (3, 4):
         sys.exit(__doc__)
     build = norm_build(argv[1])
-    at, ko, en = parse_notes(Path(argv[2]).read_text(encoding="utf-8"))
+    md = Path(argv[2])
+    en_md = md.with_name(md.name.replace(".ko.md", ".en.md")) if ".ko.md" in md.name else None
+    sibling = en_md.read_text(encoding="utf-8") if en_md and en_md.is_file() else None
+    at, ko, en = parse_notes(md.read_text(encoding="utf-8"), sibling)
     replaced = upsert(ROOT / "content" / "releases.json", build, at, ko, en)
     print("%s %s (%s)" % ("replaced" if replaced else "added", build, at))
     if len(argv) == 4:

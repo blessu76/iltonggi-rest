@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+26",
+   "at": "2026-10-29 10:55",
+   "ko": [
+    "시작 화면의 「일통기」 세 글자가 한 글자씩 도장 찍듯 쾅, 쾅, 쾅 나타나요.",
+    "글자가 내려앉을 때마다 화면이 살짝 흔들리고 먼지가 튀어요. 북소리와 진동도 함께 울려요.",
+    "마지막 「기」 자가 가장 크게 울려요.",
+    "「건너뛰기」를 누르면 기다리지 않고 바로 시작 메뉴가 나와요."
+   ],
+   "en": [
+    "On the start screen, the three characters of the title land one by one with a thud, like stamps.",
+    "Each time a character lands, the screen shakes a little and dust flies up, with a drum beat and a vibration.",
+    "The last character hits the hardest.",
+    "Tap Skip to go straight to the start menu without waiting."
+   ]
+  },
+  {
    "build": "1.0.0+25",
    "at": "2026-10-29 10:13",
    "ko": [

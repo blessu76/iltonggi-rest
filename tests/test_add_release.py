@@ -22,11 +22,27 @@ class AddRelease(unittest.TestCase):
         self.assertEqual(ar.parse_notes(NOTES), ("2026-10-29 10:13", ["하나", "둘"], ["one", "two"]))
 
     def test_parse_notes_default_at_and_errors(self):
+        import os
+        os.environ.pop("RELEASE_AT", None)
         at, _, _ = ar.parse_notes("## ko\n- a\n## en\n- b\n")
         self.assertRegex(at, r"^\d{4}-\d\d-\d\d \d\d:\d\d$")
-        for bad in ("## ko\n- a\n", "## fr\n- a\n", "## ko\n- a\n## en\nstray\n"):
+        for bad in ("## en\n- a\n", "## fr\n- a\n", "## ko\n- a\n## en\nstray\n"):
             with self.assertRaises(ValueError):
                 ar.parse_notes(bad)
+
+    def test_plain_bullets_are_korean_and_en_falls_back(self):
+        at, ko, en = ar.parse_notes("- 가\n- 나\n")
+        self.assertEqual((ko, en), (["가", "나"], ["가", "나"]))
+        _, ko, en = ar.parse_notes("- 가\n", "- a\n")
+        self.assertEqual((ko, en), (["가"], ["a"]))
+
+    def test_release_at_env(self):
+        import os
+        os.environ["RELEASE_AT"] = "2026-10-29 10:55"
+        try:
+            self.assertEqual(ar.parse_notes("- 가\n")[0], "2026-10-29 10:55")
+        finally:
+            del os.environ["RELEASE_AT"]
 
     def test_upsert_adds_sorted_then_replaces(self):
         with tempfile.TemporaryDirectory() as d:
@@ -58,6 +74,12 @@ class AddRelease(unittest.TestCase):
                 self.assertEqual(Image.open(assets / (n + ".webp")).size, (1200, 554))
                 self.assertEqual(Image.open(assets / (n + "-600.webp")).size, (600, 277))
             self.assertEqual(ar.replace_shots(Path(d) / "empty", assets), [])
+            plain = Path(d) / "p"
+            plain.mkdir()
+            Image.new("RGB", (2532, 1170), (9, 9, 9)).save(plain / "01-a.jpg")
+            Image.new("RGB", (2532, 1170), (9, 9, 9)).save(plain / "02-b.jpg")
+            Image.new("RGB", (2532, 1170), (9, 9, 9)).save(plain / "03-c.jpg")
+            self.assertEqual(ar.replace_shots(plain, assets), ["shot-map", "shot-march"])
 
 
 if __name__ == "__main__":
