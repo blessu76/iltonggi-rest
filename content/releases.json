@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+30",
+   "at": "2026-10-29 15:47",
+   "ko": [
+    "판 결과 · 내 장수 카드 · 명장 초상을 이미지로 만들어 공유할 수 있어요. 결과 창 · 카드 보기 · 열전에서 「공유하기」를 누르면 돼요. 이미지는 이 기기 안에서만 만들어요.",
+    "준비 중인 551년 새 판에 고유한 승리 조건이 생겼어요. 한성 · 미추홀 · 국원성 세 고을을 빼앗아 3라운드 내리 지키면 이기고, 처음 쥔 고구려는 끝까지 지키면 이겨요. 소식 줄에서 진행을 볼 수 있어요.",
+    "다른 기기에서 이어 하기를 위한 저장 맞추기 기반을 넣었어요(아직 꺼 둔 상태예요).",
+    "새 문구를 11개 언어 모두에 넣었어요."
+   ],
+   "en": [
+    "You can now share your game result, your general's card, or a famous general's portrait as an image. Tap \"Share\" in the results window, the card view, or the biography. The image is made only on your device.",
+    "The new game set in 551 now has its own victory condition: capture Hanseong, Michuhol and Gugwonseong and hold all three for 3 rounds in a row. Goguryeo, which starts with them, wins by keeping them to the end. Progress shows in the news bar.",
+    "We added the groundwork for continuing your game on another device (switched off for now).",
+    "The new messages are available in all 11 languages."
+   ]
+  },
+  {
    "build": "1.0.0+29",
    "at": "2026-10-29 15:00",
    "ko": [
