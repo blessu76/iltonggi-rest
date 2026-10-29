@@ -297,3 +297,13 @@ html:lang(ru) .h1, html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywher
 .post-nav, .post-more { margin-top: var(--space-8); padding-top: var(--space-4); border-top: var(--hairline); }
 .post-nav li, .post-more li { padding-block: var(--space-1); overflow-wrap: anywhere; }
 .doc .post-more h2 { margin-top: 0; font-size: 1.1rem; }
+
+/* Releases: deep-link anchors (#b35) and the in-app web view (?app=1: html.app set by an inline script in <head>). */
+.rel { scroll-margin-top: calc(var(--space-6) + 4.5rem); overflow-wrap: anywhere; }
+.rel:target { border-color: var(--ipe-ink); }
+html.app { scroll-padding-top: 0.5rem; }
+html.app .site-header, html.app .site-footer, html.app .skip-link, html.app .lang-hint, html.app .doc__links, html.app .doc .kicker { display: none; }
+html.app .rel { scroll-margin-top: 0.75rem; }
+html.app .doc { padding-block: var(--space-4); }
+html.app .doc__body { max-width: 100%; }
+html.app body { overflow-x: hidden; }

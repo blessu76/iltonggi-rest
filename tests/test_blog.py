@@ -88,6 +88,17 @@ class Blog(unittest.TestCase):
         finally:
             shutil.rmtree(tmp)
 
+    def test_release_anchors_and_app_mode(self):
+        import json
+        builds = [e["build"].split("+")[-1] for e in json.loads((bs.ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]]
+        for lang in blog.LANGS:
+            h = (bs.ROOT / lang / "releases" / "index.html").read_text(encoding="utf-8")
+            for b in builds:
+                self.assertIn('<article class="rel" id="b%s">' % b, h, (lang, b))
+            self.assertIn("app=1", h)
+            self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/%s/releases/">' % lang, h)
+        self.assertNotIn("app=1", (bs.ROOT / "sitemap.xml").read_text(encoding="utf-8"))
+
     def test_publish_flow(self):
         tmp = Path(tempfile.mkdtemp())
         try:

@@ -257,6 +257,12 @@ def body_blocks(items):
     return "\n".join(out)
 
 
+# ?app=1 = the in-app web view (same URL + query; canonical stays query-less). The class is set before first paint; the dark paint avoids a white flash.
+APP_MODE = '''<style>@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) { background: #141a18; } }</style>
+<script>if (/[?&]app=1(&|$)/.test(location.search)) document.documentElement.className += " app";</script>
+'''
+
+
 def releases_page(t, lang, root):
     """Release notes: ko/en carry their own text; the other languages show the English text plus a notice."""
     tx = t if lang in ("ko", "en") else DATA["en"]
@@ -267,7 +273,8 @@ def releases_page(t, lang, root):
     for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
         badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
         lis = "\n".join("          <li>%s</li>" % esc(x) for x in e[tl])
-        items += f'''      <article class="rel">
+        bid = "b" + e["build"].split("+")[-1]  # 1.0.0+35 -> id="b35" (the app deep-links /<lang>/releases/?app=1#b35)
+        items += f'''      <article class="rel" id="{bid}">
         <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
         <p class="rel__at">{esc(e['at'])} KST</p>
         <ul>
@@ -277,7 +284,7 @@ def releases_page(t, lang, root):
 '''
     notice = '      <p class="meta">%s</p>\n' % esc(t["releases_en_notice"]) if t["releases_en_notice"] else ""
     title = t["nav_releases"]
-    out = head(t, lang, "releases", root, "%s — %s" % (title, t["name"]), d["desc"]) + header(t, lang, root)
+    out = head(t, lang, "releases", root, "%s — %s" % (title, t["name"]), d["desc"], APP_MODE) + header(t, lang, root)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
