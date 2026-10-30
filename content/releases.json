@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+50",
+   "at": "2026-10-30 23:49",
+   "ko": [
+    "「지난 이야기」의 막간 영상(2막 · 3막)도 실사 장면으로 바뀌었어요. 목록의 미리보기 그림도 실사로 보여 줘요.",
+    "세로 화면에서 영상이 훨씬 크게 보여요. 가는 띠 대신 화면 폭을 꽉 채운 그림 칸에, 장면마다 인물과 깃발이 잘리지 않게 초점을 맞췄어요.",
+    "인트로 첫 장면의 네 나라 깃발이 들판 위에 함께 서도록 고쳤고, 작은 화면에서도 깃발 글씨가 읽혀요.",
+    "제목 카드가 좁은 화면에서 두 줄로 꺾이지 않아요. 「동작 줄이기」와 건너뛰기는 그대로예요."
+   ],
+   "en": [
+    "The interlude films in Past Stories (Acts 2 and 3) are now live-action too, and the list shows live-action previews.",
+    "In portrait, films are much larger: instead of a thin strip, the picture fills the screen width, with each scene framed so people and banners aren't cut off.",
+    "The four kingdom banners in the intro's first scene now stand together on the field, and their lettering is readable on small screens.",
+    "Title cards no longer break onto two lines on narrow screens. Reduce Motion and Skip work as before."
+   ]
+  },
+  {
    "build": "1.0.0+49",
    "at": "2026-10-30 21:57",
    "ko": [
