@@ -1,10 +1,11 @@
 ---
 title: Trò chiếm đất thời Tam Quốc ngay trên điện thoại
 description: Vì sao chúng tôi làm Iltonggi: game chiếm đất thời Tam Quốc Hàn Quốc trên điện thoại, mỗi ván 5–10 phút, tự động lưu, không thúc ép bạn vào chơi mỗi ngày.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: vi
 translation_of: ko
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 Chiếm đất là một trò chơi đơn giản. Bạn kẻ một đường trên mặt đất, búng một viên đá rồi mở rộng phần đất của mình từng chút một, cho đến khi sự căng thẳng dâng cao đến mức cả ván có thể bị lật ngược. Luật chơi chỉ cần vài dòng để giải thích, nhưng đã chơi là khó dừng. Iltonggi là nỗ lực đưa niềm vui đó vào điện thoại. Bối cảnh là thời Tam Quốc, khi Goguryeo, Baekje, Silla và Gaya đối đầu nhau, còn cái tên Iltong (一統) có nghĩa là thống nhất thiên hạ. Con dấu chữ 統 trên biểu tượng ứng dụng cũng bắt nguồn từ đó.

@@ -5,5 +5,12 @@
   <link>https://iltonggi.ipe.rest/blog/</link>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
+  <item>
+    <title>A Three Kingdoms Land Grab for Your Phone</title>
+    <link>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</link>
+    <guid>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</guid>
+    <pubDate>Fri, 30 Oct 2026 12:00:00 +0900</pubDate>
+    <description>Why we&#x27;re building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.</description>
+  </item>
 </channel>
 </rss>

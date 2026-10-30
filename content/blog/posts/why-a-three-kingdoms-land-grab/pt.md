@@ -1,10 +1,11 @@
 ---
 title: Conquistando terras nos Três Reinos, direto do celular
 description: Por que criamos o Iltonggi: conquista de territórios nos Três Reinos da Coreia, em partidas de 5 a 10 minutos, com salvamento automático e sem pressão diária.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: pt
 translation_of: ko
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 Conquistar terrenos é uma brincadeira simples. Você risca o chão, lança uma pedrinha e vai aumentando seu pedaço aos poucos, até a tensão ficar tão grande que o jogo inteiro pode virar. As regras se explicam em poucas linhas, mas é difícil largar depois que se começa. O Iltonggi tenta levar esse prazer para dentro do celular. O cenário é o período dos Três Reinos, em que Goguryeo, Baekje, Silla e Gaya se enfrentavam, e o nome Iltong (一統) significa unir o mundo sob uma só bandeira. O selo com o caractere 統 no ícone do aplicativo vem daí.

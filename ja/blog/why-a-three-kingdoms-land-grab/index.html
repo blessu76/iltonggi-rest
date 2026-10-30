@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマホで遊ぶ、三国時代の陣取りゲーム — 一統記</title>
+<meta name="description" content="休み時間の5〜10分で一局、ひとつの町から天下統一を目指す三国時代の陣取りゲーム、イルトンギ(一統記)。作った理由と、自動保存・短い初戦・毎日のログインを急かさない方針を紹介します。">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/why-a-three-kingdoms-land-grab/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="一統記">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="スマホで遊ぶ、三国時代の陣取りゲーム — 一統記">
+<meta property="og:description" content="休み時間の5〜10分で一局、ひとつの町から天下統一を目指す三国時代の陣取りゲーム、イルトンギ(一統記)。作った理由と、自動保存・短い初戦・毎日のログインを急かさない方針を紹介します。">
+<meta property="og:url" content="https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=5b6945da">
+<link rel="alternate" type="application/rss+xml" title="一統記の制作過程" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-10-30T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-10-30T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "スマホで遊ぶ、三国時代の陣取りゲーム", "description": "休み時間の5〜10分で一局、ひとつの町から天下統一を目指す三国時代の陣取りゲーム、イルトンギ(一統記)。作った理由と、自動保存・短い初戦・毎日のログインを急かさない方針を紹介します。", "datePublished": "2026-10-30T12:00:00+09:00", "dateModified": "2026-10-30T12:00:00+09:00", "inLanguage": "ja", "url": "https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "一統記", "item": "https://iltonggi.ipe.rest/ja/"}, {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://iltonggi.ipe.rest/ja/blog/"}, {"@type": "ListItem", "position": 3, "name": "スマホで遊ぶ、三国時代の陣取りゲーム", "item": "https://iltonggi.ipe.rest/ja/blog/why-a-three-kingdoms-land-grab/"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">本文へスキップ</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/ja/" aria-label="一統記ホーム">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">一統記</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="メインリンク">
+      <a href="/ja/blog/">ブログ</a>
+      <a href="/ja/releases/">リリースノート</a>
+      <a href="/ja/support/">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 1</p>
+      <h1>スマホで遊ぶ、三国時代の陣取りゲーム</h1>
+      <p class="meta"><time datetime="2026-10-30T12:00:00+09:00" data-ipe-time>2026-10-30 12:00 KST</time></p>
+      <p class="meta ai-note">この記事はAIによる翻訳です。 <a href="/ko/blog/why-a-three-kingdoms-land-grab/" hreflang="ko">原文を読む</a></p>
+      <div class="post__body">
+<p>陣取りは単純な遊びです。地面に線を引き、石をはじいて少しずつ自分の陣地を広げていくうちに、いつの間にか盤面がひっくり返るほどの緊張が高まります。ルールは数行で説明できるのに、始めるとなかなか手を止められません。イルトンギ(一統記)は、その楽しさをスマートフォンの中に持ち込もうという試みです。舞台は高句麗・百済・新羅・伽耶が並び立った三国時代で、名前の「一統」は天下をひとつにまとめるという意味です。アプリのアイコンに刻んだ「統」の印章も、そこから来ています。</p>
+<h2>休み時間にちょうどいい一局</h2>
+<p>最初に掲げた目標は、疲れた人が休んでいる間に手軽に達成感を味わえるゲームでした。長い時間を確保しなければならないストラテジーゲームはすでにたくさんあるので、イルトンギはあえて逆を行くことにしました。そこで一局が5〜10分で終わるように設計しています。いつ閉じても損をしないよう自動保存を基本にすることを目指していて、対局の途中でメニューに戻ると「保存しました」とお知らせする文言も入れました。</p>
+<p>初めて遊ぶ人が負担を感じないよう、最初の一局は20ターンと短くし、最初の2ラウンドは敵が攻めてこないようにしました。まずはルールに慣れる時間を差し上げよう、という考えです。毎日ログインするよう急かす仕組みは入れない、という方針も決めました。しばらく開いていなかった人が戻ってきたときも、急かすのではなく、遊びかけの一局がそのまま残っていることを短くお知らせするだけです。ゲームが人の一日を握って振り回すのではなく、人の休み時間にそっと入り込んでいるべきだと考えました。</p>
+<p>達成感は大きな勝利からだけ生まれるものではない、とも思っています。町をひとつ手に入れること、間者のおかげで霧の中の土地をのぞき見ること。そんな小さな達成感が、5分のあいだにも何度も訪れるようにするのが目標です。</p>
+<h2>ひとつの町から始まります</h2>
+<p>地図は町が単位です。町をタップして兵を集めて育て、隣の町を攻めます。兵は大きな町ほどたくさん集まるので、都は大きく、田舎は小さくなります。この単純な違いだけでも、どこを先に狙い、どこを守るかという悩みが生まれます。</p>
+<p>韓国の将棋「チャンギ」で王を取れば対局が終わるように、王城に旗を立てれば勝負がつく味わいも活かしました。土地をひとつ残らず取らなければ終わらないゲームではなく、決定的な一手で決着がつけられるので、短い一局ともよく合います。まだ見ていない土地は霧に隠れていて、間者を送らなければのぞけません。すべてが一目で見える盤面より、知らない場所に思いを巡らせながら進む盤面のほうが、物語になると考えました。</p>
+<h2>いちばん小さなものから始めました</h2>
+<p>最初にTestFlightに上げたビルドでできたことは、国と難易度を選んで一局を最後まで打つことだけでした。その後、天候や外交、直接指揮といったものがひとつずつ加わっていきました。このブログは、その歩みを順番に綴っていく場所です。四つの国の色を見分けるのに苦労した話、1500年前の人物を時代に合わせるために悩んだ話、直接指揮がズルにならないようコンピューターで戦いを回してみた話、そしてビルドが一日に何度も出ていく道のりまで、順に書いていくつもりです。</p>
+<h2>空いている席</h2>
+<p>陣取りや征服のゲームはすでにたくさんあります。ただ、私たちが類似のゲーム13本を調べた範囲では、韓国の三国時代を舞台にした、短い一局のひとり用ターン制ゲームは見当たりませんでした。その空席が、このゲームを作り始めた理由のひとつです。もちろん調べた範囲がすべてではないので、見落としたゲームがあれば、この空席は思ったより狭いかもしれません。</p>
+<p>イルトンギはまだ発売前で、TestFlightで試験中です。これから作りながら経験したことを、順に書いていきます。</p>
+<p>// 一局が終わったら、今日はここまで。ゆっくり休んでください。</p>
+      </div>
+      <div class="doc__links"><a href="/ja/blog/">← ブログに戻る</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="法的情報リンク">
+      <a href="/ja/privacy/">プライバシーポリシー</a>
+      <a href="/ja/terms/">利用規約</a>
+      <a href="/ja/blog/">ブログ</a>
+      <a href="/ja/releases/">リリースノート</a>
+      <a href="/ja/support/">サポート</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="言語"><a href="/en/blog/why-a-three-kingdoms-land-grab/" hreflang="en" lang="en">English</a><a href="/ko/blog/why-a-three-kingdoms-land-grab/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/why-a-three-kingdoms-land-grab/" aria-current="true" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/why-a-three-kingdoms-land-grab/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/why-a-three-kingdoms-land-grab/" hreflang="es" lang="es">Español</a><a href="/pt/blog/why-a-three-kingdoms-land-grab/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/why-a-three-kingdoms-land-grab/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/why-a-three-kingdoms-land-grab/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/why-a-three-kingdoms-land-grab/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/why-a-three-kingdoms-land-grab/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/why-a-three-kingdoms-land-grab/" hreflang="de" lang="de">Deutsch</a></nav>
+</footer>
+</body>
+</html>

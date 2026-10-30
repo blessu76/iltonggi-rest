@@ -1,9 +1,10 @@
 ---
 title: A Three Kingdoms Land Grab for Your Phone
 description: Why we're building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: en
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 Land grab is a simple game. You draw lines in the dirt, flick a stone, and slowly carve out a little more territory, until the tension builds enough to flip the whole board. The rules take a few lines to explain, yet once you start, it's hard to put down. Iltonggi is our attempt to bring that fun onto a phone. It is set in the Three Kingdoms era, when Goguryeo, Baekje, Silla and Gaya stood against one another, and its name, Iltong (一統), means bringing the realm under a single banner. The 統 seal on the app icon comes from the same idea.

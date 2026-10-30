@@ -1,10 +1,11 @@
 ---
 title: Un jeu de conquête des Trois Royaumes sur votre téléphone
 description: Pourquoi nous créons Iltonggi, jeu de conquête des Trois Royaumes sur mobile : parties de 5 à 10 min, sauvegarde automatique, sans pression pour se connecter.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: fr
 translation_of: ko
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 La conquête de territoire est un jeu simple. On trace des lignes dans la terre, on lance une pierre, et l'on agrandit peu à peu son terrain, jusqu'à ce que la tension soit assez forte pour renverser tout le plateau. Les règles tiennent en quelques lignes, et pourtant, une fois lancé, on a du mal à lâcher. Iltonggi est notre tentative de transposer ce plaisir sur un téléphone. Le jeu se déroule à l'époque des Trois Royaumes, quand Goguryeo, Baekje, Silla et Gaya s'affrontaient, et son nom, Iltong (一統), signifie rassembler le monde sous une seule bannière. Le sceau du caractère 統 sur l'icône de l'appli vient de cette même idée.

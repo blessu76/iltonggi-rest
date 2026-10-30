@@ -1,10 +1,11 @@
 ---
 title: Merebut Wilayah di Era Tiga Kerajaan, Langsung dari Ponsel
 description: Mengapa kami membuat Iltonggi: gim perebutan wilayah era Tiga Kerajaan Korea, satu ronde 5–10 menit, simpan otomatis, dan tanpa dorongan untuk masuk tiap hari.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: id
 translation_of: ko
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 Merebut lahan adalah permainan yang sederhana. Anda menggaris tanah, menyentil sebuah batu, lalu memperluas wilayah sedikit demi sedikit sampai ketegangannya cukup tinggi untuk membalik seluruh permainan. Aturannya cukup dijelaskan dalam beberapa baris, tetapi begitu mulai, sulit untuk berhenti. Iltonggi adalah upaya membawa keseruan itu ke dalam ponsel. Latarnya adalah era Tiga Kerajaan, ketika Goguryeo, Baekje, Silla, dan Gaya saling berhadapan, dan nama Iltong (一統) berarti menyatukan seluruh negeri. Segel berhuruf 統 pada ikon aplikasi juga berasal dari sana.

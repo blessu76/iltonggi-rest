@@ -1,10 +1,11 @@
 ---
 title: Land erobern im Zeitalter der Drei Reiche – auf dem Handy
 description: Warum wir Iltonggi bauen: ein Handyspiel um die Drei Reiche Koreas mit Partien von 5 bis 10 Minuten, Autospeichern und ohne Druck, täglich einzuloggen.
-date: 2026-10-30
 slug: why-a-three-kingdoms-land-grab
 lang: de
 translation_of: ko
+date: 2026-10-30
+published: 2026-10-30T12:00:00+09:00
 ---
 
 Gebietseroberung ist ein schlichtes Spiel. Man zieht eine Linie in den Boden, schnippt einen Stein und holt sich Stück für Stück mehr Land, bis die Spannung so hoch ist, dass sich das ganze Spiel noch drehen kann. Die Regeln sind in wenigen Zeilen erklärt, und doch fällt es schwer, aufzuhören, sobald man angefangen hat. Iltonggi versucht, diesen Reiz auf das Handy zu bringen. Schauplatz ist die Zeit der Drei Reiche, in der Goguryeo, Baekje, Silla und Gaya einander gegenüberstanden; der Name Iltong (一統) bedeutet, die Welt unter einem Dach zu vereinen. Auch das Siegel mit dem Zeichen 統 auf dem App-Symbol stammt daher.
