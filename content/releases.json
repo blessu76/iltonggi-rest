@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+43",
+   "at": "2026-10-30 12:23",
+   "ko": [
+    "병력이 턴마다 저절로 늘지 않아요. 도성까지 모두, 병력은 모병해야만 늘어나요. 한 번에 뽑히는 수는 인구가 많을수록, 민심이 좋을수록, 고을을 키웠을수록 많아요. 큰 성일수록 인구가 많아 모병이 잘 돼요.",
+    "고을을 고르면 고을 정보 맨 위 줄에 인구(지금/최대)가 보여요. 모병하면 인구가 줄고, 턴마다 조금씩 다시 차요.",
+    "적 나라도 같은 규칙으로 직접 모병해요. 난이도가 높을수록 적이 한 번에 더 많이 뽑아요. 백제 · 명의 특성도 「모병 +50%」 · 「모병 +20%」로 바뀌었어요.",
+    "설정에서 언어를 고르면 줄에 고른 언어가 바로 보이고, 언어 목록은 두 줄로 놓여 한눈에 보여요. 유료 지도 테마 세 가지에서도 길이 또렷하게 보이고, 저장 칸의 끝장 판은 「끝장 판 · 제 N턴」으로 보여요."
+   ],
+   "en": [
+    "Troops no longer grow on their own each turn. Every region, capitals included, gains troops only by recruiting. Each levy is bigger the more people a region has, the higher its morale and the more you have developed it — large castles hold more people, so they recruit best.",
+    "When you pick a region, its population (now/max) shows on the top line of the region card. Recruiting spends population, which refills a little every turn.",
+    "Rival kingdoms recruit by the same rule. On higher difficulties they raise more troops per levy. The Baekje and Ming traits are now \"Recruiting +50%\" and \"Recruiting +20%\".",
+    "Choosing a language in Settings now shows it on the row right away, and the language list sits in two columns so you can see it all at once. Roads are clear on all three paid map styles, and save slots show a To the End game as \"To the End · Turn N\"."
+   ]
+  },
+  {
    "build": "1.0.0+42",
    "at": "2026-10-30 11:52",
    "ko": [
