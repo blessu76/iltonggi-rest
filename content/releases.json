@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+51",
+   "at": "2026-10-31 00:18",
+   "ko": [
+    "iCloud 이어 하기: 같은 Apple ID 로 로그인한 iPhone 과 iPad 에서 하던 판을 이어서 할 수 있어요. 앱을 다시 열면 다른 기기에서 둔 판이 「이어 하기」에 바로 떠요.",
+    "직접 저장한 세 칸, 산 상품, 설정(언어 · 지도 테마 · 깬 막 · 본 막 이야기)도 함께 넘어가요.",
+    "두 기기에서 따로 바꿨다면 나중에 둔 판을 따르고, 다른 쪽 판은 지우지 않고 기기 안에 따로 남겨 둬요. 산 것과 깬 막은 어느 기기 것도 사라지지 않아요.",
+    "설정 앱에서 iCloud 를 끄면 지금처럼 기기 안에만 저장돼요."
+   ],
+   "en": [
+    "iCloud continue: pick up the same campaign on any iPhone or iPad signed in to the same Apple ID. When you reopen the app, a game played on another device appears under Continue right away.",
+    "Your three manual save slots, purchases and settings (language, map theme, cleared acts and act stories you've seen) carry over too.",
+    "If both devices changed, the game saved later wins, and the other one is kept on the device instead of being deleted. Purchases and cleared acts are never lost from either device.",
+    "With iCloud turned off in Settings, saves stay on the device as before."
+   ]
+  },
+  {
    "build": "1.0.0+50",
    "at": "2026-10-30 23:49",
    "ko": [
