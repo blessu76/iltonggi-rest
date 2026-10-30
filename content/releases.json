@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "build": "1.0.0+54",
+   "at": "2026-10-31 08:08",
+   "ko": [
+    "소리가 안 나던 문제를 고쳤고 배경음을 더했어요: 무음 스위치를 켜 둔 폰에서도 효과음이 나고, 첫 화면 · 지도 · 전투 · 승전에 저마다 배경음이 흘러요(설정 「배경음」).",
+    "전투: 자동 전투는 지도 위에서 바로 벌어지고, 직접 지휘는 고른 명령(진형 · 돌격 · 측면)대로 병사들이 움직여요. 깃발에 나라 색과 문양이 들어갔어요.",
+    "지도 화면 맨 위 줄에 가로/세로 전환 단추가 생겼어요: 누르면 화면이 돌아가고 고른 방향은 다음에도 그대로예요. 세로 화면의 고을 패 · 살림 창도 빈 곳 없이 줄을 맞췄어요.",
+    "장터의 지도 테마는 묶음 칸 하나(고분벽화 · 수묵 담채 · 고지도 채색, 값은 한 번)로 보이고, 설정 「지도 테마」의 「쓰기 · 쓰는 중」은 「적용 · 적용 중」이 됐어요.",
+    "창과 카드의 오와 열을 맞췄어요: 같은 줄 카드는 같은 높이, 뒤로 · 닫기 단추는 같은 크기, 좁은 화면과 긴 언어에서도 글자가 칸을 넘지 않아요."
+   ],
+   "en": [
+    "Fixed missing sound and added music: effects now play even with the silent switch on, and the title, map, battle and victory each have their own music (Settings › Background music).",
+    "Battles: auto battles now play out right on the map, and in Direct Command your soldiers move the way you order (Hold, Charge, Flank). Banners now carry each kingdom’s colour and crest.",
+    "New landscape/portrait switch on the map’s top bar: tap it to turn the screen, and the choice is remembered. In portrait, the town panel and Economy window now line up with no gaps.",
+    "The Shop shows map styles as one pack (Tomb Mural, Ink Wash and Old Map, one price), and in Settings › Map style \"Use / In use\" became \"Apply / Applied\".",
+    "Windows and cards line up: cards in a row share one height, Back and Close buttons match, and text stays inside its box on narrow phones and in longer languages."
+   ]
+  },
+  {
    "build": "1.0.0+52",
    "at": "2026-10-31 01:18",
    "ko": [
