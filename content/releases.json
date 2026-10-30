@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+44",
+   "at": "2026-10-30 12:51",
+   "ko": [
+    "iPad에서 화면이 꽉 차요. 창 · 단추 · 글자가 화면 크기에 맞춰 함께 커져서(13인치에서 약 1.5배) 폰과 같은 느낌으로 보여요. 폰 화면은 그대로예요.",
+    "인트로 · 시작 메뉴 · 막 넘김 이야기의 위아래 검은 띠가 iPad에서 얇아졌어요. 제목과 인장, 메뉴 단추도 화면에 맞게 커져요.",
+    "iPad의 외교 · 살림 · 첩자 · 저장 창이 더 높아져 한 번에 더 많이 보이고, 규칙 한 장은 줄 사이를 넉넉히 두어 읽기 편해졌어요.",
+    "iPad에서 지도를 더 가까이 당겨 볼 수 있어요. 13인치 iPad 새 판 고르기에서는 명장 초상도 한 단계 커요."
+   ],
+   "en": [
+    "The game now fills the iPad screen. Windows, buttons and text scale with the screen (about 1.5× on a 13-inch iPad), so it feels like the phone version. Phone screens are unchanged.",
+    "On iPad, the black bars above and below the intro, the title menu and the act cinematics are much thinner, and the title, seal and menu buttons grow to fit the screen.",
+    "On iPad, the Diplomacy, Economy, Spy and Save windows are taller so more fits at once, and the one-page rules have roomier lines that are easier to read.",
+    "You can zoom further into the map on iPad, and on a 13-inch iPad the general portraits in the New Game screen are one size larger."
+   ]
+  },
+  {
    "build": "1.0.0+43",
    "at": "2026-10-30 12:23",
    "ko": [
