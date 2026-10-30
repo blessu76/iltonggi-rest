@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+42",
+   "at": "2026-10-30 11:52",
+   "ko": [
+    "새 판을 고를 때 「勝 승부」 족자에서 판의 끝을 정할 수 있어요. 지금처럼 정해진 턴(초급 30 · 중급 · 고급 40)이 지나면 땅이 가장 많은 나라가 이기는 판, 또는 턴 제한 없이 다른 나라 왕을 모두 사로잡아야 끝나는 「끝장 판」. 고른 승부는 다음 판에도 기억해요.",
+    "끝장 판에서는 왼쪽 상태 패에 남은 왕이 금 알로 보이고, 적 왕성에는 주홍 테가 둘려요. 왕이 사로잡히면 인장이 깨지며 「捕」 도장이 찍혀요. 안개 속 적 왕성은 정찰 · 첩자로 드러내야 보여요.",
+    "왕과 장수를 내 땅으로 이어진 성이면 거리와 상관없이 옮길 수 있어요(행동 1 · 병력은 그대로). 고을 정보 아래 「왕 옮기기」 · 「장수 옮기기」를 누르고 금 고리가 둘린 곳을 고르면 돼요. 적 나라도 같은 규칙으로 왕을 피신시키고 장수를 국경으로 보내요.",
+    "고증 바로잡기: 이사부가 병부령이 된 해를 541년으로, 사다함 열전의 땅 이야기를 사서대로 고쳤어요. 기본 장수 고구려 온달은 모두루, 가야 김무력은 이뇌왕으로 바뀌어 명장 팩과 이름이 겹치지 않아요."
+   ],
+   "en": [
+    "When you set up a new game, a \"勝 Victory\" scroll now lets you choose how it ends: the usual game where the kingdom with the most land wins after a set number of turns (30 on Easy, 40 on Normal and Hard), or \"To the End\" — no turn limit, and you win only by capturing every rival king. Your choice is remembered for the next game.",
+    "In a To the End game, the remaining kings show as gold pips in the status card and rival capitals get a vermilion ring. When a king is captured, the seal cracks and a 捕 stamp comes down. Rival capitals hidden in fog stay hidden until scouts or spies reveal them.",
+    "Kings and generals can now move to any castle connected through your own land, however far (1 action · troops stay put). Tap \"Move King\" or \"Move General\" under the region card, then pick a spot with a gold ring. Rival kingdoms follow the same rule, sending their kings to safety and their generals to the front.",
+    "History fixes: Isabu became Minister of War in 541, and Sadaham's biography now tells what the records say about the land he was given. The base Goguryeo general Ondal is now Moduru and the Gaya general Kim Muryeok is now Inoe, so they no longer share names with the Famous Generals pack."
+   ]
+  },
+  {
    "build": "1.0.0+41",
    "at": "2026-10-30 06:56",
    "ko": [
