@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+52",
+   "at": "2026-10-31 01:18",
+   "ko": [
+    "지도 테마가 이제 한 번에: 고분벽화 · 수묵 담채 · 고지도 채색 세 가지 지도를 묶음 하나로 열어요(장터와 설정 「지도 테마」에서 같은 상품).",
+    "예전에 지도 테마를 하나라도 샀다면 세 가지 모두 그대로 쓸 수 있어요. 「구매 복원」과 iCloud 로 다른 기기에도 넘어가요.",
+    "사지 않고 켜 보던 시험 단추는 빠졌어요."
+   ],
+   "en": [
+    "Map styles in one go: Tomb Mural, Ink Wash and Old Map now unlock together as a single pack (the same item in the Shop and in Settings › Map style).",
+    "If you bought any map style before, all three are yours. Restore purchases and iCloud carry them to your other devices.",
+    "The try-it-free button for map styles has been removed."
+   ]
+  },
+  {
    "build": "1.0.0+51",
    "at": "2026-10-31 00:18",
    "ko": [
