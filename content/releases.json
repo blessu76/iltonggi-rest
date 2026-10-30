@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+47",
+   "at": "2026-10-30 14:22",
+   "ko": [
+    "막을 넘길 때 나오는 영상에 소리가 생겼어요. 북 · 말발굽 · 바람 · 천둥 · 인장 소리가 장면에 맞춰 울려요.",
+    "새 판의 막 열기 이야기도 한지가 들어오고 인장이 찍힐 때 소리가 나요.",
+    "설정 「효과음」을 끄거나 「작게」로 두면 영상과 이야기 소리도 똑같이 따라요. 건너뛰면 울리던 소리는 바로 잦아들어요."
+   ],
+   "en": [
+    "The chapter-turn cinematics now have sound. Drums, hooves, wind, thunder and seals ring out in time with each scene.",
+    "The chapter-opening story at the start of a new game plays sound too, as the paper slides in and the seal comes down.",
+    "Settings → Sound effects (Off / Quiet) now applies to the cinematics and stories as well, and skipping fades out any sound still playing."
+   ]
+  },
+  {
    "build": "1.0.0+46",
    "at": "2026-10-30 14:07",
    "ko": [
