@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+45",
+   "at": "2026-10-30 13:35",
+   "ko": [
+    "새 판을 고를 때 「시대」를 정할 수 있어요. 영웅판은 지금처럼 시대를 넘은 왕과 장수가 한 판에 모이고(연도 표시 없음), 역사판은 391년 그해의 실제 왕과 도성으로 시작해요.",
+    "역사판에서는 광개토대왕 · 진사왕 · 내물 마립간 · 이시품왕이 국내성 · 한성 · 서라벌 · 금관가야에서 시작하고, 해가 지나면 392년 아신왕 · 412년 장수왕처럼 실제 순서대로 왕이 바뀌어요.",
+    "역사판 장수는 그 시대 사람만 나와요. 이름이 전하지 않는 자리는 「○○ 장군」으로 두고, 진무 · 박제상 · 이사부 · 김유신 같은 실존 장수가 기록에 나오는 해에 나서요.",
+    "427년 평양 천도처럼 역사 속 일들이 해마다 소식으로 와요. 역사판 막 열기 이야기와 391년 인물 열전도 새로 썼어요."
+   ],
+   "en": [
+    "You can now choose an Era when starting a new game. Heroes keeps famous kings and generals from every age together in one game (no years shown); Historical starts in 391 with the real kings and capitals of that year.",
+    "In Historical, Gwanggaeto, Jinsa, Naemul Maripgan and Isipum begin at Gungnae, Hanseong, Seorabeol and Geumgwan Gaya, and kings change in their true order as the years pass — Asin in 392, Jangsu in 412 and onward.",
+    "Historical generals belong to their own age. Where no name survives, a commander is shown as “General of …”, and real generals such as Jinmu, Bak Jesang, Isabu and Kim Yusin step forward in the years the records name them.",
+    "Events such as the move of the capital to Pyeongyang in 427 arrive as yearly news. There is also a new act opening for Historical and short biographies for the people of 391."
+   ]
+  },
+  {
    "build": "1.0.0+44",
    "at": "2026-10-30 12:51",
    "ko": [
