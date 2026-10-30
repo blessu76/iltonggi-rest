@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+46",
+   "at": "2026-10-30 14:07",
+   "ko": [
+    "이제 세로로도 할 수 있어요. 기기를 돌리면 위에는 나라 · 턴 · 재물, 가운데는 지도, 아래에는 고을 패와 명령 · 턴 끝이 와서 한 손 엄지로 판을 이끌 수 있어요.",
+    "판 도중에 돌려도 고른 고을 · 열린 창 · 지도 자리가 그대로 이어져요. 땅이 세로로 긴 그림이라 세로에서는 지도가 화면 폭을 꽉 채워요.",
+    "외교 · 살림 · 첩자 창은 세로에서 위에 목록, 아래에 자세한 내용으로 쌓여요. 싸우기 전 창과 전투 무대도 세로 화면에 맞췄어요.",
+    "설정 「화면」 탭에 「화면 방향: 자동 / 가로만」이 생겼어요. 늘 가로로 하고 싶으면 「가로만」을 고르세요. iPad 도 세로로 돌릴 수 있어요."
+   ],
+   "en": [
+    "You can now play in portrait. Turn your device and the nation, turn and treasury sit on top, the map in the middle, and the region panel, orders and End Turn at the bottom — easy to lead with one thumb.",
+    "Turning mid-game keeps your selected region, open windows and map position. The land is a tall map, so in portrait it fills the full width of the screen.",
+    "The Diplomacy, Economy and Spy windows stack their list above the details in portrait, and the pre-battle window and battle stage fit the tall screen too.",
+    "Settings → Screen now has “Screen orientation: Auto / Landscape only”. Choose Landscape only if you always want to play wide. iPad can turn to portrait as well."
+   ]
+  },
+  {
    "build": "1.0.0+45",
    "at": "2026-10-30 13:35",
    "ko": [
