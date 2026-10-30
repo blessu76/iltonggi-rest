@@ -88,6 +88,10 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{can}">
 <meta property="og:image" content="{SITE}{asset('icon-512.png')}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(desc)}">
+<meta name="twitter:image" content="{SITE}{asset('icon-512.png')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT}">

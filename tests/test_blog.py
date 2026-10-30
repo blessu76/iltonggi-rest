@@ -99,6 +99,12 @@ class Blog(unittest.TestCase):
             self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/%s/releases/">' % lang, h)
         self.assertNotIn("app=1", (bs.ROOT / "sitemap.xml").read_text(encoding="utf-8"))
 
+    def test_twitter_card_meta(self):
+        for rel in ("index.html", "ko/releases/index.html", "en/blog/index.html", "404.html"):
+            h = (bs.ROOT / rel).read_text(encoding="utf-8")
+            for m in ('name="twitter:card" content="summary"', 'name="twitter:title"', 'name="twitter:description"', 'name="twitter:image" content="https://iltonggi.ipe.rest/assets/icon-512.png'):
+                self.assertIn(m, h, (rel, m))
+
     def test_publish_flow(self):
         tmp = Path(tempfile.mkdtemp())
         try:
