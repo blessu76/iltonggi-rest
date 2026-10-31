@@ -37,7 +37,37 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=5b6945da">
+<link rel="stylesheet" href="/assets/site.css?v=b40bbf87">
+<script>(function(){function ltNorm(code, supported) {
+  var c = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-')[0];
+  return supported.indexOf(c) >= 0 ? c : null;
+}
+function ltParam(search) {
+  var m = /[?&]lang=([^&#]*)/.exec(search || '');
+  if (!m) return null;
+  try { return decodeURIComponent(m[1]); } catch (e) { return null; }
+}
+function ltStrip(search) {
+  var parts = String(search || '').replace(/^\?/, '').split('&').filter(function (p) { return p && !/^lang=/.test(p); });
+  return parts.length ? '?' + parts.join('&') : '';
+}
+/* o = { search, stored, languages, supported } -> { lang, from: 'url' | 'stored' | 'browser' | 'default' } */
+function ltResolve(o) {
+  var s = o.supported, v = ltNorm(ltParam(o.search), s);
+  if (v) return { lang: v, from: 'url' };
+  v = ltNorm(o.stored, s);
+  if (v) return { lang: v, from: 'stored' };
+  var list = o.languages || [];
+  for (var i = 0; i < list.length; i++) { v = ltNorm(list[i], s); if (v) return { lang: v, from: 'browser' }; }
+  return { lang: 'en', from: 'default' };
+}
+var SUP=["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"],KEY="iltonggi-lang",st=null;try{st=localStorage.getItem(KEY)}catch(e){}
+var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});
+if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}
+var q=ltStrip(location.search);
+if(r.lang!=='en'){location.replace('/'+r.lang+'/'+q+location.hash)}
+else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}
+})();</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Iltonggi", "alternateName": ["Iltonggi", "일통기", "一統記"], "description": "A short, fast classic territory-conquest strategy mobile game set in Korea's Three Kingdoms era.", "url": "https://iltonggi.ipe.rest/", "image": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "inLanguage": "en", "gamePlatform": "iOS", "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"}}</script>
 <script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
@@ -60,21 +90,6 @@
   </div>
 </header>
 
-<div class="lang-hint" id="langHint" hidden></div>
-<script>
-(function () {
-  var NAMES = {"en": "English", "ko": "한국어", "ja": "日本語", "zh": "中文", "es": "Español", "pt": "Português", "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch"}, CLOSE = "Close";
-  var hint = document.getElementById('langHint'); if (!hint) return;
-  try { if (sessionStorage.getItem('iltonggi_hint_off') === '1') return; } catch (e) {}
-  var pick = null;
-  try { var list = navigator.languages || [navigator.language || '']; for (var i = 0; i < list.length && !pick; i++) { var c = String(list[i]).toLowerCase().split('-')[0]; if (NAMES[c]) pick = c; } } catch (e) {}
-  if (!pick || pick === 'en') return;
-  var a = document.createElement('a'); a.href = '/' + pick + '/'; a.hreflang = pick; a.lang = pick; a.textContent = NAMES[pick] + ' \u2192';
-  var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', CLOSE); b.textContent = '\u00d7';
-  b.addEventListener('click', function () { hint.hidden = true; try { sessionStorage.setItem('iltonggi_hint_off', '1'); } catch (e) {} });
-  hint.appendChild(a); hint.appendChild(b); hint.hidden = false;
-})();
-</script>
 <main id="content">
   <section class="hero section">
     <div class="hero__grid container-wide">
@@ -160,5 +175,6 @@
   </div>
   <nav class="foot-langs container" aria-label="Language"><a href="/" aria-current="true" hreflang="en" lang="en">English</a><a href="/ko/" hreflang="ko" lang="ko">한국어</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh" lang="zh">中文</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/pt/" hreflang="pt" lang="pt">Português</a><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/" hreflang="ru" lang="ru">Русский</a><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/" hreflang="fr" lang="fr">Français</a><a href="/de/" hreflang="de" lang="de">Deutsch</a></nav>
 </footer>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');if(a)try{localStorage.setItem("iltonggi-lang",a.getAttribute('hreflang'))}catch(x){}});</script>
 </body>
 </html>

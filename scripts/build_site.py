@@ -7,7 +7,7 @@
 Sources: content/<lang>.json (all copy), content/template-notes none; CSS in assets/site.css.
 Layout follows still.ipe.rest: root (/) = English = x-default, plus /<lang>/ for every language
 (en included, own canonical); hreflang + x-default on every page; language links in the footer;
-a root-only hint that suggests (never redirects) the browser language. Stdlib only, Python 3.8+.
+the root picks the language itself (?lang= > saved choice > browser language > English, see scripts/lang_resolve.js). Stdlib only, Python 3.8+.
 """
 import hashlib
 import html
@@ -165,25 +165,26 @@ def footer(t, lang, page, root):
   </div>
   <nav class="foot-langs container" aria-label="{esc(t['lang_aria'])}">{langs}</nav>
 </footer>
-'''
+{FOOT_LANG_SCRIPT % json.dumps(LANG_KEY)}'''
 
 
-HINT = '''<div class="lang-hint" id="langHint" hidden></div>
-<script>
-(function () {
-  var NAMES = %s, CLOSE = %s;
-  var hint = document.getElementById('langHint'); if (!hint) return;
-  try { if (sessionStorage.getItem('iltonggi_hint_off') === '1') return; } catch (e) {}
-  var pick = null;
-  try { var list = navigator.languages || [navigator.language || '']; for (var i = 0; i < list.length && !pick; i++) { var c = String(list[i]).toLowerCase().split('-')[0]; if (NAMES[c]) pick = c; } } catch (e) {}
-  if (!pick || pick === 'en') return;
-  var a = document.createElement('a'); a.href = '/' + pick + '/'; a.hreflang = pick; a.lang = pick; a.textContent = NAMES[pick] + ' \\u2192';
-  var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', CLOSE); b.textContent = '\\u00d7';
-  b.addEventListener('click', function () { hint.hidden = true; try { sessionStorage.setItem('iltonggi_hint_off', '1'); } catch (e) {} });
-  hint.appendChild(a); hint.appendChild(b); hint.hidden = false;
-})();
-</script>
-'''
+LANG_KEY = "iltonggi-lang"
+LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").split("*/", 1)[1].strip()
+# Root only (inline in <head>, runs before first paint). Saves the language on ?lang=xx, then leaves for /xx/ (replace, so Back works);
+# English stays at the root and the query is dropped. Other query params and #hash are kept.
+ROOT_LANG_SCRIPT = (
+    "<script>(function(){" + LANG_JS + "\n"
+    "var SUP=%s,KEY=%s,st=null;try{st=localStorage.getItem(KEY)}catch(e){}\n"
+    "var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});\n"
+    "if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}\n"
+    "var q=ltStrip(location.search);\n"
+    "if(r.lang!=='en'){location.replace('/'+r.lang+'/'+q+location.hash)}\n"
+    "else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}\n"
+    "})();</script>\n")
+# Every page: choosing a language in the footer menu remembers it.
+FOOT_LANG_SCRIPT = (
+    "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');"
+    "if(a)try{localStorage.setItem(%s,a.getAttribute('hreflang'))}catch(x){}});</script>\n")
 
 
 def home(t, lang, root):
@@ -208,9 +209,9 @@ def home(t, lang, root):
         "inLanguage": lang, "gamePlatform": "iOS", "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"},
     }, ensure_ascii=False)
     extra = '<script type="application/ld+json">%s</script>\n' % ld
-    out = head(t, lang, "home", root, t["home_title"], t["desc"], extra) + header(t, lang, root)
     if root:
-        out += HINT % (json.dumps(NATIVE, ensure_ascii=False), json.dumps(t["hint_close"], ensure_ascii=False))
+        extra = ROOT_LANG_SCRIPT % (json.dumps(LANGS), json.dumps(LANG_KEY)) + extra
+    out = head(t, lang, "home", root, t["home_title"], t["desc"], extra) + header(t, lang, root)
     out += f'''<main id="content">
   <section class="hero section">
     <div class="hero__grid container-wide">
