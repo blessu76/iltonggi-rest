@@ -40,11 +40,12 @@
   "terms_link": "Términos de uso",
   "back_home": "Inicio de Iltonggi",
   "meta_line": "En vigor desde: 28 de octubre de 2026 · Operado por Davy Kim (ipe Studio)",
+  "privacy_meta_line": "En vigor desde: 1 de noviembre de 2026 · Operado por Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Política de privacidad",
-    "desc": "Política de privacidad de Iltonggi (일통기 · 一統記): ni la app ni el sitio web recopilan información personal.",
+    "desc": "Política de privacidad de Iltonggi (일통기 · 一統記): la app no recopila información personal; el sitio web recopila estadísticas básicas de visitas mediante Google Analytics.",
     "callout_label": "En resumen:",
-    "callout": "La app Iltonggi y este sitio web no recopilan tu información personal.",
+    "callout": "La app Iltonggi no recopila tu información personal. Este sitio web recopila estadísticas básicas de visitas mediante Google Analytics (sección 3).",
     "sections": [
       {
         "h": "1. Información que recopilamos: ninguna",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. El sitio web",
+        "h": "3. El sitio web y las estadísticas de visitas (Google Analytics)",
         "p": [
-          "El sitio web iltonggi.ipe.rest no usa cookies ni incluye etiquetas de analítica o publicidad. Las fuentes se cargan desde Google Fonts, por lo que la información habitual de las solicitudes web (como tu dirección IP) puede enviarse a Google. El sitio está alojado en GitHub Pages y se aplican las políticas de registros de servidor de GitHub."
+          "Esta sección se aplica solo al sitio web iltonggi.ipe.rest, no a la app. La app no recopila nada y no contiene herramientas de analítica (véase la sección 1); las páginas del sitio web que se muestran dentro de la app no cargan Google Analytics.",
+          "En el sitio web usamos Google Analytics 4 para saber qué páginas se leen. Registra las visitas a páginas, la página de la que vienes, el tipo de navegador y de dispositivo, una ubicación aproximada (país o ciudad) y los clics en enlaces que salen de nuestro sitio (solo la dirección del enlace). Guarda cookies en tu navegador (como _ga, que puede durar hasta dos años) para distinguir las visitas. En la analítica no pedimos tu nombre ni tu correo electrónico, y no podemos identificarte a partir de ella. Google trata estos datos por nuestra cuenta, lo que puede incluir servidores fuera de Corea.",
+          "Las fuentes se cargan desde Google Fonts, por lo que la información habitual de las solicitudes web (como tu dirección IP) puede enviarse a Google. El sitio está alojado en GitHub Pages y se aplican las políticas de registros del servidor de GitHub.",
+          "Para no participar, bloquea o elimina las cookies en la configuración de tu navegador, o usa el complemento de inhabilitación de Google Analytics ({gaoptout}). El sitio web funciona igual sin ellas."
         ]
       },
       {
         "h": "4. Terceros",
         "p": [
-          "Como no recopilamos información personal, no tenemos nada que compartir con terceros ni vender. La App se distribuye a través de la Apple App Store; la información relacionada con las descargas la gestiona Apple conforme a su política de privacidad.",
+          "La app no recopila información personal, por lo que no tiene nada que compartir con terceros ni vender. En el sitio web, Google (estadísticas de visitas) y GitHub (alojamiento) tratan datos como se describe en la sección 3; no los vendemos. La app se distribuye a través de la App Store de Apple; Apple gestiona la información relacionada con las descargas conforme a su política de privacidad.",
           "Los datos meteorológicos los proporciona MET Norway. Los obtenemos nosotros y los publicamos como archivo público, por lo que ninguna información de los usuarios de la App se transmite a MET Norway."
         ]
       },
       {
         "h": "5. Consultas y tus derechos",
         "p": [
-          "Para solicitar el acceso, la rectificación, la supresión o la suspensión del tratamiento de tu información personal, o para hacer cualquier consulta, escribe a {mail}. Ten en cuenta que, como no conservamos información personal, puede que no haya nada sobre lo que actuar."
+          "Para solicitar el acceso, la rectificación, la supresión o la suspensión del tratamiento de tu información personal, o para hacer cualquier pregunta, escribe a {mail}. La app no conserva información personal y las estadísticas de visitas del sitio web no están vinculadas a tu nombre ni a tu correo electrónico, por lo que puede que no haya nada que podamos localizar y tramitar."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "¿Recopilan información personal?",
-        "No. Consulta la [[privacy]] para más detalles."
+        "La app no. El sitio web recopila estadísticas básicas de visitas mediante Google Analytics. Consulta la [[privacy]] para más detalles."
       ]
     ]
   },

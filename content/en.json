@@ -40,11 +40,12 @@
   "terms_link": "Terms of Use",
   "back_home": "Iltonggi home",
   "meta_line": "Effective: October 28, 2026 · Operated by Davy Kim (ipe Studio)",
+  "privacy_meta_line": "Effective: November 1, 2026 · Operated by Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Privacy Policy",
-    "desc": "Privacy policy for Iltonggi (일통기 · 一統記) — neither the app nor the website collects personal information.",
+    "desc": "Privacy policy for Iltonggi (일통기 · 一統記) — the app collects no personal information; the website collects basic visit statistics through Google Analytics.",
     "callout_label": "In short:",
-    "callout": "The Iltonggi app and this website do not collect your personal information.",
+    "callout": "The Iltonggi app collects no personal information. This website collects basic visit statistics through Google Analytics (section 3).",
     "sections": [
       {
         "h": "1. Information we collect — none",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. The website",
+        "h": "3. The website and visit statistics (Google Analytics)",
         "p": [
-          "The iltonggi.ipe.rest website uses no cookies and includes no analytics or advertising tags. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub's server-log policies apply."
+          "This section applies only to the iltonggi.ipe.rest website, not to the App. The App collects nothing and contains no analytics (see section 1); website pages shown inside the App do not load Google Analytics.",
+          "On the website we use Google Analytics 4 to see which pages are read. It records page views, the page you came from, your browser and device type, an approximate location (country or city) and clicks on links that leave our site (the link address only). It sets cookies in your browser (such as _ga, which can last up to two years) to tell visits apart. We do not ask for your name or email in analytics, and we cannot identify you from it. Google processes this data on our behalf, which can include servers outside Korea.",
+          "Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub's server-log policies apply.",
+          "To opt out, block or delete cookies in your browser settings, or use Google's Analytics opt-out add-on ({gaoptout}). The website works the same without them."
         ]
       },
       {
         "h": "4. Third parties",
         "p": [
-          "Because we collect no personal information, we have nothing to share with or sell to third parties. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple's privacy policy.",
+          "The App collects no personal information, so it has nothing to share with or sell to third parties. On the website, Google (visit statistics) and GitHub (hosting) process data as described in section 3; we do not sell it. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple's privacy policy.",
           "Weather data is provided by MET Norway. We fetch it ourselves and publish it as a public file, so no information about App users is passed to MET Norway."
         ]
       },
       {
         "h": "5. Questions and your rights",
         "p": [
-          "To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to {mail}. Note that because we hold no personal information, there may be nothing to act on."
+          "To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to {mail}. The App holds no personal information, and website analytics data is not tied to your name or email, so there may be nothing we can find to act on."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "Do you collect personal information?",
-        "No. See the [[privacy]] for details."
+        "The app does not. The website collects basic visit statistics through Google Analytics. See the [[privacy]] for details."
       ]
     ]
   },

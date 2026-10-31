@@ -40,11 +40,12 @@
   "terms_link": "Termos de Uso",
   "back_home": "Página inicial do Iltonggi",
   "meta_line": "Em vigor desde: 28 de outubro de 2026 · Operado por Davy Kim (ipe Studio)",
+  "privacy_meta_line": "Em vigor desde: 1º de novembro de 2026 · Operado por Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Política de Privacidade",
-    "desc": "Política de privacidade do Iltonggi (일통기 · 一統記) — nem o app nem o site coletam informações pessoais.",
+    "desc": "Política de privacidade do Iltonggi (일통기 · 一統記) — o app não coleta informações pessoais; o site coleta estatísticas básicas de visitas pelo Google Analytics.",
     "callout_label": "Em resumo:",
-    "callout": "O app Iltonggi e este site não coletam suas informações pessoais.",
+    "callout": "O app Iltonggi não coleta suas informações pessoais. Este site coleta estatísticas básicas de visitas pelo Google Analytics (seção 3).",
     "sections": [
       {
         "h": "1. Informações que coletamos — nenhuma",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. O site",
+        "h": "3. O site e as estatísticas de visitas (Google Analytics)",
         "p": [
-          "O site iltonggi.ipe.rest não usa cookies e não inclui ferramentas de análise nem tags de publicidade. As fontes são carregadas do Google Fonts, portanto informações comuns de requisição web (como seu endereço IP) podem ser enviadas ao Google. O site é hospedado no GitHub Pages, e aplicam-se as políticas de registros de servidor do GitHub."
+          "Esta seção se aplica somente ao site iltonggi.ipe.rest, não ao app. O app não coleta nada e não contém ferramentas de análise (veja a seção 1); as páginas do site exibidas dentro do app não carregam o Google Analytics.",
+          "No site, usamos o Google Analytics 4 para saber quais páginas são lidas. Ele registra visualizações de página, a página de onde você veio, o tipo de navegador e de dispositivo, uma localização aproximada (país ou cidade) e cliques em links que saem do nosso site (apenas o endereço do link). Ele define cookies no seu navegador (como _ga, que pode durar até dois anos) para distinguir as visitas. Na análise, não pedimos seu nome nem seu e-mail e não conseguimos identificar você por ela. O Google processa esses dados em nosso nome, o que pode incluir servidores fora da Coreia.",
+          "As fontes são carregadas do Google Fonts, portanto informações comuns de requisição web (como seu endereço IP) podem ser enviadas ao Google. O site é hospedado no GitHub Pages, e aplicam-se as políticas de registros de servidor do GitHub.",
+          "Para não participar, bloqueie ou apague os cookies nas configurações do navegador ou use o complemento de desativação do Google Analytics ({gaoptout}). O site funciona da mesma forma sem eles."
         ]
       },
       {
         "h": "4. Terceiros",
         "p": [
-          "Como não coletamos informações pessoais, não temos nada a compartilhar com terceiros nem a vender. O App é distribuído pela Apple App Store; as informações relacionadas a downloads são tratadas pela Apple, de acordo com a política de privacidade da Apple.",
+          "O app não coleta informações pessoais, portanto não há nada a compartilhar com terceiros nem a vender. No site, o Google (estatísticas de visitas) e o GitHub (hospedagem) processam dados conforme descrito na seção 3; não os vendemos. O app é distribuído pela Apple App Store; as informações relacionadas a downloads são tratadas pela Apple de acordo com a política de privacidade da Apple.",
           "Os dados meteorológicos são fornecidos pela MET Norway. Nós os obtemos e os publicamos como um arquivo público, portanto nenhuma informação dos usuários do App é repassada à MET Norway."
         ]
       },
       {
         "h": "5. Dúvidas e seus direitos",
         "p": [
-          "Para solicitar acesso, correção, exclusão ou suspensão do tratamento de suas informações pessoais, ou para tirar qualquer dúvida, escreva para {mail}. Observe que, como não mantemos informações pessoais, pode não haver nada a ser tratado."
+          "Para solicitar acesso, correção, exclusão ou suspensão do tratamento de suas informações pessoais, ou para fazer qualquer pergunta, escreva para {mail}. O app não guarda informações pessoais e as estatísticas de visitas do site não estão ligadas ao seu nome ou e-mail, então pode não haver nada que possamos localizar e tratar."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "Vocês coletam informações pessoais?",
-        "Não. Veja a [[privacy]] para mais detalhes."
+        "O app não coleta. O site coleta estatísticas básicas de visitas pelo Google Analytics. Veja a [[privacy]] para mais detalhes."
       ]
     ]
   },

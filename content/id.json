@@ -40,11 +40,12 @@
   "terms_link": "Ketentuan Penggunaan",
   "back_home": "Beranda Iltonggi",
   "meta_line": "Berlaku sejak: 28 Oktober 2026 · Dioperasikan oleh Davy Kim (ipe Studio)",
+  "privacy_meta_line": "Berlaku sejak: 1 November 2026 · Dioperasikan oleh Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Kebijakan Privasi",
-    "desc": "Kebijakan privasi Iltonggi (일통기 · 一統記) — baik aplikasi maupun situs web tidak mengumpulkan informasi pribadi.",
+    "desc": "Kebijakan privasi Iltonggi (일통기 · 一統記) — aplikasi tidak mengumpulkan informasi pribadi; situs web mengumpulkan statistik kunjungan dasar melalui Google Analytics.",
     "callout_label": "Singkatnya:",
-    "callout": "Aplikasi Iltonggi dan situs web ini tidak mengumpulkan informasi pribadi Anda.",
+    "callout": "Aplikasi Iltonggi tidak mengumpulkan informasi pribadi Anda. Situs web ini mengumpulkan statistik kunjungan dasar melalui Google Analytics (bagian 3).",
     "sections": [
       {
         "h": "1. Informasi yang kami kumpulkan — tidak ada",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. Situs web",
+        "h": "3. Situs web dan statistik kunjungan (Google Analytics)",
         "p": [
-          "Situs web iltonggi.ipe.rest tidak menggunakan cookie dan tidak menyertakan alat analitik maupun tag iklan. Font dimuat dari Google Fonts, sehingga informasi permintaan web biasa (seperti alamat IP Anda) dapat dikirim ke Google. Situs ini di-host di GitHub Pages, dan kebijakan log server GitHub berlaku."
+          "Bagian ini hanya berlaku untuk situs web iltonggi.ipe.rest, bukan untuk Aplikasi. Aplikasi tidak mengumpulkan apa pun dan tidak memiliki alat analitik (lihat bagian 1); halaman situs web yang ditampilkan di dalam Aplikasi tidak memuat Google Analytics.",
+          "Di situs web, kami memakai Google Analytics 4 untuk mengetahui halaman mana yang dibaca. Alat ini mencatat tampilan halaman, halaman asal Anda, jenis peramban dan perangkat, perkiraan lokasi (negara atau kota), serta klik pada tautan yang keluar dari situs kami (hanya alamat tautannya). Alat ini menyimpan cookie di peramban Anda (seperti _ga, yang bisa bertahan hingga dua tahun) untuk membedakan kunjungan. Dalam analitik kami tidak meminta nama atau email Anda, dan kami tidak dapat mengenali Anda dari data tersebut. Google memproses data ini atas nama kami, yang dapat mencakup server di luar Korea.",
+          "Font dimuat dari Google Fonts, sehingga informasi permintaan web biasa (seperti alamat IP Anda) dapat dikirim ke Google. Situs ini di-host di GitHub Pages, dan kebijakan log server GitHub berlaku.",
+          "Untuk menolak, blokir atau hapus cookie di pengaturan peramban Anda, atau gunakan pengaya penolakan Google Analytics ({gaoptout}). Situs web tetap berfungsi sama tanpanya."
         ]
       },
       {
         "h": "4. Pihak ketiga",
         "p": [
-          "Karena kami tidak mengumpulkan informasi pribadi, tidak ada yang dapat kami bagikan kepada atau jual ke pihak ketiga. Aplikasi didistribusikan melalui Apple App Store; informasi terkait unduhan diproses oleh Apple sesuai kebijakan privasi Apple.",
+          "Aplikasi tidak mengumpulkan informasi pribadi, sehingga tidak ada yang dibagikan atau dijual kepada pihak ketiga. Di situs web, Google (statistik kunjungan) dan GitHub (hosting) memproses data seperti dijelaskan di bagian 3; kami tidak menjualnya. Aplikasi didistribusikan melalui Apple App Store; informasi terkait unduhan ditangani oleh Apple sesuai kebijakan privasi Apple.",
           "Data cuaca disediakan oleh MET Norway. Kami mengambilnya sendiri dan menerbitkannya sebagai file publik, sehingga tidak ada informasi pengguna Aplikasi yang diteruskan ke MET Norway."
         ]
       },
       {
         "h": "5. Pertanyaan dan hak Anda",
         "p": [
-          "Untuk meminta akses, koreksi, penghapusan, atau penghentian pemrosesan informasi pribadi Anda, atau untuk mengajukan pertanyaan apa pun, tulislah ke {mail}. Perlu diketahui bahwa karena kami tidak menyimpan informasi pribadi, mungkin tidak ada yang dapat diproses."
+          "Untuk meminta akses, koreksi, penghapusan, atau penghentian pemrosesan informasi pribadi Anda, atau untuk bertanya apa pun, tulis ke {mail}. Aplikasi tidak menyimpan informasi pribadi, dan data statistik kunjungan situs web tidak terkait dengan nama atau email Anda, sehingga mungkin tidak ada yang dapat kami temukan dan proses."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "Apakah kalian mengumpulkan informasi pribadi?",
-        "Tidak. Untuk rinciannya, lihat [[privacy]]."
+        "Aplikasi tidak. Situs web mengumpulkan statistik kunjungan dasar melalui Google Analytics. Untuk rinciannya, lihat [[privacy]]."
       ]
     ]
   },

@@ -30,6 +30,21 @@ PAGES = ["home", "privacy", "terms", "support", "releases"]
 PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
         "&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap")
+# GA4 (same property as ipe.rest; a subdomain, so no cross-domain setup). Inserted once by head(), which every page type
+# (home, privacy, terms, support, releases, 404, blog list/post) goes through. The privacy policy (section 3), the support FAQ and
+# privacy_meta_line say so -> change them together with this. Skipped in the in-app web view (?app=1): the app collects nothing.
+GA_MEASUREMENT_ID = "G-XG4BH800J0"
+GA_SNIPPET = (
+    "<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='%s';"
+    "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);"
+    "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};"
+    "window.gtag('js',new Date());window.gtag('config',GA_ID);"
+    "function track(e){if(e.type==='auxclick'&&e.button!==1)return;"
+    "var a=e.target.closest&&e.target.closest('a[href^=\"http\"]');if(!a)return;"
+    "var h=a.hostname;if(h==='ipe.rest'||/\\.ipe\\.rest$/.test(h))return;"
+    "window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}"
+    "document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>\n") % GA_MEASUREMENT_ID
+GA_OPTOUT = "https://tools.google.com/dlpage/gaoptout"
 IMG = {"icon": "icon-512.png", "map": "shot-map-600.webp", "march": "shot-march-600.webp"}
 
 
@@ -48,8 +63,9 @@ def load():
 
 
 def rich(s):
-    """strings may carry {mail} / {privacy} / {support}; everything else is escaped."""
+    """strings may carry {mail} / {gaoptout} / {privacy} / {support}; everything else is escaped."""
     out = esc(s)
+    out = out.replace("{gaoptout}", '<a href="%s" rel="noopener">tools.google.com/dlpage/gaoptout</a>' % GA_OPTOUT)
     out = out.replace("{mail}", '<a href="mailto:%s">%s</a>' % (MAIL, MAIL))
     return out
 
@@ -96,7 +112,7 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT}">
 <link rel="stylesheet" href="{asset('site.css')}">
-{extra}</head>
+{extra}{GA_SNIPPET}</head>
 <body>
 '''
 
@@ -326,7 +342,7 @@ def doc(t, lang, page, root):
             body += '      <p class="callout"><strong>%s</strong> %s</p>\n' % (esc(d["callout_label"]), esc(d["callout"]))
         for s in d["sections"]:
             body += "\n      <h2>%s</h2>\n%s\n" % (esc(s["h"]), body_blocks(s["p"]))
-        meta = '      <p class="meta">%s</p>\n' % esc(t["meta_line"])
+        meta = '      <p class="meta">%s</p>\n' % esc(t["privacy_meta_line"] if page == "privacy" else t["meta_line"])
     # [[privacy]] placeholder is raw-escaped by esc(); restore it
     body = body.replace("[[privacy]]", '<a href="%s/privacy/">%s</a>' % (p, esc(t["privacy_link"])))
     out = head(t, lang, page, root, "%s — %s" % (d["title"], t["name"]), d["desc"]) + header(t, lang, root)

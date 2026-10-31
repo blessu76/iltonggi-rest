@@ -40,11 +40,12 @@
   "terms_link": "Conditions d'utilisation",
   "back_home": "Accueil Iltonggi",
   "meta_line": "En vigueur le 28 octobre 2026 · Exploité par Davy Kim (ipe Studio)",
+  "privacy_meta_line": "En vigueur le 1er novembre 2026 · Exploité par Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Politique de confidentialité",
-    "desc": "Politique de confidentialité d'Iltonggi (일통기 · 一統記) — ni l'application ni le site web ne collectent de données personnelles.",
+    "desc": "Politique de confidentialité d'Iltonggi (일통기 · 一統記) — l'application ne collecte aucune donnée personnelle ; le site web collecte des statistiques de visite de base via Google Analytics.",
     "callout_label": "En bref :",
-    "callout": "L'application Iltonggi et ce site web ne collectent pas vos données personnelles.",
+    "callout": "L'application Iltonggi ne collecte pas vos données personnelles. Ce site web collecte des statistiques de visite de base via Google Analytics (section 3).",
     "sections": [
       {
         "h": "1. Informations collectées — aucune",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. Le site web",
+        "h": "3. Le site web et les statistiques de visite (Google Analytics)",
         "p": [
-          "Le site iltonggi.ipe.rest n'utilise aucun cookie et ne comporte aucune balise d'analyse ou de publicité. Les polices sont chargées depuis Google Fonts ; les informations d'une requête web ordinaire (comme votre adresse IP) peuvent donc être transmises à Google. Le site est hébergé sur GitHub Pages et les politiques de journaux de serveur de GitHub s'appliquent."
+          "Cette section s'applique uniquement au site web iltonggi.ipe.rest, pas à l'application. L'application ne collecte rien et ne contient aucun outil d'analyse (voir la section 1) ; les pages du site affichées dans l'application ne chargent pas Google Analytics.",
+          "Sur le site web, nous utilisons Google Analytics 4 pour savoir quelles pages sont lues. Il enregistre les pages vues, la page d'où vous venez, le type de navigateur et d'appareil, une localisation approximative (pays ou ville) et les clics sur les liens qui quittent notre site (uniquement l'adresse du lien). Il dépose des cookies dans votre navigateur (comme _ga, qui peut durer jusqu'à deux ans) pour distinguer les visites. Nous ne demandons ni votre nom ni votre e-mail dans l'analyse, et nous ne pouvons pas vous identifier grâce à elle. Google traite ces données pour notre compte, ce qui peut inclure des serveurs situés hors de Corée.",
+          "Les polices sont chargées depuis Google Fonts ; les informations d'une requête web ordinaire (comme votre adresse IP) peuvent donc être transmises à Google. Le site est hébergé sur GitHub Pages et les politiques de journaux serveur de GitHub s'appliquent.",
+          "Pour vous y opposer, bloquez ou supprimez les cookies dans les réglages de votre navigateur, ou utilisez le module complémentaire de désactivation de Google Analytics ({gaoptout}). Le site web fonctionne de la même façon sans eux."
         ]
       },
       {
         "h": "4. Tiers",
         "p": [
-          "Comme nous ne collectons aucune donnée personnelle, nous n'avons rien à partager avec des tiers ni à leur vendre. L'Application est distribuée via l'Apple App Store ; les informations liées aux téléchargements sont traitées par Apple conformément à la politique de confidentialité d'Apple.",
+          "L'application ne collecte aucune donnée personnelle : elle n'a donc rien à partager avec des tiers ni à vendre. Sur le site web, Google (statistiques de visite) et GitHub (hébergement) traitent des données comme décrit à la section 3 ; nous ne les vendons pas. L'application est distribuée via l'Apple App Store ; les informations liées aux téléchargements sont traitées par Apple selon sa propre politique de confidentialité.",
           "Les données météo sont fournies par MET Norway. Nous les récupérons nous-mêmes et les publions sous forme de fichier public ; aucune information sur les utilisateurs de l'Application n'est donc transmise à MET Norway."
         ]
       },
       {
         "h": "5. Questions et vos droits",
         "p": [
-          "Pour demander l'accès à vos données personnelles, leur rectification, leur suppression ou la suspension de leur traitement, ou pour poser toute question, écrivez à {mail}. Notez que, comme nous ne détenons aucune donnée personnelle, il se peut qu'il n'y ait rien à traiter."
+          "Pour demander l'accès à vos données personnelles, leur rectification, leur suppression ou la suspension de leur traitement, ou pour poser toute question, écrivez à {mail}. L'application ne détient aucune donnée personnelle et les statistiques de visite du site ne sont liées ni à votre nom ni à votre e-mail ; il se peut donc qu'il n'y ait rien que nous puissions retrouver et traiter."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "Collectez-vous des données personnelles ?",
-        "Non. Pour plus de détails, consultez la [[privacy]]."
+        "L'application, non. Le site web collecte des statistiques de visite de base via Google Analytics. Pour plus de détails, consultez la [[privacy]]."
       ]
     ]
   },

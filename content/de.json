@@ -40,11 +40,12 @@
   "terms_link": "Nutzungsbedingungen",
   "back_home": "Iltonggi-Startseite",
   "meta_line": "Gültig ab: 28.10.2026 · Betrieben von Davy Kim (ipe Studio)",
+  "privacy_meta_line": "Gültig ab: 01.11.2026 · Betrieben von Davy Kim (ipe Studio)",
   "privacy": {
     "title": "Datenschutzerklärung",
-    "desc": "Datenschutzerklärung für Iltonggi (일통기 · 一統記) — weder die App noch die Website erhebt personenbezogene Daten.",
+    "desc": "Datenschutzerklärung für Iltonggi (일통기 · 一統記) — die App erhebt keine personenbezogenen Daten; die Website erhebt grundlegende Besuchsstatistiken über Google Analytics.",
     "callout_label": "Kurz gesagt:",
-    "callout": "Die Iltonggi-App und diese Website erheben keine personenbezogenen Daten von Ihnen.",
+    "callout": "Die Iltonggi-App erhebt keine personenbezogenen Daten von Ihnen. Diese Website erhebt grundlegende Besuchsstatistiken über Google Analytics (Abschnitt 3).",
     "sections": [
       {
         "h": "1. Erhobene Daten — keine",
@@ -62,22 +63,25 @@
         ]
       },
       {
-        "h": "3. Die Website",
+        "h": "3. Die Website und Besuchsstatistiken (Google Analytics)",
         "p": [
-          "Die Website iltonggi.ipe.rest verwendet keine Cookies und enthält keine Analyse- oder Werbe-Tags. Schriftarten werden von Google Fonts geladen, daher können übliche Informationen einer Webanfrage (etwa Ihre IP-Adresse) an Google übermittelt werden. Die Website wird auf GitHub Pages gehostet; es gelten die Server-Protokoll-Richtlinien von GitHub."
+          "Dieser Abschnitt gilt nur für die Website iltonggi.ipe.rest, nicht für die App. Die App erhebt nichts und enthält keine Analyse-Tools (siehe Abschnitt 1); Seiten der Website, die innerhalb der App angezeigt werden, laden Google Analytics nicht.",
+          "Auf der Website verwenden wir Google Analytics 4, um zu sehen, welche Seiten gelesen werden. Erfasst werden Seitenaufrufe, die Seite, von der Sie kommen, Browser- und Gerätetyp, ein ungefährer Standort (Land oder Stadt) sowie Klicks auf Links, die unsere Website verlassen (nur die Linkadresse). Es setzt Cookies in Ihrem Browser (etwa _ga, das bis zu zwei Jahre bestehen kann), um Besuche zu unterscheiden. Wir fragen in der Analyse weder nach Ihrem Namen noch nach Ihrer E-Mail-Adresse und können Sie anhand der Daten nicht identifizieren. Google verarbeitet diese Daten in unserem Auftrag, wobei auch Server außerhalb Koreas beteiligt sein können.",
+          "Schriftarten werden von Google Fonts geladen, daher können übliche Informationen einer Webanfrage (etwa Ihre IP-Adresse) an Google übermittelt werden. Die Website wird auf GitHub Pages gehostet, und es gelten die Server-Log-Richtlinien von GitHub.",
+          "Zum Widerspruch blockieren oder löschen Sie Cookies in den Browsereinstellungen oder nutzen Sie das Browser-Add-on zur Deaktivierung von Google Analytics ({gaoptout}). Die Website funktioniert ohne sie genauso."
         ]
       },
       {
         "h": "4. Dritte",
         "p": [
-          "Da wir keine personenbezogenen Daten erheben, haben wir nichts an Dritte weiterzugeben oder zu verkaufen. Die App wird über den Apple App Store vertrieben; Informationen im Zusammenhang mit Downloads werden von Apple gemäß der Datenschutzerklärung von Apple verarbeitet.",
+          "Die App erhebt keine personenbezogenen Daten, daher gibt es nichts, was an Dritte weitergegeben oder verkauft werden könnte. Auf der Website verarbeiten Google (Besuchsstatistiken) und GitHub (Hosting) Daten wie in Abschnitt 3 beschrieben; wir verkaufen sie nicht. Die App wird über den Apple App Store vertrieben; Informationen zu Downloads verarbeitet Apple nach der Datenschutzerklärung von Apple.",
           "Die Wetterdaten stammen von MET Norway. Wir rufen sie selbst ab und veröffentlichen sie als öffentliche Datei, sodass keine Informationen über App-Nutzer an MET Norway weitergegeben werden."
         ]
       },
       {
         "h": "5. Fragen und Ihre Rechte",
         "p": [
-          "Wenn Sie Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen oder eine Frage stellen möchten, schreiben Sie an {mail}. Bitte beachten Sie: Da wir keine personenbezogenen Daten speichern, gibt es möglicherweise nichts zu bearbeiten."
+          "Um Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen oder um eine Frage zu stellen, schreiben Sie an {mail}. Die App speichert keine personenbezogenen Daten, und die Besuchsstatistiken der Website sind nicht mit Ihrem Namen oder Ihrer E-Mail-Adresse verknüpft, sodass es möglicherweise nichts gibt, was wir finden und bearbeiten könnten."
         ]
       },
       {
@@ -181,7 +185,7 @@
       ],
       [
         "Erheben Sie personenbezogene Daten?",
-        "Nein. Details finden Sie in der [[privacy]]."
+        "Die App nicht. Die Website erhebt grundlegende Besuchsstatistiken über Google Analytics. Details finden Sie in der [[privacy]]."
       ]
     ]
   },
