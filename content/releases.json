@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+56",
+   "at": "2026-10-31 17:41",
+   "ko": [
+    "직접 지휘 전투 무대 뒤로 실사 들판이 펼쳐져요. 아침·한낮·해 질 녘·밤에 따라 빛깔이 바뀌고, 비와 눈도 그 위로 내려요.",
+    "시작 화면 배경이 새벽 산하 사진으로 바뀌었어요. 제목이 떠오른 뒤 사진이 천천히 밝아져요.",
+    "병사·깃발·전투 진행은 그대로예요. 바뀐 것은 뒤 배경뿐이에요."
+   ],
+   "en": [
+    "The direct-command battle stage now plays out over a photographed open field. Its light shifts with morning, midday, dusk and night, and rain and snow fall across it.",
+    "The start screen now opens on a photo of mountains and rivers at dawn, fading in gently after the title appears.",
+    "Soldiers, banners and the flow of battle are unchanged — only the backdrop is new."
+   ]
+  },
+  {
    "build": "1.0.0+55",
    "at": "2026-10-31 10:27",
    "ko": [
