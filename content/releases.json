@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+55",
+   "at": "2026-10-31 10:27",
+   "ko": [
+    "자동 전투 진행 상자를 작게 줄여 화면 구석으로 옮겼어요. 군사가 나가 맞붙는 자리와 고을이 더는 가려지지 않아요.",
+    "상자는 싸우는 길에서 가장 먼 구석에 앉아요(가로는 지도 안쪽 네 구석 · 세로는 위쪽 두 구석). 두 군의 병력과 점령 결과만 보여요.",
+    "화면 아무 데나 누르면 넘기는 것은 그대로예요."
+   ],
+   "en": [
+    "The auto-battle progress box is smaller and tucked into a corner, so the marching troops and the towns are no longer covered.",
+    "It sits in the corner farthest from the fight (any of the four map corners in landscape, the two top corners in portrait) and shows just the two armies and the result.",
+    "Tapping anywhere to skip works as before."
+   ]
+  },
+  {
    "build": "1.0.0+54",
    "at": "2026-10-31 08:08",
    "ko": [
