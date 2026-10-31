@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+57",
+   "at": "2026-10-31 20:17",
+   "ko": [
+    "가야 구형왕의 관을 가야 금관처럼 꽃봉오리·잎이 달린 초화형으로 다시 그렸어요. 옷깃은 y자로 여미고, 금빛은 허리띠 꾸미개와 소매 끝으로 옮겼어요.",
+    "백제 배가 이물·고물이 솟은 긴 배로 바뀌었어요. 옆구리에 노가 한 줄로 늘어서고, 돛은 살 없는 베 한 장이에요.",
+    "연출에 나오는 우리 산성은 처마를 얌전하게 낮추고, 돌 성벽 위에 네모 성가퀴와 홑층 문루를 얹었어요.",
+    "백제 배와 산성 장면의 실사 배경을 새 그림으로 바꿨어요."
+   ],
+   "en": [
+    "King Guhyeong of Gaya now wears a Gaya-style crown with budding, leafy uprights. His collar crosses in a Y, and the gold has moved to his belt fittings and sleeve cuffs.",
+    "Baekje ships are now long hulls with raised bow and stern, a row of oars along the side and a single plain cloth sail.",
+    "Korean mountain fortresses in the cinematics have gentler eaves, square battlements on stone walls and a single-story gate tower.",
+    "The photo backdrops for the Baekje ship and mountain fortress scenes have been replaced with new artwork."
+   ]
+  },
+  {
    "build": "1.0.0+56",
    "at": "2026-10-31 17:41",
    "ko": [
