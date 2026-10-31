@@ -12,4 +12,5 @@
 ## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
+- [Four Kingdoms, Four Colors, Still Distinct at Night](https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/): How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.
 - [A Three Kingdoms Land Grab for Your Phone](https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/): Why we're building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.

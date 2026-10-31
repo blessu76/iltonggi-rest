@@ -1,10 +1,11 @@
 ---
 title: Vier Reiche, vier Farben – auch nachts unterscheidbar
 description: Wie wir die Farben von Goguryeo, Baekje, Silla und Gaya in Iltonggi wählten und prüften, ob man sie bei Tag und Nacht unterscheidet – samt offener Fragen.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: de
 translation_of: ko
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 Die erste Aufgabe bei einem Spiel mit Karte ist, vier Reiche auf einen Blick auseinanderzuhalten. Wer nicht erkennt, wem ein Gebiet gehört, kann nicht lesen, wer wie weit vorgerückt ist oder welcher Bezirk in Gefahr ist – und auf einer Karte, die man nicht lesen kann, entstehen weder Überlegung noch Spaß. In Iltonggi ist Goguryeo rötlich, Baekje blau, Silla gelb und Gaya grün. Flaggen, Territorien und Grenzlinien tragen durchgehend dieselbe Farbe. Nachdem die Farben feststanden, haben wir nicht zuerst gefragt, ob sie schön aussehen, sondern sie gemessen: Sind sie voneinander unterscheidbar?

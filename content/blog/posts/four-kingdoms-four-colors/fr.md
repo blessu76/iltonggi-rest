@@ -1,10 +1,11 @@
 ---
 title: Quatre royaumes, quatre couleurs, même la nuit
 description: Comment nous avons choisi les couleurs de Goguryeo, Baekje, Silla et Gaya dans Iltonggi, testé leur lisibilité jour et nuit, et ajouté des hanja et des formes.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: fr
 translation_of: ko
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 Le premier problème à résoudre pour un jeu de cartes est de distinguer quatre royaumes au premier coup d'œil. Si l'on ne sait pas à qui appartient chaque terre, on ne peut pas lire qui a avancé jusqu'où ni quelle ville est en danger, et une carte illisible n'offre ni réflexion ni plaisir. Dans Iltonggi, Goguryeo est rouge, Baekje bleu, Silla jaune et Gaya vert. Les mêmes couleurs courent sur les drapeaux, les territoires et les frontières. Une fois les couleurs choisies, notre premier geste n'a pas été de nous demander si elles étaient jolies, mais de mesurer, chiffres à l'appui, si on pouvait les distinguer.

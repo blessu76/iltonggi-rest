@@ -1,9 +1,10 @@
 ---
 title: Four Kingdoms, Four Colors, Still Distinct at Night
 description: How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: en
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 The first problem a map game has to solve is telling four kingdoms apart at a glance. If you can't tell who owns what, you can't read who has advanced where or which town is in danger, and a map you can't read offers neither thought nor fun. In Iltonggi, Goguryeo is red, Baekje blue, Silla yellow and Gaya green. The same colors run through flags, territories and borders. The first thing we did after choosing them wasn't to ask whether they looked nice, but to measure, with numbers, whether they could be told apart.

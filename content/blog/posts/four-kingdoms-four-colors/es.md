@@ -1,10 +1,11 @@
 ---
 title: Cuatro reinos, cuatro colores: distintos también de noche
 description: Cómo elegimos los colores de Goguryeo, Baekje, Silla y Gaya en Iltonggi, medimos si se distinguen de día y de noche, y añadimos fichas de hanja y formas.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: es
 translation_of: ko
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 El primer problema que debe resolver un juego de mapas es distinguir de un vistazo cuatro reinos. Si no se sabe a quién pertenece cada tierra, no se puede leer quién ha avanzado hasta dónde ni qué ciudad corre peligro, y un mapa que no se puede leer no ofrece ni reflexión ni diversión. En Iltonggi, Goguryeo es rojo, Baekje azul, Silla amarillo y Gaya verde. Los mismos colores recorren banderas, territorios y fronteras. Lo primero que hicimos tras elegirlos no fue preguntarnos si quedaban bonitos, sino medir con números si se podían distinguir.

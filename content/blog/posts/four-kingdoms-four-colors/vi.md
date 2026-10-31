@@ -1,10 +1,11 @@
 ---
 title: Bốn nước, bốn màu — ban đêm vẫn phân biệt được
 description: Cách chúng tôi chọn màu cho Goguryeo, Baekje, Silla, Gaya trong Iltonggi, đo xem ban ngày lẫn ban đêm có phân biệt được không, kèm ô chữ Hán và việc còn lại.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: vi
 translation_of: ko
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 Việc đầu tiên của một game bản đồ là làm sao phân biệt bốn nước chỉ trong một cái nhìn. Nếu không biết đất của ai, bạn không đọc được ai đã tiến tới đâu hay huyện nào đang gặp nguy, và trên một bản đồ không đọc nổi thì không thể có suy nghĩ lẫn niềm vui. Trong Iltonggi, Goguryeo màu đỏ, Baekje màu xanh dương, Silla màu vàng và Gaya màu xanh lá. Cờ, lãnh thổ và đường biên giới đều dùng cùng một màu. Chọn màu xong, việc đầu tiên chúng tôi làm không phải là hỏi xem có đẹp không, mà là đo xem chúng có phân biệt được hay không.

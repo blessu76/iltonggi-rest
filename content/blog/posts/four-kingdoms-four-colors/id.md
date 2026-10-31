@@ -1,10 +1,11 @@
 ---
 title: Empat Kerajaan, Empat Warna — Tetap Terbedakan di Malam Hari
 description: Cara kami memilih warna Goguryeo, Baekje, Silla, dan Gaya di Iltonggi, mengukur apakah masih terbedakan siang dan malam, plus lencana aksara Han.
-date: 2026-10-31
 slug: four-kingdoms-four-colors
 lang: id
 translation_of: ko
+date: 2026-10-31
+published: 2026-10-31T12:00:00+09:00
 ---
 
 Masalah pertama dalam gim berpeta adalah membuat empat kerajaan dapat dibedakan dalam sekali lihat. Jika tidak jelas siapa pemilik suatu wilayah, kita tidak bisa membaca siapa yang sudah maju sampai mana atau distrik mana yang terancam, dan di peta yang tidak terbaca, tidak akan lahir pertimbangan maupun keseruan. Di Iltonggi, Goguryeo berwarna merah, Baekje biru, Silla kuning, dan Gaya hijau. Bendera, wilayah, dan garis perbatasan memakai warna yang sama. Setelah warna ditetapkan, hal pertama yang kami lakukan bukan bertanya apakah tampilannya bagus, melainkan mengukur apakah warna-warna itu bisa dibedakan.
