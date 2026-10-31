@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "build": "1.0.0+58",
+   "at": "2026-10-31 23:34",
+   "ko": [
+    "전투 병사와 장수를 새 화풍으로 다시 그렸어요. 먹빛 실루엣에 빛 받는 쪽만 금빛 테를 둘렀고, 나라마다 비단 띠를 둘러 작은 지도에서도 어느 편인지 한눈에 보여요.",
+    "계절·날씨 옷과 옷 스킨은 새 그림에서도 그대로이고, 구형왕 초상의 소매 금선도 이제 양쪽에 다 보여요.",
+    "세로 화면을 다듬었어요. 장수 칩 자리를 바로잡고, 작은 폰(360dp)에서 장수 목록이 넘치던 것을 고쳤어요. 지도의 고을 패도 화면 끝에서 조금 안쪽으로 옮겼어요.",
+    "「Charge」 글자가 잘리던 것과 「곧 열립니다」 표시를 정리하고, 병력 막대는 또렷하게, 영어판 將·王 표지는 제대로 보이게 고쳤어요.",
+    "효과음 8개를 다시 만들어 더 깔끔하게 들려요."
+   ],
+   "en": [
+    "Battle soldiers and generals have a new art style: ink silhouettes with a gold rim on the lit side, and each nation wears a silk sash so you can tell sides apart even on the small map.",
+    "Seasonal and weather gear and outfit skins carry over to the new art, and King Guhyeong's gold sleeve trim now shows on both sleeves.",
+    "Portrait mode is tidier: generals' chips sit in the right place, the general list no longer overflows on small 360dp phones, and town tags sit a little inside the screen edge.",
+    "The clipped \"Charge\" label and the \"Opening soon\" badge are fixed, troop bars are solid, and the 將/王 markers now display correctly.",
+    "Eight sound effects were remade to sound cleaner."
+   ]
+  },
+  {
    "build": "1.0.0+57",
    "at": "2026-10-31 20:17",
    "ko": [
