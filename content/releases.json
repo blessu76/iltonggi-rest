@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+61",
+   "at": "2026-11-02 08:11",
+   "ko": [
+    "플레이 화면 아래 줄의 행동 칸이 「추천 수」「턴 끝」 단추와 같은 높이로 맞춰졌어요.",
+    "위 줄 턴이 「지금 턴/전체 턴」으로 보여요. 끝장(무제한) 판은 「5/∞」처럼 보여요.",
+    "가로 화면 아래 줄·오른쪽 열 정렬 — 확대 단추와 오른쪽 단추 줄의 위·아래 선을 맞추고, 고을 정보가 줄 중간에서 잘리지 않게 「키우기」「잔치」를 한 줄에 나란히 놓고, 두 줄 단추 글자에 여백을 더 줬어요. 「모병」의 민심 표시가 □로 보이던 것도 고쳤어요."
+   ],
+   "en": [
+    "The action slot in the bottom row of the play screen is now the same height as the \"Suggest\" and \"End Turn\" buttons.",
+    "The turn in the top row now reads \"current turn / total turns\". In endless (unlimited) games it shows like \"5/∞\".",
+    "Landscape bottom row and right column aligned — the zoom buttons now line up with the right-hand buttons, the region panel is never cut mid-row, and two-line buttons have more breathing room."
+   ]
+  },
+  {
    "build": "1.0.0+60",
    "at": "2026-11-01 19:13",
    "ko": [
