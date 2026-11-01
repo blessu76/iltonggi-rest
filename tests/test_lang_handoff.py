@@ -65,6 +65,15 @@ class RootLang(unittest.TestCase):
         self.assertEqual(run_root(search="?lang=zh-TW")["replaced"], "/zh/")
         self.assertEqual(run_root(search="?lang=KO_kr")["replaced"], "/ko/")
 
+    def test_legacy_indonesian_code_in_means_id(self):
+        r = run_root(search="?lang=in")
+        self.assertEqual(r["replaced"], "/id/")
+        self.assertEqual(r["saved"], ["iltonggi-lang", "id"])
+        self.assertEqual(run_root(search="?lang=in-ID")["replaced"], "/id/")
+        self.assertEqual(run_root(languages=["in-ID", "en"])["replaced"], "/id/")
+        self.assertEqual(run_root(stored="in")["replaced"], "/id/")
+        self.assertIsNone(run_root(search="?lang=inx")["replaced"])  # only the exact legacy code, not a prefix
+
     def test_lang_en_stays_on_root_saves_and_drops_the_query(self):
         r = run_root(search="?lang=en", stored="ko", languages=["ko-KR"])
         self.assertIsNone(r["replaced"])

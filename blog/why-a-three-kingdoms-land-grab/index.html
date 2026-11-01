@@ -44,6 +44,7 @@
 <link rel="stylesheet" href="/assets/site.css?v=b40bbf87">
 <script>(function(){function ltNorm(code, supported) {
   var c = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-')[0];
+  if (c === 'in') c = 'id'; /* legacy Indonesian code (old Android / Java): in -> id */
   return supported.indexOf(c) >= 0 ? c : null;
 }
 function ltParam(search) {

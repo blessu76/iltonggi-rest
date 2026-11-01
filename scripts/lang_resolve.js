@@ -3,6 +3,7 @@
    Plain ES5, no module syntax: the file is pasted into the page as-is. */
 function ltNorm(code, supported) {
   var c = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-')[0];
+  if (c === 'in') c = 'id'; /* legacy Indonesian code (old Android / Java): in -> id */
   return supported.indexOf(c) >= 0 ? c : null;
 }
 function ltParam(search) {
