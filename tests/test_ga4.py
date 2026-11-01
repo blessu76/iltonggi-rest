@@ -68,6 +68,37 @@ class Ga4(unittest.TestCase):
             sec1 = self.data[lang]["privacy"]["sections"][0]["p"]
             self.assertEqual(len(sec1), 2)  # app collects nothing: both original app sentences stay
 
+    NICKNAME = {
+        "ko": "게임 안에서 정한 닉네임과 기록은 기기에만 저장되며 회사로 전송·수집하지 않습니다.",
+        "en": "Any nickname you choose in the game and your game records are stored only on your device and are not sent to or collected by us.",
+        "ja": "ゲーム内で設定したニックネームや記録は端末内にのみ保存され、当社に送信・収集されることはありません。",
+        "zh": "您在游戏中设置的昵称和游戏记录仅保存在您的设备上,不会发送给我们,我们也不会收集。",
+        "es": "El apodo que elijas en el juego y tus registros de partida se guardan únicamente en tu dispositivo; no los enviamos ni los recopilamos.",
+        "pt": "O apelido que você definir no jogo e os seus registros de partida ficam armazenados apenas no seu dispositivo; nós não os recebemos nem os coletamos.",
+        "id": "Nama panggilan yang Anda tetapkan di dalam game dan catatan permainan Anda hanya disimpan di perangkat Anda; kami tidak menerima maupun mengumpulkannya.",
+        "ru": "Никнейм, который вы задаёте в игре, и ваши игровые записи хранятся только на вашем устройстве; мы их не получаем и не собираем.",
+        "vi": "Biệt danh bạn đặt trong trò chơi và các bản ghi của bạn chỉ được lưu trên thiết bị của bạn; chúng tôi không nhận hay thu thập chúng.",
+        "fr": "Le pseudo que vous choisissez dans le jeu et vos données de partie sont stockés uniquement sur votre appareil ; nous ne les recevons ni ne les collectons.",
+        "de": "Der Spitzname, den Sie im Spiel festlegen, und Ihre Spielstände werden nur auf Ihrem Gerät gespeichert; wir erhalten oder erfassen sie nicht.",
+        "ar": "يُخزَّن الاسم المستعار الذي تختاره داخل اللعبة وسجلاتك على جهازك فقط، ولا نتلقاها ولا نجمعها.",
+        "hi": "गेम के अंदर आपके चुने गए उपनाम (निकनेम) और आपके रिकॉर्ड केवल आपके डिवाइस पर सहेजे जाते हैं; हम उन्हें न प्राप्त करते हैं और न ही एकत्र करते हैं।",
+    }
+
+    def test_privacy_says_the_nickname_stays_on_the_device(self):
+        # 13 languages: section 1 carries the nickname/records-stay-on-device sentence; no Game Center / Play Games wording
+        import html
+        for lang in LANGS:
+            path = "privacy/index.html" if lang == "en" else "%s/privacy/index.html" % lang
+            main = self.pages[path]
+            main = main[main.index("<main"):main.index("</main>")]
+            with self.subTest(lang):
+                self.assertIn(self.NICKNAME[lang], self.data[lang]["privacy"]["sections"][0]["p"][0])
+                self.assertIn(html.escape(self.NICKNAME[lang], quote=False), main.replace("&#x27;", "'").replace("&#39;", "'"))
+                self.assertNotRegex(main, r"(?i)game ?center|play ?games|play 게임즈")
+                self.assertIn("2026", self.data[lang]["privacy_meta_line"])
+        self.assertEqual(self.NICKNAME["en"], "Any nickname you choose in the game and your game records are stored only on your device and are not sent to or collected by us.")
+        self.assertEqual(self.NICKNAME["ko"], "게임 안에서 정한 닉네임과 기록은 기기에만 저장되며 회사로 전송·수집하지 않습니다.")
+
     def test_app_statements_unchanged(self):
         en = self.data["en"]["privacy"]["sections"][0]["p"]
         self.assertIn("does not collect or send to any server any personal information", en[0])
