@@ -97,8 +97,12 @@ class Blog(unittest.TestCase):
             for full in builds:
                 ver, num = full.split("+")
                 # new shared anchor "<version>-<build>" on the article, the old "b<build>" kept as an empty span right inside it
-                self.assertIn('<article class="rel" id="%s-%s"><span id="b%s"></span>' % (ver, num, num), h, (lang, full))
-            for anchor in re.findall(r'<article class="rel" id="([^"]+)">', h):
+                # the 11 languages other than ko/en show English text: the block is marked lang="en" dir="ltr" (screen readers, RTL ar)
+                en_attr = "" if lang in ("ko", "en") else ' lang="en" dir="ltr"'
+                self.assertIn('<article class="rel" id="%s-%s"%s><span id="b%s"></span>' % (ver, num, en_attr, num), h, (lang, full))
+            if lang not in ("ko", "en"):
+                self.assertIn('<p class="callout" lang="en" dir="ltr">', h, lang)
+            for anchor in re.findall(r'<article class="rel" id="([^"]+)"[^>]*>', h):
                 self.assertEqual(h.count('id="%s"' % anchor), 1, (lang, anchor))
             self.assertEqual(len(re.findall(r'<article class="rel"', h)), len(builds), lang)
             self.assertIn("app=1", h)

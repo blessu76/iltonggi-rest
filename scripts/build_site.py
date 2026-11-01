@@ -326,6 +326,9 @@ def releases_page(t, lang, root):
     tl = lang if lang in ("ko", "en") else "en"
     d = tx["releases"]
     p = prefix(lang, root)
+    # The body of the other 11 languages is the English text: mark it lang="en" dir="ltr" so screen readers pick English
+    # and RTL pages (ar) keep bullets, punctuation and quotes on the LTR side.
+    en_attr = "" if lang in ("ko", "en") else ' lang="en" dir="ltr"'
     items = ""
     for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
         badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
@@ -333,7 +336,7 @@ def releases_page(t, lang, root):
         ver, _, num = e["build"].partition("+")  # "1.0.0+35": version and build number come from the release data
         bid = "%s-%s" % (ver, num)  # shared 4-site rule: id="<version>-<build>" -> id="1.0.0-35"
         old = "b" + num  # legacy anchor: the app and old links use /<lang>/releases/?app=1#b35, so it stays as an empty span inside
-        items += f'''      <article class="rel" id="{bid}"><span id="{old}"></span>
+        items += f'''      <article class="rel" id="{bid}"{en_attr}><span id="{old}"></span>
         <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
         <p class="rel__at">{esc(e['at'])} KST</p>
         <ul>
@@ -349,7 +352,7 @@ def releases_page(t, lang, root):
     <div class="container doc__body">
       <p class="kicker">// releases</p>
       <h1>{esc(title)}</h1>
-{notice}      <p class="callout">{esc(d['lead'])}</p>
+{notice}      <p class="callout"{en_attr}>{esc(d['lead'])}</p>
       <div class="rel-list">
 {items}      </div>
       <div class="doc__links"><a href="{p}/">{back_arrow(lang)} {esc(t['back_home'])}</a></div>
