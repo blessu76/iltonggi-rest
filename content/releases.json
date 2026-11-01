@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+59",
+   "at": "2026-11-01 18:29",
+   "ko": [
+    "설정의 지도 테마에 새 「2D 일러스트」 지도가 생겼어요. 입체감 없이 진한 나라 색과 한 줄 경계·해안선으로 깔끔하게 그린 그림책 지도이고, 무료예요.",
+    "시작 메뉴의 트로피 칩을 누르면 순위표가 열려요. 승리·천하통일·1막 최단 통일(고급)·최고 연승·치른 판을 한눈에 볼 수 있어요.",
+    "첫 판이 끝나면 닉네임을 한 번 물어봐요(나중에 정해도 돼요). 닉네임과 기록은 이 기기에만 보관하고, 튜토리얼 판은 넣지 않아요.",
+    "첫 화면 오른쪽 아래 「Release Notes」를 누르면 언어별 개발 소식 페이지가 브라우저로 열려요."
+   ],
+   "en": [
+    "A new \"2D Illustrated\" map style is in Settings → Map style: a flat picture-book map with bold nation colors and clean single-line borders and coasts. It's free.",
+    "Tap the trophy chip on the start menu to open the Scoreboard: victories, unifications, fastest Act I unification (Hard), best win streak and games played.",
+    "After your first game you'll be asked once for a nickname (you can do it later). Your nickname and records stay on this device, and the tutorial game isn't counted.",
+    "Tap \"Release Notes\" in the bottom-right of the title screen to open the dev news page for your language in the browser."
+   ]
+  },
+  {
    "build": "1.0.0+58",
    "at": "2026-10-31 23:34",
    "ko": [
