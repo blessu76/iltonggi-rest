@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+60",
+   "at": "2026-11-01 19:13",
+   "ko": [
+    "59에서 나온 2D 일러스트 지도를 다듬었어요. 지도를 아주 멀리 줄여 볼 때 가장자리에 보이던 테두리가 없어졌어요.",
+    "아직 가 보지 않은 땅도 산과 숲이 또렷하게 보이도록 안개 아래 땅 색을 한 단계 짙게 했어요.",
+    "해안선은 바다와 닿는 곳에만 깔끔하게 그려져요."
+   ],
+   "en": [
+    "Polished the 2D Illustrated map from build 59: the border that showed along the map's edge when zoomed far out is gone.",
+    "Lands you haven't visited yet are a step darker under the fog, so mountains and forests stand out clearly.",
+    "Coastlines are now drawn cleanly only where land meets the sea."
+   ]
+  },
+  {
    "build": "1.0.0+59",
    "at": "2026-11-01 18:29",
    "ko": [
