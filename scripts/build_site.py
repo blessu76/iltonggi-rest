@@ -103,11 +103,15 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{can}">
-<meta property="og:image" content="{SITE}{asset('icon-512.png')}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{SITE}{asset('og-share.jpg')}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Iltonggi app icon and in-game map of a Three Kingdoms land-grab strategy game">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
-<meta name="twitter:image" content="{SITE}{asset('icon-512.png')}">
+<meta name="twitter:image" content="{SITE}{asset('og-share.jpg')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT}">

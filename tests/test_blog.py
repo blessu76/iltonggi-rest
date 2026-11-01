@@ -102,7 +102,7 @@ class Blog(unittest.TestCase):
     def test_twitter_card_meta(self):
         for rel in ("index.html", "ko/releases/index.html", "en/blog/index.html", "404.html"):
             h = (bs.ROOT / rel).read_text(encoding="utf-8")
-            for m in ('name="twitter:card" content="summary"', 'name="twitter:title"', 'name="twitter:description"', 'name="twitter:image" content="https://iltonggi.ipe.rest/assets/icon-512.png'):
+            for m in ('name="twitter:card" content="summary_large_image"', 'name="twitter:title"', 'name="twitter:description"', 'name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=', 'property="og:image:width" content="1200"', 'property="og:image:height" content="630"', 'property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v='):
                 self.assertIn(m, h, (rel, m))
 
     def test_publish_flow(self):
