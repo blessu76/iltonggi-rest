@@ -1,10 +1,11 @@
 ---
 title: Giành sông Hán năm 551 — tướng không rõ tên được ghi là “Tướng quân ○○”
 description: Làm ván giành sông Hán năm 551 trong Iltonggi: bỏ các tướng sai thời, đặt Kim Muryeok về phía Silla, để lộ chỗ còn trống. Ghi chép về khảo chứng lịch sử.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: vi
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 Trong Iltonggi, chúng tôi đang chuẩn bị một ván mới lấy bối cảnh năm 551, năm Baekje và Silla liên minh để giành lưu vực sông Hán vốn nằm trong tay Goguryeo. Ván này thành hình chỉ trong một ngày, 29 tháng 10, qua ba bản build. Ở bản đầu, bạn đã có thể chọn ván mới bắt đầu từ năm 551; bản tiếp theo thêm điều kiện chiến thắng; bản cuối đưa vào khâu khảo chứng nhân vật. Một trong những việc lớn khi làm ván này là đặt các nhân vật vào đúng thời đại.

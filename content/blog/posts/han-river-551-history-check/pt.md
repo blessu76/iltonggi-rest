@@ -1,10 +1,11 @@
 ---
 title: A disputa do Rio Han em 551 — generais sem nome viram “General ○○”
 description: Como montamos a partida do Rio Han em 551 no Iltonggi: generais fora da época removidos, Kim Muryeok ao lado de Silla e lacunas à mostra. Rigor histórico.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: pt
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 Estamos preparando no Iltonggi uma nova partida ambientada em 551, o ano em que Baekje e Silla se uniram para disputar a bacia do Rio Han, então nas mãos de Goguryeo. A partida ganhou forma em três builds num só dia, 29 de outubro. No primeiro, já era possível escolher a nova partida a partir do ano 551; no seguinte, entrou a condição de vitória; no último, a verificação histórica das figuras. Uma das maiores tarefas ao montar a partida foi encaixar as pessoas na época certa.

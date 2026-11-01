@@ -1,10 +1,11 @@
 ---
 title: La disputa del río Han en 551: los generales sin nombre serán «General ○○»
 description: Al crear el escenario del río Han de 551 en Iltonggi, quitamos generales de otra época, ubicamos a Kim Mu-ryeok y dejamos «General ○○» donde no hay nombre.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: es
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 Iltonggi tiene en preparación un nuevo escenario ambientado en el año 551. Es el año en que Baekje y Silla se aliaron para ir a por la cuenca del río Han, en manos de Goguryeo. El escenario tomó forma en tres versiones el 29 de octubre. En la primera se podía elegir un nuevo escenario que empezaba en 551; en la siguiente se añadió una condición de victoria, y en la última llegó la comprobación histórica de sus personajes. Una de las tareas más grandes al crear el escenario fue ajustar los personajes a la época.

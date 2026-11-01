@@ -1,9 +1,10 @@
 ---
 title: The 551 Han River Contest: Unnamed Generals Become "General ○○"
 description: Building Iltonggi's 551 Han River scenario: dropping out-of-era generals, placing Kim Mu-ryeok and the Daegaya king, and why unknown names stay "General ○○."
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: en
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 A new scenario set in the year 551 is in the works for Iltonggi. It is the year Baekje and Silla joined hands to go after the Han River basin held by Goguryeo. The scenario took shape over three builds on October 29. In the first build, you could pick a new scenario starting in 551. In the next, a victory condition was added, and in the last, historical checks on its people arrived. One of the biggest jobs in making the scenario was fitting people to the era.

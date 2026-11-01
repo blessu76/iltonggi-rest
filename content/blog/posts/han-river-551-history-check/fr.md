@@ -1,10 +1,11 @@
 ---
 title: La bataille du fleuve Han en 551 : les généraux sans nom deviennent « Général ○○ »
 description: Pour le scénario du fleuve Han de 551 dans Iltonggi, nous avons écarté les généraux d'une autre époque et laissé « Général ○○ » là où aucun nom n'est connu.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: fr
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 Un nouveau scénario situé en l'an 551 est en préparation pour Iltonggi. C'est l'année où Baekje et Silla s'unirent pour s'en prendre au bassin du fleuve Han, tenu par Goguryeo. Le scénario a pris forme en trois versions le 29 octobre. Dans la première, on pouvait choisir un nouveau scénario débutant en 551 ; dans la suivante, une condition de victoire s'est ajoutée, et dans la dernière, la vérification historique de ses personnages est arrivée. L'une des plus grosses tâches de la création du scénario a été d'ajuster les personnages à l'époque.

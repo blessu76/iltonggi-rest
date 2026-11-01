@@ -1,10 +1,11 @@
 ---
 title: Der Kampf um den Han-Fluss 551 – unbekannte Feldherren heißen „General ○○“
 description: Wie wir die Han-Fluss-Partie von 551 in Iltonggi bauten: unpassende Feldherren gestrichen, Kim Muryeok auf Sillas Seite, Lücken offen benannt.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: de
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 In Iltonggi bereiten wir eine neue Partie vor, die im Jahr 551 spielt. Es ist das Jahr, in dem Baekje und Silla gemeinsam nach dem Han-Gebiet griffen, das Goguryeo innehatte. Die Partie nahm am 29. Oktober innerhalb eines Tages in drei Builds Gestalt an. Im ersten Build konnte man die neue Partie ab dem Jahr 551 auswählen, im nächsten kam die Siegbedingung dazu, und im letzten zog die historische Prüfung der Personen ein. Eine der größten Aufgaben beim Bau war, die Personen zur Epoche passend zu machen.

@@ -1,10 +1,11 @@
 ---
 title: Perebutan Sungai Han Tahun 551 — Tokoh Tak Bernama Ditulis “Jenderal ○○”
 description: Membuat ronde Sungai Han 551 di Iltonggi: jenderal tak sezaman dibuang, Kim Muryeok di pihak Silla, celah dibiarkan terlihat. Catatan soal ketelitian sejarah.
-date: 2026-11-01
 slug: han-river-551-history-check
 lang: id
 translation_of: ko
+date: 2026-11-01
+published: 2026-11-01T12:00:00+09:00
 ---
 
 Di Iltonggi, kami sedang menyiapkan ronde baru berlatar tahun 551, tahun ketika Baekje dan Silla bersekutu untuk merebut lembah Sungai Han yang dikuasai Goguryeo. Ronde ini terbentuk dalam sehari, 29 Oktober, melalui tiga build. Di build pertama, ronde baru yang dimulai dari tahun 551 sudah bisa dipilih; build berikutnya menambahkan syarat kemenangan; build terakhir memasukkan pemeriksaan sejarah tokoh. Salah satu pekerjaan besar saat menyusun ronde ini adalah menyesuaikan tokoh dengan zamannya.
