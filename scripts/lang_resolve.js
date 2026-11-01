@@ -1,4 +1,4 @@
-/* Language resolution for the site root (inlined into / by build_site.py; tests run this file in node).
+/* Language resolution for every page without a language prefix (inlined into each by build_site.py; tests run this file in node).
    Order: ?lang=xx in the URL > the language the visitor chose before (localStorage) > navigator.languages (first supported) > English.
    Plain ES5, no module syntax: the file is pasted into the page as-is. */
 function ltNorm(code, supported) {

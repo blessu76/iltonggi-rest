@@ -65,11 +65,13 @@ function ltResolve(o) {
   for (var i = 0; i < list.length; i++) { v = ltNorm(list[i], s); if (v) return { lang: v, from: 'browser' }; }
   return { lang: 'en', from: 'default' };
 }
-var SUP=["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"],KEY="iltonggi-lang",st=null;try{st=localStorage.getItem(KEY)}catch(e){}
+var SUP=["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"],AV=["ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"],KEY="iltonggi-lang",st=null,pm=/^\/([a-z]{2})\//.exec(location.pathname);
+if(pm&&SUP.indexOf(pm[1])>=0)return;
+try{st=localStorage.getItem(KEY)}catch(e){}
 var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});
 if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}
 var q=ltStrip(location.search);
-if(r.lang!=='en'){location.replace('/'+r.lang+'/'+q+location.hash)}
+if(r.lang!=='en'&&AV.indexOf(r.lang)>=0){location.replace('/'+r.lang+location.pathname+q+location.hash)}
 else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}
 })();</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Iltonggi", "alternateName": ["Iltonggi", "일통기", "一統記"], "description": "A short, fast classic territory-conquest strategy mobile game set in Korea's Three Kingdoms era.", "url": "https://iltonggi.ipe.rest/", "image": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "inLanguage": "en", "gamePlatform": "iOS", "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"}}</script>

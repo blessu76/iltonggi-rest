@@ -7,7 +7,7 @@
 Sources: content/<lang>.json (all copy), content/template-notes none; CSS in assets/site.css.
 Layout follows still.ipe.rest: root (/) = English = x-default, plus /<lang>/ for every language
 (en included, own canonical); hreflang + x-default on every page; language links in the footer;
-the root picks the language itself (?lang= > saved choice > browser language > English, see scripts/lang_resolve.js). Stdlib only, Python 3.8+.
+every page that opens without a language prefix picks the language itself (?lang= > saved choice > browser language > English, see scripts/lang_resolve.js). Stdlib only, Python 3.8+.
 """
 import hashlib
 import html
@@ -116,7 +116,7 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT}">
 <link rel="stylesheet" href="{asset('site.css')}">
-{extra}{GA_SNIPPET}</head>
+{LANG_MARK if root and canonical is None else ""}{extra}{GA_SNIPPET}</head>
 <body>
 '''
 
@@ -174,17 +174,35 @@ def footer(t, lang, page, root):
 
 LANG_KEY = "iltonggi-lang"
 LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").split("*/", 1)[1].strip()
-# Root only (inline in <head>, runs before first paint). Saves the language on ?lang=xx, then leaves for /xx/ (replace, so Back works);
-# English stays at the root and the query is dropped. Other query params and #hash are kept.
-ROOT_LANG_SCRIPT = (
+# Every page that opens WITHOUT a language prefix (/, /privacy/, /terms/, /support/, /releases/, /blog/..., not 404.html): inline in <head>, runs
+# before first paint. Saves the language on ?lang=xx, then leaves for the same page under /xx/ (replace, so Back works) -- but only when that
+# language really has this page (AV, filled in per page by add_lang_script() from the files of the build). English, an unsupported language
+# or a language without this page stays where it is (the query is dropped). Path, other query params and #hash are kept. Pages under a
+# language prefix never carry it (and it returns at once on one): no loop.
+LANG_MARK = "<!--LANG-REDIRECT-->\n"  # head() puts it on a prefix-less page; build() swaps it for the script
+PAGE_LANG_SCRIPT = (
     "<script>(function(){" + LANG_JS + "\n"
-    "var SUP=%s,KEY=%s,st=null;try{st=localStorage.getItem(KEY)}catch(e){}\n"
+    "var SUP=%s,AV=%s,KEY=%s,st=null,pm=/^\\/([a-z]{2})\\//.exec(location.pathname);\n"
+    "if(pm&&SUP.indexOf(pm[1])>=0)return;\n"
+    "try{st=localStorage.getItem(KEY)}catch(e){}\n"
     "var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});\n"
     "if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}\n"
     "var q=ltStrip(location.search);\n"
-    "if(r.lang!=='en'){location.replace('/'+r.lang+'/'+q+location.hash)}\n"
+    "if(r.lang!=='en'&&AV.indexOf(r.lang)>=0){location.replace('/'+r.lang+location.pathname+q+location.hash)}\n"
     "else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}\n"
     "})();</script>\n")
+
+
+def add_lang_script(files):
+    """Swap LANG_MARK in every prefix-less page for the language script with the languages that have THAT page (looked up in the build)."""
+    for rel, text in files.items():
+        if LANG_MARK not in text:
+            continue
+        have = [l for l in LANGS if l != "en" and "%s/%s" % (l, rel) in files]
+        files[rel] = text.replace(LANG_MARK, PAGE_LANG_SCRIPT % (json.dumps(LANGS), json.dumps(have), json.dumps(LANG_KEY)), 1)
+    return files
+
+
 # Every page: choosing a language in the footer menu remembers it.
 FOOT_LANG_SCRIPT = (
     "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');"
@@ -213,8 +231,6 @@ def home(t, lang, root):
         "inLanguage": lang, "gamePlatform": "iOS", "publisher": {"@type": "Organization", "name": "ipe Studio", "url": "https://ipe.rest/"},
     }, ensure_ascii=False)
     extra = '<script type="application/ld+json">%s</script>\n' % ld
-    if root:
-        extra = ROOT_LANG_SCRIPT % (json.dumps(LANGS), json.dumps(LANG_KEY)) + extra
     out = head(t, lang, "home", root, t["home_title"], t["desc"], extra) + header(t, lang, root)
     out += f'''<main id="content">
   <section class="hero section">
@@ -430,7 +446,7 @@ def build():
     blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
     files.update(blog_files)
     files["sitemap.xml"] = sitemap(blog_extra)
-    return files
+    return add_lang_script(files)
 
 
 def orphans(files):
