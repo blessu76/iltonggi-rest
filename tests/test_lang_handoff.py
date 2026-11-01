@@ -113,10 +113,14 @@ class RootLang(unittest.TestCase):
         self.assertEqual(run_root(languages=["zh-Hant-TW"])["replaced"], "/zh/")
         self.assertEqual(run_root(languages=["zh-CN"])["replaced"], "/zh/")
         self.assertEqual(run_root(languages=["pt-BR"])["replaced"], "/pt/")
+        self.assertEqual(run_root(languages=["ar-EG", "en"])["replaced"], "/ar/")
+        self.assertEqual(run_root(languages=["th", "hi-IN"])["replaced"], "/hi/")
+        self.assertEqual(run_root(stored="ar", languages=["ko"])["replaced"], "/ar/")
+        self.assertEqual(run_root(search="?lang=hi")["replaced"], "/hi/")
 
     def test_browser_english_or_unsupported_stays_on_english_root(self):
         self.assertIsNone(run_root(languages=["en-GB", "ko"])["replaced"])
-        self.assertIsNone(run_root(languages=["th-TH", "ar"])["replaced"])
+        self.assertIsNone(run_root(languages=["th-TH", "he"])["replaced"])
         self.assertIsNone(run_root(languages=[])["replaced"])
 
     def test_blocked_storage_does_not_break_the_redirect(self):
@@ -158,7 +162,7 @@ class Built(unittest.TestCase):
     def test_seo_tags_untouched(self):
         page = self.files["index.html"]
         self.assertIn('<link rel="canonical" href="https://iltonggi.ipe.rest/">', page)
-        self.assertEqual(page.count('<link rel="alternate" hreflang="'), 12)
+        self.assertEqual(page.count('<link rel="alternate" hreflang="'), 14)
 
 
 def prefixless_pages():
@@ -222,6 +226,65 @@ class EveryPage(unittest.TestCase):
 
 
 @unittest.skipUnless(NODE, "node not installed")
+
+
+class ArabicHindi(unittest.TestCase):
+    """ar (right-to-left) and hi are real languages of the site: 13 in all, symmetric hreflang, direction on <html>"""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.files = bs.build()
+
+    def test_thirteen_languages(self):
+        self.assertEqual(len(bs.LANGS), 13)
+        self.assertIn("ar", bs.LANGS)
+        self.assertIn("hi", bs.LANGS)
+
+    def test_pages_exist_for_every_page(self):
+        for rel in prefixless_pages():
+            for l in ("ar", "hi"):
+                with self.subTest(rel=rel, lang=l):
+                    self.assertIn("%s/%s" % (l, rel), self.files)
+
+    def test_direction_and_lang_on_html(self):
+        self.assertIn('<html lang="ar" dir="rtl">', self.files["ar/index.html"])
+        self.assertIn('<html lang="hi" dir="ltr">', self.files["hi/index.html"])
+        for rel, text in self.files.items():
+            if rel.endswith(".html") and rel.split("/")[0] in bs.LANGS:
+                l = rel.split("/")[0]
+                with self.subTest(rel):
+                    self.assertIn('<html lang="%s" dir="%s">' % (l, "rtl" if l == "ar" else "ltr"), text)
+
+    def test_hreflang_is_symmetric(self):
+        """every page that lists a language alternate is itself listed by that alternate"""
+        for rel in prefixless_pages():
+            sibs = {}
+            for l in bs.LANGS:
+                key = rel if l == "en" else "%s/%s" % (l, rel)
+                if key in self.files:
+                    sibs[l] = set(re.findall(r'<link rel="alternate" hreflang="([^"]+)"', self.files[key]))
+            with self.subTest(rel):
+                self.assertEqual(len(set(map(frozenset, sibs.values()))), 1)
+                self.assertTrue({"ar", "hi", "x-default"} <= next(iter(sibs.values())))
+                self.assertEqual(set(sibs), set(bs.LANGS))
+
+    def test_logical_css_for_rtl(self):
+        css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
+        self.assertIn("html:lang(ar)", css)
+        self.assertIn("margin-inline", css)
+        # physical left/right offsets would not flip under dir="rtl"
+        self.assertNotRegex(css, r"(?<![\w-])(margin|padding)-(left|right)\s*:")
+        self.assertNotRegex(css, r"(?<![\w-])(text-align\s*:\s*(left|right))")
+
+    def test_alt_text_is_in_the_target_language(self):
+        for l, rx in (("ar", r"[\u0600-\u06FF]"), ("hi", r"[\u0900-\u097F]")):
+            alts = re.findall(r'<img[^>]*\balt="([^"]+)"', self.files["%s/index.html" % l])
+            self.assertTrue(alts)
+            for a in alts:
+                with self.subTest(lang=l, alt=a):
+                    self.assertRegex(a, rx)
+
+
 class InnerPageBehaviour(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -247,7 +310,7 @@ class InnerPageBehaviour(unittest.TestCase):
 
     def test_english_unsupported_and_saved_english_stay(self):
         code = self.code("terms/index.html")
-        for kw in (dict(languages=["en-US"]), dict(languages=["th", "ar"]), dict(stored="en", languages=["ko"]), dict(languages=[])):
+        for kw in (dict(languages=["en-US"]), dict(languages=["th", "he"]), dict(stored="en", languages=["ko"]), dict(languages=[])):
             with self.subTest(kw):
                 self.assertIsNone(run_root(rel="terms/index.html", pathname="/terms/", code=code, **kw)["replaced"])
         r = run_root(search="?lang=en&app=1", hash="#x", rel="terms/index.html", pathname="/terms/", code=code)

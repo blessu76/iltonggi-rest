@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Making-of blog for iltonggi.ipe.rest: /blog/ list, /blog/<slug>/ posts, 11 languages, RSS. Stdlib only, Python 3.8+.
+"""Making-of blog for iltonggi.ipe.rest: /blog/ list, /blog/<slug>/ posts, 13 languages, RSS. Stdlib only, Python 3.8+.
 
 Imported by build_site.py (never run on its own; `python3 scripts/blog.py` just lints the queue + posts).
 
 Layout of the sources (see README.md "블로그"):
-    content/blog/ui.json                      UI strings, 11 languages
+    content/blog/ui.json                      UI strings, 13 languages
     content/blog/queue/<NNN>-<slug>/<lang>.md reviewed posts waiting for the daily publish (only publish_blog.py writes here; never built)
     content/blog/posts/<slug>/<lang>.md       published posts (built into the site)
 
-A post = 11 markdown files (en ko ja zh es pt id ru vi fr de), same slug. en + ko are originals; the other nine carry
+A post = 13 markdown files (en ko ja zh es pt id ru vi fr de ar hi), same slug. en + ko are originals; the other eleven carry
 `translation_of: en|ko` and are shown with the AI-translation note. Front matter (all keys on one line, `key: value`):
 
     title, description, slug (= folder name), lang (= file name), date (KST day), [translation_of], [updated: ISO +09:00]
-    published: ISO time with +09:00 offset (stamped by publish_blog.py; same in all 11 files, same KST day as `date`)
+    published: ISO time with +09:00 offset (stamped by publish_blog.py; same in all 13 files, same KST day as `date`)
 
 Body markdown subset: paragraphs, `## h2`, `### h3`, `- ` lists, `1. ` lists, `> ` quotes, `**bold**`, `*em*`,
 `[text](/same-site/path)` links and `![alt](/assets/blog/file.webp)` images. Anything else is escaped text.
@@ -26,7 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BLOG = ROOT / "content" / "blog"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"]
+LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
 ORIGINALS = ("en", "ko")
 KST = dt.timezone(dt.timedelta(hours=9))
 PER_PAGE = 10
@@ -92,7 +92,7 @@ def parse(text, where="?"):
 
 
 def check_post_files(d, slug, published=True):
-    """Validate one post folder (11 files). -> {lang: (meta, body)}. Raises BlogError listing every problem."""
+    """Validate one post folder (13 files). -> {lang: (meta, body)}. Raises BlogError listing every problem."""
     errors, out = [], {}
     d = Path(d)
     for lang in LANGS:
@@ -336,8 +336,8 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
         cards = '      <p class="callout">%s</p>\n' % esc(ui["empty"])
     pager = ""
     if pages > 1:
-        newer = '<a rel="prev" href="%s%s">← %s</a>' % (pre, list_path(n - 1), esc(ui["newer"])) if n > 1 else ""
-        older = '<a rel="next" href="%s%s">%s →</a>' % (pre, list_path(n + 1), esc(ui["older"])) if n < pages else ""
+        newer = '<a rel="prev" href="%s%s">%s %s</a>' % (pre, list_path(n - 1), bs.back_arrow(lang), esc(ui["newer"])) if n > 1 else ""
+        older = '<a rel="next" href="%s%s">%s %s</a>' % (pre, list_path(n + 1), esc(ui["older"]), bs.next_arrow(lang)) if n < pages else ""
         pager = '      <nav class="pager" aria-label="%s">%s<span class="pager__now">%d / %d</span>%s</nav>\n' % (
             esc(ui["page"]), newer, n, pages, older)
     out = bs.head(t, lang, key, root_, title, ui["lead"], extra) + bs.header(t, lang, root_)
@@ -349,7 +349,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
       <p class="lead">{esc(ui['lead'])}</p>
       <div class="post-list">
 {cards}      </div>
-{pager}      <div class="doc__links"><a href="{pre}/">← {esc(t['back_home'])}</a></div>
+{pager}      <div class="doc__links"><a href="{pre}/">{bs.back_arrow(lang)} {esc(t['back_home'])}</a></div>
     </div>
   </section>
 </main>
@@ -397,7 +397,7 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
 {ai}      <div class="post__body">
 {render_body(body)}
       </div>
-{more_links(p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}/blog/">← {esc(ui['back'])}</a></div>
+{more_links(bs, p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}/blog/">{bs.back_arrow(lang)} {esc(ui['back'])}</a></div>
     </div>
   </article>
 </main>
@@ -405,7 +405,7 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
     return out + localtime_script() + bs.footer(t, lang, key, root_) + "</body>\n</html>\n"
 
 
-def more_links(p, posts_all, lang, pre, ui):
+def more_links(bs, p, posts_all, lang, pre, ui):
     """Previous/next (by publish order) + up to 3 more recent posts of the same language (SEO guide P1-1)."""
     i = posts_all.index(p)  # newest first
     newer = posts_all[i - 1] if i > 0 else None
@@ -415,9 +415,9 @@ def more_links(p, posts_all, lang, pre, ui):
         return '<a href="%s%s">%s</a>' % (pre, post_path(q["slug"]), esc(q["files"][lang][0]["title"]))
     pn = ""
     if older:
-        pn += '<li>← %s: %s</li>' % (esc(ui["prev_post"]), a(older))
+        pn += '<li>%s %s: %s</li>' % (bs.back_arrow(lang), esc(ui["prev_post"]), a(older))
     if newer:
-        pn += '<li>%s →: %s</li>' % (esc(ui["next_post"]), a(newer))
+        pn += '<li>%s %s: %s</li>' % (esc(ui["next_post"]), bs.next_arrow(lang), a(newer))
     out = '      <nav class="post-nav" aria-label="%s"><ul>%s</ul></nav>\n' % (esc(ui["related"]), pn) if pn else ""
     shown = {q["slug"] for q in (newer, older) if q} | {p["slug"]}
     rel = [q for q in posts_all if q["slug"] not in shown][:3]
@@ -430,7 +430,7 @@ def more_links(p, posts_all, lang, pre, ui):
 def llms_txt(bs, data, UI, posts):
     en = data["en"]
     lines = ["# Iltonggi (一統記 · 일통기)", "",
-             "> A Three Kingdoms strategy game for iOS by ipe Studio, in 11 languages. This site has the game page, release notes and a making-of blog (one short note a day).", "",
+             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page, release notes and a making-of blog (one short note a day)." % len(bs.LANGS), "",
              "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
              "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",

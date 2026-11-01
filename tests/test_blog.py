@@ -165,7 +165,7 @@ class Blog(unittest.TestCase):
             self.assertIn("ko/blog/p11/index.html", files)
             self.assertIn("blog/feed.xml", files)
             page = files["ja/blog/p00/index.html"]
-            self.assertEqual(page.count('<link rel="alternate" hreflang="'), 11 + 1)  # 11 langs + x-default
+            self.assertEqual(page.count('<link rel="alternate" hreflang="'), 13 + 1)  # 13 langs + x-default
             self.assertIn('"@type": "BlogPosting"', page)
             self.assertIn('"inLanguage": "ja"', page)
             self.assertIn("datePublished\": \"2026-10-01T12:00:00+09:00", page)

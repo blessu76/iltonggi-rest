@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build iltonggi.ipe.rest: 11 languages x (home, privacy, terms, support) + 404 + sitemap.
+"""Build iltonggi.ipe.rest: 13 languages x (home, privacy, terms, support) + 404 + sitemap.
 
     python3 scripts/build_site.py          # write pages (generated files are never hand-edited)
     python3 scripts/build_site.py --check  # fail if the committed pages differ from a fresh build
@@ -21,11 +21,27 @@ import blog  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://iltonggi.ipe.rest"
 MAIL = "ipe.haven@gmail.com"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"]
+LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
 OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh": "zh_CN", "es": "es_ES", "pt": "pt_BR",
-      "id": "id_ID", "ru": "ru_RU", "vi": "vi_VN", "fr": "fr_FR", "de": "de_DE"}
+      "id": "id_ID", "ru": "ru_RU", "vi": "vi_VN", "fr": "fr_FR", "de": "de_DE", "ar": "ar_AR", "hi": "hi_IN"}
 NATIVE = {"en": "English", "ko": "한국어", "ja": "日本語", "zh": "中文", "es": "Español", "pt": "Português",
-          "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch"}
+          "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch",
+          "ar": "العربية", "hi": "हिन्दी"}
+RTL = {"ar"}  # right-to-left languages: <html dir="rtl"> + mirrored arrow glyphs (back_arrow/next_arrow)
+
+
+def direction(lang):
+    return "rtl" if lang in RTL else "ltr"
+
+
+def back_arrow(lang):
+    """Glyph for 'back / newer / previous' (points to the start of the line): <- in LTR, -> in RTL."""
+    return "→" if lang in RTL else "←"
+
+
+def next_arrow(lang):
+    """Glyph for 'forward / older / next' (points to the end of the line): -> in LTR, <- in RTL."""
+    return "←" if lang in RTL else "→"
 PAGES = ["home", "privacy", "terms", "support", "releases"]
 PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
@@ -85,7 +101,7 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
         alts = "".join('<link rel="alternate" hreflang="%s" href="%s">\n' % (l, url(l, page, False)) for l in LANGS)
         alts += '<link rel="alternate" hreflang="x-default" href="%s">\n' % url("en", page, True)
     return f'''<!doctype html>
-<html lang="{lang}" dir="ltr">
+<html lang="{lang}" dir="{direction(lang)}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -336,7 +352,7 @@ def releases_page(t, lang, root):
 {notice}      <p class="callout">{esc(d['lead'])}</p>
       <div class="rel-list">
 {items}      </div>
-      <div class="doc__links"><a href="{p}/">← {esc(t['back_home'])}</a></div>
+      <div class="doc__links"><a href="{p}/">{back_arrow(lang)} {esc(t['back_home'])}</a></div>
     </div>
   </section>
 </main>
@@ -375,7 +391,7 @@ def doc(t, lang, page, root):
       <p class="kicker">// {page}</p>
       <h1>{esc(d['title'])}</h1>
 {meta}{body}
-      <div class="doc__links"><a href="{p}/">← {esc(t['back_home'])}</a></div>
+      <div class="doc__links"><a href="{p}/">{back_arrow(lang)} {esc(t['back_home'])}</a></div>
     </div>
   </section>
 </main>

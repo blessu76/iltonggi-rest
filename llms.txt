@@ -1,6 +1,6 @@
 # Iltonggi (一統記 · 일통기)
 
-> A Three Kingdoms strategy game for iOS by ipe Studio, in 11 languages. This site has the game page, release notes and a making-of blog (one short note a day).
+> A Three Kingdoms strategy game for iOS by ipe Studio, in 13 languages. This site has the game page, release notes and a making-of blog (one short note a day).
 
 ## Pages
 - [Home](https://iltonggi.ipe.rest/): what the game is
@@ -9,7 +9,7 @@
 - [Privacy](https://iltonggi.ipe.rest/privacy/)
 - [Terms](https://iltonggi.ipe.rest/terms/)
 
-## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
+## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de, ar, hi)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
 - [Daegaya, 562: The Year the Last Gaya Closed](https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/): Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.

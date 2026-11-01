@@ -174,5 +174,37 @@
   "prev_post": "Vorheriger Beitrag",
   "next_post": "Nächster Beitrag",
   "related": "Weitere Beiträge"
+ },
+ "ar": {
+  "nav": "المدونة",
+  "title": "كواليس صناعة Iltonggi",
+  "lead": "كيف تُصنع Iltonggi — ملاحظة قصيرة كل يوم.",
+  "empty": "الملاحظة الأولى قادمة قريبًا.",
+  "ai_note": "ترجم الذكاء الاصطناعي هذا المقال.",
+  "ai_orig": "قراءة النص الأصلي",
+  "newer": "الأحدث",
+  "older": "الأقدم",
+  "page": "الصفحة",
+  "back": "العودة إلى المدونة",
+  "feed": "الخلاصة",
+  "prev_post": "المقال السابق",
+  "next_post": "المقال التالي",
+  "related": "مقالات أخرى"
+ },
+ "hi": {
+  "nav": "ब्लॉग",
+  "title": "Iltonggi का निर्माण",
+  "lead": "Iltonggi कैसे बन रहा है — हर दिन एक छोटा नोट।",
+  "empty": "पहला नोट जल्द ही आएगा।",
+  "ai_note": "यह लेख AI द्वारा अनुवादित है।",
+  "ai_orig": "मूल लेख पढ़ें",
+  "newer": "नया",
+  "older": "पुराना",
+  "page": "पेज",
+  "back": "ब्लॉग पर वापस जाएँ",
+  "feed": "फ़ीड",
+  "prev_post": "पिछला लेख",
+  "next_post": "अगला लेख",
+  "related": "और लेख"
  }
 }
