@@ -314,8 +314,10 @@ def releases_page(t, lang, root):
     for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
         badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
         lis = "\n".join("          <li>%s</li>" % esc(x) for x in e[tl])
-        bid = "b" + e["build"].split("+")[-1]  # 1.0.0+35 -> id="b35" (the app deep-links /<lang>/releases/?app=1#b35)
-        items += f'''      <article class="rel" id="{bid}">
+        ver, _, num = e["build"].partition("+")  # "1.0.0+35": version and build number come from the release data
+        bid = "%s-%s" % (ver, num)  # shared 4-site rule: id="<version>-<build>" -> id="1.0.0-35"
+        old = "b" + num  # legacy anchor: the app and old links use /<lang>/releases/?app=1#b35, so it stays as an empty span inside
+        items += f'''      <article class="rel" id="{bid}"><span id="{old}"></span>
         <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
         <p class="rel__at">{esc(e['at'])} KST</p>
         <ul>

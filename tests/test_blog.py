@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -90,11 +91,16 @@ class Blog(unittest.TestCase):
 
     def test_release_anchors_and_app_mode(self):
         import json
-        builds = [e["build"].split("+")[-1] for e in json.loads((bs.ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]]
+        builds = [e["build"] for e in json.loads((bs.ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]]
         for lang in blog.LANGS:
             h = (bs.ROOT / lang / "releases" / "index.html").read_text(encoding="utf-8")
-            for b in builds:
-                self.assertIn('<article class="rel" id="b%s">' % b, h, (lang, b))
+            for full in builds:
+                ver, num = full.split("+")
+                # new shared anchor "<version>-<build>" on the article, the old "b<build>" kept as an empty span right inside it
+                self.assertIn('<article class="rel" id="%s-%s"><span id="b%s"></span>' % (ver, num, num), h, (lang, full))
+            for anchor in re.findall(r'<article class="rel" id="([^"]+)">', h):
+                self.assertEqual(h.count('id="%s"' % anchor), 1, (lang, anchor))
+            self.assertEqual(len(re.findall(r'<article class="rel"', h)), len(builds), lang)
             self.assertIn("app=1", h)
             self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/%s/releases/">' % lang, h)
         self.assertNotIn("app=1", (bs.ROOT / "sitemap.xml").read_text(encoding="utf-8"))
