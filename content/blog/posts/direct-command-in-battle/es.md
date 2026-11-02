@@ -1,10 +1,11 @@
 ---
 title: Que el mando directo no sea una trampa: equilibrarlo con el ordenador
 description: Cómo evitamos que el mando directo de Iltonggi sea una trampa equilibrándolo con batallas simuladas, por qué sus reglas son simples y qué falta por hacer.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: es
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Las batallas de Iltonggi son automáticas por defecto, así que en los días ocupados puedes limitarte a ver el resultado. Pero desde el principio también quisimos que se pudiera tomar el mando y dirigir el combate uno mismo, y por eso añadimos el mando directo a la ventana previa al ataque. Tomó su primera forma en la versión 33, el 29 de octubre. Por ahora solo funciona cuando atacas. El mando directo en defensa todavía no está hecho.

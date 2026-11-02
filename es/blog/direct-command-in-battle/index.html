@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Que el mando directo no sea una trampa: equilibrarlo con el ordenador — Iltonggi</title>
+<meta name="description" content="Cómo evitamos que el mando directo de Iltonggi sea una trampa equilibrándolo con batallas simuladas, por qué sus reglas son simples y qué falta por hacer.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/direct-command-in-battle/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Iltonggi">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Que el mando directo no sea una trampa: equilibrarlo con el ordenador — Iltonggi">
+<meta property="og:description" content="Cómo evitamos que el mando directo de Iltonggi sea una trampa equilibrándolo con batallas simuladas, por qué sus reglas son simples y qué falta por hacer.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Que el mando directo no sea una trampa: equilibrarlo con el ordenador — Iltonggi">
+<meta name="twitter:description" content="Cómo evitamos que el mando directo de Iltonggi sea una trampa equilibrándolo con batallas simuladas, por qué sus reglas son simples y qué falta por hacer.">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=5b6945da">
+<link rel="alternate" type="application/rss+xml" title="Cómo se hace Iltonggi" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-11-02T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-02T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Que el mando directo no sea una trampa: equilibrarlo con el ordenador", "description": "Cómo evitamos que el mando directo de Iltonggi sea una trampa equilibrándolo con batallas simuladas, por qué sus reglas son simples y qué falta por hacer.", "datePublished": "2026-11-02T12:00:00+09:00", "dateModified": "2026-11-02T12:00:00+09:00", "inLanguage": "es", "url": "https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Iltonggi", "item": "https://iltonggi.ipe.rest/es/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://iltonggi.ipe.rest/es/blog/"}, {"@type": "ListItem", "position": 3, "name": "Que el mando directo no sea una trampa: equilibrarlo con el ordenador", "item": "https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Saltar al contenido</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/es/" aria-label="Inicio de Iltonggi">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Iltonggi</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Enlaces principales">
+      <a href="/es/blog/">Blog</a>
+      <a href="/es/releases/">Novedades</a>
+      <a href="/es/support/">Soporte</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 4</p>
+      <h1>Que el mando directo no sea una trampa: equilibrarlo con el ordenador</h1>
+      <p class="meta"><time datetime="2026-11-02T12:00:00+09:00" data-ipe-time>2026-11-02 12:00 KST</time></p>
+      <p class="meta ai-note">Este artículo es una traducción hecha con IA. <a href="/ko/blog/direct-command-in-battle/" hreflang="ko">Leer el original</a></p>
+      <div class="post__body">
+<p>Las batallas de Iltonggi son automáticas por defecto, así que en los días ocupados puedes limitarte a ver el resultado. Pero desde el principio también quisimos que se pudiera tomar el mando y dirigir el combate uno mismo, y por eso añadimos el mando directo a la ventana previa al ataque. Tomó su primera forma en la versión 33, el 29 de octubre. Por ahora solo funciona cuando atacas. El mando directo en defensa todavía no está hecho.</p>
+<h2>Piedra, papel o tijera en tres tiempos</h2>
+<p>El mando directo te permite elegir una de tres posturas a lo largo de tres tiempos: formación, carga o flanco. La formación vence a la carga, la carga vence al flanco y el flanco vence a la formación. Si envías exploradores, puedes atisbar lo que jugará el enemigo, y los enemigos dentro de un castillo suelen elegir la formación. Si te están haciendo retroceder, puedes retirarte y salvar la mitad de tus tropas.</p>
+<p>Mantuvimos las reglas tan simples como piedra, papel o tijera. En una partida de 5 a 10 minutos, tener que aprender reglas largas convertiría el mando directo en una carga. En cambio, añadimos pistas, como los exploradores y los hábitos de los defensores de un castillo, para darle el gusto de leer al rival. Igual que los espías te dejan asomarte a las tierras cubiertas por la niebla, los exploradores te dejan asomarte a la jugada del enemigo. La idea de que reunir información es poder se traslada también al combate. Añadimos la retirada por la misma razón. Aguantar hasta perderlo todo es peor que salvar la mitad para volver a intentarlo, y un comandante necesita esa opción para sentirse como tal.</p>
+<h2>No puede ser una trampa</h2>
+<p>Si el mando directo es demasiado fuerte, todos acaban usándolo y se rompe el carácter ligero y rápido de la partida. Si es demasiado débil, nadie lo usa. Si puede dar la vuelta a un combate muy desigual, ya no es mando, sino trampa. Las habilidades de los generales, la fuerza de las tropas y el clima se calculan exactamente igual que en el combate automático, y decidimos mantener pequeña la ventaja que da el mando. Quien lea bien debe tener una ligera ventaja, pero un bando con muchas menos tropas nunca debe ganar solo por el mando.</p>
+<h2>Comparar con todo lo demás igual</h2>
+<p>Para ver solo el efecto del mando, todas las demás condiciones tienen que ser idénticas. Así que enfrentamos a los mismos generales, con las mismas tropas y el mismo clima, cambiando solo la forma de mandar, y comparamos los porcentajes de victoria. El combate automático es la referencia, y miramos cuánto se aleja de ella el mando directo. Si la diferencia es demasiado grande o demasiado pequeña, retocamos las reglas.</p>
+<h2>6.000 combates con el ordenador</h2>
+<p>Según nuestros registros de desarrollo, para comprobarlo hicimos que el ordenador librara 6.000 batallas dirigidas de diversas maneras. Elegir al azar o repetir una sola orden mantenía el porcentaje de victorias a menos de 1 punto porcentual del combate automático. Leer el informe de los exploradores y responder subía las victorias en unos 3 puntos porcentuales, y los registros no muestran ningún caso de darle la vuelta a un combate muy desigual.</p>
+<p>Una persona no puede jugar 6.000 batallas a mano, así que este tipo de comprobación se deja al ordenador. Esta vez también construimos primero las pruebas del motor y de la simulación y añadimos la pantalla después. Es un orden de equilibrar primero con números y vestirlo luego con algo que se pueda tocar. La pantalla y los textos en once idiomas vinieron después.</p>
+<p>No es la primera vez que equilibramos con el ordenador. Según nuestros registros de desarrollo, en la versión 32, justo anterior, medimos del mismo modo cómo variaban mucho los porcentajes de victoria entre reinos en dificultad fácil, y los acercamos. La idea era que, elijas el reino que elijas, lo fácil debe ser igual de fácil.</p>
+<h2>Lo que queda después de los números</h2>
+<p>Buenos números no garantizan buena sensación. Un ordenador puede medir porcentajes de victoria, pero no puede decirte si mandar es divertido. Por eso seguimos puliéndolo jugando a mano. El mando directo en defensa y una comprobación a lo largo de una partida entera siguen siendo tareas pendientes.</p>
+<p>// Quien lee bien tiene una ligera ventaja. Las trampas no funcionan.</p>
+      </div>
+      <nav class="post-nav" aria-label="Más entradas"><ul><li>← Entrada anterior: <a href="/es/blog/han-river-551-history-check/">La disputa del río Han en 551: los generales sin nombre serán «General ○○»</a></li></ul></nav>
+      <section class="post-more"><h2>Más entradas</h2><ul><li><a href="/es/blog/four-kingdoms-four-colors/">Cuatro reinos, cuatro colores: distintos también de noche</a></li><li><a href="/es/blog/why-a-three-kingdoms-land-grab/">Un juego de conquista de territorios de los Tres Reinos para tu móvil</a></li></ul></section>
+      <div class="doc__links"><a href="/es/blog/">← Volver al blog</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="/es/privacy/">Política de privacidad</a>
+      <a href="/es/terms/">Términos de uso</a>
+      <a href="/es/blog/">Blog</a>
+      <a href="/es/releases/">Novedades</a>
+      <a href="/es/support/">Soporte</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="Idioma"><a href="/en/blog/direct-command-in-battle/" hreflang="en" lang="en">English</a><a href="/ko/blog/direct-command-in-battle/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/direct-command-in-battle/" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/direct-command-in-battle/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/direct-command-in-battle/" aria-current="true" hreflang="es" lang="es">Español</a><a href="/pt/blog/direct-command-in-battle/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/direct-command-in-battle/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/direct-command-in-battle/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/direct-command-in-battle/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/direct-command-in-battle/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/direct-command-in-battle/" hreflang="de" lang="de">Deutsch</a></nav>
+</footer>
+</body>
+</html>

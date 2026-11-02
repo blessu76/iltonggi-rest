@@ -1,10 +1,11 @@
 ---
 title: Damit der Direktbefehl kein Trick wird – vom Computer gegengeprüft
 description: Wie der Direktbefehl in Iltonggi kein Trick wird: Schere-Stein-Papier über drei Runden, gleiche Bedingungen, Computersimulationen und offene Aufgaben.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: de
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Die Kämpfe in Iltonggi laufen standardmäßig automatisch – an einem vollen Tag reicht es, sich das Ergebnis anzusehen. Von Anfang an gab es aber auch den Wunsch, einen Kampf selbst zu führen und dabei zuzusehen, und deshalb haben wir im Fenster vor dem Angriff den „Direktbefehl“ geöffnet. Die Funktion erhielt ihre erste Gestalt im Build Nr. 33 am 29. Oktober. Derzeit lässt sie sich nur beim Angreifen nutzen; den Direktbefehl bei der Verteidigung haben wir noch nicht gebaut.

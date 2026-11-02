@@ -1,9 +1,10 @@
 ---
 title: Keeping Direct Command From Becoming a Cheat: Balancing It by Computer
 description: How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: en
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Battles in Iltonggi are automatic by default, so on busy days you can just look at the result. But from the start we also wanted a way to take charge and direct the fight yourself, so we added Direct Command to the window before an attack. It took its first shape in build 33 on October 29. For now it works only when you attack. Direct Command for defense isn't built yet.

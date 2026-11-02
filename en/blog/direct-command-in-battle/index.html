@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keeping Direct Command From Becoming a Cheat: Balancing It by Computer — Iltonggi</title>
+<meta name="description" content="How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/direct-command-in-battle/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/direct-command-in-battle/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Iltonggi">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Keeping Direct Command From Becoming a Cheat: Balancing It by Computer — Iltonggi">
+<meta property="og:description" content="How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keeping Direct Command From Becoming a Cheat: Balancing It by Computer — Iltonggi">
+<meta name="twitter:description" content="How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=5b6945da">
+<link rel="alternate" type="application/rss+xml" title="Making of Iltonggi" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-11-02T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-02T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Keeping Direct Command From Becoming a Cheat: Balancing It by Computer", "description": "How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.", "datePublished": "2026-11-02T12:00:00+09:00", "dateModified": "2026-11-02T12:00:00+09:00", "inLanguage": "en", "url": "https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Iltonggi", "item": "https://iltonggi.ipe.rest/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://iltonggi.ipe.rest/en/blog/"}, {"@type": "ListItem", "position": 3, "name": "Keeping Direct Command From Becoming a Cheat: Balancing It by Computer", "item": "https://iltonggi.ipe.rest/en/blog/direct-command-in-battle/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/en/" aria-label="Iltonggi home">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Iltonggi</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main links">
+      <a href="/en/blog/">Blog</a>
+      <a href="/en/releases/">Release notes</a>
+      <a href="/en/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 4</p>
+      <h1>Keeping Direct Command From Becoming a Cheat: Balancing It by Computer</h1>
+      <p class="meta"><time datetime="2026-11-02T12:00:00+09:00" data-ipe-time>2026-11-02 12:00 KST</time></p>
+      <div class="post__body">
+<p>Battles in Iltonggi are automatic by default, so on busy days you can just look at the result. But from the start we also wanted a way to take charge and direct the fight yourself, so we added Direct Command to the window before an attack. It took its first shape in build 33 on October 29. For now it works only when you attack. Direct Command for defense isn&#x27;t built yet.</p>
+<h2>Rock-paper-scissors in three beats</h2>
+<p>Direct Command lets you pick one of three stances over three beats: formation, charge, or flank. Formation beats charge, charge beats flank, and flank beats formation. If you send out scouts, you can catch a glimpse of what the enemy will play, and enemies inside a castle often choose formation. If you&#x27;re being pushed back, you can retreat and save half your troops.</p>
+<p>We kept the rules as simple as rock-paper-scissors. In a round of 5 to 10 minutes, having to learn long rules would turn Direct Command into a burden. Instead we added clues, such as scouts and the habits of defenders in a castle, to give it the pleasure of reading your opponent. Just as spies let you peek at land in the fog, scouts let you peek at the enemy&#x27;s move. The idea that gathering information is power carries over into battle too. We added retreat for the same reason. Holding out until you lose everything is worse than saving half to try again, and a commander needs that option to feel like one.</p>
+<h2>It must not become a cheat</h2>
+<p>If Direct Command is too strong, everyone ends up using it, and the light, quick nature of a round breaks down. If it&#x27;s too weak, nobody uses it. If it can turn a heavily lopsided fight around, it&#x27;s not command but a cheat. Generals&#x27; abilities, troop strength and weather are calculated exactly as in automatic battles, and we decided to keep the gain from command small. Someone who reads well should have a slight edge, but a side badly short on troops must never win on command alone.</p>
+<h2>Compare with everything else held equal</h2>
+<p>To see only the effect of command, every other condition has to be identical. So we pitted the same generals, the same troops and the same weather against each other, changing only the way of command, and compared win rates. Automatic battle is the baseline, and we look at how far Direct Command strays from it. If the gap is too large or too small, we rework the rules.</p>
+<h2>6,000 fights by computer</h2>
+<p>According to our development records, to check this we had the computer fight 6,000 battles commanded in various ways. Choosing at random, or repeating a single order, kept the win rate within 1 percentage point of automatic battle. Reading the scout report and responding raised wins by about 3 percentage points, and the records show no case of turning a badly lopsided fight around.</p>
+<p>A person can&#x27;t play 6,000 battles by hand, so this kind of checking is left to the computer. This time too, we built the engine and simulation tests first and attached the screen afterward. It&#x27;s a sequence of balancing with numbers first, then dressing it in something you can touch. The screen and the text in eleven languages came after that.</p>
+<p>This isn&#x27;t the first time we&#x27;ve balanced by computer. According to our development records, in the preceding build 32 we measured the same way how win rates varied widely between kingdoms on Easy difficulty, and narrowed them. The thinking was that whichever kingdom you pick, Easy should be equally Easy.</p>
+<h2>What remains after the numbers</h2>
+<p>Good numbers don&#x27;t guarantee good feel. A computer can measure win rates, but it can&#x27;t tell you whether command is fun. So we keep refining it by playing by hand. Direct Command on defense, and a check across a whole playthrough, are still ahead of us.</p>
+<p>// Read well and you get a slight edge. Cheats don&#x27;t work here.</p>
+      </div>
+      <nav class="post-nav" aria-label="More posts"><ul><li>← Previous post: <a href="/en/blog/han-river-551-history-check/">The 551 Han River Contest: Unnamed Generals Become &quot;General ○○&quot;</a></li></ul></nav>
+      <section class="post-more"><h2>More posts</h2><ul><li><a href="/en/blog/four-kingdoms-four-colors/">Four Kingdoms, Four Colors, Still Distinct at Night</a></li><li><a href="/en/blog/why-a-three-kingdoms-land-grab/">A Three Kingdoms Land Grab for Your Phone</a></li></ul></section>
+      <div class="doc__links"><a href="/en/blog/">← Back to the blog</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="Legal links">
+      <a href="/en/privacy/">Privacy Policy</a>
+      <a href="/en/terms/">Terms of Use</a>
+      <a href="/en/blog/">Blog</a>
+      <a href="/en/releases/">Release notes</a>
+      <a href="/en/support/">Support</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="Language"><a href="/en/blog/direct-command-in-battle/" aria-current="true" hreflang="en" lang="en">English</a><a href="/ko/blog/direct-command-in-battle/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/direct-command-in-battle/" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/direct-command-in-battle/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/direct-command-in-battle/" hreflang="es" lang="es">Español</a><a href="/pt/blog/direct-command-in-battle/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/direct-command-in-battle/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/direct-command-in-battle/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/direct-command-in-battle/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/direct-command-in-battle/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/direct-command-in-battle/" hreflang="de" lang="de">Deutsch</a></nav>
+</footer>
+</body>
+</html>

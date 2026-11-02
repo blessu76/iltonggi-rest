@@ -1,10 +1,11 @@
 ---
 title: Agar Komando Langsung Tak Jadi Curang — Diuji dengan Komputer
 description: Agar komando langsung di Iltonggi tak jadi curang: suit tiga babak, perbandingan dalam kondisi sama, simulasi komputer, dan pekerjaan yang masih tersisa.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: id
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Pertempuran di Iltonggi pada dasarnya otomatis: di hari yang sibuk, cukup lihat hasilnya. Namun sejak awal kami juga ingin bisa memimpin pertempuran sambil menontonnya, sehingga jendela sebelum menyerang kami buka dengan “komando langsung”. Fitur ini mendapat bentuk pertamanya di build nomor 33 pada 29 Oktober. Untuk saat ini hanya bisa dipakai saat menyerang; komando langsung saat bertahan belum kami buat.

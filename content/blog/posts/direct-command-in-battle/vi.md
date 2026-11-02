@@ -1,10 +1,11 @@
 ---
 title: Để chỉ huy trực tiếp không thành mánh khóe — máy tính kiểm chứng
 description: Làm sao để chỉ huy trực tiếp trong Iltonggi không thành mánh khóe: oẳn tù tì ba hiệp, so sánh trong điều kiện giống nhau, máy tính mô phỏng và việc còn lại.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: vi
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Trận đánh trong Iltonggi mặc định là tự động: những ngày bận, chỉ cần xem kết quả. Nhưng ngay từ đầu chúng tôi cũng muốn được vừa xem vừa tự chỉ huy trận đánh, nên đã mở “chỉ huy trực tiếp” trong cửa sổ trước khi tấn công. Tính năng này có hình hài đầu tiên ở bản build số 33 ngày 29 tháng 10. Hiện giờ chỉ dùng được khi tấn công; chỉ huy trực tiếp khi phòng thủ thì chúng tôi chưa làm.

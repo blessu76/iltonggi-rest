@@ -1,10 +1,11 @@
 ---
 title: Que le commandement direct ne devienne pas de la triche : l'équilibrer par ordinateur
 description: Comment nous évitons que le commandement direct d'Iltonggi tourne à la triche grâce à des batailles simulées, pourquoi ses règles restent simples, et la suite.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: fr
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 Les batailles d'Iltonggi sont automatiques par défaut : les jours chargés, on peut se contenter du résultat. Mais dès le départ, nous voulions aussi qu'on puisse prendre la main et diriger le combat soi-même, et nous avons donc ajouté le commandement direct à la fenêtre qui précède l'attaque. Il a pris sa première forme dans la version 33, le 29 octobre. Pour l'instant, il ne fonctionne que lorsque vous attaquez. Le commandement direct en défense n'est pas encore fait.

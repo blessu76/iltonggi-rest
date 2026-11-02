@@ -1,10 +1,11 @@
 ---
 title: Para o comando direto não virar trapaça — testado pelo computador
 description: Como o comando direto no Iltonggi evita virar trapaça: pedra-papel-tesoura em três lances, condições iguais de comparação, simulações no computador.
-date: 2026-11-02
 slug: direct-command-in-battle
 lang: pt
 translation_of: ko
+date: 2026-11-02
+published: 2026-11-02T12:00:00+09:00
 ---
 
 As batalhas do Iltonggi são automáticas por padrão: num dia corrido, basta ver o resultado. Mas desde o início também queríamos poder acompanhar e comandar o combate, e por isso abrimos o “comando direto” na janela anterior ao ataque. O recurso ganhou forma no build 33, em 29 de outubro. Por enquanto só funciona no ataque; o comando direto na defesa ainda não foi feito.
