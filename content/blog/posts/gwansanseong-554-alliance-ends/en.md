@@ -1,9 +1,10 @@
 ---
 title: Gwansanseong, 554: Where an Alliance Ended
 description: Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi's diplomacy rules touch it.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: en
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 In the previous post we introduced the 551 Han River scenario, the year Baekje and Silla joined hands to go after the Han River valley held by Goguryeo. Iltonggi's Han River scenario covers only that much. In real history, though, the alliance did not last. Three years later, in 554, the two kingdoms clashed around Gwansanseong, and King Seong of Baekje was killed. The game has no separate scene for it, but it shows what the 551 alliance eventually cost, so we are writing it down.

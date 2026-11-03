@@ -1,10 +1,11 @@
 ---
 title: Gwansanseong 554 – wo ein Bündnis endete
 description: Drei Jahre nach dem Han-Fluss-Szenario von 551 endete das Bündnis zwischen Baekje und Silla bei Gwansanseong. Hier steht, wie das war und wo die Diplomatieregeln von Iltonggi diese Szene berühren.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: de
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 Im vorigen Beitrag haben wir das Han-Fluss-Szenario von 551 vorgestellt, das Jahr, in dem sich Baekje und Silla die Hände reichten, um Goguryeo das Han-Becken abzunehmen. Das Han-Szenario von Iltonggi reicht nur bis dahin. In der wirklichen Geschichte hielt das Bündnis jedoch nicht lange. Drei Jahre später, 554, stießen die beiden Reiche bei Gwansanseong zusammen, und König Seong von Baekje fiel. Eine eigene Szene dafür gibt es im Spiel nicht, aber sie zeigt, was das Bündnis von 551 am Ende kostete, deshalb halten wir sie hier fest.

@@ -1,10 +1,11 @@
 ---
 title: Gwansanseong, 554 : là où une alliance a pris fin
 description: Trois ans après le scénario du fleuve Han de 551, comment l'alliance entre Baekje et Silla a pris fin à Gwansanseong, et où les règles de diplomatie d'Iltonggi touchent cette scène.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: fr
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 Dans l'article précédent, nous avons présenté le scénario du fleuve Han de 551, l'année où Baekje et Silla se sont unis pour disputer à Goguryeo le bassin du Han. Le scénario d'Iltonggi s'arrête là. Mais dans l'histoire réelle, l'alliance n'a pas duré. Trois ans plus tard, en 554, les deux royaumes se sont heurtés autour de Gwansanseong, et le roi Seong de Baekje a été tué. Le jeu n'a pas de scène à part pour cela, mais elle montre ce que l'alliance de 551 a fini par coûter ; nous la consignons donc ici.

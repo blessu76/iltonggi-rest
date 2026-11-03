@@ -1,10 +1,11 @@
 ---
 title: Gwansanseong 554 — tempat sebuah aliansi berakhir
 description: Tiga tahun setelah skenario Sungai Han tahun 551, begini aliansi Baekje dan Silla berakhir di Gwansanseong, dan di mana aturan diplomasi Iltonggi bersentuhan dengan adegan itu.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: id
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 Di artikel sebelumnya kami memperkenalkan skenario Sungai Han tahun 551, tahun ketika Baekje dan Silla bergandengan tangan untuk merebut lembah Sungai Han dari Goguryeo. Skenario Sungai Han di Iltonggi hanya sampai di situ. Namun dalam sejarah nyata, aliansi itu tidak bertahan lama. Tiga tahun kemudian, pada 554, kedua kerajaan bentrok di sekitar Gwansanseong, dan Raja Seong dari Baekje tewas. Game ini tidak punya adegan tersendiri untuk itu, tetapi adegan ini menunjukkan harga yang akhirnya harus dibayar aliansi 551, sehingga kami mencatatnya.

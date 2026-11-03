@@ -1,10 +1,11 @@
 ---
 title: Gwansanseong, 554: donde se rompió una alianza
 description: Tres años después del escenario del río Han de 551, así terminó la alianza entre Baekje y Silla en Gwansanseong, y dónde las reglas de diplomacia de Iltonggi tocan esa escena.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: es
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 En el artículo anterior presentamos el escenario del río Han de 551, el año en que Baekje y Silla se unieron para disputar a Goguryeo la cuenca del río Han. El escenario de Iltonggi llega solo hasta ahí. En la historia real, sin embargo, la alianza no duró. Tres años después, en 554, los dos reinos chocaron en los alrededores de Gwansanseong y murió el rey Seong de Baekje. El juego no tiene una escena aparte para esto, pero muestra lo que acabó costando la alianza de 551, así que lo dejamos escrito.

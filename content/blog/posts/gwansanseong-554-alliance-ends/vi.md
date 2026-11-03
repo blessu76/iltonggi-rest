@@ -1,10 +1,11 @@
 ---
 title: Gwansanseong năm 554 — nơi một liên minh chấm dứt
 description: Ba năm sau thế trận sông Hán năm 551, liên minh Baekje và Silla đã kết thúc ra sao ở Gwansanseong, và luật ngoại giao của Iltonggi chạm vào cảnh ấy ở đâu.
-date: 2026-11-03
 slug: gwansanseong-554-alliance-ends
 lang: vi
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T12:00:00+09:00
 ---
 
 Ở bài trước chúng tôi đã giới thiệu thế trận sông Hán năm 551, năm Baekje và Silla bắt tay nhau để giành lưu vực sông Hán từ tay Goguryeo. Thế trận sông Hán của Iltonggi chỉ kể đến đó. Nhưng trong lịch sử thật, liên minh này không kéo dài. Ba năm sau, năm 554, hai nước giao tranh quanh Gwansanseong và vua Seong của Baekje tử trận. Trong game không có một cảnh riêng cho việc này, nhưng nó cho thấy liên minh năm 551 rốt cuộc phải trả giá thế nào, nên chúng tôi ghi lại.

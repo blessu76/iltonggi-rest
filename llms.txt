@@ -12,6 +12,7 @@
 ## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
+- [Gwansanseong, 554: Where an Alliance Ended](https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/): Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi's diplomacy rules touch it.
 - [Keeping Direct Command From Becoming a Cheat: Balancing It by Computer](https://iltonggi.ipe.rest/blog/direct-command-in-battle/): How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.
 - [The 551 Han River Contest: Unnamed Generals Become "General ○○"](https://iltonggi.ipe.rest/blog/han-river-551-history-check/): Building Iltonggi's 551 Han River scenario: dropping out-of-era generals, placing Kim Mu-ryeok and the Daegaya king, and why unknown names stay "General ○○."
 - [Four Kingdoms, Four Colors, Still Distinct at Night](https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/): How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.
