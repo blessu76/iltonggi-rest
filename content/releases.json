@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+64",
+   "at": "2026-11-04 06:11",
+   "ko": [
+    "새 막이 셋 늘었어요. 4막 「남쪽 바다의 보선」, 5막 「비단길의 별지기」, 8막 「호수 위의 도시」가 열려요.",
+    "맨 끝에는 10막 「가장 오래된 땅」이 있어요. 허락을 받아야 지나갈 수 있는 땅의 주인 고을이 나와요.",
+    "지도가 더 넓어졌어요. 2막 시작 화면과 3막 서쪽 땅에 고을이 늘었어요.",
+    "이어하기 파일이 망가져도 직전 판으로 되살려요. 설정의 「문제 알리기」로 오류를 메일로 보낼 수 있어요."
+   ],
+   "en": [
+    "Three new acts: Act 4 \"Treasure Fleet of the Southern Seas\", Act 5 \"Stargazer of the Silk Road\" and Act 8 \"City on the Lake\".",
+    "Act 10 \"The Oldest Land\" sits at the very end, with a landowner region you may only pass with permission.",
+    "The map is wider: Act 2's start screen and Act 3's western lands gained more regions.",
+    "Resume now recovers from a corrupted save using the previous one, and Settings has \"Report a problem\" to email an error log."
+   ]
+  },
+  {
    "build": "1.0.0+63",
    "at": "2026-11-03 21:10",
    "ko": [
