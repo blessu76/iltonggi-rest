@@ -1,6 +1,22 @@
 {
  "entries": [
   {
+   "build": "1.0.0+65",
+   "at": "2026-11-04 07:53",
+   "ko": [
+    "새 막이 둘 늘었어요. 6막 「르네상스의 바다」, 9막 「구름 위의 길」이 열려요.",
+    "4막 「남쪽 바다의 보선」의 고을이 25곳에서 38곳으로 늘었어요.",
+    "지도를 가장 멀리 줄인 뒤 한 번 더 줄이면 세계지도가 펼쳐져요. 일통한 막의 땅이 같은 색으로 칠해져요.",
+    "10막 「가장 오래된 땅」의 주인 고을 표시와 문구를 다듬었어요."
+   ],
+   "en": [
+    "Two new acts: Act 6 \"The Sea of the Renaissance\" and Act 9 \"The Road Above the Clouds\".",
+    "Act 4 \"Treasure Fleet of the Southern Seas\" grew from 25 to 38 regions.",
+    "Zoom the map out all the way, then once more, to open the world map; the lands of acts you have unified are painted in the same color.",
+    "Act 10 \"The Oldest Land\": the landowner regions' display and wording were refined."
+   ]
+  },
+  {
    "build": "1.0.0+64",
    "at": "2026-11-04 06:11",
    "ko": [
