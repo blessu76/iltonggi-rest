@@ -1,10 +1,11 @@
 ---
 title: Hanji, tinta, dan cap — memilih wajah untuk peta
 description: Bahan dan aturan tiga rancangan tampilan peta Iltonggi, yang menggambar ulang tanah yang sama sebagai dinding tanah liat, kertas hanji, dan lembar peta kuno.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: id
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 Di Iltonggi, hal yang paling lama dipandang pemain adalah peta. Letak dua puluh empat kota tetap sama apa pun yang kami lakukan, tetapi kesan layar sangat berubah bergantung pada kertas apa dan bagaimana tanah itu digambar. Menurut catatan pengembangan, kami membuat tiga rancangan tampilan peta dan membandingkannya: gaya lukisan dinding makam, lukisan tinta dengan warna tipis, dan gaya peta kuno. Artikel ini mencatat bahan apa yang kami pilih untuk masing-masing, dan apa yang kami putuskan tidak diubah pada ketiganya. Layar ini adalah tampilan selama pengembangan, dan tampilan akhirnya bisa berbeda.

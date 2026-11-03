@@ -1,10 +1,11 @@
 ---
 title: Hanji, encre et sceau : choisir un visage pour la carte
 description: Les matériaux et les règles de trois esquisses d'aspect pour la carte d'Iltonggi, qui redessinent la même terre en mur d'argile, en papier hanji et en vieille feuille d'arpenteur.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: fr
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 Dans Iltonggi, ce que le joueur regarde le plus longtemps, c'est la carte. Les vingt-quatre villes restent au même endroit quoi que nous fassions, mais l'impression de l'écran change beaucoup selon le papier sur lequel la terre est dessinée et la manière de le faire. D'après les notes de développement, nous avons réalisé trois esquisses d'aspect pour la carte et les avons comparées : un style de fresque funéraire, un lavis d'encre aux couleurs légères et un style de carte ancienne. Cet article consigne les matériaux retenus pour chacune et ce que nous avons décidé de ne changer dans aucune. Les écrans sont ceux du développement et l'aspect final peut différer.

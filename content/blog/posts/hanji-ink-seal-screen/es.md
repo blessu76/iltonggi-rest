@@ -1,10 +1,11 @@
 ---
 title: Hanji, tinta y sello: elegir una cara para el mapa
 description: Los materiales y las reglas de tres bocetos de aspecto para el mapa de Iltonggi, que redibujan la misma tierra como muro de barro, papel hanji y hoja de agrimensor antigua.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: es
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 En Iltonggi, lo que más tiempo mira el jugador es el mapa. Las veinticuatro villas están en el mismo sitio hagamos lo que hagamos, pero la sensación de la pantalla cambia mucho según el papel en que se dibuje la tierra y cómo. Según los registros de desarrollo, hicimos tres bocetos de aspecto para el mapa y los comparamos: un estilo de mural funerario, una aguada de tinta con color suave y un estilo de mapa antiguo. Este artículo anota qué materiales elegimos para cada uno y qué decidimos no cambiar en ninguno. Las pantallas son las del desarrollo y el aspecto final puede ser distinto.

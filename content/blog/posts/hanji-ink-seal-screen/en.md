@@ -1,9 +1,10 @@
 ---
 title: Hanji, Ink and the Seal: Choosing a Face for the Map
 description: The materials and rules behind three look drafts for Iltonggi's map, redrawing the same land as clay wall, hanji paper and an old surveyor's sheet.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: en
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 The map is the thing players look at longest in Iltonggi. The twenty-four towns sit in the same places whatever we do, but the feel of the screen changes a great deal depending on what kind of paper the land is drawn on and how. According to our development records, we made three look drafts for the map and compared them: a tomb-mural style, an ink wash with light colour, and an old-map style. This post records which materials we chose for each, and what we decided not to change in any of them. The screens are as they stood in development, and the final look may differ.

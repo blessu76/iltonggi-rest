@@ -1,10 +1,11 @@
 ---
 title: Giấy hanji, mực và ấn — chọn gương mặt cho bản đồ
 description: Vật liệu và quy tắc của ba bản phác diện mạo cho bản đồ Iltonggi, vẽ lại cùng một vùng đất như bức tường đất, giấy hanji và tờ đồ cổ của người đo đạc.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: vi
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 Trong Iltonggi, thứ người chơi nhìn lâu nhất là bản đồ. Vị trí của hai mươi bốn thị trấn vẫn vậy dù chúng tôi làm gì, nhưng cảm giác của màn hình thay đổi rất nhiều tùy vào việc vùng đất được vẽ trên loại giấy nào và vẽ ra sao. Theo ghi chép trong quá trình phát triển, chúng tôi làm ba bản phác diện mạo cho bản đồ và so sánh: kiểu bích họa mộ cổ, kiểu thủy mặc màu nhạt và kiểu bản đồ cổ. Bài này ghi lại vật liệu đã chọn cho từng bản, và những gì chúng tôi quyết định không thay đổi ở cả ba. Màn hình là hình ảnh trong lúc phát triển, diện mạo cuối cùng có thể khác.

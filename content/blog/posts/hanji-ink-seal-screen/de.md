@@ -1,10 +1,11 @@
 ---
 title: Hanji, Tusche und Siegel – ein Gesicht für die Karte wählen
 description: Materialien und Regeln von drei Look-Entwürfen für die Karte von Iltonggi, die dasselbe Land als Lehmwand, als Hanji-Papier und als alte Vermessungskarte neu zeichnen.
-date: 2026-11-04
 slug: hanji-ink-seal-screen
 lang: de
 translation_of: ko
+date: 2026-11-03
+published: 2026-11-03T21:05:00+09:00
 ---
 
 In Iltonggi schaut man am längsten auf die Karte. Die vierundzwanzig Städte liegen immer an denselben Stellen, aber der Eindruck des Bildschirms ändert sich stark, je nachdem, auf welchem Papier und wie das Land gezeichnet wird. Nach den Aufzeichnungen aus der Entwicklung haben wir drei Look-Entwürfe für die Karte gemacht und verglichen: einen Grabmalerei-Stil, eine Tuschmalerei mit zarter Farbe und einen Stil alter Karten. Dieser Beitrag hält fest, welche Materialien wir für jeden gewählt haben und was wir bei allen dreien nicht ändern wollten. Die Bildschirme zeigen den Stand der Entwicklung, das endgültige Aussehen kann abweichen.
