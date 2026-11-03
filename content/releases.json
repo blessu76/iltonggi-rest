@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+63",
+   "at": "2026-11-03 21:10",
+   "ko": [
+    "지도 위 고을 칩이 내 땅과 남의 땅이 한눈에 구분되게 바뀌었어요.",
+    "내 땅은 나라의 짙은 색 바탕에 크림색 글자와 금빛 테두리로 보여요.",
+    "남의 땅 칩은 예전의 은은한 모습 그대로라 서로 헷갈리지 않아요."
+   ],
+   "en": [
+    "Region chips on the map now make your own land and others' land easy to tell apart.",
+    "Your land shows a deep nation-colored base with cream text and a gold rim.",
+    "Other lands keep their soft look, so the two never get mixed up."
+   ]
+  },
+  {
    "build": "1.0.0+62",
    "at": "2026-11-02 08:56",
    "ko": [
