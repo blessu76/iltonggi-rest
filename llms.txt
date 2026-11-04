@@ -12,6 +12,7 @@
 ## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
+- [The Day After You Take a Town: Designing the Aftermath of Conquest](https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/): What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.
 - [Hanji, Ink and the Seal: Choosing a Face for the Map](https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/): The materials and rules behind three look drafts for Iltonggi's map, redrawing the same land as clay wall, hanji paper and an old surveyor's sheet.
 - [Gwansanseong, 554: Where an Alliance Ended](https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/): Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi's diplomacy rules touch it.
 - [Keeping Direct Command From Becoming a Cheat: Balancing It by Computer](https://iltonggi.ipe.rest/blog/direct-command-in-battle/): How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.

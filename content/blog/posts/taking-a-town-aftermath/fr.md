@@ -1,10 +1,11 @@
 ---
 title: Le lendemain de la prise d'une ville : pourquoi nous avons conçu les suites de la conquête
 description: Ce qui arrive à la population et au moral juste après la prise d'une ville dans Iltonggi, et pourquoi nous avons fait en sorte que gagner la bataille ne soit pas la fin.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: fr
 translation_of: ko
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 Dans un jeu de conquête de territoire, le moment où l'on prend une ville marque souvent la fin de l'histoire. Le drapeau change et l'on passe à la suivante. Iltonggi a volontairement inclus dans sa conception ce qui se passe le lendemain, parce que nous voulions montrer ce qu'il reste après une victoire. Cet article consigne ce qui arrive juste après la prise d'une ville, d'après les valeurs de développement. Les chiffres peuvent changer au fil de l'équilibrage.

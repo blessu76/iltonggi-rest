@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Day After You Take a Town: Designing the Aftermath of Conquest — Iltonggi</title>
+<meta name="description" content="What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/taking-a-town-aftermath/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Iltonggi">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The Day After You Take a Town: Designing the Aftermath of Conquest — Iltonggi">
+<meta property="og:description" content="What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Day After You Take a Town: Designing the Aftermath of Conquest — Iltonggi">
+<meta name="twitter:description" content="What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=5b6945da">
+<link rel="alternate" type="application/rss+xml" title="Making of Iltonggi" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-11-04T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-04T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "The Day After You Take a Town: Designing the Aftermath of Conquest", "description": "What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.", "datePublished": "2026-11-04T12:00:00+09:00", "dateModified": "2026-11-04T12:00:00+09:00", "inLanguage": "en", "url": "https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Iltonggi", "item": "https://iltonggi.ipe.rest/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://iltonggi.ipe.rest/en/blog/"}, {"@type": "ListItem", "position": 3, "name": "The Day After You Take a Town: Designing the Aftermath of Conquest", "item": "https://iltonggi.ipe.rest/en/blog/taking-a-town-aftermath/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/en/" aria-label="Iltonggi home">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Iltonggi</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main links">
+      <a href="/en/blog/">Blog</a>
+      <a href="/en/releases/">Release notes</a>
+      <a href="/en/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 7</p>
+      <h1>The Day After You Take a Town: Designing the Aftermath of Conquest</h1>
+      <p class="meta"><time datetime="2026-11-04T12:00:00+09:00" data-ipe-time>2026-11-04 12:00 KST</time></p>
+      <div class="post__body">
+<p>In a land-grab game, the moment you take a town is usually the end of the story. The flag changes, and you move on to the next town. Iltonggi deliberately designs in what comes the next day, because we wanted to show what is left after a victory. This post records what happens right after you take a town, using the values from development. The numbers may change as we balance the game.</p>
+<h2>Conquered land is uneasy</h2>
+<p>When you take a town, its population drops to three quarters of what it was, and its mood starts at 40. With fewer people there are fewer soldiers to draw, and a mood of 40 sits at the very bottom of what we call stable. For the winning kingdom, the land has been gained, but it is hard to call it yet its own.</p>
+<p>Mood has different effects at each stage. In the development values, 80 or above is cheering, 40 or above is stable, 20 or above is uneasy, and below that is resentful. A cheering town can draw more soldiers than usual, an uneasy town only half, and a resentful town only a quarter.</p>
+<h2>What happens when resentment builds</h2>
+<p>A town whose mood falls below 20 becomes noticeably weak. Its income drops to zero, troop production stops, and one soldier leaves every turn. Its defence weakens too. An uneasy town, with mood from 20 to 39, loses 5 percent of its defence, and below 20, at the resentful stage, it loses 10 percent.</p>
+<p>If it gets worse and mood hits the floor, the town rebels. It becomes land that belongs to no kingdom, only half its troops remain, and any general stationed there falls back to a neighbouring town of the same kingdom, or dies if there is nowhere to go. Royal seats have a floor that keeps mood from dropping below 20, though, and the easiest difficulty has no rebellions.</p>
+<h2>What time solves, and what people have to solve</h2>
+<p>Conquered land is not uneasy forever. Mood recovers slowly, 4 per turn, toward the peacetime level of 70. Starting from 40, that takes a little over eight turns. Population also refills by 30 percent of the shortfall each turn while mood stays at 20 or above.</p>
+<p>If you want to settle things faster, though, you have to step in. Spending wealth on a feast raises mood. The screen shows advice such as &quot;On the verge of revolt, hold a feast&quot;, and the point is that it makes you choose between spending on the feast and spending on troops. You have already spent troops to win, so whether you spend wealth to calm the land you took or go straight for the next town changes the flow of the game.</p>
+<h2>A big win brings some heat too</h2>
+<p>Conquest is not always a burden. When you take a town of town-size or bigger, the heat of victory raises mood by 3 in every town you own. If a general was waiting in the capital, that general takes charge of the new town. It is a device meant to show with numbers that taking a big town is different from taking several small ones.</p>
+<p>The biggest stake is the royal seat. When it falls, that kingdom is destroyed, and all its remaining towns pass to the winner. Their troops are halved, to a minimum of one, and the winner takes half of the treasury. Of course the towns that pass over are conquered too, so they start with reduced population and mood just the same. The meaning of this rule is that the road to uniting the land does not end with a single victory.</p>
+<h2>Why we did it this way</h2>
+<p>Separating winning from governing creates the fun of choosing. If land could be expanded at no cost, the fastest path would always be to push forward with the strongest army. With a rule that conquered land is briefly weak, you have to think about whether to catch your breath after a win or strike again. That is what we aimed for in this design, and whether it actually feels that way is something we still need to look into.</p>
+<p>These rules are not a faithful reproduction of how rulers actually governed in history. They are a simplified model made for the game&#x27;s balance.</p>
+<p>// Planting a flag takes a day. Winning the people takes many turns.</p>
+      </div>
+      <nav class="post-nav" aria-label="More posts"><ul><li>← Previous post: <a href="/en/blog/hanji-ink-seal-screen/">Hanji, Ink and the Seal: Choosing a Face for the Map</a></li></ul></nav>
+      <section class="post-more"><h2>More posts</h2><ul><li><a href="/en/blog/gwansanseong-554-alliance-ends/">Gwansanseong, 554: Where an Alliance Ended</a></li><li><a href="/en/blog/direct-command-in-battle/">Keeping Direct Command From Becoming a Cheat: Balancing It by Computer</a></li><li><a href="/en/blog/han-river-551-history-check/">The 551 Han River Contest: Unnamed Generals Become &quot;General ○○&quot;</a></li></ul></section>
+      <div class="doc__links"><a href="/en/blog/">← Back to the blog</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="Legal links">
+      <a href="/en/privacy/">Privacy Policy</a>
+      <a href="/en/terms/">Terms of Use</a>
+      <a href="/en/blog/">Blog</a>
+      <a href="/en/releases/">Release notes</a>
+      <a href="/en/support/">Support</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="Language"><a href="/en/blog/taking-a-town-aftermath/" aria-current="true" hreflang="en" lang="en">English</a><a href="/ko/blog/taking-a-town-aftermath/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/taking-a-town-aftermath/" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/taking-a-town-aftermath/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/taking-a-town-aftermath/" hreflang="es" lang="es">Español</a><a href="/pt/blog/taking-a-town-aftermath/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/taking-a-town-aftermath/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/taking-a-town-aftermath/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/taking-a-town-aftermath/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/taking-a-town-aftermath/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/taking-a-town-aftermath/" hreflang="de" lang="de">Deutsch</a></nav>
+</footer>
+</body>
+</html>

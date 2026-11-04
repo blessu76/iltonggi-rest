@@ -1,10 +1,11 @@
 ---
 title: Der Tag nach der Einnahme einer Stadt: Warum wir die Folgen der Eroberung gestaltet haben
 description: Was mit Bevölkerung und Stimmung unmittelbar nach der Einnahme einer Stadt in Iltonggi geschieht und warum wir dafür gesorgt haben, dass der gewonnene Kampf nicht das Ende ist.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: de
 translation_of: ko
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 In einem Spiel um Gebietseroberung ist der Moment, in dem eine Stadt fällt, meist das Ende der Geschichte. Die Fahne wechselt, und man zieht zur nächsten Stadt weiter. Iltonggi hat bewusst aufgenommen, was am Tag danach geschieht, denn wir wollten zeigen, was nach einem Sieg übrig bleibt. Dieser Beitrag hält anhand der Entwicklungswerte fest, was unmittelbar nach der Einnahme einer Stadt passiert. Die Zahlen können sich beim Ausbalancieren noch ändern.

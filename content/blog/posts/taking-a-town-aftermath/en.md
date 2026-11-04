@@ -1,9 +1,10 @@
 ---
 title: The Day After You Take a Town: Designing the Aftermath of Conquest
 description: What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: en
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 In a land-grab game, the moment you take a town is usually the end of the story. The flag changes, and you move on to the next town. Iltonggi deliberately designs in what comes the next day, because we wanted to show what is left after a victory. This post records what happens right after you take a town, using the values from development. The numbers may change as we balance the game.

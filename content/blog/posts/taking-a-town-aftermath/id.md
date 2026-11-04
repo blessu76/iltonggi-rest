@@ -1,10 +1,11 @@
 ---
 title: Sehari Setelah Merebut Kota: Mengapa Kami Merancang Akibat Penaklukan
 description: Apa yang terjadi pada penduduk dan semangat rakyat tepat setelah merebut kota di Iltonggi, dan mengapa kami membuat kemenangan bukan akhir dari segalanya.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: id
 translation_of: ko
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 Dalam permainan perebutan wilayah, saat sebuah kota direbut biasanya menjadi akhir cerita. Benderanya berganti, lalu kita lanjut ke kota berikutnya. Iltonggi dengan sengaja memasukkan apa yang terjadi keesokan harinya ke dalam rancangan, karena kami ingin menunjukkan apa yang tersisa setelah kemenangan. Tulisan ini mencatat apa yang terjadi tepat setelah merebut kota, berdasarkan nilai selama pengembangan. Angkanya bisa berubah selama kami menyeimbangkan permainan.

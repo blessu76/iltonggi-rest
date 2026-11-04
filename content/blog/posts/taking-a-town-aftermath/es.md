@@ -1,10 +1,11 @@
 ---
 title: El día después de tomar una ciudad: por qué diseñamos las secuelas de la conquista
 description: Qué pasa con la población y el ánimo justo después de tomar una ciudad en Iltonggi, y por qué hicimos que ganar la batalla no sea el final.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: es
 translation_of: ko
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 En un juego de conquista de territorio, el momento de tomar una ciudad suele ser el final de la historia. La bandera cambia y se pasa a la siguiente. Iltonggi incluyó a propósito lo que ocurre al día siguiente, porque queríamos mostrar qué queda después de una victoria. Esta entrada es un registro de lo que sucede justo después de tomar una ciudad, con los valores de desarrollo. Las cifras pueden cambiar mientras ajustamos el equilibrio.

@@ -1,10 +1,11 @@
 ---
 title: Ngày sau khi chiếm thành: vì sao chúng tôi thiết kế hậu quả của cuộc chinh phục
 description: Dân số và lòng dân thay đổi ra sao ngay sau khi chiếm một thành trong Iltonggi, và vì sao chúng tôi làm cho chiến thắng không phải là kết thúc.
-date: 2026-11-05
 slug: taking-a-town-aftermath
 lang: vi
 translation_of: ko
+date: 2026-11-04
+published: 2026-11-04T12:00:00+09:00
 ---
 
 Trong trò chơi tranh giành đất, khoảnh khắc chiếm được một thành thường là hồi kết của câu chuyện. Lá cờ đổi màu, rồi người chơi đi tiếp đến thành kế tiếp. Iltonggi cố ý đưa vào thiết kế những gì xảy ra từ ngày hôm sau, vì chúng tôi muốn cho thấy điều còn lại sau chiến thắng. Bài viết này ghi lại những gì xảy ra ngay sau khi chiếm thành, dựa trên giá trị trong quá trình phát triển. Con số có thể thay đổi khi chúng tôi cân bằng trò chơi.
