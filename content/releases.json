@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+68",
+   "at": "2026-11-04 19:25",
+   "ko": [
+    "줌아웃 세계지도에 국경선과 나라 색이 생겼어요. 나라 이름표에는 국기가 달려 있고, 확대하면 이름이 더 자세히 보여요.",
+    "영상 속 깃발의 글자가 천 색과 겹쳐 안 보이던 문제를 고쳤어요. 어떤 색 깃발이든 글자가 또렷하게 읽혀요.",
+    "7막 「황금의 사바나」, 11막 「마지막 겨울」, 세계지도 핀치 줌과 점령 기록도 이 빌드에 함께 들어 있어요."
+   ],
+   "en": [
+    "The zoomed-out world map now shows borders and country colors. Country labels carry flags, and names fill in as you zoom.",
+    "Fixed flag text blending into the cloth in the cinematic. Lettering now stays readable on any flag color.",
+    "Act 7 \"Golden Savanna\", Act 11 \"The Last Winter\", pinch-zoom on the world map and Conquest History are all in this build too."
+   ]
+  },
+  {
    "build": "1.0.0+67",
    "at": "2026-11-04 17:59",
    "ko": [
