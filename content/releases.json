@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+66",
+   "at": "2026-11-04 17:50",
+   "ko": [
+    "새 막이 열려요. 7막 「황금의 사바나」는 아프리카 땅이에요.",
+    "11막 「마지막 겨울」도 함께 열려요.",
+    "세계지도를 두 손가락으로 넓혀 확대하고 오므려 줄일 수 있어요(1배~4배). 끌어서 옮기고, 확대 중 두 번 누르면 처음으로 돌아와요."
+   ],
+   "en": [
+    "A new act opens: Act 7 \"The Golden Savanna\" takes you across Africa.",
+    "Act 11 \"The Last Winter\" opens as well.",
+    "Pinch to zoom the world map in and out (1x to 4x). Drag to pan; double-tap while zoomed in to reset."
+   ]
+  },
+  {
    "build": "1.0.0+65",
    "at": "2026-11-04 07:53",
    "ko": [
