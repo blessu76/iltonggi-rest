@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+67",
+   "at": "2026-11-04 17:59",
+   "ko": [
+    "「점령 기록」이 생겼어요. 이긴 판 30건이 남고, 목록에서 그때의 일통 화면과 공유 이미지를 다시 볼 수 있어요.",
+    "순위표에서도 점령 기록으로 바로 들어갈 수 있어요.",
+    "줌아웃 세계지도에 고지도풍 세계전도 배경이 깔렸어요."
+   ],
+   "en": [
+    "Conquest History is here. Your last 30 wins are kept, and you can reopen each unification screen and share image from the list.",
+    "You can also jump to Conquest History from the leaderboard.",
+    "The zoomed-out world map now sits on an antique-style world chart."
+   ]
+  },
+  {
    "build": "1.0.0+66",
    "at": "2026-11-04 17:50",
    "ko": [
