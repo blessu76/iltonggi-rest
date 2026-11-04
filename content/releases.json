@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+70",
+   "at": "2026-11-04 23:49",
+   "ko": [
+    "장터에서 일부 상품만 불러와져도 「준비 중」 카드가 뜨지 않고 가능한 상품만 깔끔하게 보여요.",
+    "장터 상품이 일부만 등록된 경우의 모든 조합을 점검하는 시험을 추가했어요.",
+    "점령 기록과 고지도풍 세계전도, 국가 이름표도 이 빌드에 그대로 들어 있어요."
+   ],
+   "en": [
+    "If only some shop items load, the shop no longer shows \"Coming soon\" cards and cleanly lists what is available.",
+    "Added tests covering every combination of partially available shop items.",
+    "Conquest History, the antique-style world map and country name labels are in this build too."
+   ]
+  },
+  {
    "build": "1.0.0+69",
    "at": "2026-11-04 23:37",
    "ko": [
