@@ -1,10 +1,11 @@
 ---
 title: Daegaya, 562: o ano em que o último Gaya se fechou
 description: Oito anos depois de Daegaya ficar ao lado de Baekje em Gwansanseong, como os registros contam que ela caiu diante de Silla em 562, e que tipo de reino é Gaya em Iltonggi.
-date: 2026-11-06
 slug: daegaya-562-last-gaya
 lang: pt
 translation_of: ko
+date: 2026-11-05
+published: 2026-11-05T12:00:00+09:00
 ---
 
 No texto anterior falamos de Gwansanseong, em 554. Entre as forças de Gaya que ficaram do lado de Baekje naquela batalha estava Daegaya. Este texto trata de 562, oito anos depois, o ano normalmente contado como a última cena da história de Gaya. Dos quatro reinos que se podem escolher em Iltonggi, Gaya é o que desapareceu primeiro na história real. Por isso, escolher Gaya no jogo é também, de certa forma, ir contra esse final.

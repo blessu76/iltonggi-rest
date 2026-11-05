@@ -1,10 +1,11 @@
 ---
 title: Daegaya 562 – das Jahr, in dem das letzte Gaya endete
 description: Acht Jahre nachdem Daegaya bei Gwansanseong an der Seite von Baekje stand, wie die Überlieferung seinen Fall vor Silla im Jahr 562 erzählt, und was für ein Reich Gaya in Iltonggi ist.
-date: 2026-11-06
 slug: daegaya-562-last-gaya
 lang: de
 translation_of: ko
+date: 2026-11-05
+published: 2026-11-05T12:00:00+09:00
 ---
 
 Im vorigen Beitrag ging es um Gwansanseong im Jahr 554. Unter den Kräften von Gaya, die in jener Schlacht auf der Seite von Baekje standen, war Daegaya. Dieser Beitrag handelt von 562, acht Jahre später, dem Jahr, das als letzte Szene der Geschichte Gayas gilt. Von den vier Reichen, die man in Iltonggi wählen kann, ist Gaya das, das in der wirklichen Geschichte am frühesten verschwand. Wer im Spiel Gaya wählt, geht deshalb in gewissem Sinn auch gegen dieses Ende an.

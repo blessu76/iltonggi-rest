@@ -1,10 +1,11 @@
 ---
 title: Daegaya 562 — tahun Gaya terakhir berakhir
 description: Delapan tahun setelah Daegaya berpihak pada Baekje di Gwansanseong, begini catatan menyebut ia jatuh ke tangan Silla pada 562, dan seperti apa negeri Gaya di Iltonggi.
-date: 2026-11-06
 slug: daegaya-562-last-gaya
 lang: id
 translation_of: ko
+date: 2026-11-05
+published: 2026-11-05T12:00:00+09:00
 ---
 
 Pada tulisan sebelumnya kami membahas Gwansanseong tahun 554. Di antara pasukan Gaya yang berpihak pada Baekje dalam pertempuran itu ada Daegaya. Tulisan ini tentang 562, delapan tahun kemudian, tahun yang biasa dianggap sebagai babak terakhir sejarah Gaya. Dari empat negeri yang bisa dipilih di Iltonggi, Gaya adalah yang paling awal lenyap dalam sejarah nyata. Maka memilih Gaya dalam gim ini juga berarti, dalam arti tertentu, melawan akhir itu.

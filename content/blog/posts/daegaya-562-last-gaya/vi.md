@@ -1,10 +1,11 @@
 ---
 title: Daegaya năm 562 — năm Gaya cuối cùng khép lại
 description: Tám năm sau khi Daegaya đứng về phía Baekje ở Gwansanseong, sử sách kể rằng nó sụp đổ trước Silla năm 562 ra sao, và Gaya là một vương quốc thế nào trong Iltonggi.
-date: 2026-11-06
 slug: daegaya-562-last-gaya
 lang: vi
 translation_of: ko
+date: 2026-11-05
+published: 2026-11-05T12:00:00+09:00
 ---
 
 Ở bài trước, chúng tôi đã nói về Gwansanseong năm 554. Trong số các thế lực Gaya đứng về phía Baekje ở trận đó có Daegaya. Bài này viết về năm 562, tám năm sau, năm thường được coi là cảnh cuối cùng của lịch sử Gaya. Trong bốn vương quốc có thể chọn ở Iltonggi, Gaya là nước biến mất sớm nhất trong lịch sử thật. Vì vậy chọn Gaya trong game cũng có nghĩa là đi ngược lại cái kết ấy.
