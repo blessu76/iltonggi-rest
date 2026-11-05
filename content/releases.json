@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+72",
+   "at": "2026-11-06 07:31",
+   "ko": [
+    "설정의 릴리즈 노트와 개인정보 처리방침을 이제 앱을 나가지 않고 앱 안에서 바로 열어요.",
+    "페이지를 불러오지 못하면 시트 안에서 안내해 줘요.",
+    "게임 내용과 세계전도 모습은 그대로예요."
+   ],
+   "en": [
+    "Release Notes and the Privacy Policy in Settings now open right inside the app instead of leaving it.",
+    "If a page can't be loaded, you'll see a message in the sheet itself.",
+    "The game itself and the world map look are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+70",
    "at": "2026-11-04 23:49",
    "ko": [
