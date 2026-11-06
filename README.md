@@ -34,3 +34,6 @@ translation_of: en        # en·ko 원문에는 쓰지 않음
 
 **발행**: `python3 scripts/publish_blog.py` (`--dry-run` 확인만 · `--no-push` · `--slug` · `--force` 하루 2편). 대기열 첫 글을 `posts/` 로 옮기고 `date`·`published`(+09:00) 도장 → 빌드 → `--check` → 테스트 → 커밋 → `pull --rebase` → `push origin HEAD:main`. 하루 1편(이미 오늘 올렸으면 건너뜀)·대기열이 비면 아무것도 안 함·실패하면 되돌리고 종료코드 1. 번호 `No. N` 은 게시 순.
 **자동 실행**: 맥미니 launchd 가 매일 12:00 KST(12:30·13:30 재시도) — 설치·확인은 `scripts/launchd/README.md`.
+
+## 웹 킷 (ipe_web_kit)
+`vendor/ipe_web_kit/` = 회사 공통 웹 킷의 태그 고정 복사본(버전은 `KIT_VERSION`, 무결성은 `MANIFEST.sha256`). **직접 고치지 않는다** — 킷 repo 에서 고쳐 태그를 올린 뒤 킷 클론에서 `python3 -m ipe_web_kit.vendor update <이 repo> --tag vX.Y.Z`. 쓰는 곳: `scripts/indexnow.py`(얇은 껍데기) · `scripts/blog.py`(ipe-localtime 스크립트). `vendor/` 는 배포(rsync)에서 빠진다. 확인: `python3 vendor/ipe_web_kit/vendor.py verify .`

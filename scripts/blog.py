@@ -25,6 +25,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "vendor"))
+from ipe_web_kit import localtime as kit_localtime  # noqa: E402  web kit (vendor/ipe_web_kit, pinned tag): the company-wide ipe-localtime module
 BLOG = ROOT / "content" / "blog"
 LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
 ORIGINALS = ("en", "ko")
@@ -267,7 +269,7 @@ def time_tag(iso):
 
 
 def localtime_script():
-    return "<script>" + (ROOT / "scripts" / "ipe-localtime.js").read_text(encoding="utf-8").strip() + "</script>\n"
+    return "<script>" + kit_localtime.source().strip() + "</script>\n"
 
 
 def build(bs, data, root=ROOT):

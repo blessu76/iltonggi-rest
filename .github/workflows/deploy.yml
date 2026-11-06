@@ -37,7 +37,7 @@ jobs:
       - name: Assemble site (repo root minus repo files)
         run: |
           mkdir -p "$RUNNER_TEMP/site"
-          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/tests' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
+          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/tests' --exclude='/vendor' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
 
       - name: Fetch weather.json (MET Norway, keeps the live values for regions that fail)
         # Never fails the deploy: a failed region keeps its previous value, all-failed re-publishes the previous file.
