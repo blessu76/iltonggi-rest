@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+77",
+   "at": "2026-11-06 19:09",
+   "ko": [
+    "세계지도팩 안내 카드가 기기 화면이 아니라 보이는 지도 영역의 한가운데에 떠요.",
+    "앱 안 공통 부품을 정리했어요. 쓰는 모습과 기존 저장 데이터는 그대로예요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "The World Map Pack notice card now sits in the middle of the visible map area instead of the device screen.",
+    "We tidied up shared in-app components. How the app looks and your existing saved data are unchanged.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+76",
    "at": "2026-11-06 18:48",
    "ko": [
