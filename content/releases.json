@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+73",
+   "at": "2026-11-06 10:48",
+   "ko": [
+    "앱 안쪽 정리 빌드예요. 게임 내용과 화면은 그대로예요.",
+    "버전 표시·문제 알리기·닉네임·언어 선택·화면 방향 같은 공통 부분을 하나로 모아 더 안정적으로 만들었어요.",
+    "저장 데이터와 개발 소식 링크는 그대로 이어져요."
+   ],
+   "en": [
+    "An under-the-hood cleanup build. The game and its screens are unchanged.",
+    "Shared parts such as the version display, problem reports, nickname, language choice and screen orientation now live in one common module, which makes them steadier.",
+    "Your saved data and the Release Notes links carry over as before."
+   ]
+  },
+  {
    "build": "1.0.0+72",
    "at": "2026-11-06 07:31",
    "ko": [
