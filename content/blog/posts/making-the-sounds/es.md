@@ -1,10 +1,11 @@
 ---
 title: De los tambores al gayageum, también hicimos los sonidos nosotros
 description: Cómo se sintetizaron con scripts los 15 efectos y las 4 músicas de Iltonggi sin audio externo, y por qué rehicimos algunos.
-date: 2026-11-07
 slug: making-the-sounds
 lang: es
 translation_of: ko
+date: 2026-11-06
+published: 2026-11-06T12:00:00+09:00
 ---
 
 El sonido es la parte de Iltonggi a la que seguimos dando forma hasta más tarde. Una imagen se ve de inmediato, pero cuando un sonido está mal, es difícil decir qué le pasa. Este texto es un registro de cómo se hicieron los sonidos y por qué rehicimos algunos una vez.

@@ -1,10 +1,11 @@
 ---
 title: Von Kriegstrommeln bis zur Gayageum – auch die Klänge haben wir selbst gemacht
 description: Wie Iltonggis 15 Effekte und 4 Musikstücke ohne fremdes Audio per Skript synthetisiert wurden und warum wir einige neu gemacht haben.
-date: 2026-11-07
 slug: making-the-sounds
 lang: de
 translation_of: ko
+date: 2026-11-06
+published: 2026-11-06T12:00:00+09:00
 ---
 
 Der Klang ist der Teil von Iltonggi, an dem wir am längsten weiterarbeiten. Ein Bild sieht man sofort, aber wenn ein Klang falsch ist, lässt sich schwer sagen, was an ihm falsch ist. Dieser Beitrag hält fest, wie die Klänge entstanden sind und warum wir einige einmal neu gemacht haben.

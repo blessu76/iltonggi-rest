@@ -1,10 +1,11 @@
 ---
 title: Dari genderang hingga gayageum, kami membuat suaranya sendiri
 description: Bagaimana 15 efek suara dan 4 musik Iltonggi disintesis dengan skrip tanpa audio luar, dan mengapa sebagian kami buat ulang.
-date: 2026-11-07
 slug: making-the-sounds
 lang: id
 translation_of: ko
+date: 2026-11-06
+published: 2026-11-06T12:00:00+09:00
 ---
 
 Suara adalah bagian Iltonggi yang paling lama kami utak-atik. Gambar langsung terlihat, tetapi saat suara keliru, sulit mengatakan bagian mana yang keliru. Tulisan ini adalah catatan tentang cara suara dibuat dan mengapa sebagian kami buat ulang sekali.

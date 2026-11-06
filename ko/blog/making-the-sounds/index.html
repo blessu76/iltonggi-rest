@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>북소리부터 가야금까지, 소리도 직접 만들었습니다 — 일통기</title>
+<meta name="description" content="일통기의 효과음 15개와 배경음 4개를 외부 음원 없이 스크립트로 합성한 과정과, 한 번 다시 만든 이유를 적었습니다.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/ko/blog/making-the-sounds/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/making-the-sounds/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/making-the-sounds/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/making-the-sounds/">
+<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/making-the-sounds/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/making-the-sounds/">
+<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/making-the-sounds/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/making-the-sounds/">
+<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/making-the-sounds/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/making-the-sounds/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/making-the-sounds/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/making-the-sounds/">
+<link rel="alternate" hreflang="ar" href="https://iltonggi.ipe.rest/ar/blog/making-the-sounds/">
+<link rel="alternate" hreflang="hi" href="https://iltonggi.ipe.rest/hi/blog/making-the-sounds/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/making-the-sounds/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="일통기">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="북소리부터 가야금까지, 소리도 직접 만들었습니다 — 일통기">
+<meta property="og:description" content="일통기의 효과음 15개와 배경음 4개를 외부 음원 없이 스크립트로 합성한 과정과, 한 번 다시 만든 이유를 적었습니다.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/ko/blog/making-the-sounds/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Iltonggi app icon and in-game map of a Three Kingdoms land-grab strategy game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="북소리부터 가야금까지, 소리도 직접 만들었습니다 — 일통기">
+<meta name="twitter:description" content="일통기의 효과음 15개와 배경음 4개를 외부 음원 없이 스크립트로 합성한 과정과, 한 번 다시 만든 이유를 적었습니다.">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=a8880c2d">
+<link rel="alternate" type="application/rss+xml" title="일통기 제작과정" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-11-06T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-06T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "북소리부터 가야금까지, 소리도 직접 만들었습니다", "description": "일통기의 효과음 15개와 배경음 4개를 외부 음원 없이 스크립트로 합성한 과정과, 한 번 다시 만든 이유를 적었습니다.", "datePublished": "2026-11-06T12:00:00+09:00", "dateModified": "2026-11-06T12:00:00+09:00", "inLanguage": "ko", "url": "https://iltonggi.ipe.rest/ko/blog/making-the-sounds/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/ko/blog/making-the-sounds/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "일통기", "item": "https://iltonggi.ipe.rest/ko/"}, {"@type": "ListItem", "position": 2, "name": "블로그", "item": "https://iltonggi.ipe.rest/ko/blog/"}, {"@type": "ListItem", "position": 3, "name": "북소리부터 가야금까지, 소리도 직접 만들었습니다", "item": "https://iltonggi.ipe.rest/ko/blog/making-the-sounds/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/ko/" aria-label="일통기 홈">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">일통기</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="주요 링크">
+      <a href="/ko/blog/">블로그</a>
+      <a href="/ko/releases/">개발 소식</a>
+      <a href="/ko/support/">고객지원</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 9</p>
+      <h1>북소리부터 가야금까지, 소리도 직접 만들었습니다</h1>
+      <p class="meta"><time datetime="2026-11-06T12:00:00+09:00" data-ipe-time>2026-11-06 12:00 KST</time></p>
+      <div class="post__body">
+<p>일통기를 만들면서 가장 늦게까지 손이 가는 부분이 소리입니다. 그림은 눈에 바로 보이지만, 소리는 틀려도 어디가 틀렸는지 말하기 어렵기 때문입니다. 이 글은 일통기의 소리를 어떻게 만들었는지, 그리고 한 번 다시 만든 이유를 적은 기록입니다.</p>
+<h2>외부 음원 없이</h2>
+<p>지금 게임에는 효과음 15개와 배경음 4개, 모두 19개의 소리가 들어 있습니다. 전부 스크립트로 처음부터 합성한 소리입니다. 내려받은 샘플도, 산 음원도 쓰지 않았습니다. 그래서 같은 스크립트를 다시 돌리면 같은 소리를 다시 만들 수 있습니다. 소리 하나하나의 출처를 설명할 수 있다는 점이 이 방식을 고른 가장 큰 이유입니다.</p>
+<h2>북, 낙인, 깃발, 먹</h2>
+<p>전투와 행군에 쓰는 북소리는 네 가지입니다. 낮은 음에서 시작해 피치가 내려앉는 사인파에 짧은 노이즈를 얹어 가죽을 치는 느낌을 냈고, 높이는 대략 55, 59, 65, 85Hz로 각각 다르게 잡았습니다.</p>
+<p>땅을 차지할 때 나는 낙인 소리는 94Hz에서 39Hz까지 내려앉는 저음입니다. 다만 작은 휴대폰 스피커는 이런 낮은 소리를 거의 내지 못합니다. 그래서 배음을 조금 섞어, 낮은 음이 빠져도 쿵 하는 느낌이 남도록 했습니다.</p>
+<p>승전과 턴 넘김에 쓰는 깃발 소리는 노이즈를 한 대역만 통과시키고 빠르게 떨리게 해서 천이 바람에 펄럭이는 느낌을 냈습니다. 길이는 1.4초입니다. 외교에 쓰는 먹 번짐 소리는 2.2초 동안 천천히 퍼지다가 1.3초쯤에서 가장 짙어지게 했습니다. 버튼을 누르는 소리는 620Hz와 1240Hz의 짧은 소리 두 개를 겹쳐 0.15초 만에 사라지는, 나무 단추 같은 소리입니다.</p>
+<h2>한 번 다시 만든 소리</h2>
+<p>처음 만든 효과음 가운데 8개는 몇 가지 문제가 있어서 다시 만들었습니다.</p>
+<ul>
+<li>소리의 꼭대기가 한계선에 닿은 것이 있었습니다. 지금은 모두 한계선보다 1dB 이상 낮춰 찌그러질 여지를 없앴습니다.</li>
+<li>북 세 개는 두 번째 타격이 끝나기 전에 소리가 뚝 잘렸습니다. 이제 모든 소리의 처음과 끝 5ms를 부드럽게 줄여 딱 하는 잡음이 나지 않게 했습니다.</li>
+<li>소리마다 크기가 제각각이었습니다. 지금은 8개의 평균 크기를 ±0.1dB 안에서 맞췄습니다.</li>
+</ul>
+<p>다시 만들 때도 소리의 성격은 바꾸지 않으려 했습니다. 북의 높이, 낙인이 내려앉는 모양, 먹이 가장 짙어지는 시점은 그대로 두었습니다.</p>
+<h2>배경음</h2>
+<p>배경음은 가야금과 대금을 흉내 낸 소리를 중심으로 만들었습니다. 가야금은 줄을 뜯는 소리를 계산으로 만드는 방식(카르플루스-스트롱 방식)으로, 대금은 여러 배음을 쌓고 숨소리를 섞는 방식으로 만들었습니다. 여기에 북과 낮게 깔리는 드론을 더했고, 음계는 국악의 다섯 음 음계를 썼습니다. 메뉴, 지도, 전투, 승전 네 장면에 하나씩 있습니다.</p>
+<h2>화면에서는 이렇게 들립니다</h2>
+<ul>
+<li>타이틀 글자가 쾅 하고 내려앉을 때 소리와 함께 진동이 울립니다.</li>
+<li>막이 바뀔 때 나오는 영상에는 북소리, 말발굽, 바람, 천둥, 낙인 소리가 들어 있습니다.</li>
+<li>휴대폰의 무음 스위치를 켜 두어도 게임 소리가 나도록 했고, 배경음은 네 장면에서 흐릅니다.</li>
+<li>설정에서 효과음을 끄거나 줄일 수 있습니다.</li>
+</ul>
+<h2>아직 못 한 것</h2>
+<p>솔직히 적자면, 이 소리들은 아직 사람 귀로 충분히 들어 보지 못했습니다. 크기와 길이, 잘림 같은 것은 숫자로 확인했지만 나무 단추나 북 가죽 같은 질감이 좋게 들리는지는 실제 스피커와 이어폰으로 더 들어 봐야 합니다. 배경음은 첫 번째 판이어서 앞으로 다듬을 자리가 남아 있습니다.</p>
+<p>// 소리는 숫자로 맞춰도, 마지막에는 귀로 정합니다.</p>
+      </div>
+      <nav class="post-nav" aria-label="다른 글"><ul><li>← 이전 글: <a href="/ko/blog/daegaya-562-last-gaya/">562년 대가야 — 마지막 가야가 문을 닫은 해</a></li></ul></nav>
+      <section class="post-more"><h2>다른 글</h2><ul><li><a href="/ko/blog/taking-a-town-aftermath/">고을을 얻은 다음 날 — 점령의 뒷일을 설계한 이유</a></li><li><a href="/ko/blog/hanji-ink-seal-screen/">한지와 먹과 낙관 — 지도의 얼굴을 고민한 기록</a></li><li><a href="/ko/blog/gwansanseong-554-alliance-ends/">554년 관산성 — 동맹이 끊어진 자리</a></li></ul></section>
+      <div class="doc__links"><a href="/ko/blog/">← 블로그로 돌아가기</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="법적 링크">
+      <a href="/ko/privacy/">개인정보처리방침</a>
+      <a href="/ko/terms/">이용약관</a>
+      <a href="/ko/blog/">블로그</a>
+      <a href="/ko/releases/">개발 소식</a>
+      <a href="/ko/support/">고객지원</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="언어"><a href="/en/blog/making-the-sounds/" hreflang="en" lang="en">English</a><a href="/ko/blog/making-the-sounds/" aria-current="true" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/making-the-sounds/" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/making-the-sounds/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/making-the-sounds/" hreflang="es" lang="es">Español</a><a href="/pt/blog/making-the-sounds/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/making-the-sounds/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/making-the-sounds/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/making-the-sounds/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/making-the-sounds/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/making-the-sounds/" hreflang="de" lang="de">Deutsch</a><a href="/ar/blog/making-the-sounds/" hreflang="ar" lang="ar">العربية</a><a href="/hi/blog/making-the-sounds/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+</footer>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');if(a)try{localStorage.setItem("iltonggi-lang",a.getAttribute('hreflang'))}catch(x){}});</script>
+</body>
+</html>

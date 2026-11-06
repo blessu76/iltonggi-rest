@@ -1,10 +1,11 @@
 ---
 title: Từ tiếng trống trận đến đàn gayageum, âm thanh cũng do chúng tôi tự làm
 description: 15 hiệu ứng và 4 bản nhạc nền của Iltonggi được tổng hợp bằng script mà không dùng âm thanh bên ngoài ra sao, và vì sao chúng tôi làm lại một số.
-date: 2026-11-07
 slug: making-the-sounds
 lang: vi
 translation_of: ko
+date: 2026-11-06
+published: 2026-11-06T12:00:00+09:00
 ---
 
 Âm thanh là phần của Iltonggi mà chúng tôi chỉnh sửa lâu nhất. Hình ảnh thì nhìn là thấy ngay, còn âm thanh khi sai thì khó nói được sai ở chỗ nào. Bài này ghi lại cách làm âm thanh và lý do chúng tôi đã làm lại một số trong đó một lần.

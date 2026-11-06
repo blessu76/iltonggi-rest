@@ -1,9 +1,10 @@
 ---
 title: From War Drums to Gayageum, We Made the Sounds Ourselves
 description: How Iltonggi's 15 effects and 4 music tracks were synthesized by script with no outside audio, and why we remade some of them.
-date: 2026-11-07
 slug: making-the-sounds
 lang: en
+date: 2026-11-06
+published: 2026-11-06T12:00:00+09:00
 ---
 
 Sound is the part of Iltonggi we keep touching the longest. A picture is seen at once, but when a sound is wrong it is hard to say what is wrong with it. This post is a record of how the sounds were made, and why we remade some of them once.
