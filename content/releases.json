@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+79",
+   "at": "2026-11-06 19:45",
+   "ko": [
+    "설정의 「세계지도 그림」 줄이 이제 세계지도팩이 없어도 보여요. 아틀라스·양피지·남색 금박 중에서 고를 수 있어요.",
+    "팩이 없으면 그 자리에서 바로 사거나 구매를 복원할 수 있어요. 고른 그림은 팩을 얻는 즉시 세계지도에 적용돼요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "The \"World map style\" row in Settings now shows even without the World Map Pack. You can pick Atlas, Parchment, or Navy & Gold.",
+    "Without the pack, you can buy it or restore your purchase right there. Your chosen style applies to the world map as soon as you own the pack.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+77",
    "at": "2026-11-06 19:09",
    "ko": [
