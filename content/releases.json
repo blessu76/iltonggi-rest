@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+75",
+   "at": "2026-11-06 18:23",
+   "ko": [
+    "저장 파일이 갑자기 꺼짐 등으로 깨져도 직전 저장으로 자동 복구돼요.",
+    "이어하기뿐 아니라 설정, 저장 칸, 퀘스트, 장터 기록, 닉네임·기록도 한 단계 앞 저장을 따로 보관해요.",
+    "게임 규칙과 기존 저장 데이터는 그대로예요."
+   ],
+   "en": [
+    "If a save file gets corrupted (for example by the app closing mid-write), it now recovers from the previous save automatically.",
+    "Not just Continue: settings, save slots, quests, shop records, nickname and records each keep one earlier copy.",
+    "Game rules and your existing saved data are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+74",
    "at": "2026-11-06 18:10",
    "ko": [
