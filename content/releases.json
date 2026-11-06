@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+76",
+   "at": "2026-11-06 18:48",
+   "ko": [
+    "쓰지 않던 옛 세계지도 그림 파일을 정리해 앱이 조금 가벼워졌어요(약 0.5MB).",
+    "세계지도는 지금처럼 아틀라스 · 양피지 · 남색 금박 세 가지 그림 중에서 고를 수 있어요.",
+    "게임 규칙과 기존 저장 데이터는 그대로예요."
+   ],
+   "en": [
+    "Removed an unused old world-map image file, making the app a little lighter (about 0.5 MB).",
+    "The world map still offers the same three styles: Atlas, Parchment and Navy & Gold.",
+    "Game rules and your existing saved data are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+75",
    "at": "2026-11-06 18:23",
    "ko": [
