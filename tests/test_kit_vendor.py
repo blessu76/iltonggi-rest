@@ -1,4 +1,4 @@
-"""Web kit (vendor/ipe_web_kit) — the copy is untouched, pinned to a tag, and wired into indexnow + the blog's local-time script."""
+"""Web kit (private, installed from vendor/ipe_web_kit.lock) — the copy is untouched, pinned to a tag, and wired into indexnow + the blog's local-time script."""
 import hashlib
 import subprocess
 import sys

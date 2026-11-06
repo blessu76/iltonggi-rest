@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Notify IndexNow (Bing, Naver, Yandex, ...) about new or changed URLs — the logic lives in the web kit
-(vendor/ipe_web_kit/indexnow.py, pinned by tag in vendor/ipe_web_kit/KIT_VERSION).
+(ipe_web_kit/indexnow.py, private kit pinned by vendor/ipe_web_kit.lock).
 
 Run AFTER the site is published (the key file must already be live):
 
@@ -17,8 +17,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "vendor"))
-from ipe_web_kit import indexnow as _kit  # noqa: E402
-from ipe_web_kit.indexnow import ENDPOINT, build_payload, find_key, send, sitemap_urls, sitemap_urls_modified  # noqa: E402,F401
+try:
+    from ipe_web_kit import indexnow as _kit  # noqa: E402
+    from ipe_web_kit.indexnow import ENDPOINT, build_payload, find_key, send, sitemap_urls, sitemap_urls_modified  # noqa: E402,F401
+except ImportError:
+    sys.exit("ipe_web_kit is not installed (private, not in this repo). Run: python3 scripts/kit_lock.py sync --kit <local ipe_web_kit clone>")
 
 
 def main(argv=None):

@@ -36,4 +36,12 @@ translation_of: en        # en·ko 원문에는 쓰지 않음
 **자동 실행**: 맥미니 launchd 가 매일 12:00 KST(12:30·13:30 재시도) — 설치·확인은 `scripts/launchd/README.md`.
 
 ## 웹 킷 (ipe_web_kit)
-`vendor/ipe_web_kit/` = 회사 공통 웹 킷의 태그 고정 복사본(버전은 `KIT_VERSION`, 무결성은 `MANIFEST.sha256`). **직접 고치지 않는다** — 킷 repo 에서 고쳐 태그를 올린 뒤 킷 클론에서 `python3 -m ipe_web_kit.vendor update <이 repo> --tag vX.Y.Z`. 쓰는 곳: `scripts/indexnow.py`(얇은 껍데기) · `scripts/blog.py`(ipe-localtime 스크립트). `vendor/` 는 배포(rsync)에서 빠진다. 확인: `python3 vendor/ipe_web_kit/vendor.py verify .`
+회사 공통 웹 킷은 **비공개 레포**라 이 공개 레포에 소스를 커밋하지 않는다 — `vendor/ipe_web_kit.lock`(태그·커밋·MANIFEST 해시)만 커밋하고 `vendor/ipe_web_kit/` 는 gitignore. 쓰는 곳: `scripts/indexnow.py`(얇은 껍데기) · `scripts/blog.py`(ipe-localtime 스크립트). `vendor/` 는 배포(rsync)에서 빠진다.
+
+```sh
+python3 scripts/kit_lock.py sync --kit ~/Developer/ipe_web_kit   # lock 의 태그를 킷 클론에서 vendor/ipe_web_kit/ 로 설치(커밋·해시가 lock 과 다르면 거절)
+python3 scripts/kit_lock.py check                                 # 설치본 == lock (킷이 없으면 설치 안내)
+bash scripts/check.sh                                             # 0단계 kit check → 시험 → 생성물 최신
+```
+
+CI 는 `.github/actions/ipe-web-kit` 가 킷 레포를 lock 의 커밋으로 읽기 전용 deploy key(secret `IPE_WEB_KIT_DEPLOY_KEY`)로 체크아웃해 같은 `sync` 를 돈다. 새 태그로 옮기기: `python3 scripts/kit_lock.py sync --kit <클론> --update --tag vX.Y.Z` → `bash scripts/check.sh` → lock 커밋.

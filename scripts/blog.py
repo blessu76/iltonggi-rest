@@ -26,7 +26,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "vendor"))
-from ipe_web_kit import localtime as kit_localtime  # noqa: E402  web kit (vendor/ipe_web_kit, pinned tag): the company-wide ipe-localtime module
+try:
+    from ipe_web_kit import localtime as kit_localtime  # noqa: E402  web kit (private, installed from vendor/ipe_web_kit.lock by scripts/kit_lock.py): the company-wide ipe-localtime module
+except ImportError:
+    sys.exit("ipe_web_kit is not installed (private, not in this repo). Run: python3 scripts/kit_lock.py sync --kit <local ipe_web_kit clone>")
 BLOG = ROOT / "content" / "blog"
 LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
 ORIGINALS = ("en", "ko")
