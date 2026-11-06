@@ -1,6 +1,20 @@
 {
  "entries": [
   {
+   "build": "1.0.0+83",
+   "at": "2026-11-06 23:49",
+   "ko": [
+    "가로 화면에서 세계지도를 열면 양옆 띠와 단추가 접혀서 지도가 한눈에 다 보여요. 위쪽 가운데 「具」 단추로 다시 펼치고 접을 수 있어요.",
+    "세계지도에서 현대 국가 이름과 국기를 뺐어요. 고을과 세력 이름만 남아요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "In landscape, opening the World Map folds the side panels and buttons so the whole map is visible at once. Use the 「具」 button at the top center to bring them back or fold them again.",
+    "Removed modern country names and flags from the World Map; only town and faction names remain.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+79",
    "at": "2026-11-06 19:45",
    "ko": [
