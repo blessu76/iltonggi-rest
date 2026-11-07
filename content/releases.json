@@ -15,6 +15,52 @@
    ]
   },
   {
+   "build": "1.0.0+82",
+   "at": "2026-11-06 22:38",
+   "ko": [
+    "세로 화면에서 세계지도가 아래쪽에 붙어 보이던 것을, 위 메뉴와 아래 패널 사이 가운데로 맞췄어요.",
+    "패널을 열고 닫으면 지도도 부드럽게 다시 가운데로 와요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "In portrait, the world map now sits in the middle between the top bar and the bottom panel instead of hugging the bottom.",
+    "When the panel opens or closes, the map glides back to the center.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
+   "build": "1.0.0+81",
+   "at": "2026-11-06 22:18",
+   "ko": [
+    "장터와 설정의 구매 버튼이 「구매하기 · 가격」으로, 「구매 복원」 링크와 안내 글도 같은 말로 정리됐어요.",
+    "세계지도팩 가격이 내려갔어요(미국 $1.99 · 한국 ₩2,200 · 표시 가격은 앱스토어 기준).",
+    "한 번 구매한 상품은 가족 공유로 가족과 함께 쓸 수 있어요(구매 복원도 돼요).",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "Purchase buttons in the shop and Settings now read \"Buy · price\", and the Restore Purchases link and messages use the same wording in every language.",
+    "The World Map Pack price is lower ($1.99 in the US; prices are shown by the App Store for your country).",
+    "Items you buy can be shared with your family through Family Sharing; purchases can be restored too.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
+   "build": "1.0.0+80",
+   "at": "2026-11-06 21:39",
+   "ko": [
+    "장터에 명장 팩 4종, 사국 명장첩, 벗 후원 팩, 서랍 한 칸, 안개 걷기, 외전 「한강 쟁탈」이 모두 열렸어요. 한 번 사면 계속 쓰고, 구매 복원도 돼요.",
+    "세계지도팩은 장터와 설정의 「세계지도 그림」 줄에서 살 수 있어요.",
+    "가격은 나라마다 앱스토어가 보여 주는 값 그대로예요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "The shop now offers all four Hero Packs, the Four Kingdoms Hero Set, the Friend Supporter Pack, an extra card slot, Clear Skies, and the side tale \"Han River\". Buy once and keep them; purchases can be restored.",
+    "The World Map Pack can be bought from the shop or from the \"World map style\" row in Settings.",
+    "Prices are shown by the App Store for your country.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
    "build": "1.0.0+79",
    "at": "2026-11-06 19:45",
    "ko": [
@@ -428,6 +474,22 @@
     "The prologue that plays when you start a new game is now live-action too, showing the lands of Goguryeo, Baekje, Silla and Gaya as real scenery.",
     "The map is redrawn as ink on hanji paper, and the kingdom banners are now silk cloth rippling in the wind.",
     "A cinematic colour grade and film grain sit on top. With Reduce Motion on, the moving effects hold still, and Skip works as before."
+   ]
+  },
+  {
+   "build": "1.0.0+48",
+   "at": "2026-10-30 14:30",
+   "ko": [
+    "세로 화면을 더 다듬었어요. 막 열기 이야기가 세로에서도 한지 전체를 써서 글이 넉넉하게 보여요.",
+    "막을 넘길 때 나오는 영상은 세로에서 그림이 가운데 띠에 온전히 들어오고, 자막은 그 아래 검은 칸에 나와요. 세로 iPad 에서 그림 양옆이 잘리던 것도 고쳤어요.",
+    "인트로와 시작 메뉴의 「統 일통기」 제목이 세로 화면 폭에 맞게 커졌어요. 위쪽 단추들도 노치 아래로 내려와 다 보여요.",
+    "직접 지휘 창은 세로 폰에서 「후퇴」를 윗줄로 올려 명령 단추가 화면 밖으로 나가지 않아요. 「지난 이야기」는 세로에서 세 편이 위아래로 놓여요."
+   ],
+   "en": [
+    "Portrait mode is more polished. The chapter-opening story now uses the whole page in portrait, so the text has room to breathe.",
+    "Chapter-turn cinematics in portrait keep the full picture in the centre band with subtitles in the black space below, and the picture no longer gets cropped at the sides on iPad in portrait.",
+    "The “統 Iltonggi” title on the intro and start menu now grows to fit the portrait width, and the top buttons sit below the notch where you can reach them.",
+    "In portrait on phones, the Direct Command window moves Retreat to its own row so the order buttons stay on screen, and Past Tales stacks its three episodes vertically."
    ]
   },
   {
