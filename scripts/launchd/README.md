@@ -16,3 +16,5 @@ launchctl print gui/$(id -u)/rest.ipe.iltonggi-blog-publish | head
 
 ## 확인
 `ILTONGGI_BLOG_ANYTIME=1 ~/.ipe/bin/iltonggi_blog_publish.sh --dry-run` — 아무것도 쓰지 않고 무엇을 올릴지만 출력. 래퍼가 바뀌면 위 `cp` 를 다시.
+
+킷: 래퍼가 매 틱 `scripts/kit_lock.py check` 를 하고, 킷(vendor/ipe_web_kit/, gitignore·비공개)이 없거나 lock 과 다르면 `~/Developer/ipe_web_kit`(또는 `ILTONGGI_WEB_KIT`)에서 자동 `sync` 한다. sync 실패·클론 실패도 ALERT(+`.ALERT.history` 누적). 2026-11-07 미발행 사고(킷 없음 → exit 1) 재발 방지.
