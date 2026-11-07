@@ -1,6 +1,30 @@
 {
  "entries": [
   {
+   "build": "1.0.0+85",
+   "at": "2026-11-08 03:20",
+   "ko": [
+    "iCloud 이어 하기를 두 기기에서 쓸 때, 앱을 켜 둔 채로도 다른 기기에서 저장한 판이 메뉴의 「이어 하기」에 바로 나타나요.",
+    "설정의 「정보」 탭에서 iCloud 동기화가 켜져 있는지 볼 수 있어요.",
+    "게임 규칙은 그대로예요."
+   ],
+   "en": [
+    "When you use iCloud resume on two devices, a game saved on the other device now shows up under \"Resume\" in the menu right away, even while the app stays open.",
+    "The Info tab in Settings now shows whether iCloud sync is on.",
+    "Game rules are unchanged."
+   ]
+  },
+  {
+   "build": "1.0.0+84",
+   "at": "2026-11-08 03:19",
+   "ko": [
+    "내부 테스트용으로 +83 을 다시 올린 빌드예요. 달라진 점은 없어요."
+   ],
+   "en": [
+    "An internal re-upload of build 83 for testing. Nothing has changed."
+   ]
+  },
+  {
    "build": "1.0.0+83",
    "at": "2026-11-06 23:49",
    "ko": [
