@@ -1,9 +1,10 @@
 ---
 title: Your First 20 Turns, Five Things to Watch Early in a Land Grab
 description: How to use troops, actions, scouting and diplomacy in your first Iltonggi game, with a focus on the early flow.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: en
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 A land grab can look simple in its rules, yet the shape of a game changes with where you strike early and where you hold back. This post gathers five things worth noticing first in your first game of Iltonggi. The values are from development and may change, and these are not the one right answer for every game, only a direction to start from.

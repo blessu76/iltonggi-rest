@@ -1,10 +1,11 @@
 ---
 title: Deine ersten 20 Züge – fünf Dinge, auf die du am Anfang einer Landnahme achten solltest
 description: Wie du Truppen, Aktionen, Aufklärung und Diplomatie in deiner ersten Partie Iltonggi einsetzt – mit Blick auf den Anfangsverlauf.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: de
 translation_of: ko
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 Ein Landnahme-Spiel kann in seinen Regeln einfach wirken, doch die Gestalt einer Partie ändert sich danach, wo man früh zuschlägt und wo man sich zurückhält. Dieser Beitrag fasst fünf Dinge zusammen, auf die man in der ersten Partie Iltonggi zuerst achten sollte. Die Werte stammen aus der Entwicklung und können sich ändern, und es ist nicht die richtige Antwort für jede Partie, nur eine Richtung zum Anfangen.

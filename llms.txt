@@ -12,6 +12,7 @@
 ## Blog (every post exists in en, ko, ja, zh, es, pt, id, ru, vi, fr, de, ar, hi)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
+- [Your First 20 Turns, Five Things to Watch Early in a Land Grab](https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/): How to use troops, actions, scouting and diplomacy in your first Iltonggi game, with a focus on the early flow.
 - [From War Drums to Gayageum, We Made the Sounds Ourselves](https://iltonggi.ipe.rest/blog/making-the-sounds/): How Iltonggi's 15 effects and 4 music tracks were synthesized by script with no outside audio, and why we remade some of them.
 - [Daegaya, 562: The Year the Last Gaya Closed](https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/): Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.
 - [The Day After You Take a Town: Designing the Aftermath of Conquest](https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/): What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.

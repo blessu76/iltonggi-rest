@@ -1,10 +1,11 @@
 ---
 title: 20 lượt đầu tiên của bạn, năm điều cần để ý ở đầu một ván chiếm đất
 description: Cách dùng binh lực, hành động, trinh sát và ngoại giao trong ván đầu tiên của Iltonggi, tập trung vào diễn biến lúc đầu.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: vi
 translation_of: ko
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 Game chiếm đất có thể có luật chơi trông đơn giản, nhưng hình dạng của một ván sẽ thay đổi tùy theo việc bạn đánh ở đâu và kiềm chế ở đâu từ đầu. Bài này tổng hợp năm điều đáng chú ý trước tiên trong ván đầu tiên của Iltonggi. Các giá trị là giá trị trong lúc phát triển và có thể thay đổi, và đây không phải đáp án đúng cho mọi ván, chỉ là một hướng để bắt đầu.

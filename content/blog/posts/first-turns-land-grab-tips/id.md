@@ -1,10 +1,11 @@
 ---
 title: 20 giliran pertama Anda, lima hal yang perlu dilihat di awal perebutan tanah
 description: Cara memakai pasukan, aksi, pengintaian, dan diplomasi di permainan pertama Iltonggi, dengan fokus pada alur awal.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: id
 translation_of: ko
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 Gim perebutan tanah bisa tampak sederhana aturannya, tetapi bentuk sebuah permainan berubah menurut di mana Anda menyerang di awal dan di mana Anda menahan diri. Tulisan ini merangkum lima hal yang layak diperhatikan lebih dulu di permainan pertama Iltonggi. Nilainya adalah nilai saat pengembangan dan dapat berubah, dan ini bukan jawaban benar untuk setiap permainan, hanya arah untuk memulai.

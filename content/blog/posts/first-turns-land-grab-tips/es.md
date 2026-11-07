@@ -1,10 +1,11 @@
 ---
 title: Tus primeros 20 turnos, cinco cosas que mirar al inicio de una conquista de tierras
 description: Cómo usar tropas, acciones, exploración y diplomacia en tu primera partida de Iltonggi, centrado en el flujo inicial.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: es
 translation_of: ko
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 Un juego de conquista de tierras puede parecer simple en sus reglas, pero la forma de una partida cambia según dónde ataques al principio y dónde te contengas. Este texto reúne cinco cosas en las que conviene fijarse primero en tu primera partida de Iltonggi. Los valores son los del desarrollo y pueden cambiar, y no son la respuesta correcta para todas las partidas, sino una dirección desde la que empezar.

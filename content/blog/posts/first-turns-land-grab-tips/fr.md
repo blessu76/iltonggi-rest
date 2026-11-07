@@ -1,10 +1,11 @@
 ---
 title: Vos 20 premiers tours, cinq choses à observer au début d'une conquête de terres
 description: Comment utiliser les troupes, les actions, la reconnaissance et la diplomatie dans votre première partie d'Iltonggi, en se concentrant sur le début.
-date: 2026-11-08
 slug: first-turns-land-grab-tips
 lang: fr
 translation_of: ko
+date: 2026-11-07
+published: 2026-11-07T20:35:00+09:00
 ---
 
 Un jeu de conquête de terres peut sembler simple dans ses règles, mais la forme d'une partie change selon l'endroit où l'on frappe au début et celui où l'on se retient. Cet article réunit cinq choses qu'il vaut la peine de regarder d'abord dans votre première partie d'Iltonggi. Les valeurs sont celles du développement et peuvent changer, et ce n'est pas la bonne réponse pour toutes les parties, seulement une direction pour commencer.
