@@ -1,10 +1,11 @@
 ---
 title: Drei Meere und die Klippe, die wir per Simulation fanden
 description: Ein Rundgang durch die Akte 4 bis 6 von Iltonggi und was uns zweihundert simulierte Partien pro Schwierigkeitsgrad über Balance lehrten.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: de
 translation_of: ko
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Die Akte 4, 5 und 6 tragen die Landnahme aufs Meer hinaus und über die alten Handelsrouten. Dieser Beitrag führt durch alle drei und erzählt dann eine Geschichte aus der Balancearbeit, die uns selbst überrascht hat. Die Zahlen stammen aus der Entwicklung und können sich ändern; sie sind ein Blick hinter den Bildschirm und kein Versprechen darüber, wie irgendeine Partie verlaufen wird.

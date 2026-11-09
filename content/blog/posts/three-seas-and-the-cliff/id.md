@@ -1,10 +1,11 @@
 ---
 title: Tiga laut, dan jurang yang kami temukan lewat simulasi
 description: Menyusuri Babak 4 sampai 6 Iltonggi, dan apa yang kami pelajari tentang keseimbangan dari dua ratus permainan simulasi per tingkat kesulitan.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: id
 translation_of: ko
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Babak 4, 5, dan 6 membawa perebutan tanah ke laut dan ke jalur dagang lama. Tulisan ini menelusuri ketiganya, lalu menceritakan satu kisah dari pekerjaan menyeimbangkan permainan yang mengejutkan kami sendiri. Angka-angkanya berasal dari masa pengembangan dan bisa berubah, dan dibagikan sebagai intipan di balik layar, bukan sebagai janji tentang bagaimana sebuah permainan akan berjalan.

@@ -1,10 +1,11 @@
 ---
 title: Tres mares y el precipicio que hallamos con simulaciones
 description: Un recorrido por los actos 4 a 6 de Iltonggi y lo que aprendimos del equilibrio tras simular doscientas partidas por dificultad.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: es
 translation_of: ko
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Los actos 4, 5 y 6 llevan la conquista de tierras al mar y por las antiguas rutas comerciales. Esta entrada recorre los tres y después cuenta una historia del trabajo de equilibrio que nos sorprendió incluso a nosotros. Las cifras son de desarrollo y pueden cambiar, y se comparten como un vistazo detrás de la pantalla, no como una promesa sobre cómo irá ninguna partida.

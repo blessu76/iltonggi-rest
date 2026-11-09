@@ -1,10 +1,11 @@
 ---
 title: Três mares e o precipício que achamos com simulações
 description: Um passeio pelos atos 4 a 6 do Iltonggi e o que aprendemos sobre equilíbrio ao simular duzentas partidas por dificuldade.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: pt
 translation_of: ko
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Os atos 4, 5 e 6 levam a conquista de terras para o mar e para as antigas rotas comerciais. Este texto percorre os três e depois conta uma história do trabalho de equilíbrio que surpreendeu até a nós. Os números são do desenvolvimento e podem mudar, e são compartilhados como um olhar por trás da tela, não como uma promessa sobre como qualquer partida vai se desenrolar.

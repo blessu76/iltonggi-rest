@@ -1,10 +1,11 @@
 ---
 title: Ba vùng biển, và vách đá chúng tôi tìm ra nhờ mô phỏng
 description: Đi qua các màn 4 đến 6 của Iltonggi, và điều hai trăm ván mô phỏng cho mỗi độ khó dạy chúng tôi về cân bằng.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: vi
 translation_of: ko
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Màn 4, 5 và 6 đưa ván chiếm đất ra biển và lên những tuyến thương mại cổ. Bài này đi qua cả ba màn, rồi kể một câu chuyện trong công việc cân bằng đã khiến chính chúng tôi bất ngờ. Các con số lấy từ quá trình phát triển và có thể thay đổi, và được chia sẻ như một cái nhìn phía sau màn hình chứ không phải lời hứa về việc ván nào sẽ diễn ra thế nào.

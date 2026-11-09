@@ -1,9 +1,10 @@
 ---
 title: Three Seas, and the Cliff We Found by Simulation
 description: Acts 4 to 6 in Iltonggi, and what two hundred simulated games per difficulty taught us about balance.
-date: 2026-11-09
 slug: three-seas-and-the-cliff
 lang: en
+date: 2026-11-09
+published: 2026-11-09T12:00:00+09:00
 ---
 
 Acts 4, 5 and 6 take the land grab out to sea and across the old trade roads. This post tours the three, and then tells a story from the balancing work that surprised us. The numbers are from development and may change, and they are shared as a look behind the screen rather than as a promise about how any game will go.
