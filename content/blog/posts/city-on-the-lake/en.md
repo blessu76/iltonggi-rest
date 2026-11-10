@@ -1,9 +1,10 @@
 ---
 title: City on the Lake, What We Chose Not to Draw
 description: Act 8 of Iltonggi, a map set on a lake in the highlands, and the lines we drew around what we would leave out of the picture.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: en
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 Act 8, "City on the Lake", is set in early sixteenth century Mesoamerica. It is the first act where we spent more time deciding what not to draw than what to draw. This post explains those choices. The act is still in development, and we are still reviewing it, so any of this may change.

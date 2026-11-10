@@ -1,10 +1,11 @@
 ---
 title: Cidade sobre o lago, o que decidimos não desenhar
 description: O ato 8 do Iltonggi, um mapa num lago do planalto, e os limites que traçamos sobre o que deixaríamos de fora da imagem.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: pt
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 O ato 8, «Cidade sobre o Lago», se passa na Mesoamérica do início do século XVI. É o primeiro ato em que gastamos mais tempo decidindo o que não desenhar do que o que desenhar. Este texto explica essas escolhas. O ato ainda está em desenvolvimento e continuamos a revisá-lo, então qualquer coisa aqui pode mudar.

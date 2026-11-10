@@ -1,10 +1,11 @@
 ---
 title: La cité sur le lac, ce que nous ne dessinerons pas
 description: L'acte 8 d'Iltonggi, une carte posée sur un lac des hauts plateaux, et les limites que nous avons tracées sur ce que nous laisserions hors de l'image.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: fr
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 L'acte 8, « La Cité sur le lac », se déroule en Mésoamérique au début du XVIe siècle. C'est le premier acte où nous avons passé plus de temps à décider ce qu'il ne fallait pas dessiner que ce qu'il fallait dessiner. Cet article explique ces choix. L'acte est encore en développement et nous continuons de le revoir, donc tout ce qui suit peut changer.

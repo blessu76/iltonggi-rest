@@ -1,10 +1,11 @@
 ---
 title: Die Stadt auf dem See, was wir nicht zeichnen wollten
 description: Akt 8 von Iltonggi, eine Karte auf einem See im Hochland, und die Grenzen, die wir dafür gezogen haben, was wir aus dem Bild weglassen.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: de
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 Akt 8, „Stadt auf dem See“, spielt im Mesoamerika des frühen sechzehnten Jahrhunderts. Es ist der erste Akt, bei dem wir mehr Zeit damit verbracht haben zu entscheiden, was wir nicht zeichnen, als was wir zeichnen. Dieser Beitrag erklärt diese Entscheidungen. Der Akt ist noch in Entwicklung, und wir prüfen ihn weiter, daher kann sich alles hier ändern.

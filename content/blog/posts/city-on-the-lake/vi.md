@@ -1,10 +1,11 @@
 ---
 title: Thành phố trên hồ, những điều chúng tôi quyết định không vẽ
 description: Màn 8 của Iltonggi, bản đồ đặt trên một hồ ở cao nguyên, và những ranh giới chúng tôi vạch ra về điều sẽ bỏ ra khỏi bức tranh.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: vi
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 Màn 8, «Thành phố trên hồ», lấy bối cảnh Mesoamerica đầu thế kỷ mười sáu. Đây là màn đầu tiên mà chúng tôi dành nhiều thời gian cân nhắc điều không vẽ hơn điều sẽ vẽ. Bài này giải thích những lựa chọn đó. Màn này vẫn đang được phát triển và chúng tôi vẫn đang xem xét, nên mọi điều ở đây đều có thể thay đổi.

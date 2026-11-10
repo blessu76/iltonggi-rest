@@ -1,10 +1,11 @@
 ---
 title: Ciudad sobre el lago, lo que decidimos no dibujar
 description: El acto 8 de Iltonggi, un mapa sobre un lago de la meseta, y los límites que trazamos sobre lo que dejaríamos fuera de la imagen.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: es
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 El acto 8, «Ciudad sobre el lago», transcurre en la Mesoamérica de principios del siglo XVI. Es el primer acto en el que dedicamos más tiempo a decidir qué no dibujar que qué dibujar. Esta entrada explica esas decisiones. El acto sigue en desarrollo y seguimos revisándolo, así que cualquier cosa de aquí puede cambiar.

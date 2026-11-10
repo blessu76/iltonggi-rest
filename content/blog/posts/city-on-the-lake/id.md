@@ -1,10 +1,11 @@
 ---
 title: Kota di atas danau, hal yang kami putuskan tidak digambar
 description: Babak 8 Iltonggi, peta di atas danau dataran tinggi, dan batas yang kami tarik tentang apa yang akan kami tinggalkan dari gambar.
-date: 2026-11-10
 slug: city-on-the-lake
 lang: id
 translation_of: ko
+date: 2026-11-10
+published: 2026-11-10T12:00:00+09:00
 ---
 
 Babak 8, «Kota di Atas Danau», berlatar Mesoamerika pada awal abad keenam belas. Ini babak pertama yang membuat kami menghabiskan lebih banyak waktu memutuskan apa yang tidak digambar daripada apa yang digambar. Tulisan ini menjelaskan pilihan-pilihan itu. Babak ini masih dalam pengembangan dan kami masih terus meninjaunya, jadi apa pun di sini bisa berubah.
