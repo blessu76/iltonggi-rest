@@ -1,10 +1,11 @@
 ---
 title: Hai anh em và một bàn ăn, chọn phe ở màn 9
 description: Cách màn 9 của Iltonggi biến cuộc tranh chấp anh em ở dãy Andes thành lựa chọn đứng về phía người anh em nào.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: vi
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 Màn 9, «Con đường trên mây», lấy bối cảnh dãy Andes vào khoảng cuối thập niên 1520, khi hai anh em mỗi người nắm một nửa vương quốc lớn và không thể nhường nhau. Đây là màn đầu tiên mà cái kết phụ thuộc vào việc bạn đã kết bạn với ai. Bài này giải thích nó vận hành thế nào và vì sao chúng tôi xây dựng như vậy. Màn này vẫn đang được phát triển và có thể thay đổi.

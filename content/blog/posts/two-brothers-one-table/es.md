@@ -1,10 +1,11 @@
 ---
 title: Dos hermanos y una mesa, elegir bando en el acto 9
 description: Cómo el acto 9 de Iltonggi convierte una disputa familiar en los Andes en la elección de junto a qué hermano te pones.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: es
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 El acto 9, «El camino sobre las nubes», transcurre en los Andes hacia finales de la década de 1520, cuando dos hermanos tenían cada uno la mitad de un gran reino y no lograban ponerse de acuerdo. Es el primer acto en el que el final depende de a quién hayas tomado por amigo. Esta entrada explica cómo funciona y por qué lo construimos así. El acto sigue en desarrollo y puede cambiar.

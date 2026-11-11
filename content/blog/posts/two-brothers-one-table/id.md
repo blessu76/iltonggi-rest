@@ -1,10 +1,11 @@
 ---
 title: Dua saudara dan satu meja, memilih pihak di babak 9
 description: Bagaimana babak 9 Iltonggi mengubah pertikaian keluarga di Andes menjadi pilihan tentang di sisi saudara mana Anda berdiri.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: id
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 Babak 9, «Jalan di Atas Awan», berlatar Andes sekitar akhir 1520-an, ketika dua saudara masing-masing memegang separuh sebuah kerajaan besar dan tidak bisa saling mengalah. Ini babak pertama yang akhirnya bergantung pada siapa yang Anda jadikan kawan. Tulisan ini menjelaskan bagaimana cara kerjanya dan mengapa kami membuatnya demikian. Babak ini masih dalam pengembangan dan bisa berubah.

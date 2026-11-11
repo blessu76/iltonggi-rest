@@ -1,10 +1,11 @@
 ---
 title: Zwei Brüder und ein Tisch, in Akt 9 eine Seite wählen
 description: Wie Akt 9 von Iltonggi einen Familienstreit in den Anden zu einer Entscheidung macht, an der Seite welches Bruders du stehst.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: de
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 Akt 9, „Die Straße über den Wolken“, spielt in den Anden gegen Ende der 1520er Jahre, als zwei Brüder je eine Hälfte eines großen Reiches hielten und sich nicht einigen konnten. Es ist der erste Akt, in dem das Ende davon abhängt, mit wem du dich verbündet hast. Dieser Beitrag erklärt, wie das funktioniert und warum wir es so gebaut haben. Der Akt ist noch in Entwicklung und kann sich ändern.

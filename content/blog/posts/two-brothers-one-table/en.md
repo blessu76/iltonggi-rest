@@ -1,9 +1,10 @@
 ---
 title: Two Brothers and One Table, Choosing a Side in Act 9
 description: How Act 9 of Iltonggi turns a family quarrel in the Andes into a choice about which brother you stand beside.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: en
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 Act 9, "The Road Above the Clouds", is set in the Andes around the late 1520s, when two brothers each held a half of a great realm and could not agree. It is the first act where the ending depends on whom you befriended. This post explains how that works and why we built it. The act is still in development and may change.

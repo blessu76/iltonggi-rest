@@ -1,10 +1,11 @@
 ---
 title: Dois irmãos e uma mesa, escolher um lado no ato 9
 description: Como o ato 9 do Iltonggi transforma uma briga de família nos Andes numa escolha sobre ao lado de qual irmão você fica.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: pt
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 O ato 9, «O Caminho Acima das Nuvens», se passa nos Andes por volta do fim da década de 1520, quando dois irmãos detinham cada um metade de um grande reino e não conseguiam chegar a um acordo. É o primeiro ato em que o final depende de quem você tomou por amigo. Este texto explica como isso funciona e por que o construímos assim. O ato ainda está em desenvolvimento e pode mudar.

@@ -1,10 +1,11 @@
 ---
 title: Deux frères et une table, choisir son camp à l'acte 9
 description: Comment l'acte 9 d'Iltonggi transforme une querelle de famille dans les Andes en un choix : auprès de quel frère se tenir.
-date: 2026-11-11
 slug: two-brothers-one-table
 lang: fr
 translation_of: ko
+date: 2026-11-11
+published: 2026-11-11T12:00:00+09:00
 ---
 
 L'acte 9, « La Route au-dessus des nuages », se déroule dans les Andes vers la fin des années 1520, à l'époque où deux frères détenaient chacun la moitié d'un grand royaume sans parvenir à s'entendre. C'est le premier acte où la fin dépend de qui vous avez pris pour ami. Cet article explique comment cela fonctionne et pourquoi nous l'avons construit ainsi. L'acte est encore en développement et peut changer.
