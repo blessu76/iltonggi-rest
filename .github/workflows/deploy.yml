@@ -29,15 +29,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Verify (tests, committed pages up to date)
-        run: |
-          python3 -m unittest discover -s tests
-          python3 scripts/build_site.py --check
+      - name: Install the private ipe_web_kit (pinned by vendor/ipe_web_kit.lock)
+        uses: ./.github/actions/ipe-web-kit
+        with:
+          ssh-key: ${{ secrets.IPE_WEB_KIT_DEPLOY_KEY }}
+
+      - name: Green gate (kit, release notes, tests, committed pages up to date)
+        run: bash scripts/check.sh
 
       - name: Assemble site (repo root minus repo files)
         run: |
           mkdir -p "$RUNNER_TEMP/site"
-          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/tests' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
+          rsync -a --exclude='/.git' --exclude='/.github' --exclude='/content' --exclude='/scripts' --exclude='/tests' --exclude='/vendor' --exclude='/README.md' ./ "$RUNNER_TEMP/site/"
 
       - name: Fetch weather.json (MET Norway, keeps the live values for regions that fail)
         # Never fails the deploy: a failed region keeps its previous value, all-failed re-publishes the previous file.
