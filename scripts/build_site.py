@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build iltonggi.ipe.rest: 13 languages x (home, privacy, terms, support) + 404 + sitemap.
+"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, blog) + 404 + sitemap.
 
     python3 scripts/build_site.py          # write pages (generated files are never hand-edited)
     python3 scripts/build_site.py --check  # fail if the committed pages differ from a fresh build
 
-Sources: content/<lang>.json (all copy), content/template-notes none; CSS in assets/site.css.
-Layout follows still.ipe.rest: root (/) = English = x-default, plus /<lang>/ for every language
+Sources: content/<tag>.json (all copy), CSS in assets/site.css. The language list, order and names come from ipe_web_kit.languages (vendor/, locked).
+Layout follows still.ipe.rest: root (/) = English = x-default, plus /<tag>/ for every language
 (en included, own canonical); hreflang + x-default on every page; language links in the footer;
 every page that opens without a language prefix picks the language itself (?lang= > saved choice > browser language > English, see scripts/lang_resolve.js). Stdlib only, Python 3.8+.
 """
@@ -15,19 +15,20 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import blog  # noqa: E402
-
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(ROOT / "vendor"))
+import blog  # noqa: E402
+from ipe_web_kit import languages  # noqa: E402
+
 SITE = "https://iltonggi.ipe.rest"
 MAIL = "ipe.haven@gmail.com"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
-OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh": "zh_CN", "es": "es_ES", "pt": "pt_BR",
-      "id": "id_ID", "ru": "ru_RU", "vi": "vi_VN", "fr": "fr_FR", "de": "de_DE", "ar": "ar_AR", "hi": "hi_IN"}
-NATIVE = {"en": "English", "ko": "한국어", "ja": "日本語", "zh": "中文", "es": "Español", "pt": "Português",
-          "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch",
-          "ar": "العربية", "hi": "हिन्दी"}
-RTL = {"ar"}  # right-to-left languages: <html dir="rtl"> + mirrored arrow glyphs (back_arrow/next_arrow)
+LANGS = list(languages.SUPPORTED)  # en ko ja zh-Hant es pt-BR fr de id th vi tr — the folder under / is the tag itself
+NATIVE = languages.NAMES
+OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh-Hant": "zh_TW", "es": "es_ES", "pt-BR": "pt_BR",
+      "fr": "fr_FR", "de": "de_DE", "id": "id_ID", "th": "th_TH", "vi": "vi_VN", "tr": "tr_TR"}
+LEGACY_PT = "pt"  # old /pt/ addresses (before pt-BR) keep working as redirect stubs
+RTL = set()  # none of the 12 languages is right-to-left; the helpers stay so a future one only needs an entry here
 
 
 def direction(lang):
@@ -42,12 +43,20 @@ def back_arrow(lang):
 def next_arrow(lang):
     """Glyph for 'forward / older / next' (points to the end of the line): -> in LTR, <- in RTL."""
     return "←" if lang in RTL else "→"
-PAGES = ["home", "privacy", "terms", "support", "releases"]
-PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
+
+
+def blog_code(tag):
+    """The blog posts and blog UI strings exist for the 9 older languages (pt = pt-BR); zh-Hant, th and tr show the English post."""
+    c = languages.legacy_code(tag)
+    return c if c in blog.LANGS else "en"
+
+
+PAGES = ["home", "privacy", "terms", "support"]
+PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
         "&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap")
 # GA4 (same property as ipe.rest; a subdomain, so no cross-domain setup). Inserted once by head(), which every page type
-# (home, privacy, terms, support, releases, 404, blog list/post) goes through. The privacy policy (section 3), the support FAQ and
+# (home, privacy, terms, support, 404, blog list/post) goes through. The privacy policy (section 3), the support FAQ and
 # privacy_meta_line say so -> change them together with this. Skipped in the in-app web view (?app=1): the app collects nothing.
 GA_MEASUREMENT_ID = "G-XG4BH800J0"
 GA_SNIPPET = (
@@ -150,8 +159,7 @@ def header(t, lang, root):
       </span>
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
-      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
-      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
+      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -178,8 +186,7 @@ def footer(t, lang, page, root):
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
-      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
-      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
+      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -190,7 +197,7 @@ def footer(t, lang, page, root):
 
 LANG_KEY = "iltonggi-lang"
 LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").split("*/", 1)[1].strip()
-# Every page that opens WITHOUT a language prefix (/, /privacy/, /terms/, /support/, /releases/, /blog/..., not 404.html): inline in <head>, runs
+# Every page that opens WITHOUT a language prefix (/, /privacy/, /terms/, /support/, /blog/..., not 404.html): inline in <head>, runs
 # before first paint. Saves the language on ?lang=xx, then leaves for the same page under /xx/ (replace, so Back works) -- but only when that
 # language really has this page (AV, filled in per page by add_lang_script() from the files of the build). English, an unsupported language
 # or a language without this page stays where it is (the query is dropped). Path, other query params and #hash are kept. Pages under a
@@ -198,7 +205,7 @@ LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").spl
 LANG_MARK = "<!--LANG-REDIRECT-->\n"  # head() puts it on a prefix-less page; build() swaps it for the script
 PAGE_LANG_SCRIPT = (
     "<script>(function(){" + LANG_JS + "\n"
-    "var SUP=%s,AV=%s,KEY=%s,st=null,pm=/^\\/([a-z]{2})\\//.exec(location.pathname);\n"
+    "var SUP=%s,AV=%s,KEY=%s,st=null,pm=/^\\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\\//.exec(location.pathname);\n"
     "if(pm&&SUP.indexOf(pm[1])>=0)return;\n"
     "try{st=localStorage.getItem(KEY)}catch(e){}\n"
     "var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});\n"
@@ -314,58 +321,7 @@ def body_blocks(items):
     return "\n".join(out)
 
 
-# ?app=1 = the in-app web view (same URL + query; canonical stays query-less). The class is set before first paint; the dark paint avoids a white flash.
-APP_MODE = '''<style>@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) { background: #141a18; } }</style>
-<script>if (/[?&]app=1(&|$)/.test(location.search)) document.documentElement.className += " app";</script>
-'''
-
-
-def releases_page(t, lang, root):
-    """Release notes: ko/en carry their own text; the other languages show the English text plus a notice."""
-    tx = t if lang in ("ko", "en") else DATA["en"]
-    tl = lang if lang in ("ko", "en") else "en"
-    d = tx["releases"]
-    p = prefix(lang, root)
-    # The body of the other 11 languages is the English text: mark it lang="en" dir="ltr" so screen readers pick English
-    # and RTL pages (ar) keep bullets, punctuation and quotes on the LTR side.
-    en_attr = "" if lang in ("ko", "en") else ' lang="en" dir="ltr"'
-    items = ""
-    for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
-        badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
-        lis = "\n".join("          <li>%s</li>" % esc(x) for x in e[tl])
-        ver, _, num = e["build"].partition("+")  # "1.0.0+35": version and build number come from the release data
-        bid = "%s-%s" % (ver, num)  # shared 4-site rule: id="<version>-<build>" -> id="1.0.0-35"
-        old = "b" + num  # legacy anchor: the app and old links use /<lang>/releases/?app=1#b35, so it stays as an empty span inside
-        items += f'''      <article class="rel" id="{bid}"{en_attr}><span id="{old}"></span>
-        <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
-        <p class="rel__at">{esc(e['at'])} KST</p>
-        <ul>
-{lis}
-        </ul>
-      </article>
-'''
-    notice = '      <p class="meta">%s</p>\n' % esc(t["releases_en_notice"]) if t["releases_en_notice"] else ""
-    title = t["nav_releases"]
-    out = head(t, lang, "releases", root, "%s — %s" % (title, t["name"]), d["desc"], APP_MODE) + header(t, lang, root)
-    out += f'''<main id="content">
-  <section class="doc">
-    <div class="container doc__body">
-      <p class="kicker">// releases</p>
-      <h1>{esc(title)}</h1>
-{notice}      <p class="callout"{en_attr}>{esc(d['lead'])}</p>
-      <div class="rel-list">
-{items}      </div>
-      <div class="doc__links"><a href="{p}/">{back_arrow(lang)} {esc(t['back_home'])}</a></div>
-    </div>
-  </section>
-</main>
-'''
-    return out + footer(t, lang, "releases", root) + "</body>\n</html>\n"
-
-
 def doc(t, lang, page, root):
-    if page == "releases":
-        return releases_page(t, lang, root)
     d = t[page]
     p = prefix(lang, root)
     if page == "support":
@@ -426,6 +382,26 @@ def not_found(data):
     return out + footer(t, "en", "home", True).replace('<nav class="foot-langs', '<nav hidden class="foot-langs', 1) + "</body>\n</html>\n"
 
 
+def redirect_page(target):
+    return f'''<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url={target}">
+<title>Português (Brasil) — ipe Studio</title>
+</head>
+<body><p><a href="{target}">{target}</a></p></body>
+</html>
+'''
+
+
+def pt_redirects(blog_extra):
+    """Old /pt/ addresses -> the same path under /pt-BR/ (links already out there keep working)."""
+    keys = [PATH[p] for p in PAGES] + [PATH[k] for k, *_ in blog_extra]
+    return {LEGACY_PT + path.rstrip("/") + "/index.html": redirect_page(SITE + "/pt-BR" + path) for path in keys}
+
+
 def sitemap(extra=()):
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -466,6 +442,7 @@ def build():
     files["404.html"] = not_found(data)
     blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
     files.update(blog_files)
+    files.update(pt_redirects(blog_extra))
     files["sitemap.xml"] = sitemap(blog_extra)
     return add_lang_script(files)
 
@@ -473,7 +450,7 @@ def build():
 def orphans(files):
     """Generated blog files on disk that the build no longer produces (e.g. a removed/renamed post)."""
     found = [f for f in (ROOT / "blog").rglob("*") if f.is_file()] if (ROOT / "blog").is_dir() else []
-    for l in LANGS:
+    for l in LANGS + [LEGACY_PT]:
         if (ROOT / l / "blog").is_dir():
             found += [f for f in (ROOT / l / "blog").rglob("*") if f.is_file()]
     return sorted(str(f.relative_to(ROOT)) for f in found if str(f.relative_to(ROOT)) not in files)

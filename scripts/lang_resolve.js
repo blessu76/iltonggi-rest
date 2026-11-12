@@ -2,9 +2,21 @@
    Order: ?lang=xx in the URL > the language the visitor chose before (localStorage) > navigator.languages (first supported) > English.
    Plain ES5, no module syntax: the file is pasted into the page as-is. */
 function ltNorm(code, supported) {
-  var c = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-')[0];
+  /* code (en, ko-KR, zh_TW, pt, in ...) -> the supported tag it means (zh-Hant, pt-BR ...) or null. Same rules as ipe_web_kit.languages.resolve:
+     zh -> zh-Hant only for Hant/TW/HK/MO (Simplified is not supported), pt* -> pt-BR, in -> id. */
+  var p = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-').filter(Boolean), c = p[0];
+  if (!c) return null;
   if (c === 'in') c = 'id'; /* legacy Indonesian code (old Android / Java): in -> id */
-  return supported.indexOf(c) >= 0 ? c : null;
+  if (c === 'zh') {
+    var rest = p.slice(1), script = null, region = null;
+    for (var j = 0; j < rest.length; j++) {
+      if (rest[j].length === 4 && !script) script = rest[j]; else if (rest[j].length === 2 && !region) region = rest[j];
+    }
+    c = (script ? script === 'hant' : (region === 'tw' || region === 'hk' || region === 'mo')) ? 'zh-hant' : '';
+  }
+  if (c === 'pt') c = 'pt-br';
+  for (var i = 0; i < supported.length; i++) if (supported[i].toLowerCase() === c) return supported[i];
+  return null;
 }
 function ltParam(search) {
   var m = /[?&]lang=([^&#]*)/.exec(search || '');

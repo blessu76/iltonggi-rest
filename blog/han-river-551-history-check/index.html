@@ -11,16 +11,15 @@
 <link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="zh" href="https://iltonggi.ipe.rest/zh/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="pt" href="https://iltonggi.ipe.rest/pt/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="ru" href="https://iltonggi.ipe.rest/ru/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="ar" href="https://iltonggi.ipe.rest/ar/blog/han-river-551-history-check/">
-<link rel="alternate" hreflang="hi" href="https://iltonggi.ipe.rest/hi/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/han-river-551-history-check/">
+<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/han-river-551-history-check/">
 <link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/han-river-551-history-check/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
@@ -43,11 +42,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=a8880c2d">
+<link rel="stylesheet" href="/assets/site.css?v=53895628">
 <script>(function(){function ltNorm(code, supported) {
-  var c = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-')[0];
+  /* code (en, ko-KR, zh_TW, pt, in ...) -> the supported tag it means (zh-Hant, pt-BR ...) or null. Same rules as ipe_web_kit.languages.resolve:
+     zh -> zh-Hant only for Hant/TW/HK/MO (Simplified is not supported), pt* -> pt-BR, in -> id. */
+  var p = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-').filter(Boolean), c = p[0];
+  if (!c) return null;
   if (c === 'in') c = 'id'; /* legacy Indonesian code (old Android / Java): in -> id */
-  return supported.indexOf(c) >= 0 ? c : null;
+  if (c === 'zh') {
+    var rest = p.slice(1), script = null, region = null;
+    for (var j = 0; j < rest.length; j++) {
+      if (rest[j].length === 4 && !script) script = rest[j]; else if (rest[j].length === 2 && !region) region = rest[j];
+    }
+    c = (script ? script === 'hant' : (region === 'tw' || region === 'hk' || region === 'mo')) ? 'zh-hant' : '';
+  }
+  if (c === 'pt') c = 'pt-br';
+  for (var i = 0; i < supported.length; i++) if (supported[i].toLowerCase() === c) return supported[i];
+  return null;
 }
 function ltParam(search) {
   var m = /[?&]lang=([^&#]*)/.exec(search || '');
@@ -68,7 +79,7 @@ function ltResolve(o) {
   for (var i = 0; i < list.length; i++) { v = ltNorm(list[i], s); if (v) return { lang: v, from: 'browser' }; }
   return { lang: 'en', from: 'default' };
 }
-var SUP=["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"],AV=["ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"],KEY="iltonggi-lang",st=null,pm=/^\/([a-z]{2})\//.exec(location.pathname);
+var SUP=["en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],AV=["ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],KEY="iltonggi-lang",st=null,pm=/^\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\//.exec(location.pathname);
 if(pm&&SUP.indexOf(pm[1])>=0)return;
 try{st=localStorage.getItem(KEY)}catch(e){}
 var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});
@@ -97,7 +108,6 @@ else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replace
     </a>
     <nav class="nav" aria-label="Main links">
       <a href="/blog/">Blog</a>
-      <a href="/releases/">Release notes</a>
       <a href="/support/">Support</a>
     </nav>
   </div>
@@ -177,11 +187,10 @@ else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replace
       <a href="/privacy/">Privacy Policy</a>
       <a href="/terms/">Terms of Use</a>
       <a href="/blog/">Blog</a>
-      <a href="/releases/">Release notes</a>
       <a href="/support/">Support</a>
     </nav>
   </div>
-  <nav class="foot-langs container" aria-label="Language"><a href="/blog/han-river-551-history-check/" aria-current="true" hreflang="en" lang="en">English</a><a href="/ko/blog/han-river-551-history-check/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/han-river-551-history-check/" hreflang="ja" lang="ja">日本語</a><a href="/zh/blog/han-river-551-history-check/" hreflang="zh" lang="zh">中文</a><a href="/es/blog/han-river-551-history-check/" hreflang="es" lang="es">Español</a><a href="/pt/blog/han-river-551-history-check/" hreflang="pt" lang="pt">Português</a><a href="/id/blog/han-river-551-history-check/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ru/blog/han-river-551-history-check/" hreflang="ru" lang="ru">Русский</a><a href="/vi/blog/han-river-551-history-check/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/fr/blog/han-river-551-history-check/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/han-river-551-history-check/" hreflang="de" lang="de">Deutsch</a><a href="/ar/blog/han-river-551-history-check/" hreflang="ar" lang="ar">العربية</a><a href="/hi/blog/han-river-551-history-check/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+  <nav class="foot-langs container" aria-label="Language"><a href="/blog/han-river-551-history-check/" aria-current="true" hreflang="en" lang="en">English</a><a href="/ko/blog/han-river-551-history-check/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/han-river-551-history-check/" hreflang="ja" lang="ja">日本語</a><a href="/zh-Hant/blog/han-river-551-history-check/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/es/blog/han-river-551-history-check/" hreflang="es" lang="es">Español</a><a href="/pt-BR/blog/han-river-551-history-check/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/fr/blog/han-river-551-history-check/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/han-river-551-history-check/" hreflang="de" lang="de">Deutsch</a><a href="/id/blog/han-river-551-history-check/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/th/blog/han-river-551-history-check/" hreflang="th" lang="th">ไทย</a><a href="/vi/blog/han-river-551-history-check/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/tr/blog/han-river-551-history-check/" hreflang="tr" lang="tr">Türkçe</a></nav>
 </footer>
 <script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');if(a)try{localStorage.setItem("iltonggi-lang",a.getAttribute('hreflang'))}catch(x){}});</script>
 </body>

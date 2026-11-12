@@ -250,14 +250,7 @@ p { margin: 0; }
 html:lang(ko) body { word-break: keep-all; }
 html:lang(ja) { --font-body: "Inter", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Meiryo", -apple-system, sans-serif; --font-title: "Lora", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
 html:lang(zh) { --font-body: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", -apple-system, sans-serif; --font-title: "Lora", "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif; }
-html:lang(ru) .h1, html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywhere; }
-/* ar (right-to-left, <html dir="rtl">) and hi (Devanagari): own font fallbacks; no letter-spacing (it breaks the joined Arabic letters and the
-   Devanagari conjuncts) and a taller line-height for titles (the marks above/below the line would be clipped). Layout uses logical properties (inline-start/end). */
-html:lang(ar) { --font-body: "Inter", "Geeza Pro", "Noto Sans Arabic", "Segoe UI", "Tahoma", -apple-system, sans-serif; --font-title: "Lora", "Geeza Pro", "Noto Naskh Arabic", "Noto Sans Arabic", "Segoe UI", "Tahoma", serif; }
-html:lang(hi) { --font-body: "Inter", "Kohinoor Devanagari", "Devanagari Sangam MN", "Noto Sans Devanagari", "Mukta", "Nirmala UI", -apple-system, sans-serif; --font-title: "Lora", "Kohinoor Devanagari", "Devanagari Sangam MN", "Noto Serif Devanagari", "Nirmala UI", serif; }
-html:lang(ar) *, html:lang(hi) * { letter-spacing: 0 !important; }
-html:lang(ar) .h1, html:lang(ar) .h2, html:lang(ar) .h3, html:lang(ar) .doc h1, html:lang(ar) .doc h2, html:lang(hi) .h1, html:lang(hi) .h2, html:lang(hi) .h3, html:lang(hi) .doc h1, html:lang(hi) .doc h2 { line-height: 1.35; overflow-wrap: anywhere; }
-html:lang(ar) body, html:lang(hi) body { line-height: 1.8; }
+html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywhere; }
 .faq-q { margin-top: var(--space-5); font-size: 1.15rem; }
 .nf-list { margin: var(--space-8) 0 0; padding: var(--space-5) 0 0; border-top: var(--hairline); list-style: none; }
 .nf-list li { margin: 0 0 var(--space-2); font-size: var(--text-sm); }

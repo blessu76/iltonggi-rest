@@ -1,0 +1,196 @@
+{
+  "name": "Iltonggi",
+  "name_sub": "일통기 · 一統記 — Üç Krallık toprak kapma stratejisi",
+  "home_title": "Iltonggi (일통기 · 一統記) — Üç Krallık dönemi toprak kapma stratejisi",
+  "desc": "Iltonggi (일통기 · 一統記), Kore'nin Üç Krallık döneminde geçen, hızlı ve klasik bir toprak fethi strateji oyunudur. Önce iPhone'a geliyor.",
+  "ld_desc": "Kore'nin Üç Krallık döneminde geçen, kısa ve hızlı, klasik bir toprak fethi strateji mobil oyunu.",
+  "kicker": "// ipe studio · önce iPhone",
+  "badge": "Yakında App Store'da",
+  "intro": "Kore'nin Üç Krallık döneminde geçen, kısa ve hızlı, klasik bir toprak fethi strateji oyunu. Her seferinde tek bir hızlı taktik turu; işe gidip gelirken ideal.",
+  "soon": "Yakında",
+  "see_shots": "Oyunu gör",
+  "feat_title": "Kısa turlar, keskin strateji",
+  "features": [
+    [
+      "Tek hızlı tur",
+      "Yolculukta bile başlaması ve bitirmesi kolay bir tempo."
+    ],
+    [
+      "Üç Krallık haritası",
+      "Fetihleri ve genişlemeyi çeyrek görünümlü haritada tek bakışta görün."
+    ],
+    [
+      "Her krallık için renkler",
+      "Goguryeo, Baekje, Silla ve Gaya'nın renkleri savaş alanını okumanıza yardımcı olur."
+    ]
+  ],
+  "shots_title": "Ekran görüntüleri",
+  "shot_alts": [
+    "Harita ekranı",
+    "Oyun sonuç ekranı"
+  ],
+  "skip": "İçeriğe geç",
+  "home_aria": "Iltonggi ana sayfa",
+  "nav_aria": "Ana bağlantılar",
+  "nav_support": "Destek",
+  "legal_aria": "Yasal bağlantılar",
+  "lang_aria": "Dil",
+  "privacy_link": "Gizlilik Politikası",
+  "terms_link": "Kullanım Koşulları",
+  "back_home": "Iltonggi ana sayfa",
+  "meta_line": "Yürürlük tarihi: 28 Ekim 2026 · İşleten: Davy Kim (ipe Studio)",
+  "privacy_meta_line": "Yürürlük: 1 Kasım 2026 · İşleten: Davy Kim (ipe Studio)",
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "desc": "Iltonggi (일통기 · 一統記) gizlilik politikası — uygulama kişisel bilgi toplamaz; web sitesi Google Analytics ile temel ziyaret istatistikleri toplar.",
+    "callout_label": "Kısaca:",
+    "callout": "Iltonggi uygulaması kişisel bilgi toplamaz. Bu web sitesi Google Analytics ile temel ziyaret istatistikleri toplar (bölüm 3).",
+    "sections": [
+      {
+        "h": "1. Topladığımız bilgiler — yok",
+        "p": [
+          "Iltonggi (\"Uygulama\"), bağımsız geliştirici Davy Kim (ipe Studio) tarafından işletilen bir mobil oyundur. Uygulamada hesap veya oturum açma yoktur; adınız, e-postanız, iletişim bilgileriniz, konumunuz veya cihaz tanımlayıcılarınız gibi hiçbir kişisel bilgiyi toplamaz ve herhangi bir sunucuya göndermez. Oyun ilerlemeniz ve ayarlarınız yalnızca cihazınızda saklanır ve Uygulamayı sildiğinizde silinir. Oyunda seçtiğiniz takma ad ve oyun kayıtlarınız yalnızca cihazınızda saklanır; bize gönderilmez ve tarafımızca toplanmaz.",
+          "Uygulamada reklam, analiz veya izleme SDK'sı bulunmaz."
+        ]
+      },
+      {
+        "h": "2. Hava durumu bilgisi",
+        "p": [
+          "Bölgesel hava durumunu göstermek için Uygulama, çevrimiçi olduğu her an iltonggi.ipe.rest adresinden herkese açık bir dosya (weather.json) indirir. Bu dosya, oyundaki 24 kasabanın hava durumunu saatte bir toplar ve tüm kullanıcılar için aynıdır. Uygulama bu sırada hiçbir kişisel bilgi göndermez; konum, cihaz tanımlayıcısı veya oyun verisi yoktur ve herhangi bir hava durumu sağlayıcısıyla doğrudan iletişime geçmez.",
+          "Sıradan her web isteğinde olduğu gibi, barındırma sağlayıcımızın (GitHub Pages) sunucu günlüğü cihazınızın IP adresini kaydedebilir; bu günlüğü biz toplamayız veya kullanmayız. Hava durumu indirilemezse (örneğin çevrimdışıyken) Uygulama açık hava gösterir ve oyun normal şekilde çalışır. Alınan son hava durumu cihazınızda geçici olarak saklanır ve Uygulamayı sildiğinizde silinir.",
+          "Hava durumu verileri: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "3. Web sitesi ve ziyaret istatistikleri (Google Analytics)",
+        "p": [
+          "Bu bölüm yalnızca iltonggi.ipe.rest web sitesi için geçerlidir, uygulama için değil. Uygulama hiçbir şey toplamaz ve analiz aracı içermez (bkz. bölüm 1); uygulama içinde gösterilen web sayfaları Google Analytics yüklemez.",
+          "Web sitesinde hangi sayfaların okunduğunu görmek için Google Analytics 4 kullanırız. Sayfa görüntülemelerini, geldiğiniz sayfayı, tarayıcı ve cihaz türünüzü, yaklaşık konumunuzu (ülke veya şehir) ve sitemizden çıkan bağlantılara tıklamaları (yalnızca bağlantı adresi) kaydeder. Ziyaretleri ayırt etmek için tarayıcınıza çerezler (iki yıla kadar kalabilen _ga gibi) yerleştirir. Analizde adınızı veya e-postanızı istemeyiz ve bu veriden sizi tanımlayamayız. Google bu veriyi bizim adımıza işler; bu, Kore dışındaki sunucuları da içerebilir.",
+          "Yazı tipleri Google Fonts'tan yüklenir; bu nedenle olağan web isteği bilgileri (IP adresiniz gibi) Google'a gönderilebilir. Site GitHub Pages üzerinde barındırılır ve GitHub'ın sunucu günlüğü politikaları geçerlidir.",
+          "Vazgeçmek için tarayıcı ayarlarınızdan çerezleri engelleyin veya silin ya da Google'ın Analytics devre dışı bırakma eklentisini ({gaoptout}) kullanın. Web sitesi bunlar olmadan da aynı şekilde çalışır."
+        ]
+      },
+      {
+        "h": "4. Üçüncü taraflar",
+        "p": [
+          "Uygulama kişisel bilgi toplamadığı için üçüncü taraflarla paylaşılacak veya satılacak bir şeyi yoktur. Web sitesinde Google (ziyaret istatistikleri) ve GitHub (barındırma) verileri bölüm 3'te anlatıldığı gibi işler; bu veriyi satmayız. Uygulama Apple App Store üzerinden dağıtılır; indirmelerle ilgili bilgiler Apple'ın gizlilik politikası uyarınca Apple tarafından işlenir.",
+          "Hava durumu verilerini MET Norway sağlar. Biz bunları kendimiz alır ve herkese açık bir dosya olarak yayınlarız; bu nedenle Uygulama kullanıcılarına dair hiçbir bilgi MET Norway'e iletilmez."
+        ]
+      },
+      {
+        "h": "5. Sorular ve haklarınız",
+        "p": [
+          "Kişisel bilgilerinize erişim, düzeltme, silme veya işlemenin durdurulmasını talep etmek ya da herhangi bir soru sormak için {mail} adresine yazın. Uygulama kişisel bilgi tutmaz ve web sitesi analiz verileri adınıza veya e-postanıza bağlı değildir; bu nedenle bulup işlem yapabileceğimiz bir şey olmayabilir."
+        ]
+      },
+      {
+        "h": "6. Çocuklar",
+        "p": [
+          "Uygulama 14 yaşın altındaki (veya bölgenizdeki asgari yaşın altındaki) çocuklara yönelik değildir ve hiçbir kullanıcıdan kişisel bilgi toplamaz."
+        ]
+      },
+      {
+        "h": "7. Gizlilik sorumlusu",
+        "p": [
+          "Ad: Davy Kim (ipe Studio) · İletişim: {mail}"
+        ]
+      },
+      {
+        "h": "8. Başvuru yolları (Kore)",
+        "p": [
+          "- Kişisel Bilgi Uyuşmazlık Arabuluculuk Komitesi: 1833-6972 · kopico.go.kr",
+          "- Kişisel Bilgi İhlali Bildirim Merkezi: 118 · privacy.kisa.or.kr",
+          "- Yüksek Savcılık Siber Suçlar Bölümü: 1301 · Ulusal Polis Teşkilatı Siber Bürosu: 182"
+        ]
+      },
+      {
+        "h": "9. Değişiklikler",
+        "p": [
+          "Uygulamaya ileride toplanan bilgileri değiştirecek hesaplar, ödemeler veya çevrimiçi özellikler eklenirse, önce bu politikayı güncelleyip yürürlük tarihini değiştireceğiz."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "desc": "Iltonggi (일통기 · 一統記) Kullanım Koşulları.",
+    "sections": [
+      {
+        "h": "1. Amaç",
+        "p": [
+          "Bu koşullar, Davy Kim (ipe Studio) tarafından sunulan \"Iltonggi\" mobil oyununu (\"Uygulama\") kullanma şartlarını belirler."
+        ]
+      },
+      {
+        "h": "2. Lisans",
+        "p": [
+          "Uygulamayı cihazınıza kişisel ve ticari olmayan amaçlarla kurup kullanabilirsiniz. Uygulamanın kaynak kodunu, görsellerini, seslerini veya diğer içeriğini izin almadan kopyalayamaz, dağıtamaz, tersine mühendislikle çözemez veya ticari olarak kullanamazsınız."
+        ]
+      },
+      {
+        "h": "3. Hizmetin niteliği",
+        "p": [
+          "Uygulamanın temel özellikleri çevrimdışı çalışır; interneti yalnızca isteğe bağlı olarak hava durumunu göstermek için kullanır (indirilemezse açık hava gösterilir). Oyun verileri cihazınızda saklanır. Cihaz değiştirirseniz, Uygulamayı silerseniz veya cihazınızı sıfırlarsanız veriler kaybolabilir ve bunları geri getiremeyebiliriz."
+        ]
+      },
+      {
+        "h": "4. Hava durumu bilgisi",
+        "p": [
+          "Uygulamada gösterilen hava durumu, oyunun sunumu ve kuralları (savaş çarpanları) için kullanılan referans bilgidir. Gerçek hava koşullarıyla örtüşeceğini veya her zaman erişilebilir olacağını garanti etmeyiz. Hava durumu bilgisi eksik veya güncel değilse açık hava kullanılabilir.",
+          "Hava durumu verileri: MET Norway (CC BY 4.0)."
+        ]
+      },
+      {
+        "h": "5. Değişiklik ve sonlandırma",
+        "p": [
+          "Uygulamanın özelliklerini geliştirebilir veya değiştirebilir ya da sunmayı durdurabiliriz. Önemli değişiklikler App Store açıklamasında veya bu sitede duyurulacaktır."
+        ]
+      },
+      {
+        "h": "6. Sorumluluk reddi",
+        "p": [
+          "Uygulama olduğu gibi sunulmaktadır. Yasaların izin verdiği ölçüde, Uygulamayı kullanmanızdan doğan dolaylı veya arızi zararlardan sorumlu değiliz. Uygulama, Kore'nin Üç Krallık döneminden esinlenen yaratıcı bir eserdir ve tarihî gerçeklerden farklı olabilir."
+        ]
+      },
+      {
+        "h": "7. Geçerli hukuk ve iletişim",
+        "p": [
+          "Bu koşullara Kore Cumhuriyeti hukuku uygulanır. İletişim: {mail}"
+        ]
+      }
+    ]
+  },
+  "support": {
+    "title": "Destek",
+    "desc": "Iltonggi desteği — iletişim e-postası ve sık sorulan sorular.",
+    "lead": "Oynarken bir sorunla karşılaşırsanız veya bir öneriniz olursa lütfen bize e-posta ile yazın.",
+    "callout_label": "İletişim",
+    "callout_note": "Birkaç iş günü içinde yanıt vermeyi hedefliyoruz.",
+    "tips_h": "Eklemeniz faydalı olacak bilgiler",
+    "tips": [
+      "Cihaz modeliniz ve iOS sürümünüz",
+      "Uygulama sürümü (Ayarlar → Genel → iPhone Depolama Alanı → Iltonggi)",
+      "Sorun yaşandığında ne olduğu; varsa bir ekran görüntüsü"
+    ],
+    "faq_h": "Sık sorulan sorular",
+    "faq": [
+      [
+        "İlerlemem nerede kaydediliyor?",
+        "Yalnızca cihazınızda. Uygulamayı silerseniz veya cihaz değiştirirseniz kaybolabilir."
+      ],
+      [
+        "Android sürümü var mı?",
+        "Önce iPhone'da yayınlıyoruz. Diğer platformlarla ilgili haberleri daha sonra paylaşacağız."
+      ],
+      [
+        "Kişisel bilgi topluyor musunuz?",
+        "Uygulama toplamaz. Web sitesi Google Analytics ile temel ziyaret istatistikleri toplar. Ayrıntılar için [[privacy]] sayfasına bakın."
+      ]
+    ]
+  },
+  "nf": {
+    "title": "Sayfa bulunamadı",
+    "desc": "Bu sayfa iltonggi.ipe.rest üzerinde mevcut değil.",
+    "text": "Aradığınız sayfa burada değil. Taşınmış olabilir veya adres yanlış yazılmış olabilir."
+  }
+}

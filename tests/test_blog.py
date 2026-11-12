@@ -89,28 +89,8 @@ class Blog(unittest.TestCase):
         finally:
             shutil.rmtree(tmp)
 
-    def test_release_anchors_and_app_mode(self):
-        import json
-        builds = [e["build"] for e in json.loads((bs.ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]]
-        for lang in blog.LANGS:
-            h = (bs.ROOT / lang / "releases" / "index.html").read_text(encoding="utf-8")
-            for full in builds:
-                ver, num = full.split("+")
-                # new shared anchor "<version>-<build>" on the article, the old "b<build>" kept as an empty span right inside it
-                # the 11 languages other than ko/en show English text: the block is marked lang="en" dir="ltr" (screen readers, RTL ar)
-                en_attr = "" if lang in ("ko", "en") else ' lang="en" dir="ltr"'
-                self.assertIn('<article class="rel" id="%s-%s"%s><span id="b%s"></span>' % (ver, num, en_attr, num), h, (lang, full))
-            if lang not in ("ko", "en"):
-                self.assertIn('<p class="callout" lang="en" dir="ltr">', h, lang)
-            for anchor in re.findall(r'<article class="rel" id="([^"]+)"[^>]*>', h):
-                self.assertEqual(h.count('id="%s"' % anchor), 1, (lang, anchor))
-            self.assertEqual(len(re.findall(r'<article class="rel"', h)), len(builds), lang)
-            self.assertIn("app=1", h)
-            self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/%s/releases/">' % lang, h)
-        self.assertNotIn("app=1", (bs.ROOT / "sitemap.xml").read_text(encoding="utf-8"))
-
     def test_twitter_card_meta(self):
-        for rel in ("index.html", "ko/releases/index.html", "en/blog/index.html", "404.html"):
+        for rel in ("index.html", "ko/support/index.html", "en/blog/index.html", "404.html"):
             h = (bs.ROOT / rel).read_text(encoding="utf-8")
             for m in ('name="twitter:card" content="summary_large_image"', 'name="twitter:title"', 'name="twitter:description"', 'name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=', 'property="og:image:width" content="1200"', 'property="og:image:height" content="630"', 'property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v='):
                 self.assertIn(m, h, (rel, m))
@@ -169,7 +149,7 @@ class Blog(unittest.TestCase):
             self.assertIn("ko/blog/p11/index.html", files)
             self.assertIn("blog/feed.xml", files)
             page = files["ja/blog/p00/index.html"]
-            self.assertEqual(page.count('<link rel="alternate" hreflang="'), 13 + 1)  # 13 langs + x-default
+            self.assertEqual(page.count('<link rel="alternate" hreflang="'), 12 + 1)  # 12 langs + x-default
             self.assertIn('"@type": "BlogPosting"', page)
             self.assertIn('"inLanguage": "ja"', page)
             self.assertIn("datePublished\": \"2026-10-01T12:00:00+09:00", page)
@@ -191,7 +171,7 @@ class Blog(unittest.TestCase):
             self.assertIn('rel="prev"', p2)
         finally:
             bs.PATH.clear()
-            bs.PATH.update({"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"})
+            bs.PATH.update({"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"})
             shutil.rmtree(tmp)
 
 

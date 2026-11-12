@@ -16,7 +16,8 @@ class Ga4(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.files = bs.build()
-        cls.pages = {k: v for k, v in cls.files.items() if k.endswith(".html")}
+        # the legacy /pt/ stubs only redirect to /pt-BR/ (no GA, no content)
+        cls.pages = {k: v for k, v in cls.files.items() if k.endswith(".html") and k.split("/")[0] != bs.LEGACY_PT}
         cls.data = bs.DATA
 
     def test_constant_is_the_ipe_rest_property(self):
@@ -33,7 +34,7 @@ class Ga4(unittest.TestCase):
 
     def test_page_types_are_covered(self):
         for rel in ("index.html", "ko/index.html", "privacy/index.html", "terms/index.html", "support/index.html",
-                    "releases/index.html", "de/privacy/index.html", "404.html", "blog/index.html"):
+                    "th/privacy/index.html", "de/privacy/index.html", "404.html", "blog/index.html"):
             self.assertIn(rel, self.pages)
         self.assertTrue([k for k in self.pages if re.match(r"blog/[^/]+/index\.html$", k) and "page/" not in k])
         self.assertTrue([k for k in self.pages if re.match(r"ja/blog/[^/]+/index\.html$", k)])
@@ -72,20 +73,19 @@ class Ga4(unittest.TestCase):
         "ko": "게임 안에서 정한 닉네임과 기록은 기기에만 저장되며 회사로 전송·수집하지 않습니다.",
         "en": "Any nickname you choose in the game and your game records are stored only on your device and are not sent to or collected by us.",
         "ja": "ゲーム内で設定したニックネームや記録は端末内にのみ保存され、当社に送信・収集されることはありません。",
-        "zh": "您在游戏中设置的昵称和游戏记录仅保存在您的设备上,不会发送给我们,我们也不会收集。",
+        "zh-Hant": "你在遊戲中設定的暱稱與遊戲紀錄僅儲存在你的裝置上,不會傳送給我們,我們也不會蒐集。",
         "es": "El apodo que elijas en el juego y tus registros de partida se guardan únicamente en tu dispositivo; no los enviamos ni los recopilamos.",
-        "pt": "O apelido que você definir no jogo e os seus registros de partida ficam armazenados apenas no seu dispositivo; nós não os recebemos nem os coletamos.",
+        "pt-BR": "O apelido que você definir no jogo e os seus registros de partida ficam armazenados apenas no seu dispositivo; nós não os recebemos nem os coletamos.",
         "id": "Nama panggilan yang Anda tetapkan di dalam game dan catatan permainan Anda hanya disimpan di perangkat Anda; kami tidak menerima maupun mengumpulkannya.",
-        "ru": "Никнейм, который вы задаёте в игре, и ваши игровые записи хранятся только на вашем устройстве; мы их не получаем и не собираем.",
         "vi": "Biệt danh bạn đặt trong trò chơi và các bản ghi của bạn chỉ được lưu trên thiết bị của bạn; chúng tôi không nhận hay thu thập chúng.",
         "fr": "Le pseudo que vous choisissez dans le jeu et vos données de partie sont stockés uniquement sur votre appareil ; nous ne les recevons ni ne les collectons.",
         "de": "Der Spitzname, den Sie im Spiel festlegen, und Ihre Spielstände werden nur auf Ihrem Gerät gespeichert; wir erhalten oder erfassen sie nicht.",
-        "ar": "يُخزَّن الاسم المستعار الذي تختاره داخل اللعبة وسجلاتك على جهازك فقط، ولا نتلقاها ولا نجمعها.",
-        "hi": "गेम के अंदर आपके चुने गए उपनाम (निकनेम) और आपके रिकॉर्ड केवल आपके डिवाइस पर सहेजे जाते हैं; हम उन्हें न प्राप्त करते हैं और न ही एकत्र करते हैं।",
+        "th": "ชื่อเล่นที่คุณตั้งในเกมและบันทึกการเล่นจะถูกเก็บไว้ในอุปกรณ์ของคุณเท่านั้น ไม่ถูกส่งหรือเก็บโดยเรา",
+        "tr": "Oyunda seçtiğiniz takma ad ve oyun kayıtlarınız yalnızca cihazınızda saklanır; bize gönderilmez ve tarafımızca toplanmaz.",
     }
 
     def test_privacy_says_the_nickname_stays_on_the_device(self):
-        # 13 languages: section 1 carries the nickname/records-stay-on-device sentence; no Game Center / Play Games wording
+        # 12 languages: section 1 carries the nickname/records-stay-on-device sentence; no Game Center / Play Games wording
         import html
         for lang in LANGS:
             path = "privacy/index.html" if lang == "en" else "%s/privacy/index.html" % lang

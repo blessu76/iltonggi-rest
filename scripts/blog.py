@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Making-of blog for iltonggi.ipe.rest: /blog/ list, /blog/<slug>/ posts, 13 languages, RSS. Stdlib only, Python 3.8+.
+"""Making-of blog for iltonggi.ipe.rest: /blog/ list, /blog/<slug>/ posts, 12 site languages (9 post languages), RSS. Stdlib only, Python 3.8+.
 
 Imported by build_site.py (never run on its own; `python3 scripts/blog.py` just lints the queue + posts).
 
 Layout of the sources (see README.md "블로그"):
-    content/blog/ui.json                      UI strings, 13 languages
+    content/blog/ui.json                      UI strings, 9 languages (en ko ja es pt id vi fr de)
     content/blog/queue/<NNN>-<slug>/<lang>.md reviewed posts waiting for the daily publish (only publish_blog.py writes here; never built)
     content/blog/posts/<slug>/<lang>.md       published posts (built into the site)
 
-A post = 13 markdown files (en ko ja zh es pt id ru vi fr de ar hi), same slug. en + ko are originals; the other eleven carry
+A post = 9 markdown files (en ko ja es pt id vi fr de), same slug. en + ko are originals; the other seven carry
 `translation_of: en|ko` and are shown with the AI-translation note. Front matter (all keys on one line, `key: value`):
 
     title, description, slug (= folder name), lang (= file name), date (KST day), [translation_of], [updated: ISO +09:00]
-    published: ISO time with +09:00 offset (stamped by publish_blog.py; same in all 13 files, same KST day as `date`)
+    published: ISO time with +09:00 offset (stamped by publish_blog.py; same in all 9 files, same KST day as `date`)
 
 Body markdown subset: paragraphs, `## h2`, `### h3`, `- ` lists, `1. ` lists, `> ` quotes, `**bold**`, `*em*`,
 `[text](/same-site/path)` links and `![alt](/assets/blog/file.webp)` images. Anything else is escaped text.
@@ -31,12 +31,13 @@ try:
 except ImportError:
     sys.exit("ipe_web_kit is not installed (private, not in this repo). Run: python3 scripts/kit_lock.py sync --kit <local ipe_web_kit clone>")
 BLOG = ROOT / "content" / "blog"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
+LANGS = ["en", "ko", "ja", "es", "pt", "id", "vi", "fr", "de"]  # post languages; zh-Hant / th / tr show the English post (build_site.blog_code)
+SITE_TAGS = ["en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"]
 ORIGINALS = ("en", "ko")
 KST = dt.timezone(dt.timedelta(hours=9))
 PER_PAGE = 10
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-RESERVED = set(LANGS) | {"feed", "page", "feed.xml"}
+RESERVED = set(LANGS) | set(SITE_TAGS) | {"feed", "page", "feed.xml"}
 ISO_RE = re.compile(r"^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?\+09:00$")
 
 # Things that must never reach a public post (brief 2026-10-29). A safety net for the publish step — Dane's review is the real gate.
@@ -97,7 +98,7 @@ def parse(text, where="?"):
 
 
 def check_post_files(d, slug, published=True):
-    """Validate one post folder (13 files). -> {lang: (meta, body)}. Raises BlogError listing every problem."""
+    """Validate one post folder (9 files). -> {lang: (meta, body)}. Raises BlogError listing every problem."""
     errors, out = [], {}
     d = Path(d)
     for lang in LANGS:
@@ -281,7 +282,7 @@ def build(bs, data, root=ROOT):
     posts = load_posts(root)
     pages = max(1, -(-len(posts) // PER_PAGE))
     files, extra = {}, []
-    entries = [("en", True)] + [(l, False) for l in LANGS]
+    entries = [("en", True)] + [(l, False) for l in bs.LANGS]
 
     def reg(key, path, lastmod, freq, prio):
         bs.PATH[key] = path
@@ -297,7 +298,7 @@ def build(bs, data, root=ROOT):
         reg("blog:" + p["slug"], post_path(p["slug"]), p["modified"].date().isoformat(), None, None)
 
     for lang, root_ in entries:
-        t, ui = data[lang], UI[lang]
+        t, ui = data[lang], UI[bs.blog_code(lang)]
         pre = bs.prefix(lang, root_)
         for n in range(1, pages + 1):
             chunk = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
@@ -319,7 +320,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "Blog", "name": ui["title"], "description": ui["lead"], "inLanguage": lang,
         "url": bs.url(lang, key, root_), "publisher": org(bs),
-        "blogPost": [{"@type": "BlogPosting", "headline": p["files"][lang][0]["title"], "url": bs.url(lang, "blog:" + p["slug"], root_),
+        "blogPost": [{"@type": "BlogPosting", "headline": p["files"][bs.blog_code(lang)][0]["title"], "url": bs.url(lang, "blog:" + p["slug"], root_),
                       "datePublished": p["published"].isoformat(timespec="seconds"), "dateModified": p["modified"].isoformat(timespec="seconds")}
                      for p in chunk],
     }, ensure_ascii=False)
@@ -330,7 +331,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
         extra = '<link rel="next" href="%s">\n' % bs.url(lang, "blog:p%d" % (n + 1), root_) + extra
     cards = ""
     for p in chunk:
-        m = p["files"][lang][0]
+        m = p["files"][bs.blog_code(lang)][0]
         cards += f'''      <article class="post-card">
         <p class="post-card__meta">No. {p['no']} · {time_tag(p['published'].isoformat(timespec='seconds'))}</p>
         <h2 class="post-card__title"><a href="{pre}{post_path(p['slug'])}">{esc(m['title'])}</a></h2>
@@ -364,7 +365,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
 
 def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
     key = "blog:" + p["slug"]
-    meta, body = p["files"][lang]
+    meta, body = p["files"][bs.blog_code(lang)]
     iso = p["published"].isoformat(timespec="seconds")
     modified = p["modified"].isoformat(timespec="seconds")
     can = bs.url(lang, key, root_)
@@ -417,7 +418,7 @@ def more_links(bs, p, posts_all, lang, pre, ui):
     older = posts_all[i + 1] if i + 1 < len(posts_all) else None
 
     def a(q):
-        return '<a href="%s%s">%s</a>' % (pre, post_path(q["slug"]), esc(q["files"][lang][0]["title"]))
+        return '<a href="%s%s">%s</a>' % (pre, post_path(q["slug"]), esc(q["files"][bs.blog_code(lang)][0]["title"]))
     pn = ""
     if older:
         pn += '<li>%s %s: %s</li>' % (bs.back_arrow(lang), esc(ui["prev_post"]), a(older))
@@ -435,11 +436,10 @@ def more_links(bs, p, posts_all, lang, pre, ui):
 def llms_txt(bs, data, UI, posts):
     en = data["en"]
     lines = ["# Iltonggi (一統記 · 일통기)", "",
-             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page, release notes and a making-of blog (one short note a day)." % len(bs.LANGS), "",
+             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page and a making-of blog (one short note a day)." % len(bs.LANGS), "",
              "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
-             "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
-             "## Blog (every post exists in %s)" % ", ".join(bs.LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
+             "## Blog (every post exists in %s)" % ", ".join(LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
     lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
     if posts:
         for q in posts:
