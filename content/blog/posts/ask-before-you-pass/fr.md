@@ -1,10 +1,11 @@
 ---
 title: Demander avant de passer, les maîtres de la terre, acte 10
 description: L'acte 10 d'Iltonggi compte des régions que l'on ne peut pas attaquer, et voici pourquoi nous avons fait d'un jeu de conquête un jeu où l'on demande d'abord.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: fr
 translation_of: ko
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 Un jeu de conquête de terres est, dans sa forme la plus simple, un jeu où l'on prend de la terre. L'acte 10, « La Plus Ancienne Terre », brise cela à dessein. Il se déroule vers l'an 1800 sur un continent du sud, et certaines de ses régions ne peuvent pas du tout être prises. Cet article explique la règle et ses raisons. L'acte est encore en développement et nous continuons de le réexaminer, il peut donc changer.

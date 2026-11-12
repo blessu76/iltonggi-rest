@@ -1,10 +1,11 @@
 ---
 title: Hỏi trước khi đi qua, những chủ nhân vùng đất ở màn 10
 description: Màn 10 của Iltonggi có những vùng bạn không thể tấn công, và lý do chúng tôi biến một trò chơi chinh phục thành trò chơi hỏi trước.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: vi
 translation_of: ko
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 Một trò chơi chiếm đất, nói đơn giản nhất, là trò chơi giành lấy đất đai. Màn 10, «Vùng đất lâu đời nhất», cố ý phá vỡ điều đó. Màn này lấy bối cảnh khoảng năm 1800 ở một lục địa phía nam, và một số vùng của nó hoàn toàn không thể chiếm. Bài này giải thích quy tắc và lý do. Màn này vẫn đang được phát triển và chúng tôi vẫn đang xem xét lại, nên có thể thay đổi.

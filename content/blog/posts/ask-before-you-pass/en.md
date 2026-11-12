@@ -1,9 +1,10 @@
 ---
 title: Ask Before You Pass, the Landowners of Act 10
 description: Act 10 of Iltonggi has regions you cannot attack, and the reasons we turned a conquest game into a game of asking first.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: en
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 A land grab game is, at its simplest, a game of taking land. Act 10, "The Oldest Land", breaks that on purpose. It is set around the year 1800 on a southern continent, and some of its regions cannot be taken at all. This post explains the rule and the reasoning. The act is still in development and we are still reviewing it, so it may change.

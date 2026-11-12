@@ -1,10 +1,11 @@
 ---
 title: Bertanya sebelum lewat, para pemilik tanah di babak 10
 description: Babak 10 Iltonggi punya wilayah yang tidak bisa Anda serang, dan alasan kami mengubah gim penaklukan menjadi gim yang bertanya lebih dulu.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: id
 translation_of: ko
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 Gim perebutan tanah, dalam bentuk paling sederhana, adalah gim merebut tanah. Babak 10, «Tanah Tertua», sengaja mematahkan hal itu. Latarnya sekitar tahun 1800 di benua selatan, dan sebagian wilayahnya sama sekali tidak bisa direbut. Tulisan ini menjelaskan aturan dan alasannya. Babak ini masih dalam pengembangan dan kami masih terus meninjaunya, jadi bisa berubah.

@@ -1,10 +1,11 @@
 ---
 title: Erst fragen, dann passieren, die Landeigentümer in Akt 10
 description: Akt 10 von Iltonggi hat Regionen, die man nicht angreifen kann, und die Gründe, warum aus einem Eroberungsspiel ein Spiel des Zuerst-Fragens wurde.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: de
 translation_of: ko
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 Ein Landnahmespiel ist in seiner einfachsten Form ein Spiel, in dem man Land nimmt. Akt 10, „Das älteste Land“, bricht das absichtlich. Er spielt um das Jahr 1800 auf einem südlichen Kontinent, und einige seiner Regionen lassen sich überhaupt nicht einnehmen. Dieser Beitrag erklärt die Regel und die Überlegungen dahinter. Der Akt ist noch in Entwicklung, und wir prüfen ihn weiter, daher kann er sich ändern.

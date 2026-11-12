@@ -1,10 +1,11 @@
 ---
 title: Pergunte antes de passar, os donos da terra no ato 10
 description: O ato 10 do Iltonggi tem regiões que você não pode atacar, e as razões pelas quais transformamos um jogo de conquista num jogo de perguntar primeiro.
-date: 2026-11-12
 slug: ask-before-you-pass
 lang: pt
 translation_of: ko
+date: 2026-11-12
+published: 2026-11-12T12:00:00+09:00
 ---
 
 Um jogo de conquista de terras é, na forma mais simples, um jogo de tomar terra. O ato 10, «A Terra Mais Antiga», quebra isso de propósito. Ele se passa por volta do ano 1800 num continente do sul, e algumas de suas regiões não podem ser tomadas de modo algum. Este texto explica a regra e o raciocínio. O ato ainda está em desenvolvimento e continuamos a revisá-lo, então pode mudar.
