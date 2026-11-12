@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Build iltonggi.ipe.rest: 11 languages x (home, privacy, terms, support) + 404 + sitemap.
+"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, releases, blog) + 404 + sitemap.
 
     python3 scripts/build_site.py          # write pages (generated files are never hand-edited)
     python3 scripts/build_site.py --check  # fail if the committed pages differ from a fresh build
 
-Sources: content/<lang>.json (all copy), content/template-notes none; CSS in assets/site.css.
-Layout follows still.ipe.rest: root (/) = English = x-default, plus /<lang>/ for every language
+Sources: content/<code>.json (all copy; code = languages.legacy_code(tag)), CSS in assets/site.css.
+The language list, names and browser-language rules come from ipe_web_kit.languages (vendor/, locked).
+Layout follows still.ipe.rest: root (/) = English = x-default, plus /<tag>/ for every language
 (en included, own canonical); hreflang + x-default on every page; language links in the footer;
 a root-only hint that suggests (never redirects) the browser language. Stdlib only, Python 3.8+.
 """
@@ -15,17 +16,22 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import blog  # noqa: E402
-
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(ROOT / "vendor"))
+import blog  # noqa: E402
+from ipe_web_kit import languages  # noqa: E402
+
 SITE = "https://iltonggi.ipe.rest"
 MAIL = "ipe.haven@gmail.com"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de"]
-OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh": "zh_CN", "es": "es_ES", "pt": "pt_BR",
-      "id": "id_ID", "ru": "ru_RU", "vi": "vi_VN", "fr": "fr_FR", "de": "de_DE"}
-NATIVE = {"en": "English", "ko": "한국어", "ja": "日本語", "zh": "中文", "es": "Español", "pt": "Português",
-          "id": "Bahasa Indonesia", "ru": "Русский", "vi": "Tiếng Việt", "fr": "Français", "de": "Deutsch"}
+LANGS = list(languages.SUPPORTED)
+RETIRED = ("zh-Hans", "ru")  # 지원 종료 — 경로·파일은 그대로 두고 선택기·hreflang·sitemap 에서만 뺀다
+PAGE_TAGS = LANGS + list(RETIRED)
+DIR = {"zh-Hans": "zh"}  # 옛 경로 유지
+NAMES = languages.NAMES
+OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh-Hant": "zh_TW", "es": "es_ES", "pt-BR": "pt_BR",
+      "fr": "fr_FR", "de": "de_DE", "id": "id_ID", "th": "th_TH", "vi": "vi_VN", "tr": "tr_TR",
+      "zh-Hans": "zh_CN", "ru": "ru_RU"}
 PAGES = ["home", "privacy", "terms", "support", "releases"]
 PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
@@ -43,8 +49,30 @@ def asset(name):
     return "/assets/%s?v=%s" % (name, v)
 
 
+def dirname(tag):
+    return DIR.get(tag, tag)
+
+
+FILE_CODE = {"pt-BR": "pt", "zh-Hans": "zh"}  # content/<code>.json · blog/<code>/ 의 옛 코드
+
+
+def content_code(tag):
+    return FILE_CODE.get(tag, tag)
+
+
+def blog_code(tag):
+    """블로그 글 파일은 11개 언어만 있다 — 나머지(zh-Hant·th·tr)는 영어 글을 보인다."""
+    c = content_code(tag)
+    return c if c in blog.LANGS else "en"
+
+
+def tag_of(code):
+    return {v: k for k, v in FILE_CODE.items()}.get(code, code)
+
+
 def load():
-    return {l: json.loads((ROOT / "content" / (l + ".json")).read_text(encoding="utf-8")) for l in LANGS}
+    return {c: json.loads((ROOT / "content" / (c + ".json")).read_text(encoding="utf-8"))
+            for c in {content_code(t) for t in PAGE_TAGS}}
 
 
 def rich(s):
@@ -55,7 +83,7 @@ def rich(s):
 
 
 def prefix(lang, root):
-    return "" if root else "/" + lang
+    return "" if root else "/" + dirname(lang)
 
 
 def url(lang, page, root):
@@ -110,7 +138,7 @@ def header(t, lang, root):
       </span>
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
-      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
+      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
@@ -124,8 +152,8 @@ def footer(t, lang, page, root):
     p = prefix(lang, root)
     langs = "".join(
         '<a href="%s"%s hreflang="%s" lang="%s">%s</a>' % (
-            (PATH[page] if root and l == "en" else "/" + l + PATH[page]),
-            ' aria-current="true"' if l == lang else "", l, l, NATIVE[l])
+            (PATH[page] if root and l == "en" else "/" + dirname(l) + PATH[page]),
+            ' aria-current="true"' if l == lang else "", l, l, NAMES[l])
         for l in LANGS)
     return f'''
 <footer class="site-footer">
@@ -138,7 +166,7 @@ def footer(t, lang, page, root):
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
-      <a href="{p}/blog/">{esc(blog.ui_all()[lang]['nav'])}</a>
+      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
@@ -154,10 +182,29 @@ HINT = '''<div class="lang-hint" id="langHint" hidden></div>
   var NAMES = %s, CLOSE = %s;
   var hint = document.getElementById('langHint'); if (!hint) return;
   try { if (sessionStorage.getItem('iltonggi_hint_off') === '1') return; } catch (e) {}
-  var pick = null;
-  try { var list = navigator.languages || [navigator.language || '']; for (var i = 0; i < list.length && !pick; i++) { var c = String(list[i]).toLowerCase().split('-')[0]; if (NAMES[c]) pick = c; } } catch (e) {}
-  if (!pick || pick === 'en') return;
-  var a = document.createElement('a'); a.href = '/' + pick + '/'; a.hreflang = pick; a.lang = pick; a.textContent = NAMES[pick] + ' \\u2192';
+  function pick(tag) {
+    var p = String(tag || '').toLowerCase().split(/[-_]/).filter(Boolean);
+    if (!p.length) return null;
+    var c = p[0] === 'in' ? 'id' : p[0], rest = p.slice(1);
+    if (c === 'zh') {
+      var script = rest.filter(function (x) { return x.length === 4 && /^[a-z]+$/.test(x); })[0];
+      var region = rest.filter(function (x) { return x.length === 2 && /^[a-z]+$/.test(x); })[0];
+      return (script ? script === 'hant' : ['tw', 'hk', 'mo'].indexOf(region) >= 0) ? 'zh-Hant' : 'en';
+    }
+    if (c === 'pt') return 'pt-BR';
+    for (var k in NAMES) if (k.toLowerCase() === c) return k;
+    return 'en';
+  }
+  var found = null;
+  try {
+    var list = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < list.length && !found; i++) {
+      var got = pick(list[i]);
+      if (got && (got !== 'en' || /^en([-_]|$)/i.test(String(list[i])))) found = got;
+    }
+  } catch (e) {}
+  if (!found || found === 'en') return;
+  var a = document.createElement('a'); a.href = '/' + found + '/'; a.hreflang = found; a.lang = found; a.textContent = NAMES[found] + ' \\u2192';
   var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', CLOSE); b.textContent = '\\u00d7';
   b.addEventListener('click', function () { hint.hidden = true; try { sessionStorage.setItem('iltonggi_hint_off', '1'); } catch (e) {} });
   hint.appendChild(a); hint.appendChild(b); hint.hidden = false;
@@ -190,7 +237,7 @@ def home(t, lang, root):
     extra = '<script type="application/ld+json">%s</script>\n' % ld
     out = head(t, lang, "home", root, t["home_title"], t["desc"], extra) + header(t, lang, root)
     if root:
-        out += HINT % (json.dumps(NATIVE, ensure_ascii=False), json.dumps(t["hint_close"], ensure_ascii=False))
+        out += HINT % (json.dumps(NAMES, ensure_ascii=False), json.dumps(t["hint_close"], ensure_ascii=False))
     out += f'''<main id="content">
   <section class="hero section">
     <div class="hero__grid container-wide">
@@ -335,11 +382,12 @@ def doc(t, lang, page, root):
 
 def not_found(data):
     t = data["en"]
-    items = "".join(
-        '      <li lang="%s"><span class="msg">%s</span> <a href="%s/">%s</a> · <a href="%s/support/">%s</a></li>\n' % (
-            l, esc(data[l]["nf"]["title"]), "/" + l if l != "en" else "", esc(data[l]["back_home"]),
-            "/" + l if l != "en" else "", esc(data[l]["nav_support"]))
-        for l in LANGS)
+    rows = []
+    for l in LANGS:
+        d = data[content_code(l)]
+        base = "" if l == "en" else "/" + dirname(l)
+        rows.append('      <li lang="%s"><span class="msg">%s</span> <a href="%s/">%s</a> · <a href="%s/support/">%s</a></li>\n' % (
+            l, esc(d["nf"]["title"]), base, esc(d["back_home"]), base, esc(d["nav_support"])))
     out = head(t, "en", "home", True, t["nf"]["title"] + " — " + t["name"], t["nf"]["desc"],
                robots="noindex, follow", canonical=SITE + "/404.html", alt=False) + header(t, "en", True)
     out += f'''<main id="content">
@@ -349,12 +397,32 @@ def not_found(data):
       <h1>{esc(t['nf']['title'])}</h1>
       <p>{esc(t['nf']['text'])}</p>
       <ul class="nf-list">
-{items}      </ul>
+{"".join(rows)}      </ul>
     </div>
   </section>
 </main>
 '''
     return out + footer(t, "en", "home", True).replace('<nav class="foot-langs', '<nav hidden class="foot-langs', 1) + "</body>\n</html>\n"
+
+
+def redirect_page(target):
+    return f'''<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url={target}">
+<title>Português (Brasil) — ipe Studio</title>
+</head>
+<body><p><a href="{target}">{target}</a></p></body>
+</html>
+'''
+
+
+def pt_redirects(blog_extra):
+    """옛 /pt/ 주소 → /pt-BR/ 같은 경로. 이미 퍼진 링크를 살린다."""
+    keys = [PATH[p] for p in PAGES] + [PATH[k] for k, *_ in blog_extra]
+    return {"pt" + path.rstrip("/") + "/index.html": redirect_page(SITE + "/pt-BR" + path) for path in keys}
 
 
 def sitemap(extra=()):
@@ -392,11 +460,12 @@ def build():
     for page in PAGES:
         builder = home if page == "home" else (lambda t, l, r, pg=page: doc(t, l, pg, r))
         files[("index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data["en"], "en", True)
-        for l in LANGS:
-            files["%s/%s" % (l, "index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data[l], l, False)
+        for l in PAGE_TAGS:
+            files["%s/%s" % (dirname(l), "index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data[content_code(l)], l, False)
     files["404.html"] = not_found(data)
     blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
     files.update(blog_files)
+    files.update(pt_redirects(blog_extra))
     files["sitemap.xml"] = sitemap(blog_extra)
     return files
 
@@ -404,7 +473,7 @@ def build():
 def orphans(files):
     """Generated blog files on disk that the build no longer produces (e.g. a removed/renamed post)."""
     found = [f for f in (ROOT / "blog").rglob("*") if f.is_file()] if (ROOT / "blog").is_dir() else []
-    for l in LANGS:
+    for l in ["pt"] + [dirname(t) for t in PAGE_TAGS]:
         if (ROOT / l / "blog").is_dir():
             found += [f for f in (ROOT / l / "blog").rglob("*") if f.is_file()]
     return sorted(str(f.relative_to(ROOT)) for f in found if str(f.relative_to(ROOT)) not in files)

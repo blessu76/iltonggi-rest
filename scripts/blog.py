@@ -276,14 +276,14 @@ def build(bs, data, root=ROOT):
     posts = load_posts(root)
     pages = max(1, -(-len(posts) // PER_PAGE))
     files, extra = {}, []
-    entries = [("en", True)] + [(l, False) for l in LANGS]
+    entries = [("en", True)] + [(tag, False) for tag in bs.PAGE_TAGS]
 
     def reg(key, path, lastmod, freq, prio):
         bs.PATH[key] = path
         extra.append((key, lastmod, freq, prio))
 
-    def rel(lang, root_, path):
-        return ("" if root_ else lang + "/") + path.strip("/") + "/index.html"
+    def rel(tag, root_, path):
+        return ("" if root_ else bs.dirname(tag) + "/") + path.strip("/") + "/index.html"
 
     for n in range(1, pages + 1):
         chunk_ = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
@@ -291,14 +291,14 @@ def build(bs, data, root=ROOT):
     for p in posts:
         reg("blog:" + p["slug"], post_path(p["slug"]), p["modified"].date().isoformat(), None, None)
 
-    for lang, root_ in entries:
-        t, ui = data[lang], UI[lang]
-        pre = bs.prefix(lang, root_)
+    for tag, root_ in entries:
+        t, ui = data[bs.content_code(tag)], UI[bs.blog_code(tag)]
+        pre = bs.prefix(tag, root_)
         for n in range(1, pages + 1):
             chunk = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
-            files[rel(lang, root_, list_path(n))] = list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, bool(posts))
+            files[rel(tag, root_, list_path(n))] = list_page(bs, t, ui, tag, root_, pre, chunk, n, pages, bool(posts))
         for p in posts:
-            files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p, posts)
+            files[rel(tag, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, tag, root_, pre, p, posts)
     files["blog/feed.xml"] = feed(posts)
     files["llms.txt"] = llms_txt(bs, data, UI, posts)
     return files, extra
@@ -308,21 +308,22 @@ def feed_link(ui, lang):
     return '<link rel="alternate" type="application/rss+xml" title="%s" href="/blog/feed.xml">\n' % esc(ui["title"])
 
 
-def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
+def list_page(bs, t, ui, tag, root_, pre, chunk, n, pages, has_posts):
     key = "blog:p%d" % n
+    lang = bs.blog_code(tag)
     title = "%s — %s" % (ui["nav"], t["name"]) if n == 1 else "%s · %s %d — %s" % (ui["nav"], ui["page"], n, t["name"])
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "Blog", "name": ui["title"], "description": ui["lead"], "inLanguage": lang,
-        "url": bs.url(lang, key, root_), "publisher": org(bs),
-        "blogPost": [{"@type": "BlogPosting", "headline": p["files"][lang][0]["title"], "url": bs.url(lang, "blog:" + p["slug"], root_),
+        "url": bs.url(tag, key, root_), "publisher": org(bs),
+        "blogPost": [{"@type": "BlogPosting", "headline": p["files"][lang][0]["title"], "url": bs.url(tag, "blog:" + p["slug"], root_),
                       "datePublished": p["published"].isoformat(timespec="seconds"), "dateModified": p["modified"].isoformat(timespec="seconds")}
                      for p in chunk],
     }, ensure_ascii=False)
     extra = feed_link(ui, lang) + '<script type="application/ld+json">%s</script>\n' % ld
     if n > 1:
-        extra = '<link rel="prev" href="%s">\n' % bs.url(lang, "blog:p%d" % (n - 1), root_) + extra
+        extra = '<link rel="prev" href="%s">\n' % bs.url(tag, "blog:p%d" % (n - 1), root_) + extra
     if n < pages:
-        extra = '<link rel="next" href="%s">\n' % bs.url(lang, "blog:p%d" % (n + 1), root_) + extra
+        extra = '<link rel="next" href="%s">\n' % bs.url(tag, "blog:p%d" % (n + 1), root_) + extra
     cards = ""
     for p in chunk:
         m = p["files"][lang][0]
@@ -340,7 +341,7 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
         older = '<a rel="next" href="%s%s">%s →</a>' % (pre, list_path(n + 1), esc(ui["older"])) if n < pages else ""
         pager = '      <nav class="pager" aria-label="%s">%s<span class="pager__now">%d / %d</span>%s</nav>\n' % (
             esc(ui["page"]), newer, n, pages, older)
-    out = bs.head(t, lang, key, root_, title, ui["lead"], extra) + bs.header(t, lang, root_)
+    out = bs.head(t, tag, key, root_, title, ui["lead"], extra) + bs.header(t, tag, root_)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
@@ -354,15 +355,16 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
   </section>
 </main>
 '''
-    return out + (localtime_script() if chunk else "") + bs.footer(t, lang, key, root_) + "</body>\n</html>\n"
+    return out + (localtime_script() if chunk else "") + bs.footer(t, tag, key, root_) + "</body>\n</html>\n"
 
 
-def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
+def post_page(bs, data, t, ui, tag, root_, pre, p, posts_all):
     key = "blog:" + p["slug"]
+    lang = bs.blog_code(tag)
     meta, body = p["files"][lang]
     iso = p["published"].isoformat(timespec="seconds")
     modified = p["modified"].isoformat(timespec="seconds")
-    can = bs.url(lang, key, root_)
+    can = bs.url(tag, key, root_)
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "BlogPosting", "headline": meta["title"], "description": meta["description"],
         "datePublished": iso, "dateModified": modified, "inLanguage": lang, "url": can,
@@ -371,8 +373,8 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
         "author": {"@id": "https://ipe.rest/#organization"}, "publisher": org(bs),
     }, ensure_ascii=False)
     crumbs = json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": t["name"], "item": bs.url(lang, "home", root_)},
-        {"@type": "ListItem", "position": 2, "name": ui["nav"], "item": bs.url(lang, "blog:p1", root_)},
+        {"@type": "ListItem", "position": 1, "name": t["name"], "item": bs.url(tag, "home", root_)},
+        {"@type": "ListItem", "position": 2, "name": ui["nav"], "item": bs.url(tag, "blog:p1", root_)},
         {"@type": "ListItem", "position": 3, "name": meta["title"], "item": can}]}, ensure_ascii=False)
     extra = (feed_link(ui, lang)
              + '<meta property="article:published_time" content="%s">\n' % iso
@@ -381,13 +383,13 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
              + '<script type="application/ld+json">%s</script>\n' % crumbs)
     ai = ""
     if meta.get("translation_of"):
-        o = meta["translation_of"]
+        o = bs.tag_of(meta["translation_of"])
         orig = bs.url(o, key, False)
         ai = '      <p class="meta ai-note">%s <a href="%s" hreflang="%s">%s</a></p>\n' % (
             esc(ui["ai_note"]), orig.replace(bs.SITE, ""), o, esc(ui["ai_orig"]))
-    out = bs.head(t, lang, key, root_, "%s — %s" % (meta["title"], t["name"]), meta["description"], extra)
+    out = bs.head(t, tag, key, root_, "%s — %s" % (meta["title"], t["name"]), meta["description"], extra)
     out = out.replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
-    out += bs.header(t, lang, root_)
+    out += bs.header(t, tag, root_)
     out += f'''<main id="content">
   <article class="doc">
     <div class="container doc__body post">
@@ -402,7 +404,7 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
   </article>
 </main>
 '''
-    return out + localtime_script() + bs.footer(t, lang, key, root_) + "</body>\n</html>\n"
+    return out + localtime_script() + bs.footer(t, tag, key, root_) + "</body>\n</html>\n"
 
 
 def more_links(p, posts_all, lang, pre, ui):
@@ -430,11 +432,11 @@ def more_links(p, posts_all, lang, pre, ui):
 def llms_txt(bs, data, UI, posts):
     en = data["en"]
     lines = ["# Iltonggi (一統記 · 일통기)", "",
-             "> A Three Kingdoms strategy game for iOS by ipe Studio, in 11 languages. This site has the game page, release notes and a making-of blog (one short note a day).", "",
+             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page, release notes and a making-of blog (one short note a day)." % len(bs.LANGS), "",
              "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
              "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
-             "## Blog (every post exists in %s)" % ", ".join(bs.LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
+             "## Blog (every post exists in %s; other languages show the English post)" % ", ".join(LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
     lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
     if posts:
         for q in posts:
