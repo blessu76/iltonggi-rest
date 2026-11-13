@@ -1,10 +1,11 @@
 ---
 title: Satu nama, satu catatan: nama panggilan dan peringkat
 description: Cara kerja nama panggilan dan layar catatan di Iltonggi, apa yang dihitung empat papan peringkat, dan apa yang masih dipersiapkan.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: id
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Gim perebutan wilayah lebih menyenangkan ketika Anda bisa menengok kembali apa yang telah Anda lakukan. Iltonggi akan mendapatkan nama panggilan dan layar catatan, dan sedang dipersiapkan agar dapat bekerja bersama Game Center. Tulisan ini menjelaskan cara kerjanya. Ini adalah potret dari proses pengembangan, dan sebagian masih dipersiapkan sehingga bisa berubah.

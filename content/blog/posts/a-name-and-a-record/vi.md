@@ -1,10 +1,11 @@
 ---
 title: Một cái tên và một bản ghi, biệt danh và bảng xếp hạng
 description: Cách biệt danh và màn hình bản ghi của Iltonggi hoạt động, bốn bảng xếp hạng tính những gì, và phần nào vẫn đang được chuẩn bị.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: vi
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Trò chơi chiếm đất sẽ thú vị hơn khi bạn có thể nhìn lại những gì mình đã làm. Iltonggi sắp có biệt danh và màn hình bản ghi, và đang được chuẩn bị để hoạt động cùng Game Center. Bài viết này giải thích chúng hoạt động ra sao. Đây là một lát cắt của quá trình phát triển, và một phần vẫn đang được chuẩn bị nên có thể thay đổi.

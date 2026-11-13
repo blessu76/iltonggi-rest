@@ -1,10 +1,11 @@
 ---
 title: Ein Name und ein Rekord, der Spitzname und die Bestenlisten
 description: Wie der Spitzname und der Rekordbildschirm in Iltonggi funktionieren, was die vier Bestenlisten zählen und was noch in Vorbereitung ist.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: de
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Ein Landnahme-Spiel macht mehr Freude, wenn man zurückschauen kann auf das, was man getan hat. Iltonggi bekommt einen Spitznamen und einen Rekordbildschirm und wird darauf vorbereitet, mit Game Center zusammenzuarbeiten. Dieser Beitrag erklärt, wie sie funktionieren. Er ist eine Momentaufnahme der Entwicklung, und Teile davon sind noch in Vorbereitung und können sich ändern.

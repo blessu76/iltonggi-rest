@@ -1,10 +1,11 @@
 ---
 title: Um nome e um registro, o apelido e os rankings
 description: Como funcionam o apelido e a tela de registros do Iltonggi, o que cada um dos quatro rankings conta e o que ainda está em preparação.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: pt
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Um jogo de conquista de terras é mais divertido quando você pode olhar para trás e ver o que fez. O Iltonggi está ganhando um apelido e uma tela de registros, e está sendo preparado para funcionar com o Game Center. Este post explica como eles funcionam. É um retrato do desenvolvimento, e partes dele ainda estão em preparação e podem mudar.

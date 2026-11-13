@@ -1,10 +1,11 @@
 ---
 title: Un nombre y un registro, el apodo y las clasificaciones
 description: Cómo funcionan el apodo y la pantalla de registros de Iltonggi, qué cuenta cada una de las cuatro clasificaciones y qué sigue en preparación.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: es
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Un juego de conquista de tierras es más divertido cuando puedes mirar atrás y ver lo que hiciste. Iltonggi incorpora un apodo y una pantalla de registros, y se está preparando para funcionar con Game Center. Esta entrada explica cómo funcionan. Es una instantánea del desarrollo, y parte de ella sigue en preparación y puede cambiar.

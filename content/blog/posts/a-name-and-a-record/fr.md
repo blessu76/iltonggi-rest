@@ -1,10 +1,11 @@
 ---
 title: Un nom et un record, le pseudo et les classements
 description: Comment fonctionnent le pseudo et l'écran des records d'Iltonggi, ce que comptent les quatre classements et ce qui reste en préparation.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: fr
 translation_of: ko
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 Un jeu de conquête de terres est plus agréable quand on peut se retourner sur ce qu'on a fait. Iltonggi reçoit un pseudo et un écran des records, et se prépare à fonctionner avec Game Center. Cet article explique comment ils fonctionnent. C'est un instantané du développement, et une partie en est encore en préparation et peut changer.

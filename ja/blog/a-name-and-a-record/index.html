@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名前ひとつと記録ひとつ、ニックネームと順位表 — 一統記</title>
+<meta name="description" content="一統記のニックネームと記録画面の仕組み、四つの順位表が数えるもの、まだ準備中のことを記しました。">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/a-name-and-a-record/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/a-name-and-a-record/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="一統記">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="名前ひとつと記録ひとつ、ニックネームと順位表 — 一統記">
+<meta property="og:description" content="一統記のニックネームと記録画面の仕組み、四つの順位表が数えるもの、まだ準備中のことを記しました。">
+<meta property="og:url" content="https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Iltonggi app icon and in-game map of a Three Kingdoms land-grab strategy game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="名前ひとつと記録ひとつ、ニックネームと順位表 — 一統記">
+<meta name="twitter:description" content="一統記のニックネームと記録画面の仕組み、四つの順位表が数えるもの、まだ準備中のことを記しました。">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=53895628">
+<link rel="alternate" type="application/rss+xml" title="一統記の制作過程" href="/blog/feed.xml">
+<meta property="article:published_time" content="2026-11-13T12:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-13T12:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "名前ひとつと記録ひとつ、ニックネームと順位表", "description": "一統記のニックネームと記録画面の仕組み、四つの順位表が数えるもの、まだ準備中のことを記しました。", "datePublished": "2026-11-13T12:00:00+09:00", "dateModified": "2026-11-13T12:00:00+09:00", "inLanguage": "ja", "url": "https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/"}, "image": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}, "author": {"@id": "https://ipe.rest/#organization"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "一統記", "item": "https://iltonggi.ipe.rest/ja/"}, {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://iltonggi.ipe.rest/ja/blog/"}, {"@type": "ListItem", "position": 3, "name": "名前ひとつと記録ひとつ、ニックネームと順位表", "item": "https://iltonggi.ipe.rest/ja/blog/a-name-and-a-record/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">本文へスキップ</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/ja/" aria-label="一統記ホーム">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">一統記</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="メインリンク">
+      <a href="/ja/blog/">ブログ</a>
+      <a href="/ja/support/">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 16</p>
+      <h1>名前ひとつと記録ひとつ、ニックネームと順位表</h1>
+      <p class="meta"><time datetime="2026-11-13T12:00:00+09:00" data-ipe-time>2026-11-13 12:00 KST</time></p>
+      <p class="meta ai-note">この記事はAIによる翻訳です。 <a href="/ko/blog/a-name-and-a-record/" hreflang="ko">原文を読む</a></p>
+      <div class="post__body">
+<p>陣取りゲームは、自分がしてきたことを振り返れるとき、もっと楽しくなります。一統記にニックネームと記録画面が入り、Game Centerとつながるように準備を進めています。この記事では、それがどのように動くのかを記します。開発中の一場面であり、一部はまだ準備中なので、変わることがあります。</p>
+<h2>1. 一度だけ尋ねるニックネーム</h2>
+<p>チュートリアルの対局を含め、最初の一局を終えてメニューに戻ると、アプリがニックネームを一度だけ尋ねます。ニックネームは2〜12文字です。「あとで」で飛ばすことができ、アプリのほうから改めて尋ねることはありません。あとで変えたいときは、記録画面の上のほうで変えます。</p>
+<p>ニックネームは端末にだけ保存されます。アプリの中で呼ばれる名前であり、ほかの端末には同期されません。</p>
+<h2>2. 記録画面</h2>
+<p>メニューの上の行にあるトロフィーのチップを押すと、記録画面が開きます。ニックネームと変更ボタンがあり、その下に自分の記録が表示されます。</p>
+<ul>
+<li>勝利</li>
+<li>天下統一</li>
+<li>第1幕の最短統一(上級)、ターン数で数えます</li>
+<li>最高連勝</li>
+<li>プレイした局数</li>
+</ul>
+<p>この画面は、Game Centerが使えるかどうかにかかわらず、どの端末でも同じように動きます。チュートリアルの対局は、どの記録にも含まれません。</p>
+<h2>3. 四つの順位表</h2>
+<p>Game Centerには、順位表を四つ計画しました。勝利、天下統一、第1幕の最短統一(上級)、最高連勝です。三つは数字が高いほど上位で、最短統一だけは逆に、ターンが少ないほど上位になります。</p>
+<p>最短統一の順位表を第1幕と上級に絞ったのは、意図したことです。幕ごとに地図が違い、易しい・普通・上級は難易度が同じではないため、ほかの幕やほかの難易度のターン数を公平に比べることはできないからです。のちに難易度ごとに順位表を置いたほうがよさそうだと思えば、もう一度考えます。</p>
+<h2>4. 順位表に見える名前</h2>
+<p>あらかじめ知っておいていただきたいのは、この一点です。順位表に見えるのは、アプリのニックネームではなく、Game Centerの名前です。記録画面にもそのように案内を出していて、そこで違う名前が見えても驚かれないようにしてあります。</p>
+<p>スコアの送信は静かに行われます。ログインしていなくても、スコアの送信に失敗しても、アプリは邪魔をせず、あとでもう一度試みます。ログインしなくても、いつもどおりに遊べます。</p>
+<h2>5. まだ残っていること</h2>
+<p>Game Centerとつながる部分はまだ準備中で、今は有効になっているとはお伝えしません。ニックネーム、自分の記録、記録画面は、それに頼っていません。つながる準備が整ったときに、はっきりとお伝えします。</p>
+<h2>最後に</h2>
+<p>この機能が入る前の対局は、さかのぼって数えないので、みんなが0から一緒に始めます。名前ひとつと数字ひとつは小さなものですが、この旅が自分のものだったことを示す跡です。</p>
+<p>// 記録は、のちの自分への約束です。私はここにいた、という。</p>
+      </div>
+      <nav class="post-nav" aria-label="ほかの記事"><ul><li>← 前の記事: <a href="/ja/blog/ask-before-you-pass/">尋ねてから通る、第10幕の土地の主たち</a></li></ul></nav>
+      <section class="post-more"><h2>ほかの記事</h2><ul><li><a href="/ja/blog/two-brothers-one-table/">二人の兄弟と一つの食卓、第9幕で味方を選ぶ</a></li><li><a href="/ja/blog/city-on-the-lake/">湖上の都市、描かないと決めたもの</a></li><li><a href="/ja/blog/three-seas-and-the-cliff/">三つの海と、シミュレーションで見つけた崖</a></li></ul></section>
+      <div class="doc__links"><a href="/ja/blog/">← ブログに戻る</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="法的情報リンク">
+      <a href="/ja/privacy/">プライバシーポリシー</a>
+      <a href="/ja/terms/">利用規約</a>
+      <a href="/ja/blog/">ブログ</a>
+      <a href="/ja/support/">サポート</a>
+    </nav>
+  </div>
+  <nav class="foot-langs container" aria-label="言語"><a href="/en/blog/a-name-and-a-record/" hreflang="en" lang="en">English</a><a href="/ko/blog/a-name-and-a-record/" hreflang="ko" lang="ko">한국어</a><a href="/ja/blog/a-name-and-a-record/" aria-current="true" hreflang="ja" lang="ja">日本語</a><a href="/zh-Hant/blog/a-name-and-a-record/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/es/blog/a-name-and-a-record/" hreflang="es" lang="es">Español</a><a href="/pt-BR/blog/a-name-and-a-record/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/fr/blog/a-name-and-a-record/" hreflang="fr" lang="fr">Français</a><a href="/de/blog/a-name-and-a-record/" hreflang="de" lang="de">Deutsch</a><a href="/id/blog/a-name-and-a-record/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/th/blog/a-name-and-a-record/" hreflang="th" lang="th">ไทย</a><a href="/vi/blog/a-name-and-a-record/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/tr/blog/a-name-and-a-record/" hreflang="tr" lang="tr">Türkçe</a></nav>
+</footer>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');if(a)try{localStorage.setItem("iltonggi-lang",a.getAttribute('hreflang'))}catch(x){}});</script>
+</body>
+</html>

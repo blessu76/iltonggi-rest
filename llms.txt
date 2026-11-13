@@ -11,6 +11,7 @@
 ## Blog (every post exists in en, ko, ja, es, pt, id, vi, fr, de)
 - [Blog index](https://iltonggi.ipe.rest/blog/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
+- [A Name and a Record, Nicknames and the Scoreboard](https://iltonggi.ipe.rest/blog/a-name-and-a-record/): How the nickname and the records screen in Iltonggi work, what the four scoreboards count, and what is still being prepared.
 - [Ask Before You Pass, the Landowners of Act 10](https://iltonggi.ipe.rest/blog/ask-before-you-pass/): Act 10 of Iltonggi has regions you cannot attack, and the reasons we turned a conquest game into a game of asking first.
 - [Two Brothers and One Table, Choosing a Side in Act 9](https://iltonggi.ipe.rest/blog/two-brothers-one-table/): How Act 9 of Iltonggi turns a family quarrel in the Andes into a choice about which brother you stand beside.
 - [City on the Lake, What We Chose Not to Draw](https://iltonggi.ipe.rest/blog/city-on-the-lake/): Act 8 of Iltonggi, a map set on a lake in the highlands, and the lines we drew around what we would leave out of the picture.

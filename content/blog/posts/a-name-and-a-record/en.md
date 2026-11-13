@@ -1,9 +1,10 @@
 ---
 title: A Name and a Record, Nicknames and the Scoreboard
 description: How the nickname and the records screen in Iltonggi work, what the four scoreboards count, and what is still being prepared.
-date: 2026-11-13
 slug: a-name-and-a-record
 lang: en
+date: 2026-11-13
+published: 2026-11-13T12:00:00+09:00
 ---
 
 A land grab is more fun when you can look back at what you did. Iltonggi is getting a nickname and a records screen, and it is being prepared to work with Game Center. This post explains how they work. It is a snapshot of development, and parts of it are still being prepared and may change.
