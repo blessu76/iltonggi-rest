@@ -1,6 +1,6 @@
 #!/bin/bash
 # iltonggi.ipe.rest blog publisher wrapper — template copy; the live one is ~/.ipe/bin/iltonggi_blog_publish.sh (see README.md here).
-# launchd calls this at 12:00 / 12:30 / 13:30 KST. Outside 12:00-17:59 KST it exits at once (ILTONGGI_BLOG_ANYTIME=1 skips the check).
+# ops/slot_gate.py (launchd every 15 min 12:00-18:45 KST) calls this once today's random slot has come, with ILTONGGI_BLOG_ANYTIME=1 (the gate owns the time window). Without the gate it still exits outside 12:00-17:59 KST.
 # It refreshes a dedicated clone and runs scripts/publish_blog.py (one post per KST day, so the retries are harmless). Extra args pass through (--dry-run).
 set -u
 ARGS="$*"

@@ -90,7 +90,7 @@ class Blog(unittest.TestCase):
             shutil.rmtree(tmp)
 
     def test_twitter_card_meta(self):
-        for rel in ("index.html", "ko/support/index.html", "en/blog/index.html", "404.html"):
+        for rel in ("index.html", "ko/support/index.html", "en/journal/index.html", "404.html"):
             h = (bs.ROOT / rel).read_text(encoding="utf-8")
             for m in ('name="twitter:card" content="summary_large_image"', 'name="twitter:title"', 'name="twitter:description"', 'name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=', 'property="og:image:width" content="1200"', 'property="og:image:height" content="630"', 'property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v='):
                 self.assertIn(m, h, (rel, m))
@@ -144,9 +144,10 @@ class Blog(unittest.TestCase):
                     f = tmp / "content" / "blog" / "posts" / ("p%02d" % i) / (l + ".md")
                     f.write_text(f.read_text(encoding="utf-8").replace("date: 2026-10-29", "date: 2026-10-%02d" % (i + 1)), encoding="utf-8")
             files, extra = blog.build(bs, bs.load(), tmp)
-            self.assertIn("blog/index.html", files)
-            self.assertIn("blog/page/2/index.html", files)
-            self.assertIn("ko/blog/p11/index.html", files)
+            self.assertIn("journal/index.html", files)
+            self.assertIn("journal/page/2/index.html", files)
+            self.assertNotIn("ko/journal/page/11/index.html", files)
+            self.assertIn("ko/blog/p11/index.html", files)  # post URLs stay under /blog/<slug>/
             self.assertIn("blog/feed.xml", files)
             page = files["ja/blog/p00/index.html"]
             self.assertEqual(page.count('<link rel="alternate" hreflang="'), 12 + 1)  # 12 langs + x-default
@@ -155,7 +156,11 @@ class Blog(unittest.TestCase):
             self.assertIn("datePublished\": \"2026-10-01T12:00:00+09:00", page)
             self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/ja/blog/p00/"', page)
             self.assertIn("No. 1", page)
-            self.assertIn("No. 12", files["blog/index.html"])
+            self.assertIn("No. 12", files["journal/index.html"])
+            old = files["blog/index.html"]  # legacy list address: same content, canonical -> journal, noindex, not in the sitemap
+            self.assertIn('rel="canonical" href="https://iltonggi.ipe.rest/journal/"', old)
+            self.assertIn("noindex", old)
+            self.assertIn("No. 12", old)
             self.assertIn('"@id": "https://ipe.rest/#organization"', page)
             self.assertIn('"@type": "BreadcrumbList"', page)
             self.assertIn('"@type": "ImageObject"', page)
@@ -165,7 +170,10 @@ class Blog(unittest.TestCase):
             sm = bs.sitemap(extra)
             self.assertIn("<lastmod>2026-10-01</lastmod>", sm)
             self.assertNotIn("<priority>0.7</priority>", sm.split("/blog/")[1])
-            p2 = files["blog/page/2/index.html"]
+            self.assertIn("<loc>https://iltonggi.ipe.rest/journal/</loc>", sm)
+            self.assertIn("<loc>https://iltonggi.ipe.rest/ko/journal/page/2/</loc>", sm)
+            self.assertNotIn("<loc>https://iltonggi.ipe.rest/blog/</loc>", sm)
+            p2 = files["journal/page/2/index.html"]
             self.assertIn("No. 2 ", p2)
             self.assertNotIn("No. 12 ", p2)
             self.assertIn('rel="prev"', p2)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, blog) + 404 + sitemap.
+"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, journal) + 404 + sitemap.
 
     python3 scripts/build_site.py          # write pages (generated files are never hand-edited)
     python3 scripts/build_site.py --check  # fail if the committed pages differ from a fresh build
@@ -159,7 +159,7 @@ def header(t, lang, root):
       </span>
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
-      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
+      <a href="{p}{blog.list_path(1)}">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -186,7 +186,7 @@ def footer(t, lang, page, root):
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
-      <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
+      <a href="{p}{blog.list_path(1)}">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -399,6 +399,7 @@ def redirect_page(target):
 def pt_redirects(blog_extra):
     """Old /pt/ addresses -> the same path under /pt-BR/ (links already out there keep working)."""
     keys = [PATH[p] for p in PAGES] + [PATH[k] for k, *_ in blog_extra]
+    keys += [blog.legacy_list_path(n) for n in range(1, 1 + sum(1 for k, *_ in blog_extra if k.startswith("blog:p") and k[6:].isdigit()))]
     return {LEGACY_PT + path.rstrip("/") + "/index.html": redirect_page(SITE + "/pt-BR" + path) for path in keys}
 
 
@@ -449,10 +450,12 @@ def build():
 
 def orphans(files):
     """Generated blog files on disk that the build no longer produces (e.g. a removed/renamed post)."""
-    found = [f for f in (ROOT / "blog").rglob("*") if f.is_file()] if (ROOT / "blog").is_dir() else []
-    for l in LANGS + [LEGACY_PT]:
-        if (ROOT / l / "blog").is_dir():
-            found += [f for f in (ROOT / l / "blog").rglob("*") if f.is_file()]
+    found = []
+    for sec in ("blog", "journal"):
+        found += [f for f in (ROOT / sec).rglob("*") if f.is_file()] if (ROOT / sec).is_dir() else []
+        for l in LANGS + [LEGACY_PT]:
+            if (ROOT / l / sec).is_dir():
+                found += [f for f in (ROOT / l / sec).rglob("*") if f.is_file()]
     return sorted(str(f.relative_to(ROOT)) for f in found if str(f.relative_to(ROOT)) not in files)
 
 

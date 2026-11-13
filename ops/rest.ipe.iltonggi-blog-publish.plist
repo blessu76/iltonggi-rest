@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template: replace __HOME__ with the home dir (see scripts/launchd/README.md). Live copy: ~/Library/LaunchAgents/rest.ipe.iltonggi-blog-publish.plist
+     Every 15 minutes 12:00-18:45 (Mac local time; the Mac mini runs on KST). The gate (ops/slot_gate.py, installed as ~/.ipe/bin/iltonggi_slot_gate.py)
+     decides whether today's random slot (~/.ipe/queue/iltonggi/slot.json) has come, and only then runs the publish wrapper. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>rest.ipe.iltonggi-blog-publish</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/env</string>
+    <string>python3</string>
+    <string>__HOME__/.ipe/bin/iltonggi_slot_gate.py</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>45</integer></dict>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>__HOME__/.ipe/logs/iltonggi-blog-publish.log</string>
+  <key>StandardErrorPath</key>
+  <string>__HOME__/.ipe/logs/iltonggi-blog-publish.log</string>
+</dict>
+</plist>

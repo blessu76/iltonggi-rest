@@ -37,7 +37,7 @@ ORIGINALS = ("en", "ko")
 KST = dt.timezone(dt.timedelta(hours=9))
 PER_PAGE = 10
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-RESERVED = set(LANGS) | set(SITE_TAGS) | {"feed", "page", "feed.xml"}
+RESERVED = set(LANGS) | set(SITE_TAGS) | {"feed", "page", "feed.xml", "journal"}
 ISO_RE = re.compile(r"^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?\+09:00$")
 
 # Things that must never reach a public post (brief 2026-10-29). A safety net for the publish step — Dane's review is the real gate.
@@ -261,6 +261,11 @@ def ui_all():
 
 
 def list_path(n):
+    """The journal list (canonical). /journal/ is the one list address; the old /blog/ list pages stay as noindex copies whose canonical is the journal (legacy_list_path)."""
+    return "/journal/" if n == 1 else "/journal/page/%d/" % n
+
+
+def legacy_list_path(n):
     return "/blog/" if n == 1 else "/blog/page/%d/" % n
 
 
@@ -303,6 +308,7 @@ def build(bs, data, root=ROOT):
         for n in range(1, pages + 1):
             chunk = posts[(n - 1) * PER_PAGE:n * PER_PAGE]
             files[rel(lang, root_, list_path(n))] = list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, bool(posts))
+            files[rel(lang, root_, legacy_list_path(n))] = list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, bool(posts), legacy=True)
         for p in posts:
             files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p, posts)
     files["blog/feed.xml"] = feed(posts)
@@ -314,7 +320,8 @@ def feed_link(ui, lang):
     return '<link rel="alternate" type="application/rss+xml" title="%s" href="/blog/feed.xml">\n' % esc(ui["title"])
 
 
-def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
+def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts, legacy=False):
+    """legacy=True: the old /blog/ list address - same content, but canonical -> /journal/, noindex (one SEO page, no duplicate)."""
     key = "blog:p%d" % n
     title = "%s — %s" % (ui["nav"], t["name"]) if n == 1 else "%s · %s %d — %s" % (ui["nav"], ui["page"], n, t["name"])
     ld = json.dumps({
@@ -346,11 +353,11 @@ def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts):
         older = '<a rel="next" href="%s%s">%s %s</a>' % (pre, list_path(n + 1), esc(ui["older"]), bs.next_arrow(lang)) if n < pages else ""
         pager = '      <nav class="pager" aria-label="%s">%s<span class="pager__now">%d / %d</span>%s</nav>\n' % (
             esc(ui["page"]), newer, n, pages, older)
-    out = bs.head(t, lang, key, root_, title, ui["lead"], extra) + bs.header(t, lang, root_)
+    out = (bs.head(t, lang, key, root_, title, ui["lead"], extra, robots="noindex,follow") if legacy else bs.head(t, lang, key, root_, title, ui["lead"], extra)) + bs.header(t, lang, root_)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
-      <p class="kicker">// blog</p>
+      <p class="kicker">// journal</p>
       <h1>{esc(ui['title'])}</h1>
       <p class="lead">{esc(ui['lead'])}</p>
       <div class="post-list">
@@ -403,7 +410,7 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
 {ai}      <div class="post__body">
 {render_body(body)}
       </div>
-{more_links(bs, p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}/blog/">{bs.back_arrow(lang)} {esc(ui['back'])}</a></div>
+{more_links(bs, p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}{list_path(1)}">{bs.back_arrow(lang)} {esc(ui['back'])}</a></div>
     </div>
   </article>
 </main>
@@ -439,7 +446,7 @@ def llms_txt(bs, data, UI, posts):
              "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page and a making-of blog (one short note a day)." % len(bs.LANGS), "",
              "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
-             "## Blog (every post exists in %s)" % ", ".join(LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
+             "## Journal (every post exists in %s)" % ", ".join(LANGS), "- [Journal index](%s/journal/)" % bs.SITE]
     lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
     if posts:
         for q in posts:
@@ -457,7 +464,7 @@ def feed(posts):
         items += "  <item>\n    <title>%s</title>\n    <link>%s/blog/%s/</link>\n    <guid>%s/blog/%s/</guid>\n    <pubDate>%s</pubDate>\n    <description>%s</description>\n  </item>\n" % (
             esc(m["title"]), site, p["slug"], site, p["slug"], pub, esc(m["description"]))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>Making of Iltonggi</title>\n'
-            '  <link>%s/blog/</link>\n  <description>How Iltonggi is being made — one short note a day.</description>\n'
+            '  <link>%s/journal/</link>\n  <description>How Iltonggi is being made — one short note a day.</description>\n'
             '  <language>en</language>\n%s</channel>\n</rss>\n' % (site, items))
 
 

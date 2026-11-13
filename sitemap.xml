@@ -937,445 +937,445 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/en/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/en/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/ko/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/ko/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/ja/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/ja/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/zh-Hant/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/zh-Hant/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/es/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/es/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/pt-BR/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/pt-BR/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/fr/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/fr/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/de/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/de/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/id/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/id/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/th/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/th/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/vi/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/vi/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/tr/blog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/"/>
+    <loc>https://iltonggi.ipe.rest/tr/journal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/"/>
     <lastmod>2026-11-13</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/en/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/en/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/ko/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/ko/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/ja/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/ja/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/zh-Hant/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/zh-Hant/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/es/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/es/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/pt-BR/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/pt-BR/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/fr/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/fr/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/de/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/de/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/id/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/id/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/th/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/th/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/vi/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/vi/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://iltonggi.ipe.rest/tr/blog/page/2/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/page/2/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/page/2/"/>
+    <loc>https://iltonggi.ipe.rest/tr/journal/page/2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/journal/page/2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/journal/page/2/"/>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
