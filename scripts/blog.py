@@ -222,6 +222,17 @@ def org(bs):
             "logo": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512}}
 
 
+def og_image(bs):
+    return {"@type": "ImageObject", "url": bs.SITE + bs.asset(OG_IMAGE["path"]), "width": OG_IMAGE["width"], "height": OG_IMAGE["height"]}
+
+
+def about_game(bs, t, lang, root_):
+    """The game a post is about, for `BlogPosting.about` (platform = what is really out: iOS, same as the home page)."""
+    return {"@type": "VideoGame", "name": t["name"], "alternateName": ["Iltonggi", "일통기", "一統記"],
+            "genre": ["Strategy", "Turn-based strategy", "Historical"], "gamePlatform": "iOS", "applicationCategory": "Game",
+            "url": bs.url(lang, "home", root_), "publisher": {"@id": "https://ipe.rest/#organization"}}
+
+
 def body_size(body, lang):
     """-> (count, unit): CJK = characters without whitespace, others = words (SEO guide v1 conversion: 400 words ~ 800 chars, 300 words ~ 500 chars)."""
     if lang in ("ja", "zh", "ko"):
@@ -253,6 +264,75 @@ def warnings(meta, body, lang):
         out.append("%s: title %d chars > %d" % (lang, len(meta["title"]), tl))
     if len(meta["description"]) > dl:
         out.append("%s: description %d chars > %d" % (lang, len(meta["description"]), dl))
+    return out
+
+
+FAQ_H2 = re.compile(r"(?i)\bfaq\b|자주\s*묻는|よくある質問|常见问题|常見問題|preguntas frecuentes|perguntas frequentes|pertanyaan|вопросы и ответы|часто задаваемые|câu hỏi thường gặp|questions fréquentes|häufige fragen|häufig gestellte")
+OG_IMAGE = {"path": "og-share.jpg", "width": 1200, "height": 630}
+
+
+def split_h2(body):
+    """-> [(h2 title | None, [block lines])]: the body cut at `## ` headings (None = text before the first one)."""
+    secs, cur = [[None, []]], None
+    for line in body.replace("\r\n", "\n").split("\n"):
+        m = re.match(r"^## (.+?)\s*$", line)
+        if m:
+            secs.append([m.group(1), []])
+        else:
+            secs[-1][1].append(line)
+    return [(t, ls) for t, ls in secs]
+
+
+def first_paragraph(body):
+    for blk in re.split(r"\n\s*\n", body.strip()):
+        blk = blk.strip()
+        if blk and not blk.startswith(("#", "!", "-", ">")) and not re.match(r"^\d+\. ", blk):
+            return blk
+    return ""
+
+
+def faq_pairs(body):
+    """-> [(question, answer)] from a FAQ section: an `## FAQ`-like h2 with `### question` headings followed by the answer paragraph(s)."""
+    pairs = []
+    for title, lines in split_h2(body):
+        if not title or not FAQ_H2.search(title):
+            continue
+        q, ans = None, []
+        for line in lines + ["### "]:
+            m = re.match(r"^### (.*?)\s*$", line)
+            if m:
+                if q and " ".join(a for a in ans if a.strip()):
+                    pairs.append((q, "\n".join(ans).strip()))
+                q, ans = (m.group(1) or None), []
+            elif q is not None:
+                ans.append(line)
+    return pairs
+
+
+def plain(md):
+    """Inline markdown -> plain text (for JSON-LD answers)."""
+    t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", md)
+    t = re.sub(r"\*\*?([^*]+)\*\*?", r"\1", t)
+    return re.sub(r"\s+", " ", re.sub(r"^[-\d.]+\s+|^> ?", "", t, flags=re.M)).strip()
+
+
+def geo_warnings(body, lang):
+    """GEO structure checks (soft): summary-style first paragraph, H2 sections, FAQ. Originals only."""
+    if lang not in ORIGINALS:
+        return []
+    out = []
+    fp = first_paragraph(body)
+    cjk = lang in ("ja", "zh", "ko")
+    lo, hi = (40, 400) if cjk else (60, 600)
+    if not fp:
+        out.append("%s: geo: no opening paragraph before the first heading" % lang)
+    elif not lo <= len(fp) <= hi:
+        out.append("%s: geo: opening paragraph is %d chars (a 1-3 sentence summary of %d-%d reads best for AI answers)" % (lang, len(fp), lo, hi))
+    h2 = [t for t, _ in split_h2(body) if t]
+    if len(h2) < 2:
+        out.append("%s: geo: only %d `##` sections (use 2+ question-like or topic headings)" % (lang, len(h2)))
+    if not faq_pairs(body):
+        out.append("%s: geo: no FAQ section (`## FAQ` + `### question`) - optional, adds FAQPage JSON-LD" % lang)
     return out
 
 
@@ -312,12 +392,14 @@ def build(bs, data, root=ROOT):
         for p in posts:
             files[rel(lang, root_, post_path(p["slug"]))] = post_page(bs, data, t, ui, lang, root_, pre, p, posts)
     files["blog/feed.xml"] = feed(posts)
+    files["blog/atom.xml"] = atom(posts)
     files["llms.txt"] = llms_txt(bs, data, UI, posts)
     return files, extra
 
 
 def feed_link(ui, lang):
-    return '<link rel="alternate" type="application/rss+xml" title="%s" href="/blog/feed.xml">\n' % esc(ui["title"])
+    return ('<link rel="alternate" type="application/rss+xml" title="%s (RSS)" href="/blog/feed.xml">\n'
+            '<link rel="alternate" type="application/atom+xml" title="%s (Atom)" href="/blog/atom.xml">\n' % (esc(ui["title"]), esc(ui["title"])))
 
 
 def list_page(bs, t, ui, lang, root_, pre, chunk, n, pages, has_posts, legacy=False):
@@ -376,13 +458,21 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
     iso = p["published"].isoformat(timespec="seconds")
     modified = p["modified"].isoformat(timespec="seconds")
     can = bs.url(lang, key, root_)
-    ld = json.dumps({
-        "@context": "https://schema.org", "@type": "BlogPosting", "headline": meta["title"], "description": meta["description"],
-        "datePublished": iso, "dateModified": modified, "inLanguage": lang, "url": can,
+    content_lang = bs.blog_code(lang)
+    n_words, _unit = body_size(body, content_lang)
+    posting = {
+        "@context": "https://schema.org", "@type": "BlogPosting", "@id": can + "#post", "headline": meta["title"], "description": meta["description"],
+        "datePublished": iso, "dateModified": modified, "inLanguage": content_lang, "url": can,
         "mainEntityOfPage": {"@type": "WebPage", "@id": can},
-        "image": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512},
-        "author": {"@id": "https://ipe.rest/#organization"}, "publisher": org(bs),
-    }, ensure_ascii=False)
+        "image": [og_image(bs)], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"},
+        "publisher": org(bs), "isPartOf": {"@type": "Blog", "name": ui["title"], "url": bs.url(lang, "blog:p1", root_)},
+        "about": about_game(bs, t, lang, root_), "articleSection": ui["nav"], "wordCount": n_words,
+    }
+    ld = json.dumps(posting, ensure_ascii=False)
+    faq = faq_pairs(body)
+    faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": content_lang, "mainEntityOfPage": {"@id": can},
+                         "mainEntity": [{"@type": "Question", "name": plain(q), "acceptedAnswer": {"@type": "Answer", "text": plain(a)}}
+                                        for q, a in faq]}, ensure_ascii=False) if faq else ""
     crumbs = json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": t["name"], "item": bs.url(lang, "home", root_)},
         {"@type": "ListItem", "position": 2, "name": ui["nav"], "item": bs.url(lang, "blog:p1", root_)},
@@ -391,7 +481,8 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
              + '<meta property="article:published_time" content="%s">\n' % iso
              + '<meta property="article:modified_time" content="%s">\n' % modified
              + '<script type="application/ld+json">%s</script>\n' % ld
-             + '<script type="application/ld+json">%s</script>\n' % crumbs)
+             + '<script type="application/ld+json">%s</script>\n' % crumbs
+             + ('<script type="application/ld+json">%s</script>\n' % faq_ld if faq_ld else ""))
     ai = ""
     if meta.get("translation_of"):
         o = meta["translation_of"]
@@ -400,6 +491,8 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
             esc(ui["ai_note"]), orig.replace(bs.SITE, ""), o, esc(ui["ai_orig"]))
     out = bs.head(t, lang, key, root_, "%s — %s" % (meta["title"], t["name"]), meta["description"], extra)
     out = out.replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
+    out = re.sub(r'<meta property="og:image:alt" content="[^"]*">', '<meta property="og:image:alt" content="%s">' % esc(meta["title"]), out, count=1)
+    out = out.replace('<meta name="twitter:image" content=', '<meta name="twitter:image:alt" content="%s">\n<meta name="twitter:image" content=' % esc(meta["title"]), 1)
     out += bs.header(t, lang, root_)
     out += f'''<main id="content">
   <article class="doc">
@@ -448,11 +541,16 @@ def llms_txt(bs, data, UI, posts):
              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
              "## Journal (every post exists in %s)" % ", ".join(LANGS), "- [Journal index](%s/journal/)" % bs.SITE]
     lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
+    lines.append("- [Atom feed](%s/blog/atom.xml)" % bs.SITE)
     if posts:
         for q in posts:
             m = q["files"]["en"][0]
             lines.append("- [%s](%s/blog/%s/): %s" % (m["title"], bs.SITE, q["slug"], m["description"]))
     return "\n".join(lines) + "\n"
+
+
+def _last_modified(posts):
+    return max(p["modified"] for p in posts) if posts else dt.datetime(2026, 10, 30, tzinfo=KST)
 
 
 def feed(posts):
@@ -461,11 +559,29 @@ def feed(posts):
     for p in posts[:20]:
         m = p["files"]["en"][0]
         pub = p["published"].strftime("%a, %d %b %Y %H:%M:%S +0900")
-        items += "  <item>\n    <title>%s</title>\n    <link>%s/blog/%s/</link>\n    <guid>%s/blog/%s/</guid>\n    <pubDate>%s</pubDate>\n    <description>%s</description>\n  </item>\n" % (
+        items += ("  <item>\n    <title>%s</title>\n    <link>%s/blog/%s/</link>\n    <guid isPermaLink=\"true\">%s/blog/%s/</guid>\n"
+                  "    <pubDate>%s</pubDate>\n    <dc:creator>ipe Studio</dc:creator>\n    <description>%s</description>\n  </item>\n") % (
             esc(m["title"]), site, p["slug"], site, p["slug"], pub, esc(m["description"]))
-    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>Making of Iltonggi</title>\n'
-            '  <link>%s/journal/</link>\n  <description>How Iltonggi is being made — one short note a day.</description>\n'
-            '  <language>en</language>\n%s</channel>\n</rss>\n' % (site, items))
+    last = _last_modified(posts).strftime("%a, %d %b %Y %H:%M:%S +0900")
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">\n<channel>\n  <title>Making of Iltonggi</title>\n'
+            '  <link>%s/journal/</link>\n  <atom:link href="%s/blog/feed.xml" rel="self" type="application/rss+xml"/>\n'
+            '  <description>How Iltonggi is being made — one short note a day.</description>\n'
+            '  <language>en</language>\n  <lastBuildDate>%s</lastBuildDate>\n%s</channel>\n</rss>\n' % (site, site, last, items))
+
+
+def atom(posts):
+    site = "https://iltonggi.ipe.rest"
+    entries = ""
+    for p in posts[:20]:
+        m = p["files"]["en"][0]
+        entries += ('  <entry>\n    <title>%s</title>\n    <link href="%s/blog/%s/"/>\n    <id>%s/blog/%s/</id>\n'
+                    '    <published>%s</published>\n    <updated>%s</updated>\n    <author><name>ipe Studio</name></author>\n    <summary>%s</summary>\n  </entry>\n') % (
+            esc(m["title"]), site, p["slug"], site, p["slug"], p["published"].isoformat(timespec="seconds"),
+            p["modified"].isoformat(timespec="seconds"), esc(m["description"]))
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">\n  <title>Making of Iltonggi</title>\n'
+            '  <link href="%s/journal/"/>\n  <link rel="self" type="application/atom+xml" href="%s/blog/atom.xml"/>\n  <id>%s/journal/</id>\n'
+            '  <updated>%s</updated>\n  <subtitle>How Iltonggi is being made — one short note a day.</subtitle>\n%s</feed>\n' % (
+                site, site, site, _last_modified(posts).isoformat(timespec="seconds"), entries))
 
 
 def main(argv=None):
@@ -481,7 +597,7 @@ def main(argv=None):
                         raise BlogError("%s.md: %s" % (lang, prob))
                 print("ok  %s/%s" % (kind, d.name))
                 for lang, (meta, body) in files.items():
-                    for w in warnings(meta, body, lang):
+                    for w in warnings(meta, body, lang) + geo_warnings(body, lang):
                         print("  warn %s" % w)
             except BlogError as ex:
                 bad += 1

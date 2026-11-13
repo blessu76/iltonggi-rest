@@ -1,120 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
   <title>Making of Iltonggi</title>
   <link>https://iltonggi.ipe.rest/journal/</link>
+  <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
+  <lastBuildDate>Fri, 13 Nov 2026 12:00:00 +0900</lastBuildDate>
   <item>
     <title>A Name and a Record, Nicknames and the Scoreboard</title>
     <link>https://iltonggi.ipe.rest/blog/a-name-and-a-record/</link>
-    <guid>https://iltonggi.ipe.rest/blog/a-name-and-a-record/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/a-name-and-a-record/</guid>
     <pubDate>Fri, 13 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How the nickname and the records screen in Iltonggi work, what the four scoreboards count, and what is still being prepared.</description>
   </item>
   <item>
     <title>Ask Before You Pass, the Landowners of Act 10</title>
     <link>https://iltonggi.ipe.rest/blog/ask-before-you-pass/</link>
-    <guid>https://iltonggi.ipe.rest/blog/ask-before-you-pass/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/ask-before-you-pass/</guid>
     <pubDate>Thu, 12 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Act 10 of Iltonggi has regions you cannot attack, and the reasons we turned a conquest game into a game of asking first.</description>
   </item>
   <item>
     <title>Two Brothers and One Table, Choosing a Side in Act 9</title>
     <link>https://iltonggi.ipe.rest/blog/two-brothers-one-table/</link>
-    <guid>https://iltonggi.ipe.rest/blog/two-brothers-one-table/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/two-brothers-one-table/</guid>
     <pubDate>Wed, 11 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How Act 9 of Iltonggi turns a family quarrel in the Andes into a choice about which brother you stand beside.</description>
   </item>
   <item>
     <title>City on the Lake, What We Chose Not to Draw</title>
     <link>https://iltonggi.ipe.rest/blog/city-on-the-lake/</link>
-    <guid>https://iltonggi.ipe.rest/blog/city-on-the-lake/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/city-on-the-lake/</guid>
     <pubDate>Tue, 10 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Act 8 of Iltonggi, a map set on a lake in the highlands, and the lines we drew around what we would leave out of the picture.</description>
   </item>
   <item>
     <title>Three Seas, and the Cliff We Found by Simulation</title>
     <link>https://iltonggi.ipe.rest/blog/three-seas-and-the-cliff/</link>
-    <guid>https://iltonggi.ipe.rest/blog/three-seas-and-the-cliff/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/three-seas-and-the-cliff/</guid>
     <pubDate>Mon, 09 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Acts 4 to 6 in Iltonggi, and what two hundred simulated games per difficulty taught us about balance.</description>
   </item>
   <item>
     <title>From Three Kingdoms to a Wider Map, Where Iltonggi Stands Now</title>
     <link>https://iltonggi.ipe.rest/blog/from-three-kingdoms-to-a-wider-map/</link>
-    <guid>https://iltonggi.ipe.rest/blog/from-three-kingdoms-to-a-wider-map/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/from-three-kingdoms-to-a-wider-map/</guid>
     <pubDate>Sun, 08 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>A plain look at how the acts of Iltonggi have grown beyond the Korean peninsula, what the world map does, and what is still being worked on.</description>
   </item>
   <item>
     <title>Your First 20 Turns, Five Things to Watch Early in a Land Grab</title>
     <link>https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/</link>
-    <guid>https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/</guid>
     <pubDate>Sat, 07 Nov 2026 20:35:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How to use troops, actions, scouting and diplomacy in your first Iltonggi game, with a focus on the early flow.</description>
   </item>
   <item>
     <title>From War Drums to Gayageum, We Made the Sounds Ourselves</title>
     <link>https://iltonggi.ipe.rest/blog/making-the-sounds/</link>
-    <guid>https://iltonggi.ipe.rest/blog/making-the-sounds/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/making-the-sounds/</guid>
     <pubDate>Fri, 06 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How Iltonggi&#x27;s 15 effects and 4 music tracks were synthesized by script with no outside audio, and why we remade some of them.</description>
   </item>
   <item>
     <title>Daegaya, 562: The Year the Last Gaya Closed</title>
     <link>https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</link>
-    <guid>https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</guid>
     <pubDate>Thu, 05 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.</description>
   </item>
   <item>
     <title>The Day After You Take a Town: Designing the Aftermath of Conquest</title>
     <link>https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</link>
-    <guid>https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</guid>
     <pubDate>Wed, 04 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.</description>
   </item>
   <item>
     <title>Hanji, Ink and the Seal: Choosing a Face for the Map</title>
     <link>https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</link>
-    <guid>https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</guid>
     <pubDate>Tue, 03 Nov 2026 21:05:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>The materials and rules behind three look drafts for Iltonggi&#x27;s map, redrawing the same land as clay wall, hanji paper and an old surveyor&#x27;s sheet.</description>
   </item>
   <item>
     <title>Gwansanseong, 554: Where an Alliance Ended</title>
     <link>https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</link>
-    <guid>https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</guid>
     <pubDate>Tue, 03 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi&#x27;s diplomacy rules touch it.</description>
   </item>
   <item>
     <title>Keeping Direct Command From Becoming a Cheat: Balancing It by Computer</title>
     <link>https://iltonggi.ipe.rest/blog/direct-command-in-battle/</link>
-    <guid>https://iltonggi.ipe.rest/blog/direct-command-in-battle/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/direct-command-in-battle/</guid>
     <pubDate>Mon, 02 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.</description>
   </item>
   <item>
     <title>The 551 Han River Contest: Unnamed Generals Become &quot;General ○○&quot;</title>
     <link>https://iltonggi.ipe.rest/blog/han-river-551-history-check/</link>
-    <guid>https://iltonggi.ipe.rest/blog/han-river-551-history-check/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/han-river-551-history-check/</guid>
     <pubDate>Sun, 01 Nov 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Building Iltonggi&#x27;s 551 Han River scenario: dropping out-of-era generals, placing Kim Mu-ryeok and the Daegaya king, and why unknown names stay &quot;General ○○.&quot;</description>
   </item>
   <item>
     <title>Four Kingdoms, Four Colors, Still Distinct at Night</title>
     <link>https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</link>
-    <guid>https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</guid>
     <pubDate>Sat, 31 Oct 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.</description>
   </item>
   <item>
     <title>A Three Kingdoms Land Grab for Your Phone</title>
     <link>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</link>
-    <guid>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</guid>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</guid>
     <pubDate>Fri, 30 Oct 2026 12:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
     <description>Why we&#x27;re building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.</description>
   </item>
 </channel>

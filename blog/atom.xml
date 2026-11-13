@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Making of Iltonggi</title>
+  <link href="https://iltonggi.ipe.rest/journal/"/>
+  <link rel="self" type="application/atom+xml" href="https://iltonggi.ipe.rest/blog/atom.xml"/>
+  <id>https://iltonggi.ipe.rest/journal/</id>
+  <updated>2026-11-13T12:00:00+09:00</updated>
+  <subtitle>How Iltonggi is being made — one short note a day.</subtitle>
+  <entry>
+    <title>A Name and a Record, Nicknames and the Scoreboard</title>
+    <link href="https://iltonggi.ipe.rest/blog/a-name-and-a-record/"/>
+    <id>https://iltonggi.ipe.rest/blog/a-name-and-a-record/</id>
+    <published>2026-11-13T12:00:00+09:00</published>
+    <updated>2026-11-13T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How the nickname and the records screen in Iltonggi work, what the four scoreboards count, and what is still being prepared.</summary>
+  </entry>
+  <entry>
+    <title>Ask Before You Pass, the Landowners of Act 10</title>
+    <link href="https://iltonggi.ipe.rest/blog/ask-before-you-pass/"/>
+    <id>https://iltonggi.ipe.rest/blog/ask-before-you-pass/</id>
+    <published>2026-11-12T12:00:00+09:00</published>
+    <updated>2026-11-12T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Act 10 of Iltonggi has regions you cannot attack, and the reasons we turned a conquest game into a game of asking first.</summary>
+  </entry>
+  <entry>
+    <title>Two Brothers and One Table, Choosing a Side in Act 9</title>
+    <link href="https://iltonggi.ipe.rest/blog/two-brothers-one-table/"/>
+    <id>https://iltonggi.ipe.rest/blog/two-brothers-one-table/</id>
+    <published>2026-11-11T12:00:00+09:00</published>
+    <updated>2026-11-11T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How Act 9 of Iltonggi turns a family quarrel in the Andes into a choice about which brother you stand beside.</summary>
+  </entry>
+  <entry>
+    <title>City on the Lake, What We Chose Not to Draw</title>
+    <link href="https://iltonggi.ipe.rest/blog/city-on-the-lake/"/>
+    <id>https://iltonggi.ipe.rest/blog/city-on-the-lake/</id>
+    <published>2026-11-10T12:00:00+09:00</published>
+    <updated>2026-11-10T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Act 8 of Iltonggi, a map set on a lake in the highlands, and the lines we drew around what we would leave out of the picture.</summary>
+  </entry>
+  <entry>
+    <title>Three Seas, and the Cliff We Found by Simulation</title>
+    <link href="https://iltonggi.ipe.rest/blog/three-seas-and-the-cliff/"/>
+    <id>https://iltonggi.ipe.rest/blog/three-seas-and-the-cliff/</id>
+    <published>2026-11-09T12:00:00+09:00</published>
+    <updated>2026-11-09T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Acts 4 to 6 in Iltonggi, and what two hundred simulated games per difficulty taught us about balance.</summary>
+  </entry>
+  <entry>
+    <title>From Three Kingdoms to a Wider Map, Where Iltonggi Stands Now</title>
+    <link href="https://iltonggi.ipe.rest/blog/from-three-kingdoms-to-a-wider-map/"/>
+    <id>https://iltonggi.ipe.rest/blog/from-three-kingdoms-to-a-wider-map/</id>
+    <published>2026-11-08T12:00:00+09:00</published>
+    <updated>2026-11-08T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>A plain look at how the acts of Iltonggi have grown beyond the Korean peninsula, what the world map does, and what is still being worked on.</summary>
+  </entry>
+  <entry>
+    <title>Your First 20 Turns, Five Things to Watch Early in a Land Grab</title>
+    <link href="https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/"/>
+    <id>https://iltonggi.ipe.rest/blog/first-turns-land-grab-tips/</id>
+    <published>2026-11-07T20:35:00+09:00</published>
+    <updated>2026-11-07T20:35:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How to use troops, actions, scouting and diplomacy in your first Iltonggi game, with a focus on the early flow.</summary>
+  </entry>
+  <entry>
+    <title>From War Drums to Gayageum, We Made the Sounds Ourselves</title>
+    <link href="https://iltonggi.ipe.rest/blog/making-the-sounds/"/>
+    <id>https://iltonggi.ipe.rest/blog/making-the-sounds/</id>
+    <published>2026-11-06T12:00:00+09:00</published>
+    <updated>2026-11-06T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How Iltonggi&#x27;s 15 effects and 4 music tracks were synthesized by script with no outside audio, and why we remade some of them.</summary>
+  </entry>
+  <entry>
+    <title>Daegaya, 562: The Year the Last Gaya Closed</title>
+    <link href="https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/"/>
+    <id>https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</id>
+    <published>2026-11-05T12:00:00+09:00</published>
+    <updated>2026-11-05T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.</summary>
+  </entry>
+  <entry>
+    <title>The Day After You Take a Town: Designing the Aftermath of Conquest</title>
+    <link href="https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/"/>
+    <id>https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</id>
+    <published>2026-11-04T12:00:00+09:00</published>
+    <updated>2026-11-04T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.</summary>
+  </entry>
+  <entry>
+    <title>Hanji, Ink and the Seal: Choosing a Face for the Map</title>
+    <link href="https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/"/>
+    <id>https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</id>
+    <published>2026-11-03T21:05:00+09:00</published>
+    <updated>2026-11-03T21:05:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>The materials and rules behind three look drafts for Iltonggi&#x27;s map, redrawing the same land as clay wall, hanji paper and an old surveyor&#x27;s sheet.</summary>
+  </entry>
+  <entry>
+    <title>Gwansanseong, 554: Where an Alliance Ended</title>
+    <link href="https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/"/>
+    <id>https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</id>
+    <published>2026-11-03T12:00:00+09:00</published>
+    <updated>2026-11-03T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi&#x27;s diplomacy rules touch it.</summary>
+  </entry>
+  <entry>
+    <title>Keeping Direct Command From Becoming a Cheat: Balancing It by Computer</title>
+    <link href="https://iltonggi.ipe.rest/blog/direct-command-in-battle/"/>
+    <id>https://iltonggi.ipe.rest/blog/direct-command-in-battle/</id>
+    <published>2026-11-02T12:00:00+09:00</published>
+    <updated>2026-11-02T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How we keep Direct Command in Iltonggi from becoming a cheat by balancing it with simulated battles, why its rules stay simple, and what is still left to do.</summary>
+  </entry>
+  <entry>
+    <title>The 551 Han River Contest: Unnamed Generals Become &quot;General ○○&quot;</title>
+    <link href="https://iltonggi.ipe.rest/blog/han-river-551-history-check/"/>
+    <id>https://iltonggi.ipe.rest/blog/han-river-551-history-check/</id>
+    <published>2026-11-01T12:00:00+09:00</published>
+    <updated>2026-11-01T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Building Iltonggi&#x27;s 551 Han River scenario: dropping out-of-era generals, placing Kim Mu-ryeok and the Daegaya king, and why unknown names stay &quot;General ○○.&quot;</summary>
+  </entry>
+  <entry>
+    <title>Four Kingdoms, Four Colors, Still Distinct at Night</title>
+    <link href="https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/"/>
+    <id>https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</id>
+    <published>2026-10-31T12:00:00+09:00</published>
+    <updated>2026-10-31T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.</summary>
+  </entry>
+  <entry>
+    <title>A Three Kingdoms Land Grab for Your Phone</title>
+    <link href="https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/"/>
+    <id>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</id>
+    <published>2026-10-30T12:00:00+09:00</published>
+    <updated>2026-10-30T12:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>Why we&#x27;re building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.</summary>
+  </entry>
+</feed>

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Post-deploy smoke test for the blog (SEO guide D2): the newest post, all 13 languages, on the live site. Never fails the deploy.
+"""Post-deploy smoke test for the blog (SEO guide D2): the newest post, all 12 languages, on the live site. Never fails the deploy.
 
     python3 scripts/check_blog_live.py            # newest post in sitemap.xml (by lastmod)
     python3 scripts/check_blog_live.py SLUG
 
 Per URL: HTTP 200, canonical == URL, exactly one <h1>, BlogPosting JSON-LD parses with datePublished/dateModified/inLanguage,
-13 hreflang + x-default, URL listed in the live sitemap. Retries for a few minutes (Pages may still be publishing). Exit 1 on any miss.
+12 hreflang + x-default, URL listed in the live sitemap. Retries for a few minutes (Pages may still be publishing). Exit 1 on any miss.
 """
 import json
 import re
@@ -17,7 +17,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://iltonggi.ipe.rest"
-LANGS = ["en", "ko", "ja", "zh", "es", "pt", "id", "ru", "vi", "fr", "de", "ar", "hi"]
+sys.path.insert(0, str(ROOT / "scripts"))
+import build_site  # noqa: E402
+
+LANGS = list(build_site.LANGS)  # the 12 site languages (en ko ja zh-Hant ...)
 NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 
 
@@ -89,7 +92,7 @@ def main(argv=None):
     if bad:
         print("check_blog_live: %s FAILED\n  " % slug + "\n  ".join(bad))
         return 1
-    print("check_blog_live: %s ok - 13 languages 200, canonical/h1/hreflang/JSON-LD/sitemap fine" % slug)
+    print("check_blog_live: %s ok - 12 languages 200, canonical/h1/hreflang/JSON-LD/sitemap fine" % slug)
     return 0
 
 

@@ -64,7 +64,7 @@ def validate(d, slug, root):
     if errs:
         raise blog.BlogError("body too short: " + "; ".join(errs))
     for lang, (meta, body) in files.items():
-        for w in blog.warnings(meta, body, lang):
+        for w in blog.warnings(meta, body, lang) + blog.geo_warnings(body, lang):
             print("publish_blog: WARN " + w)
     return files
 
