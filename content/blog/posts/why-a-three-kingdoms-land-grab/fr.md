@@ -5,6 +5,7 @@ slug: why-a-three-kingdoms-land-grab
 lang: fr
 translation_of: ko
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 
@@ -14,7 +15,7 @@ La conquête de territoire est un jeu simple. On trace des lignes dans la terre,
 
 Notre premier objectif était un jeu qui procure facilement un sentiment d'accomplissement à quelqu'un de fatigué, le temps d'une pause. Il existe déjà beaucoup de jeux de stratégie qui exigent de longues plages de temps, alors nous avons décidé de prendre le contre-pied. Une partie est pensée pour se terminer en 5 à 10 minutes. Nous voulons que la sauvegarde automatique soit la règle, afin que fermer le jeu à n'importe quel moment ne coûte rien, et si vous revenez au menu en pleine partie, un message vous indique « Sauvegardé ».
 
-Pour que les nouveaux venus ne se sentent pas mis sous pression, la première partie est courte, de 20 tours, et l'ennemi n'attaque pas pendant les deux premiers rounds. Nous voulions laisser le temps de se familiariser avec les règles. Nous nous sommes aussi fixé un principe : aucun mécanisme qui vous pousse à vous connecter tous les jours. Quand quelqu'un revient après un moment, au lieu de le presser, le jeu lui signale simplement, en peu de mots, que sa partie est toujours là où il l'avait laissée. Selon nous, un jeu ne doit pas tenir la journée d'une personne entre ses mains. Il doit se glisser discrètement dans ses pauses.
+Pour que les nouveaux venus ne se sentent pas mis sous pression, la première partie est courte, de 20 tours, et l'ennemi n'attaque pas pendant les deux premières manches. Nous voulions laisser le temps de se familiariser avec les règles. Nous nous sommes aussi fixé un principe : aucun mécanisme qui vous pousse à vous connecter tous les jours. Quand quelqu'un revient après un moment, au lieu de le presser, le jeu lui signale simplement, en peu de mots, que sa partie est toujours là où il l'avait laissée. Selon nous, un jeu ne doit pas tenir la journée d'une personne entre ses mains. Il doit se glisser discrètement dans ses pauses.
 
 Nous croyons aussi que le sentiment d'accomplissement ne vient pas seulement des grandes victoires. Gagner une seule ville, ou, grâce à un espion, apercevoir des terres cachées par le brouillard : le but est que de petits moments comme ceux-là se produisent plusieurs fois, même en cinq minutes.
 

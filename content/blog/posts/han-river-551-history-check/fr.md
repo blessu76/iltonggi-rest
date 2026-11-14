@@ -5,6 +5,7 @@ slug: han-river-551-history-check
 lang: fr
 translation_of: ko
 date: 2026-11-01
+copy_review: iris 2026-11-14
 published: 2026-11-01T12:00:00+09:00
 ---
 
@@ -12,7 +13,7 @@ Un nouveau scénario situé en l'an 551 est en préparation pour Iltonggi. C'est
 
 ## L'ossature du scénario
 
-Dans le nouveau scénario, les villes du bassin du fleuve Han, comme Hanseong, Michuhol et Gukwonseong, deviennent le champ de bataille. Si vous vous emparez de ces trois villes et les gardez trois rounds d'affilée, vous gagnez. Goguryeo, qui tient ces terres au départ, gagne en les conservant jusqu'au bout. Il s'appuie sur le même mécanisme que les scénarios d'origine, avec un objectif changé pour coller à l'histoire. Nous avons aussi donné des pondérations aux royaumes menés par l'ordinateur pour qu'ils se dirigent vers cet objectif et, d'après nos notes de développement, quand nous avons lancé des simulations, les parties se concluant autour de l'objectif sont devenues plus nombreuses.
+Dans le nouveau scénario, les villes du bassin du fleuve Han, comme Hanseong, Michuhol et Gukwonseong, deviennent le champ de bataille. Si vous vous emparez de ces trois villes et les gardez trois manches d'affilée, vous gagnez. Goguryeo, qui tient ces terres au départ, gagne en les conservant jusqu'au bout. Il s'appuie sur le même mécanisme que les scénarios d'origine, avec un objectif changé pour coller à l'histoire. Nous avons aussi donné des pondérations aux royaumes menés par l'ordinateur pour qu'ils se dirigent vers cet objectif et, d'après nos notes de développement, quand nous avons lancé des simulations, les parties se concluant autour de l'objectif sont devenues plus nombreuses.
 
 L'écran de choix du scénario comporte aussi un emplacement qui présente, en une ligne, les personnages qui y figurent. Savoir à l'avance qui apparaît dans une année inconnue rend une époque étrangère moins intimidante. Pour remplir cette ligne, il fallait fixer l'époque et l'allégeance de chaque personnage, et c'est ainsi que la vérification historique s'est retrouvée au cœur de la création du scénario.
 
@@ -30,7 +31,7 @@ Kim Mu-ryeok était un fils du roi Guhyeong, dernier roi de Geumgwan Gaya. Mais 
 
 ## Le roi de Gaya que nous n'avons pas nommé
 
-On ne sait pas avec certitude si Doseolji, connu comme le dernier roi de Daegaya, était roi en 551. Une théorie récente affirme qu'il s'agissait de la même personne qu'un noble de Silla du même nom, auquel cas il pouvait se trouver alors à Silla. Là où les avis divergent, nous n'avons pas voulu rien affirmer, et nous avons donc écrit seulement le titre « roi de Daegaya ». Inscrire un nom paraîtrait plus vraisemblable, mais nous pensons que vraisemblable et exact ne sont pas la même chose.
+On ne sait pas avec certitude si Doseolji, connu comme le dernier roi de Daegaya, était roi en 551. Une théorie récente affirme qu'il s'agissait de la même personne qu'un noble de Silla du même nom, auquel cas il pouvait se trouver alors à Silla. Là où les avis divergent, nous n'avons rien voulu affirmer, et nous avons donc écrit seulement le titre « roi de Daegaya ». Inscrire un nom paraîtrait plus vraisemblable, mais nous pensons que vraisemblable et exact ne sont pas la même chose.
 
 ## « Général ○○ »
 

@@ -5,6 +5,7 @@ slug: from-three-kingdoms-to-a-wider-map
 lang: fr
 translation_of: ko
 date: 2026-11-08
+copy_review: iris 2026-11-14
 published: 2026-11-08T12:00:00+09:00
 ---
 
@@ -12,7 +13,7 @@ Iltonggi a commencé comme une petite conquête de terres sur la péninsule cor�
 
 ## 1. L'acte 1 reste le point de départ
 
-L'acte 1, ce sont les Trois Royaumes : Koguryo, Paekche, Silla et Gaya, sur une carte de 24 régions. C'est l'acte où l'on apprend les règles, et c'est là que se joue la première courte partie. Nous voulons qu'il reste l'endroit calme où commencer, aussi vaste que devienne le reste.
+L'acte 1, ce sont les Trois Royaumes : Goguryeo, Baekje, Silla et Gaya, sur une carte de 24 régions. C'est l'acte où l'on apprend les règles, et c'est là que se joue la première courte partie. Nous voulons qu'il reste l'endroit calme où commencer, aussi vaste que devienne le reste.
 
 ## 2. Les actes 2 et 3 déplacent l'horloge
 

@@ -5,6 +5,7 @@ slug: gwansanseong-554-alliance-ends
 lang: fr
 translation_of: ko
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T12:00:00+09:00
 ---
 
@@ -30,7 +31,7 @@ Après la mort du roi Seong, le roi Wideok lui succéda, et les deux royaumes se
 
 ## Les alliances dans le jeu
 
-La diplomatie d'Iltonggi comporte aussi des alliances. On ne peut s'allier qu'à un seul royaume à la fois, l'alliance a une durée, et quand les tours restants sont épuisés, un avis annonce sa fin. Il existe aussi l'attaque en tenaille : si votre allié a attaqué le même royaume pendant le dernier tour de table complet, le bonus de défense de ce royaume diminue. L'image de Baekje et de Silla convoitant ensemble le Han dans le scénario de 551 est proche de cette règle.
+La diplomatie d'Iltonggi comporte aussi des alliances. On ne peut s'allier qu'à un seul royaume à la fois, l'alliance a une durée, et quand les tours restants sont épuisés, un avis annonce sa fin. Il existe aussi l'attaque en tenaille : si votre allié a attaqué le même royaume pendant la dernière manche complète, le bonus de défense de ce royaume diminue. L'image de Baekje et de Silla convoitant ensemble le Han dans le scénario de 551 est proche de cette règle.
 
 Vous pouvez rompre une alliance vous-même, mais cela coûte. La sympathie de l'ancien allié chute fortement, celle des autres royaumes aussi, et un royaume qui a déjà rompu une alliance trouve les autres peu enclins à s'allier avec lui. Le jeu transforme ainsi en valeur l'idée que briser une promesse n'est pas gratuit. Nous ne cherchons pas à expliquer par cette règle l'intériorité de personnages historiques réels.
 

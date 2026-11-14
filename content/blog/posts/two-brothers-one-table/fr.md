@@ -5,6 +5,7 @@ slug: two-brothers-one-table
 lang: fr
 translation_of: ko
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 
