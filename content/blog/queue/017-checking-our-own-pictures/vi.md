@@ -2,6 +2,7 @@
 title: Đối chiếu những bức tranh của chính chúng tôi với quá khứ
 description: Chúng tôi đối chiếu vua, thuyền và pháo đài của Iltonggi với tranh tường và hiện vật khai quật, rồi ghi lại những chỗ không khớp.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: vi
 translation_of: ko
@@ -19,7 +20,7 @@ Bức chân dung vị vua cuối cùng của Gaya đội một chiếc vương m
 
 ## 3. Một chiếc cổ áo đến quá muộn
 
-Cũng bức chân dung ấy có cổ áo tròn. Theo ghi chép, Silla tiếp nhận kiểu cổ áo tròn mang phong cách Trung Hoa đó vào năm 649. Gaya đã sụp đổ từ năm 532. Các bức tranh tường cổ cho thấy cổ áo thẳng hình chữ y. Một chiếc cổ áo đến muộn cả một thế kỷ là chuyện nhỏ, nhưng y phục của một vị vua là thứ đầu tiên người ta nhìn vào khi đọc một gương mặt.
+Cũng bức chân dung ấy có cổ áo tròn. Theo ghi chép, Silla tiếp nhận kiểu cổ áo tròn mang phong cách Trung Hoa đó vào năm 649. Gaya đã sụp đổ từ năm 562. Các bức tranh tường cổ cho thấy cổ áo thẳng hình chữ y. Một chiếc cổ áo đến muộn gần một thế kỷ là chuyện nhỏ, nhưng y phục của một vị vua là thứ đầu tiên người ta nhìn vào khi đọc một gương mặt.
 
 ## 4. Con thuyền Baekje có cánh buồm sai
 

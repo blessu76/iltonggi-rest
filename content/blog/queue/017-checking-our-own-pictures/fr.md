@@ -2,6 +2,7 @@
 title: Confronter nos propres images avec le passé
 description: Nous avons comparé les rois, les navires et les forteresses d'Iltonggi aux peintures murales et aux objets fouillés, et noté ce qui ne collait pas.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: fr
 translation_of: ko
@@ -19,7 +20,7 @@ Le portrait du dernier roi de Gaya portait une couronne avec trois pièces verti
 
 ## 3. Un col arrivé trop tard
 
-Le même portrait avait un col rond. Selon les sources, Silla a adopté ce col rond de style chinois en l'an 649. Gaya était déjà tombée en 532. Les anciennes peintures murales montrent le col droit en forme de y. Un col arrivé un siècle plus tard est une petite chose, mais les vêtements d'un roi sont la première chose à travers laquelle on lit un visage.
+Le même portrait avait un col rond. Selon les sources, Silla a adopté ce col rond de style chinois en l'an 649. Gaya était déjà tombée en 562. Les anciennes peintures murales montrent le col droit en forme de y. Un col arrivé presque un siècle plus tard est une petite chose, mais les vêtements d'un roi sont la première chose à travers laquelle on lit un visage.
 
 ## 4. Un navire de Baekje avec la mauvaise voile
 

@@ -2,6 +2,7 @@
 title: Checking Our Own Pictures Against the Past
 description: We compared Iltonggi's kings, ships and fortress art with murals and excavated objects, and wrote down what did not match.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: en
 ---
@@ -18,7 +19,7 @@ The portrait of Gaya's last king wore a crown with three upright pieces shaped l
 
 ## 3. A collar that arrived too late
 
-The same portrait had a round collar. In the records, Silla adopted that Chinese-style round collar in the year 649. Gaya had already fallen by 532. The old murals show the straight, y-shaped collar. A collar that came a century later is a small thing, but a king's clothes are the first thing a face is read through.
+The same portrait had a round collar. In the records, Silla adopted that Chinese-style round collar in the year 649. Gaya had already fallen by 562. The old murals show the straight, y-shaped collar. A collar that came nearly a century later is a small thing, but a king's clothes are the first thing a face is read through.
 
 ## 4. A Baekje ship with the wrong sail
 

@@ -2,6 +2,7 @@
 title: Conferindo as nossas próprias imagens com o passado
 description: Comparamos os reis, os navios e as fortalezas do Iltonggi com murais e objetos escavados, e anotamos o que não combinava.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: pt
 translation_of: ko
@@ -19,7 +20,7 @@ O retrato do último rei de Gaya usava uma coroa com três peças verticais no f
 
 ## 3. Uma gola que chegou tarde demais
 
-O mesmo retrato tinha uma gola redonda. Segundo os registros, Silla adotou essa gola redonda de estilo chinês no ano 649. Gaya já tinha caído em 532. Os murais antigos mostram a gola reta em forma de y. Uma gola que chegou um século depois é uma coisa pequena, mas a roupa de um rei é a primeira coisa pela qual um rosto é lido.
+O mesmo retrato tinha uma gola redonda. Segundo os registros, Silla adotou essa gola redonda de estilo chinês no ano 649. Gaya já tinha caído em 562. Os murais antigos mostram a gola reta em forma de y. Uma gola que chegou quase um século depois é uma coisa pequena, mas a roupa de um rei é a primeira coisa pela qual um rosto é lido.
 
 ## 4. Um navio de Baekje com a vela errada
 

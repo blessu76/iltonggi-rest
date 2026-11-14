@@ -2,6 +2,7 @@
 title: Unsere eigenen Bilder mit der Vergangenheit abgeglichen
 description: Wir haben die Könige, Schiffe und Festungen in Iltonggi mit Wandmalereien und Grabungsfunden verglichen und notiert, was nicht passte.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: de
 translation_of: ko
@@ -19,7 +20,7 @@ Das Porträt des letzten Königs von Gaya trug eine Krone mit drei aufrechten Te
 
 ## 3. Ein Kragen, der zu spät kam
 
-Dasselbe Porträt hatte einen runden Kragen. Den Aufzeichnungen zufolge übernahm Silla diesen runden Kragen chinesischer Art im Jahr 649. Gaya war bereits 532 untergegangen. Die alten Wandmalereien zeigen den geraden, y-förmigen Kragen. Ein Kragen, der ein Jahrhundert später kam, ist eine Kleinigkeit, aber die Kleidung eines Königs ist das Erste, woran man ein Gesicht liest.
+Dasselbe Porträt hatte einen runden Kragen. Den Aufzeichnungen zufolge übernahm Silla diesen runden Kragen chinesischer Art im Jahr 649. Gaya war bereits 562 untergegangen. Die alten Wandmalereien zeigen den geraden, y-förmigen Kragen. Ein Kragen, der fast ein Jahrhundert später kam, ist eine Kleinigkeit, aber die Kleidung eines Königs ist das Erste, woran man ein Gesicht liest.
 
 ## 4. Ein Baekje-Schiff mit dem falschen Segel
 

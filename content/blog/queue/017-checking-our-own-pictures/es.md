@@ -2,6 +2,7 @@
 title: Comparar nuestras imágenes con el pasado
 description: Comparamos los reyes, los barcos y las fortalezas de Iltonggi con murales y objetos excavados, y anotamos lo que no coincidía.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: es
 translation_of: ko
@@ -19,7 +20,7 @@ El retrato del último rey de Gaya llevaba una corona con tres piezas verticales
 
 ## 3. Un cuello que llegó demasiado tarde
 
-El mismo retrato tenía un cuello redondo. Según los registros, Silla adoptó ese cuello redondo de estilo chino en el año 649. Gaya ya había caído en 532. Los murales antiguos muestran el cuello recto en forma de y. Un cuello que llegó un siglo más tarde es algo pequeño, pero la ropa de un rey es lo primero a través de lo que se lee un rostro.
+El mismo retrato tenía un cuello redondo. Según los registros, Silla adoptó ese cuello redondo de estilo chino en el año 649. Gaya ya había caído en 562. Los murales antiguos muestran el cuello recto en forma de y. Un cuello que llegó casi un siglo más tarde es algo pequeño, pero la ropa de un rey es lo primero a través de lo que se lee un rostro.
 
 ## 4. Un barco de Baekje con la vela equivocada
 

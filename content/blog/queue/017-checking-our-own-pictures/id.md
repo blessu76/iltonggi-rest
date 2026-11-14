@@ -2,6 +2,7 @@
 title: Mencocokkan gambar kami sendiri dengan masa lalu
 description: Kami membandingkan raja, kapal, dan benteng di Iltonggi dengan lukisan dinding dan benda galian, lalu mencatat yang tidak cocok.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: id
 translation_of: ko
@@ -19,7 +20,7 @@ Potret raja terakhir Gaya mengenakan mahkota dengan tiga bagian tegak berbentuk 
 
 ## 3. Kerah yang datang terlalu terlambat
 
-Potret yang sama memiliki kerah bulat. Menurut catatan, Silla mengadopsi kerah bulat bergaya Tiongkok itu pada tahun 649. Gaya sudah runtuh pada tahun 532. Lukisan dinding kuno memperlihatkan kerah lurus berbentuk huruf y. Kerah yang datang satu abad kemudian adalah hal kecil, tetapi pakaian seorang raja adalah hal pertama yang dilihat ketika membaca sebuah wajah.
+Potret yang sama memiliki kerah bulat. Menurut catatan, Silla mengadopsi kerah bulat bergaya Tiongkok itu pada tahun 649. Gaya sudah runtuh pada tahun 562. Lukisan dinding kuno memperlihatkan kerah lurus berbentuk huruf y. Kerah yang datang hampir satu abad kemudian adalah hal kecil, tetapi pakaian seorang raja adalah hal pertama yang dilihat ketika membaca sebuah wajah.
 
 ## 4. Kapal Baekje dengan layar yang salah
 
