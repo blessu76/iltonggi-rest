@@ -4,6 +4,7 @@ description: 大伽倻在管山城與百濟並肩作戰的八年後，史書如�
 slug: daegaya-562-last-gaya
 lang: zh-Hant
 date: 2026-11-05
+copy_review: iris 2026-11-14
 published: 2026-11-05T12:00:00+09:00
 ---
 

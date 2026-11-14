@@ -4,6 +4,7 @@ description: 在 Iltonggi 中，攻下城鎮之後人口與民心會發生什麼
 slug: taking-a-town-aftermath
 lang: zh-Hant
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 

@@ -4,6 +4,7 @@ description: 我們如何替 Iltonggi 的高句麗、百濟、新羅與伽倻挑
 slug: four-kingdoms-four-colors
 lang: zh-Hant
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 

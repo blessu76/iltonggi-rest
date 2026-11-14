@@ -4,6 +4,7 @@ description: 平實地說明 Iltonggi 的各幕如何延伸到朝鮮半島之外
 slug: from-three-kingdoms-to-a-wider-map
 lang: zh-Hant
 date: 2026-11-08
+copy_review: iris 2026-11-14
 published: 2026-11-08T12:00:00+09:00
 ---
 

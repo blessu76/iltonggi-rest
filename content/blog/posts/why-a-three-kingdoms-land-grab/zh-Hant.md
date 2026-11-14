@@ -4,6 +4,7 @@ description: 我們為什麼要做 Iltonggi 這款手機上的三國攻城掠地
 slug: why-a-three-kingdoms-land-grab
 lang: zh-Hant
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 

@@ -4,6 +4,7 @@ description: Iltonggi 的第 9 幕如何把安地斯山脈上的一場家族爭�
 slug: two-brothers-one-table
 lang: zh-Hant
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 

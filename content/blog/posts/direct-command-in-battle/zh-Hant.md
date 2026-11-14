@@ -4,6 +4,7 @@ description: 我們如何以模擬戰鬥調整 Iltonggi 的親自指揮，避免
 slug: direct-command-in-battle
 lang: zh-Hant
 date: 2026-11-02
+copy_review: iris 2026-11-14
 published: 2026-11-02T12:00:00+09:00
 ---
 

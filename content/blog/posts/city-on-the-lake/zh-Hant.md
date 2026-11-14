@@ -4,6 +4,7 @@ description: Iltonggi 的第 8 幕，一張以高地湖泊為背景的地圖，�
 slug: city-on-the-lake
 lang: zh-Hant
 date: 2026-11-10
+copy_review: iris 2026-11-14
 published: 2026-11-10T12:00:00+09:00
 ---
 

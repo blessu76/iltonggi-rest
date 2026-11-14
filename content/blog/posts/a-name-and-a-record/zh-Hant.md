@@ -4,6 +4,7 @@ description: 說明 Iltonggi 的暱稱與紀錄畫面如何運作、四個排行
 slug: a-name-and-a-record
 lang: zh-Hant
 date: 2026-11-13
+copy_review: iris 2026-11-14
 published: 2026-11-13T12:00:00+09:00
 ---
 

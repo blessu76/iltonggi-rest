@@ -4,6 +4,7 @@ description: 在 551 年漢江情境的三年後，百濟與新羅的同盟在�
 slug: gwansanseong-554-alliance-ends
 lang: zh-Hant
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T12:00:00+09:00
 ---
 

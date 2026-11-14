@@ -4,6 +4,7 @@ description: Iltonggi 的第 10 幕有不能攻打的地區，以及我們為什
 slug: ask-before-you-pass
 lang: zh-Hant
 date: 2026-11-12
+copy_review: iris 2026-11-14
 published: 2026-11-12T12:00:00+09:00
 ---
 

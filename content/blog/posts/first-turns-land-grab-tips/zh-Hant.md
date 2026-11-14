@@ -4,6 +4,7 @@ description: 在你的第一場 Iltonggi 遊戲中，如何運用兵力、行動
 slug: first-turns-land-grab-tips
 lang: zh-Hant
 date: 2026-11-07
+copy_review: iris 2026-11-14
 published: 2026-11-07T20:35:00+09:00
 ---
 

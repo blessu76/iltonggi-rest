@@ -4,6 +4,7 @@ description: Iltonggi 的 15 個音效與 4 首音樂，如何不用任何外部
 slug: making-the-sounds
 lang: zh-Hant
 date: 2026-11-06
+copy_review: iris 2026-11-14
 published: 2026-11-06T12:00:00+09:00
 ---
 

@@ -4,6 +4,7 @@ description: Iltonggi 的第 4 至第 6 幕，以及每種難度各模擬兩百�
 slug: three-seas-and-the-cliff
 lang: zh-Hant
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 

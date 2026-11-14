@@ -4,6 +4,7 @@ description: Iltonggi 地圖三種外觀草稿背後的材質與規則，把同�
 slug: hanji-ink-seal-screen
 lang: zh-Hant
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T21:05:00+09:00
 ---
 

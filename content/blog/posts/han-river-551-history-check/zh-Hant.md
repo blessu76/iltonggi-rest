@@ -4,6 +4,7 @@ description: 打造 Iltonggi 的 551 年漢江情境：剔除不屬於該時代�
 slug: han-river-551-history-check
 lang: zh-Hant
 date: 2026-11-01
+copy_review: iris 2026-11-14
 published: 2026-11-01T12:00:00+09:00
 ---
 
