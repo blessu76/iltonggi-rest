@@ -4,6 +4,7 @@ description: How to use troops, actions, scouting and diplomacy in your first Il
 slug: first-turns-land-grab-tips
 lang: en
 date: 2026-11-07
+copy_review: iris 2026-11-14
 published: 2026-11-07T20:35:00+09:00
 ---
 

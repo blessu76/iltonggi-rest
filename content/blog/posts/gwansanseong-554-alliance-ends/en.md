@@ -4,6 +4,7 @@ description: Three years after the 551 Han River scenario, the Baekje-Silla alli
 slug: gwansanseong-554-alliance-ends
 lang: en
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T12:00:00+09:00
 ---
 

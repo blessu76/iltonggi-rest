@@ -4,6 +4,7 @@ description: Act 10 of Iltonggi has regions you cannot attack, and the reasons w
 slug: ask-before-you-pass
 lang: en
 date: 2026-11-12
+copy_review: iris 2026-11-14
 published: 2026-11-12T12:00:00+09:00
 ---
 

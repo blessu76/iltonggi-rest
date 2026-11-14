@@ -4,6 +4,7 @@ description: Why we're building Iltonggi, a Three Kingdoms land-grab game for yo
 slug: why-a-three-kingdoms-land-grab
 lang: en
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 

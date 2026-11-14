@@ -4,6 +4,7 @@ description: A plain look at how the acts of Iltonggi have grown beyond the Kore
 slug: from-three-kingdoms-to-a-wider-map
 lang: en
 date: 2026-11-08
+copy_review: iris 2026-11-14
 published: 2026-11-08T12:00:00+09:00
 ---
 

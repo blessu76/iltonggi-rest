@@ -4,6 +4,7 @@ description: How Iltonggi's 15 effects and 4 music tracks were synthesized by sc
 slug: making-the-sounds
 lang: en
 date: 2026-11-06
+copy_review: iris 2026-11-14
 published: 2026-11-06T12:00:00+09:00
 ---
 

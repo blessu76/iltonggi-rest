@@ -4,6 +4,7 @@ description: How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltong
 slug: four-kingdoms-four-colors
 lang: en
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 

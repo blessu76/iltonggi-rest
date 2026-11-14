@@ -4,6 +4,7 @@ description: How Act 9 of Iltonggi turns a family quarrel in the Andes into a ch
 slug: two-brothers-one-table
 lang: en
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 

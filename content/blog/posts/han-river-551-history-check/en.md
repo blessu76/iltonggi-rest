@@ -4,6 +4,7 @@ description: Building Iltonggi's 551 Han River scenario: dropping out-of-era gen
 slug: han-river-551-history-check
 lang: en
 date: 2026-11-01
+copy_review: iris 2026-11-14
 published: 2026-11-01T12:00:00+09:00
 ---
 

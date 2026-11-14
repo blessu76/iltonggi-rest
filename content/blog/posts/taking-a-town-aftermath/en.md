@@ -4,6 +4,7 @@ description: What happens to population and mood right after you take a town in 
 slug: taking-a-town-aftermath
 lang: en
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
@@ -17,13 +18,13 @@ Mood has different effects at each stage. In the development values, 80 or above
 
 ## What happens when resentment builds
 
-A town whose mood falls below 20 becomes noticeably weak. Its income drops to zero, troop production stops, and one soldier leaves every turn. Its defence weakens too. An uneasy town, with mood from 20 to 39, loses 5 percent of its defence, and below 20, at the resentful stage, it loses 10 percent.
+A town whose mood falls below 20 becomes noticeably weak. Its income drops to zero, troop production stops, and one soldier leaves every turn. Its defense weakens too. An uneasy town, with mood from 20 to 39, loses 5 percent of its defense, and below 20, at the resentful stage, it loses 10 percent.
 
-If it gets worse and mood hits the floor, the town rebels. It becomes land that belongs to no kingdom, only half its troops remain, and any general stationed there falls back to a neighbouring town of the same kingdom, or dies if there is nowhere to go. Royal seats have a floor that keeps mood from dropping below 20, though, and the easiest difficulty has no rebellions.
+If it gets worse and mood hits the floor, the town rebels. It becomes land that belongs to no kingdom, only half its troops remain, and any general stationed there falls back to a neighboring town of the same kingdom, or dies if there is nowhere to go. Royal seats have a floor that keeps mood from dropping below 20, though, and the easiest difficulty has no rebellions.
 
 ## What time solves, and what people have to solve
 
-Conquered land is not uneasy forever. Mood recovers slowly, 4 per turn, toward the peacetime level of 70. Starting from 40, that takes a little over eight turns. Population also refills by 30 percent of the shortfall each turn while mood stays at 20 or above.
+Conquered land is not uneasy forever. Mood recovers slowly, 4 per turn, toward the peacetime level of 70. Starting from 40, that takes about eight turns. Population also refills by 30 percent of the shortfall each turn while mood stays at 20 or above.
 
 If you want to settle things faster, though, you have to step in. Spending wealth on a feast raises mood. The screen shows advice such as "On the verge of revolt, hold a feast", and the point is that it makes you choose between spending on the feast and spending on troops. You have already spent troops to win, so whether you spend wealth to calm the land you took or go straight for the next town changes the flow of the game.
 

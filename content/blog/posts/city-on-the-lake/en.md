@@ -4,6 +4,7 @@ description: Act 8 of Iltonggi, a map set on a lake in the highlands, and the li
 slug: city-on-the-lake
 lang: en
 date: 2026-11-10
+copy_review: iris 2026-11-14
 published: 2026-11-10T12:00:00+09:00
 ---
 

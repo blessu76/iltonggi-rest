@@ -4,6 +4,7 @@ description: Acts 4 to 6 in Iltonggi, and what two hundred simulated games per d
 slug: three-seas-and-the-cliff
 lang: en
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 
