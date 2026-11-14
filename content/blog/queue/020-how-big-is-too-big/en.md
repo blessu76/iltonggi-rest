@@ -2,11 +2,12 @@
 title: How Big Is Too Big for a Phone Game?
 description: Why we put a size budget on Iltonggi's art, sound and fonts, and the guard that fails the build when we go over.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: en
 ---
 
-A game that takes a long time to download, or a long time to show its first screen, loses people before they play. Iltonggi carries a lot: old-style fonts, paintings, music and sound effects, and text in eleven languages. If nobody watches, it only ever grows. So we set a budget, and made the computer enforce it. The game is still in development.
+A game that takes a long time to download, or a long time to show its first screen, loses people before they play. Iltonggi carries a lot: old-style fonts, paintings, music and sound effects, and text in many languages. If nobody watches, it only ever grows. So we set a budget, and made the computer enforce it. The game is still in development.
 
 ## What we measure
 
@@ -20,7 +21,7 @@ We count only the files the app actually bundles, not everything in the project.
 | Photos (23) | 3.55 MB | 4.2 MB |
 | Read before the first frame | 1.48 MB | 1.7 MB |
 
-Every limit leaves roughly 15 to 18 percent of room. We also ban formats that should never ship, such as uncompressed audio and layered image files.
+Every limit leaves roughly 13 to 16 percent of room. We also ban formats that should never ship, such as uncompressed audio and layered image files.
 
 ## A guard, not a promise
 

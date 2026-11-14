@@ -2,12 +2,13 @@
 title: Wie groß ist zu groß für ein Handyspiel?
 description: Warum wir für Bilder, Klänge und Schriften von Iltonggi ein Größenbudget festgelegt haben und welche Prüfung den Build bei Überschreitung scheitern lässt.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: de
 translation_of: ko
 ---
 
-Ein Spiel, dessen Download lange dauert oder das seinen ersten Bildschirm spät zeigt, verliert Menschen, bevor sie spielen. Iltonggi enthält viel: Schriften im alten Stil, Gemälde, Musik und Soundeffekte sowie Texte in elf Sprachen. Wenn niemand aufpasst, wächst es nur. Also haben wir ein Budget festgelegt und den Computer darüber wachen lassen. Das Spiel ist noch in Entwicklung.
+Ein Spiel, dessen Download lange dauert oder das seinen ersten Bildschirm spät zeigt, verliert Menschen, bevor sie spielen. Iltonggi enthält viel: Schriften im alten Stil, Gemälde, Musik und Soundeffekte sowie Texte in mehreren Sprachen. Wenn niemand aufpasst, wächst es nur. Also haben wir ein Budget festgelegt und den Computer darüber wachen lassen. Das Spiel ist noch in Entwicklung.
 
 ## Was wir messen
 
@@ -21,7 +22,7 @@ Wir zählen nur die Dateien, die die App tatsächlich mitliefert, nicht alles im
 | Fotos (23) | 3,55 MB | 4,2 MB |
 | Vor dem ersten Bild gelesen | 1,48 MB | 1,7 MB |
 
-Jede Grenze lässt etwa 15 bis 18 Prozent Spielraum. Außerdem verbieten wir Formate, die nie ausgeliefert werden sollten, etwa unkomprimiertes Audio und Bilddateien mit Ebenen.
+Jede Grenze lässt etwa 13 bis 16 Prozent Spielraum. Außerdem verbieten wir Formate, die nie ausgeliefert werden sollten, etwa unkomprimiertes Audio und Bilddateien mit Ebenen.
 
 ## Eine Prüfung, kein Versprechen
 

@@ -2,12 +2,13 @@
 title: Sebesar Apa yang Terlalu Besar untuk Gim Ponsel?
 description: Mengapa kami menetapkan anggaran ukuran untuk gambar, suara, dan huruf Iltonggi, serta penjaga yang menggagalkan build jika terlampaui.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: id
 translation_of: ko
 ---
 
-Gim yang lama diunduh, atau lama menampilkan layar pertamanya, kehilangan orang sebelum mereka bermain. Iltonggi memuat banyak hal: huruf bergaya kuno, lukisan, musik dan efek suara, serta teks dalam sebelas bahasa. Jika tak ada yang mengawasi, ia hanya akan membesar. Maka kami menetapkan anggaran dan menyerahkan penegakannya kepada komputer. Gim ini masih dalam pengembangan.
+Gim yang lama diunduh, atau lama menampilkan layar pertamanya, kehilangan orang sebelum mereka bermain. Iltonggi memuat banyak hal: huruf bergaya kuno, lukisan, musik dan efek suara, serta teks dalam banyak bahasa. Jika tak ada yang mengawasi, ia hanya akan membesar. Maka kami menetapkan anggaran dan menyerahkan penegakannya kepada komputer. Gim ini masih dalam pengembangan.
 
 ## Apa yang kami ukur
 
@@ -21,7 +22,7 @@ Kami hanya menghitung berkas yang benar-benar dikemas dalam aplikasi, bukan semu
 | Foto (23) | 3,55 MB | 4,2 MB |
 | Dibaca sebelum bingkai pertama | 1,48 MB | 1,7 MB |
 
-Setiap batas menyisakan ruang sekitar 15 sampai 18 persen. Kami juga melarang format yang tak boleh dikirim, seperti audio tanpa kompresi dan berkas gambar berlapis.
+Setiap batas menyisakan ruang sekitar 13 sampai 16 persen. Kami juga melarang format yang tak boleh dikirim, seperti audio tanpa kompresi dan berkas gambar berlapis.
 
 ## Penjaga, bukan janji
 

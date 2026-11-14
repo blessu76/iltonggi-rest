@@ -2,12 +2,13 @@
 title: Trò chơi điện thoại lớn đến mức nào là quá lớn
 description: Chúng tôi ghi lại cách đặt ngân sách kích thước cho hình ảnh, âm thanh và phông chữ của Iltonggi, và để bản dựng dừng lại khi vượt ngân sách.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: vi
 translation_of: ko
 ---
 
-Một trò chơi tải về lâu hoặc màn hình đầu tiên hiện chậm sẽ mất người chơi trước cả khi họ kịp thử. Iltonggi chứa rất nhiều thứ. Có phông chữ mang cảm giác cổ xưa, hình ảnh, nhạc và hiệu ứng âm thanh, và chữ của mười một ngôn ngữ. Nếu không ai trông chừng, nó chỉ có thể to ra. Vì vậy chúng tôi đặt ra một ngân sách và để máy tính giữ nó. Trò chơi vẫn đang được phát triển.
+Một trò chơi tải về lâu hoặc màn hình đầu tiên hiện chậm sẽ mất người chơi trước cả khi họ kịp thử. Iltonggi chứa rất nhiều thứ. Có phông chữ mang cảm giác cổ xưa, hình ảnh, nhạc và hiệu ứng âm thanh, và chữ của nhiều ngôn ngữ. Nếu không ai trông chừng, nó chỉ có thể to ra. Vì vậy chúng tôi đặt ra một ngân sách và để máy tính giữ nó. Trò chơi vẫn đang được phát triển.
 
 ## Đo cái gì
 
@@ -21,7 +22,7 @@ Chúng tôi không đếm mọi thứ có trong dự án, mà chỉ đếm nhữ
 | Ảnh (23 ảnh) | 3,55 MB | 4,2 MB |
 | Phần đọc trước màn hình đầu tiên | 1,48 MB | 1,7 MB |
 
-Mỗi giới hạn chừa khoảng 15 đến 18 phần trăm dư địa. Chúng tôi cũng chặn những định dạng không nên được đóng gói, chẳng hạn âm thanh chưa nén hoặc tệp hình ảnh có nhiều lớp.
+Mỗi giới hạn chừa khoảng 13 đến 16 phần trăm dư địa. Chúng tôi cũng chặn những định dạng không nên được đóng gói, chẳng hạn âm thanh chưa nén hoặc tệp hình ảnh có nhiều lớp.
 
 ## Một cơ chế, không phải một lời hứa
 

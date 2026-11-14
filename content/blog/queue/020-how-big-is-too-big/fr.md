@@ -2,12 +2,13 @@
 title: À partir de quelle taille un jeu mobile est-il trop gros ?
 description: Pourquoi nous avons fixé un budget de taille pour les images, les sons et les polices d'Iltonggi, et la garde qui fait échouer la compilation en cas de dépassement.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: fr
 translation_of: ko
 ---
 
-Un jeu long à télécharger, ou long à afficher son premier écran, perd des gens avant qu'ils jouent. Iltonggi contient beaucoup de choses : des polices d'allure ancienne, des peintures, de la musique et des effets sonores, et des textes en onze langues. Si personne n'y veille, il ne fait que grossir. Nous avons donc fixé un budget et chargé l'ordinateur de le faire respecter. Le jeu est encore en développement.
+Un jeu long à télécharger, ou long à afficher son premier écran, perd des gens avant qu'ils jouent. Iltonggi contient beaucoup de choses : des polices d'allure ancienne, des peintures, de la musique et des effets sonores, et des textes en plusieurs langues. Si personne n'y veille, il ne fait que grossir. Nous avons donc fixé un budget et chargé l'ordinateur de le faire respecter. Le jeu est encore en développement.
 
 ## Ce que nous mesurons
 
@@ -21,7 +22,7 @@ Nous ne comptons que les fichiers réellement intégrés à l'application, pas t
 | Photos (23) | 3,55 Mo | 4,2 Mo |
 | Lu avant la première image | 1,48 Mo | 1,7 Mo |
 
-Chaque limite laisse environ 15 à 18 % de marge. Nous interdisons aussi les formats qui ne doivent jamais être livrés, comme l'audio non compressé et les images à calques.
+Chaque limite laisse environ 13 à 16 % de marge. Nous interdisons aussi les formats qui ne doivent jamais être livrés, comme l'audio non compressé et les images à calques.
 
 ## Une garde, pas une promesse
 
