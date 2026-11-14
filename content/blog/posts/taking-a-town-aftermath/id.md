@@ -5,6 +5,7 @@ slug: taking-a-town-aftermath
 lang: id
 translation_of: ko
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
@@ -24,7 +25,7 @@ Jika memburuk dan semangat menyentuh dasar, pemberontakan pecah. Kota menjadi ta
 
 ## Yang diselesaikan waktu dan yang harus diselesaikan manusia
 
-Wilayah taklukan tidak gelisah selamanya. Semangat rakyat pulih perlahan, 4 per giliran, menuju tingkat masa damai yaitu 70. Dimulai dari 40, dibutuhkan sedikit lebih dari delapan giliran untuk mencapai 70. Jumlah penduduk juga terisi kembali 30 persen dari kekurangannya setiap giliran selama semangat 20 atau lebih.
+Wilayah taklukan tidak gelisah selamanya. Semangat rakyat pulih perlahan, 4 per giliran, menuju tingkat masa damai yaitu 70. Dimulai dari 40, dibutuhkan sekitar delapan giliran untuk mencapai 70. Jumlah penduduk juga terisi kembali 30 persen dari kekurangannya setiap giliran selama semangat 20 atau lebih.
 
 Tetapi jika ingin menenangkan lebih cepat, manusia harus bertindak. Menghabiskan kekayaan untuk pesta akan menaikkan semangat. Di layar muncul saran seperti "Hampir memberontak: adakan pesta", dan maksudnya adalah memaksa pemain memilih antara membelanjakan untuk pesta atau untuk pasukan. Pasukan sudah terpakai untuk menang, jadi memutuskan apakah kekayaan dipakai menenangkan tanah yang didapat atau langsung menyerang kota berikutnya akan mengubah alur permainan.
 

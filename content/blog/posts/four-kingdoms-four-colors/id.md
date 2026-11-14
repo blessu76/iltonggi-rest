@@ -5,6 +5,7 @@ slug: four-kingdoms-four-colors
 lang: id
 translation_of: ko
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 

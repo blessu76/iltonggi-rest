@@ -5,10 +5,11 @@ slug: two-brothers-one-table
 lang: id
 translation_of: ko
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 
-Babak 9, «Jalan di Atas Awan», berlatar Andes sekitar akhir 1520-an, ketika dua saudara masing-masing memegang separuh sebuah kerajaan besar dan tidak bisa saling mengalah. Ini babak pertama yang akhirnya bergantung pada siapa yang Anda jadikan kawan. Tulisan ini menjelaskan bagaimana cara kerjanya dan mengapa kami membuatnya demikian. Babak ini masih dalam pengembangan dan bisa berubah.
+Babak 9, «Jalan di Atas Awan», berlatar Andes sekitar akhir 1520-an, ketika dua saudara masing-masing memegang separuh sebuah kerajaan besar dan tidak bisa saling mengalah. Ini babak pertama yang akhir ceritanya bergantung pada siapa yang Anda jadikan kawan. Tulisan ini menjelaskan bagaimana cara kerjanya dan mengapa kami membuatnya demikian. Babak ini masih dalam pengembangan dan bisa berubah.
 
 ## 1. Tiga bangsa di peta vertikal
 
@@ -16,7 +17,7 @@ Peta ini memiliki 21 wilayah dan tiga bangsa: Quito di utara, Cusco di selatan, 
 
 ## 2. Dua saudara yang tidak bisa bersekutu
 
-Kedua bangsa saudara itu memulai dengan hubungan yang buruk, dan mereka sama sekali tidak bisa bersekutu satu sama lain. Usulan di antara mereka ditolak, dan komputer bahkan tidak akan mempertimbangkannya. Aturan itu adalah inti babak ini. Anda bisa berteman dengan yang satu, dengan yang lain, atau untuk sementara dengan keduanya tidak, tetapi Anda tidak bisa mengumpulkan keduanya di bawah satu kesepakatan.
+Kedua bangsa saudara itu memulai dengan hubungan yang buruk, dan mereka sama sekali tidak bisa bersekutu satu sama lain. Usulan di antara mereka ditolak, dan komputer bahkan tidak akan mempertimbangkannya. Aturan itu adalah inti babak ini. Anda bisa berteman dengan yang satu, dengan yang lain, atau untuk sementara tidak dengan keduanya, tetapi Anda tidak bisa mengumpulkan keduanya di bawah satu kesepakatan.
 
 ## 3. Akhir yang mengingat di sisi siapa Anda berdiri
 

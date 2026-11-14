@@ -5,6 +5,7 @@ slug: hanji-ink-seal-screen
 lang: id
 translation_of: ko
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T21:05:00+09:00
 ---
 

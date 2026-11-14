@@ -5,6 +5,7 @@ slug: why-a-three-kingdoms-land-grab
 lang: id
 translation_of: ko
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 
@@ -22,7 +23,7 @@ Kami percaya rasa berhasil tidak hanya datang dari kemenangan besar. Merebut sat
 
 Peta dibagi menjadi distrik. Anda mengetuk sebuah distrik, mengumpulkan dan melatih prajurit, lalu menyerang distrik tetangga. Semakin besar distrik, semakin banyak pasukan yang terkumpul: ibu kota besar, pedesaan kecil. Perbedaan sederhana ini saja sudah memunculkan pertanyaan mana yang diserang lebih dulu dan mana yang dijaga.
 
-Seperti dalam catur, saat permainan berakhir ketika raja jatuh, kami ingin mempertahankan sensasi menancapkan bendera di benteng raja untuk menentukan hasil. Anda tidak perlu menelan setiap jengkal tanah; satu langkah menentukan bisa mengakhiri ronde, dan itu cocok dengan ronde yang singkat. Wilayah yang belum terlihat tertutup kabut dan hanya bisa diintip dengan mengirim mata-mata. Menurut kami, peta yang membuat kita maju sambil penasaran pada hal yang belum diketahui lebih banyak bercerita daripada peta yang terlihat seluruhnya.
+Seperti dalam janggi (catur Korea), saat permainan berakhir ketika raja jatuh, kami ingin mempertahankan sensasi menancapkan bendera di benteng raja untuk menentukan hasil. Anda tidak perlu menelan setiap jengkal tanah; satu langkah menentukan bisa mengakhiri ronde, dan itu cocok dengan ronde yang singkat. Wilayah yang belum terlihat tertutup kabut dan hanya bisa diintip dengan mengirim mata-mata. Menurut kami, peta yang membuat kita maju sambil penasaran pada hal yang belum diketahui lebih banyak bercerita daripada peta yang terlihat seluruhnya.
 
 ## Kami mulai dari yang terkecil
 
