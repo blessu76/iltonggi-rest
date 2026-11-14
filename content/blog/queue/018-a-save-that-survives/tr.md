@@ -2,6 +2,7 @@
 title: Bozulsa Bile Hayatta Kalan Bir Kayıt Dosyası
 description: Iltonggi, kayıt dosyası yazılırken yarıda kesilirse ilerlemenizi nasıl korur ve bunu gerçek bir telefonu bozmadan nasıl test ettik.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: tr
 ---

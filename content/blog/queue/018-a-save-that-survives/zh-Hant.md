@@ -2,6 +2,7 @@
 title: 就算檔案壞了也能保住的存檔
 description: 說明 Iltonggi 如何在存檔寫到一半被中斷時保護你的進度，以及我們如何在不弄壞真實手機的情況下測試。
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: zh-Hant
 ---

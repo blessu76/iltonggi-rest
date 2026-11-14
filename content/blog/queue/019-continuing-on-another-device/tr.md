@@ -2,11 +2,12 @@
 title: Başka Bir Cihazda Kaldığınız Yerden Devam Etmek
 description: Iltonggi'de bir oyuna Apple cihazları arasında nasıl devam edildiği ve iki cihaz uyuşmadığında seçtiğimiz kurallar.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: tr
 ---
 
-En başta istek basitti: bir Apple cihazında oynuyorsanız, aynı hesapla bir başkasında devam edebilmelisiniz. Küçük bir şey gibi duruyor, ama zor olan bir kaydı kopyalamak değil. İki cihazda farklı sürümler olduğunda ne olacağına karar vermek. Bu yazı, vardığımız kuralların notudur. Oyun hâlâ geliştirme aşamasında.
+En başta istek basitti: bir Apple cihazında oynuyorsanız, aynı hesapla bir başkasında devam edebilmelisiniz. Küçük bir şey gibi duruyor, ama zor olan bir kaydı kopyalamak değil; iki cihazda farklı sürümler olduğunda ne olacağına karar vermek. Bu yazı, vardığımız kuralların notudur. Oyun hâlâ geliştirme aşamasında.
 
 ## Gerçek kayıt telefondadır
 
@@ -31,7 +32,7 @@ Seçtiğimiz sıra aşağıdadır.
 
 Bunu tartıştık. Basit bir "en ileri ilerleme kazanır" anlatması daha kolay olurdu, ama "en son kaydettiğiniz" kuralının oyuncunun kastettiğiyle daha uyumlu olduğunu düşündük. Kaybeden kopya silinmez, çakışma kopyası olarak ayrıca saklanır.
 
-## Seçme, birleştir
+## Seçmek yerine birleştirmek
 
 Bazı şeyler yazı tura yüzünden kaybolmamalı. Hangi perdeleri tamamladığınız, hangi perde hikâyelerini gördüğünüz ve nelere sahip olduğunuz, bir taraftan seçilmek yerine birleşim olarak birleştirilir.
 
@@ -41,7 +42,7 @@ Bazı şeyler yazı tura yüzünden kaybolmamalı. Hangi perdeleri tamamladığ�
 
 ## Oynarken bir değişikliği fark etmek
 
-Başta oyun, bulutu yalnızca uygulamaya geri döndüğünüzde yeniden okuyordu. 85. sürümde, önünüzdeyken başka bir cihazda yapılan değişikliği de fark ediyor ve ayarlar ekranı artık iCloud eşitlemesinin açık olup olmadığını gösteriyor.
+Başta oyun, bulutu yalnızca uygulamaya geri döndüğünüzde yeniden okuyordu. Sonraki bir sürümde, önünüzdeyken başka bir cihazda yapılan değişikliği de fark ediyor ve ayarlar ekranı artık iCloud eşitlemesinin açık olup olmadığını gösteriyor.
 
 ## Henüz doğrulanmadı
 

@@ -2,6 +2,7 @@
 title: Kendi Resimlerimizi Geçmişle Karşılaştırdık
 description: Iltonggi'nin krallarını, gemilerini ve kale çizimlerini duvar resimleri ve kazılardan çıkan eşyalarla karşılaştırdık; uyuşmayanları da not ettik.
 date: 2026-11-14
+copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: tr
 ---
@@ -18,7 +19,7 @@ Gaya'nın son kralının portresinde, dağ karakterine benzeyen üç dik parçal
 
 ## 3. Çok geç gelen bir yaka
 
-Aynı portrede yuvarlak bir yaka vardı. Kayıtlara göre Silla bu Çin tarzı yuvarlak yakayı 649 yılında benimsedi. Gaya ise 532'de çoktan yıkılmıştı. Eski duvar resimlerinde düz, y biçimli yaka görülür. Bir yüzyıl sonra gelen bir yaka küçük bir şey, ama bir kralın kıyafeti, yüzün okunduğu ilk yerdir.
+Aynı portrede yuvarlak bir yaka vardı. Kayıtlara göre Silla bu Çin tarzı yuvarlak yakayı 649 yılında benimsedi. Gaya ise 562'de çoktan yıkılmıştı. Eski duvar resimlerinde düz, y biçimli yaka görülür. Neredeyse bir yüzyıl sonra gelen bir yaka küçük bir şey, ama bir kralın kıyafeti, yüzün okunduğu ilk yerdir.
 
 ## 4. Yelkeni yanlış bir Baekje gemisi
 

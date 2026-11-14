@@ -2,6 +2,7 @@
 title: Sayılarla Yerinde Tutulan Üç Zorluk Seviyesi
 description: Kolay, Normal ve Zor seviyelerini kendi kazanma oranı aralıklarında tutmak için binlerce savaşı nasıl simüle ediyoruz ve bot neden Zor'u daha zor gösteriyor.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: tr
 ---

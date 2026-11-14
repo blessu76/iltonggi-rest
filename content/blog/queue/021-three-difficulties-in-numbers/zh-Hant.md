@@ -2,6 +2,7 @@
 title: 用數字守住的三種難度
 description: 說明我們如何模擬數千場戰鬥，讓簡單、普通與困難各自維持在自己的勝率範圍內，以及為什麼機器人會讓困難顯得更難。
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: zh-Hant
 ---

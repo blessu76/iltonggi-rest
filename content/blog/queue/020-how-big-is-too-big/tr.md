@@ -2,11 +2,12 @@
 title: Bir Mobil Oyun İçin Ne Kadar Büyük Çok Büyüktür?
 description: Iltonggi'nin görsellerine, sesine ve yazı tiplerine neden bir boyut bütçesi koyduk ve sınırı aştığımızda derlemeyi başarısız kılan koruma.
 date: 2026-11-17
+copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: tr
 ---
 
-İndirmesi uzun süren ya da ilk ekranı geç gösteren bir oyun, oynanmadan insanları kaybeder. Iltonggi'de çok şey var: eski usul yazı tipleri, resimler, müzik ve ses efektleri ve on bir dilde metin. Kimse bakmazsa yalnızca büyür. Bu yüzden bir bütçe koyduk ve bilgisayarın bunu uygulatmasını sağladık. Oyun hâlâ geliştirme aşamasında.
+İndirmesi uzun süren ya da ilk ekranı geç gösteren bir oyun, oynanmadan insanları kaybeder. Iltonggi'de çok şey var: eski usul yazı tipleri, resimler, müzik ve ses efektleri ve birçok dilde metin. Kimse bakmazsa yalnızca büyür. Bu yüzden bir bütçe koyduk ve bilgisayarın bunu uygulatmasını sağladık. Oyun hâlâ geliştirme aşamasında.
 
 ## Neyi ölçüyoruz
 
@@ -20,7 +21,7 @@ Projedeki her şeyi değil, yalnızca uygulamanın gerçekten pakete kattığı 
 | Fotoğraflar (23) | 3,55 MB | 4,2 MB |
 | İlk kareden önce okunan | 1,48 MB | 1,7 MB |
 
-Her sınır kabaca yüzde 15 ila 18 pay bırakıyor. Sıkıştırılmamış ses ve katmanlı görsel dosyaları gibi asla pakete girmemesi gereken biçimleri de yasaklıyoruz.
+Her sınır kabaca yüzde 13 ila 16 pay bırakıyor. Sıkıştırılmamış ses ve katmanlı görsel dosyaları gibi asla pakete girmemesi gereken biçimleri de yasaklıyoruz.
 
 ## Bir söz değil, bir koruma
 

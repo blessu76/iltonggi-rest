@@ -2,6 +2,7 @@
 title: ไฟล์เซฟที่รอดแม้ถูกทำให้เสียหาย
 description: Iltonggi ปกป้องความคืบหน้าของคุณอย่างไรเมื่อไฟล์เซฟถูกตัดกลางคันตอนเขียน และเราทดสอบอย่างไรโดยไม่ต้องทำให้โทรศัพท์จริงพัง
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: th
 translation_of: en
