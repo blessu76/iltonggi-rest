@@ -2,6 +2,7 @@
 title: Tiga Tingkat Kesulitan yang Dijaga Angka
 description: Cara kami mensimulasikan ribuan pertempuran agar Mudah, Normal, dan Sulit tetap di rentang kemenangan masing-masing, dan mengapa bot membuat Sulit tampak lebih berat.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: id
 translation_of: ko

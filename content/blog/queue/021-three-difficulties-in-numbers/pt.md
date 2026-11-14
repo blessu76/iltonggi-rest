@@ -2,6 +2,7 @@
 title: Três dificuldades presas por números
 description: Como simulamos milhares de partidas para que fácil, normal e difícil fiquem cada uma em sua faixa de vitórias, e por que os bots fazem o difícil parecer ainda mais difícil.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: pt
 translation_of: ko
@@ -19,9 +20,9 @@ Os bots jogam 200 partidas por nação, com um conjunto fixo de sementes e as me
 
 | Partida | Fácil | Normal | Difícil |
 |---|---|---|---|
-| Ato 1 | 79.5% | 23.8% | 6.0% |
-| Ato 1 histórico | 77.5% | 30.5% | 7.9% |
-| Rio Han | 72.3% | 45.4% | 4.4% |
+| Ato 1 | 79,5 % | 23,8 % | 6,0 % |
+| Ato 1 histórico | 77,5 % | 30,5 % | 7,9 % |
+| Rio Han | 72,3 % | 45,4 % | 4,4 % |
 
 Cada teste admite cerca de 10 pontos percentuais para cima e para baixo do valor medido. Se uma mudança empurrar o resultado para fora da faixa, o teste falha.
 

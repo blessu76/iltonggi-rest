@@ -2,6 +2,7 @@
 title: 숫자로 붙들어 둔 세 가지 난이도
 description: 수천 판을 시뮬레이션해 쉬움·보통·어려움이 각자의 승률 범위에 있게 하는 방법과, 봇 때문에 어려움이 더 어려워 보이는 이유를 적었습니다.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: ko
 ---

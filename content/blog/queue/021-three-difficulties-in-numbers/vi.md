@@ -2,6 +2,7 @@
 title: Ba mức độ khó được giữ chặt bằng con số
 description: Chúng tôi ghi lại cách mô phỏng hàng nghìn ván để Dễ, Thường và Khó mỗi mức nằm trong khoảng tỷ lệ thắng của riêng nó, và vì sao bot khiến mức Khó trông còn khó hơn.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: vi
 translation_of: ko

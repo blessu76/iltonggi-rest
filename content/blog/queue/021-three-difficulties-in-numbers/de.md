@@ -2,6 +2,7 @@
 title: Drei Schwierigkeitsgrade, von Zahlen gehalten
 description: Wie wir Tausende Schlachten simulieren, damit Leicht, Normal und Schwer in ihren Siegquoten-Bereichen bleiben, und warum der Bot Schwer schwerer aussehen lässt.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: de
 translation_of: ko

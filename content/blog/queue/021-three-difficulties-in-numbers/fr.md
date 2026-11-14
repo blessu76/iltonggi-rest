@@ -2,6 +2,7 @@
 title: Trois niveaux de difficulté tenus par les chiffres
 description: Comment nous simulons des milliers de batailles pour garder Facile, Normal et Difficile dans leurs plages de victoires, et pourquoi le robot fait paraître Difficile plus dur.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: fr
 translation_of: ko

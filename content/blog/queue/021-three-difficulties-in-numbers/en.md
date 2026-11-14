@@ -2,6 +2,7 @@
 title: Three Difficulties, Held in Place by Numbers
 description: How we simulate thousands of battles to keep Easy, Normal and Hard in their own win-rate ranges, and why the bot makes Hard look harder.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: en
 ---

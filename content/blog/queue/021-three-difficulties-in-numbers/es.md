@@ -2,6 +2,7 @@
 title: Tres dificultades sujetas con números
 description: Cómo simulamos miles de partidas para que fácil, normal y difícil se mantengan en su propio rango de victorias, y por qué los bots hacen que difícil parezca todavía más difícil.
 date: 2026-11-18
+copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: es
 translation_of: ko
@@ -19,9 +20,9 @@ Los bots juegan 200 partidas por nación, con un conjunto fijo de semillas y las
 
 | Partida | Fácil | Normal | Difícil |
 |---|---|---|---|
-| Acto 1 | 79.5% | 23.8% | 6.0% |
-| Acto 1 histórico | 77.5% | 30.5% | 7.9% |
-| Río Han | 72.3% | 45.4% | 4.4% |
+| Acto 1 | 79,5 % | 23,8 % | 6,0 % |
+| Acto 1 histórico | 77,5 % | 30,5 % | 7,9 % |
+| Río Han | 72,3 % | 45,4 % | 4,4 % |
 
 Cada prueba admite unos 10 puntos porcentuales por encima y por debajo del valor medido. Si un cambio empuja el resultado fuera del rango, la prueba falla.
 
