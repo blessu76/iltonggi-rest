@@ -164,7 +164,7 @@ class Blog(unittest.TestCase):
             self.assertIn('rel="prev"', p2)
         finally:
             bs.PATH.clear()
-            bs.PATH.update({"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"})
+            bs.PATH.update({"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"})
             shutil.rmtree(tmp)
 
 

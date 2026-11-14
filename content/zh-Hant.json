@@ -189,14 +189,5 @@
     "title": "找不到頁面",
     "desc": "iltonggi.ipe.rest 上不存在此頁面。",
     "text": "您要找的頁面不在這裡。它可能已被移動,或者網址輸入有誤。"
-  },
-  "nav_releases": "更新說明",
-  "releases_en_notice": "本頁以英文顯示。",
-  "releases": {
-    "title": "更新說明",
-    "desc": "Iltonggi 每個開發版本(TestFlight)的變更內容。",
-    "lead": "Iltonggi 尚未正式發行。本頁以淺顯的文字列出我們傳送至 TestFlight 的每個開發版本的變更內容,最新版本在最上方。",
-    "uploading": "上傳中",
-    "build": "版本"
   }
 }

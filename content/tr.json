@@ -189,14 +189,5 @@
     "title": "Sayfa bulunamadı",
     "desc": "Bu sayfa iltonggi.ipe.rest üzerinde mevcut değil.",
     "text": "Aradığınız sayfa burada değil. Taşınmış olabilir veya adres yanlış yazılmış olabilir."
-  },
-  "nav_releases": "Sürüm notları",
-  "releases_en_notice": "Bu sayfa İngilizce olarak gösterilir.",
-  "releases": {
-    "title": "Sürüm notları",
-    "desc": "Iltonggi'nin her geliştirme derlemesinde (TestFlight) neler değişti.",
-    "lead": "Iltonggi henüz yayınlanmadı. Bu sayfa, TestFlight'a gönderdiğimiz her geliştirme derlemesinde nelerin değiştiğini sade bir dille listeler. En yeni derleme en üsttedir.",
-    "uploading": "yükleniyor",
-    "build": "Derleme"
   }
 }

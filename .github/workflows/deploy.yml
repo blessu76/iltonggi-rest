@@ -34,7 +34,7 @@ jobs:
         with:
           ssh-key: ${{ secrets.IPE_WEB_KIT_DEPLOY_KEY }}
 
-      - name: Green gate (kit, release notes, tests, committed pages up to date)
+      - name: Green gate (kit, tests, committed pages up to date)
         run: bash scripts/check.sh
 
       - name: Assemble site (repo root minus repo files)

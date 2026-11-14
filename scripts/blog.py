@@ -432,10 +432,9 @@ def more_links(p, posts_all, lang, pre, ui):
 def llms_txt(bs, data, UI, posts):
     en = data["en"]
     lines = ["# Iltonggi (一統記 · 일통기)", "",
-             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page, release notes and a making-of blog (one short note a day)." % len(bs.LANGS), "",
+             "> A Three Kingdoms strategy game for iOS by ipe Studio, in %d languages. This site has the game page and a making-of blog (one short note a day)." % len(bs.LANGS), "",
              "## Pages", "- [Home](%s/): what the game is" % bs.SITE,
-             "- [Release notes](%s/releases/): what changed in each TestFlight build" % bs.SITE,
-             "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
+              "- [Support](%s/support/)" % bs.SITE, "- [Privacy](%s/privacy/)" % bs.SITE, "- [Terms](%s/terms/)" % bs.SITE, "",
              "## Blog (every post exists in %s; other languages show the English post)" % ", ".join(LANGS), "- [Blog index](%s/blog/)" % bs.SITE]
     lines.append("- [RSS feed](%s/blog/feed.xml)" % bs.SITE)
     if posts:

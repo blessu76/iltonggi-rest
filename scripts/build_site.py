@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, releases, blog) + 404 + sitemap.
+"""Build iltonggi.ipe.rest: 12 languages x (home, privacy, terms, support, blog) + 404 + sitemap.
 
     python3 scripts/build_site.py          # write pages (generated files are never hand-edited)
     python3 scripts/build_site.py --check  # fail if the committed pages differ from a fresh build
@@ -32,8 +32,8 @@ NAMES = languages.NAMES
 OG = {"en": "en_US", "ko": "ko_KR", "ja": "ja_JP", "zh-Hant": "zh_TW", "es": "es_ES", "pt-BR": "pt_BR",
       "fr": "fr_FR", "de": "de_DE", "id": "id_ID", "th": "th_TH", "vi": "vi_VN", "tr": "tr_TR",
       "zh-Hans": "zh_CN", "ru": "ru_RU"}
-PAGES = ["home", "privacy", "terms", "support", "releases"]
-PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/", "releases": "/releases/"}
+PAGES = ["home", "privacy", "terms", "support"]
+PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
         "&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap")
 IMG = {"icon": "icon-512.png", "map": "shot-map-600.webp", "march": "shot-march-600.webp"}
@@ -139,7 +139,6 @@ def header(t, lang, root):
     </a>
     <nav class="nav" aria-label="{esc(t['nav_aria'])}">
       <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
-      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -167,7 +166,6 @@ def footer(t, lang, page, root):
       <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
       <a href="{p}/terms/">{esc(t['terms_link'])}</a>
       <a href="{p}/blog/">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
-      <a href="{p}/releases/">{esc(t['nav_releases'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
@@ -304,46 +302,7 @@ def body_blocks(items):
     return "\n".join(out)
 
 
-def releases_page(t, lang, root):
-    """Release notes: ko/en carry their own text; the other languages show the English text plus a notice."""
-    tx = t if lang in ("ko", "en") else DATA["en"]
-    tl = lang if lang in ("ko", "en") else "en"
-    d = tx["releases"]
-    p = prefix(lang, root)
-    items = ""
-    for e in json.loads((ROOT / "content" / "releases.json").read_text(encoding="utf-8"))["entries"]:
-        badge = ' <span class="rel__badge">%s</span>' % esc(d["uploading"]) if e.get("state") == "uploading" else ""
-        lis = "\n".join("          <li>%s</li>" % esc(x) for x in e[tl])
-        items += f'''      <article class="rel">
-        <h2 class="rel__head"><span class="rel__build">{esc(e['build'])}</span>{badge}</h2>
-        <p class="rel__at">{esc(e['at'])} KST</p>
-        <ul>
-{lis}
-        </ul>
-      </article>
-'''
-    notice = '      <p class="meta">%s</p>\n' % esc(t["releases_en_notice"]) if t["releases_en_notice"] else ""
-    title = t["nav_releases"]
-    out = head(t, lang, "releases", root, "%s — %s" % (title, t["name"]), d["desc"]) + header(t, lang, root)
-    out += f'''<main id="content">
-  <section class="doc">
-    <div class="container doc__body">
-      <p class="kicker">// releases</p>
-      <h1>{esc(title)}</h1>
-{notice}      <p class="callout">{esc(d['lead'])}</p>
-      <div class="rel-list">
-{items}      </div>
-      <div class="doc__links"><a href="{p}/">← {esc(t['back_home'])}</a></div>
-    </div>
-  </section>
-</main>
-'''
-    return out + footer(t, lang, "releases", root) + "</body>\n</html>\n"
-
-
 def doc(t, lang, page, root):
-    if page == "releases":
-        return releases_page(t, lang, root)
     d = t[page]
     p = prefix(lang, root)
     if page == "support":
@@ -405,14 +364,14 @@ def not_found(data):
     return out + footer(t, "en", "home", True).replace('<nav class="foot-langs', '<nav hidden class="foot-langs', 1) + "</body>\n</html>\n"
 
 
-def redirect_page(target):
+def redirect_page(target, lang="pt-BR", name="Português (Brasil)"):
     return f'''<!doctype html>
-<html lang="pt-BR">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, follow">
 <meta http-equiv="refresh" content="0; url={target}">
-<title>Português (Brasil) — ipe Studio</title>
+<title>{name} — ipe Studio</title>
 </head>
 <body><p><a href="{target}">{target}</a></p></body>
 </html>
@@ -423,6 +382,15 @@ def pt_redirects(blog_extra):
     """옛 /pt/ 주소 → /pt-BR/ 같은 경로. 이미 퍼진 링크를 살린다."""
     keys = [PATH[p] for p in PAGES] + [PATH[k] for k, *_ in blog_extra]
     return {"pt" + path.rstrip("/") + "/index.html": redirect_page(SITE + "/pt-BR" + path) for path in keys}
+
+
+def gone_redirects():
+    """제거한 웹 릴리즈 노트 주소(/releases/) → 그 언어의 홈. 옛 링크를 404 로 떨어뜨리지 않는다."""
+    out = {"releases/index.html": redirect_page(SITE + "/", "en", "iltonggi")}
+    for l in PAGE_TAGS:
+        out["%s/releases/index.html" % dirname(l)] = redirect_page(SITE + "/%s/" % dirname(l), dirname(l), "iltonggi")
+    out["pt/releases/index.html"] = redirect_page(SITE + "/pt-BR/")
+    return out
 
 
 def sitemap(extra=()):
@@ -466,6 +434,7 @@ def build():
     blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
     files.update(blog_files)
     files.update(pt_redirects(blog_extra))
+    files.update(gone_redirects())
     files["sitemap.xml"] = sitemap(blog_extra)
     return files
 
