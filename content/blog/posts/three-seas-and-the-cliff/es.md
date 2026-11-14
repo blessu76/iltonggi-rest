@@ -5,6 +5,7 @@ slug: three-seas-and-the-cliff
 lang: es
 translation_of: ko
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 
