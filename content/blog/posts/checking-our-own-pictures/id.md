@@ -1,11 +1,12 @@
 ---
 title: Mencocokkan gambar kami sendiri dengan masa lalu
 description: Kami membandingkan raja, kapal, dan benteng di Iltonggi dengan lukisan dinding dan benda galian, lalu mencatat yang tidak cocok.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: id
 translation_of: ko
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 Iltonggi adalah sebuah gim, jadi ada hal-hal yang sengaja diadaptasi. Namun ada perbedaan antara mengadaptasi sesuatu dan keliru tanpa menyadarinya. Belum lama ini kami duduk bersama untuk membandingkan gambar-gambar kami sendiri dengan apa yang ditunjukkan oleh lukisan dinding dan benda-benda galian. Tulisan ini adalah catatan tentang apa yang kami temukan, termasuk bagian yang tidak cocok. Gim ini masih dalam pengembangan, dan pekerjaannya masih berlangsung.

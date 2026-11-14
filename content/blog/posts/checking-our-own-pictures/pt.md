@@ -1,11 +1,12 @@
 ---
 title: Conferindo as nossas próprias imagens com o passado
 description: Comparamos os reis, os navios e as fortalezas do Iltonggi com murais e objetos escavados, e anotamos o que não combinava.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: pt
 translation_of: ko
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 O Iltonggi é um jogo, então algumas coisas são adaptadas de propósito. Mas há uma diferença entre adaptar algo e errar sem perceber. Há pouco tempo, nos sentamos para comparar as nossas próprias imagens com o que mostram os murais e os objetos escavados. Este post é uma nota sobre o que encontramos, incluindo as partes que não combinavam. O jogo ainda está em desenvolvimento, e o trabalho continua.

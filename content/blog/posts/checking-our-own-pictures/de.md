@@ -1,11 +1,12 @@
 ---
 title: Unsere eigenen Bilder mit der Vergangenheit abgeglichen
 description: Wir haben die Könige, Schiffe und Festungen in Iltonggi mit Wandmalereien und Grabungsfunden verglichen und notiert, was nicht passte.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: de
 translation_of: ko
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 Iltonggi ist ein Spiel, deshalb ist manches mit Absicht angepasst. Aber es ist ein Unterschied, ob man etwas anpasst oder sich unbemerkt irrt. Vor Kurzem haben wir uns hingesetzt und unsere eigenen Bilder mit dem verglichen, was Wandmalereien und Grabungsfunde zeigen. Dieser Beitrag ist eine Notiz darüber, was wir gefunden haben, auch die Stellen, die nicht passten. Das Spiel ist weiterhin in Entwicklung, und die Arbeit geht weiter.

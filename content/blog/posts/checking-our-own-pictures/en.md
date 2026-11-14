@@ -1,10 +1,11 @@
 ---
 title: Checking Our Own Pictures Against the Past
 description: We compared Iltonggi's kings, ships and fortress art with murals and excavated objects, and wrote down what did not match.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: en
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 Iltonggi is a game, so some things are adapted on purpose. But there is a difference between adapting something and getting it wrong without noticing. Recently we sat down and compared our own pictures with what murals and excavated objects show. This post is a note on what we found, including the parts that did not match. The game is still in development, and the work is still going on.

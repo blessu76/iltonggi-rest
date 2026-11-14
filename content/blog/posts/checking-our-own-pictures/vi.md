@@ -1,11 +1,12 @@
 ---
 title: Đối chiếu những bức tranh của chính chúng tôi với quá khứ
 description: Chúng tôi đối chiếu vua, thuyền và pháo đài của Iltonggi với tranh tường và hiện vật khai quật, rồi ghi lại những chỗ không khớp.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: vi
 translation_of: ko
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 Iltonggi là một trò chơi, nên có những chỗ được chuyển thể có chủ ý. Nhưng chuyển thể một điều gì đó khác với việc sai mà không hay biết. Gần đây chúng tôi ngồi lại để đối chiếu những bức tranh của chính mình với những gì tranh tường và hiện vật khai quật cho thấy. Bài viết này là một ghi chú về những gì chúng tôi tìm thấy, kể cả những chỗ không khớp. Trò chơi vẫn đang được phát triển, và công việc này vẫn đang tiếp diễn.

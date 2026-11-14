@@ -1,11 +1,12 @@
 ---
 title: Comparar nuestras imágenes con el pasado
 description: Comparamos los reyes, los barcos y las fortalezas de Iltonggi con murales y objetos excavados, y anotamos lo que no coincidía.
-date: 2026-11-14
 copy_review: iris 2026-11-14
 slug: checking-our-own-pictures
 lang: es
 translation_of: ko
+date: 2026-11-14
+published: 2026-11-14T14:15:00+09:00
 ---
 
 Iltonggi es un juego, así que algunas cosas se adaptan a propósito. Pero hay una diferencia entre adaptar algo y equivocarse sin darse cuenta. Hace poco nos sentamos a comparar nuestras propias imágenes con lo que muestran los murales y los objetos excavados. Esta entrada es una nota sobre lo que encontramos, incluidas las partes que no coincidían. El juego sigue en desarrollo, y el trabajo continúa.

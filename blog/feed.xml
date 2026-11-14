@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 14:15:00 +0900</lastBuildDate>
+  <item>
+    <title>Checking Our Own Pictures Against the Past</title>
+    <link>https://iltonggi.ipe.rest/blog/checking-our-own-pictures/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/checking-our-own-pictures/</guid>
+    <pubDate>Sat, 14 Nov 2026 14:15:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>We compared Iltonggi&#x27;s kings, ships and fortress art with murals and excavated objects, and wrote down what did not match.</description>
+  </item>
   <item>
     <title>A Name and a Record, Nicknames and the Scoreboard</title>
     <link>https://iltonggi.ipe.rest/blog/a-name-and-a-record/</link>
