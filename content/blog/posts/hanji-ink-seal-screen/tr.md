@@ -4,6 +4,7 @@ description: Iltonggi haritasının üç görünüm taslağının ardındaki mal
 slug: hanji-ink-seal-screen
 lang: tr
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T21:05:00+09:00
 ---
 

@@ -4,6 +4,7 @@ description: Iltonggi'nin 4. ile 6. perdeleri ve zorluk başına iki yüz simül
 slug: three-seas-and-the-cliff
 lang: tr
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 

@@ -4,6 +4,7 @@ description: Iltonggi'deki Doğrudan Komutanın hileye dönüşmesini simüle sa
 slug: direct-command-in-battle
 lang: tr
 date: 2026-11-02
+copy_review: iris 2026-11-14
 published: 2026-11-02T12:00:00+09:00
 ---
 

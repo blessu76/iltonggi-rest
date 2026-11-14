@@ -4,6 +4,7 @@ description: Daegaya'nın Gwansanseong'da Baekje'nin yanında durmasından sekiz
 slug: daegaya-562-last-gaya
 lang: tr
 date: 2026-11-05
+copy_review: iris 2026-11-14
 published: 2026-11-05T12:00:00+09:00
 ---
 

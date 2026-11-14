@@ -5,6 +5,7 @@ slug: daegaya-562-last-gaya
 lang: th
 translation_of: en
 date: 2026-11-05
+copy_review: iris 2026-11-14
 published: 2026-11-05T12:00:00+09:00
 ---
 

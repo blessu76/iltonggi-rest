@@ -4,6 +4,7 @@ description: 551 Han Nehri senaryosundan üç yıl sonra Baekje-Silla ittifakı 
 slug: gwansanseong-554-alliance-ends
 lang: tr
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T12:00:00+09:00
 ---
 

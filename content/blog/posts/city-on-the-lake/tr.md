@@ -4,6 +4,7 @@ description: Iltonggi'nin yüksek yaylalardaki bir gölde geçen 8. Perde harita
 slug: city-on-the-lake
 lang: tr
 date: 2026-11-10
+copy_review: iris 2026-11-14
 published: 2026-11-10T12:00:00+09:00
 ---
 

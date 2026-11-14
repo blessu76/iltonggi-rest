@@ -4,6 +4,7 @@ description: Iltonggi'de Goguryeo, Baekje, Silla ve Gaya için renkleri nasıl s
 slug: four-kingdoms-four-colors
 lang: tr
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 

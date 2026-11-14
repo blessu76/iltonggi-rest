@@ -4,6 +4,7 @@ description: Iltonggi'de bir kasabayı aldıktan hemen sonra nüfus ve moralde n
 slug: taking-a-town-aftermath
 lang: tr
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
@@ -29,7 +30,7 @@ Ancak işleri daha hızlı yoluna koymak istiyorsanız araya girmeniz gerekir. B
 
 ## Büyük bir zafer biraz da ısı getirir
 
-Fetih her zaman bir yük değildir. Kasaba boyutunda ya da daha büyük bir kasabayı aldığınızda zaferin ısısı, sahip olduğunuz her kasabada moralı 3 artırır. Başkentte bekleyen bir general varsa, o general yeni kasabanın başına geçer. Büyük bir kasabayı almanın birkaç küçüğünü almaktan farklı olduğunu rakamlarla göstermeye yönelik bir düzenek bu.
+Fetih her zaman bir yük değildir. Kasaba boyutunda ya da daha büyük bir kasabayı aldığınızda zaferin ısısı, sahip olduğunuz her kasabada morali 3 artırır. Başkentte bekleyen bir general varsa, o general yeni kasabanın başına geçer. Büyük bir kasabayı almanın birkaç küçüğünü almaktan farklı olduğunu rakamlarla göstermeye yönelik bir düzenek bu.
 
 En büyük bahis kraliyet merkezidir. O düştüğünde o krallık yok olur ve geri kalan tüm kasabaları kazanana geçer. Askerleri yarıya inerek en az bire düşer ve kazanan, hazinenin yarısını alır. Elbette geçen kasabalar da fethedilmiş sayılır; bu yüzden aynı şekilde azalmış nüfus ve moralle başlarlar. Bu kuralın anlamı, toprağı birleştirmenin yolunun tek bir zaferle bitmemesidir.
 

@@ -4,6 +4,7 @@ description: Iltonggi'de takma ad ve kayıtlar ekranının nasıl çalıştığ�
 slug: a-name-and-a-record
 lang: tr
 date: 2026-11-13
+copy_review: iris 2026-11-14
 published: 2026-11-13T12:00:00+09:00
 ---
 

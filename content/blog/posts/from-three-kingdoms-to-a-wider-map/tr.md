@@ -4,6 +4,7 @@ description: Iltonggi'nin perdelerinin Kore Yarımadası'nın ötesine nasıl b�
 slug: from-three-kingdoms-to-a-wider-map
 lang: tr
 date: 2026-11-08
+copy_review: iris 2026-11-14
 published: 2026-11-08T12:00:00+09:00
 ---
 

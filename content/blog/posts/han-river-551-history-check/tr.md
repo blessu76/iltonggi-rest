@@ -4,6 +4,7 @@ description: Iltonggi'nin 551 Han Nehri senaryosunu kurmak: çağ dışı genera
 slug: han-river-551-history-check
 lang: tr
 date: 2026-11-01
+copy_review: iris 2026-11-14
 published: 2026-11-01T12:00:00+09:00
 ---
 
@@ -25,7 +26,7 @@ Başta özgün senaryodaki generalleri olduğu gibi getirdik. Ama Eulji Mundeok 
 
 ## Kim Mu-ryeok hangi taraftaydı?
 
-Kim Mu-ryeok, Geumgwan Gaya'nın son kralı Kral Guhyeong'un oğullarından biriydi. Ama Geumgwan Gaya'nın 532'de Silla'ya teslim olmasından sonra bir Silla generali olarak hizmet etti ve Sinju eyaleti kurulduktan sonra adı onun valisi olarak geçiyor. Yalnızca soyuna bakarak onu Gaya tarafına koymak istersiniz, ama 551'de durduğu yer Sillaydı. Bu yüzden onu Gaya'ya değil Silla'ya yerleştirdik.
+Kim Mu-ryeok, Geumgwan Gaya'nın son kralı Kral Guhyeong'un oğullarından biriydi. Ama Geumgwan Gaya'nın 532'de Silla'ya teslim olmasından sonra bir Silla generali olarak hizmet etti ve Sinju eyaleti kurulduktan sonra adı onun valisi olarak geçiyor. Yalnızca soyuna bakarak onu Gaya tarafına koymak istersiniz, ama 551'de durduğu yer Silla'ydı. Bu yüzden onu Gaya'ya değil Silla'ya yerleştirdik.
 
 ## Adsız bıraktığımız Gaya kralı
 

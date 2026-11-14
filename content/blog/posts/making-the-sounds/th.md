@@ -5,6 +5,7 @@ slug: making-the-sounds
 lang: th
 translation_of: en
 date: 2026-11-06
+copy_review: iris 2026-11-14
 published: 2026-11-06T12:00:00+09:00
 ---
 

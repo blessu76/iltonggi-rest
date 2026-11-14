@@ -4,6 +4,7 @@ description: Iltonggi'nin 10. Perde'sinde saldıramayacağınız bölgeler var v
 slug: ask-before-you-pass
 lang: tr
 date: 2026-11-12
+copy_review: iris 2026-11-14
 published: 2026-11-12T12:00:00+09:00
 ---
 

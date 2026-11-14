@@ -4,6 +4,7 @@ description: Iltonggi'nin 15 efektinin ve 4 müzik parçasının dışarıdan se
 slug: making-the-sounds
 lang: tr
 date: 2026-11-06
+copy_review: iris 2026-11-14
 published: 2026-11-06T12:00:00+09:00
 ---
 

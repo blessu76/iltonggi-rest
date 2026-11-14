@@ -4,6 +4,7 @@ description: Telefonunuz için bir Üç Krallık toprak kapma oyunu olan Iltongg
 slug: why-a-three-kingdoms-land-grab
 lang: tr
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 

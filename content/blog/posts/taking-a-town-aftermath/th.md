@@ -5,6 +5,7 @@ slug: taking-a-town-aftermath
 lang: th
 translation_of: en
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
