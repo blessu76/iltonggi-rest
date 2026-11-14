@@ -5,6 +5,7 @@ slug: city-on-the-lake
 lang: ja
 translation_of: ko
 date: 2026-11-10
+copy_review: iris 2026-11-14
 published: 2026-11-10T12:00:00+09:00
 ---
 

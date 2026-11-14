@@ -4,6 +4,7 @@ description: 일통기의 효과음 15개와 배경음 4개를 외부 음원 없
 slug: making-the-sounds
 lang: ko
 date: 2026-11-06
+copy_review: iris 2026-11-14
 published: 2026-11-06T12:00:00+09:00
 ---
 

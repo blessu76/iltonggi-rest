@@ -4,6 +4,7 @@ description: 551년 한강 쟁탈 판의 3년 뒤, 백제와 신라의 동맹이
 slug: gwansanseong-554-alliance-ends
 lang: ko
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T12:00:00+09:00
 ---
 

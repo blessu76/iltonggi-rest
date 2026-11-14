@@ -4,6 +4,7 @@ description: 일통기에서 전투를 직접 지휘하는 기능이 꼼수가 �
 slug: direct-command-in-battle
 lang: ko
 date: 2026-11-02
+copy_review: iris 2026-11-14
 published: 2026-11-02T12:00:00+09:00
 ---
 

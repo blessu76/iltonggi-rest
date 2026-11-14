@@ -4,6 +4,7 @@ description: 일통기 9막이 안데스의 형제 다툼을, 어느 형제 곁�
 slug: two-brothers-one-table
 lang: ko
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 

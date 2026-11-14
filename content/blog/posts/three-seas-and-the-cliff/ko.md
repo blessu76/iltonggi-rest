@@ -4,6 +4,7 @@ description: 일통기 4~6막을 둘러보고, 난이도마다 200판을 돌려 
 slug: three-seas-and-the-cliff
 lang: ko
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 

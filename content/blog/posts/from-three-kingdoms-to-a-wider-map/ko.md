@@ -4,6 +4,7 @@ description: 일통기의 막이 한반도 밖으로 넓어진 과정과 세계�
 slug: from-three-kingdoms-to-a-wider-map
 lang: ko
 date: 2026-11-08
+copy_review: iris 2026-11-14
 published: 2026-11-08T12:00:00+09:00
 ---
 

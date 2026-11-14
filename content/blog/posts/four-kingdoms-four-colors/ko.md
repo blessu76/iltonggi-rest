@@ -4,6 +4,7 @@ description: 일통기에서 고구려·백제·신라·가야의 네 가지 색
 slug: four-kingdoms-four-colors
 lang: ko
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 

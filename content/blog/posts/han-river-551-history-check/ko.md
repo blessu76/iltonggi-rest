@@ -4,6 +4,7 @@ description: 일통기의 551년 한강 쟁탈 판을 만들며 시대에 맞지
 slug: han-river-551-history-check
 lang: ko
 date: 2026-11-01
+copy_review: iris 2026-11-14
 published: 2026-11-01T12:00:00+09:00
 ---
 

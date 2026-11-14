@@ -4,6 +4,7 @@ description: 일통기의 닉네임과 내 기록 화면이 어떻게 돌아가�
 slug: a-name-and-a-record
 lang: ko
 date: 2026-11-13
+copy_review: iris 2026-11-14
 published: 2026-11-13T12:00:00+09:00
 ---
 

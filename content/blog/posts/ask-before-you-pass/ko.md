@@ -4,6 +4,7 @@ description: 일통기 10막에는 칠 수 없는 고을이 있습니다. 정복
 slug: ask-before-you-pass
 lang: ko
 date: 2026-11-12
+copy_review: iris 2026-11-14
 published: 2026-11-12T12:00:00+09:00
 ---
 

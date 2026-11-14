@@ -4,6 +4,7 @@ description: 같은 땅을 흙벽, 한지, 옛 지도의 종이로 다시 그려
 slug: hanji-ink-seal-screen
 lang: ko
 date: 2026-11-03
+copy_review: iris 2026-11-14
 published: 2026-11-03T21:05:00+09:00
 ---
 

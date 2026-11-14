@@ -4,6 +4,7 @@ description: 일통기 첫 판에서 병력, 행동, 정찰, 외교를 어떻게
 slug: first-turns-land-grab-tips
 lang: ko
 date: 2026-11-07
+copy_review: iris 2026-11-14
 published: 2026-11-07T20:35:00+09:00
 ---
 

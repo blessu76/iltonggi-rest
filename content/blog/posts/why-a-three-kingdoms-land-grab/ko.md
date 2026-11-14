@@ -4,6 +4,7 @@ description: 쉬는 시간 5~10분에 한 판, 고을 하나에서 시작해 천
 slug: why-a-three-kingdoms-land-grab
 lang: ko
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 
