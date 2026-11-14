@@ -5,6 +5,7 @@ slug: first-turns-land-grab-tips
 lang: vi
 translation_of: ko
 date: 2026-11-07
+copy_review: iris 2026-11-14
 published: 2026-11-07T20:35:00+09:00
 ---
 

@@ -5,6 +5,7 @@ slug: taking-a-town-aftermath
 lang: vi
 translation_of: ko
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
@@ -24,7 +25,7 @@ Nếu tệ hơn nữa và lòng dân chạm đáy, sẽ nổ ra nổi loạn. Th
 
 ## Điều thời gian giải quyết và điều con người phải giải quyết
 
-Đất chiếm được không bất an mãi. Lòng dân hồi phục chậm, mỗi lượt 4, hướng tới mức thời bình là 70. Bắt đầu từ 40, cần hơn tám lượt một chút để chạm 70. Dân số cũng được bù thêm 30 phần trăm phần thiếu mỗi lượt, miễn là lòng dân từ 20 trở lên.
+Đất chiếm được không bất an mãi. Lòng dân hồi phục chậm, mỗi lượt 4, hướng tới mức thời bình là 70. Bắt đầu từ 40, cần khoảng tám lượt để chạm 70. Dân số cũng được bù thêm 30 phần trăm phần thiếu mỗi lượt, miễn là lòng dân từ 20 trở lên.
 
 Nhưng nếu muốn ổn định nhanh hơn, con người phải ra tay. Dùng của cải mở tiệc thì lòng dân tăng. Trên màn hình sẽ hiện lời khuyên như "Sắp nổi loạn: hãy mở tiệc", và ý là buộc người chơi chọn giữa chi cho tiệc hay chi cho quân. Quân đã tiêu hao để thắng rồi, nên quyết định dùng của cải xoa dịu vùng đất vừa chiếm hay tiến thẳng đến thành kế tiếp sẽ làm thay đổi nhịp ván chơi.
 

@@ -5,6 +5,7 @@ slug: ask-before-you-pass
 lang: vi
 translation_of: ko
 date: 2026-11-12
+copy_review: iris 2026-11-14
 published: 2026-11-12T12:00:00+09:00
 ---
 
@@ -18,7 +19,7 @@ Bảy vùng trên bản đồ thuộc về những người của vùng đất �
 
 Nếu một vùng của chủ nhân vùng đất nằm giữa bạn và mục tiêu, chỉ có một cách đi qua. Bạn mang quà đến và hỏi. Quà xây dựng lòng tin, và khi lòng tin đủ cao thì con đường mở ra và bạn được đi qua. Sau đó bạn không sở hữu vùng đất ấy, và ván chơi kết thúc khi đất vẫn thuộc về chủ nhân của nó.
 
-Chúng tôi chuyển việc hỏi và lòng hiếu khách thành vài con số, vì trò chơi cần chúng, và chúng tôi biết đơn giản hóa như vậy có thể gây cảm giác nhẹ nhàng quá. Chúng tôi đã ghi lại điều đó như một câu hỏi dành cho những người hiểu rõ hơn.
+Chúng tôi chuyển việc hỏi và lòng hiếu khách thành vài con số, vì trò chơi cần chúng, và chúng tôi biết đơn giản hóa như vậy có thể gây cảm giác qua loa. Chúng tôi đã ghi lại điều đó như một câu hỏi dành cho những người hiểu rõ hơn.
 
 ## 3. Không dùng những cái tên không thuộc về chúng tôi
 

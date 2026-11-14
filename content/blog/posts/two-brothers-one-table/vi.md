@@ -5,6 +5,7 @@ slug: two-brothers-one-table
 lang: vi
 translation_of: ko
 date: 2026-11-11
+copy_review: iris 2026-11-14
 published: 2026-11-11T12:00:00+09:00
 ---
 
@@ -28,7 +29,7 @@ Mục tiêu là giữ một thị trấn trên con đường núi, một thị t
 
 ## 5. Những gì chúng tôi bỏ ra
 
-Không có tế lễ, vật thiêng hay họa tiết thiêng trên binh lính hoặc bản đồ. Thành phố nơi từng xảy ra một vụ bắt giữ nổi tiếng không được dùng làm tên địa danh, hồ lớn và các ngọn núi thiêng cũng không. Những người vượt biển đến vào thời đó đơn giản là vắng mặt trên bản đồ, nên màn này đặt ra một câu hỏi khác với câu chuyện thường kể về thời ấy. Cả hai anh em đều còn sống đến hết ván chơi, và chúng tôi đánh dấu đó là sự chuyển thể, vì trong lịch sử thật không ai trong họ như vậy.
+Không có tế lễ, vật thiêng hay họa tiết thiêng trên binh lính hoặc bản đồ. Thị trấn nơi từng xảy ra một vụ bắt giữ nổi tiếng không được dùng làm tên địa danh, hồ lớn và các ngọn núi thiêng cũng không. Những người vượt biển đến vào thời đó đơn giản là vắng mặt trên bản đồ, nên màn này đặt ra một câu hỏi khác với câu chuyện thường kể về thời ấy. Cả hai anh em đều còn sống đến hết ván chơi, và chúng tôi đánh dấu đó là sự chuyển thể, vì trong lịch sử thật không ai trong họ như vậy.
 
 ## Lời cuối
 
