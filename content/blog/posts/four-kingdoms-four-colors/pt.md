@@ -5,10 +5,11 @@ slug: four-kingdoms-four-colors
 lang: pt
 translation_of: ko
 date: 2026-10-31
+copy_review: iris 2026-11-14
 published: 2026-10-31T12:00:00+09:00
 ---
 
-O primeiro problema de um jogo de mapa é distinguir os quatro reinos num relance. Se não se sabe de quem é cada território, não dá para ler quem avançou até onde nem qual distrito está em perigo, e num mapa ilegível não nascem nem a reflexão nem a diversão. No Iltonggi, Goguryeo é vermelho, Baekje azul, Silla amarelo e Gaya verde. Bandeiras, territórios e fronteiras seguem a mesma cor. Depois de escolher as cores, a primeira coisa que fizemos não foi perguntar se estavam bonitas, e sim medir se dava para distingui-las.
+O primeiro problema de um jogo de mapa é distinguir os quatro reinos num relance. Se não se sabe de quem é cada território, não dá para ler quem avançou até onde nem qual cidade está em perigo, e num mapa ilegível não nascem nem a reflexão nem a diversão. No Iltonggi, Goguryeo é vermelho, Baekje azul, Silla amarelo e Gaya verde. Bandeiras, territórios e fronteiras seguem a mesma cor. Depois de escolher as cores, a primeira coisa que fizemos não foi perguntar se estavam bonitas, e sim medir se dava para distingui-las.
 
 ## De dia é fácil
 

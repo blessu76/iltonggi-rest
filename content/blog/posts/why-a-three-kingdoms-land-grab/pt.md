@@ -5,6 +5,7 @@ slug: why-a-three-kingdoms-land-grab
 lang: pt
 translation_of: ko
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 
@@ -16,13 +17,13 @@ Nosso primeiro objetivo foi um jogo em que quem está cansado sinta uma conquist
 
 Para que quem está começando não se sinta pressionado, a primeira partida é curta, com 20 turnos, e nas duas primeiras rodadas o inimigo não ataca. A ideia era dar tempo para aprender as regras. Também definimos o princípio de não incentivar ninguém a entrar todos os dias. Quem volta depois de um tempo não é cobrado: o jogo só avisa, em poucas palavras, que a partida continua do jeito que estava. Um jogo não deve mandar no dia de ninguém; deve entrar discretamente nas pausas de cada pessoa.
 
-Achamos que a sensação de conquista não vem só das grandes vitórias. Ganhar um distrito, espiar um território coberto de névoa graças a um espião: queremos que essas pequenas conquistas apareçam várias vezes mesmo em cinco minutos.
+Achamos que a sensação de conquista não vem só das grandes vitórias. Ganhar uma cidade, espiar um território coberto de névoa graças a um espião: queremos que essas pequenas conquistas apareçam várias vezes mesmo em cinco minutos.
 
-## Começamos com um único distrito
+## Começamos com uma única cidade
 
-O mapa é dividido em distritos. Você toca em um distrito, reúne e treina soldados e ataca os vizinhos. Quanto maior o distrito, mais tropas ele junta: a capital é grande, o interior é pequeno. Só essa diferença simples já faz surgir a dúvida de qual alvo atacar primeiro e qual ponto defender.
+O mapa é dividido em cidades. Você toca em uma cidade, reúne e treina soldados e ataca os vizinhos. Quanto maior a cidade, mais tropas ela junta: a capital é grande, o interior é pequeno. Só essa diferença simples já faz surgir a dúvida de qual alvo atacar primeiro e qual ponto defender.
 
-Como no xadrez, em que a partida acaba quando o rei cai, quisemos manter o sabor de decidir tudo ao fincar a bandeira na fortaleza do rei. Não é preciso devorar cada pedaço de terra: uma jogada decisiva pode encerrar a partida, o que combina com partidas curtas. O território desconhecido fica coberto de névoa e só se vê enviando um espião. Achamos que um mapa em que se avança curioso rumo ao desconhecido conta mais história do que um que se vê por inteiro.
+Como no janggi, o xadrez coreano, em que a partida acaba quando o rei cai, quisemos manter o sabor de decidir tudo ao fincar a bandeira na fortaleza do rei. Não é preciso devorar cada pedaço de terra: uma jogada decisiva pode encerrar a partida, o que combina com partidas curtas. O território desconhecido fica coberto de névoa e só se vê enviando um espião. Achamos que um mapa em que se avança curioso rumo ao desconhecido conta mais história do que um que se vê por inteiro.
 
 ## Começamos pelo menor
 

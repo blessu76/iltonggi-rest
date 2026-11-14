@@ -5,6 +5,7 @@ slug: first-turns-land-grab-tips
 lang: pt
 translation_of: ko
 date: 2026-11-07
+copy_review: iris 2026-11-14
 published: 2026-11-07T20:35:00+09:00
 ---
 
@@ -24,7 +25,7 @@ Recrutar reduz a população na mesma medida e, se o moral estiver bom, ela volt
 
 O número de coisas que se pode fazer em um turno é fixo, e as ações restantes aparecem como contas com o selo 行 acima do botão de encerrar o turno. Mover tropas uma região custa uma ação, e movê-las duas ou três regiões pelo seu próprio território custa duas. Se resta só uma ação, os movimentos longos ficam bloqueados e você é informado do motivo.
 
-Por isso, no início do turno ajuda decidir as duas ou três coisas que você precisa fazer. Ao enviar tropas, os botões 25%, 50%, 75% e 全 sob o controle deslizante são úteis. O padrão é enviar tudo, mas enviar só uma parte deixa tropas para guardar as cidades da retaguarda.
+Por isso, no início do turno ajuda decidir as duas ou três coisas que você precisa fazer. Ao enviar tropas, os botões 25 %, 50 %, 75 % e 全 sob o controle deslizante são úteis. O padrão é enviar tudo, mas enviar só uma parte deixa tropas para guardar as cidades da retaguarda.
 
 ## 4. Faça reconhecimento e, se preciso, una-se a alguém
 
