@@ -2,6 +2,7 @@
 title: Tiếp tục chơi trên một thiết bị khác
 description: Chúng tôi ghi lại cách Iltonggi cho phép tiếp tục ván chơi giữa các thiết bị Apple, và quy tắc đã chọn khi nội dung trên hai thiết bị khác nhau.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: vi
 translation_of: ko
@@ -42,7 +43,7 @@ Nếu một đoạn văn bản vượt quá 200.000 ký tự, chúng tôi không
 
 ## Nhận biết ngay khi đang chơi
 
-Ban đầu, chúng tôi chỉ đọc lại đám mây khi quay trở lại ứng dụng. Từ bản dựng 85, ứng dụng cũng nhận biết những thay đổi từ thiết bị khác trong lúc nó đang hiển thị phía trước, và màn hình cài đặt cho thấy đồng bộ iCloud đang bật hay không.
+Ban đầu, chúng tôi chỉ đọc lại đám mây khi quay trở lại ứng dụng. Ở một bản dựng sau đó, ứng dụng cũng nhận biết những thay đổi từ thiết bị khác trong lúc nó đang hiển thị phía trước, và màn hình cài đặt cho thấy đồng bộ iCloud đang bật hay không.
 
 ## Những gì chúng tôi chưa xác minh
 

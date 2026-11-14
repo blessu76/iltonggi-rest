@@ -2,6 +2,7 @@
 title: Continuar a partida em outro dispositivo
 description: Como o Iltonggi permite continuar a partida entre dispositivos Apple, e a regra que definimos quando o conteúdo dos dois dispositivos é diferente.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: pt
 translation_of: ko
@@ -42,7 +43,7 @@ Se um texto passar de 200.000 caracteres, ele não é enviado e fica só no disp
 
 ## Perceber durante a partida
 
-No início, só relíamos a nuvem quando o jogador voltava ao aplicativo. Na versão de compilação 85, também são percebidas as mudanças feitas em outro dispositivo enquanto o aplicativo está em primeiro plano, e a tela de configurações mostra se a sincronização com o iCloud está ligada.
+No início, só relíamos a nuvem quando o jogador voltava ao aplicativo. Em uma compilação posterior, também são percebidas as mudanças feitas em outro dispositivo enquanto o aplicativo está em primeiro plano, e a tela de configurações mostra se a sincronização com o iCloud está ligada.
 
 ## O que ainda não confirmamos
 

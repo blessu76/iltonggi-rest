@@ -2,6 +2,7 @@
 title: Auf einem anderen Gerät weiterspielen
 description: Wie Iltonggi das Weiterspielen zwischen Apple-Geräten ermöglicht und welche Regeln wir wählten, wenn zwei Geräte uneins sind.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: de
 translation_of: ko
@@ -42,7 +43,7 @@ Ein einzelner Text mit mehr als 200.000 Zeichen wird nicht hochgeladen und bleib
 
 ## Änderungen beim Spielen bemerken
 
-Anfangs las das Spiel die Cloud nur neu, wenn Sie zur App zurückkehrten. Mit Build 85 bemerkt es auch eine Änderung von einem anderen Gerät, während es vor Ihnen im Vordergrund ist, und die Einstellungen zeigen, ob die iCloud-Synchronisierung an ist.
+Anfangs las das Spiel die Cloud nur neu, wenn Sie zur App zurückkehrten. In einem späteren Build bemerkt es auch eine Änderung von einem anderen Gerät, während es vor Ihnen im Vordergrund ist, und die Einstellungen zeigen, ob die iCloud-Synchronisierung an ist.
 
 ## Noch nicht überprüft
 

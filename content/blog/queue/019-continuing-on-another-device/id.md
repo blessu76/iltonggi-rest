@@ -2,6 +2,7 @@
 title: Melanjutkan Permainan di Perangkat Lain
 description: Cara Iltonggi memungkinkan permainan dilanjutkan di antara perangkat Apple, dan aturan yang kami pilih saat dua perangkat berbeda isinya.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: id
 translation_of: ko
@@ -42,7 +43,7 @@ Satu teks yang lebih dari 200.000 karakter tidak diunggah dan tetap di perangkat
 
 ## Menyadari perubahan saat bermain
 
-Awalnya gim hanya membaca ulang awan ketika Anda kembali ke aplikasi. Pada build 85, gim juga menyadari perubahan dari perangkat lain saat sedang tampil di depan, dan layar pengaturan kini menunjukkan apakah sinkronisasi iCloud aktif.
+Awalnya gim hanya membaca ulang awan ketika Anda kembali ke aplikasi. Pada build berikutnya, gim juga menyadari perubahan dari perangkat lain saat sedang tampil di depan, dan layar pengaturan kini menunjukkan apakah sinkronisasi iCloud aktif.
 
 ## Belum terverifikasi
 

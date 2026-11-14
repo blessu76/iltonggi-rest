@@ -2,6 +2,7 @@
 title: Reprendre la partie sur un autre appareil
 description: Comment Iltonggi permet de continuer une partie d'un appareil Apple à l'autre, et les règles choisies quand deux appareils ne sont pas d'accord.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: fr
 translation_of: ko
@@ -42,7 +43,7 @@ Un seul texte de plus de 200 000 caractères n'est pas envoyé et reste sur l'ap
 
 ## Remarquer un changement pendant que l'on joue
 
-Au début, le jeu ne relisait le cloud qu'au retour dans l'application. Avec la version 85, il remarque aussi un changement fait sur un autre appareil pendant qu'il est au premier plan, et l'écran des réglages indique si la synchronisation iCloud est activée.
+Au début, le jeu ne relisait le cloud qu'au retour dans l'application. Dans une version ultérieure, il remarque aussi un changement fait sur un autre appareil pendant qu'il est au premier plan, et l'écran des réglages indique si la synchronisation iCloud est activée.
 
 ## Pas encore vérifié
 

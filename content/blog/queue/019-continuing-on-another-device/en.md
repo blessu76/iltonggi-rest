@@ -2,6 +2,7 @@
 title: Picking Up Where You Left Off on Another Device
 description: How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.
 date: 2026-11-16
+copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: en
 ---
@@ -41,7 +42,7 @@ A single piece of text over 200,000 characters is not sent up and stays on the d
 
 ## Noticing a change while you play
 
-At first the game only re-read the cloud when you came back to the app. In build 85 it also notices a change made on another device while it is in front of you, and the settings screen now shows whether iCloud sync is on.
+At first the game only re-read the cloud when you came back to the app. In a later build it also notices a change made on another device while it is in front of you, and the settings screen now shows whether iCloud sync is on.
 
 ## Not yet verified
 
