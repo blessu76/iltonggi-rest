@@ -5,6 +5,7 @@ slug: why-a-three-kingdoms-land-grab
 lang: de
 translation_of: ko
 date: 2026-10-30
+copy_review: iris 2026-11-14
 published: 2026-10-30T12:00:00+09:00
 ---
 
@@ -22,7 +23,7 @@ Erfolgserlebnisse kommen unserer Ansicht nach nicht nur von großen Siegen. Eine
 
 Die Karte ist in Bezirke unterteilt. Man tippt einen Bezirk an, sammelt und vermehrt Soldaten und greift Nachbarbezirke an. Je größer der Bezirk, desto mehr Truppen sammeln sich dort: Die Hauptstadt ist groß, ein Dorf auf dem Land klein. Allein dieser einfache Unterschied wirft die Frage auf, was man zuerst angreift und was man verteidigt.
 
-Wie beim Schach, wo die Partie endet, sobald der König fällt, wollten wir den Reiz erhalten, dass die Entscheidung fällt, wenn man die Flagge auf die Königsfestung setzt. Man muss nicht jedes Stück Land einsammeln; ein entscheidender Zug kann die Partie beenden, und das passt gut zu kurzen Partien. Unbekanntes Land liegt im Nebel verborgen, und nur ein ausgesandter Spion kann es erspähen. Eine Karte, bei der man neugierig ins Unbekannte vorstößt, erzählt unserer Ansicht nach mehr Geschichte als eine, die man ganz überblickt.
+Wie beim Janggi, dem koreanischen Schach, wo die Partie endet, sobald der König fällt, wollten wir den Reiz erhalten, dass die Entscheidung fällt, wenn man die Flagge auf die Königsfestung setzt. Man muss nicht jedes Stück Land einsammeln; ein entscheidender Zug kann die Partie beenden, und das passt gut zu kurzen Partien. Unbekanntes Land liegt im Nebel verborgen, und nur ein ausgesandter Spion kann es erspähen. Eine Karte, bei der man neugierig ins Unbekannte vorstößt, erzählt unserer Ansicht nach mehr Geschichte als eine, die man ganz überblickt.
 
 ## Mit dem Kleinsten angefangen
 

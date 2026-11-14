@@ -5,6 +5,7 @@ slug: a-name-and-a-record
 lang: de
 translation_of: ko
 date: 2026-11-13
+copy_review: iris 2026-11-14
 published: 2026-11-13T12:00:00+09:00
 ---
 
@@ -36,7 +37,7 @@ Die Liste der schnellsten Einigung haben wir mit Absicht an Akt 1 und Schwer geb
 
 ## 4. Wessen Name in der Liste erscheint
 
-Das ist das Eine, was man vorher wissen sollte. Die Liste zeigt deinen Game-Center-Namen, nicht deinen Spitznamen in der App. Die App weist im Rekordbildschirm darauf hin, damit niemand überrascht ist, dort einen anderen Namen zu sehen.
+Das ist das Einzige, was man vorher wissen sollte. Die Liste zeigt deinen Game-Center-Namen, nicht deinen Spitznamen in der App. Die App weist im Rekordbildschirm darauf hin, damit niemand überrascht ist, dort einen anderen Namen zu sehen.
 
 Das Senden von Punktzahlen geschieht leise. Wenn du nicht angemeldet bist oder eine Punktzahl nicht gesendet werden kann, unterbricht dich die App nicht und versucht es später erneut. Du kannst ganz normal spielen, ohne dich je anzumelden.
 

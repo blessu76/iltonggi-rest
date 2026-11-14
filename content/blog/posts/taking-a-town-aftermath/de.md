@@ -5,6 +5,7 @@ slug: taking-a-town-aftermath
 lang: de
 translation_of: ko
 date: 2026-11-04
+copy_review: iris 2026-11-14
 published: 2026-11-04T12:00:00+09:00
 ---
 
@@ -24,7 +25,7 @@ Wird es noch schlimmer und die Stimmung erreicht den Boden, bricht ein Aufstand 
 
 ## Was die Zeit löst und was Menschen lösen müssen
 
-Eroberte Erde bleibt nicht für immer unruhig. Die Stimmung erholt sich langsam, um 4 pro Zug, in Richtung des Friedensniveaus von 70. Beginnt man bei 40, braucht es etwas mehr als acht Züge, um 70 zu erreichen. Auch die Bevölkerung füllt sich in jedem Zug um 30 Prozent des Fehlbetrags auf, solange die Stimmung bei 20 oder darüber liegt.
+Eroberte Erde bleibt nicht für immer unruhig. Die Stimmung erholt sich langsam, um 4 pro Zug, in Richtung des Friedensniveaus von 70. Beginnt man bei 40, braucht es etwa acht Züge, um 70 zu erreichen. Auch die Bevölkerung füllt sich in jedem Zug um 30 Prozent des Fehlbetrags auf, solange die Stimmung bei 20 oder darüber liegt.
 
 Wer die Lage schneller beruhigen will, muss jedoch selbst eingreifen. Gibt man Vermögen für ein Fest aus, steigt die Stimmung. Auf dem Bildschirm erscheinen Hinweise wie „Kurz vor dem Aufstand: Gebt ein Fest“, und gemeint ist, dass man zwischen Ausgaben für das Fest und für Truppen wählen muss. Truppen hat man für den Sieg schon eingesetzt, also verändert die Entscheidung, ob man Vermögen für die Beruhigung des gewonnenen Landes ausgibt oder sofort die nächste Stadt angreift, den Verlauf der Partie.
 

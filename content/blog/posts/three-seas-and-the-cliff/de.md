@@ -5,10 +5,11 @@ slug: three-seas-and-the-cliff
 lang: de
 translation_of: ko
 date: 2026-11-09
+copy_review: iris 2026-11-14
 published: 2026-11-09T12:00:00+09:00
 ---
 
-Die Akte 4, 5 und 6 tragen die Landnahme aufs Meer hinaus und über die alten Handelsrouten. Dieser Beitrag führt durch alle drei und erzählt dann eine Geschichte aus der Balancearbeit, die uns selbst überrascht hat. Die Zahlen stammen aus der Entwicklung und können sich ändern; sie sind ein Blick hinter den Bildschirm und kein Versprechen darüber, wie irgendeine Partie verlaufen wird.
+Akt 4, 5 und 6 tragen die Landnahme aufs Meer hinaus und über die alten Handelsrouten. Dieser Beitrag führt durch alle drei und erzählt dann eine Geschichte aus der Balancearbeit, die uns selbst überrascht hat. Die Zahlen stammen aus der Entwicklung und können sich ändern; sie sind ein Blick hinter den Bildschirm und kein Versprechen darüber, wie irgendeine Partie verlaufen wird.
 
 ## 1. Akt 4, die Schatzflotte der Südmeere
 
