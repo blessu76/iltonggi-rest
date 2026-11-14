@@ -16,7 +16,7 @@ No contamos todo lo que hay en el proyecto, sino solo los archivos que la aplica
 
 | Concepto | Medido | Límite |
 |---|---|---|
-| Total de recursos empaquetados (74 archivos) | 9,83 MiB | 12,000,000 bytes |
+| Total de recursos empaquetados (74 archivos) | 9,83 MiB | 12.000.000 bytes |
 | El archivo más grande (fuente Myeongjo, comprimida) | 1,29 MB | 1.5 MB |
 | Sonido | 4,27 MB | 5 MB |
 | Fotos (23) | 3,55 MB | 4.2 MB |
