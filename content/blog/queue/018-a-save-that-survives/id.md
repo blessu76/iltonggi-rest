@@ -2,6 +2,7 @@
 title: Berkas Simpanan yang Selamat Meski Rusak
 description: Cara Iltonggi menjaga kemajuan Anda jika berkas terputus saat ditulis, dan cara kami mengujinya tanpa merusak ponsel sungguhan.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: id
 translation_of: ko

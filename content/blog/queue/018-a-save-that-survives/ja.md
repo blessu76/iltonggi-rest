@@ -2,6 +2,7 @@
 title: 壊れても生き残るセーブファイル
 description: 一統記がファイルの書き込み中に途切れても進行を守る方法と、実際のスマホを壊さずに試した方法を記しました。
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: ja
 translation_of: ko

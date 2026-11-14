@@ -2,6 +2,7 @@
 title: Um save que sobrevive mesmo quando quebra
 description: Como o Iltonggi protege o seu progresso quando a gravação de um arquivo é interrompida, e como testamos isso sem estragar um celular de verdade.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: pt
 translation_of: ko

@@ -2,6 +2,7 @@
 title: Una partida guardada que sobrevive aunque se rompa
 description: Cómo Iltonggi protege tu progreso cuando la escritura de un archivo se interrumpe, y cómo lo probamos sin romper un teléfono real.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: es
 translation_of: ko

@@ -2,6 +2,7 @@
 title: Một tệp lưu vẫn sống sót khi bị hỏng
 description: Chúng tôi ghi lại cách Iltonggi bảo vệ tiến trình khi việc ghi tệp bị gián đoạn, và cách chúng tôi thử nghiệm mà không làm hỏng điện thoại thật.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: vi
 translation_of: ko

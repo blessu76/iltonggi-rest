@@ -2,6 +2,7 @@
 title: 깨져도 살아남는 저장 파일
 description: 일통기가 파일을 쓰다 끊겨도 진행을 지키는 방법과, 실제 폰을 망가뜨리지 않고 시험한 방법을 적었습니다.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: ko
 ---

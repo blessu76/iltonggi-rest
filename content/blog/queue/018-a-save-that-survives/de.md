@@ -2,6 +2,7 @@
 title: Ein Spielstand, der Beschädigung übersteht
 description: Wie Iltonggi Ihren Fortschritt schützt, wenn eine Datei mitten im Schreiben abbricht, und wie wir das testeten, ohne ein echtes Handy zu beschädigen.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: de
 translation_of: ko
@@ -26,7 +27,7 @@ Wir haben die Sicherung für jede Datei eingeschaltet, deren Verlust wehtäte. F
 
 ## Testen, ohne ein Handy zu zerstören
 
-Man kann Spielern nicht bitten, mitten im Schreiben den Strom zu kappen. Deshalb haben wir vier Situationen in Tests nachgestellt, für jede Datei, die jetzt eine Sicherung hat:
+Man kann Spieler nicht bitten, mitten im Schreiben den Strom zu kappen. Deshalb haben wir vier Situationen in Tests nachgestellt, für jede Datei, die jetzt eine Sicherung hat:
 
 - Beschädigter Text im Spielstand: Die Sicherung wird wiederhergestellt.
 - Leere Datei: Die Sicherung wird wiederhergestellt.

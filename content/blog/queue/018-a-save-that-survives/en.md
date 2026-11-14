@@ -2,6 +2,7 @@
 title: A Save File That Survives Being Broken
 description: How Iltonggi protects your progress if a save file is cut off mid-write, and how we tested it without breaking a real phone.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: en
 ---

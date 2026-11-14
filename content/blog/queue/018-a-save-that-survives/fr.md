@@ -2,6 +2,7 @@
 title: Une sauvegarde qui survit à la casse
 description: Comment Iltonggi protège votre progression si un fichier est coupé en pleine écriture, et comment nous l'avons testé sans abîmer un vrai téléphone.
 date: 2026-11-15
+copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: fr
 translation_of: ko
