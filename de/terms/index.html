@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=53895628">
+<link rel="stylesheet" href="/assets/site.css?v=63ba76e6">
 <script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
 <body>
@@ -60,8 +60,10 @@
       <a href="/de/journal/">Journal</a>
       <a href="/de/support/">Support</a>
     </nav>
+    <select class="lang-select" aria-label="Sprache" data-cur="/de"><option value="/en" lang="en">English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de" selected>Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
   </div>
 </header>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');try{localStorage.setItem("iltonggi-lang",o.lang)}catch(e){}location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
 
 <main id="content">
   <section class="doc">
@@ -111,8 +113,6 @@
       <a href="/de/support/">Support</a>
     </nav>
   </div>
-  <nav class="foot-langs container" aria-label="Sprache"><a href="/en/terms/" hreflang="en" lang="en">English</a><a href="/ko/terms/" hreflang="ko" lang="ko">한국어</a><a href="/ja/terms/" hreflang="ja" lang="ja">日本語</a><a href="/zh-Hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/es/terms/" hreflang="es" lang="es">Español</a><a href="/pt-BR/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/fr/terms/" hreflang="fr" lang="fr">Français</a><a href="/de/terms/" aria-current="true" hreflang="de" lang="de">Deutsch</a><a href="/id/terms/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/th/terms/" hreflang="th" lang="th">ไทย</a><a href="/vi/terms/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/tr/terms/" hreflang="tr" lang="tr">Türkçe</a></nav>
 </footer>
-<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');if(a)try{localStorage.setItem("iltonggi-lang",a.getAttribute('hreflang'))}catch(x){}});</script>
 </body>
 </html>

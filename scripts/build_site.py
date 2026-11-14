@@ -146,8 +146,12 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 '''
 
 
-def header(t, lang, root):
+def header(t, lang, root, home=False):
     p = prefix(lang, root)
+    options = "".join(
+        '<option value="%s" lang="%s"%s>%s</option>' % (
+            "" if root and l == "en" else "/" + l, l, " selected" if l == lang else "", NATIVE[l])
+        for l in LANGS)
     return f'''<a class="skip-link" href="#content">{esc(t['skip'])}</a>
 <header class="site-header">
   <div class="site-header__inner container">
@@ -162,19 +166,15 @@ def header(t, lang, root):
       <a href="{p}{blog.list_path(1)}">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
+    <select class="lang-select" aria-label="{esc(t['lang_aria'])}" data-cur="{p}"{' data-home' if home else ''}>{options}</select>
   </div>
 </header>
-
+{HEADER_LANG_SCRIPT % json.dumps(LANG_KEY)}
 '''
 
 
 def footer(t, lang, page, root):
     p = prefix(lang, root)
-    langs = "".join(
-        '<a href="%s"%s hreflang="%s" lang="%s">%s</a>' % (
-            (PATH[page] if root and l == "en" else "/" + l + PATH[page]),
-            ' aria-current="true"' if l == lang else "", l, l, NATIVE[l])
-        for l in LANGS)
     return f'''
 <footer class="site-footer">
   <div class="site-footer__inner container">
@@ -190,9 +190,8 @@ def footer(t, lang, page, root):
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
   </div>
-  <nav class="foot-langs container" aria-label="{esc(t['lang_aria'])}">{langs}</nav>
 </footer>
-{FOOT_LANG_SCRIPT % json.dumps(LANG_KEY)}'''
+'''
 
 
 LANG_KEY = "iltonggi-lang"
@@ -207,6 +206,7 @@ PAGE_LANG_SCRIPT = (
     "<script>(function(){" + LANG_JS + "\n"
     "var SUP=%s,AV=%s,KEY=%s,st=null,pm=/^\\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\\//.exec(location.pathname);\n"
     "if(pm&&SUP.indexOf(pm[1])>=0)return;\n"
+    "if(/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent||''))return;\n"
     "try{st=localStorage.getItem(KEY)}catch(e){}\n"
     "var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});\n"
     "if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}\n"
@@ -226,10 +226,12 @@ def add_lang_script(files):
     return files
 
 
-# Every page: choosing a language in the footer menu remembers it.
-FOOT_LANG_SCRIPT = (
-    "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.foot-langs a[hreflang]');"
-    "if(a)try{localStorage.setItem(%s,a.getAttribute('hreflang'))}catch(x){}});</script>\n")
+# Every page: the header language menu remembers the choice and opens the same page in that language (the 404 page opens its home).
+HEADER_LANG_SCRIPT = (
+    "<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;"
+    "s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');"
+    "try{localStorage.setItem(%s,o.lang)}catch(e){}"
+    "location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>\n")
 
 
 def home(t, lang, root):
@@ -366,7 +368,7 @@ def not_found(data):
             "/" + l if l != "en" else "", esc(data[l]["nav_support"]))
         for l in LANGS)
     out = head(t, "en", "home", True, t["nf"]["title"] + " — " + t["name"], t["nf"]["desc"],
-               robots="noindex, follow", canonical=SITE + "/404.html", alt=False) + header(t, "en", True)
+               robots="noindex, follow", canonical=SITE + "/404.html", alt=False) + header(t, "en", True, home=True)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
@@ -379,7 +381,7 @@ def not_found(data):
   </section>
 </main>
 '''
-    return out + footer(t, "en", "home", True).replace('<nav class="foot-langs', '<nav hidden class="foot-langs', 1) + "</body>\n</html>\n"
+    return out + footer(t, "en", "home", True) + "</body>\n</html>\n"
 
 
 def redirect_page(target):

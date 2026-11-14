@@ -20,7 +20,7 @@ PREFIXED = set(bs.LANGS) | {bs.LEGACY_PT}  # language folders + the legacy /pt/ 
 
 HARNESS = r"""
 const vm = require('vm');
-const {code, search, hash, stored, languages, throwStorage, pathname} = JSON.parse(process.env.LANG_CASE);
+const {code, search, hash, stored, languages, throwStorage, pathname, ua} = JSON.parse(process.env.LANG_CASE);
 const out = {replaced: null, saved: null, history: null};
 const sandbox = {
   location: {search, hash, pathname, replace: (u) => { out.replaced = u; }},
@@ -28,7 +28,7 @@ const sandbox = {
     getItem: (k) => { if (throwStorage) throw new Error('blocked'); return stored; },
     setItem: (k, v) => { if (throwStorage) throw new Error('blocked'); out.saved = [k, v]; },
   },
-  navigator: {languages, language: languages && languages[0]},
+  navigator: {languages, language: languages && languages[0], userAgent: ua},
   history: {replaceState: (a, b, u) => { out.history = u; }},
 };
 vm.createContext(sandbox);
@@ -42,10 +42,10 @@ def page_code(rel):
     return re.search(r"<script>(\(function\(\)\{function ltNorm.*?)</script>", page, re.S).group(1)
 
 
-def run_root(search="", hash="", stored=None, languages=("en-US",), throw=False, rel="index.html", pathname="/", code=None):
+def run_root(search="", hash="", stored=None, languages=("en-US",), throw=False, rel="index.html", pathname="/", code=None, ua=""):
     code = code or page_code(rel)
     arg = json.dumps({"code": code, "search": search, "hash": hash, "stored": stored, "pathname": pathname,
-                      "languages": list(languages), "throwStorage": throw})
+                      "languages": list(languages), "throwStorage": throw, "ua": ua})
     r = subprocess.run([NODE, "-e", HARNESS], capture_output=True, text=True, check=True, env={**os.environ, "LANG_CASE": arg})
     return json.loads(r.stdout)
 
@@ -118,6 +118,7 @@ class RootLang(unittest.TestCase):
         self.assertEqual(run_root(languages=["tr-TR"])["replaced"], "/tr/")
         # simplified Chinese and the retired languages (ar, hi, ru) are not on the site: they stay on English
         self.assertIsNone(run_root(languages=["zh-CN"])["replaced"])
+        self.assertIsNone(run_root(languages=["zh"])["replaced"])  # bare zh is not Traditional (kit parity)
         self.assertIsNone(run_root(languages=["ar-EG", "en"])["replaced"])
         self.assertEqual(run_root(languages=["hi-IN", "th"])["replaced"], "/th/")
         self.assertEqual(run_root(stored="ar", languages=["ko"])["replaced"], "/ko/")
@@ -133,6 +134,15 @@ class RootLang(unittest.TestCase):
         r = run_root(search="?lang=ko", throw=True)
         self.assertEqual(r["replaced"], "/ko/")
         self.assertEqual(run_root(languages=["ja"], throw=True)["replaced"], "/ja/")
+
+    def test_crawlers_are_never_redirected(self):
+        for ua in ("Googlebot/2.1 (+http://www.google.com/bot.html)", "Mozilla/5.0 (compatible; bingbot/2.0)",
+                   "Mozilla/5.0 (compatible; YandexBot/3.0)", "Slurp", "Lighthouse", "Mozilla/5.0 Crawler/1.0"):
+            with self.subTest(ua):
+                r = run_root(search="?lang=ko", stored="de", languages=["ko-KR"], ua=ua)
+                self.assertIsNone(r["replaced"])
+                self.assertIsNone(r["saved"])
+        self.assertEqual(run_root(languages=["ko-KR"], ua="Mozilla/5.0 (iPhone; CPU iPhone OS 18_0)")["replaced"], "/ko/")
 
 
 class Built(unittest.TestCase):
@@ -158,12 +168,40 @@ class Built(unittest.TestCase):
         css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
         self.assertNotIn("lang-hint", css)
 
-    def test_every_page_with_the_language_menu_remembers_the_choice(self):
+    def test_every_page_has_one_header_language_menu_that_remembers_the_choice(self):
         for rel, text in self.files.items():
             if rel.endswith(".html") and rel.split("/")[0] != bs.LEGACY_PT:  # /pt/ stubs only redirect
                 with self.subTest(rel):
-                    self.assertEqual(text.count(".foot-langs a[hreflang]"), 1)
-                    self.assertIn("localStorage.setItem(\"iltonggi-lang\"", text)
+                    self.assertEqual(text.count('<select class="lang-select"'), 1)
+                    self.assertLess(text.index('<select class="lang-select"'), text.index("</header>"))
+                    self.assertIn('localStorage.setItem("iltonggi-lang",o.lang)', text)
+
+    def test_header_menu_lists_twelve_languages_and_selects_the_page_language(self):
+        for rel, text in self.files.items():
+            top = rel.split("/")[0]
+            if not rel.endswith(".html") or top == bs.LEGACY_PT:
+                continue
+            page_lang = top if top in bs.LANGS else "en"
+            with self.subTest(rel):
+                sel = re.search(r'<select class="lang-select".*?</select>', text, re.S).group(0)
+                opts = re.findall(r'<option value="([^"]*)" lang="([^"]+)"( selected)?>', sel)
+                self.assertEqual([o[1] for o in opts], bs.LANGS)
+                self.assertEqual([o[1] for o in opts if o[2]], [page_lang])
+
+    def test_header_nav_has_no_terms_and_footer_keeps_legal_links(self):
+        for rel, text in self.files.items():
+            if not rel.endswith(".html") or rel.split("/")[0] == bs.LEGACY_PT:
+                continue
+            with self.subTest(rel):
+                nav = re.search(r'<nav class="nav".*?</nav>', text, re.S).group(0)
+                self.assertNotIn("/terms/", nav)
+                foot = re.search(r'<nav class="footer-links".*?</nav>', text, re.S).group(0)
+                self.assertIn("/terms/", foot)
+                self.assertIn("/privacy/", foot)
+                self.assertNotIn("foot-langs", text)
+
+    def test_404_menu_only_goes_home(self):
+        self.assertIn("data-home", re.search(r'<select class="lang-select"[^>]*>', self.files["404.html"]).group(0))
 
     def test_seo_tags_untouched(self):
         page = self.files["index.html"]
