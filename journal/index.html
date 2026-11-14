@@ -79,12 +79,12 @@ function ltResolve(o) {
   for (var i = 0; i < list.length; i++) { v = ltNorm(list[i], s); if (v) return { lang: v, from: 'browser' }; }
   return { lang: 'en', from: 'default' };
 }
-var SUP=["en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],AV=["ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],KEY="iltonggi-lang",st=null,pm=/^\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\//.exec(location.pathname);
+var SUP=["en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],AV=["ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],KEYS=["ipe_lang", "iltonggi-lang"],st=null,pm=/^\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\//.exec(location.pathname);
 if(pm&&SUP.indexOf(pm[1])>=0)return;
 if(/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent||''))return;
-try{st=localStorage.getItem(KEY)}catch(e){}
+try{st=localStorage.getItem(KEYS[0])||localStorage.getItem(KEYS[1])}catch(e){}
 var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});
-if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}
+if(r.from==='url'){KEYS.forEach(function(k){try{localStorage.setItem(k,r.lang)}catch(e){}})}
 var q=ltStrip(location.search);
 if(r.lang!=='en'&&AV.indexOf(r.lang)>=0){location.replace('/'+r.lang+location.pathname+q+location.hash)}
 else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}
@@ -113,7 +113,7 @@ else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replace
     <select class="lang-select" aria-label="Language" data-cur=""><option value="" lang="en" selected>English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de">Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
   </div>
 </header>
-<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');try{localStorage.setItem("iltonggi-lang",o.lang)}catch(e){}location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
 
 <main id="content">
   <section class="doc">

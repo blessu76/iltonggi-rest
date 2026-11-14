@@ -20,13 +20,13 @@ PREFIXED = set(bs.LANGS) | {bs.LEGACY_PT}  # language folders + the legacy /pt/ 
 
 HARNESS = r"""
 const vm = require('vm');
-const {code, search, hash, stored, languages, throwStorage, pathname, ua} = JSON.parse(process.env.LANG_CASE);
+const {code, search, hash, stored, legacy, languages, throwStorage, pathname, ua} = JSON.parse(process.env.LANG_CASE);
 const out = {replaced: null, saved: null, history: null};
 const sandbox = {
   location: {search, hash, pathname, replace: (u) => { out.replaced = u; }},
   localStorage: {
-    getItem: (k) => { if (throwStorage) throw new Error('blocked'); return stored; },
-    setItem: (k, v) => { if (throwStorage) throw new Error('blocked'); out.saved = [k, v]; },
+    getItem: (k) => { if (throwStorage) throw new Error('blocked'); return k === 'ipe_lang' ? stored : legacy; },
+    setItem: (k, v) => { if (throwStorage) throw new Error('blocked'); out.saved = out.saved || {}; out.saved[k] = v; },
   },
   navigator: {languages, language: languages && languages[0], userAgent: ua},
   history: {replaceState: (a, b, u) => { out.history = u; }},
@@ -42,9 +42,13 @@ def page_code(rel):
     return re.search(r"<script>(\(function\(\)\{function ltNorm.*?)</script>", page, re.S).group(1)
 
 
-def run_root(search="", hash="", stored=None, languages=("en-US",), throw=False, rel="index.html", pathname="/", code=None, ua=""):
+def both(lang):
+    return {"ipe_lang": lang, "iltonggi-lang": lang}
+
+
+def run_root(search="", hash="", stored=None, languages=("en-US",), throw=False, rel="index.html", pathname="/", code=None, ua="", legacy=None):
     code = code or page_code(rel)
-    arg = json.dumps({"code": code, "search": search, "hash": hash, "stored": stored, "pathname": pathname,
+    arg = json.dumps({"code": code, "search": search, "hash": hash, "stored": stored, "legacy": legacy, "pathname": pathname,
                       "languages": list(languages), "throwStorage": throw, "ua": ua})
     r = subprocess.run([NODE, "-e", HARNESS], capture_output=True, text=True, check=True, env={**os.environ, "LANG_CASE": arg})
     return json.loads(r.stdout)
@@ -55,12 +59,12 @@ class RootLang(unittest.TestCase):
     def test_lang_param_goes_to_the_language_and_is_saved(self):
         r = run_root(search="?lang=ko")
         self.assertEqual(r["replaced"], "/ko/")
-        self.assertEqual(r["saved"], ["iltonggi-lang", "ko"])
+        self.assertEqual(r["saved"], both("ko"))
 
     def test_lang_param_beats_saved_and_browser(self):
         r = run_root(search="?lang=ja", stored="de", languages=["ko-KR"])
         self.assertEqual(r["replaced"], "/ja/")
-        self.assertEqual(r["saved"], ["iltonggi-lang", "ja"])
+        self.assertEqual(r["saved"], both("ja"))
 
     def test_lang_param_regional_code_is_normalised(self):
         self.assertEqual(run_root(search="?lang=zh-TW")["replaced"], "/zh-Hant/")
@@ -69,7 +73,7 @@ class RootLang(unittest.TestCase):
     def test_legacy_indonesian_code_in_means_id(self):
         r = run_root(search="?lang=in")
         self.assertEqual(r["replaced"], "/id/")
-        self.assertEqual(r["saved"], ["iltonggi-lang", "id"])
+        self.assertEqual(r["saved"], both("id"))
         self.assertEqual(run_root(search="?lang=in-ID")["replaced"], "/id/")
         self.assertEqual(run_root(languages=["in-ID", "en"])["replaced"], "/id/")
         self.assertEqual(run_root(stored="in")["replaced"], "/id/")
@@ -78,7 +82,7 @@ class RootLang(unittest.TestCase):
     def test_lang_en_stays_on_root_saves_and_drops_the_query(self):
         r = run_root(search="?lang=en", stored="ko", languages=["ko-KR"])
         self.assertIsNone(r["replaced"])
-        self.assertEqual(r["saved"], ["iltonggi-lang", "en"])
+        self.assertEqual(r["saved"], both("en"))
         self.assertEqual(r["history"], "/")
 
     def test_other_query_and_hash_survive(self):
@@ -100,6 +104,14 @@ class RootLang(unittest.TestCase):
         r = run_root(stored="de", languages=["ko-KR"])
         self.assertEqual(r["replaced"], "/de/")
         self.assertIsNone(r["saved"])
+
+    def test_ipe_lang_beats_the_older_key(self):
+        r = run_root(stored="ko", legacy="de", languages=["ja-JP"])
+        self.assertEqual(r["replaced"], "/ko/")
+        self.assertIsNone(run_root(stored="en", legacy="de", languages=["ja-JP"])["replaced"])
+
+    def test_older_key_is_used_when_ipe_lang_is_missing(self):
+        self.assertEqual(run_root(legacy="de", languages=["ko-KR"])["replaced"], "/de/")
 
     def test_saved_english_beats_browser_korean(self):
         r = run_root(stored="en", languages=["ko-KR"])
@@ -174,7 +186,7 @@ class Built(unittest.TestCase):
                 with self.subTest(rel):
                     self.assertEqual(text.count('<select class="lang-select"'), 1)
                     self.assertLess(text.index('<select class="lang-select"'), text.index("</header>"))
-                    self.assertIn('localStorage.setItem("iltonggi-lang",o.lang)', text)
+                    self.assertIn('["ipe_lang", "iltonggi-lang"].forEach', text)
 
     def test_header_menu_lists_twelve_languages_and_selects_the_page_language(self):
         for rel, text in self.files.items():
@@ -246,7 +258,7 @@ class EveryPage(unittest.TestCase):
                 text = self.files[rel]
                 self.assertEqual(text.count("function ltResolve"), 1)
                 self.assertIn("function ltResolve", text.split("</head>")[0])
-                self.assertIn('KEY="iltonggi-lang"', text)
+                self.assertIn('KEYS=["ipe_lang", "iltonggi-lang"]', text)
 
     def test_language_pages_and_404_do_not_have_it(self):
         for rel, text in self.files.items():
@@ -367,7 +379,7 @@ class InnerPageBehaviour(unittest.TestCase):
     def test_query_and_hash_survive_and_lang_param_is_dropped(self):
         r = run_root(search="?utm=x&lang=fr&app=1", hash="#faq", rel="support/index.html", pathname="/support/", code=self.code("support/index.html"))
         self.assertEqual(r["replaced"], "/fr/support/?utm=x&app=1#faq")
-        self.assertEqual(r["saved"], ["iltonggi-lang", "fr"])
+        self.assertEqual(r["saved"], both("fr"))
         r = run_root(search="?utm=x", hash="#faq", stored="de", rel="support/index.html", pathname="/support/", code=self.code("support/index.html"))
         self.assertEqual(r["replaced"], "/de/support/?utm=x#faq")
 
@@ -387,7 +399,7 @@ class InnerPageBehaviour(unittest.TestCase):
         self.assertIsNone(r["replaced"])  # the first supported language decides: ko, which this page lacks; no fallback to ja
         r = run_root(search="?lang=ko", rel="blog/index.html", pathname="/blog/", code=code)
         self.assertIsNone(r["replaced"])
-        self.assertEqual(r["saved"], ["iltonggi-lang", "ko"])
+        self.assertEqual(r["saved"], both("ko"))
         self.assertEqual(r["history"], "/blog/")
         self.assertEqual(run_root(languages=["ja"], rel="blog/index.html", pathname="/blog/", code=code)["replaced"], "/ja/blog/")
 

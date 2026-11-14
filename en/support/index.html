@@ -63,7 +63,7 @@
     <select class="lang-select" aria-label="Language" data-cur="/en"><option value="/en" lang="en" selected>English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de">Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
   </div>
 </header>
-<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');try{localStorage.setItem("iltonggi-lang",o.lang)}catch(e){}location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
 
 <main id="content">
   <section class="doc">

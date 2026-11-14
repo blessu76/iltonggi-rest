@@ -169,7 +169,7 @@ def header(t, lang, root, home=False):
     <select class="lang-select" aria-label="{esc(t['lang_aria'])}" data-cur="{p}"{' data-home' if home else ''}>{options}</select>
   </div>
 </header>
-{HEADER_LANG_SCRIPT % json.dumps(LANG_KEY)}
+{HEADER_LANG_SCRIPT % json.dumps(LANG_KEYS)}
 '''
 
 
@@ -195,6 +195,7 @@ def footer(t, lang, page, root):
 
 
 LANG_KEY = "iltonggi-lang"
+LANG_KEYS = ["ipe_lang", LANG_KEY]  # shared with the other ipe sites: read ipe_lang first, every save writes both
 LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").split("*/", 1)[1].strip()
 # Every page that opens WITHOUT a language prefix (/, /privacy/, /terms/, /support/, /blog/..., not 404.html): inline in <head>, runs
 # before first paint. Saves the language on ?lang=xx, then leaves for the same page under /xx/ (replace, so Back works) -- but only when that
@@ -204,12 +205,12 @@ LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").spl
 LANG_MARK = "<!--LANG-REDIRECT-->\n"  # head() puts it on a prefix-less page; build() swaps it for the script
 PAGE_LANG_SCRIPT = (
     "<script>(function(){" + LANG_JS + "\n"
-    "var SUP=%s,AV=%s,KEY=%s,st=null,pm=/^\\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\\//.exec(location.pathname);\n"
+    "var SUP=%s,AV=%s,KEYS=%s,st=null,pm=/^\\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\\//.exec(location.pathname);\n"
     "if(pm&&SUP.indexOf(pm[1])>=0)return;\n"
     "if(/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent||''))return;\n"
-    "try{st=localStorage.getItem(KEY)}catch(e){}\n"
+    "try{st=localStorage.getItem(KEYS[0])||localStorage.getItem(KEYS[1])}catch(e){}\n"
     "var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});\n"
-    "if(r.from==='url'){try{localStorage.setItem(KEY,r.lang)}catch(e){}}\n"
+    "if(r.from==='url'){KEYS.forEach(function(k){try{localStorage.setItem(k,r.lang)}catch(e){}})}\n"
     "var q=ltStrip(location.search);\n"
     "if(r.lang!=='en'&&AV.indexOf(r.lang)>=0){location.replace('/'+r.lang+location.pathname+q+location.hash)}\n"
     "else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}\n"
@@ -222,7 +223,7 @@ def add_lang_script(files):
         if LANG_MARK not in text:
             continue
         have = [l for l in LANGS if l != "en" and "%s/%s" % (l, rel) in files]
-        files[rel] = text.replace(LANG_MARK, PAGE_LANG_SCRIPT % (json.dumps(LANGS), json.dumps(have), json.dumps(LANG_KEY)), 1)
+        files[rel] = text.replace(LANG_MARK, PAGE_LANG_SCRIPT % (json.dumps(LANGS), json.dumps(have), json.dumps(LANG_KEYS)), 1)
     return files
 
 
@@ -230,7 +231,7 @@ def add_lang_script(files):
 HEADER_LANG_SCRIPT = (
     "<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;"
     "s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');"
-    "try{localStorage.setItem(%s,o.lang)}catch(e){}"
+    "%s.forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});"
     "location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>\n")
 
 
