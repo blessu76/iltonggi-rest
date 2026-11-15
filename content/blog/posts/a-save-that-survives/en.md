@@ -1,10 +1,11 @@
 ---
 title: A Save File That Survives Being Broken
 description: How Iltonggi protects your progress if a save file is cut off mid-write, and how we tested it without breaking a real phone.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: en
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Nothing ruins a long game faster than opening it and finding your progress gone. A phone can run out of battery, or the app can be closed in the middle of writing a file, and then half a file is left on disk. We wanted Iltonggi to survive that. The game is still in development, and this is a note on how far the protection goes today.

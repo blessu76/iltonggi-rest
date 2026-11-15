@@ -1,11 +1,12 @@
 ---
 title: Berkas Simpanan yang Selamat Meski Rusak
 description: Cara Iltonggi menjaga kemajuan Anda jika berkas terputus saat ditulis, dan cara kami mengujinya tanpa merusak ponsel sungguhan.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: id
 translation_of: ko
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Tak ada yang lebih cepat merusak permainan panjang daripada membukanya dan mendapati kemajuan hilang. Baterai ponsel bisa habis, atau aplikasi tertutup saat sedang menulis berkas, lalu yang tersisa hanya setengah berkas. Kami ingin Iltonggi selamat dari hal itu. Gim ini masih dalam pengembangan, dan catatan ini menjelaskan sejauh mana perlindungannya saat ini.

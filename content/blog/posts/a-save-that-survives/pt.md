@@ -1,11 +1,12 @@
 ---
 title: Um save que sobrevive mesmo quando quebra
 description: Como o Iltonggi protege o seu progresso quando a gravação de um arquivo é interrompida, e como testamos isso sem estragar um celular de verdade.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: pt
 translation_of: ko
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Poucas coisas desanimam tanto quanto abrir um jogo em que você investiu muito tempo e descobrir que o progresso sumiu. Se a bateria do celular acaba ou o aplicativo fecha no meio da gravação de um arquivo, pode sobrar um arquivo escrito pela metade. Queríamos que o Iltonggi sobrevivesse a isso. O jogo ainda está em desenvolvimento, e este texto é uma nota sobre até onde vai a proteção hoje.

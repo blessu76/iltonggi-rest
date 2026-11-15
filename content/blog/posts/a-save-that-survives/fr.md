@@ -1,11 +1,12 @@
 ---
 title: Une sauvegarde qui survit à la casse
 description: Comment Iltonggi protège votre progression si un fichier est coupé en pleine écriture, et comment nous l'avons testé sans abîmer un vrai téléphone.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: fr
 translation_of: ko
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Rien ne gâche plus vite une longue partie que d'ouvrir le jeu et de voir sa progression disparue. La batterie d'un téléphone peut se vider, ou l'application se fermer au milieu de l'écriture d'un fichier, et il reste alors la moitié d'un fichier. Nous voulions qu'Iltonggi y survive. Le jeu est encore en développement, et cette note dit jusqu'où va la protection aujourd'hui.

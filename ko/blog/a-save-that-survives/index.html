@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>깨져도 살아남는 저장 파일 — 일통기</title>
+<meta name="description" content="일통기가 파일을 쓰다 끊겨도 진행을 지키는 방법과, 실제 폰을 망가뜨리지 않고 시험한 방법을 적었습니다.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/a-save-that-survives/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/a-save-that-survives/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="일통기">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="깨져도 살아남는 저장 파일 — 일통기">
+<meta property="og:description" content="일통기가 파일을 쓰다 끊겨도 진행을 지키는 방법과, 실제 폰을 망가뜨리지 않고 시험한 방법을 적었습니다.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="깨져도 살아남는 저장 파일">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="깨져도 살아남는 저장 파일 — 일통기">
+<meta name="twitter:description" content="일통기가 파일을 쓰다 끊겨도 진행을 지키는 방법과, 실제 폰을 망가뜨리지 않고 시험한 방법을 적었습니다.">
+<meta name="twitter:image:alt" content="깨져도 살아남는 저장 파일">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=63ba76e6">
+<link rel="alternate" type="application/rss+xml" title="일통기 제작과정 (RSS)" href="/blog/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="일통기 제작과정 (Atom)" href="/blog/atom.xml">
+<meta property="article:published_time" content="2026-11-15T14:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-15T14:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/#post", "headline": "깨져도 살아남는 저장 파일", "description": "일통기가 파일을 쓰다 끊겨도 진행을 지키는 방법과, 실제 폰을 망가뜨리지 않고 시험한 방법을 적었습니다.", "datePublished": "2026-11-15T14:00:00+09:00", "dateModified": "2026-11-15T14:00:00+09:00", "inLanguage": "ko", "url": "https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/"}, "image": [{"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b", "width": 1200, "height": 630}], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}, "isPartOf": {"@type": "Blog", "name": "일통기 제작과정", "url": "https://iltonggi.ipe.rest/ko/journal/"}, "about": {"@type": "VideoGame", "name": "일통기", "alternateName": ["Iltonggi", "일통기", "一統記"], "genre": ["Strategy", "Turn-based strategy", "Historical"], "gamePlatform": "iOS", "applicationCategory": "Game", "url": "https://iltonggi.ipe.rest/ko/", "publisher": {"@id": "https://ipe.rest/#organization"}}, "articleSection": "저널", "wordCount": 816}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "일통기", "item": "https://iltonggi.ipe.rest/ko/"}, {"@type": "ListItem", "position": 2, "name": "저널", "item": "https://iltonggi.ipe.rest/ko/journal/"}, {"@type": "ListItem", "position": 3, "name": "깨져도 살아남는 저장 파일", "item": "https://iltonggi.ipe.rest/ko/blog/a-save-that-survives/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/ko/" aria-label="일통기 홈">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">일통기</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="주요 링크">
+      <a href="/ko/journal/">저널</a>
+      <a href="/ko/support/">고객지원</a>
+    </nav>
+    <select class="lang-select" aria-label="언어" data-cur="/ko"><option value="/en" lang="en">English</option><option value="/ko" lang="ko" selected>한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de">Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
+  </div>
+</header>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 18</p>
+      <h1>깨져도 살아남는 저장 파일</h1>
+      <p class="meta"><time datetime="2026-11-15T14:00:00+09:00" data-ipe-time>2026-11-15 14:00 KST</time></p>
+      <div class="post__body">
+<p>오래 한 게임을 열었는데 진행이 사라져 있는 것만큼 허탈한 일은 없습니다. 폰 배터리가 떨어지거나 파일을 쓰는 도중에 앱이 닫히면, 반쯤 쓰인 파일이 남을 수 있습니다. 일통기는 그런 일에서도 살아남게 하고 싶었습니다. 게임은 아직 개발 중이고, 이 글은 지금 보호가 어디까지 되어 있는지에 대한 메모입니다.</p>
+<h2>이미 대부분 있었습니다</h2>
+<p>안전장치를 더하려고 앉아 보니, 주 저장에는 이미 있었습니다. 우리가 잊고 있었던 것입니다. 네 단계로 움직입니다.</p>
+<ol>
+<li>새 저장을 먼저 임시 파일에 쓰고 나서 바꿔 끼웁니다. 쓰다가 끊겨도 옛 저장은 그대로입니다.</li>
+<li>직전 저장을 한 세대 백업으로 둡니다.</li>
+<li>불러올 때 파일이 제대로 읽히는지 확인합니다.</li>
+<li>깨졌으면 백업으로 되돌립니다. 백업까지 깨졌으면 멈추지 않고 새 판으로 시작합니다.</li>
+</ol>
+<p>빈틈은 주 저장에만 있다는 점이었습니다. 저장 칸 세 개, 설정, 깬 막, 퀘스트, 장터, 가진 물건, 닉네임과 기록은 그냥 쓰고 있었습니다.</p>
+<h2>넓히되, 전부는 아니게</h2>
+<p>잃으면 아픈 파일에는 모두 백업을 켰습니다. 로그, 안내, 날씨, 기록처럼 잃어도 큰일 아닌 것은 켜지 않았습니다. 목록을 짧게 두면 폰에 남는 파일도 적고 따져 볼 것도 적습니다. 파일 이름과 내용은 그대로라서 기존 저장은 계속 쓸 수 있습니다. 더해진 것은 백업 사본뿐입니다.</p>
+<h2>폰을 망가뜨리지 않고 시험하기</h2>
+<p>플레이어에게 쓰는 도중에 전원을 끊어 달라고 할 수는 없으니, 이제 백업이 있는 파일마다 네 가지 상황을 시험으로 재현했습니다.</p>
+<ul>
+<li>저장 글이 깨졌을 때: 백업으로 되돌립니다.</li>
+<li>빈 파일일 때: 백업으로 되돌립니다.</li>
+<li>깨졌는데 백업도 없을 때: 멈추지 않고 새 판으로 시작합니다.</li>
+<li>반쯤 쓰다 만 임시 파일만 남았을 때: 앞선 저장이 그대로 있습니다.</li>
+</ul>
+<h2>확인하지 못한 것</h2>
+<p>이것은 컴퓨터에서 한 시험입니다. 실제 기기에서 파일을 일부러 깨뜨려 복구되는 것을 본 적은 아직 없어서, 그 부분은 확인하지 못했습니다. 또 주 저장이 아닌 것이 복구될 때는 플레이어에게 알림이 뜨지 않고 조용히 돌아옵니다. 설정에는 그게 맞다고 보지만, 다시 생각해 볼 수 있습니다.</p>
+<p>// 좋은 저장은 살려 줄 때가 아니면 눈에 띄지 않는 저장입니다.</p>
+      </div>
+      <nav class="post-nav" aria-label="다른 글"><ul><li>← 이전 글: <a href="/ko/blog/checking-our-own-pictures/">우리 그림을 과거에 맞춰 보았습니다</a></li></ul></nav>
+      <section class="post-more"><h2>다른 글</h2><ul><li><a href="/ko/blog/a-name-and-a-record/">이름 하나와 기록 하나, 닉네임과 순위표</a></li><li><a href="/ko/blog/ask-before-you-pass/">묻고 나서 지나가기, 10막의 땅의 주인들</a></li><li><a href="/ko/blog/two-brothers-one-table/">두 형제와 한 상, 9막에서 편을 고르다</a></li></ul></section>
+      <div class="doc__links"><a href="/ko/journal/">← 저널로 돌아가기</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="법적 링크">
+      <a href="/ko/privacy/">개인정보처리방침</a>
+      <a href="/ko/terms/">이용약관</a>
+      <a href="/ko/journal/">저널</a>
+      <a href="/ko/support/">고객지원</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

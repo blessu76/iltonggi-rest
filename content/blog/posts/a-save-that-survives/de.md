@@ -1,11 +1,12 @@
 ---
 title: Ein Spielstand, der Beschädigung übersteht
 description: Wie Iltonggi Ihren Fortschritt schützt, wenn eine Datei mitten im Schreiben abbricht, und wie wir das testeten, ohne ein echtes Handy zu beschädigen.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: de
 translation_of: ko
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Nichts verdirbt ein langes Spiel schneller, als es zu öffnen und den Fortschritt verschwunden zu finden. Der Akku eines Handys kann leer werden, oder die App wird mitten im Schreiben einer Datei geschlossen, und dann bleibt eine halbe Datei zurück. Iltonggi sollte das überstehen. Das Spiel ist noch in Entwicklung, und diese Notiz beschreibt, wie weit der Schutz heute reicht.

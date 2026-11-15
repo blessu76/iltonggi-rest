@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 14:15:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 14:00:00 +0900</lastBuildDate>
+  <item>
+    <title>A Save File That Survives Being Broken</title>
+    <link>https://iltonggi.ipe.rest/blog/a-save-that-survives/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/a-save-that-survives/</guid>
+    <pubDate>Sun, 15 Nov 2026 14:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>How Iltonggi protects your progress if a save file is cut off mid-write, and how we tested it without breaking a real phone.</description>
+  </item>
   <item>
     <title>Checking Our Own Pictures Against the Past</title>
     <link>https://iltonggi.ipe.rest/blog/checking-our-own-pictures/</link>

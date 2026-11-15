@@ -1,11 +1,12 @@
 ---
 title: Một tệp lưu vẫn sống sót khi bị hỏng
 description: Chúng tôi ghi lại cách Iltonggi bảo vệ tiến trình khi việc ghi tệp bị gián đoạn, và cách chúng tôi thử nghiệm mà không làm hỏng điện thoại thật.
-date: 2026-11-15
 copy_review: iris 2026-11-14
 slug: a-save-that-survives
 lang: vi
 translation_of: ko
+date: 2026-11-15
+published: 2026-11-15T14:00:00+09:00
 ---
 
 Không gì chán nản bằng việc mở một trò chơi đã chơi lâu mà thấy tiến trình biến mất. Nếu pin điện thoại cạn hoặc ứng dụng bị đóng giữa lúc đang ghi tệp, có thể còn lại một tệp mới ghi được một nửa. Chúng tôi muốn Iltonggi sống sót qua những chuyện như vậy. Trò chơi vẫn đang được phát triển, và bài viết này là một ghi chú về việc hiện giờ sự bảo vệ đã đi được đến đâu.
