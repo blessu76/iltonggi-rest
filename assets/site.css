@@ -274,6 +274,8 @@ html:lang(de) .h1, html:lang(vi) .h1 { overflow-wrap: anywhere; }
 .post__body ol { margin-bottom: 0; }
 .post__body blockquote { margin-inline: 0; padding-inline-start: var(--space-4); border-inline-start: 3px solid var(--ipe-line-strong); color: var(--ipe-muted); }
 .post__body img { max-width: 100%; height: auto; border-radius: var(--radius-md); }
+.post__hero { margin: var(--space-5) 0 0; }
+.post__hero img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); }
 .post__body figure { margin: 0; }
 .ai-note { margin-top: var(--space-2); }
 .pager { margin-top: var(--space-8); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }

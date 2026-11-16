@@ -222,6 +222,29 @@ def org(bs):
             "logo": {"@type": "ImageObject", "url": bs.SITE + bs.asset("icon-512.png"), "width": 512, "height": 512}}
 
 
+# Hero picture per post (rule on the slug, same in every language). First match wins; no match -> hero-general.
+# Files: assets/blog/hero-*.webp, 1200x630 (4th GPT batch: hero-tactics, hero-seasons).
+HERO_RULES = [
+    (r"tactic|stratagem|scheme|ambush|council|command", "hero-tactics.webp"),
+    (r"season|weather|rain|monsoon|spring|summer|autumn|winter|harvest", "hero-seasons.webp"),
+    (r"hangang|han-river|551", "hero-hangang-551.webp"),
+    (r"gwansanseong|kwansan|554", "hero-gwansanseong-554.webp"),
+    (r"daegaya|gaya|562", "hero-daegaya-562.webp"),
+    (r"map|strategy|battle|color|colour|land-grab|territory|border", "hero-map-strategy.webp"),
+    (r"sound|music|audio|bgm|sfx", "hero-sound.webp"),
+]
+HERO_DEFAULT = "hero-general.webp"
+HERO_SIZE = (1200, 630)
+
+
+def hero_file(slug):
+    """-> file name under assets/blog/ for the post's hero picture."""
+    for pat, name in HERO_RULES:
+        if re.search(pat, slug):
+            return name
+    return HERO_DEFAULT
+
+
 def og_image(bs):
     return {"@type": "ImageObject", "url": bs.SITE + bs.asset(OG_IMAGE["path"]), "width": OG_IMAGE["width"], "height": OG_IMAGE["height"]}
 
@@ -460,11 +483,12 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
     can = bs.url(lang, key, root_)
     content_lang = bs.blog_code(lang)
     n_words, _unit = body_size(body, content_lang)
+    hero = bs.asset("blog/" + hero_file(p["slug"]))
     posting = {
         "@context": "https://schema.org", "@type": "BlogPosting", "@id": can + "#post", "headline": meta["title"], "description": meta["description"],
         "datePublished": iso, "dateModified": modified, "inLanguage": content_lang, "url": can,
         "mainEntityOfPage": {"@type": "WebPage", "@id": can},
-        "image": [og_image(bs)], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"},
+        "image": [{"@type": "ImageObject", "url": bs.SITE + hero, "width": HERO_SIZE[0], "height": HERO_SIZE[1]}], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"},
         "publisher": org(bs), "isPartOf": {"@type": "Blog", "name": ui["title"], "url": bs.url(lang, "blog:p1", root_)},
         "about": about_game(bs, t, lang, root_), "articleSection": ui["nav"], "wordCount": n_words,
     }
@@ -491,6 +515,9 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
             esc(ui["ai_note"]), orig.replace(bs.SITE, ""), o, esc(ui["ai_orig"]))
     out = bs.head(t, lang, key, root_, "%s — %s" % (meta["title"], t["name"]), meta["description"], extra)
     out = out.replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
+    # the post's own hero as share picture (og + twitter), not the site-wide og-share.jpg
+    out = out.replace(bs.SITE + bs.asset(OG_IMAGE["path"]), bs.SITE + hero)
+    out = out.replace('<meta property="og:image:type" content="image/jpeg">', '<meta property="og:image:type" content="image/webp">')
     out = re.sub(r'<meta property="og:image:alt" content="[^"]*">', '<meta property="og:image:alt" content="%s">' % esc(meta["title"]), out, count=1)
     out = out.replace('<meta name="twitter:image" content=', '<meta name="twitter:image:alt" content="%s">\n<meta name="twitter:image" content=' % esc(meta["title"]), 1)
     out += bs.header(t, lang, root_)
@@ -500,7 +527,8 @@ def post_page(bs, data, t, ui, lang, root_, pre, p, posts_all):
       <p class="kicker">// blog · No. {p['no']}</p>
       <h1>{esc(meta['title'])}</h1>
       <p class="meta">{time_tag(iso)}</p>
-{ai}      <div class="post__body">
+{ai}      <figure class="post__hero"><img src="{hero}" alt="{esc(meta['title'])}" width="{HERO_SIZE[0]}" height="{HERO_SIZE[1]}" loading="eager" decoding="async" fetchpriority="high"></figure>
+      <div class="post__body">
 {render_body(body)}
       </div>
 {more_links(bs, p, posts_all, lang, pre, ui)}      <div class="doc__links"><a href="{pre}{list_path(1)}">{bs.back_arrow(lang)} {esc(ui['back'])}</a></div>

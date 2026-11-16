@@ -51,7 +51,9 @@ class JsonLd(unittest.TestCase):
                     self.assertTrue(b.get(k), "%s: %s" % (path, k))
                 self.assertEqual(b["about"]["@type"], "VideoGame")
                 self.assertEqual(b["about"]["gamePlatform"], "iOS")
-                self.assertIn("og-share.jpg", b["image"][0]["url"])
+                self.assertIn("/assets/blog/hero-", b["image"][0]["url"])  # the post's own hero (og/twitter use the same file)
+                self.assertIn('<meta property="og:image" content="%s">' % b["image"][0]["url"], h, path)
+                self.assertIn('<img src="%s"' % b["image"][0]["url"].replace("https://iltonggi.ipe.rest", ""), h, path)
                 self.assertEqual(len(re.findall(r'<link rel="alternate" hreflang="', h)), 13, path)
                 self.assertIn('hreflang="x-default"', h, path)
                 for tag in ('og:title', 'og:description', 'og:image:alt', 'twitter:card', 'twitter:title', 'twitter:image:alt'):
