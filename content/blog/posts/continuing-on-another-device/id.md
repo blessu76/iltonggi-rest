@@ -1,11 +1,12 @@
 ---
 title: Melanjutkan Permainan di Perangkat Lain
 description: Cara Iltonggi memungkinkan permainan dilanjutkan di antara perangkat Apple, dan aturan yang kami pilih saat dua perangkat berbeda isinya.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: id
 translation_of: ko
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 Permintaan awalnya sederhana: jika bermain di satu perangkat Apple, kita harus bisa melanjutkan di perangkat lain dengan akun yang sama. Kedengarannya kecil, tetapi yang sulit bukan menyalin simpanan. Yang sulit adalah menentukan apa yang terjadi saat dua perangkat memiliki versi berbeda. Catatan ini tentang aturan yang kami tetapkan. Gim ini masih dalam pengembangan.

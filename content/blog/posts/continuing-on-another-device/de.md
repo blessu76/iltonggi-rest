@@ -1,11 +1,12 @@
 ---
 title: Auf einem anderen Gerät weiterspielen
 description: Wie Iltonggi das Weiterspielen zwischen Apple-Geräten ermöglicht und welche Regeln wir wählten, wenn zwei Geräte uneins sind.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: de
 translation_of: ko
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 Die ursprüngliche Bitte war einfach: Wer auf einem Apple-Gerät spielt, soll mit demselben Konto auf einem anderen weitermachen können. Das klingt klein, aber das Schwierige ist nicht, einen Spielstand zu kopieren. Es ist zu entscheiden, was passiert, wenn zwei Geräte verschiedene Versionen haben. Diese Notiz beschreibt die Regeln, auf die wir uns geeinigt haben. Das Spiel ist noch in Entwicklung.

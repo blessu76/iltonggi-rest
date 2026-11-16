@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="th" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Picking Up Where You Left Off on Another Device — Iltonggi</title>
+<meta name="description" content="How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/continuing-on-another-device/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/continuing-on-another-device/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Iltonggi">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="Picking Up Where You Left Off on Another Device — Iltonggi">
+<meta property="og:description" content="How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Picking Up Where You Left Off on Another Device">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Picking Up Where You Left Off on Another Device — Iltonggi">
+<meta name="twitter:description" content="How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.">
+<meta name="twitter:image:alt" content="Picking Up Where You Left Off on Another Device">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=63ba76e6">
+<link rel="alternate" type="application/rss+xml" title="Making of Iltonggi (RSS)" href="/blog/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Making of Iltonggi (Atom)" href="/blog/atom.xml">
+<meta property="article:published_time" content="2026-11-16T17:30:00+09:00">
+<meta property="article:modified_time" content="2026-11-16T17:30:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/#post", "headline": "Picking Up Where You Left Off on Another Device", "description": "How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.", "datePublished": "2026-11-16T17:30:00+09:00", "dateModified": "2026-11-16T17:30:00+09:00", "inLanguage": "en", "url": "https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/"}, "image": [{"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b", "width": 1200, "height": 630}], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}, "isPartOf": {"@type": "Blog", "name": "Making of Iltonggi", "url": "https://iltonggi.ipe.rest/th/journal/"}, "about": {"@type": "VideoGame", "name": "Iltonggi", "alternateName": ["Iltonggi", "일통기", "一統記"], "genre": ["Strategy", "Turn-based strategy", "Historical"], "gamePlatform": "iOS", "applicationCategory": "Game", "url": "https://iltonggi.ipe.rest/th/", "publisher": {"@id": "https://ipe.rest/#organization"}}, "articleSection": "Journal", "wordCount": 448}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Iltonggi", "item": "https://iltonggi.ipe.rest/th/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://iltonggi.ipe.rest/th/journal/"}, {"@type": "ListItem", "position": 3, "name": "Picking Up Where You Left Off on Another Device", "item": "https://iltonggi.ipe.rest/th/blog/continuing-on-another-device/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">ข้ามไปยังเนื้อหา</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/th/" aria-label="หน้าแรก Iltonggi">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Iltonggi</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="ลิงก์หลัก">
+      <a href="/th/journal/">Journal</a>
+      <a href="/th/support/">ช่วยเหลือ</a>
+    </nav>
+    <select class="lang-select" aria-label="ภาษา" data-cur="/th"><option value="/en" lang="en">English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de">Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th" selected>ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
+  </div>
+</header>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 19</p>
+      <h1>Picking Up Where You Left Off on Another Device</h1>
+      <p class="meta"><time datetime="2026-11-16T17:30:00+09:00" data-ipe-time>2026-11-16 17:30 KST</time></p>
+      <div class="post__body">
+<p>Early on, the request was simple: if you play on one Apple device, you should be able to continue on another with the same account. It sounds small, but the hard part is not copying a save. It is deciding what happens when two devices have different versions of it. This is a note on the rules we settled on. The game is still in development.</p>
+<h2>The phone is the source of truth</h2>
+<p>Each device keeps its own file as the real save. iCloud holds a copy, not the master. If iCloud is off, you are signed out, or you are on Android, the game simply stays on that one device without any error. The main save, the three save slots and the settings all take part.</p>
+<h2>Three-way comparison</h2>
+<p>To decide what to do, each device remembers a fingerprint of the last version that matched the cloud. Then it compares:</p>
+<ul>
+<li>Only this device changed: send it up.</li>
+<li>Only the cloud changed: take it down.</li>
+<li>Both changed: pick one by rule.</li>
+</ul>
+<h2>When both changed</h2>
+<p>The order we chose is below.</p>
+<ol>
+<li>A non-empty save beats an empty one.</li>
+<li>If the save times differ by more than two minutes, the later one wins.</li>
+<li>If they are within two minutes and it is the same game, the one with more turns wins.</li>
+<li>Otherwise, the one on this device.</li>
+</ol>
+<p>We argued about this. A simple &quot;furthest progress wins&quot; would have been easier to explain, but we felt that &quot;the one you saved last&quot; matches what a player means. Whichever copy loses is kept aside as a conflict copy instead of being deleted.</p>
+<h2>Merge, don&#x27;t choose</h2>
+<p>Some things should never be lost to a coin flip. Which acts you have cleared, which act stories you have seen, and what you own are merged as a union rather than picked from one side.</p>
+<h2>A size limit</h2>
+<p>A single piece of text over 200,000 characters is not sent up and stays on the device. Test cases cover this limit.</p>
+<h2>Noticing a change while you play</h2>
+<p>At first the game only re-read the cloud when you came back to the app. In a later build it also notices a change made on another device while it is in front of you, and the settings screen now shows whether iCloud sync is on.</p>
+<h2>Not yet verified</h2>
+<p>All of this is tested on a computer. We have not yet watched two real devices on one account hand a game back and forth, so that part is unverified. Pictures of generals and your quest progress stay on each device by design.</p>
+<p>// Syncing is easy. Deciding who is right is the work.</p>
+      </div>
+      <nav class="post-nav" aria-label="More posts"><ul><li>← Previous post: <a href="/th/blog/a-save-that-survives/">A Save File That Survives Being Broken</a></li></ul></nav>
+      <section class="post-more"><h2>More posts</h2><ul><li><a href="/th/blog/checking-our-own-pictures/">Checking Our Own Pictures Against the Past</a></li><li><a href="/th/blog/a-name-and-a-record/">A Name and a Record, Nicknames and the Scoreboard</a></li><li><a href="/th/blog/ask-before-you-pass/">Ask Before You Pass, the Landowners of Act 10</a></li></ul></section>
+      <div class="doc__links"><a href="/th/journal/">← Back to the journal</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="ลิงก์ด้านกฎหมาย">
+      <a href="/th/privacy/">นโยบายความเป็นส่วนตัว</a>
+      <a href="/th/terms/">ข้อกำหนดการใช้งาน</a>
+      <a href="/th/journal/">Journal</a>
+      <a href="/th/support/">ช่วยเหลือ</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

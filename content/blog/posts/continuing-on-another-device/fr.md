@@ -1,11 +1,12 @@
 ---
 title: Reprendre la partie sur un autre appareil
 description: Comment Iltonggi permet de continuer une partie d'un appareil Apple à l'autre, et les règles choisies quand deux appareils ne sont pas d'accord.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: fr
 translation_of: ko
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 La demande de départ était simple : si l'on joue sur un appareil Apple, on doit pouvoir continuer sur un autre avec le même compte. Cela paraît mineur, mais le plus dur n'est pas de copier une sauvegarde. C'est de décider ce qui se passe quand deux appareils en ont des versions différentes. Cette note décrit les règles que nous avons retenues. Le jeu est encore en développement.

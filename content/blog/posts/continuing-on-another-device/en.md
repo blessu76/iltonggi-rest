@@ -1,10 +1,11 @@
 ---
 title: Picking Up Where You Left Off on Another Device
 description: How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: en
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 Early on, the request was simple: if you play on one Apple device, you should be able to continue on another with the same account. It sounds small, but the hard part is not copying a save. It is deciding what happens when two devices have different versions of it. This is a note on the rules we settled on. The game is still in development.

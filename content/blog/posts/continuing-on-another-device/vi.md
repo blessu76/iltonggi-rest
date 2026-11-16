@@ -1,11 +1,12 @@
 ---
 title: Tiếp tục chơi trên một thiết bị khác
 description: Chúng tôi ghi lại cách Iltonggi cho phép tiếp tục ván chơi giữa các thiết bị Apple, và quy tắc đã chọn khi nội dung trên hai thiết bị khác nhau.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: vi
 translation_of: ko
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 Yêu cầu ban đầu rất đơn giản. Một ván đang chơi trên một thiết bị Apple phải có thể tiếp tục trên thiết bị khác cùng tài khoản. Nghe có vẻ nhỏ, nhưng phần khó không phải là sao chép bản lưu. Phần khó là quyết định phải làm gì khi hai thiết bị có hai phiên bản khác nhau. Bài viết này là một ghi chú về quy tắc chúng tôi đã chọn. Trò chơi vẫn đang được phát triển.

@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 15 Nov 2026 14:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 17:30:00 +0900</lastBuildDate>
+  <item>
+    <title>Picking Up Where You Left Off on Another Device</title>
+    <link>https://iltonggi.ipe.rest/blog/continuing-on-another-device/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/continuing-on-another-device/</guid>
+    <pubDate>Mon, 16 Nov 2026 17:30:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.</description>
+  </item>
   <item>
     <title>A Save File That Survives Being Broken</title>
     <link>https://iltonggi.ipe.rest/blog/a-save-that-survives/</link>

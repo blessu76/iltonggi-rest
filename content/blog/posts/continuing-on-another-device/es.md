@@ -1,11 +1,12 @@
 ---
 title: Seguir jugando en otro dispositivo
 description: Cómo Iltonggi permite continuar una partida entre dispositivos Apple, y la regla que fijamos cuando el contenido de los dos dispositivos es distinto.
-date: 2026-11-16
 copy_review: iris 2026-11-14
 slug: continuing-on-another-device
 lang: es
 translation_of: ko
+date: 2026-11-16
+published: 2026-11-16T17:30:00+09:00
 ---
 
 La petición inicial era sencilla: poder seguir en otro dispositivo de la misma cuenta la partida que se jugaba en un dispositivo Apple. Parece pequeño, pero lo difícil no es copiar el guardado. Lo difícil es decidir qué hacer cuando los dos dispositivos tienen versiones distintas. Esta entrada es una nota sobre las reglas que fijamos. El juego sigue en desarrollo.
