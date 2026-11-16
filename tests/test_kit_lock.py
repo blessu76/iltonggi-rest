@@ -56,9 +56,15 @@ class KitLock(unittest.TestCase):
 
     def test_edited_kit_file_fails(self):
         shutil.copytree(REPO / "vendor" / "ipe_web_kit", self.tmp / "vendor" / "ipe_web_kit")
-        with open(self.tmp / "vendor" / "ipe_web_kit" / "seo.py", "a", encoding="utf-8") as f:
+        with open(self.tmp / "vendor" / "ipe_web_kit" / "ui.py", "a", encoding="utf-8") as f:
             f.write("\n# tampered\n")
         self.assertTrue([p for p in kit_lock.problems(self.tmp) if "changed after install" in p])
+
+    def test_ci_installs_the_kit_and_never_deploys_it(self):
+        wf = (REPO / ".github" / "workflows" / "deploy.yml").read_text(encoding="utf-8")
+        self.assertIn("--exclude='/vendor'", wf)
+        self.assertIn("uses: ./.github/actions/ipe-web-kit", wf)
+        self.assertIn("secrets.IPE_WEB_KIT_DEPLOY_KEY", wf)
 
 
 if __name__ == "__main__":

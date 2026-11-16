@@ -34,10 +34,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Verify (tests, committed pages up to date)
-        run: |
-          python3 -m unittest discover -s tests
-          python3 scripts/build_site.py --check
+      - name: Green gate (kit, tests, committed pages up to date)
+        run: bash scripts/check.sh
 
       - name: Assemble site (repo root minus repo files)
         run: |
