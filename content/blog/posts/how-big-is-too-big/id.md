@@ -1,11 +1,12 @@
 ---
 title: Sebesar Apa yang Terlalu Besar untuk Gim Ponsel?
 description: Mengapa kami menetapkan anggaran ukuran untuk gambar, suara, dan huruf Iltonggi, serta penjaga yang menggagalkan build jika terlampaui.
-date: 2026-11-17
 copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: id
 translation_of: ko
+date: 2026-11-17
+published: 2026-11-17T15:30:00+09:00
 ---
 
 Gim yang lama diunduh, atau lama menampilkan layar pertamanya, kehilangan orang sebelum mereka bermain. Iltonggi memuat banyak hal: huruf bergaya kuno, lukisan, musik dan efek suara, serta teks dalam banyak bahasa. Jika tak ada yang mengawasi, ia hanya akan membesar. Maka kami menetapkan anggaran dan menyerahkan penegakannya kepada komputer. Gim ini masih dalam pengembangan.

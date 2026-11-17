@@ -1,10 +1,11 @@
 ---
 title: How Big Is Too Big for a Phone Game?
 description: Why we put a size budget on Iltonggi's art, sound and fonts, and the guard that fails the build when we go over.
-date: 2026-11-17
 copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: en
+date: 2026-11-17
+published: 2026-11-17T15:30:00+09:00
 ---
 
 A game that takes a long time to download, or a long time to show its first screen, loses people before they play. Iltonggi carries a lot: old-style fonts, paintings, music and sound effects, and text in many languages. If nobody watches, it only ever grows. So we set a budget, and made the computer enforce it. The game is still in development.

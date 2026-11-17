@@ -1,11 +1,12 @@
 ---
 title: Cuánto es demasiado grande para un juego de móvil
 description: Cómo pusimos un presupuesto de tamaño a las imágenes, el sonido y las fuentes de Iltonggi, y un mecanismo que detiene la compilación si se supera.
-date: 2026-11-17
 copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: es
 translation_of: ko
+date: 2026-11-17
+published: 2026-11-17T15:30:00+09:00
 ---
 
 Un juego que tarda en descargarse o cuya primera pantalla aparece tarde pierde a la gente antes de que lo pruebe. Iltonggi lleva mucho dentro: una fuente de aire antiguo, ilustraciones, música y efectos de sonido, y textos en varios idiomas. Si nadie lo vigila, solo crece. Por eso fijamos un presupuesto y hacemos que lo haga cumplir el ordenador. El juego sigue en desarrollo.

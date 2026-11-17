@@ -1,11 +1,12 @@
 ---
 title: Trò chơi điện thoại lớn đến mức nào là quá lớn
 description: Chúng tôi ghi lại cách đặt ngân sách kích thước cho hình ảnh, âm thanh và phông chữ của Iltonggi, và để bản dựng dừng lại khi vượt ngân sách.
-date: 2026-11-17
 copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: vi
 translation_of: ko
+date: 2026-11-17
+published: 2026-11-17T15:30:00+09:00
 ---
 
 Một trò chơi tải về lâu hoặc màn hình đầu tiên hiện chậm sẽ mất người chơi trước cả khi họ kịp thử. Iltonggi chứa rất nhiều thứ. Có phông chữ mang cảm giác cổ xưa, hình ảnh, nhạc và hiệu ứng âm thanh, và chữ của nhiều ngôn ngữ. Nếu không ai trông chừng, nó chỉ có thể to ra. Vì vậy chúng tôi đặt ra một ngân sách và để máy tính giữ nó. Trò chơi vẫn đang được phát triển.

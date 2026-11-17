@@ -1,11 +1,12 @@
 ---
 title: Wie groß ist zu groß für ein Handyspiel?
 description: Warum wir für Bilder, Klänge und Schriften von Iltonggi ein Größenbudget festgelegt haben und welche Prüfung den Build bei Überschreitung scheitern lässt.
-date: 2026-11-17
 copy_review: iris 2026-11-14
 slug: how-big-is-too-big
 lang: de
 translation_of: ko
+date: 2026-11-17
+published: 2026-11-17T15:30:00+09:00
 ---
 
 Ein Spiel, dessen Download lange dauert oder das seinen ersten Bildschirm spät zeigt, verliert Menschen, bevor sie spielen. Iltonggi enthält viel: Schriften im alten Stil, Gemälde, Musik und Soundeffekte sowie Texte in mehreren Sprachen. Wenn niemand aufpasst, wächst es nur. Also haben wir ein Budget festgelegt und den Computer darüber wachen lassen. Das Spiel ist noch in Entwicklung.

@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 17:30:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 15:30:00 +0900</lastBuildDate>
+  <item>
+    <title>How Big Is Too Big for a Phone Game?</title>
+    <link>https://iltonggi.ipe.rest/blog/how-big-is-too-big/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/how-big-is-too-big/</guid>
+    <pubDate>Tue, 17 Nov 2026 15:30:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>Why we put a size budget on Iltonggi&#x27;s art, sound and fonts, and the guard that fails the build when we go over.</description>
+  </item>
   <item>
     <title>Picking Up Where You Left Off on Another Device</title>
     <link>https://iltonggi.ipe.rest/blog/continuing-on-another-device/</link>

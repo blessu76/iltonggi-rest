@@ -12,6 +12,7 @@
 - [Journal index](https://iltonggi.ipe.rest/journal/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
 - [Atom feed](https://iltonggi.ipe.rest/blog/atom.xml)
+- [How Big Is Too Big for a Phone Game?](https://iltonggi.ipe.rest/blog/how-big-is-too-big/): Why we put a size budget on Iltonggi's art, sound and fonts, and the guard that fails the build when we go over.
 - [Picking Up Where You Left Off on Another Device](https://iltonggi.ipe.rest/blog/continuing-on-another-device/): How Iltonggi lets you continue a game across Apple devices, and the rules we chose for when two devices disagree.
 - [A Save File That Survives Being Broken](https://iltonggi.ipe.rest/blog/a-save-that-survives/): How Iltonggi protects your progress if a save file is cut off mid-write, and how we tested it without breaking a real phone.
 - [Checking Our Own Pictures Against the Past](https://iltonggi.ipe.rest/blog/checking-our-own-pictures/): We compared Iltonggi's kings, ships and fortress art with murals and excavated objects, and wrote down what did not match.
