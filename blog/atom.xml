@@ -4,8 +4,17 @@
   <link href="https://iltonggi.ipe.rest/journal/"/>
   <link rel="self" type="application/atom+xml" href="https://iltonggi.ipe.rest/blog/atom.xml"/>
   <id>https://iltonggi.ipe.rest/journal/</id>
-  <updated>2026-11-17T15:30:00+09:00</updated>
+  <updated>2026-11-18T13:45:00+09:00</updated>
   <subtitle>How Iltonggi is being made — one short note a day.</subtitle>
+  <entry>
+    <title>Three Difficulties, Held in Place by Numbers</title>
+    <link href="https://iltonggi.ipe.rest/blog/three-difficulties-in-numbers/"/>
+    <id>https://iltonggi.ipe.rest/blog/three-difficulties-in-numbers/</id>
+    <published>2026-11-18T13:45:00+09:00</published>
+    <updated>2026-11-18T13:45:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>How we simulate thousands of battles to keep Easy, Normal and Hard in their own win-rate ranges, and why the bot makes Hard look harder.</summary>
+  </entry>
   <entry>
     <title>How Big Is Too Big for a Phone Game?</title>
     <link href="https://iltonggi.ipe.rest/blog/how-big-is-too-big/"/>
@@ -176,14 +185,5 @@
     <updated>2026-10-31T12:00:00+09:00</updated>
     <author><name>ipe Studio</name></author>
     <summary>How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.</summary>
-  </entry>
-  <entry>
-    <title>A Three Kingdoms Land Grab for Your Phone</title>
-    <link href="https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/"/>
-    <id>https://iltonggi.ipe.rest/blog/why-a-three-kingdoms-land-grab/</id>
-    <published>2026-10-30T12:00:00+09:00</published>
-    <updated>2026-10-30T12:00:00+09:00</updated>
-    <author><name>ipe Studio</name></author>
-    <summary>Why we&#x27;re building Iltonggi, a Three Kingdoms land-grab game for your phone: 5-10 minute rounds, autosave, a short first game, and no daily log-in pressure.</summary>
   </entry>
 </feed>

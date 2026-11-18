@@ -1,11 +1,12 @@
 ---
 title: Trois niveaux de difficulté tenus par les chiffres
 description: Comment nous simulons des milliers de batailles pour garder Facile, Normal et Difficile dans leurs plages de victoires, et pourquoi le robot fait paraître Difficile plus dur.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: fr
 translation_of: ko
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Si vous choisissez Facile, vous vous attendez à gagner la plupart du temps. Si vous choisissez Difficile, vous vous attendez à être poussé. C'est évident en apparence, mais cela se dérègle discrètement dès que quelqu'un modifie une règle ou un général. Nous maintenons donc chaque difficulté dans une plage grâce à des tests. Le jeu est encore en développement, et cette note explique la méthode.

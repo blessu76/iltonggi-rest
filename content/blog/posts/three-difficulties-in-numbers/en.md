@@ -1,10 +1,11 @@
 ---
 title: Three Difficulties, Held in Place by Numbers
 description: How we simulate thousands of battles to keep Easy, Normal and Hard in their own win-rate ranges, and why the bot makes Hard look harder.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: en
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Choose Easy and you expect to win most of the time. Choose Hard and you expect to be pushed. That sounds obvious, but it quietly breaks whenever someone changes a rule or a general. So we hold each difficulty in a range with tests. The game is still in development, and this is a note on how that works.

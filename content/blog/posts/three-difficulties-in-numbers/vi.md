@@ -1,11 +1,12 @@
 ---
 title: Ba mức độ khó được giữ chặt bằng con số
 description: Chúng tôi ghi lại cách mô phỏng hàng nghìn ván để Dễ, Thường và Khó mỗi mức nằm trong khoảng tỷ lệ thắng của riêng nó, và vì sao bot khiến mức Khó trông còn khó hơn.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: vi
 translation_of: ko
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Khi chọn Dễ, ta kỳ vọng thắng phần lớn các ván. Khi chọn Khó, ta kỳ vọng bị đè bẹp. Nghe có vẻ hiển nhiên, nhưng mỗi khi có ai đổi một quy tắc hay một vị tướng, điều đó lặng lẽ trượt đi. Vì vậy với từng mức độ khó, chúng tôi giữ chặt khoảng giá trị bằng bài kiểm tra. Trò chơi vẫn đang được phát triển, và bài viết này là một ghi chú về cách làm đó.

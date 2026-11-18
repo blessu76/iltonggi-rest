@@ -1,11 +1,12 @@
 ---
 title: Três dificuldades presas por números
 description: Como simulamos milhares de partidas para que fácil, normal e difícil fiquem cada uma em sua faixa de vitórias, e por que os bots fazem o difícil parecer ainda mais difícil.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: pt
 translation_of: ko
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Quem escolhe fácil espera vencer quase sempre, e quem escolhe difícil espera ser pressionado. Parece óbvio, mas toda vez que alguém muda uma regra ou um general, isso se desajusta sem que ninguém perceba. Por isso prendemos a faixa de cada dificuldade com testes. O jogo ainda está em desenvolvimento, e este texto é uma nota sobre esse método.

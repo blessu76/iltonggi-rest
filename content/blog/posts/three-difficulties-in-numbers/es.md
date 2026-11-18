@@ -1,11 +1,12 @@
 ---
 title: Tres dificultades sujetas con números
 description: Cómo simulamos miles de partidas para que fácil, normal y difícil se mantengan en su propio rango de victorias, y por qué los bots hacen que difícil parezca todavía más difícil.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: es
 translation_of: ko
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Quien elige fácil espera ganar casi siempre, y quien elige difícil espera perder terreno. Parece obvio, pero cada vez que alguien cambia una regla o un general, esto se desajusta sin que nadie lo note. Por eso sujetamos el rango de cada dificultad con pruebas. El juego sigue en desarrollo, y esta entrada es una nota sobre ese método.

@@ -1,11 +1,12 @@
 ---
 title: Tiga Tingkat Kesulitan yang Dijaga Angka
 description: Cara kami mensimulasikan ribuan pertempuran agar Mudah, Normal, dan Sulit tetap di rentang kemenangan masing-masing, dan mengapa bot membuat Sulit tampak lebih berat.
-date: 2026-11-18
 copy_review: iris 2026-11-14
 slug: three-difficulties-in-numbers
 lang: id
 translation_of: ko
+date: 2026-11-18
+published: 2026-11-18T13:45:00+09:00
 ---
 
 Jika memilih Mudah, Anda berharap menang hampir selalu. Jika memilih Sulit, Anda berharap terdesak. Kedengarannya jelas, tetapi diam-diam bergeser setiap kali ada yang mengubah aturan atau seorang jenderal. Karena itu kami menjaga tiap tingkat kesulitan dalam sebuah rentang dengan pengujian. Gim ini masih dalam pengembangan, dan catatan ini menjelaskan cara kerjanya.
