@@ -4,8 +4,9 @@ description: Notre archer de Goguryeo tenait un long arc. Les fresques de chasse
 slug: goguryeo-bow-in-a-hunting-mural
 lang: fr
 translation_of: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Certaines erreurs n'apparaissent qu'en regardant une image de près. Dans Iltonggi, l'archer de Goguryeo portait un arc qui occupait presque toute la hauteur du cadre. De loin, il ressemblait à un grand arc japonais ou à un long arc anglais. Cet article raconte comment nous l'avons repéré et ce que nous avons changé. Le jeu est encore en développement.

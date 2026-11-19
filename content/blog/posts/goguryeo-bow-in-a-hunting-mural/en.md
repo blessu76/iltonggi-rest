@@ -3,8 +3,9 @@ title: One Bow in a Hunting Mural
 description: Our Goguryeo archer carried a long bow. Hunting murals show a short, curved bow, so we redrew it and wrote down how we checked.
 slug: goguryeo-bow-in-a-hunting-mural
 lang: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Some mistakes only show up when you look at a picture up close. In Iltonggi, the Goguryeo archer carried a bow that stretched almost the full height of the frame. From a distance it read as a tall Japanese bow, or a long English one. This post is about how we caught it and what we changed. The game is still in development.

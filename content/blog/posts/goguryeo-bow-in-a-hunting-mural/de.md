@@ -4,8 +4,9 @@ description: Unser Bogenschütze aus Goguryeo trug einen langen Bogen. Jagdwandb
 slug: goguryeo-bow-in-a-hunting-mural
 lang: de
 translation_of: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Manche Fehler fallen erst auf, wenn man ein Bild aus der Nähe betrachtet. In Iltonggi hatte der Bogenschütze von Goguryeo einen Bogen, der fast die ganze Höhe des Bildes einnahm. Aus der Ferne wirkte er wie ein hoher japanischer oder ein langer englischer Bogen. Dieser Beitrag handelt davon, wie wir das entdeckt haben und was wir geändert haben. Das Spiel befindet sich noch in der Entwicklung.

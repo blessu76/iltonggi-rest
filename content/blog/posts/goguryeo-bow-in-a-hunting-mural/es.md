@@ -4,8 +4,9 @@ description: Nuestro arquero de Goguryeo llevaba un arco largo. Los murales de c
 slug: goguryeo-bow-in-a-hunting-mural
 lang: es
 translation_of: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Algunos errores solo se ven cuando miras una imagen de cerca. En Iltonggi, el arquero de Goguryeo llevaba un arco que ocupaba casi toda la altura del cuadro. A distancia parecía un arco japonés alto o un arco inglés largo. Esta entrada trata de cómo lo detectamos y de lo que cambiamos. El juego sigue en desarrollo.

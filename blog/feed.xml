@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 13:45:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 17:15:00 +0900</lastBuildDate>
+  <item>
+    <title>One Bow in a Hunting Mural</title>
+    <link>https://iltonggi.ipe.rest/blog/goguryeo-bow-in-a-hunting-mural/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/goguryeo-bow-in-a-hunting-mural/</guid>
+    <pubDate>Thu, 19 Nov 2026 17:15:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>Our Goguryeo archer carried a long bow. Hunting murals show a short, curved bow, so we redrew it and wrote down how we checked.</description>
+  </item>
   <item>
     <title>Three Difficulties, Held in Place by Numbers</title>
     <link>https://iltonggi.ipe.rest/blog/three-difficulties-in-numbers/</link>
@@ -158,14 +166,6 @@
     <pubDate>Sun, 01 Nov 2026 12:00:00 +0900</pubDate>
     <dc:creator>ipe Studio</dc:creator>
     <description>Building Iltonggi&#x27;s 551 Han River scenario: dropping out-of-era generals, placing Kim Mu-ryeok and the Daegaya king, and why unknown names stay &quot;General ○○.&quot;</description>
-  </item>
-  <item>
-    <title>Four Kingdoms, Four Colors, Still Distinct at Night</title>
-    <link>https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</link>
-    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/four-kingdoms-four-colors/</guid>
-    <pubDate>Sat, 31 Oct 2026 12:00:00 +0900</pubDate>
-    <dc:creator>ipe Studio</dc:creator>
-    <description>How we picked colors for Goguryeo, Baekje, Silla and Gaya in Iltonggi, measured whether they stay distinct day and night, and added hanja chips and shapes too.</description>
   </item>
 </channel>
 </rss>

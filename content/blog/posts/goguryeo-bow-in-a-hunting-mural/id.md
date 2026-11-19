@@ -4,8 +4,9 @@ description: Pemanah Goguryeo kami membawa busur panjang. Lukisan dinding berbur
 slug: goguryeo-bow-in-a-hunting-mural
 lang: id
 translation_of: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Beberapa kesalahan baru terlihat saat kita memandang gambar dari dekat. Di Iltonggi, pemanah Goguryeo membawa busur yang hampir memenuhi seluruh tinggi bingkai. Dari jauh, busur itu terlihat seperti busur Jepang yang tinggi atau busur Inggris yang panjang. Tulisan ini membahas bagaimana kami menemukannya dan apa yang kami ubah. Game ini masih dalam pengembangan.

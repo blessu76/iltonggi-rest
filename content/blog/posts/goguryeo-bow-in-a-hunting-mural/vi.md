@@ -4,8 +4,9 @@ description: Cung thủ Goguryeo của chúng tôi từng mang một cây cung d
 slug: goguryeo-bow-in-a-hunting-mural
 lang: vi
 translation_of: en
-date: 2026-11-19
 copy_review: iris 2026-11-16
+date: 2026-11-19
+published: 2026-11-19T17:15:00+09:00
 ---
 
 Có những lỗi chỉ hiện ra khi bạn nhìn kỹ bức tranh. Trong Iltonggi, cung thủ Goguryeo mang một cây cung gần như cao bằng cả khung hình. Nhìn từ xa, nó giống một cây cung Nhật cao hoặc một cây cung Anh dài. Bài viết này kể về cách chúng tôi phát hiện và những gì đã thay đổi. Trò chơi vẫn đang được phát triển.
