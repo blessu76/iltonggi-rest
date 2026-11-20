@@ -15,7 +15,7 @@ Lorsque l'écran est masqué, ou que l'application passe en arrière-plan, le mo
 
 ## Un seul endroit décide quand s'arrêter
 
-Auparavant, chaque scène avait son propre code d'arrêt. La carte, la scène de bataille et la vue du monde vérifiaient chacune si elles étaient masquées, et chacune devait être corrigée séparément. Cette tâche revient désormais à une seule coque commune. Les scènes ne demandent plus si elles sont visibles. Elles suivent l'état que fixe la coque.
+Auparavant, chaque scène avait son propre code d'arrêt. La carte, la scène de bataille et l'écran du menu d'accueil vérifiaient chacune si elles étaient masquées, et chacune devait être corrigée séparément. Cette tâche revient désormais à une seule coque commune. Les scènes ne demandent plus si elles sont visibles. Elles suivent l'état que fixe la coque.
 
 ## L'animation des combats continue
 
@@ -23,6 +23,6 @@ Lorsque deux armées s'affrontent sur la carte, l'animation ne progresse que lor
 
 ## Ce que nous n'avons pas encore mesuré
 
-Nous n'avons pas encore mesuré l'économie de batterie réelle. Certains points ne peuvent être vérifiés que sur de vrais appareils : envoyer l'application en arrière-plan puis la rouvrir, passer de la carte à la vue du monde, la limite de 30 images par seconde et le temps de dessin sur le GPU. Tant que nous ne les aurons pas mesurés, ce texte ne donne aucun chiffre de batterie.
+Nous n'avons pas encore mesuré l'économie de batterie réelle. Certains points ne peuvent être vérifiés que sur de vrais appareils : envoyer l'application en arrière-plan puis la rouvrir, passer de la carte à d'autres écrans, la limite de 30 images par seconde et le temps de dessin sur le GPU. Tant que nous ne les aurons pas mesurés, ce texte ne donne aucun chiffre de batterie.
 
 // L'image que personne ne voit est la moins chère à sauter.

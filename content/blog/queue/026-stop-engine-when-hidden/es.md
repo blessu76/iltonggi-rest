@@ -15,7 +15,7 @@ Cuando la pantalla queda tapada, o la app pasa al segundo plano, el motor se det
 
 ## Un solo lugar decide cuándo parar
 
-Antes, cada escena tenía su propio código para detenerse. El mapa, el escenario de batalla y la vista del mundo comprobaban cada uno si estaban ocultos, y cada uno había que corregirlo por separado. Ahora esa tarea la asume una sola carcasa compartida. Las escenas ya no preguntan si son visibles. Siguen el estado que fija la carcasa.
+Antes, cada escena tenía su propio código para detenerse. El mapa, el escenario de batalla y la pantalla del menú inicial comprobaban cada uno si estaban ocultos, y cada uno había que corregirlo por separado. Ahora esa tarea la asume una sola carcasa compartida. Las escenas ya no preguntan si son visibles. Siguen el estado que fija la carcasa.
 
 ## La animación de combate sigue
 
@@ -23,6 +23,6 @@ Cuando dos ejércitos chocan en el mapa, la animación solo avanza mientras el m
 
 ## Lo que todavía no hemos medido
 
-Todavía no hemos medido cuánta batería ahorra esto. Algunas cosas solo se pueden comprobar en dispositivos reales: enviar la app al segundo plano y volver, cambiar entre el mapa y la vista del mundo, el límite de 30 cuadros por segundo y cuánto tarda el dibujo en la GPU. Hasta medirlo, este texto no da cifras de batería.
+Todavía no hemos medido cuánta batería ahorra esto. Algunas cosas solo se pueden comprobar en dispositivos reales: enviar la app al segundo plano y volver, cambiar entre el mapa y otras pantallas, el límite de 30 cuadros por segundo y cuánto tarda el dibujo en la GPU. Hasta medirlo, este texto no da cifras de batería.
 
 // La imagen que nadie ve es la más barata de saltarse.

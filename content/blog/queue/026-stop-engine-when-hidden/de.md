@@ -15,7 +15,7 @@ Wenn der Bildschirm verdeckt wird oder die App in den Hintergrund geht, hält di
 
 ## Eine Stelle entscheidet, wann angehalten wird
 
-Früher hatte jede Szene einen eigenen Code zum Anhalten. Karte, Schlachtbühne und Weltübersicht prüften jeweils selbst, ob sie verdeckt waren, und jede musste einzeln korrigiert werden. Diese Aufgabe liegt jetzt bei einer gemeinsamen Hülle. Die Szenen fragen nicht mehr, ob sie sichtbar sind. Sie folgen dem Zustand, den die Hülle setzt.
+Früher hatte jede Szene einen eigenen Code zum Anhalten. Karte, Schlachtbühne und Startmenü prüften jeweils selbst, ob sie verdeckt waren, und jede musste einzeln korrigiert werden. Diese Aufgabe liegt jetzt bei einer gemeinsamen Hülle. Die Szenen fragen nicht mehr, ob sie sichtbar sind. Sie folgen dem Zustand, den die Hülle setzt.
 
 ## Die Gefechtsanimation läuft weiter
 
@@ -23,6 +23,6 @@ Wenn zwei Heere auf der Karte aufeinandertreffen, bewegt sich die Animation nur,
 
 ## Was wir noch nicht gemessen haben
 
-Wie viel Akku das spart, haben wir noch nicht gemessen. Einiges lässt sich nur auf echten Geräten prüfen: die App in den Hintergrund schicken und zurückholen, zwischen Karte und Weltansicht wechseln, die Obergrenze von 30 Bildern pro Sekunde und wie lange das Zeichnen auf der GPU dauert. Bis dahin nennt dieser Beitrag keine Akkuwerte.
+Wie viel Akku das spart, haben wir noch nicht gemessen. Einiges lässt sich nur auf echten Geräten prüfen: die App in den Hintergrund schicken und zurückholen, zwischen Karte und anderen Fenstern wechseln, die Obergrenze von 30 Bildern pro Sekunde und wie lange das Zeichnen auf der GPU dauert. Bis dahin nennt dieser Beitrag keine Akkuwerte.
 
 // Ein Bild, das niemand sieht, ist das billigste, das man auslassen kann.

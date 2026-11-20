@@ -14,7 +14,7 @@ When the screen is covered, or the app goes to the background, the engine stops.
 
 ## One place decides when to stop
 
-Earlier, each scene had its own code for stopping. The map, the battle stage and the world overview each checked whether they were hidden, and each one had to be fixed on its own. We moved that job into one shared shell. The scenes no longer ask whether they are visible. They follow the state the shell sets.
+Earlier, each scene had its own code for stopping. The map, the battle stage and the first menu screen each checked whether they were hidden, and each one had to be fixed on its own. We moved that job into one shared shell. The scenes no longer ask whether they are visible. They follow the state the shell sets.
 
 ## The clash animation keeps going
 
@@ -22,6 +22,6 @@ When two armies clash on the map, the animation moves only while the engine is r
 
 ## What we have not measured
 
-We have not yet measured how much battery this saves. Some things can only be checked on real devices: sending the app to the background and back, moving between the map and the world view, the cap of 30 frames per second, and how long drawing takes on the GPU. Until we measure those, this post gives no battery numbers.
+We have not yet measured how much battery this saves. Some things can only be checked on real devices: sending the app to the background and back, moving between the map and other screens, the cap of 30 frames per second, and how long drawing takes on the GPU. Until we measure those, this post gives no battery numbers.
 
 // The picture nobody sees is the cheapest one to skip.

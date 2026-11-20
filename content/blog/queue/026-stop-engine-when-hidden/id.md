@@ -15,7 +15,7 @@ Ketika layar tertutup, atau aplikasi masuk ke latar belakang, mesin berhenti. Me
 
 ## Satu tempat yang memutuskan kapan berhenti
 
-Dulu, setiap adegan punya kode berhenti sendiri. Peta, panggung pertempuran, dan tampilan dunia masing-masing memeriksa apakah mereka tersembunyi, dan masing-masing harus diperbaiki sendiri. Sekarang tugas itu dipegang oleh satu cangkang bersama. Adegan tidak lagi bertanya apakah mereka terlihat. Mereka mengikuti keadaan yang ditetapkan cangkang.
+Dulu, setiap adegan punya kode berhenti sendiri. Peta, panggung pertempuran, dan layar menu awal masing-masing memeriksa apakah mereka tersembunyi, dan masing-masing harus diperbaiki sendiri. Sekarang tugas itu dipegang oleh satu cangkang bersama. Adegan tidak lagi bertanya apakah mereka terlihat. Mereka mengikuti keadaan yang ditetapkan cangkang.
 
 ## Animasi pertempuran tetap berjalan
 
@@ -23,6 +23,6 @@ Saat dua pasukan bertemu di peta, animasinya hanya bergerak selama mesin berjala
 
 ## Yang belum kami ukur
 
-Kami belum mengukur seberapa banyak baterai yang dihemat. Beberapa hal hanya bisa diperiksa di perangkat sungguhan: membawa aplikasi ke latar belakang lalu membukanya lagi, berpindah antara peta dan tampilan dunia, batas 30 bingkai per detik, dan berapa lama penggambaran memakan waktu di GPU. Sampai kami mengukurnya, tulisan ini tidak memuat angka baterai.
+Kami belum mengukur seberapa banyak baterai yang dihemat. Beberapa hal hanya bisa diperiksa di perangkat sungguhan: membawa aplikasi ke latar belakang lalu membukanya lagi, berpindah antara peta dan layar lain, batas 30 bingkai per detik, dan berapa lama penggambaran memakan waktu di GPU. Sampai kami mengukurnya, tulisan ini tidak memuat angka baterai.
 
 // Gambar yang tidak dilihat siapa pun adalah yang paling murah untuk dilewati.

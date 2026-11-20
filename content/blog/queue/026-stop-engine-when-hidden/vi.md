@@ -15,7 +15,7 @@ Khi màn hình bị che, hoặc ứng dụng chuyển sang nền, động cơ s�
 
 ## Một nơi quyết định khi nào dừng
 
-Trước đây, mỗi cảnh có mã dừng riêng. Bản đồ, sân khấu chiến trận và màn hình tổng thể thế giới đều tự kiểm tra xem mình có bị ẩn không, và mỗi nơi phải được sửa riêng. Giờ công việc này do một lớp vỏ dùng chung đảm nhận. Các cảnh không còn hỏi mình có đang hiện hay không. Chúng làm theo trạng thái mà lớp vỏ đặt ra.
+Trước đây, mỗi cảnh có mã dừng riêng. Bản đồ, sân khấu chiến trận và màn hình menu đầu đều tự kiểm tra xem mình có bị ẩn không, và mỗi nơi phải được sửa riêng. Giờ công việc này do một lớp vỏ dùng chung đảm nhận. Các cảnh không còn hỏi mình có đang hiện hay không. Chúng làm theo trạng thái mà lớp vỏ đặt ra.
 
 ## Hoạt cảnh giao tranh vẫn tiếp tục
 
@@ -23,6 +23,6 @@ Khi hai đạo quân va chạm trên bản đồ, hoạt cảnh chỉ chuyển �
 
 ## Những điều chúng tôi chưa đo
 
-Chúng tôi chưa đo được việc này tiết kiệm bao nhiêu pin. Một số việc chỉ kiểm tra được trên thiết bị thật: đưa ứng dụng xuống nền rồi mở lại, chuyển qua lại giữa bản đồ và màn hình thế giới, giới hạn 30 khung hình mỗi giây, và việc vẽ trên GPU mất bao lâu. Cho đến khi đo được, bài này chưa đưa ra con số nào về pin.
+Chúng tôi chưa đo được việc này tiết kiệm bao nhiêu pin. Một số việc chỉ kiểm tra được trên thiết bị thật: đưa ứng dụng xuống nền rồi mở lại, chuyển qua lại giữa bản đồ và màn hình khác, giới hạn 30 khung hình mỗi giây, và việc vẽ trên GPU mất bao lâu. Cho đến khi đo được, bài này chưa đưa ra con số nào về pin.
 
 // Hình ảnh không ai nhìn thấy là thứ rẻ nhất để bỏ qua.

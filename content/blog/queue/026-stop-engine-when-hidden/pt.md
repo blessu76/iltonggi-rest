@@ -15,7 +15,7 @@ Quando a tela é coberta, ou o app vai para o segundo plano, o motor para. Desen
 
 ## Um único lugar decide quando parar
 
-Antes, cada cena tinha seu próprio código para parar. O mapa, o palco de batalha e a visão do mundo verificavam cada um se estavam ocultos, e cada um precisava ser corrigido separadamente. Agora essa tarefa fica com uma única carcaça compartilhada. As cenas não perguntam mais se estão visíveis. Elas seguem o estado que a carcaça define.
+Antes, cada cena tinha seu próprio código para parar. O mapa, o palco de batalha e a tela do menu inicial verificavam cada um se estavam ocultos, e cada um precisava ser corrigido separadamente. Agora essa tarefa fica com uma única carcaça compartilhada. As cenas não perguntam mais se estão visíveis. Elas seguem o estado que a carcaça define.
 
 ## A animação do combate continua
 
@@ -23,6 +23,6 @@ Quando dois exércitos se chocam no mapa, a animação só avança enquanto o mo
 
 ## O que ainda não medimos
 
-Ainda não medimos quanta bateria isso economiza. Algumas coisas só podem ser verificadas em aparelhos reais: mandar o app para o segundo plano e trazê-lo de volta, alternar entre o mapa e a visão do mundo, o limite de 30 quadros por segundo e quanto tempo o desenho leva na GPU. Até medirmos, este texto não traz números de bateria.
+Ainda não medimos quanta bateria isso economiza. Algumas coisas só podem ser verificadas em aparelhos reais: mandar o app para o segundo plano e trazê-lo de volta, alternar entre o mapa e outras telas, o limite de 30 quadros por segundo e quanto tempo o desenho leva na GPU. Até medirmos, este texto não traz números de bateria.
 
 // A imagem que ninguém vê é a mais barata de pular.
