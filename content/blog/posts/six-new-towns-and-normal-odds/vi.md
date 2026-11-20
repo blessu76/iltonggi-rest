@@ -4,8 +4,9 @@ description: Sáu thị trấn trung lập ở Hồi 3 làm tỷ lệ thắng �
 slug: six-new-towns-and-normal-odds
 lang: vi
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Khi thêm một địa điểm vào bản đồ, chúng tôi cũng thêm một trận đánh ở đó. Ở Hồi 3, chúng tôi thêm sáu thị trấn trung lập, và độ khó Thường giảm mạnh. Trước khi thay đổi, một vương quốc thống nhất thắng khoảng 36 phần trăm số ván mô phỏng ở độ khó Thường. Sau đó, con số giảm xuống còn 14. Bài viết này kể về cách chúng tôi đưa nó trở lại khoảng mục tiêu và những gì các con số có thể hay không thể cho chúng tôi biết. Trò chơi vẫn đang được phát triển.

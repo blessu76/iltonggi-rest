@@ -4,8 +4,9 @@ description: Seis cidades neutras do Ato 3 derrubaram as vitórias no Normal par
 slug: six-new-towns-and-normal-odds
 lang: pt
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Quando acrescentamos um lugar ao mapa, também acrescentamos uma batalha ali. No Ato 3 adicionamos seis cidades neutras, e a dificuldade Normal caiu bastante. Antes da mudança, um reino unificado vencia cerca de 36 por cento das partidas simuladas no Normal. Depois, o número caiu para 14. Esta publicação fala de como o trouxemos de volta à faixa-alvo e do que os números podem e não podem nos dizer. O jogo ainda está em desenvolvimento.

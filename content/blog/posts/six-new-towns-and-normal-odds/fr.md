@@ -4,8 +4,9 @@ description: Six villes neutres de l'acte 3 ont fait tomber les victoires en Nor
 slug: six-new-towns-and-normal-odds
 lang: fr
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Quand on ajoute un lieu à la carte, on ajoute aussi un combat à cet endroit. Dans l'acte 3, nous avons ajouté six villes neutres, et la difficulté Normal a fortement baissé. Avant la modification, un royaume unifié gagnait environ 36 pour cent des parties simulées en Normal. Après, le chiffre est tombé à 14. Cet article explique comment nous l'avons ramené dans la fourchette visée, et ce que les chiffres peuvent et ne peuvent pas nous dire. Le jeu est encore en développement.

@@ -3,8 +3,9 @@ title: Six New Towns and a Harder Normal Game
 description: Six neutral towns in Act 3 pushed Normal win rates down to 14 percent. We changed only their troops, and this is how we picked the numbers.
 slug: six-new-towns-and-normal-odds
 lang: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 When we add a place to the map, we also add a fight there. In Act 3 we added six neutral towns, and the Normal difficulty dropped sharply. Before the change, a unified kingdom won about 36 percent of simulated games on Normal. After it, the number fell to 14. This post is about how we brought it back into the target range, and what the numbers can and cannot tell us. The game is still in development.

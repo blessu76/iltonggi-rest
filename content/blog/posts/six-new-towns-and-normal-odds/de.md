@@ -4,8 +4,9 @@ description: Sechs neutrale Städte in Akt 3 senkten die Siegesquote auf Normal 
 slug: six-new-towns-and-normal-odds
 lang: de
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Wenn wir einen Ort zur Karte hinzufügen, fügen wir dort auch einen Kampf hinzu. In Akt 3 haben wir sechs neutrale Städte ergänzt, und der Schwierigkeitsgrad Normal ist deutlich gesunken. Vor der Änderung gewann ein geeintes Königreich etwa 36 Prozent der simulierten Spiele auf Normal. Danach fiel der Wert auf 14. Dieser Beitrag handelt davon, wie wir ihn wieder in den Zielbereich gebracht haben und was die Zahlen aussagen können und was nicht. Das Spiel befindet sich noch in der Entwicklung.

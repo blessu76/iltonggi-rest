@@ -4,8 +4,9 @@ description: Seis pueblos neutrales del Acto 3 bajaron las victorias en Normal h
 slug: six-new-towns-and-normal-odds
 lang: es
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Cuando añadimos un lugar al mapa, también añadimos una batalla allí. En el Acto 3 agregamos seis pueblos neutrales y la dificultad Normal bajó mucho. Antes del cambio, un reino unificado ganaba cerca del 36 por ciento de las partidas simuladas en Normal. Después, la cifra cayó al 14. Esta entrada trata de cómo la devolvimos al rango objetivo y de qué pueden y qué no pueden decirnos los números. El juego sigue en desarrollo.

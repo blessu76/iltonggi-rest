@@ -4,8 +4,9 @@ description: Enam kota netral di Babak 3 menurunkan peluang menang di Normal men
 slug: six-new-towns-and-normal-odds
 lang: id
 translation_of: en
-date: 2026-11-20
 copy_review: iris 2026-11-16
+date: 2026-11-20
+published: 2026-11-20T12:45:00+09:00
 ---
 
 Saat kami menambahkan tempat ke peta, kami juga menambahkan pertempuran di sana. Di Babak 3 kami menambahkan enam kota netral, dan tingkat Normal turun tajam. Sebelum perubahan, kerajaan yang bersatu menang sekitar 36 persen dari permainan simulasi di Normal. Setelah perubahan, angkanya turun menjadi 14. Tulisan ini membahas cara kami mengembalikannya ke rentang target, dan apa yang bisa serta tidak bisa dikatakan oleh angka-angka ini. Game ini masih dalam pengembangan.
