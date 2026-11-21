@@ -4,8 +4,9 @@ description: Chaque contrôle artistique reçoit l'une de trois étiquettes. Voi
 slug: three-labels-for-doubt
 lang: fr
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Confronter une image à l'histoire invite à deux erreurs. La première consiste à tout changer ce qui semble faux, même sans preuve. La seconde consiste à tout laisser en l'état parce que rien n'est certain. Pour éviter les deux, nous donnons à chaque constat l'une de trois étiquettes. Cet article les explique, à partir de notre contrôle du premier acte, qui se déroule entre le IVe et le VIIe siècle. Le jeu est encore en développement.

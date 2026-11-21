@@ -3,8 +3,9 @@ title: Sure, Likely or Unknown
 description: Every art check gets one of three labels. Here is what each label lets us do, and which findings we leave for a person to decide.
 slug: three-labels-for-doubt
 lang: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Checking a picture against history invites two mistakes. One is to change everything that feels off, even with no evidence. The other is to leave everything alone because nothing is certain. To avoid both, we give every finding one of three labels. This post explains them, using our check of the first act, which is set in the 4th to 7th centuries. The game is still in development.

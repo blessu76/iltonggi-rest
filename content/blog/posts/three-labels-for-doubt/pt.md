@@ -4,8 +4,9 @@ description: Cada checagem de arte recebe uma de três etiquetas. Aqui explicamo
 slug: three-labels-for-doubt
 lang: pt
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Comparar uma imagem com a história convida a dois erros. Um é mudar tudo o que parece estranho, mesmo sem provas. O outro é deixar tudo como está porque nada é certo. Para evitar os dois, damos a cada achado uma de três etiquetas. Esta publicação explica cada uma, usando nossa checagem do primeiro ato, que se passa entre os séculos IV e VII. O jogo ainda está em desenvolvimento.

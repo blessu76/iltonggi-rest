@@ -4,8 +4,9 @@ description: Mỗi lần kiểm tra hình ảnh nghệ thuật nhận một tron
 slug: three-labels-for-doubt
 lang: vi
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Đối chiếu một bức tranh với lịch sử dễ dẫn tới hai sai lầm. Một là thay đổi mọi thứ có vẻ sai, dù không có bằng chứng. Hai là giữ nguyên mọi thứ vì không có gì chắc chắn. Để tránh cả hai, chúng tôi gắn cho mỗi phát hiện một trong ba nhãn. Bài viết này giải thích từng nhãn, dựa trên lần kiểm tra hồi thứ nhất của chúng tôi, lấy bối cảnh từ thế kỷ IV đến VII. Trò chơi vẫn đang được phát triển.

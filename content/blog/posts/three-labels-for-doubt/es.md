@@ -4,8 +4,9 @@ description: Cada revisión de arte recibe una de tres etiquetas. Aquí explicam
 slug: three-labels-for-doubt
 lang: es
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Comparar una imagen con la historia invita a dos errores. Uno es cambiar todo lo que parece extraño, aunque no haya pruebas. El otro es dejar todo como está porque nada es seguro. Para evitar ambos, damos a cada hallazgo una de tres etiquetas. Esta entrada las explica, usando nuestra revisión del primer acto, ambientado entre los siglos IV y VII. El juego sigue en desarrollo.

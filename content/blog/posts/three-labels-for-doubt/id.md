@@ -4,8 +4,9 @@ description: Setiap pemeriksaan seni mendapat salah satu dari tiga label. Di sin
 slug: three-labels-for-doubt
 lang: id
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Membandingkan gambar dengan sejarah mengundang dua kesalahan. Yang pertama adalah mengubah semua yang terasa janggal, meski tanpa bukti. Yang kedua adalah membiarkan semuanya karena tidak ada yang pasti. Untuk menghindari keduanya, kami memberi setiap temuan salah satu dari tiga label. Tulisan ini menjelaskannya, dengan contoh pemeriksaan babak pertama kami, yang berlatar abad ke-4 sampai ke-7. Game ini masih dalam pengembangan.

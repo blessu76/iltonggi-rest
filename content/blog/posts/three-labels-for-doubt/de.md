@@ -4,8 +4,9 @@ description: Jede Kunstprüfung bekommt eines von drei Etiketten. Hier erklären
 slug: three-labels-for-doubt
 lang: de
 translation_of: en
-date: 2026-11-21
 copy_review: iris 2026-11-16
+date: 2026-11-21
+published: 2026-11-21T16:30:00+09:00
 ---
 
 Ein Bild mit der Geschichte abzugleichen, führt leicht zu zwei Fehlern. Der eine ist, alles zu ändern, was seltsam wirkt, auch ohne Beleg. Der andere ist, alles unverändert zu lassen, weil nichts sicher ist. Um beides zu vermeiden, geben wir jedem Befund eines von drei Etiketten. Dieser Beitrag erklärt sie anhand unserer Prüfung des ersten Akts, der im 4. bis 7. Jahrhundert spielt. Das Spiel befindet sich noch in der Entwicklung.
