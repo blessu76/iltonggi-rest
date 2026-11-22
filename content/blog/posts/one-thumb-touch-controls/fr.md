@@ -4,8 +4,9 @@ description: Un jeu de conquête territoriale doit fonctionner avec un seul pouc
 slug: one-thumb-touch-controls
 lang: fr
 translation_of: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi est un jeu sur carte, et ce type de jeu sur téléphone demande beaucoup à un seul pouce. Il faut choisir une région, voir ses troupes, déplacer une armée et lire le résultat, sans masquer la région même que l'on veut toucher. Cet article décrit notre façon de penser la saisie tactile. Le jeu est encore en développement : lisez donc ces règles comme ce que nous sommes en train de tester, et non comme un manuel terminé.

@@ -12,6 +12,7 @@
 - [Journal index](https://iltonggi.ipe.rest/journal/)
 - [RSS feed](https://iltonggi.ipe.rest/blog/feed.xml)
 - [Atom feed](https://iltonggi.ipe.rest/blog/atom.xml)
+- [One Thumb, One Region: Designing Touch Controls for a Map Game](https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/): A land-grab map has to work with one thumb on a small screen. Here is how we think about taps, drags and the mistakes we are guarding against.
 - [Sure, Likely or Unknown](https://iltonggi.ipe.rest/blog/three-labels-for-doubt/): Every art check gets one of three labels. Here is what each label lets us do, and which findings we leave for a person to decide.
 - [Six New Towns and a Harder Normal Game](https://iltonggi.ipe.rest/blog/six-new-towns-and-normal-odds/): Six neutral towns in Act 3 pushed Normal win rates down to 14 percent. We changed only their troops, and this is how we picked the numbers.
 - [One Bow in a Hunting Mural](https://iltonggi.ipe.rest/blog/goguryeo-bow-in-a-hunting-mural/): Our Goguryeo archer carried a long bow. Hunting murals show a short, curved bow, so we redrew it and wrote down how we checked.

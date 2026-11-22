@@ -4,8 +4,9 @@ description: Game perebutan wilayah harus bisa dimainkan dengan satu jempol di l
 slug: one-thumb-touch-controls
 lang: id
 translation_of: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi adalah game peta, dan game peta di ponsel membebani satu jempol dengan banyak tugas. Anda harus memilih sebuah wilayah, melihat pasukannya, menggerakkan pasukan, dan membaca hasilnya, tanpa menutupi wilayah yang ingin ditekan. Tulisan ini menjelaskan cara kami memikirkan masukan sentuh. Game ini masih dalam pengembangan, jadi bacalah aturan ini sebagai hal yang sedang kami uji, bukan panduan yang sudah final.

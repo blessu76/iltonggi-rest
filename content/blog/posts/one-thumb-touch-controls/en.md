@@ -3,8 +3,9 @@ title: One Thumb, One Region: Designing Touch Controls for a Map Game
 description: A land-grab map has to work with one thumb on a small screen. Here is how we think about taps, drags and the mistakes we are guarding against.
 slug: one-thumb-touch-controls
 lang: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi is a map game, and a map game on a phone asks a lot of one thumb. You need to pick a region, see its troops, move an army and read the result, all without covering the very region you are trying to press. This post describes how we think about touch input. The game is still in development, so read these as the rules we are testing, not a finished manual.

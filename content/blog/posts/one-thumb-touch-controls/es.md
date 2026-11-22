@@ -4,8 +4,9 @@ description: Un juego de conquista de territorios debe funcionar con un solo pul
 slug: one-thumb-touch-controls
 lang: es
 translation_of: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi es un juego de mapa, y un juego de mapa en el teléfono exige mucho a un solo pulgar. Hay que elegir una región, ver sus tropas, mover un ejército y leer el resultado, sin tapar la región que se quiere pulsar. Esta entrada describe cómo pensamos la entrada táctil. El juego sigue en desarrollo, así que estas reglas deben leerse como lo que estamos probando, no como un manual terminado.

@@ -4,8 +4,9 @@ description: Game tranh đoạt lãnh thổ phải chơi được chỉ bằng m
 slug: one-thumb-touch-controls
 lang: vi
 translation_of: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi là game bản đồ, và một game bản đồ trên điện thoại đòi hỏi rất nhiều từ một ngón cái. Bạn phải chọn một vùng, xem quân của vùng đó, di chuyển đội quân và đọc kết quả, mà không che chính vùng mình muốn chạm. Bài viết này mô tả cách chúng tôi nghĩ về thao tác cảm ứng. Game vẫn đang được phát triển, vì vậy hãy đọc các quy tắc này như những điều đang được thử nghiệm, không phải hướng dẫn hoàn chỉnh.

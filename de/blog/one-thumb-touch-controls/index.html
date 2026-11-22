@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen — Iltonggi</title>
+<meta name="description" content="Ein Spiel um Gebietseroberung muss auf einem kleinen Bildschirm mit einem einzigen Daumen funktionieren. So denken wir über Tippen, Ziehen und die Fehler nach, die wir vermeiden wollen.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#24312b">
+<link rel="canonical" href="https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/blog/one-thumb-touch-controls/">
+<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Iltonggi">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen — Iltonggi">
+<meta property="og:description" content="Ein Spiel um Gebietseroberung muss auf einem kleinen Bildschirm mit einem einzigen Daumen funktionieren. So denken wir über Tippen, Ziehen und die Fehler nach, die wir vermeiden wollen.">
+<meta property="og:url" content="https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/">
+<meta property="og:image" content="https://iltonggi.ipe.rest/assets/blog/hero-general.webp?v=74f04d8f">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen — Iltonggi">
+<meta name="twitter:description" content="Ein Spiel um Gebietseroberung muss auf einem kleinen Bildschirm mit einem einzigen Daumen funktionieren. So denken wir über Tippen, Ziehen und die Fehler nach, die wir vermeiden wollen.">
+<meta name="twitter:image:alt" content="Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen">
+<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/blog/hero-general.webp?v=74f04d8f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=fa93c549">
+<link rel="alternate" type="application/rss+xml" title="Die Entstehung von Iltonggi (RSS)" href="/blog/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Die Entstehung von Iltonggi (Atom)" href="/blog/atom.xml">
+<meta property="article:published_time" content="2026-11-22T16:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-22T16:00:00+09:00">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/#post", "headline": "Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen", "description": "Ein Spiel um Gebietseroberung muss auf einem kleinen Bildschirm mit einem einzigen Daumen funktionieren. So denken wir über Tippen, Ziehen und die Fehler nach, die wir vermeiden wollen.", "datePublished": "2026-11-22T16:00:00+09:00", "dateModified": "2026-11-22T16:00:00+09:00", "inLanguage": "de", "url": "https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/"}, "image": [{"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/blog/hero-general.webp?v=74f04d8f", "width": 1200, "height": 630}], "author": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/"}, "publisher": {"@type": "Organization", "@id": "https://ipe.rest/#organization", "name": "ipe()", "url": "https://ipe.rest/", "logo": {"@type": "ImageObject", "url": "https://iltonggi.ipe.rest/assets/icon-512.png?v=7e0c1ed5", "width": 512, "height": 512}}, "isPartOf": {"@type": "Blog", "name": "Die Entstehung von Iltonggi", "url": "https://iltonggi.ipe.rest/de/journal/"}, "about": {"@type": "VideoGame", "name": "Iltonggi", "alternateName": ["Iltonggi", "일통기", "一統記"], "genre": ["Strategy", "Turn-based strategy", "Historical"], "gamePlatform": "iOS", "applicationCategory": "Game", "url": "https://iltonggi.ipe.rest/de/", "publisher": {"@id": "https://ipe.rest/#organization"}}, "articleSection": "Journal", "wordCount": 448}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Iltonggi", "item": "https://iltonggi.ipe.rest/de/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://iltonggi.ipe.rest/de/journal/"}, {"@type": "ListItem", "position": 3, "name": "Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen", "item": "https://iltonggi.ipe.rest/de/blog/one-thumb-touch-controls/"}]}</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="brand" href="/de/" aria-label="Iltonggi-Startseite">
+      <span class="seal" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Iltonggi</span>
+        <span class="brand__sub">ipe studio</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Hauptlinks">
+      <a href="/de/journal/">Journal</a>
+      <a href="/de/support/">Support</a>
+    </nav>
+    <select class="lang-select" aria-label="Sprache" data-cur="/de"><option value="/en" lang="en">English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de" selected>Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
+  </div>
+</header>
+<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
+
+<main id="content">
+  <article class="doc">
+    <div class="container doc__body post">
+      <p class="kicker">// blog · No. 25</p>
+      <h1>Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen</h1>
+      <p class="meta"><time datetime="2026-11-22T16:00:00+09:00" data-ipe-time>2026-11-22 16:00 KST</time></p>
+      <p class="meta ai-note">Dieser Beitrag ist eine KI-Übersetzung. <a href="/en/blog/one-thumb-touch-controls/" hreflang="en">Original lesen</a></p>
+      <figure class="post__hero"><img src="/assets/blog/hero-general.webp?v=74f04d8f" alt="Ein Daumen, ein Gebiet: Touch-Steuerung für ein Landkartenspiel entwerfen" width="1200" height="630" loading="eager" decoding="async" fetchpriority="high"></figure>
+      <div class="post__body">
+<p>Iltonggi ist ein Landkartenspiel, und ein Landkartenspiel auf dem Handy verlangt viel von einem einzigen Daumen. Man muss ein Gebiet auswählen, seine Truppen sehen, ein Heer bewegen und das Ergebnis lesen, ohne genau das Gebiet zu verdecken, das man antippen will. Dieser Beitrag beschreibt, wie wir über Touch-Eingaben nachdenken. Das Spiel ist noch in Entwicklung. Lesen Sie diese Regeln daher als das, was wir gerade testen, nicht als fertige Anleitung.</p>
+<h2>Tippen und Ziehen sind verschiedene Dinge</h2>
+<p>Der häufigste Fehler bei einem Landkartenspiel besteht darin, jede Berührung wie einen Klick zu behandeln. Ein Finger, der sich ein wenig bewegt, während die Karte darunter gleitet, ist keine Auswahl. Deshalb trennen wir zwei Absichten: ein kurzes Tippen, das auswählt, und eine längere Bewegung, die die Karte verschiebt. Bewegt sich der Finger vor dem Loslassen über eine kleine Strecke, gehört die Berührung zur Karte, und es wird kein Gebiet gewählt.</p>
+<p>Das Prinzip ist wichtiger als der genaue Abstand. Ein Spieler sollte beim Scrollen über einen dicht besetzten Teil der Karte nie versehentlich ein Gebiet auswählen.</p>
+<h2>Gebiete sind auf dem Handy klein</h2>
+<p>Manche Gebiete sind schmal, und ein Daumen ist breit. Wenn in der Nähe kein anderes Gebiet liegt, lassen wir den Tippbereich eines Gebiets etwas über den gezeichneten Rand hinausreichen. Wir lassen ihn nie so groß werden, dass er einen Tipp stiehlt, der für einen Nachbarn bestimmt war. Liegen zwei Gebiete nah beieinander, soll die Wahl davon abhängen, wo die Berührung landet, und nicht davon, welches Gebiet zuletzt gezeichnet wurde.</p>
+<h2>Teure Züge bestätigen</h2>
+<p>Angriffe und Truppenbewegungen verändern den Spielzustand. Deshalb sollen sie leichter aus Versehen zu vermeiden sein als das bloße Ansehen eines Gebiets. Ein Tipp zeigt, was passieren würde, und eine zweite, bewusste Handlung führt es aus. Das kostet etwas Tempo, und wer die Karte gut kennt, empfindet es vielleicht als langsamer. Wir nehmen diesen Tausch in Kauf, denn ein falsch geschicktes Heer ärgert mehr als ein zusätzlicher Tipp.</p>
+<h2>Kurze Sitzungen, oft unterbrochen</h2>
+<p>Menschen spielen Iltonggi in kurzen Sitzungen: im Bus, in der Schlange, ein paar Minuten vor dem Schlafen. Eine Unterbrechung kann jederzeit kommen, etwa durch einen Anruf oder einen Wechsel zu einer anderen App. Die Steuerung darf deshalb nicht von einer Geste abhängen, die lange andauert. Ein halb ausgeführtes Ziehen soll ohne Ergebnis enden, und die Karte soll dort bleiben, wo der Spieler sie verlassen hat.</p>
+<h2>Was wir noch prüfen müssen</h2>
+<p>Daumengrößen unterscheiden sich, Bildschirme ebenso. Unsere Annahmen stammen vor allem von den Geräten, die wir selbst besitzen. Wir planen, die Tippbereiche auf mehr Bildschirmen zu testen und zu beobachten, wo Spieler sich vertippen. Das haben wir noch nicht im großen Maßstab gemessen, deshalb nennt dieser Beitrag keine Zahlen.</p>
+<p>// Der sicherste Tipp ist der, den man zurücknehmen kann.</p>
+      </div>
+      <nav class="post-nav" aria-label="Weitere Beiträge"><ul><li>← Vorheriger Beitrag: <a href="/de/blog/three-labels-for-doubt/">Sicher, wahrscheinlich oder unbekannt</a></li></ul></nav>
+      <section class="post-more"><h2>Weitere Beiträge</h2><ul><li><a href="/de/blog/six-new-towns-and-normal-odds/">Sechs neue Städte und ein schwereres Normal-Spiel</a></li><li><a href="/de/blog/goguryeo-bow-in-a-hunting-mural/">Ein Bogen in einem Jagdwandbild</a></li><li><a href="/de/blog/three-difficulties-in-numbers/">Drei Schwierigkeitsgrade, von Zahlen gehalten</a></li></ul></section>
+      <div class="doc__links"><a href="/de/journal/">← Zurück zum Journal</a></div>
+    </div>
+  </article>
+</main>
+<script>/* ipe-localtime v2 · 정본 ipe-rest/shared/ipe-localtime.js · 사본은 바이트 그대로 */
+/* time[data-ipe-time] 의 datetime(+09:00)을 보는 기기 시간대로 바꿔 보인다. 실패하면 정적 KST 글자를 그대로 둔다. */
+/* v2: 오프셋 없는/잘못된 datetime 은 건너뜀 · 그레고리력·라틴 숫자 고정 */
+(function () {
+  try {
+    var zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var names = { 'Asia/Seoul': 'KST', 'Asia/Tokyo': 'JST' };
+    var ok = /^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:?\d\d|Z)$/;
+    var fmt = new Intl.DateTimeFormat(document.documentElement.lang || 'en', {
+      calendar: 'gregory', numberingSystem: 'latn',
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short'
+    });
+    var els = document.querySelectorAll('time[data-ipe-time]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      try {
+        if (el.hasAttribute('data-ipe-time-done')) continue;
+        var raw = (el.getAttribute('datetime') || '').trim();
+        if (!ok.test(raw)) continue;
+        var d = new Date(raw.replace(/([+-]\d\d)(\d\d)$/, '$1:$2'));
+        if (isNaN(d.getTime())) continue;
+        var text = fmt.formatToParts(d).map(function (p) {
+          return p.type === 'timeZoneName' && names[zone] ? names[zone] : p.value;
+        }).join('');
+        if (!el.getAttribute('title')) el.setAttribute('title', el.textContent.trim());
+        el.textContent = text;
+        el.setAttribute('data-ipe-time-done', '');
+      } catch (e) {}
+    }
+  } catch (e) {}
+})();</script>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div>
+      <p class="h3">ipe Studio</p>
+      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
+      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
+    </div>
+    <nav class="footer-links" aria-label="Rechtliche Links">
+      <a href="/de/privacy/">Datenschutzerklärung</a>
+      <a href="/de/terms/">Nutzungsbedingungen</a>
+      <a href="/de/journal/">Journal</a>
+      <a href="/de/support/">Support</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -4,8 +4,9 @@ description: Ein Spiel um Gebietseroberung muss auf einem kleinen Bildschirm mit
 slug: one-thumb-touch-controls
 lang: de
 translation_of: en
-date: 2026-11-22
 copy_review: iris 2026-11-19
+date: 2026-11-22
+published: 2026-11-22T16:00:00+09:00
 ---
 
 Iltonggi ist ein Landkartenspiel, und ein Landkartenspiel auf dem Handy verlangt viel von einem einzigen Daumen. Man muss ein Gebiet auswählen, seine Truppen sehen, ein Heer bewegen und das Ergebnis lesen, ohne genau das Gebiet zu verdecken, das man antippen will. Dieser Beitrag beschreibt, wie wir über Touch-Eingaben nachdenken. Das Spiel ist noch in Entwicklung. Lesen Sie diese Regeln daher als das, was wir gerade testen, nicht als fertige Anleitung.

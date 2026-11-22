@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 16:30:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 16:00:00 +0900</lastBuildDate>
+  <item>
+    <title>One Thumb, One Region: Designing Touch Controls for a Map Game</title>
+    <link>https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/</guid>
+    <pubDate>Sun, 22 Nov 2026 16:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>A land-grab map has to work with one thumb on a small screen. Here is how we think about taps, drags and the mistakes we are guarding against.</description>
+  </item>
   <item>
     <title>Sure, Likely or Unknown</title>
     <link>https://iltonggi.ipe.rest/blog/three-labels-for-doubt/</link>
@@ -158,14 +166,6 @@
     <pubDate>Tue, 03 Nov 2026 21:05:00 +0900</pubDate>
     <dc:creator>ipe Studio</dc:creator>
     <description>The materials and rules behind three look drafts for Iltonggi&#x27;s map, redrawing the same land as clay wall, hanji paper and an old surveyor&#x27;s sheet.</description>
-  </item>
-  <item>
-    <title>Gwansanseong, 554: Where an Alliance Ended</title>
-    <link>https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</link>
-    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/gwansanseong-554-alliance-ends/</guid>
-    <pubDate>Tue, 03 Nov 2026 12:00:00 +0900</pubDate>
-    <dc:creator>ipe Studio</dc:creator>
-    <description>Three years after the 551 Han River scenario, the Baekje-Silla alliance broke at Gwansanseong. Here is that scene, and where Iltonggi&#x27;s diplomacy rules touch it.</description>
   </item>
 </channel>
 </rss>
