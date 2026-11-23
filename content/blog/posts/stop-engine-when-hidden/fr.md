@@ -5,6 +5,7 @@ slug: stop-engine-when-hidden
 lang: fr
 translation_of: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 Les scènes de carte et de bataille d'Iltonggi sont des images animées. Les soldats marchent, les bannières flottent et les combats se déroulent image par image. Mais lorsqu'un joueur répond à un appel ou passe à une autre application, rien ne justifie de continuer à dessiner des images que personne ne peut voir. Ce texte consigne la règle que nous avons fixée aujourd'hui, pendant le passage du moteur du jeu vers un kit partagé. Le jeu est encore en développement.

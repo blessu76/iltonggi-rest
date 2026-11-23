@@ -4,6 +4,7 @@ description: When the screen is covered or the app goes to the background, the g
 slug: stop-engine-when-hidden
 lang: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 Iltonggi's map and battle scenes are moving pictures. Soldiers walk, banners sway, and clashes play out one frame at a time. But when a player takes a phone call or switches to another app, there is no reason to keep drawing pictures no one can see. This post records the rule we set today, while moving the game engine onto a shared kit. The game is still in development.

@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 22 Nov 2026 16:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 14:00:00 +0900</lastBuildDate>
+  <item>
+    <title>Stop the Engine When No One Is Looking</title>
+    <link>https://iltonggi.ipe.rest/blog/stop-engine-when-hidden/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/stop-engine-when-hidden/</guid>
+    <pubDate>Mon, 23 Nov 2026 14:00:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>When the screen is covered or the app goes to the background, the game engine stops. Here is the rule we set while moving to a shared engine kit, and what we have not measured yet.</description>
+  </item>
   <item>
     <title>One Thumb, One Region: Designing Touch Controls for a Map Game</title>
     <link>https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/</link>
@@ -158,14 +166,6 @@
     <pubDate>Wed, 04 Nov 2026 12:00:00 +0900</pubDate>
     <dc:creator>ipe Studio</dc:creator>
     <description>What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.</description>
-  </item>
-  <item>
-    <title>Hanji, Ink and the Seal: Choosing a Face for the Map</title>
-    <link>https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</link>
-    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</guid>
-    <pubDate>Tue, 03 Nov 2026 21:05:00 +0900</pubDate>
-    <dc:creator>ipe Studio</dc:creator>
-    <description>The materials and rules behind three look drafts for Iltonggi&#x27;s map, redrawing the same land as clay wall, hanji paper and an old surveyor&#x27;s sheet.</description>
   </item>
 </channel>
 </rss>

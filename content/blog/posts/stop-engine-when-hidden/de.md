@@ -5,6 +5,7 @@ slug: stop-engine-when-hidden
 lang: de
 translation_of: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 Die Karten- und Schlachtszenen von Iltonggi sind bewegte Bilder. Soldaten marschieren, Banner wehen, und Gefechte laufen Bild für Bild ab. Doch wenn ein Spieler einen Anruf annimmt oder zu einer anderen App wechselt, gibt es keinen Grund, weiter Bilder zu zeichnen, die niemand sehen kann. Dieser Beitrag hält die Regel fest, die wir heute beim Umzug der Spiel-Engine auf ein gemeinsames Kit festgelegt haben. Das Spiel ist noch in Entwicklung.

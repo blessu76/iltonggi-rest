@@ -5,6 +5,7 @@ slug: stop-engine-when-hidden
 lang: pt
 translation_of: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 As cenas de mapa e de batalha de Iltonggi são imagens em movimento. Os soldados andam, as bandeiras balançam e os combates se desenrolam quadro a quadro. Mas quando o jogador atende uma ligação ou troca de app, não há motivo para continuar desenhando imagens que ninguém consegue ver. Este texto registra a regra que definimos hoje, enquanto passávamos o motor do jogo para um kit compartilhado. O jogo ainda está em desenvolvimento.

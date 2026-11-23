@@ -5,6 +5,7 @@ slug: stop-engine-when-hidden
 lang: id
 translation_of: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 Adegan peta dan pertempuran di Iltonggi adalah gambar yang bergerak. Prajurit berjalan, panji berkibar, dan pertempuran berlangsung bingkai demi bingkai. Namun ketika pemain menerima telepon atau berpindah ke aplikasi lain, tidak ada alasan untuk terus menggambar sesuatu yang tidak bisa dilihat siapa pun. Tulisan ini mencatat aturan yang kami tetapkan hari ini, saat memindahkan mesin permainan ke kit bersama. Permainan ini masih dalam pengembangan.

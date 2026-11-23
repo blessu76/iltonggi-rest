@@ -4,8 +4,17 @@
   <link href="https://iltonggi.ipe.rest/journal/"/>
   <link rel="self" type="application/atom+xml" href="https://iltonggi.ipe.rest/blog/atom.xml"/>
   <id>https://iltonggi.ipe.rest/journal/</id>
-  <updated>2026-11-22T16:00:00+09:00</updated>
+  <updated>2026-11-23T14:00:00+09:00</updated>
   <subtitle>How Iltonggi is being made — one short note a day.</subtitle>
+  <entry>
+    <title>Stop the Engine When No One Is Looking</title>
+    <link href="https://iltonggi.ipe.rest/blog/stop-engine-when-hidden/"/>
+    <id>https://iltonggi.ipe.rest/blog/stop-engine-when-hidden/</id>
+    <published>2026-11-23T14:00:00+09:00</published>
+    <updated>2026-11-23T14:00:00+09:00</updated>
+    <author><name>ipe Studio</name></author>
+    <summary>When the screen is covered or the app goes to the background, the game engine stops. Here is the rule we set while moving to a shared engine kit, and what we have not measured yet.</summary>
+  </entry>
   <entry>
     <title>One Thumb, One Region: Designing Touch Controls for a Map Game</title>
     <link href="https://iltonggi.ipe.rest/blog/one-thumb-touch-controls/"/>
@@ -176,14 +185,5 @@
     <updated>2026-11-04T12:00:00+09:00</updated>
     <author><name>ipe Studio</name></author>
     <summary>What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.</summary>
-  </entry>
-  <entry>
-    <title>Hanji, Ink and the Seal: Choosing a Face for the Map</title>
-    <link href="https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/"/>
-    <id>https://iltonggi.ipe.rest/blog/hanji-ink-seal-screen/</id>
-    <published>2026-11-03T21:05:00+09:00</published>
-    <updated>2026-11-03T21:05:00+09:00</updated>
-    <author><name>ipe Studio</name></author>
-    <summary>The materials and rules behind three look drafts for Iltonggi&#x27;s map, redrawing the same land as clay wall, hanji paper and an old surveyor&#x27;s sheet.</summary>
   </entry>
 </feed>

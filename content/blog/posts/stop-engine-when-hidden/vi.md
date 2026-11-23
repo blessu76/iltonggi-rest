@@ -5,6 +5,7 @@ slug: stop-engine-when-hidden
 lang: vi
 translation_of: en
 date: 2026-11-23
+published: 2026-11-23T14:00:00+09:00
 ---
 
 Các cảnh bản đồ và chiến trận trong Iltonggi là những hình ảnh chuyển động. Lính đi lại, cờ phất phới, và các trận giao tranh diễn ra từng khung hình. Nhưng khi người chơi nghe điện thoại hoặc chuyển sang ứng dụng khác, không có lý do gì để tiếp tục vẽ những hình ảnh mà không ai nhìn thấy. Bài này ghi lại quy tắc chúng tôi đặt ra hôm nay, trong lúc chuyển động cơ game sang một bộ công cụ dùng chung. Game vẫn đang trong quá trình phát triển.
