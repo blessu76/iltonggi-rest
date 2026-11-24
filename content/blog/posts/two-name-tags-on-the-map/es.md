@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: es
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Cada aldea del mapa de Iltonggi lleva una etiqueta con su nombre. El nombre dice al jugador dónde está, y el número de tropas le dice lo que cuenta el tablero. Durante un tiempo, las etiquetas tenían demasiados estilos y el mapa resultaba ruidoso. Este texto recoge cómo las redujimos a dos aspectos y los principios detrás del cambio.

@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: pt
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Cada aldeia do mapa de Iltonggi tem uma etiqueta com o nome. O nome mostra ao jogador onde ele está, e o número de tropas mostra o que o tabuleiro diz. Por um tempo, as etiquetas apareceram em estilos demais, e o mapa ficou barulhento. Este texto registra como as reduzimos a dois aspectos e os princípios por trás da mudança.

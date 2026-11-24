@@ -4,6 +4,7 @@ description: We cut the village name tags on the map from four looks to two. Our
 slug: two-name-tags-on-the-map
 lang: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Each village on the Iltonggi map carries a name tag. The name tells a player where they are, and the troop number tells them what the board says. For a while, the tags came in too many styles, and the map felt noisy. This post records how we reduced them to two looks and the principles behind the change.

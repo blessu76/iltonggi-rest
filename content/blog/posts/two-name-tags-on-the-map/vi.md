@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: vi
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Mỗi làng trên bản đồ Iltonggi có một nhãn tên. Tên cho người chơi biết họ đang ở đâu, còn số quân cho họ biết bàn cờ đang nói gì. Có một thời gian, các nhãn xuất hiện quá nhiều kiểu, và bản đồ trở nên ồn ào. Bài này ghi lại cách chúng tôi giảm xuống còn hai kiểu và những nguyên tắc đứng sau thay đổi đó.

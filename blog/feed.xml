@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 14:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 12:15:00 +0900</lastBuildDate>
+  <item>
+    <title>Two Name Tags on the Map: Ink for Ours, Paper for the Rest</title>
+    <link>https://iltonggi.ipe.rest/blog/two-name-tags-on-the-map/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/two-name-tags-on-the-map/</guid>
+    <pubDate>Tue, 24 Nov 2026 12:15:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>We cut the village name tags on the map from four looks to two. Our villages get ink-dark tags with gold troop numbers, and the others get paper tags with ink lettering.</description>
+  </item>
   <item>
     <title>Stop the Engine When No One Is Looking</title>
     <link>https://iltonggi.ipe.rest/blog/stop-engine-when-hidden/</link>
@@ -158,14 +166,6 @@
     <pubDate>Thu, 05 Nov 2026 12:00:00 +0900</pubDate>
     <dc:creator>ipe Studio</dc:creator>
     <description>Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.</description>
-  </item>
-  <item>
-    <title>The Day After You Take a Town: Designing the Aftermath of Conquest</title>
-    <link>https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</link>
-    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/taking-a-town-aftermath/</guid>
-    <pubDate>Wed, 04 Nov 2026 12:00:00 +0900</pubDate>
-    <dc:creator>ipe Studio</dc:creator>
-    <description>What happens to population and mood right after you take a town in Iltonggi, and why we made sure that winning the battle is not the end of it.</description>
   </item>
 </channel>
 </rss>

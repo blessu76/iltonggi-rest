@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: id
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Setiap desa di peta Iltonggi punya label nama. Nama memberi tahu pemain di mana mereka berada, dan angka pasukan memberi tahu apa yang terjadi di papan permainan. Untuk beberapa waktu, label-label itu muncul dalam terlalu banyak gaya, dan peta terasa bising. Tulisan ini mencatat bagaimana kami menguranginya menjadi dua gaya dan prinsip di balik perubahan itu.

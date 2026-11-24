@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: de
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Jedes Dorf auf der Iltonggi-Karte trägt ein Namensschild. Der Name zeigt dem Spieler, wo er ist, und die Truppenzahl sagt ihm, was das Brett verrät. Eine Zeit lang gab es zu viele Schildformen gleichzeitig, und die Karte wirkte unruhig. Dieser Beitrag hält fest, wie wir sie auf zwei Formen reduziert haben und welche Überlegungen dahinterstanden.

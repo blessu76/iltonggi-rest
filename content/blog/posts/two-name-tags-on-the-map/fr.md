@@ -5,6 +5,7 @@ slug: two-name-tags-on-the-map
 lang: fr
 translation_of: en
 date: 2026-11-24
+published: 2026-11-24T12:15:00+09:00
 ---
 
 Chaque village de la carte d'Iltonggi porte une étiquette de nom. Le nom indique au joueur où il se trouve, et l'effectif lui indique ce que dit le plateau. Pendant un temps, les étiquettes existaient en trop de styles, et la carte paraissait bruyante. Ce texte consigne comment nous les avons réduites à deux styles, et les principes qui ont guidé ce changement.
