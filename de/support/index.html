@@ -43,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=fa93c549">
-<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h==='::1'||h==='[::1]')return;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
 <body>
 <a class="skip-link" href="#content">Zum Inhalt springen</a>
@@ -86,8 +86,29 @@
       <h3 class="h3 faq-q">Gibt es eine Android-Version?</h3>
       <p>Wir veröffentlichen zuerst für das iPhone. Neuigkeiten zu anderen Plattformen teilen wir später mit.</p>
       <h3 class="h3 faq-q">Erheben Sie personenbezogene Daten?</h3>
-      <p>Die App nicht. Die Website erhebt grundlegende Besuchsstatistiken über Google Analytics. Details finden Sie in der <a href="/de/privacy/">Datenschutzerklärung</a>.</p>
+      <p>Die App nicht. Die Website erhebt grundlegende Besuchsstatistiken über Google Analytics. Details finden Sie in der <a href="https://ipe.rest/legal/privacy/">Datenschutzerklärung</a>.</p>
 
+      <details id="app-privacy">
+        <summary>Iltonggi · Datenschutzerklärung</summary>
+        <h2>1. Erhobene Daten — keine</h2>
+      <p>Iltonggi („die App“) ist ein Mobilspiel, das von einem Einzelentwickler, Davy Kim (ipe Studio), betrieben wird. Die App hat weder Konten noch eine Anmeldung und erhebt keine personenbezogenen Daten wie Name, E-Mail-Adresse, Kontaktdaten, Standort oder Geräte-Kennungen und sendet solche auch nicht an einen Server. Ihr Spielfortschritt und Ihre Einstellungen werden nur auf Ihrem Gerät gespeichert und gelöscht, wenn Sie die App löschen. Der Spitzname, den Sie im Spiel festlegen, und Ihre Spielstände werden nur auf Ihrem Gerät gespeichert; wir erhalten oder erfassen sie nicht.</p>
+      <p>Die App enthält keine Werbung, keine Analyse- und keine Tracking-SDKs.</p>
+        <h2>2. Wetterinformationen</h2>
+      <p>Um das Wetter der Region anzuzeigen, lädt die App bei bestehender Internetverbindung eine öffentliche Datei (weather.json) von iltonggi.ipe.rest herunter. Die Datei fasst einmal pro Stunde das Wetter der 24 Städte im Spiel zusammen und ist für alle Nutzer gleich. Dabei sendet die App keinerlei personenbezogene Daten – weder Standort noch Geräte-Kennung oder Spieldaten – und kontaktiert keinen Wetterdienst direkt.</p>
+      <p>Wie bei jeder gewöhnlichen Webanfrage kann das Server-Protokoll unseres Hosters (GitHub Pages) die IP-Adresse Ihres Geräts erfassen; wir erheben oder nutzen dieses Protokoll nicht. Kann das Wetter nicht heruntergeladen werden (z. B. offline), zeigt die App klares Wetter an und das Spiel funktioniert normal. Das zuletzt empfangene Wetter wird vorübergehend auf Ihrem Gerät gespeichert und beim Löschen der App ebenfalls gelöscht.</p>
+      <p>Wetterdaten: MET Norway (CC BY 4.0).</p>
+        <p>Die Wetterdaten stammen von MET Norway. Wir rufen sie selbst ab und veröffentlichen sie als öffentliche Datei, sodass keine Informationen über App-Nutzer an MET Norway weitergegeben werden.</p>
+      </details>
+      <details id="app-terms">
+        <summary>Iltonggi · Nutzungsbedingungen</summary>
+        <h2>3. Art des Dienstes</h2>
+      <p>Die Kernfunktionen der App laufen offline; das Internet wird nur optional für die Wetteranzeige genutzt (kann das Wetter nicht heruntergeladen werden, wird klares Wetter angezeigt). Spieldaten werden auf Ihrem Gerät gespeichert. Daten können verloren gehen, wenn Sie das Gerät wechseln, die App löschen oder das Gerät zurücksetzen, und wir können sie möglicherweise nicht wiederherstellen.</p>
+        <h2>4. Wetterinformationen</h2>
+      <p>Das in der App angezeigte Wetter ist eine Referenzinformation, die für die Inszenierung und die Regeln des Spiels (Kampfmodifikatoren) verwendet wird. Wir übernehmen keine Gewähr dafür, dass es mit den tatsächlichen Wetterverhältnissen übereinstimmt oder stets verfügbar ist. Fehlen die Wetterinformationen oder sind sie veraltet, kann klares Wetter verwendet werden.</p>
+      <p>Wetterdaten: MET Norway (CC BY 4.0).</p>
+        <h2>6. Haftungsausschluss</h2>
+      <p>Die App wird in der vorliegenden Form bereitgestellt. Soweit gesetzlich zulässig, haften wir nicht für mittelbare oder Begleitschäden, die aus Ihrer Nutzung der App entstehen. Die App ist ein kreatives Werk, das vom Zeitalter der Drei Reiche Koreas inspiriert ist und von den historischen Tatsachen abweichen kann.</p>
+      </details>
       <div class="doc__links"><a href="/de/">← Iltonggi-Startseite</a></div>
     </div>
   </section>
@@ -101,8 +122,8 @@
       <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Rechtliche Links">
-      <a href="/de/privacy/">Datenschutzerklärung</a>
-      <a href="/de/terms/">Nutzungsbedingungen</a>
+      <a href="https://ipe.rest/legal/privacy/">Datenschutzerklärung</a>
+      <a href="https://ipe.rest/legal/terms/">Nutzungsbedingungen</a>
       <a href="/de/journal/">Journal</a>
       <a href="/de/support/">Support</a>
     </nav>

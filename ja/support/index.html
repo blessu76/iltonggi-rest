@@ -43,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=fa93c549">
-<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h==='::1'||h==='[::1]')return;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
 <body>
 <a class="skip-link" href="#content">本文へスキップ</a>
@@ -86,8 +86,29 @@
       <h3 class="h3 faq-q">Android版はありますか?</h3>
       <p>まずはiPhone向けにリリースします。その他のプラットフォームについては、あらためてお知らせします。</p>
       <h3 class="h3 faq-q">個人情報は収集していますか?</h3>
-      <p>アプリは収集していません。ウェブサイトは、Google Analyticsで基本的な訪問統計を収集しています。詳しくは<a href="/ja/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+      <p>アプリは収集していません。ウェブサイトは、Google Analyticsで基本的な訪問統計を収集しています。詳しくは<a href="https://ipe.rest/legal/privacy/">プライバシーポリシー</a>をご覧ください。</p>
 
+      <details id="app-privacy">
+        <summary>一統記 · プライバシーポリシー</summary>
+        <h2>1. 収集する情報 — なし</h2>
+      <p>一統記(以下「本アプリ」)は、個人開発者であるDavy Kim (ipe Studio)が運営するモバイルゲームです。本アプリにはアカウントやログイン機能がなく、お名前、メールアドレス、連絡先、位置情報、端末識別子などの個人情報を収集することも、サーバーへ送信することもありません。ゲームの進行状況や設定はお使いの端末にのみ保存され、本アプリを削除すると消去されます。 ゲーム内で設定したニックネームや記録は端末内にのみ保存され、当社に送信・収集されることはありません。</p>
+      <p>本アプリには、広告、分析、トラッキングのSDKは含まれていません。</p>
+        <h2>2. 天気情報</h2>
+      <p>本アプリは地域の天気を表示するため、インターネットに接続されているときに iltonggi.ipe.rest の公開ファイル(weather.json)をダウンロードします。このファイルはゲーム内の24の町の天気を1時間ごとにまとめたもので、すべてのユーザーに共通です。その際、本アプリは位置情報、端末識別子、ゲームデータなどの個人情報を一切送信せず、天気の提供元に直接接続することもありません。</p>
+      <p>ただし、ファイルをダウンロードする一般的なウェブリクエストの性質上、ホスティング(GitHub Pages)のサーバーログにお使いの端末のIPアドレスが記録されることがありますが、当方はこのログを収集も利用もしません。天気を取得できない場合(オフラインなど)は晴れとして表示され、ゲームは通常どおり動作します。最後に取得した天気は端末に一時的に保存され、本アプリを削除すると一緒に削除されます。</p>
+      <p>天気データの出典: MET Norway (CC BY 4.0)。</p>
+        <p>天気データはMET Norwayが提供しており、当方が代わりに取得して公開ファイルとして掲載するため、本アプリのユーザーの情報がMET Norwayに送られることはありません。</p>
+      </details>
+      <details id="app-terms">
+        <summary>一統記 · 利用規約</summary>
+        <h2>3. サービスの性質</h2>
+      <p>本アプリの主要機能はオフラインで動作し、インターネットは天気の表示にのみ任意で使用されます(取得できない場合は晴れと表示されます)。ゲームデータはお使いの端末に保存されます。機種変更、本アプリの削除、端末の初期化などによりデータが失われることがあり、当方は復元できない場合があります。</p>
+        <h2>4. 天気情報</h2>
+      <p>本アプリに表示される天気は、ゲームの演出とルール(戦闘補正)に使われる参考情報であり、実際の気象状況との一致や継続的な提供を保証するものではありません。天気情報がない場合や古い場合は、晴れとして扱われることがあります。</p>
+      <p>天気データの出典: MET Norway (CC BY 4.0)。</p>
+        <h2>6. 免責</h2>
+      <p>本アプリは現状のまま提供されます。法令で認められる範囲において、本アプリの利用によって生じた間接損害または付随的損害について、当方は責任を負いません。本アプリは韓国の三国時代にインスピレーションを得た創作物であり、史実と異なる場合があります。</p>
+      </details>
       <div class="doc__links"><a href="/ja/">← 一統記ホーム</a></div>
     </div>
   </section>
@@ -101,8 +122,8 @@
       <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="法的情報リンク">
-      <a href="/ja/privacy/">プライバシーポリシー</a>
-      <a href="/ja/terms/">利用規約</a>
+      <a href="https://ipe.rest/legal/privacy/">プライバシーポリシー</a>
+      <a href="https://ipe.rest/legal/terms/">利用規約</a>
       <a href="/ja/journal/">ジャーナル</a>
       <a href="/ja/support/">サポート</a>
     </nav>

@@ -18,6 +18,10 @@ import build_site as bs  # noqa: E402
 NODE = shutil.which("node")
 PREFIXED = set(bs.LANGS) | {bs.LEGACY_PT}  # language folders + the legacy /pt/ redirect stubs
 
+
+def has_site_chrome(rel):
+    return rel.endswith(".html") and rel.split("/")[0] != bs.LEGACY_PT and Path(rel).parent.name not in bs.LEGAL_PAGES
+
 HARNESS = r"""
 const vm = require('vm');
 const {code, search, hash, stored, legacy, languages, throwStorage, pathname, ua} = JSON.parse(process.env.LANG_CASE);
@@ -163,13 +167,13 @@ class Built(unittest.TestCase):
         cls.files = bs.build()
 
     def test_only_pages_without_a_language_prefix_carry_the_script(self):
-        """every prefix-less page except 404.html has it; no /xx/ page (en included) and not the 404 page"""
+        """Only unprefixed content pages use language handoff."""
         for rel, text in self.files.items():
             if not rel.endswith(".html"):
                 continue
             with self.subTest(rel):
                 prefixed = rel.split("/")[0] in PREFIXED
-                self.assertEqual("function ltResolve" in text, not prefixed and rel != "404.html")
+                self.assertEqual("function ltResolve" in text, has_site_chrome(rel) and not prefixed and rel != "404.html")
 
     def test_root_script_is_in_head_and_hint_ui_is_gone(self):
         page = self.files["index.html"]
@@ -182,7 +186,7 @@ class Built(unittest.TestCase):
 
     def test_every_page_has_one_header_language_menu_that_remembers_the_choice(self):
         for rel, text in self.files.items():
-            if rel.endswith(".html") and rel.split("/")[0] != bs.LEGACY_PT:  # /pt/ stubs only redirect
+            if has_site_chrome(rel):
                 with self.subTest(rel):
                     self.assertEqual(text.count('<select class="lang-select"'), 1)
                     self.assertLess(text.index('<select class="lang-select"'), text.index("</header>"))
@@ -191,7 +195,7 @@ class Built(unittest.TestCase):
     def test_header_menu_lists_twelve_languages_and_selects_the_page_language(self):
         for rel, text in self.files.items():
             top = rel.split("/")[0]
-            if not rel.endswith(".html") or top == bs.LEGACY_PT:
+            if not has_site_chrome(rel):
                 continue
             page_lang = top if top in bs.LANGS else "en"
             with self.subTest(rel):
@@ -202,7 +206,7 @@ class Built(unittest.TestCase):
 
     def test_header_nav_has_no_terms_and_footer_keeps_legal_links(self):
         for rel, text in self.files.items():
-            if not rel.endswith(".html") or rel.split("/")[0] == bs.LEGACY_PT:
+            if not has_site_chrome(rel):
                 continue
             with self.subTest(rel):
                 nav = re.search(r'<nav class="nav".*?</nav>', text, re.S).group(0)
@@ -222,7 +226,7 @@ class Built(unittest.TestCase):
 
 
 def prefixless_pages():
-    return sorted(r for r in bs.build() if r.endswith(".html") and r != "404.html" and r.split("/")[0] not in PREFIXED)
+    return sorted(r for r in bs.build() if has_site_chrome(r) and r != "404.html" and r.split("/")[0] not in PREFIXED)
 
 
 def url_of(rel):
@@ -230,7 +234,7 @@ def url_of(rel):
 
 
 class EveryPage(unittest.TestCase):
-    """the rule is on /privacy/ /terms/ /support/ /blog/... too, not only on /"""
+    """The rule covers home, support and blog content."""
 
     @classmethod
     def setUpClass(cls):
@@ -239,7 +243,7 @@ class EveryPage(unittest.TestCase):
 
     def test_the_pages_are_the_expected_ones(self):
         urls = [url_of(r) for r in self.pages]
-        for want in ("/", "/privacy/", "/terms/", "/support/", "/blog/"):
+        for want in ("/", "/support/", "/blog/"):
             self.assertIn(want, urls)
         self.assertTrue(any(u.startswith("/blog/") and u != "/blog/" for u in urls), "a blog post")
 
@@ -274,11 +278,11 @@ class EveryPage(unittest.TestCase):
         """AV is built per page: drop one language's copy of a page from the build and only that page loses the language"""
         raw = bs.build()
         # swap the marker on a small copy of the build in which /ja/support/ is missing
-        marked = {"support/index.html": "<head>" + bs.LANG_MARK + "</head>", "privacy/index.html": "<head>" + bs.LANG_MARK + "</head>"}
+        marked = {"support/index.html": "<head>" + bs.LANG_MARK + "</head>", "index.html": "<head>" + bs.LANG_MARK + "</head>"}
         marked.update({r: "x" for r in raw if r.split("/")[0] in bs.LANGS and r.endswith("index.html") and r != "ja/support/index.html"})
         out = bs.add_lang_script(marked)
         self.assertNotIn('"ja"', re.search(r"AV=(\[[^\]]*\])", out["support/index.html"]).group(1))
-        self.assertIn('"ja"', re.search(r"AV=(\[[^\]]*\])", out["privacy/index.html"]).group(1))
+        self.assertIn('"ja"', re.search(r"AV=(\[[^\]]*\])", out["index.html"]).group(1))
 
 
 @unittest.skipUnless(NODE, "node not installed")
@@ -338,8 +342,8 @@ class TwelveLanguages(unittest.TestCase):
                 self.assertEqual(set(sibs), set(bs.LANGS))
 
     def test_old_pt_addresses_redirect_to_pt_br(self):
-        stub = self.files["pt/privacy/index.html"]
-        self.assertIn('url=https://iltonggi.ipe.rest/pt-BR/privacy/', stub)
+        stub = self.files["pt/support/index.html"]
+        self.assertIn('url=https://iltonggi.ipe.rest/pt-BR/support/', stub)
         self.assertIn("noindex", stub)
         self.assertNotIn("ltResolve", stub)
         self.assertNotIn("/pt/", self.files["sitemap.xml"])
@@ -371,7 +375,7 @@ class InnerPageBehaviour(unittest.TestCase):
         return re.search(r"<script>(\(function\(\)\{function ltNorm.*?)</script>", self.files[rel], re.S).group(1)
 
     def test_inner_pages_move_to_the_same_page_in_the_language(self):
-        for rel in ("privacy/index.html", "terms/index.html", "support/index.html", "blog/index.html", self.post):
+        for rel in ("support/index.html", "blog/index.html", self.post):
             with self.subTest(rel):
                 r = run_root(languages=["ko-KR", "en"], rel=rel, pathname=url_of(rel), code=self.code(rel))
                 self.assertEqual(r["replaced"], "/ko" + url_of(rel))
@@ -384,13 +388,13 @@ class InnerPageBehaviour(unittest.TestCase):
         self.assertEqual(r["replaced"], "/de/support/?utm=x#faq")
 
     def test_english_unsupported_and_saved_english_stay(self):
-        code = self.code("terms/index.html")
+        code = self.code("support/index.html")
         for kw in (dict(languages=["en-US"]), dict(languages=["he", "ar"]), dict(stored="en", languages=["ko"]), dict(languages=[])):
             with self.subTest(kw):
-                self.assertIsNone(run_root(rel="terms/index.html", pathname="/terms/", code=code, **kw)["replaced"])
-        r = run_root(search="?lang=en&app=1", hash="#x", rel="terms/index.html", pathname="/terms/", code=code)
+                self.assertIsNone(run_root(rel="support/index.html", pathname="/support/", code=code, **kw)["replaced"])
+        r = run_root(search="?lang=en&app=1", hash="#x", rel="support/index.html", pathname="/support/", code=code)
         self.assertIsNone(r["replaced"])
-        self.assertEqual(r["history"], "/terms/?app=1#x")
+        self.assertEqual(r["history"], "/support/?app=1#x")
 
     def test_a_language_without_the_counterpart_stays(self):
         code = self.code("blog/index.html").replace('AV=["ko", ', "AV=[", 1)  # this page has no /ko/ copy
@@ -404,14 +408,14 @@ class InnerPageBehaviour(unittest.TestCase):
         self.assertEqual(run_root(languages=["ja"], rel="blog/index.html", pathname="/blog/", code=code)["replaced"], "/ja/blog/")
 
     def test_a_language_path_never_moves_again(self):
-        code = self.code("privacy/index.html")
-        for pathname in ("/ko/privacy/", "/en/privacy/", "/ja/"):
+        code = self.code("support/index.html")
+        for pathname in ("/ko/support/", "/en/support/", "/ja/"):
             with self.subTest(pathname):
-                self.assertIsNone(run_root(languages=["de"], stored="fr", search="?lang=ja", rel="privacy/index.html", pathname=pathname, code=code)["replaced"])
+                self.assertIsNone(run_root(languages=["de"], stored="fr", search="?lang=ja", rel="support/index.html", pathname=pathname, code=code)["replaced"])
 
     def test_blocked_storage_still_moves(self):
-        r = run_root(search="?lang=ko", throw=True, rel="privacy/index.html", pathname="/privacy/", code=self.code("privacy/index.html"))
-        self.assertEqual(r["replaced"], "/ko/privacy/")
+        r = run_root(search="?lang=ko", throw=True, rel="support/index.html", pathname="/support/", code=self.code("support/index.html"))
+        self.assertEqual(r["replaced"], "/ko/support/")
 
 
 if __name__ == "__main__":

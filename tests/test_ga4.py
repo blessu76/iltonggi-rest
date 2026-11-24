@@ -1,4 +1,4 @@
-"""GA4: one snippet per generated page (every page type, incl. blog), and the privacy / FAQ text that must match it."""
+"""GA4 coverage, exclusions, and the app disclosures retained with legal redirects."""
 import re
 import sys
 import unittest
@@ -16,8 +16,10 @@ class Ga4(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.files = bs.build()
-        # the legacy /pt/ stubs only redirect to /pt-BR/ (no GA, no content)
-        cls.pages = {k: v for k, v in cls.files.items() if k.endswith(".html") and k.split("/")[0] != bs.LEGACY_PT}
+        cls.html = {k: v for k, v in cls.files.items() if k.endswith(".html")}
+        cls.excluded = {k for k in cls.html if k == "404.html" or k.startswith("pt/")
+                        or Path(k).parent.name in ("privacy", "terms")}
+        cls.pages = {k: v for k, v in cls.html.items() if k not in cls.excluded}
         cls.data = bs.DATA
 
     def test_constant_is_the_ipe_rest_property(self):
@@ -33,8 +35,8 @@ class Ga4(unittest.TestCase):
                 self.assertLess(text.index(GA_ID), text.index("</head>"))
 
     def test_page_types_are_covered(self):
-        for rel in ("index.html", "ko/index.html", "privacy/index.html", "terms/index.html", "support/index.html",
-                    "th/privacy/index.html", "de/privacy/index.html", "404.html", "blog/index.html"):
+        for rel in ("index.html", "ko/index.html", "support/index.html", "th/support/index.html",
+                    "blog/index.html", "blog/page/2/index.html", "journal/index.html"):
             self.assertIn(rel, self.pages)
         self.assertTrue([k for k in self.pages if re.match(r"blog/[^/]+/index\.html$", k) and "page/" not in k])
         self.assertTrue([k for k in self.pages if re.match(r"ja/blog/[^/]+/index\.html$", k)])
@@ -43,6 +45,19 @@ class Ga4(unittest.TestCase):
         for rel in self.pages:
             with self.subTest(rel):
                 self.assertEqual((ROOT / rel).read_text(encoding="utf-8").count(GA_ID), 1)
+
+    def test_404_and_redirects_omit_the_tag(self):
+        for rel in self.excluded:
+            with self.subTest(rel):
+                for text in (self.html[rel], (ROOT / rel).read_text(encoding="utf-8")):
+                    self.assertNotIn(GA_ID, text)
+                    self.assertNotIn("googletagmanager", text)
+
+    def test_local_and_file_guard_precedes_the_loader(self):
+        loader = bs.GA_SNIPPET.index("googletagmanager")
+        for guard in ("location.protocol==='file:'", "h==='localhost'", "h==='127.0.0.1'",
+                      "h==='0.0.0.0'", "h==='::1'", "h==='[::1]'"):
+            self.assertIn(guard, bs.GA_SNIPPET[:loader])
 
     def test_no_other_tracker_and_none_in_assets(self):
         for rel, text in self.pages.items():
@@ -54,20 +69,40 @@ class Ga4(unittest.TestCase):
         self.assertIn("if(/[?&]app=1(&|$)/.test(location.search))return;", bs.GA_SNIPPET)
         self.assertLess(bs.GA_SNIPPET.index("location.search"), bs.GA_SNIPPET.index("googletagmanager"))
 
-    def test_privacy_has_a_web_only_ga_section_and_keeps_the_app_statement(self):
-        for lang in LANGS:
-            path = "privacy/index.html" if lang == "en" else "%s/privacy/index.html" % lang
-            text = self.pages[path]
-            main = text[text.index("<main"):text.index("</main>")]
-            with self.subTest(lang):
-                self.assertIn("Google Analytics", main)
-                self.assertIn("_ga", main)
-                self.assertIn(bs.GA_OPTOUT, main)
-                self.assertEqual(len(re.findall(r"<h2[ >]", main)), 9)
-                self.assertIn("iltonggi.ipe.rest", main.split("<h2>")[3])  # section 3 = website only
-                self.assertIn("2026", main.split('class="meta"')[1][:120])
-            sec1 = self.data[lang]["privacy"]["sections"][0]["p"]
-            self.assertEqual(len(sec1), 2)  # app collects nothing: both original app sentences stay
+    def test_legal_routes_link_to_the_central_documents_and_stay_off_sitemap(self):
+        for prefix in [""] + LANGS + ["pt"]:
+            for doc in ("privacy", "terms"):
+                with self.subTest(prefix=prefix, doc=doc):
+                    path = (prefix + "/" if prefix else "") + doc + "/"
+                    dest = "https://ipe.rest" + ("/ko" if prefix == "ko" else "") + "/legal/" + doc + "/"
+                    rel = path + "index.html"
+                    text = self.html[rel]
+                    self.assertIn(rel, self.excluded)
+                    self.assertIn('name="robots" content="noindex,follow"', text)
+                    self.assertIn('rel="canonical" href="%s"' % dest, text)
+                    self.assertIn('http-equiv="refresh" content="0; url=%s"' % dest, text)
+                    self.assertIn('<a href="%s">' % dest, text)
+                    self.assertNotIn('rel="alternate"', text)
+                    self.assertNotIn(bs.SITE + "/" + path, self.files["sitemap.xml"])
+
+    def test_footer_links_directly_to_central_documents(self):
+        for rel, text in self.pages.items():
+            with self.subTest(rel):
+                footer = text.split("<footer", 1)[1]
+                for doc in ("privacy", "terms"):
+                    path = "/ko/legal/" if rel.startswith("ko/") else "/legal/"
+                    self.assertIn('href="https://ipe.rest%s%s/"' % (path, doc), footer)
+
+    def test_app_weather_disclosures_are_retained_on_support(self):
+        for prefix in [""] + LANGS:
+            with self.subTest(prefix):
+                t = self.data[prefix or "en"]
+                support = self.pages[(prefix + "/" if prefix else "") + "support/index.html"]
+                self.assertIn('id="app-privacy"', support)
+                self.assertIn('id="app-terms"', support)
+                for text in (t["privacy"]["sections"][1]["p"] + [t["privacy"]["sections"][3]["p"][1]]
+                             + t["terms"]["sections"][2]["p"] + t["terms"]["sections"][3]["p"]):
+                    self.assertIn(bs.esc(text), support)
 
     NICKNAME = {
         "ko": "게임 안에서 정한 닉네임과 기록은 기기에만 저장되며 회사로 전송·수집하지 않습니다.",
@@ -88,9 +123,8 @@ class Ga4(unittest.TestCase):
         # 12 languages: section 1 carries the nickname/records-stay-on-device sentence; no Game Center / Play Games wording
         import html
         for lang in LANGS:
-            path = "privacy/index.html" if lang == "en" else "%s/privacy/index.html" % lang
-            main = self.pages[path]
-            main = main[main.index("<main"):main.index("</main>")]
+            path = "support/index.html" if lang == "en" else "%s/support/index.html" % lang
+            main = self.pages[path].split('<details id="app-privacy">')[1].split("</details>")[0]
             with self.subTest(lang):
                 self.assertIn(self.NICKNAME[lang], self.data[lang]["privacy"]["sections"][0]["p"][0])
                 self.assertIn(html.escape(self.NICKNAME[lang], quote=False), main.replace("&#x27;", "'").replace("&#39;", "'"))
@@ -115,7 +149,7 @@ class Ga4(unittest.TestCase):
     def test_no_stale_no_analytics_claims_about_the_website(self):
         stale = re.compile(r"uses no cookies|no analytics or advertising tags|neither the app nor the website|"
                            r"쿠키를 사용하지 않|분석 도구나 광고 태그를 넣지|앱과 웹사이트 모두 개인정보를 수집하지", re.I)
-        for rel in ("privacy/index.html", "support/index.html", "ko/privacy/index.html", "ko/support/index.html"):
+        for rel in ("support/index.html", "ko/support/index.html"):
             self.assertIsNone(stale.search(self.pages[rel]), rel)
 
     def test_support_faq_mentions_google_analytics(self):

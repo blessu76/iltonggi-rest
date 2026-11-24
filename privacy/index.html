@@ -3,179 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Iltonggi</title>
-<meta name="description" content="Privacy policy for Iltonggi (일통기 · 一統記) — the app collects no personal information; the website collects basic visit statistics through Google Analytics.">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#24312b">
-<link rel="canonical" href="https://iltonggi.ipe.rest/privacy/">
-<link rel="alternate" hreflang="en" href="https://iltonggi.ipe.rest/en/privacy/">
-<link rel="alternate" hreflang="ko" href="https://iltonggi.ipe.rest/ko/privacy/">
-<link rel="alternate" hreflang="ja" href="https://iltonggi.ipe.rest/ja/privacy/">
-<link rel="alternate" hreflang="zh-Hant" href="https://iltonggi.ipe.rest/zh-Hant/privacy/">
-<link rel="alternate" hreflang="es" href="https://iltonggi.ipe.rest/es/privacy/">
-<link rel="alternate" hreflang="pt-BR" href="https://iltonggi.ipe.rest/pt-BR/privacy/">
-<link rel="alternate" hreflang="fr" href="https://iltonggi.ipe.rest/fr/privacy/">
-<link rel="alternate" hreflang="de" href="https://iltonggi.ipe.rest/de/privacy/">
-<link rel="alternate" hreflang="id" href="https://iltonggi.ipe.rest/id/privacy/">
-<link rel="alternate" hreflang="th" href="https://iltonggi.ipe.rest/th/privacy/">
-<link rel="alternate" hreflang="vi" href="https://iltonggi.ipe.rest/vi/privacy/">
-<link rel="alternate" hreflang="tr" href="https://iltonggi.ipe.rest/tr/privacy/">
-<link rel="alternate" hreflang="x-default" href="https://iltonggi.ipe.rest/privacy/">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=a7fbd6aa">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png?v=f2dc827c">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=c0a49163">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Iltonggi">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="Privacy Policy — Iltonggi">
-<meta property="og:description" content="Privacy policy for Iltonggi (일통기 · 一統記) — the app collects no personal information; the website collects basic visit statistics through Google Analytics.">
-<meta property="og:url" content="https://iltonggi.ipe.rest/privacy/">
-<meta property="og:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Iltonggi app icon and in-game map of a Three Kingdoms land-grab strategy game">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Privacy Policy — Iltonggi">
-<meta name="twitter:description" content="Privacy policy for Iltonggi (일통기 · 一統記) — the app collects no personal information; the website collects basic visit statistics through Google Analytics.">
-<meta name="twitter:image" content="https://iltonggi.ipe.rest/assets/og-share.jpg?v=ba1e2b7b">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
+<title>Privacy Policy — ipe Studio</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://ipe.rest/legal/privacy/">
 <link rel="stylesheet" href="/assets/site.css?v=fa93c549">
-<script>(function(){function ltNorm(code, supported) {
-  /* code (en, ko-KR, zh_TW, pt, in ...) -> the supported tag it means (zh-Hant, pt-BR ...) or null. Same rules as ipe_web_kit.languages.resolve:
-     zh -> zh-Hant only for Hant/TW/HK/MO (Simplified is not supported), pt* -> pt-BR, in -> id. */
-  var p = String(code == null ? '' : code).toLowerCase().replace(/_/g, '-').split('-').filter(Boolean), c = p[0];
-  if (!c) return null;
-  if (c === 'in') c = 'id'; /* legacy Indonesian code (old Android / Java): in -> id */
-  if (c === 'zh') {
-    var rest = p.slice(1), script = null, region = null;
-    for (var j = 0; j < rest.length; j++) {
-      if (rest[j].length === 4 && !script) script = rest[j]; else if (rest[j].length === 2 && !region) region = rest[j];
-    }
-    c = (script ? script === 'hant' : (region === 'tw' || region === 'hk' || region === 'mo')) ? 'zh-hant' : '';
-  }
-  if (c === 'pt') c = 'pt-br';
-  for (var i = 0; i < supported.length; i++) if (supported[i].toLowerCase() === c) return supported[i];
-  return null;
-}
-function ltParam(search) {
-  var m = /[?&]lang=([^&#]*)/.exec(search || '');
-  if (!m) return null;
-  try { return decodeURIComponent(m[1]); } catch (e) { return null; }
-}
-function ltStrip(search) {
-  var parts = String(search || '').replace(/^\?/, '').split('&').filter(function (p) { return p && !/^lang=/.test(p); });
-  return parts.length ? '?' + parts.join('&') : '';
-}
-/* o = { search, stored, languages, supported } -> { lang, from: 'url' | 'stored' | 'browser' | 'default' } */
-function ltResolve(o) {
-  var s = o.supported, v = ltNorm(ltParam(o.search), s);
-  if (v) return { lang: v, from: 'url' };
-  v = ltNorm(o.stored, s);
-  if (v) return { lang: v, from: 'stored' };
-  var list = o.languages || [];
-  for (var i = 0; i < list.length; i++) { v = ltNorm(list[i], s); if (v) return { lang: v, from: 'browser' }; }
-  return { lang: 'en', from: 'default' };
-}
-var SUP=["en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],AV=["ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr"],KEYS=["ipe_lang", "iltonggi-lang"],st=null,pm=/^\/([A-Za-z]{2,3}(?:-[A-Za-z]{2,4})?)\//.exec(location.pathname);
-if(pm&&SUP.indexOf(pm[1])>=0)return;
-if(/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent||''))return;
-try{st=localStorage.getItem(KEYS[0])||localStorage.getItem(KEYS[1])}catch(e){}
-var r=ltResolve({search:location.search,stored:st,languages:navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language],supported:SUP});
-if(r.from==='url'){KEYS.forEach(function(k){try{localStorage.setItem(k,r.lang)}catch(e){}})}
-var q=ltStrip(location.search);
-if(r.lang!=='en'&&AV.indexOf(r.lang)>=0){location.replace('/'+r.lang+location.pathname+q+location.hash)}
-else if(/[?&]lang=/.test(location.search)&&history.replaceState){history.replaceState(null,'',location.pathname+q+location.hash)}
-})();</script>
-<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+<script>location.replace("https://ipe.rest/legal/privacy/"+location.search+location.hash)</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://ipe.rest/legal/privacy/"></noscript>
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
-<header class="site-header">
-  <div class="site-header__inner container">
-    <a class="brand" href="/" aria-label="Iltonggi home">
-      <span class="seal" aria-hidden="true"></span>
-      <span class="brand__text">
-        <span class="brand__name">Iltonggi</span>
-        <span class="brand__sub">ipe studio</span>
-      </span>
-    </a>
-    <nav class="nav" aria-label="Main links">
-      <a href="/journal/">Journal</a>
-      <a href="/support/">Support</a>
-    </nav>
-    <select class="lang-select" aria-label="Language" data-cur=""><option value="" lang="en" selected>English</option><option value="/ko" lang="ko">한국어</option><option value="/ja" lang="ja">日本語</option><option value="/zh-Hant" lang="zh-Hant">繁體中文</option><option value="/es" lang="es">Español</option><option value="/pt-BR" lang="pt-BR">Português (Brasil)</option><option value="/fr" lang="fr">Français</option><option value="/de" lang="de">Deutsch</option><option value="/id" lang="id">Bahasa Indonesia</option><option value="/th" lang="th">ไทย</option><option value="/vi" lang="vi">Tiếng Việt</option><option value="/tr" lang="tr">Türkçe</option></select>
+<main class="doc">
+  <div class="container doc__body">
+    <h1>Privacy Policy</h1>
+    <p><a href="https://ipe.rest/legal/privacy/">ipe Studio · Privacy Policy</a></p>
   </div>
-</header>
-<script>(function(){var s=document.querySelector('.lang-select');if(!s)return;s.addEventListener('change',function(){var o=s.options[s.selectedIndex],cur=s.getAttribute('data-cur');["ipe_lang", "iltonggi-lang"].forEach(function(k){try{localStorage.setItem(k,o.lang)}catch(e){}});location.href=s.hasAttribute('data-home')?o.value+'/':o.value+location.pathname.slice(cur.length)+location.search+location.hash;});})();</script>
-
-<main id="content">
-  <section class="doc">
-    <div class="container doc__body">
-      <p class="kicker">// privacy</p>
-      <h1>Privacy Policy</h1>
-      <p class="meta">Effective: November 1, 2026 · Operated by Davy Kim (ipe Studio)</p>
-      <p class="callout"><strong>In short:</strong> The Iltonggi app collects no personal information. This website collects basic visit statistics through Google Analytics (section 3).</p>
-
-      <h2>1. Information we collect — none</h2>
-      <p>Iltonggi (&quot;the App&quot;) is a mobile game operated by an individual developer, Davy Kim (ipe Studio). The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress and settings are stored only on your device and are deleted when you delete the App. Any nickname you choose in the game and your game records are stored only on your device and are not sent to or collected by us.</p>
-      <p>The App contains no advertising, analytics or tracking SDKs.</p>
-
-      <h2>2. Weather information</h2>
-      <p>To show regional weather, the App downloads a public file (weather.json) from iltonggi.ipe.rest whenever it is online. The file collects the weather for the 24 towns in the game once an hour and is the same for every user. The App sends no personal information in doing so — no location, device identifier or game data — and it does not contact any weather provider directly.</p>
-      <p>As with any ordinary web request, the server log of our host (GitHub Pages) may record your device&#x27;s IP address; we do not collect or use that log. If the weather cannot be downloaded (for example, offline), the App shows clear weather and the game works normally. The last weather received is stored temporarily on your device and is deleted when you delete the App.</p>
-      <p>Weather data: MET Norway (CC BY 4.0).</p>
-
-      <h2>3. The website and visit statistics (Google Analytics)</h2>
-      <p>This section applies only to the iltonggi.ipe.rest website, not to the App. The App collects nothing and contains no analytics (see section 1); website pages shown inside the App do not load Google Analytics.</p>
-      <p>On the website we use Google Analytics 4 to see which pages are read. It records page views, the page you came from, your browser and device type, an approximate location (country or city) and clicks on links that leave our site (the link address only). It sets cookies in your browser (such as _ga, which can last up to two years) to tell visits apart. We do not ask for your name or email in analytics, and we cannot identify you from it. Google processes this data on our behalf, which can include servers outside Korea.</p>
-      <p>Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google. The site is hosted on GitHub Pages, and GitHub&#x27;s server-log policies apply.</p>
-      <p>To opt out, block or delete cookies in your browser settings, or use Google&#x27;s Analytics opt-out add-on (<a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">tools.google.com/dlpage/gaoptout</a>). The website works the same without them.</p>
-
-      <h2>4. Third parties</h2>
-      <p>The App collects no personal information, so it has nothing to share with or sell to third parties. On the website, Google (visit statistics) and GitHub (hosting) process data as described in section 3; we do not sell it. The App is distributed through the Apple App Store; information related to downloads is handled by Apple under Apple&#x27;s privacy policy.</p>
-      <p>Weather data is provided by MET Norway. We fetch it ourselves and publish it as a public file, so no information about App users is passed to MET Norway.</p>
-
-      <h2>5. Questions and your rights</h2>
-      <p>To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a>. The App holds no personal information, and website analytics data is not tied to your name or email, so there may be nothing we can find to act on.</p>
-
-      <h2>6. Children</h2>
-      <p>The App is not directed to children under 14 (or the minimum age in your region), and it collects no personal information from any user.</p>
-
-      <h2>7. Privacy officer</h2>
-      <p>Name: Davy Kim (ipe Studio) · Contact: <a href="mailto:ipe.haven@gmail.com">ipe.haven@gmail.com</a></p>
-
-      <h2>8. Remedies (Korea)</h2>
-      <ul>
-        <li>Personal Information Dispute Mediation Committee: 1833-6972 · kopico.go.kr</li>
-        <li>Personal Information Infringement Report Center: 118 · privacy.kisa.or.kr</li>
-        <li>Supreme Prosecutors&#x27; Office Cybercrime Division: 1301 · National Police Agency Cyber Bureau: 182</li>
-      </ul>
-
-      <h2>9. Changes</h2>
-      <p>If the App later adds accounts, payments or online features that change what is collected, we will update this policy first and change the effective date.</p>
-
-      <div class="doc__links"><a href="/">← Iltonggi home</a></div>
-    </div>
-  </section>
 </main>
-
-<footer class="site-footer">
-  <div class="site-footer__inner container">
-    <div>
-      <p class="h3">ipe Studio</p>
-      <p class="site-footer__meta"><span>iltonggi.ipe.rest</span><span>ipe.haven@gmail.com</span></p>
-      <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
-    </div>
-    <nav class="footer-links" aria-label="Legal links">
-      <a href="/privacy/">Privacy Policy</a>
-      <a href="/terms/">Terms of Use</a>
-      <a href="/journal/">Journal</a>
-      <a href="/support/">Support</a>
-    </nav>
-  </div>
-</footer>
 </body>
 </html>

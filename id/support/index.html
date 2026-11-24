@@ -43,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=fa93c549">
-<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h==='::1'||h==='[::1]')return;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
 <body>
 <a class="skip-link" href="#content">Lewati ke konten</a>
@@ -86,8 +86,29 @@
       <h3 class="h3 faq-q">Apakah ada versi Android?</h3>
       <p>Kami merilis untuk iPhone lebih dulu. Kabar tentang platform lain akan kami sampaikan nanti.</p>
       <h3 class="h3 faq-q">Apakah kalian mengumpulkan informasi pribadi?</h3>
-      <p>Aplikasi tidak. Situs web mengumpulkan statistik kunjungan dasar melalui Google Analytics. Untuk rinciannya, lihat <a href="/id/privacy/">Kebijakan Privasi</a>.</p>
+      <p>Aplikasi tidak. Situs web mengumpulkan statistik kunjungan dasar melalui Google Analytics. Untuk rinciannya, lihat <a href="https://ipe.rest/legal/privacy/">Kebijakan Privasi</a>.</p>
 
+      <details id="app-privacy">
+        <summary>Iltonggi · Kebijakan Privasi</summary>
+        <h2>1. Informasi yang kami kumpulkan — tidak ada</h2>
+      <p>Iltonggi (“Aplikasi”) adalah game mobile yang dioperasikan oleh pengembang perorangan, Davy Kim (ipe Studio). Aplikasi tidak memiliki akun atau proses masuk, dan tidak mengumpulkan maupun mengirim ke server mana pun informasi pribadi seperti nama, email, kontak, lokasi, atau pengenal perangkat. Progres game dan pengaturan Anda hanya disimpan di perangkat Anda dan akan terhapus saat Anda menghapus Aplikasi. Nama panggilan yang Anda tetapkan di dalam game dan catatan permainan Anda hanya disimpan di perangkat Anda; kami tidak menerima maupun mengumpulkannya.</p>
+      <p>Aplikasi tidak berisi iklan, analitik, maupun SDK pelacakan.</p>
+        <h2>2. Informasi cuaca</h2>
+      <p>Untuk menampilkan cuaca daerah, Aplikasi mengunduh file publik (weather.json) dari iltonggi.ipe.rest setiap kali terhubung ke internet. File ini mengumpulkan cuaca 24 kota di dalam game sekali setiap jam dan sama untuk semua pengguna. Dalam proses ini, Aplikasi tidak mengirimkan informasi pribadi apa pun (tidak ada lokasi, pengenal perangkat, atau data game) dan juga tidak terhubung langsung ke penyedia cuaca mana pun.</p>
+      <p>Seperti pada permintaan web biasa, log server hosting kami (GitHub Pages) dapat mencatat alamat IP perangkat Anda; kami tidak mengumpulkan atau menggunakan log tersebut. Jika cuaca tidak dapat diunduh (misalnya saat offline), Aplikasi menampilkan cuaca cerah dan game tetap berjalan normal. Cuaca terakhir yang diterima disimpan sementara di perangkat Anda dan dihapus saat Anda menghapus Aplikasi.</p>
+      <p>Data cuaca: MET Norway (CC BY 4.0).</p>
+        <p>Data cuaca disediakan oleh MET Norway. Kami mengambilnya sendiri dan menerbitkannya sebagai file publik, sehingga tidak ada informasi pengguna Aplikasi yang diteruskan ke MET Norway.</p>
+      </details>
+      <details id="app-terms">
+        <summary>Iltonggi · Ketentuan Penggunaan</summary>
+        <h2>3. Sifat layanan</h2>
+      <p>Fitur inti Aplikasi berjalan secara offline; internet hanya digunakan, secara opsional, untuk menampilkan cuaca (jika tidak dapat diunduh, cuaca cerah akan ditampilkan). Data game disimpan di perangkat Anda. Data dapat hilang jika Anda berganti perangkat, menghapus Aplikasi, atau mengatur ulang perangkat, dan kami mungkin tidak dapat memulihkannya.</p>
+        <h2>4. Informasi cuaca</h2>
+      <p>Cuaca yang ditampilkan di Aplikasi merupakan informasi acuan yang digunakan untuk suasana dan aturan game (modifikasi pertempuran). Kami tidak menjamin bahwa cuaca tersebut sesuai dengan kondisi cuaca sebenarnya atau akan selalu tersedia. Jika informasi cuaca tidak ada atau sudah usang, cuaca cerah dapat digunakan.</p>
+      <p>Data cuaca: MET Norway (CC BY 4.0).</p>
+        <h2>6. Penafian</h2>
+      <p>Aplikasi disediakan apa adanya. Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian tidak langsung atau insidental yang timbul dari penggunaan Aplikasi. Aplikasi adalah karya kreatif yang terinspirasi dari era Tiga Kerajaan Korea dan dapat berbeda dari fakta sejarah.</p>
+      </details>
       <div class="doc__links"><a href="/id/">← Beranda Iltonggi</a></div>
     </div>
   </section>
@@ -101,8 +122,8 @@
       <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Tautan hukum">
-      <a href="/id/privacy/">Kebijakan Privasi</a>
-      <a href="/id/terms/">Ketentuan Penggunaan</a>
+      <a href="https://ipe.rest/legal/privacy/">Kebijakan Privasi</a>
+      <a href="https://ipe.rest/legal/terms/">Ketentuan Penggunaan</a>
       <a href="/id/journal/">Jurnal</a>
       <a href="/id/support/">Dukungan</a>
     </nav>

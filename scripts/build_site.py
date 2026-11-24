@@ -6,8 +6,8 @@
 
 Sources: content/<tag>.json (all copy), CSS in assets/site.css. The language list, order and names come from ipe_web_kit.languages (vendor/, locked).
 Layout follows still.ipe.rest: root (/) = English = x-default, plus /<tag>/ for every language
-(en included, own canonical); hreflang + x-default on every page; language links in the footer;
-every page that opens without a language prefix picks the language itself (?lang= > saved choice > browser language > English, see scripts/lang_resolve.js). Stdlib only, Python 3.8+.
+(en included, own canonical); content pages have hreflang and x-default. Unprefixed content pages
+pick their language (see scripts/lang_resolve.js). Legal routes link to ipe.rest. Stdlib only, Python 3.8+.
 """
 import hashlib
 import html
@@ -51,16 +51,17 @@ def blog_code(tag):
     return c if c in blog.LANGS else "en"
 
 
-PAGES = ["home", "privacy", "terms", "support"]
+PAGES = ("home", "support")
+LEGAL_PAGES = ("privacy", "terms")
 PATH = {"home": "/", "privacy": "/privacy/", "terms": "/terms/", "support": "/support/"}
 FONT = ("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600"
         "&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap")
-# GA4 (same property as ipe.rest; a subdomain, so no cross-domain setup). Inserted once by head(), which every page type
-# (home, privacy, terms, support, 404, blog list/post) goes through. The privacy policy (section 3), the support FAQ and
-# privacy_meta_line say so -> change them together with this. Skipped in the in-app web view (?app=1): the app collects nothing.
+# GA4 shares the ipe.rest property. Content pages get one snippet; redirects and 404 omit it.
+# Local previews and the in-app web view (?app=1) exit before the tag loads.
 GA_MEASUREMENT_ID = "G-XG4BH800J0"
 GA_SNIPPET = (
     "<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='%s';"
+    "var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h==='::1'||h==='[::1]')return;"
     "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);"
     "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};"
     "window.gtag('js',new Date());window.gtag('config',GA_ID);"
@@ -103,7 +104,11 @@ def url(lang, page, root):
     return SITE + prefix(lang, root) + PATH[page]
 
 
-def head(t, lang, page, root, title, desc, extra="", robots="index,follow", canonical=None, alt=True):
+def legal_url(page, lang):
+    return "https://ipe.rest%s/legal/%s/" % ("/ko" if lang == "ko" else "", page)
+
+
+def head(t, lang, page, root, title, desc, extra="", robots="index,follow", canonical=None, alt=True, ga=True):
     can = canonical or url(lang, page, root)
     alts = ""
     if alt:
@@ -141,7 +146,7 @@ def head(t, lang, page, root, title, desc, extra="", robots="index,follow", cano
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONT}">
 <link rel="stylesheet" href="{asset('site.css')}">
-{LANG_MARK if root and canonical is None else ""}{extra}{GA_SNIPPET}</head>
+{LANG_MARK if root and canonical is None else ""}{extra}{GA_SNIPPET if ga else ""}</head>
 <body>
 '''
 
@@ -184,8 +189,8 @@ def footer(t, lang, page, root):
       <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="{esc(t['legal_aria'])}">
-      <a href="{p}/privacy/">{esc(t['privacy_link'])}</a>
-      <a href="{p}/terms/">{esc(t['terms_link'])}</a>
+      <a href="{legal_url('privacy', lang)}">{esc(t['privacy_link'])}</a>
+      <a href="{legal_url('terms', lang)}">{esc(t['terms_link'])}</a>
       <a href="{p}{blog.list_path(1)}">{esc(blog.ui_all()[blog_code(lang)]['nav'])}</a>
       <a href="{p}/support/">{esc(t['nav_support'])}</a>
     </nav>
@@ -197,7 +202,7 @@ def footer(t, lang, page, root):
 LANG_KEY = "iltonggi-lang"
 LANG_KEYS = ["ipe_lang", LANG_KEY]  # shared with the other ipe sites: read ipe_lang first, every save writes both
 LANG_JS = (ROOT / "scripts" / "lang_resolve.js").read_text(encoding="utf-8").split("*/", 1)[1].strip()
-# Every page that opens WITHOUT a language prefix (/, /privacy/, /terms/, /support/, /blog/..., not 404.html): inline in <head>, runs
+# Unprefixed content pages (/, /support/, /blog/...): inline in <head>, runs
 # before first paint. Saves the language on ?lang=xx, then leaves for the same page under /xx/ (replace, so Back works) -- but only when that
 # language really has this page (AV, filled in per page by add_lang_script() from the files of the build). English, an unsupported language
 # or a language without this page stays where it is (the query is dropped). Path, other query params and #hash are kept. Pages under a
@@ -324,41 +329,78 @@ def body_blocks(items):
     return "\n".join(out)
 
 
-def doc(t, lang, page, root):
-    d = t[page]
+def disclosure_sections(sections):
+    return "\n".join("        <h2>%s</h2>\n%s" % (esc(s["h"]), body_blocks(s["p"])) for s in sections)
+
+
+def app_disclosures(t):
+    """Keep the existing app data, weather and gameplay disclosures accessible under support."""
+    privacy = t["privacy"]["sections"]
+    terms = t["terms"]["sections"]
+    return f'''      <details id="app-privacy">
+        <summary>{esc(t['name'])} · {esc(t['privacy_link'])}</summary>
+{disclosure_sections(privacy[:2])}
+        <p>{rich(privacy[3]["p"][1])}</p>
+      </details>
+      <details id="app-terms">
+        <summary>{esc(t['name'])} · {esc(t['terms_link'])}</summary>
+{disclosure_sections((terms[2], terms[3], terms[5]))}
+      </details>'''
+
+
+def support(t, lang, root):
+    d = t["support"]
     p = prefix(lang, root)
-    if page == "support":
-        body = "      <p class=\"lead\">%s</p>\n      <p class=\"callout\"><strong>%s</strong> · %s<br>%s</p>\n" % (
-            esc(d["lead"]), esc(d["callout_label"]), rich("{mail}"), esc(d["callout_note"]))
-        body += "\n      <h2>%s</h2>\n      <ul>\n%s\n      </ul>\n" % (
-            esc(d["tips_h"]), "\n".join("        <li>%s</li>" % esc(x) for x in d["tips"]))
-        body += "\n      <h2>%s</h2>\n" % esc(d["faq_h"])
-        for q, a in d["faq"]:
-            body += '      <h3 class="h3 faq-q">%s</h3>\n      <p>%s</p>\n' % (esc(q), rich(a).replace("{privacy}", ""))
-        body = body.replace("[[privacy]]", '<a href="%s/privacy/">%s</a>' % (p, esc(t["privacy_link"])))
-        meta = ""
-    else:
-        body = ""
-        if d.get("callout"):
-            body += '      <p class="callout"><strong>%s</strong> %s</p>\n' % (esc(d["callout_label"]), esc(d["callout"]))
-        for s in d["sections"]:
-            body += "\n      <h2>%s</h2>\n%s\n" % (esc(s["h"]), body_blocks(s["p"]))
-        meta = '      <p class="meta">%s</p>\n' % esc(t["privacy_meta_line"] if page == "privacy" else t["meta_line"])
-    # [[privacy]] placeholder is raw-escaped by esc(); restore it
-    body = body.replace("[[privacy]]", '<a href="%s/privacy/">%s</a>' % (p, esc(t["privacy_link"])))
-    out = head(t, lang, page, root, "%s — %s" % (d["title"], t["name"]), d["desc"]) + header(t, lang, root)
+    body = '      <p class="lead">%s</p>\n      <p class="callout"><strong>%s</strong> · %s<br>%s</p>\n' % (
+        esc(d["lead"]), esc(d["callout_label"]), rich("{mail}"), esc(d["callout_note"]))
+    body += "\n      <h2>%s</h2>\n      <ul>\n%s\n      </ul>\n" % (
+        esc(d["tips_h"]), "\n".join("        <li>%s</li>" % esc(x) for x in d["tips"]))
+    body += "\n      <h2>%s</h2>\n" % esc(d["faq_h"])
+    privacy_link = '<a href="%s">%s</a>' % (legal_url("privacy", lang), esc(t["privacy_link"]))
+    for q, a in d["faq"]:
+        answer = rich(a).replace("{privacy}", "").replace("[[privacy]]", privacy_link)
+        body += '      <h3 class="h3 faq-q">%s</h3>\n      <p>%s</p>\n' % (esc(q), answer)
+    out = head(t, lang, "support", root, "%s — %s" % (d["title"], t["name"]), d["desc"]) + header(t, lang, root)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
-      <p class="kicker">// {page}</p>
+      <p class="kicker">// support</p>
       <h1>{esc(d['title'])}</h1>
-{meta}{body}
+{body}
+{app_disclosures(t)}
       <div class="doc__links"><a href="{p}/">{back_arrow(lang)} {esc(t['back_home'])}</a></div>
     </div>
   </section>
 </main>
 '''
-    return out + footer(t, lang, page, root) + "</body>\n</html>\n"
+    return out + footer(t, lang, "support", root) + "</body>\n</html>\n"
+
+
+def legal_stub(t, lang, page):
+    dest = legal_url(page, lang)
+    title = esc(t[page]["title"])
+    return f'''<!doctype html>
+<html lang="{lang}" dir="{direction(lang)}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title} — ipe Studio</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="{dest}">
+<link rel="stylesheet" href="{asset('site.css')}">
+<script>location.replace({json.dumps(dest)}+location.search+location.hash)</script>
+<noscript><meta http-equiv="refresh" content="0; url={dest}"></noscript>
+</head>
+<body>
+<main class="doc">
+  <div class="container doc__body">
+    <h1>{title}</h1>
+    <p><a href="{dest}">ipe Studio · {title}</a></p>
+  </div>
+</main>
+</body>
+</html>
+'''
 
 
 def not_found(data):
@@ -369,7 +411,7 @@ def not_found(data):
             "/" + l if l != "en" else "", esc(data[l]["nav_support"]))
         for l in LANGS)
     out = head(t, "en", "home", True, t["nf"]["title"] + " — " + t["name"], t["nf"]["desc"],
-               robots="noindex, follow", canonical=SITE + "/404.html", alt=False) + header(t, "en", True, home=True)
+               robots="noindex, follow", canonical=SITE + "/404.html", alt=False, ga=False) + header(t, "en", True, home=True)
     out += f'''<main id="content">
   <section class="doc">
     <div class="container doc__body">
@@ -438,11 +480,14 @@ def build():
     DATA.clear()
     DATA.update(data)
     files = {}
-    for page in PAGES:
-        builder = home if page == "home" else (lambda t, l, r, pg=page: doc(t, l, pg, r))
-        files[("index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data["en"], "en", True)
-        for l in LANGS:
-            files["%s/%s" % (l, "index.html" if page == "home" else PATH[page].strip("/") + "/index.html")] = builder(data[l], l, False)
+    for lang, root in [("en", True)] + [(l, False) for l in LANGS]:
+        path_prefix = "" if root else lang + "/"
+        files[path_prefix + "index.html"] = home(data[lang], lang, root)
+        files[path_prefix + "support/index.html"] = support(data[lang], lang, root)
+        for page in LEGAL_PAGES:
+            files[path_prefix + page + "/index.html"] = legal_stub(data[lang], lang, page)
+    for page in LEGAL_PAGES:
+        files[f"{LEGACY_PT}/{page}/index.html"] = legal_stub(data["pt-BR"], "pt-BR", page)
     files["404.html"] = not_found(data)
     blog_files, blog_extra = blog.build(sys.modules[__name__], data, ROOT)
     files.update(blog_files)

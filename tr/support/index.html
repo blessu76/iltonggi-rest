@@ -43,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/site.css?v=fa93c549">
-<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
+<script>(function(){if(/[?&]app=1(&|$)/.test(location.search))return;var GA_ID='G-XG4BH800J0';var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='0.0.0.0'||h==='::1'||h==='[::1]')return;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag('js',new Date());window.gtag('config',GA_ID);function track(e){if(e.type==='auxclick'&&e.button!==1)return;var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;var h=a.hostname;if(h==='ipe.rest'||/\.ipe\.rest$/.test(h))return;window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>
 </head>
 <body>
 <a class="skip-link" href="#content">İçeriğe geç</a>
@@ -86,8 +86,29 @@
       <h3 class="h3 faq-q">Android sürümü var mı?</h3>
       <p>Önce iPhone&#x27;da yayınlıyoruz. Diğer platformlarla ilgili haberleri daha sonra paylaşacağız.</p>
       <h3 class="h3 faq-q">Kişisel bilgi topluyor musunuz?</h3>
-      <p>Uygulama toplamaz. Web sitesi Google Analytics ile temel ziyaret istatistikleri toplar. Ayrıntılar için <a href="/tr/privacy/">Gizlilik Politikası</a> sayfasına bakın.</p>
+      <p>Uygulama toplamaz. Web sitesi Google Analytics ile temel ziyaret istatistikleri toplar. Ayrıntılar için <a href="https://ipe.rest/legal/privacy/">Gizlilik Politikası</a> sayfasına bakın.</p>
 
+      <details id="app-privacy">
+        <summary>Iltonggi · Gizlilik Politikası</summary>
+        <h2>1. Topladığımız bilgiler — yok</h2>
+      <p>Iltonggi (&quot;Uygulama&quot;), bağımsız geliştirici Davy Kim (ipe Studio) tarafından işletilen bir mobil oyundur. Uygulamada hesap veya oturum açma yoktur; adınız, e-postanız, iletişim bilgileriniz, konumunuz veya cihaz tanımlayıcılarınız gibi hiçbir kişisel bilgiyi toplamaz ve herhangi bir sunucuya göndermez. Oyun ilerlemeniz ve ayarlarınız yalnızca cihazınızda saklanır ve Uygulamayı sildiğinizde silinir. Oyunda seçtiğiniz takma ad ve oyun kayıtlarınız yalnızca cihazınızda saklanır; bize gönderilmez ve tarafımızca toplanmaz.</p>
+      <p>Uygulamada reklam, analiz veya izleme SDK&#x27;sı bulunmaz.</p>
+        <h2>2. Hava durumu bilgisi</h2>
+      <p>Bölgesel hava durumunu göstermek için Uygulama, çevrimiçi olduğu her an iltonggi.ipe.rest adresinden herkese açık bir dosya (weather.json) indirir. Bu dosya, oyundaki 24 kasabanın hava durumunu saatte bir toplar ve tüm kullanıcılar için aynıdır. Uygulama bu sırada hiçbir kişisel bilgi göndermez; konum, cihaz tanımlayıcısı veya oyun verisi yoktur ve herhangi bir hava durumu sağlayıcısıyla doğrudan iletişime geçmez.</p>
+      <p>Sıradan her web isteğinde olduğu gibi, barındırma sağlayıcımızın (GitHub Pages) sunucu günlüğü cihazınızın IP adresini kaydedebilir; bu günlüğü biz toplamayız veya kullanmayız. Hava durumu indirilemezse (örneğin çevrimdışıyken) Uygulama açık hava gösterir ve oyun normal şekilde çalışır. Alınan son hava durumu cihazınızda geçici olarak saklanır ve Uygulamayı sildiğinizde silinir.</p>
+      <p>Hava durumu verileri: MET Norway (CC BY 4.0).</p>
+        <p>Hava durumu verilerini MET Norway sağlar. Biz bunları kendimiz alır ve herkese açık bir dosya olarak yayınlarız; bu nedenle Uygulama kullanıcılarına dair hiçbir bilgi MET Norway&#x27;e iletilmez.</p>
+      </details>
+      <details id="app-terms">
+        <summary>Iltonggi · Kullanım Koşulları</summary>
+        <h2>3. Hizmetin niteliği</h2>
+      <p>Uygulamanın temel özellikleri çevrimdışı çalışır; interneti yalnızca isteğe bağlı olarak hava durumunu göstermek için kullanır (indirilemezse açık hava gösterilir). Oyun verileri cihazınızda saklanır. Cihaz değiştirirseniz, Uygulamayı silerseniz veya cihazınızı sıfırlarsanız veriler kaybolabilir ve bunları geri getiremeyebiliriz.</p>
+        <h2>4. Hava durumu bilgisi</h2>
+      <p>Uygulamada gösterilen hava durumu, oyunun sunumu ve kuralları (savaş çarpanları) için kullanılan referans bilgidir. Gerçek hava koşullarıyla örtüşeceğini veya her zaman erişilebilir olacağını garanti etmeyiz. Hava durumu bilgisi eksik veya güncel değilse açık hava kullanılabilir.</p>
+      <p>Hava durumu verileri: MET Norway (CC BY 4.0).</p>
+        <h2>6. Sorumluluk reddi</h2>
+      <p>Uygulama olduğu gibi sunulmaktadır. Yasaların izin verdiği ölçüde, Uygulamayı kullanmanızdan doğan dolaylı veya arızi zararlardan sorumlu değiliz. Uygulama, Kore&#x27;nin Üç Krallık döneminden esinlenen yaratıcı bir eserdir ve tarihî gerçeklerden farklı olabilir.</p>
+      </details>
       <div class="doc__links"><a href="/tr/">← Iltonggi ana sayfa</a></div>
     </div>
   </section>
@@ -101,8 +122,8 @@
       <p class="site-footer__credit">Weather data: <a href="https://www.met.no/en" rel="noopener">MET Norway</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>)</p>
     </div>
     <nav class="footer-links" aria-label="Yasal bağlantılar">
-      <a href="/tr/privacy/">Gizlilik Politikası</a>
-      <a href="/tr/terms/">Kullanım Koşulları</a>
+      <a href="https://ipe.rest/legal/privacy/">Gizlilik Politikası</a>
+      <a href="https://ipe.rest/legal/terms/">Kullanım Koşulları</a>
       <a href="/tr/journal/">Journal</a>
       <a href="/tr/support/">Destek</a>
     </nav>
