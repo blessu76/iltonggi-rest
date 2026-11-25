@@ -4,6 +4,7 @@ description: We went through the Iltonggi screens one by one. The materials were
 slug: why-a-phone-game-looks-cheap
 lang: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 When a game screen looks cheap, the usual reaction is to add more: more gold, more borders, more pictures. When we looked again at the Iltonggi screens, the problem was the opposite. We already had enough materials. The trouble was that we decorated everything, and the decorations argued with each other. This post records that diagnosis and the direction we chose. Much of the work is still ahead.

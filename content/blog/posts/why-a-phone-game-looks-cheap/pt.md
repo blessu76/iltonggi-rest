@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: pt
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Quando a tela de um jogo parece barata, a reação habitual é acrescentar mais: mais ouro, mais bordas, mais imagens. Ao olhar de novo para as telas de Iltonggi, o problema era o oposto. Já tínhamos materiais suficientes. O problema era que decorávamos tudo, e as decorações brigavam entre si. Este texto registra esse diagnóstico e a direção que escolhemos. Grande parte do trabalho ainda está por vir.

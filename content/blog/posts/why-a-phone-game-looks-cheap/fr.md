@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: fr
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Quand un écran de jeu paraît bon marché, la réaction habituelle est d'en ajouter : plus d'or, plus de bordures, plus d'images. En regardant à nouveau les écrans d'Iltonggi, nous avons constaté l'inverse. Nous avions déjà assez de matériaux. Le problème était que nous décorions tout, et que les décorations se contredisaient. Ce texte consigne ce diagnostic et la direction choisie. Une grande partie du travail reste à faire.

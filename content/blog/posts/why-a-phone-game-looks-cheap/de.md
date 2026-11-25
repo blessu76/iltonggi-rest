@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: de
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Wenn ein Spielbildschirm billig wirkt, ist die übliche Reaktion, mehr hinzuzufügen: mehr Gold, mehr Rahmen, mehr Bilder. Als wir die Iltonggi-Bildschirme noch einmal ansahen, war das Problem das Gegenteil. Die Materialien hatten wir schon genug. Das Problem war, dass wir alles verziert hatten und die Verzierungen sich gegenseitig widersprachen. Dieser Beitrag hält die Diagnose und die gewählte Richtung fest. Ein großer Teil der Arbeit liegt noch vor uns.

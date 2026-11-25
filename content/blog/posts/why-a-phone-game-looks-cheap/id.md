@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: id
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Ketika layar game terlihat murah, reaksi yang biasa adalah menambah lebih banyak: lebih banyak emas, lebih banyak bingkai, lebih banyak gambar. Saat kami melihat ulang layar Iltonggi, masalahnya justru sebaliknya. Bahan kami sudah cukup. Masalahnya, semua hal kami hias, dan hiasan-hiasan itu saling bertentangan. Tulisan ini mencatat diagnosis tersebut dan arah yang kami pilih. Sebagian besar pekerjaan masih menunggu.

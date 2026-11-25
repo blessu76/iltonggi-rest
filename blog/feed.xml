@@ -6,7 +6,15 @@
   <atom:link href="https://iltonggi.ipe.rest/blog/feed.xml" rel="self" type="application/rss+xml"/>
   <description>How Iltonggi is being made — one short note a day.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:15:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 13:15:00 +0900</lastBuildDate>
+  <item>
+    <title>Why a Phone Game Looks Cheap: Too Much Decoration, Not Too Little</title>
+    <link>https://iltonggi.ipe.rest/blog/why-a-phone-game-looks-cheap/</link>
+    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/why-a-phone-game-looks-cheap/</guid>
+    <pubDate>Wed, 25 Nov 2026 13:15:00 +0900</pubDate>
+    <dc:creator>ipe Studio</dc:creator>
+    <description>We went through the Iltonggi screens one by one. The materials were already there, but every box had the same frame, and several materials and accent colors were fighting each other. Here is the diagnosis, the direction we chose, and what is not done.</description>
+  </item>
   <item>
     <title>Two Name Tags on the Map: Ink for Ours, Paper for the Rest</title>
     <link>https://iltonggi.ipe.rest/blog/two-name-tags-on-the-map/</link>
@@ -158,14 +166,6 @@
     <pubDate>Fri, 06 Nov 2026 12:00:00 +0900</pubDate>
     <dc:creator>ipe Studio</dc:creator>
     <description>How Iltonggi&#x27;s 15 effects and 4 music tracks were synthesized by script with no outside audio, and why we remade some of them.</description>
-  </item>
-  <item>
-    <title>Daegaya, 562: The Year the Last Gaya Closed</title>
-    <link>https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</link>
-    <guid isPermaLink="true">https://iltonggi.ipe.rest/blog/daegaya-562-last-gaya/</guid>
-    <pubDate>Thu, 05 Nov 2026 12:00:00 +0900</pubDate>
-    <dc:creator>ipe Studio</dc:creator>
-    <description>Eight years after Daegaya stood with Baekje at Gwansanseong, this is how the records say it fell to Silla in 562, and what kind of kingdom Gaya is in Iltonggi.</description>
   </item>
 </channel>
 </rss>

@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: es
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Cuando una pantalla de juego parece barata, la reacción habitual es añadir más: más oro, más bordes, más imágenes. Al volver a mirar las pantallas de Iltonggi, el problema era el contrario. Ya teníamos materiales de sobra. El problema era que lo decorábamos todo, y las decoraciones se peleaban entre sí. Este texto recoge ese diagnóstico y la dirección que elegimos. Gran parte del trabajo aún está por hacer.

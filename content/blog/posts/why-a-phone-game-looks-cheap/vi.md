@@ -5,6 +5,7 @@ slug: why-a-phone-game-looks-cheap
 lang: vi
 translation_of: en
 date: 2026-11-25
+published: 2026-11-25T13:15:00+09:00
 ---
 
 Khi màn hình game trông rẻ tiền, phản ứng thường thấy là thêm nữa: thêm vàng, thêm viền, thêm hình. Khi nhìn lại màn hình Iltonggi, vấn đề lại ngược hẳn. Chúng tôi đã có đủ chất liệu. Rắc rối là chúng tôi trang trí mọi thứ, và các trang trí đó cãi nhau với nhau. Bài này ghi lại chẩn đoán và hướng đi đã chọn. Phần lớn công việc vẫn còn ở phía trước.
